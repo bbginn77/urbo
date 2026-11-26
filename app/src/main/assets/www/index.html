@@ -128,6 +128,7 @@ body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-fami
 .sheet-map svg{display:block;width:100%;height:auto;max-height:70vh;border:1px solid var(--line);border-radius:10px;background:#dfeaf2}
 body.sheet-open{overflow:hidden}
 .mapview,.mapview *{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.mapview svg .st:focus{outline:none}
+.zbox{position:relative;overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab}.zctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px;z-index:2}.zctl button{width:42px;height:42px;border-radius:9px;border:1px solid var(--line);background:#fffffff0;color:#1c1a16;font:700 20px 'Fira Sans',sans-serif;cursor:pointer;box-shadow:0 2px 6px #0003;line-height:1}
 .lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.w-urbo{cursor:pointer}.w-urbo:hover path:first-child{filter:brightness(1.06)}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
 header.top .brand{position:relative}
 .brandlink{display:flex;align-items:center;gap:12px}.brandname{text-decoration:none;color:inherit;display:flex;flex-direction:column}
@@ -294,13 +295,13 @@ V.browse=id=>{
       ${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}
       ${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}
       ${row('Towns on the map',sm?String(sm.towns.length):'')}</table></aside></div>
-    ${sm?`<h2 id="st-map">Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
+    ${sm?`<h2 id="st-map">Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Use + and − or pinch to zoom, then drag to move. Green lines are Lochways and striped lines are railways. Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
     ${sd?`<h2 id="st-subs">${sd}</h2><p>${esc(e.name)} is divided into ${nsub.length} ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_prop||[]).includes(id)?badge('proposal'):''}</p>${nsub.length?`<div class="tiles">${nsub.map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`:''}`:''}
     ${cities.length?`<h2 id="st-cities">Cities</h2><div class="tiles">${cities.map(x=>`<a class="tile" href="#city-${x.id}"><h3>${esc(x.name)} →</h3></a>`).join('')}</div>`:''}`;}
   return `<h1>${esc(e.name)}</h1>
   <nav class="crumbs" aria-label="Level">${trail.map((t,i)=>i<trail.length-1?`<a href="#browse-${t.id}">${esc(t.name)}</a>`:`<span>${esc(t.name)}</span>`).join(' › ')}</nav>
   <div class="lvlhead">${e.flag?`<svg class="lvlbig" role="button" tabindex="0" aria-label="Open the level menu" viewBox="0 0 60 40"><use href="#flag-${e.flag}"/></svg>`:''}<div><p class="meta">${typ[e.type]||e.type}${cap?` · Capital: ${esc(cap)}`:''}</p>${facts(e)}</div></div>
-  ${(D.statemaps||{})[id]?`<h2>Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
+  ${(D.statemaps||{})[id]?`<h2>Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Use + and − or pinch to zoom, then drag to move. Green lines are Lochways and striped lines are railways. Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
   ${kids.length?`<h2>${e.type==='union'?'Republics and overseas territories':'States and territories'}</h2><div class="tiles">${kids.map(card).join('')}</div>`:''}
   ${sd?`<h2>${sd}</h2><div class="card"><p>${esc(e.name)} is divided into ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_names||{})[id]?((D.subdiv_prop||[]).includes(id)?badge('proposal'):''):'Their names have not been recorded yet.'}</p></div>${(D.subdiv_names||{})[id]?`<div class="tiles" style="margin-top:12px">${D.subdiv_names[id].map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`:''}`:(['state','territory','oceanic'].includes(e.type)?`<h2>Subdivisions</h2><p class="meta">${esc((D.subdiv_none||{})[id]||'Not yet defined.')}</p>`:'')}
   ${cities.length?`<h2>Cities</h2><div class="tiles">${cities.map(x=>`<a class="tile" href="#city-${x.id}"><h3>${esc(x.name)} →</h3></a>`).join('')}</div>`:''}`;
@@ -323,6 +324,29 @@ V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">URBO Traffic &amp; Rai
 V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">Everyday news from across URBO: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. The same channel runs on NyxVision, channel 11. All stories are simulated.</p><div id="uwslot"></div>${chFS}`;
 V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
 
+
+/* Zoom and pan for a map inside a box: buttons, mouse wheel and drag, pinch, and one-finger drag once zoomed in */
+function zoomable(box,always){const svg=box.querySelector('svg');if(!svg||svg.dataset.z)return;svg.dataset.z='1';
+  const f=svg.viewBox.baseVal,full={x:f.x,y:f.y,w:f.width,h:f.height},vb={...full};box.classList.add('zbox');
+  const set=()=>{vb.w=Math.min(full.w,Math.max(full.w/10,vb.w));vb.h=vb.w*full.h/full.w;vb.x=Math.max(full.x,Math.min(full.x+full.w-vb.w,vb.x));vb.y=Math.max(full.y,Math.min(full.y+full.h-vb.h,vb.y));
+    svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);box.style.touchAction=(always||vb.w<full.w*.99)?'none':'pan-y'};
+  const pt=(x,y)=>{const p=svg.createSVGPoint();p.x=x;p.y=y;return p.matrixTransform(svg.getScreenCTM().inverse())};
+  const zoom=(k,cx,cy)=>{const nw=Math.min(full.w,Math.max(full.w/10,vb.w*k)),r=nw/vb.w;vb.x=cx-(cx-vb.x)*r;vb.y=cy-(cy-vb.y)*r;vb.w=nw;set()};
+  const mid=()=>[vb.x+vb.w/2,vb.y+vb.h/2];
+  const c=document.createElement('div');c.className='zctl';c.innerHTML='<button type="button" aria-label="Zoom in">+</button><button type="button" aria-label="Zoom out">−</button><button type="button" aria-label="Reset the map">⟲</button>';box.appendChild(c);
+  const [bi,bo,br]=c.querySelectorAll('button');bi.onclick=()=>zoom(.6,...mid());bo.onclick=()=>zoom(1/.6,...mid());br.onclick=()=>{Object.assign(vb,full);set()};
+  c.addEventListener('pointerdown',e=>e.stopPropagation());
+  box.addEventListener('wheel',e=>{e.preventDefault();const p=pt(e.clientX,e.clientY);zoom(e.deltaY>0?1.2:1/1.2,p.x,p.y)},{passive:false});
+  const P=new Map();let drag=null,pinch=null;
+  box.addEventListener('pointerdown',e=>{P.set(e.pointerId,{x:e.clientX,y:e.clientY});try{box.setPointerCapture(e.pointerId)}catch(_){}
+    if(P.size===1)drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};
+    if(P.size===2){drag=null;const [a,b]=[...P.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),mx:(a.x+b.x)/2,my:(a.y+b.y)/2,vb:{...vb}}}});
+  box.addEventListener('pointermove',e=>{if(!P.has(e.pointerId))return;P.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if(pinch&&P.size>=2){const [a,b]=[...P.values()],d=Math.hypot(a.x-b.x,a.y-b.y),mx=(a.x+b.x)/2,my=(a.y+b.y)/2;Object.assign(vb,pinch.vb);const p=pt(pinch.mx,pinch.my);zoom(pinch.d/Math.max(20,d),p.x,p.y);
+      const s=vb.w/box.clientWidth;vb.x-=(mx-pinch.mx)*s;vb.y-=(my-pinch.my)*s;set();return}
+    if(drag&&(e.pointerType==='mouse'||always||vb.w<full.w*.99)){const s=vb.w/svg.clientWidth;vb.x=drag.vx-(e.clientX-drag.x)*s;vb.y=drag.vy-(e.clientY-drag.y)*s;set()}});
+  const end=e=>{P.delete(e.pointerId);if(P.size<2)pinch=null;if(!P.size)drag=null;else if(P.size===1){const a=[...P.values()][0];drag={x:a.x,y:a.y,vx:vb.x,vy:vb.y}}};
+  box.addEventListener('pointerup',end);box.addEventListener('pointercancel',end);set()}
 /* Tapping a state on the national map opens its subdivision map in a sheet */
 function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub=(D.subdiv_names||{})[id]||[],I=(D.info||{})[id]||{};
   const kind=e.type==='territory'?'Territory':e.type==='oceanic'?'Oceanic state':'State';
@@ -331,10 +355,10 @@ function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub
   el.innerHTML=`<div class="sheet-in"><div class="sheet-hd">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<div><p class="sthkick">${kind}${I.nick?' · '+esc(I.nick):''}</p><h2>${esc(e.name)}</h2></div>
     <div class="sheet-btns"><a class="btn-pri" href="#browse-${id}">Open the ${esc(e.name)} page →</a><button class="btn-sec" type="button">✕ URBO map</button></div></div>
     <div class="sheet-map art"><p class="meta">Loading map…</p></div>
-    <p class="meta">${sd&&nsub.length?`${nsub.length} ${esc(sd.toLowerCase())}: ${nsub.map(esc).join(', ')}.`:`${esc(e.name)} has no subdivisions.`} ${badge('proposal')} Borders and most town names are proposals.</p></div>`;
+    <p class="meta">${sd&&nsub.length?`${nsub.length} ${esc(sd.toLowerCase())}: ${nsub.map(esc).join(', ')}.`:`${esc(e.name)} has no subdivisions.`} ${badge('proposal')} Borders and most town names are proposals. Use + and − or pinch to zoom, and drag to move.</p></div>`;
   document.body.appendChild(el);document.body.classList.add('sheet-open');
   el.querySelector('.btn-sec').onclick=close;let downOnBack=false;el.addEventListener('pointerdown',ev=>{downOnBack=ev.target===el});el.addEventListener('click',ev=>{if(ev.target===el&&downOnBack)close()});
-  const u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{const m=el.querySelector('.sheet-map');if(m)m.innerHTML=t}).catch(()=>{});
+  const u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{const m=el.querySelector('.sheet-map');if(m){m.innerHTML=t;zoomable(m,true)}}).catch(()=>{});
   setTimeout(()=>{const b=el.querySelector('.btn-pri');b&&b.focus({preventScroll:true})},60);
 }
 let SHEET_FROM_MAP=false;
@@ -640,8 +664,8 @@ function route(){
   document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
   if(key==='map'){initMap();if(h.startsWith('map-'))stateSheet(h.slice(4))}
-  document.querySelectorAll('[data-art]').forEach(b=>{const u=b.dataset.art;(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected)b.innerHTML=t}).catch(()=>{})});
-  document.querySelectorAll('[data-sm]').forEach(b=>{const id=b.dataset.sm,u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected)b.innerHTML=t}).catch(()=>{b.innerHTML='<p class="meta">Map not available.</p>'})});
+  document.querySelectorAll('[data-art]').forEach(b=>{const u=b.dataset.art;(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected){b.innerHTML=t;zoomable(b,false)}}).catch(()=>{})});
+  document.querySelectorAll('[data-sm]').forEach(b=>{const id=b.dataset.sm,u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected){b.innerHTML=t;zoomable(b,false)}}).catch(()=>{b.innerHTML='<p class="meta">Map not available.</p>'})});
   if(CHPAGE[key]){const w=uwStage();$('#uwslot').appendChild(w)}
   (UW.apis||[]).forEach(a=>{try{a&&a.sync()}catch(e){}})
   if(key==='lochways'){pickLW(LW)}
