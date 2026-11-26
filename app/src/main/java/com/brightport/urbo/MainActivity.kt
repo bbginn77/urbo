@@ -6,6 +6,13 @@ import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
+import android.webkit.JavascriptInterface
+import androidx.core.content.FileProvider
+import org.json.JSONObject
+import java.io.File
+import java.net.HttpURLConnection
+import java.net.URL
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowManager
@@ -19,6 +26,9 @@ import androidx.webkit.WebViewAssetLoader
 class MainActivity : Activity() {
     private lateinit var web: WebView
     private val home = "https://appassets.androidplatform.net/assets/www/index.html"
+    private val repo = "BBGINN77/urbo"
+    // A downloaded update waiting for the one-time "install unknown apps" permission
+    private var pendingUpdate: File? = null
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +56,7 @@ class MainActivity : Activity() {
                 }
             }
         }
+        web.addJavascriptInterface(Bridge(), "UrboNative")
         setContentView(web)
         web.requestFocus(View.FOCUS_DOWN)
         if (savedInstanceState != null) web.restoreState(savedInstanceState) else web.loadUrl(home)
@@ -68,5 +79,75 @@ class MainActivity : Activity() {
     }
 
     override fun onPause() { super.onPause(); web.onPause() }
-    override fun onResume() { super.onResume(); web.onResume() }
+    override fun onResume() {
+        super.onResume(); web.onResume()
+        // Back from the permission screen: install the update that was waiting
+        pendingUpdate?.let { if (packageManager.canRequestPackageInstalls()) { pendingUpdate = null; openInstaller(it) } }
+    }
+
+    private fun js(code: String) = runOnUiThread { web.evaluateJavascript("window.urboUpdate&&urboUpdate.$code", null) }
+    private fun q(s: String) = JSONObject.quote(s)
+
+    private fun build(): Int = try {
+        @Suppress("DEPRECATION") (packageManager.getPackageInfo(packageName, 0).versionCode - 1)
+    } catch (e: Exception) { 0 }
+
+    private fun openInstaller(apk: File) {
+        val uri = FileProvider.getUriForFile(this, "$packageName.files", apk)
+        val i = Intent(Intent.ACTION_VIEW)
+            .setDataAndType(uri, "application/vnd.android.package-archive")
+            .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_ACTIVITY_NEW_TASK)
+        try { startActivity(i); js("state('installing')") } catch (e: Exception) { js("state('error')") }
+    }
+
+    /** What the web pages can ask the app to do. */
+    inner class Bridge {
+        @JavascriptInterface fun appBuild(): Int = build()
+
+        /** Asks GitHub for the newest URBO build and tells the page what it found. */
+        @JavascriptInterface fun check() {
+            Thread {
+                try {
+                    val c = URL("https://api.github.com/repos/$repo/releases/latest").openConnection() as HttpURLConnection
+                    c.setRequestProperty("Accept", "application/vnd.github+json")
+                    c.setRequestProperty("User-Agent", "URBO-Updater")
+                    c.connectTimeout = 15000; c.readTimeout = 15000
+                    val j = JSONObject(c.inputStream.bufferedReader().readText()); c.disconnect()
+                    val latest = j.optString("tag_name").removePrefix("build-").toIntOrNull() ?: 0
+                    var url = "https://github.com/$repo/releases/latest/download/urbo.apk"
+                    val assets = j.optJSONArray("assets")
+                    if (assets != null) for (k in 0 until assets.length()) {
+                        val a = assets.getJSONObject(k); if (a.optString("name") == "urbo.apk") url = a.optString("browser_download_url", url)
+                    }
+                    if (latest > build()) js("found($latest,${build()},${q(url)})") else js("state('current')")
+                } catch (e: Exception) { js("state('offline')") }
+            }.start()
+        }
+
+        /** Downloads the new APK and opens Android's installer for it. */
+        @JavascriptInterface fun install(url: String) {
+            Thread {
+                try {
+                    val out = File(cacheDir, "urbo-update.apk")
+                    val c = URL(url).openConnection() as HttpURLConnection
+                    c.instanceFollowRedirects = true; c.connectTimeout = 20000; c.readTimeout = 60000
+                    c.setRequestProperty("User-Agent", "URBO-Updater")
+                    val total = c.contentLengthLong; var done = 0L; var last = -1
+                    c.inputStream.use { input -> out.outputStream().use { o ->
+                        val buf = ByteArray(64 * 1024)
+                        while (true) { val n = input.read(buf); if (n < 0) break; o.write(buf, 0, n); done += n
+                            if (total > 0) { val pct = (done * 100 / total).toInt(); if (pct != last) { last = pct; js("progress($pct)") } } }
+                    } }
+                    c.disconnect()
+                    runOnUiThread {
+                        if (!packageManager.canRequestPackageInstalls()) {
+                            pendingUpdate = out; js("state('permission')")
+                            try { startActivity(Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:$packageName")).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+                            catch (e: Exception) { js("state('error')") }
+                        } else openInstaller(out)
+                    }
+                } catch (e: Exception) { js("state('error')") }
+            }.start()
+        }
+    }
 }

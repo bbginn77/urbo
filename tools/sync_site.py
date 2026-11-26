@@ -11,6 +11,6 @@ s = (src / 'index.html').read_text(encoding='utf-8')
 s = s.replace('<link rel="preconnect" href="https://fonts.googleapis.com">\n', '')
 s = re.sub(r'<link href="https://fonts.googleapis.com/css2[^>]*>', '<link href="fonts.css" rel="stylesheet">', s)
 if 'tvnav.js' not in s:
-    s = s.replace('<script src="urbowx.js"></script>', '<script src="urbowx.js"></script>\n<script src="tvnav.js" defer></script>', 1)
+    s = s.replace('<script src="urbowx.js"></script>', '<script src="urbowx.js"></script>\n<script src="tvnav.js" defer></script>\n<script src="updater.js" defer></script>', 1)
 (dst / 'index.html').write_text(s, encoding='utf-8')
 print('synced', dst)

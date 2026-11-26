@@ -19,6 +19,11 @@ GitHub builds the app on every push. On the onn stick or tablet, open **Download
 https://github.com/BBGINN77/urbo/releases/latest/download/urbo.apk
 ```
 
+## Updates
+
+The app checks GitHub for a newer build each time it opens and shows an **Install** banner when there is one.
+The footer also has a **Check for updates** button. The first time, Android asks you to allow URBO to install apps.
+
 ## Remote
 
 - **D-pad** moves the yellow focus ring to the nearest link or button; **OK** opens it
