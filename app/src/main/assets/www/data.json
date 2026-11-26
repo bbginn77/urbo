@@ -1,4 +1,8 @@
 {
+ "planet": [
+  "On Nyreth the sun rises in the west and sets in the east, because the planet spins the opposite way to Earth.",
+  "Because of that spin, the prevailing winds over URBO blow from east to west, so storms usually arrive from the east."
+ ],
  "info": {
   "solis": {
    "nick": "The Crown State",

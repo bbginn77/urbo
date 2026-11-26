@@ -339,6 +339,7 @@ function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub
 let SHEET_FROM_MAP=false;
 document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&document.querySelector('.sheet')){location.hash='#map'}});
 V.history=()=>`<h1>History</h1><p class="lede">A working sequence of the nation's history. Dates are not yet fixed.</p>
+  ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.eras.map((e,i)=>`<li><div class="when">${esc(e.when)}</div><h3>${esc(e.name)}</h3><p>${esc(e.summary)}</p></li>`).join('')}</ol>
   <p class="meta">The original drawings, photos and sources are kept in the <a href="#archive">national archive</a>.</p>`;
 V.search=q=>{const t=q.toLowerCase();
