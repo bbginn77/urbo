@@ -4,25 +4,25 @@
    [
     "URBO",
     "Brightport City (federal), Berevo (Occasue)",
-    "Western continent",
+    "Anracia",
     "The United Republics of Brightport and Occasue. Holds the whole west coast of its continent."
    ],
    [
     "Schoonheid",
     "Doonsline ?",
-    "Western continent, north of URBO",
+    "Anracia, north of URBO",
     "Borders URBO to the north, on the Schoon Sea. Also shows a city read as Doonshied ?."
    ],
    [
     "Joya",
     "Joya City",
-    "Western continent, south of URBO",
+    "Anracia, south of URBO",
     "Cities read as El Niso ? and St. Ptrawen ?."
    ],
    [
     "Shinchied",
     "Donborg ?",
-    "Western continent, south-east",
+    "Anracia, south-east",
     "A small country on Joya’s eastern side."
    ],
    [
@@ -71,7 +71,7 @@
   "continents": [
    "Uropon is the larger eastern continent, home to Rhine, Instania and Guinesem.",
    "Asuna is the smaller continent south of Uropon, with Juku, Tinsha and New China.",
-   "URBO, Schoonheid, Joya and Shinchied share the western continent."
+   "Anracia is the western continent, home to URBO, Schoonheid, Joya and Shinchied."
   ],
   "changes": [
    "URBO now holds the whole west coast of its continent. On the 2180 drawing, Schoonheid wrapped around the north-west.",
@@ -79,7 +79,6 @@
    "On the drawing, Brightport was one republic. It is shown here as the two republics of URBO."
   ],
   "open": [
-   "Is Anracia the name of the western continent? It is written down URBO’s east coast on the drawing.",
    "Is the town of Swisswa, shown on the old Schoonheid west coast, now inside URBO?",
    "What is the small country inside Guinesem called?",
    "What do the blue lines from Brightport City to the other capitals show: air routes, shipping or cables?",
