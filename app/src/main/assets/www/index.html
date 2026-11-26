@@ -133,11 +133,11 @@ body.sheet-open{overflow:hidden}
 .sitetiles{margin:-6px 0 22px}.sitetiles .tile{border-left-color:var(--acc)}
 .bhead{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid var(--acc);padding:14px 18px;border-radius:6px;margin:6px 0 20px}.bhead svg{width:96px;height:64px;border:1px solid var(--line);flex:none}.bhead h1{margin:0}.bhead .sthkick{color:var(--acc)}
 .lwlist{list-style:none;padding:0}.lwlist li{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}.utr-sh2{flex:none;min-width:30px;height:26px;line-height:28px;border-radius:5px 5px 13px 13px;background:linear-gradient(#c8202f 0 42%,#f6c42b 42%);color:#1d1b16;font:800 13px 'Fira Sans',sans-serif;text-align:center;border:2px solid #fff;box-shadow:0 0 0 1px #9993}
-body.tier-c{background:#d9d4c3}body.tier-c nav.sec{background:#1d3f73;backdrop-filter:none;border-bottom:3px ridge #9ab}
+body.tier-c{background:#d9d4c3;color-scheme:light}.secnote{border:1px solid #9a2a22;border-left:6px solid #9a2a22;background:color-mix(in srgb,#9a2a22 10%,var(--card));padding:10px 14px;border-radius:6px;font-weight:600;margin:0 0 18px}body.tier-c nav.sec{background:#1d3f73;backdrop-filter:none;border-bottom:3px ridge #9ab}
 body.tier-c nav.sec a{color:#fff;font:700 13px Verdana,Geneva,sans-serif;border:2px outset #8fa8c8;background:#2d5593;margin:6px 3px;padding:5px 10px;min-height:0;border-radius:0}body.tier-c nav.sec a[aria-current=page]{border-style:inset;border-color:#8fa8c8;background:#16345f;color:#ffd24a}
 body.tier-c #view{font-family:Verdana,Geneva,sans-serif;font-size:14px;line-height:1.5}body.tier-c #view :is(h1,h2,h3){font-family:"Times New Roman",Times,serif;color:#16345f}body.tier-c #view h2{font-size:20px;margin:14px 0 6px;border-bottom:1px solid #999}
 body.tier-c #view a{color:#00e;text-decoration:underline}body.tier-c #view p{max-width:none}
-.retro{background:#fff;border:2px solid #16345f;padding:14px 16px;max-width:780px;margin:0 auto}.rbanner{background:#16345f;color:#ffd24a;font:700 16px "Times New Roman",Times,serif;text-align:center;padding:8px;letter-spacing:.03em;margin-bottom:12px}
+.retro,.retro :is(p,li,td,i,b,span,hr){color:#111}.retro{color-scheme:light;background:#fff;border:2px solid #16345f;padding:14px 16px;max-width:780px;margin:0 auto}.rbanner{background:#16345f;color:#ffd24a;font:700 16px "Times New Roman",Times,serif;text-align:center;padding:8px;letter-spacing:.03em;margin-bottom:12px}
 .rtop{display:flex;gap:16px;align-items:center}.rflag{width:120px;height:80px;border:3px ridge #999;flex:none}.rtop h1{margin:0;font-size:34px}
 .rtable{border-collapse:collapse}.rtable th,.rtable td{border:1px solid #999;padding:4px 10px;text-align:left;font-size:13px}.rtable th{background:#e6e6e6}
 .rnote{border:2px dashed #b00;background:#fff3c4;padding:8px;font-weight:700}.rfoot{text-align:center;font-size:11px;color:#444}.rcount{font-family:"Courier New",monospace;background:#000;color:#3f3;padding:1px 6px;letter-spacing:3px}
@@ -339,7 +339,7 @@ V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the
 
 
 /* ---------- State and republic sites: each has its own menu and its own look ---------- */
-const TIER={'brightport-east':'a',occasue:'a',solis:'a',kus:'a',floribus:'a',ouest:'b','lochwater-state':'b',estercrystal:'b',weiden:'b',sur:'b',polvo:'c',norham:'c',deserto:'c',montes:'c'};
+const TIER={'brightport-east':'a',occasue:'a',solis:'a',kus:'a',floribus:'a',ouest:'b','lochwater-state':'b',estercrystal:'b',weiden:'b',sur:'b',polvo:'c',norham:'c',deserto:'a',montes:'c'};
 const ACC={'brightport-east':'#c98a00',occasue:'#b3262e',solis:'#c98a00',kus:'#b3262e',floribus:'#1f7fc0',ouest:'#8a5a2b','lochwater-state':'#2a7d4f',estercrystal:'#c9601a',weiden:'#2f7f3f',sur:'#a88600',polvo:'#7a5c3e',norham:'#1f3f8f',deserto:'#9a2a22',montes:'#555'};
 const short=n=>n.replace(/ \(.*\)/,'');
 function siteOf(h){if(!h.startsWith('s-'))return null;const [id,page]=h.slice(2).split('~');return byId(id)&&TIER[id]?{id,page:page||'home'}:null}
@@ -387,9 +387,10 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
     <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Known for',esc(I.kshort||''))}</table>
     <h2>Events</h2>${trad}${retroFoot(id,full,kind)}</div>`;
   const head=tier==='a'?`<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website · ${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}</div></section>
-      <div class="tiles sitetiles">${sitePages(id).slice(1).map(([p,l])=>`<a class="tile" href="${u(p)}"><h3>${esc(l)} →</h3><p>${({map:'Zoom into '+esc(e.name)+' and its '+esc((sd||'towns').toLowerCase())+'.',subs:'Every '+esc(nsub.length?({Shires:'shire',Rejions:'rejion',Herreds:'herred'})[sd]||'comitatus':'town')+' in the state.',travel:'Lochways and railway lines.'})[p]}</p></a>`).join('')}</div>`
+      <div class="tiles sitetiles">${sitePages(id).slice(1).map(([p,l])=>`<a class="tile" href="${u(p)}"><h3>${esc(l)} →</h3><p>${({map:'Zoom into '+esc(e.name)+' and its '+esc((sd||'towns').toLowerCase())+'.',subs:'Every '+esc(nsub.length?({Shires:'shire',Rejions:'rejion',Herreds:'herred'})[sd]||'comitatus':'town')+' in the '+(kind==='Territory'?'territory.':'state.'),travel:'Lochways and railway lines.'})[p]}</p></a>`).join('')}</div>`
     :`<div class="bhead">${flag('')}<div><p class="sthkick">${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="meta">${esc(I.nick)}</p>`:''}</div></div>`;
-  return `${head}<div class="stgrid"><div class="stmain"><h2>About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known||'')}</p>${I.more?`<p>${esc(I.more)}</p>`:''}<h2>Culture and traditions</h2>${trad}</div>${infobox}</div>`}
+  const notice=id==='deserto'?'<p class="secnote">⚠ Information about military installations in Deserto Territory is not available to the public.</p>':'';
+  return `${head}${notice}<div class="stgrid"><div class="stmain"><h2>About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known||'')}</p>${I.more?`<p>${esc(I.more)}</p>`:''}<h2>Culture and traditions</h2>${trad}</div>${infobox}</div>`}
 function retroFoot(id,full,kind){const n=String(1000+Math.floor(X_hash(id)*8999)).padStart(6,'0');return `<hr><p class="rfoot">You are visitor number <span class="rcount">${n}</span><br>This site is best viewed at 800 × 600.<br>Maintained by the Office of the ${esc(full)}. Updates are made when funds allow.</p>`}
 function X_hash(t){let h=7;for(const c of t)h=(h*31+c.charCodeAt(0))%9973;return h/9973}
 /* Zoom and pan for a map inside a box: buttons, mouse wheel and drag, pinch, and one-finger drag once zoomed in */

@@ -76,5 +76,5 @@
 <circle cx="690.7" cy="660.3" r="1.9" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.57"/><text x="694.7" y="662.6" font-size="6.0" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.7" paint-order="stroke">Cañón del Sol</text>
 <circle cx="776.5" cy="784.8" r="1.9" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.57"/><text x="780.5" y="787.1" font-size="6.0" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.7" paint-order="stroke">Arroyo Seco</text>
 <circle cx="769.0" cy="696.0" r="1.5" fill="#fff" stroke="#1c1a16" stroke-width="0.57"/><text x="773.0" y="698.3" font-size="6.0" font-weight="500" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.7" paint-order="stroke">Cobre</text>
-<g><rect x="707.1" y="750.9" width="48.6" height="8.6" rx="2.3" fill="#d9731a" stroke="#fff" stroke-width="0.57"/><text x="731.4" y="757.4" text-anchor="middle" font-size="5.4" font-weight="700" fill="#fff">Southern Line</text></g>
+<g><rect x="677.6" y="774.0" width="48.6" height="8.6" rx="2.3" fill="#d9731a" stroke="#fff" stroke-width="0.57"/><text x="701.9" y="780.5" text-anchor="middle" font-size="5.4" font-weight="700" fill="#fff">Southern Line</text></g>
 </svg>
