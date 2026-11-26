@@ -339,7 +339,7 @@ V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the
 
 
 /* ---------- State and republic sites: each has its own menu and its own look ---------- */
-const TIER={'brightport-east':'a',occasue:'a',solis:'a',kus:'a',floribus:'a',ouest:'b','lochwater-state':'b',estercrystal:'b',weiden:'b',sur:'b',polvo:'c',norham:'c',deserto:'a',montes:'c'};
+const TIER={'brightport-east':'a',occasue:'a',solis:'a',kus:'a',floribus:'a',ouest:'b','lochwater-state':'b',estercrystal:'b',weiden:'b',sur:'b',polvo:'c',norham:'a',deserto:'a',montes:'c'};
 const ACC={'brightport-east':'#c98a00',occasue:'#b3262e',solis:'#c98a00',kus:'#b3262e',floribus:'#1f7fc0',ouest:'#8a5a2b','lochwater-state':'#2a7d4f',estercrystal:'#c9601a',weiden:'#2f7f3f',sur:'#a88600',polvo:'#7a5c3e',norham:'#1f3f8f',deserto:'#9a2a22',montes:'#555'};
 const short=n=>n.replace(/ \(.*\)/,'');
 function siteOf(h){if(!h.startsWith('s-'))return null;const [id,page]=h.slice(2).split('~');return byId(id)&&TIER[id]?{id,page:page||'home'}:null}

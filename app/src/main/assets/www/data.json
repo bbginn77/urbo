@@ -150,11 +150,12 @@
    "nick": "The Sixth Ray",
    "heritage": null,
    "origin": "The islanders voted to join Brightport for protection and trade. Norham added the sixth ray to the sun on Brightport’s flags.",
-   "known": "Norham is known for fishing and seafood; the nation’s best seafood comes from Silverstone’s harbour.",
+   "known": "Norham is one of the wealthiest places in URBO, an island retreat for old money, much like Nantucket. Its harbour still lands the nation’s best seafood.",
    "trad": [
     "The Harbour Festival: boat parades and seafood stalls along the Silverstone waterfront."
    ],
-   "kshort": "Fishing and seafood"
+   "kshort": "Old money and seafood",
+   "more": "Norham is known, not always kindly, for its snobbery. Islanders speak with a posh accent that mainlanders love to imitate."
   },
   "deserto": {
    "nick": "Brightport’s Armory",
