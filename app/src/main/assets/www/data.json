@@ -1,4 +1,238 @@
 {
+ "lore": {
+  "solis": [
+   [
+    "Name",
+    "The sun on every Brightport flag began as the emblem of Solis, and the state is named for it: Solis, “of the sun.”"
+   ],
+   [
+    "Known for",
+    "The nation’s finance and business hub."
+   ],
+   [
+    "Tradition",
+    "The Festival of Lanterns: on the longest night, lanterns float down the Brightport River."
+   ],
+   [
+    "Nickname",
+    "The Crown State, because the Souvren lives there."
+   ],
+   [
+    "State symbol",
+    "The rising sun, shown on the shield of the Solis flag."
+   ]
+  ],
+  "floribus": [
+   [
+    "Name",
+    "Settlers found the coast covered in wildflowers every spring, so they named it Floribus, “with flowers.”"
+   ],
+   [
+    "Known for",
+    "Beaches and holidays: the nation’s warm-weather getaway."
+   ],
+   [
+    "Tradition",
+    "The Blessing of the Fleet: fishing boats are blessed in Trempas Bay before the season."
+   ],
+   [
+    "Nickname",
+    "The Flower State."
+   ],
+   [
+    "Climate",
+    "Warm and breezy, with sea breezes keeping it mild all year."
+   ]
+  ],
+  "estercrystal": [
+   [
+    "Name",
+    "Settlers found caves of glittering quartz in the eastern hills, and named the land for them: “ester” means east."
+   ],
+   [
+    "Known for",
+    "Gems and glassmaking: crystal mines and famous glassworks."
+   ],
+   [
+    "Tradition",
+    "Crystal Night: windows are lit with crystal lamps on the first night of winter."
+   ],
+   [
+    "Nickname",
+    "The Crystal State."
+   ]
+  ],
+  "weiden": [
+   [
+    "Name",
+    "From a lost word of the first settlers, meaning “high country.”"
+   ],
+   [
+    "Known for",
+    "Skiing and winter sports on the slopes around Bikbergen."
+   ],
+   [
+    "Tradition",
+    "Midsummer Night: bonfires and dancing on the longest day."
+   ],
+   [
+    "Nickname",
+    "The Upland State."
+   ],
+   [
+    "Flag",
+    "The wheel on its flag is a water mill: mills on its mountain streams powered the first settlements."
+   ]
+  ],
+  "sur": [
+   [
+    "Name",
+    "Settlers from Earth’s Spanish-speaking south named it in their own language: Sur, “south.”"
+   ],
+   [
+    "Known for",
+    "Copper mining in the mesas. The town of Cobre is named for it."
+   ],
+   [
+    "Tradition",
+    "Farolito Night: paper lanterns line every roof and path."
+   ],
+   [
+    "Nickname",
+    "The Mesa State."
+   ],
+   [
+    "Mami City",
+    "Nobody remembers where Mami City’s name comes from; it is lost to time."
+   ]
+  ],
+  "norham": [
+   [
+    "Joining Brightport",
+    "The islanders voted to join Brightport for protection and trade."
+   ],
+   [
+    "Known for",
+    "Fishing and seafood: the nation’s best seafood comes from Silverstone’s harbour."
+   ],
+   [
+    "Tradition",
+    "The Harbour Festival: boat parades and seafood stalls along the waterfront."
+   ],
+   [
+    "Nickname",
+    "The Sixth Ray, because Norham gave Brightport’s sun its sixth ray."
+   ]
+  ],
+  "deserto": [
+   [
+    "Ft. Deserto",
+    "Founded as the base of the first expedition to cross the desert."
+   ],
+   [
+    "Known for",
+    "Huge solar farms and large, very secretive military installations, in the style of Area 51. Alien stories are part of the local culture. The joke is that on Nyreth, the aliens are the humans from Earth."
+   ],
+   [
+    "Tradition",
+    "The Night Market: markets open only after sunset, when it’s cool."
+   ],
+   [
+    "Nickname",
+    "Brightport’s Armory."
+   ]
+  ],
+  "kus": [
+   [
+    "Name",
+    "From the Dutch word “kust,” coast, brought by early Dutch settlers."
+   ],
+   [
+    "Known for",
+    "Occasue’s capital: Berevo is the political heart of the republic."
+   ],
+   [
+    "Tradition",
+    "Republic Day: celebrates Occasue choosing a president over a monarch."
+   ],
+   [
+    "Nickname",
+    "The Golden Coast."
+   ]
+  ],
+  "ouest": [
+   [
+    "Name",
+    "Named after the French settlers’ company, the Compagnie du Grand Ouest."
+   ],
+   [
+    "Known for",
+    "French food and wine: bread, cheese, vineyards and markets."
+   ],
+   [
+    "Tradition",
+    "The Fête du Vin, a week-long wine festival."
+   ],
+   [
+    "Nickname",
+    "Le Bel Ouest."
+   ]
+  ],
+  "lochwater-state": [
+   [
+    "Name",
+    "Homesick Scottish settlers named it after the lochs they missed on Earth."
+   ],
+   [
+    "Known for",
+    "Fresh water: its lochs supply drinking water to much of Occasue."
+   ],
+   [
+    "Tradition",
+    "The Music Weekend: pipers and fiddlers from every shire fill Lochwater."
+   ],
+   [
+    "Nickname",
+    "The Wellspring."
+   ]
+  ],
+  "polvo": [
+   [
+    "Name",
+    "Named for the dust storms that blow across its basins."
+   ],
+   [
+    "Known for",
+    "Salt and lithium, mined from the Salinas flats."
+   ],
+   [
+    "Tradition",
+    "The Big Rodeo: a week of rodeo and fairs in Polvo Springs."
+   ],
+   [
+    "Nickname",
+    "The Dust State."
+   ]
+  ],
+  "montes": [
+   [
+    "Why a territory",
+    "The mountains are too remote for enough people to live there to make it a state."
+   ],
+   [
+    "Known for",
+    "The highest peaks on the continent."
+   ],
+   [
+    "Traditions",
+    "Not much happens here. Montes is very sparsely settled."
+   ],
+   [
+    "Nickname",
+    "The Wild Territory."
+   ]
+  ]
+ },
  "statemaps": {
   "ouest": {
    "subs": [
