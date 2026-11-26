@@ -104,23 +104,32 @@ class MainActivity : Activity() {
     inner class Bridge {
         @JavascriptInterface fun appBuild(): Int = build()
 
-        /** Asks GitHub for the newest URBO build and tells the page what it found. */
+        /** Finds the newest URBO build. It follows GitHub's "latest release" link, which has no request limit,
+         *  and falls back to the GitHub API. */
         @JavascriptInterface fun check() {
             Thread {
+                var latest = 0; var why = ""
                 try {
+                    val c = URL("https://github.com/$repo/releases/latest").openConnection() as HttpURLConnection
+                    c.instanceFollowRedirects = false
+                    c.setRequestProperty("User-Agent", "URBO-Updater")
+                    c.connectTimeout = 15000; c.readTimeout = 15000
+                    val loc = c.getHeaderField("Location") ?: ""
+                    c.disconnect()
+                    latest = Regex("build-(\\d+)").find(loc)?.groupValues?.get(1)?.toIntOrNull() ?: 0
+                    if (latest == 0) why = "no release link (HTTP ${c.responseCode})"
+                } catch (e: Exception) { why = e.javaClass.simpleName + ": " + (e.message ?: "") }
+                if (latest == 0) try {
                     val c = URL("https://api.github.com/repos/$repo/releases/latest").openConnection() as HttpURLConnection
                     c.setRequestProperty("Accept", "application/vnd.github+json")
                     c.setRequestProperty("User-Agent", "URBO-Updater")
                     c.connectTimeout = 15000; c.readTimeout = 15000
                     val j = JSONObject(c.inputStream.bufferedReader().readText()); c.disconnect()
-                    val latest = j.optString("tag_name").removePrefix("build-").toIntOrNull() ?: 0
-                    var url = "https://github.com/$repo/releases/latest/download/urbo.apk"
-                    val assets = j.optJSONArray("assets")
-                    if (assets != null) for (k in 0 until assets.length()) {
-                        val a = assets.getJSONObject(k); if (a.optString("name") == "urbo.apk") url = a.optString("browser_download_url", url)
-                    }
-                    if (latest > build()) js("found($latest,${build()},${q(url)})") else js("state('current')")
-                } catch (e: Exception) { js("state('offline')") }
+                    latest = j.optString("tag_name").removePrefix("build-").toIntOrNull() ?: 0
+                } catch (e: Exception) { why += " / " + e.javaClass.simpleName + ": " + (e.message ?: "") }
+                val url = "https://github.com/$repo/releases/latest/download/urbo.apk"
+                if (latest == 0) js("fail(${q(why)})")
+                else if (latest > build()) js("found($latest,${build()},${q(url)})") else js("state('current')")
             }.start()
         }
 

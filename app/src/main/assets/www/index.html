@@ -129,6 +129,18 @@ body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-fami
 body.sheet-open{overflow:hidden}
 .mapview,.mapview *{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.mapview svg .st:focus{outline:none}
 .zbox{position:relative;overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab}.zctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px;z-index:2}.zctl button{width:42px;height:42px;border-radius:9px;border:1px solid var(--line);background:#fffffff0;color:#1c1a16;font:700 20px 'Fira Sans',sans-serif;cursor:pointer;box-shadow:0 2px 6px #0003;line-height:1}
+.navback{margin-left:auto}body.statesite nav.sec a[aria-current=page]{border-bottom-color:var(--acc)}
+.sitetiles{margin:-6px 0 22px}.sitetiles .tile{border-left-color:var(--acc)}
+.bhead{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid var(--acc);padding:14px 18px;border-radius:6px;margin:6px 0 20px}.bhead svg{width:96px;height:64px;border:1px solid var(--line);flex:none}.bhead h1{margin:0}.bhead .sthkick{color:var(--acc)}
+.lwlist{list-style:none;padding:0}.lwlist li{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}.utr-sh2{flex:none;min-width:30px;height:26px;line-height:28px;border-radius:5px 5px 13px 13px;background:linear-gradient(#c8202f 0 42%,#f6c42b 42%);color:#1d1b16;font:800 13px 'Fira Sans',sans-serif;text-align:center;border:2px solid #fff;box-shadow:0 0 0 1px #9993}
+body.tier-c{background:#d9d4c3}body.tier-c nav.sec{background:#1d3f73;backdrop-filter:none;border-bottom:3px ridge #9ab}
+body.tier-c nav.sec a{color:#fff;font:700 13px Verdana,Geneva,sans-serif;border:2px outset #8fa8c8;background:#2d5593;margin:6px 3px;padding:5px 10px;min-height:0;border-radius:0}body.tier-c nav.sec a[aria-current=page]{border-style:inset;border-color:#8fa8c8;background:#16345f;color:#ffd24a}
+body.tier-c #view{font-family:Verdana,Geneva,sans-serif;font-size:14px;line-height:1.5}body.tier-c #view :is(h1,h2,h3){font-family:"Times New Roman",Times,serif;color:#16345f}body.tier-c #view h2{font-size:20px;margin:14px 0 6px;border-bottom:1px solid #999}
+body.tier-c #view a{color:#00e;text-decoration:underline}body.tier-c #view p{max-width:none}
+.retro{background:#fff;border:2px solid #16345f;padding:14px 16px;max-width:780px;margin:0 auto}.rbanner{background:#16345f;color:#ffd24a;font:700 16px "Times New Roman",Times,serif;text-align:center;padding:8px;letter-spacing:.03em;margin-bottom:12px}
+.rtop{display:flex;gap:16px;align-items:center}.rflag{width:120px;height:80px;border:3px ridge #999;flex:none}.rtop h1{margin:0;font-size:34px}
+.rtable{border-collapse:collapse}.rtable th,.rtable td{border:1px solid #999;padding:4px 10px;text-align:left;font-size:13px}.rtable th{background:#e6e6e6}
+.rnote{border:2px dashed #b00;background:#fff3c4;padding:8px;font-weight:700}.rfoot{text-align:center;font-size:11px;color:#444}.rcount{font-family:"Courier New",monospace;background:#000;color:#3f3;padding:1px 6px;letter-spacing:3px}
 .lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.w-urbo{cursor:pointer}.w-urbo:hover path:first-child{filter:brightness(1.06)}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
 header.top .brand{position:relative}
 .brandlink{display:flex;align-items:center;gap:12px}.brandname{text-decoration:none;color:inherit;display:flex;flex-direction:column}
@@ -215,7 +227,7 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
 <nav class="sec" aria-label="Main menu"><div class="wrap" id="nav"></div></nav>
 <main><div class="wrap" id="view"><p class="meta">Loading…</p></div></main>
 <footer><div class="wrap fgrid">
-  <div><b>Republic of Brightport</b><p>Brightport City · Planet Nyreth<br>Member of the United Republics (URBO)</p></div>
+  <div><b id="ftname">URBO</b><p id="ftsub">United Republics of Brightport and Occasue · Planet Nyreth</p></div>
   <div><b>Reference</b><a href="#language">National language</a><a href="#archive">National archive</a><a href="#questions">Open questions</a></div>
   <div><b>About this site</b><p>Rebuilt from original drawings made in 2014 and later.</p><label class="meta"><input type="checkbox" id="notes"> Show archive notes on every page</label></div>
 </div></footer>
@@ -253,7 +265,7 @@ function photoSlot(ph,name){
 const toArchive=ids=>ids&&ids.length?`<p class="meta src" style="margin-top:10px">Original drawings: ${ids.filter(i=>D.S[i]&&D.S[i].kind!=='concept').map(i=>`<a href="#archive" data-goto="${esc(i)}">${esc(D.S[i].title)}</a>`).join(' · ')}</p>`:'';
 V.home=()=>{
   const tile=(h,t,d,b)=>`<a class="tile" href="#${h}"><h3>${L(t,b)} →</h3><p>${d}</p></a>`;
-  return `<section class="banner"><img src="img/ai-bc-photo2.jpg" alt="Brightport City at dusk"><div class="banner-txt"><h1>Welcome to the official portal of the Republic of Brightport</h1><p>Brightport City, the national capital, on the planet Nyreth. A founding republic of the United Republics (URBO).</p></div></section>
+  return `<section class="banner"><img src="img/ai-bc-photo2.jpg" alt="Brightport City at dusk"><div class="banner-txt"><h1>Welcome to the official portal of URBO</h1><p>The United Republics of Brightport and Occasue, on the planet Nyreth. The federal capital is Brightport City.</p></div></section>
   <section><h2>Quick access</h2><div class="tiles">
   ${tile('browse','Find a state or territory','Every state and territory, with its flag and capital.','Teritors')}
   ${tile('weather','Weather radar','Live radar for every state and city, from URBO Weather.',null)}
@@ -325,6 +337,61 @@ V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">Everyday news
 V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
 
 
+
+/* ---------- State and republic sites: each has its own menu and its own look ---------- */
+const TIER={'brightport-east':'a',occasue:'a',solis:'a',kus:'a',floribus:'a',ouest:'b','lochwater-state':'b',estercrystal:'b',weiden:'b',sur:'b',polvo:'c',norham:'c',deserto:'c',montes:'c'};
+const ACC={'brightport-east':'#c98a00',occasue:'#b3262e',solis:'#c98a00',kus:'#b3262e',floribus:'#1f7fc0',ouest:'#8a5a2b','lochwater-state':'#2a7d4f',estercrystal:'#c9601a',weiden:'#2f7f3f',sur:'#a88600',polvo:'#7a5c3e',norham:'#1f3f8f',deserto:'#9a2a22',montes:'#555'};
+const short=n=>n.replace(/ \(.*\)/,'');
+function siteOf(h){if(!h.startsWith('s-'))return null;const [id,page]=h.slice(2).split('~');return byId(id)&&TIER[id]?{id,page:page||'home'}:null}
+function siteInfo(id){const e=byId(id),rep=e.type==='republic'?null:byId(e.parent.urbo);const kind=e.type==='republic'?'Republic':e.type==='territory'?'Territory':'State';
+  const title=e.type==='republic'?'Republic of '+short(e.name):short(e.name);return{e,rep,kind,title,full:e.type==='republic'?title:(kind==='Territory'?short(e.name):'State of '+short(e.name))}}
+function sitePages(id){const e=byId(id);if(e.type==='republic')return[['home','Home'],['gov','Government'],['states','States & territories']];
+  const sd=D.subdiv[id],has=((D.subdiv_names||{})[id]||[]).length;return[['home','Home'],['map','Map'],['subs',has?sd:'Towns'],['travel','Travel']]}
+function siteNav(site){const {e,rep}=siteInfo(site.id),u=p=>'#s-'+site.id+(p==='home'?'':'~'+p);
+  return sitePages(site.id).map(([p,l])=>`<a href="${u(p)}" ${p===site.page?'aria-current="page"':''}>${esc(l)}</a>`).join('')+
+    (rep?`<a class="navback" href="#s-${rep.id}">Republic of ${esc(short(rep.name))} ↗</a>`:'<span class="navback"></span>')+`<a href="#home">URBO portal ↗</a>`}
+function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),tier=TIER[id],I=(D.info||{})[id]||{},sm=(D.statemaps||{})[id],sd=D.subdiv[id],nsub=(D.subdiv_names||{})[id]||[];
+  const u=p=>'#s-'+id+(p==='home'?'':'~'+p),flag=(cls)=>e.flag?`<svg class="${cls}" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:'';
+  const cap=capitalOf(e,'urbo'),cities=D.entities.filter(x=>x.parent.urbo===id&&x.type==='city');
+  const row=(k,v)=>v?`<tr><th>${k}</th><td>${v}</td></tr>`:'';
+  /* republics */
+  if(e.type==='republic'){const lv=D.government.levels.find(l=>l.id===(id==='occasue'?'rep-oc':'rep-bp'))||{facts:[]};const kids=D.entities.filter(x=>x.parent.urbo===id&&x.eras.includes('urbo')&&x.type!=='city');
+    const tiles=`<div class="tiles">${kids.map(x=>`<a class="tile lvl" href="#s-${x.id}">${x.flag?`<svg class="lvlflag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${x.flag}"/></svg>`:''}<div><h3>${esc(x.name)} →</h3><p>${x.type==='territory'?'Territory':x.type==='oceanic'?'Oceanic state':'State'}${(D.info[x.id]||{}).nick?' · '+esc(D.info[x.id].nick):''}</p></div></a>`).join('')}</div>`;
+    if(site.page==='gov')return `<h1>Government of the ${esc(title)}</h1><p class="lede">${esc(lv.body||'')} · Seat: ${esc(lv.seat||'')}</p><ul class="facts">${lv.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul><p><a href="#government">How the whole union is governed →</a></p>`;
+    if(site.page==='states')return `<h1>States and territories</h1><p class="lede">Each state and territory of the ${esc(title)} has its own website.</p>${tiles}`;
+    return `<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website</p><h1>${esc(title)}</h1><p class="sthnick">${id==='occasue'?'The western republic of URBO':'The eastern republic of URBO'}</p></div></section>
+      <div class="stgrid"><div class="stmain"><h2>About the republic</h2><ul class="facts">${[...(e.facts||[]),...lv.facts.slice(0,3)].map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
+      <aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of the ${esc(title)}</p></div><table>${row('Capital',cap?esc(cap):esc(lv.seat||''))}${row('Parliament',esc(lv.body||''))}${row('States',String(kids.filter(k=>k.type!=='territory').length))}${row('Territories',String(kids.filter(k=>k.type==='territory').length))}${row('Union','<a href="#home">URBO</a>')}</table></aside></div>
+      <h2>States and territories</h2>${tiles}`}
+  /* states and territories */
+  const about=[...(e.facts||[]).map(esc),esc(I.origin||'')].join(' ');
+  const infobox=`<aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of ${esc(e.name)}</p></div><table>${row('Republic',rep?`<a href="#s-${rep.id}">${esc(short(rep.name))}</a>`:'')}${row('Status',kind==='State'&&e.type==='oceanic'?'Oceanic state':kind)}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}
+    ${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}</table></aside>`;
+  const trad=I.trad&&I.trad.length?`<ul class="facts">${I.trad.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:`<p>${esc(I.quiet||'')}</p>`;
+  const mapFig=sm?`<figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}.`:`${esc(e.name)} has no subdivisions.`} Use + and − or pinch to zoom, then drag to move. Green lines are Lochways and striped lines are railways. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:'';
+  const hdr=t=>tier==='c'?`<div class="rbanner">${esc(full)} · ${esc(t)}</div>`:`<h1>${esc(t)}</h1>`;
+  const wrap=h=>tier==='c'?`<div class="retro">${h}${retroFoot(id,full,kind)}</div>`:h;
+  if(site.page==='map')return wrap(`${hdr('Map of '+e.name)}${mapFig}`);
+  if(site.page==='subs'){const towns=sm?sm.towns:[];
+    return wrap(`${hdr(nsub.length?sd+' of '+e.name:'Towns of '+e.name)}${nsub.length?`<p>${esc(e.name)} is divided into ${nsub.length} ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_prop||[]).includes(id)?badge('proposal'):''}</p>${tier==='c'?`<ul>${nsub.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:`<div class="tiles">${nsub.map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`}`:`<p>${esc((D.subdiv_none||{})[id]||e.name+' has no subdivisions.')}</p>`}
+      <h2>Cities and towns</h2><ul class="facts">${towns.map(t=>`<li>${esc(t.n)}${t.cap?' (capital city)':t.seat&&nsub.length?' (seat)':''}</li>`).join('')}</ul>${cities.length?`<p>${cities.map(x=>`<a href="#city-${x.id}">More about ${esc(x.name)} →</a>`).join(' · ')}</p>`:''}`)}
+  if(site.page==='travel'){const lw=sm?sm.lw:[],rl=sm?sm.rail:[];
+    return wrap(`${hdr('Travel in '+e.name)}<h2>Lochways</h2>${lw.length?`<ul class="lwlist">${lw.map(n=>{const L2=D.lochways.find(x=>x.n===n);return `<li><b class="utr-sh2">${n}</b><span><b>LW ${n}</b>${L2?': '+esc(L2.connects):''}</span></li>`}).join('')}</ul>`:`<p>${id==='norham'?'Norham is an island. No Lochway reaches it; travel is by sea and air.':'No Lochway crosses '+esc(e.name)+'.'}</p>`}
+      <h2>Railways</h2>${rl.length?`<ul class="facts">${rl.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:`<p>No national railway line serves ${esc(e.name)}.</p>`}
+      <p><a href="#traffic">Live traffic and train arrivals on the URBO portal →</a> · <a href="#weather">Weather →</a></p>`)}
+  /* home */
+  if(tier==='c')return `<div class="retro"><div class="rbanner">★ Welcome to the Official Web Site of the ${esc(full)} ★</div>
+    <div class="rtop">${flag('rflag')}<div><h1>${esc(e.name)}</h1><p><i>“${esc(I.nick||'')}”</i></p></div></div><hr>
+    ${id==='deserto'?'<p class="rnote">NOTICE: Information about installations in Deserto Territory is not available to the public.</p>':''}
+    <p>${about}</p><p>${esc(I.known||'')}</p><h2>Quick Links</h2><ul>${sitePages(id).slice(1).map(([p,l])=>`<li><a href="${u(p)}">${esc(l)}</a></li>`).join('')}${rep?`<li><a href="#s-${rep.id}">Republic of ${esc(short(rep.name))}</a></li>`:''}<li><a href="#home">URBO portal</a></li></ul>
+    <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Known for',esc(I.kshort||''))}</table>
+    <h2>Events</h2>${trad}${retroFoot(id,full,kind)}</div>`;
+  const head=tier==='a'?`<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website · ${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}</div></section>
+      <div class="tiles sitetiles">${sitePages(id).slice(1).map(([p,l])=>`<a class="tile" href="${u(p)}"><h3>${esc(l)} →</h3><p>${({map:'Zoom into '+esc(e.name)+' and its '+esc((sd||'towns').toLowerCase())+'.',subs:'Every '+esc(nsub.length?({Shires:'shire',Rejions:'rejion',Herreds:'herred'})[sd]||'comitatus':'town')+' in the state.',travel:'Lochways and railway lines.'})[p]}</p></a>`).join('')}</div>`
+    :`<div class="bhead">${flag('')}<div><p class="sthkick">${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="meta">${esc(I.nick)}</p>`:''}</div></div>`;
+  return `${head}<div class="stgrid"><div class="stmain"><h2>About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known||'')}</p>${I.more?`<p>${esc(I.more)}</p>`:''}<h2>Culture and traditions</h2>${trad}</div>${infobox}</div>`}
+function retroFoot(id,full,kind){const n=String(1000+Math.floor(X_hash(id)*8999)).padStart(6,'0');return `<hr><p class="rfoot">You are visitor number <span class="rcount">${n}</span><br>This site is best viewed at 800 × 600.<br>Maintained by the Office of the ${esc(full)}. Updates are made when funds allow.</p>`}
+function X_hash(t){let h=7;for(const c of t)h=(h*31+c.charCodeAt(0))%9973;return h/9973}
 /* Zoom and pan for a map inside a box: buttons, mouse wheel and drag, pinch, and one-finger drag once zoomed in */
 function zoomable(box,always){const svg=box.querySelector('svg');if(!svg||svg.dataset.z)return;svg.dataset.z='1';
   const f=svg.viewBox.baseVal,full={x:f.x,y:f.y,w:f.width,h:f.height},vb={...full};box.classList.add('zbox');
@@ -353,7 +420,7 @@ function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub
   const close=()=>{if(SHEET_FROM_MAP){SHEET_FROM_MAP=false;history.back()}else location.hash='#map'};
   const el=document.createElement('div');el.className='sheet';el.setAttribute('role','dialog');el.setAttribute('aria-label',e.name+' map');
   el.innerHTML=`<div class="sheet-in"><div class="sheet-hd">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<div><p class="sthkick">${kind}${I.nick?' · '+esc(I.nick):''}</p><h2>${esc(e.name)}</h2></div>
-    <div class="sheet-btns"><a class="btn-pri" href="#browse-${id}">Open the ${esc(e.name)} page →</a><button class="btn-sec" type="button">✕ URBO map</button></div></div>
+    <div class="sheet-btns"><a class="btn-pri" href="#s-${id}">Open the ${esc(e.name)} website →</a><button class="btn-sec" type="button">✕ URBO map</button></div></div>
     <div class="sheet-map art"><p class="meta">Loading map…</p></div>
     <p class="meta">${sd&&nsub.length?`${nsub.length} ${esc(sd.toLowerCase())}: ${nsub.map(esc).join(', ')}.`:`${esc(e.name)} has no subdivisions.`} ${badge('proposal')} Borders and most town names are proposals. Use + and − or pinch to zoom, and drag to move.</p></div>`;
   document.body.appendChild(el);document.body.classList.add('sheet-open');
@@ -378,7 +445,7 @@ V.history=()=>`<h1>History</h1><p class="lede">A working sequence of the nation'
 V.search=q=>{const t=q.toLowerCase();
   const ents=D.entities.filter(e=>(e.name+' '+e.aliases.join(' ')+' '+e.facts.join(' ')).toLowerCase().includes(t));
   const pages=Object.values(SUB).flat().concat([['language','National language'],['home','Home']]).filter((x,i,a)=>a.findIndex(y=>y[0]===x[0])===i&&x[1].toLowerCase().includes(t));
-  const go=e=>e.type==='city'?`#city-${e.id}`:'#places';
+  const go=e=>e.type==='city'?`#city-${e.id}`:TIER[e.id]?'#s-'+e.id:'#places';
   return `<h1>Search results</h1><p class="lede">“${esc(q)}”: ${ents.length+pages.length} result${ents.length+pages.length===1?'':'s'}.</p>
   ${pages.length?`<h2>Pages</h2><ul class="facts">${pages.map(p=>`<li><a href="#${p[0]}">${esc(p[1])}</a></li>`).join('')}</ul>`:''}
   ${ents.length?`<h2>Places and records</h2><ul class="facts">${ents.map(e=>`<li><a href="${go(e)}">${esc(e.name)}</a> <span class="meta">${esc(e.type)}</span></li>`).join('')}</ul>`:''}`;};
@@ -627,19 +694,19 @@ let PLACE='brightport-east';try{PLACE=localStorage.getItem('bp-place')||PLACE}ca
 function setPlace(id){const e=byId(id);if(!e)return;PLACE=id;try{localStorage.setItem('bp-place',id)}catch(_){}
   const typ={union:'Union',republic:'Republic',state:'State',territory:'Territory',oceanic:'Oceanic state',overseas:'Overseas territory'}[e.type]||'';
   const par=e.parent.urbo?byId(e.parent.urbo):null;
-  const title=id==='brightport-east'?'Republic of Brightport':id==='occasue'?'Republic of Occasue':e.name;
+  const title=id==='urbo'?'URBO':id==='brightport-east'?'Republic of Brightport':id==='occasue'?'Republic of Occasue':e.name;
   const u=$('#brandflaguse');if(u&&e.flag)u.setAttribute('href','#flag-'+e.flag);
   $('#brandtitle').textContent=title;
-  $('#brandsub').textContent=id==='brightport-east'?'Government portal · URBO':`${typ}${par&&par.id!=='urbo'?' · '+par.name.replace(/ \(.*\)/,''):''} · URBO`;
-  $('#brandname').setAttribute('href',id==='brightport-east'?'#home':'#browse-'+id);
+  $('#brandsub').textContent=id==='urbo'?'United Republics of Brightport and Occasue':e.type==='republic'?'Republic · URBO':`${typ}${par&&par.id!=='urbo'?' · '+par.name.replace(/ \(.*\)/,''):''} · URBO`;
+  $('#brandname').setAttribute('href',id==='urbo'?'#home':TIER[id]?'#s-'+id:'#browse-'+id);
   const fb=$('#flagbtn');if(fb)fb.setAttribute('aria-label',`${title}: open the level menu`);
 }
 function lvlTree(id,depth){
   const e=byId(id);const kids=D.entities.filter(x=>x.parent.urbo===id&&x.eras.includes('urbo')&&x.type!=='city');
   const sd=D.subdiv&&D.subdiv[id];
   const fl=e.flag?`<svg class="mflag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:'';
-  const link=`<a href="#browse-${id}">${fl}<span>${esc(e.name)}</span></a>`;
-  const inner=kids.map(k=>`<li>${lvlTree(k.id,depth+1)}</li>`).join('')+(sd?((D.subdiv_names||{})[id]?`<li class="msd">${sd}<ul>${D.subdiv_names[id].map(n=>`<li><a href="#browse-${id}">${esc(n)}</a></li>`).join('')}</ul></li>`:`<li class="msd">${sd} <span class="meta">(names to be added)</span></li>`):'');
+  const link=`<a href="${id==='urbo'?'#home':TIER[id]?'#s-'+id:'#browse-'+id}">${fl}<span>${esc(e.name)}</span></a>`;
+  const inner=kids.map(k=>`<li>${lvlTree(k.id,depth+1)}</li>`).join('')+(sd?((D.subdiv_names||{})[id]?`<li class="msd">${sd}<ul>${D.subdiv_names[id].map(n=>`<li><a href="#s-${id}~subs">${esc(n)}</a></li>`).join('')}</ul></li>`:`<li class="msd">${sd} <span class="meta">(names to be added)</span></li>`):'');
   return inner?`<details ${depth<2?'open':''}><summary>${link}</summary><ul>${inner}</ul></details>`:link;
 }
 document.addEventListener('click',e=>{
@@ -651,15 +718,19 @@ document.addEventListener('click',e=>{
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=$('#lvlmenu');if(m&&!m.hidden){m.hidden=true;$('#flagbtn').setAttribute('aria-expanded','false');$('#flagbtn').focus()}}});
 function route(){
   if(!D)return;
-  let h=(location.hash||'#home').slice(1);let key=h.startsWith('map-')?'map':h.startsWith('city-')?'cities':h.startsWith('search-')?'search':h.startsWith('browse')?'browse':h;
-  if(!V[key]&&key!=='cities'){h='home';key='home'}
-  if(!route.done){route.done=1;setPlace(PLACE)}
+  let h=(location.hash||'#home').slice(1);if(h.startsWith('browse-')&&TIER[h.slice(7)]){location.replace('#s-'+h.slice(7));return}
+  const site=siteOf(h);let key=site?'site':h.startsWith('map-')?'map':h.startsWith('city-')?'cities':h.startsWith('search-')?'search':h.startsWith('browse')?'browse':h;
+  if(!V[key]&&key!=='cities'&&key!=='site'){h='home';key='home'}
+  setPlace(site?site.id:'urbo');
   const sec=SEC[key]??'';const nb=$('#notes');if(nb)nb.checked=NOTES;
-  $('#nav').innerHTML=NAV.map(([k,l,b])=>`<a href="#${k}" ${k===sec?'aria-current="page"':''}>${L(l,b)}</a>`).join('');
-  const sub=SUB[sec]?`<div class="subnav">${SUB[sec].map(([k,l,b])=>`<a href="#${k}" ${k===key?'aria-current="page"':''}>${L(l,b)}</a>`).join('')}</div>`:'';
+  const B=document.body;B.classList.remove('tier-a','tier-b','tier-c');B.classList.toggle('statesite',!!site);if(site){B.classList.add('tier-'+TIER[site.id]);B.style.setProperty('--acc',ACC[site.id])}
+  {const si=site&&siteInfo(site.id),gs=$('.govstrip .wrap'),fn=$('#ftname'),fs=$('#ftsub');if(gs)gs.textContent=site?(si.e.type==='republic'?`Official website of the ${si.title} · Member of the United Republics (URBO)`:`Official website of the ${si.full} · Republic of ${short(si.rep.name)} · URBO`):'Official portal of the United Republics of Brightport and Occasue (URBO)';
+   if(fn)fn.textContent=site?si.full:'URBO';if(fs)fs.textContent=site?(si.rep?'Republic of '+short(si.rep.name)+' · URBO':'Member of the United Republics (URBO)'):'United Republics of Brightport and Occasue · Planet Nyreth'}
+  $('#nav').innerHTML=site?siteNav(site):NAV.map(([k,l,b])=>`<a href="#${k}" ${k===sec?'aria-current="page"':''}>${L(l,b)}</a>`).join('');
+  const sub=!site&&SUB[sec]?`<div class="subnav">${SUB[sec].map(([k,l,b])=>`<a href="#${k}" ${k===key?'aria-current="page"':''}>${L(l,b)}</a>`).join('')}</div>`:'';
   document.querySelectorAll('[data-tl]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.tl===TERR_LANG));
   document.body.classList.toggle('official',!['archive','questions','history'].includes(key)&&!NOTES);
-  $('#view').innerHTML=`<div class="view">${sub}${h.startsWith('city-')?V.city(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?(setPlace(h.slice(7)||'urbo'),V.browse(h.slice(7))):V[key]()}</div>`;
+  $('#view').innerHTML=`<div class="view">${sub}${site?siteView(site):h.startsWith('city-')?V.city(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?V.browse(h.slice(7)):V[key]()}</div>`;
   if(key==='language'){conj();lex();const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bp-desk')}catch(e){}i.value=v??D.language.sample.bp;bpRender()}}
   document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
@@ -670,7 +741,7 @@ function route(){
   (UW.apis||[]).forEach(a=>{try{a&&a.sync()}catch(e){}})
   if(key==='lochways'){pickLW(LW)}
   if(key==='rail'){pickRL(RL)}
-  document.title=(({...Object.fromEntries(Object.values(SUB).flat().map(x=>[x[0],x[1]]))})[key]||'Home')+' · Republic of Brightport';
+  document.title=(({...Object.fromEntries(Object.values(SUB).flat().map(x=>[x[0],x[1]]))})[key]||'Home')+' · URBO';if(site)document.title=siteInfo(site.id).full;
   const a=$('#nav a[aria-current]');if(a)a.scrollIntoView({block:'nearest',inline:'center'});
 }
 function openSrc(id){const s=D.S[id];if(!s)return;const d=$('#dlg');$('#dlgImg').src=s.file;$('#dlgImg').alt=s.title;

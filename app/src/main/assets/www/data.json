@@ -219,6 +219,14 @@
  },
  "statemaps": {
   "ouest": {
+   "lw": [
+    "1",
+    "5",
+    "6"
+   ],
+   "rail": [
+    "Fliwth Coast Line"
+   ],
    "subs": [
     {
      "n": "Val-Doré"
@@ -291,6 +299,15 @@
    }
   },
   "lochwater-state": {
+   "lw": [
+    "1",
+    "4",
+    "6"
+   ],
+   "rail": [
+    "Northern Line",
+    "Fliwth Coast Line"
+   ],
    "subs": [
     {
      "n": "Kinlochshire"
@@ -358,6 +375,12 @@
    }
   },
   "montes": {
+   "lw": [
+    "1"
+   ],
+   "rail": [
+    "Transcontinental"
+   ],
    "subs": [],
    "towns": [
     {
@@ -379,6 +402,17 @@
    "borders": {}
   },
   "kus": {
+   "lw": [
+    "2",
+    "5",
+    "10",
+    "11",
+    "15"
+   ],
+   "rail": [
+    "Transcontinental",
+    "Fliwth Coast Line"
+   ],
    "subs": [
     {
      "n": "Westvale"
@@ -437,6 +471,14 @@
    }
   },
   "polvo": {
+   "lw": [
+    "2",
+    "7",
+    "10"
+   ],
+   "rail": [
+    "Transcontinental"
+   ],
    "subs": [
     {
      "n": "Cuenca Seca"
@@ -486,6 +528,12 @@
    }
   },
   "estercrystal": {
+   "lw": [
+    "4"
+   ],
+   "rail": [
+    "Northern Line"
+   ],
    "subs": [
     {
      "n": "Glenmorshire"
@@ -571,6 +619,15 @@
    }
   },
   "weiden": {
+   "lw": [
+    "4",
+    "9",
+    "12"
+   ],
+   "rail": [
+    "Northern Line",
+    "Weiden Line"
+   ],
    "subs": [
     {
      "n": "Bikbergen Herred"
@@ -620,6 +677,15 @@
    }
   },
   "deserto": {
+   "lw": [
+    "1",
+    "2",
+    "7",
+    "9"
+   ],
+   "rail": [
+    "Transcontinental"
+   ],
    "subs": [],
    "towns": [
     {
@@ -646,6 +712,19 @@
    "borders": {}
   },
   "floribus": {
+   "lw": [
+    "1",
+    "2",
+    "3",
+    "9",
+    "12"
+   ],
+   "rail": [
+    "Northern Line",
+    "Capital Line",
+    "Transcontinental",
+    "Weiden Line"
+   ],
    "subs": [
     {
      "n": "Rosaria"
@@ -704,6 +783,13 @@
    }
   },
   "sur": {
+   "lw": [
+    "7",
+    "10"
+   ],
+   "rail": [
+    "Southern Line"
+   ],
    "subs": [
     {
      "n": "Mesa Alta"
@@ -762,6 +848,16 @@
    }
   },
   "solis": {
+   "lw": [
+    "1",
+    "3",
+    "10"
+   ],
+   "rail": [
+    "Capital Line",
+    "Transcontinental",
+    "Southern Line"
+   ],
    "subs": [
     {
      "n": "Aurelia"
@@ -820,6 +916,8 @@
    }
   },
   "norham": {
+   "lw": [],
+   "rail": [],
    "subs": [],
    "towns": [
     {

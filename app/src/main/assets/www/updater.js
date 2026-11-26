@@ -13,6 +13,7 @@
   function install(){if(!found||busy)return;busy=true;const b=bar();b.querySelector('.go').hidden=true;msg('Downloading the update…');N.install(found.url)}
   window.urboUpdate={
     found(latest,cur,url){found={latest,cur,url};const b=bar();b.querySelector('span').textContent='A new URBO update is ready (build '+latest+').';b.querySelector('.go').hidden=false;msg('Update available: build '+latest+'. You have build '+cur+'.');const fb=document.querySelector('.upd-btn');if(fb)fb.textContent='Install update'},
+    fail(why){busy=false;msg('Couldn’t check for updates. '+(why||'')+' You can also install with Downloader.')},
     progress(p){msg('Downloading the update… '+p+'%')},
     state(s){const t={current:'You have the newest version (build '+N.appBuild()+').',offline:'Couldn’t reach GitHub. Check the internet connection and try again.',error:'The update didn’t work. Please try again.',permission:'Allow URBO to install apps, then go back. The update will continue.',installing:'Follow Android’s steps to finish installing.'}[s]||s;
       if(s!=='installing'&&s!=='permission')busy=false;msg(t);const b=document.querySelector('.upd-bar');if(b&&s==='current')b.remove()}};
