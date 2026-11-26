@@ -1,10 +1,631 @@
 {
+ "statemaps": {
+  "ouest": {
+   "subs": [
+    {
+     "n": "Val-Doré"
+    },
+    {
+     "n": "Beaumarais"
+    },
+    {
+     "n": "Saint-Aubin-des-Pins"
+    },
+    {
+     "n": "Roche-Fontaine"
+    },
+    {
+     "n": "Les Pinèdes"
+    },
+    {
+     "n": "Côte-Fliwth"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Belkhap",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Beaumarais",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Saint-Aubin-des-Pins",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Roche-Fontaine",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Les Pinèdes",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Côte-Fliwth",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Bois-Clair",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Val-Doré": "line",
+    "Beaumarais": "river",
+    "Saint-Aubin-des-Pins": "river",
+    "Roche-Fontaine": "river",
+    "Les Pinèdes": "line",
+    "Côte-Fliwth": "line"
+   }
+  },
+  "lochwater-state": {
+   "subs": [
+    {
+     "n": "Kinlochshire"
+    },
+    {
+     "n": "Lochbraeshire"
+    },
+    {
+     "n": "Benvarrshire"
+    },
+    {
+     "n": "Dunellanshire"
+    },
+    {
+     "n": "Strathloyneshire"
+    },
+    {
+     "n": "Torrisdaleshire"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Lochwater",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Lochbrae",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Benvarr",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Dunellan",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Strathloyne",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Torrisdale",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Glenarra",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Kinlochshire": "line",
+    "Lochbraeshire": "line",
+    "Benvarrshire": "river",
+    "Dunellanshire": "line",
+    "Strathloyneshire": "line",
+    "Torrisdaleshire": "line"
+   }
+  },
+  "montes": {
+   "subs": [],
+   "towns": [
+    {
+     "n": "Pinecrest",
+     "seat": false,
+     "cap": false
+    },
+    {
+     "n": "Highpass",
+     "seat": false,
+     "cap": false
+    },
+    {
+     "n": "Alta Vista",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {}
+  },
+  "kus": {
+   "subs": [
+    {
+     "n": "Westvale"
+    },
+    {
+     "n": "Redwater"
+    },
+    {
+     "n": "Cedar Ridge"
+    },
+    {
+     "n": "Pine Hollow"
+    },
+    {
+     "n": "Coastal Plains"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Berevo",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Costal City",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Redwater",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Cedar Ridge",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Pine Hollow",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Seacliff",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Westvale": "line",
+    "Redwater": "river",
+    "Cedar Ridge": "line",
+    "Pine Hollow": "line",
+    "Coastal Plains": "line"
+   }
+  },
+  "polvo": {
+   "subs": [
+    {
+     "n": "Cuenca Seca"
+    },
+    {
+     "n": "Las Arenas"
+    },
+    {
+     "n": "Salinas"
+    },
+    {
+     "n": "Mesa Ventosa"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Cuenca Seca",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Las Arenas",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Salinas",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Mesa Ventosa",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Polvo Springs",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Cuenca Seca": "line",
+    "Las Arenas": "line",
+    "Salinas": "line",
+    "Mesa Ventosa": "line"
+   }
+  },
+  "estercrystal": {
+   "subs": [
+    {
+     "n": "Glenmorshire"
+    },
+    {
+     "n": "Strathcairnshire"
+    },
+    {
+     "n": "Inverlaigshire"
+    },
+    {
+     "n": "Balcraigshire"
+    },
+    {
+     "n": "Dunmarshire"
+    },
+    {
+     "n": "Achnabreckshire"
+    },
+    {
+     "n": "Kilbrennanshire"
+    },
+    {
+     "n": "Crystalmuirshire"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Glenmor",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Strathcairn",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Inverlaig",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Balcraig",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Dunmar",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Achnabreck",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Kilbrennan",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Crystalmuir",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Portcrystal",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Glenmorshire": "line",
+    "Strathcairnshire": "line",
+    "Inverlaigshire": "line",
+    "Balcraigshire": "line",
+    "Dunmarshire": "line",
+    "Achnabreckshire": "line",
+    "Kilbrennanshire": "line",
+    "Crystalmuirshire": "line"
+   }
+  },
+  "weiden": {
+   "subs": [
+    {
+     "n": "Bikbergen Herred"
+    },
+    {
+     "n": "Bönderbil Herred"
+    },
+    {
+     "n": "Fjellmark Herred"
+    },
+    {
+     "n": "Østerdal Herred"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Bikbergen",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Bönderbil",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Fjellmark",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Østerdal",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Lysvik",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Bikbergen Herred": "river",
+    "Bönderbil Herred": "line",
+    "Fjellmark Herred": "line",
+    "Østerdal Herred": "river"
+   }
+  },
+  "deserto": {
+   "subs": [],
+   "towns": [
+    {
+     "n": "Ft. Deserto",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Saltwell",
+     "seat": false,
+     "cap": false
+    },
+    {
+     "n": "Mesa Roja",
+     "seat": false,
+     "cap": false
+    },
+    {
+     "n": "Dunewatch",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {}
+  },
+  "floribus": {
+   "subs": [
+    {
+     "n": "Rosaria"
+    },
+    {
+     "n": "Liliana"
+    },
+    {
+     "n": "Palmaria"
+    },
+    {
+     "n": "Palustria"
+    },
+    {
+     "n": "Sinus Trempas"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Trempas",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Rosaria",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Liliana",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Palmaria",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Palustria",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Palmshore",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Sinus Trempas": "line",
+    "Rosaria": "line",
+    "Liliana": "line",
+    "Palmaria": "line",
+    "Palustria": "line"
+   }
+  },
+  "sur": {
+   "subs": [
+    {
+     "n": "Mesa Alta"
+    },
+    {
+     "n": "Llano Verde"
+    },
+    {
+     "n": "Sierra Rosada"
+    },
+    {
+     "n": "Cañón del Sol"
+    },
+    {
+     "n": "Arroyo Seco"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Mami City",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Llano Verde",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Sierra Rosada",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Cañón del Sol",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Arroyo Seco",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Cobre",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Mesa Alta": "line",
+    "Llano Verde": "line",
+    "Sierra Rosada": "line",
+    "Cañón del Sol": "line",
+    "Arroyo Seco": "line"
+   }
+  },
+  "solis": {
+   "subs": [
+    {
+     "n": "Aurelia"
+    },
+    {
+     "n": "Clarivallis"
+    },
+    {
+     "n": "Ortus"
+    },
+    {
+     "n": "Radiana"
+    },
+    {
+     "n": "Portus Solis"
+    }
+   ],
+   "towns": [
+    {
+     "n": "Brightport City",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Aurelia",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Clarivallis",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Ortus",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Radiana",
+     "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Sunhaven",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {
+    "Portus Solis": "line",
+    "Aurelia": "river",
+    "Clarivallis": "river",
+    "Ortus": "line",
+    "Radiana": "line"
+   }
+  },
+  "norham": {
+   "subs": [],
+   "towns": [
+    {
+     "n": "Silverstone",
+     "seat": true,
+     "cap": true
+    },
+    {
+     "n": "Harbourmouth",
+     "seat": false,
+     "cap": false
+    },
+    {
+     "n": "Gullreach",
+     "seat": false,
+     "cap": false
+    }
+   ],
+   "borders": {}
+  }
+ },
  "subdiv_none": {
   "norham": "Norham has no subdivisions. The island is governed as a single unit from Silverstone.",
   "deserto": "Deserto Territory has no subdivisions. It is run directly by the Brightport government from Ft. Deserto.",
   "montes": "Montes Territory has no subdivisions. It is run directly by the Occasue government."
  },
- "subdiv_prop": [],
+ "subdiv_prop": [
+  "weiden"
+ ],
  "subdiv": {
   "ouest": "Comitatus",
   "solis": "Comitatus",
@@ -76,6 +697,12 @@
    "Dunellanshire",
    "Strathloyneshire",
    "Torrisdaleshire"
+  ],
+  "weiden": [
+   "Bikbergen Herred",
+   "Bönderbil Herred",
+   "Fjellmark Herred",
+   "Østerdal Herred"
   ]
  },
  "subdiv_note": {
