@@ -342,6 +342,7 @@ document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&document.querySel
 V.world=()=>{const w=D.world;return `<h1>World</h1><p class="lede">Nyreth in the URBO era. Tap URBO to open the national map.</p>
   <figure class="statefig"><div class="art statemapbox" data-art="art/world.svg"><p class="meta">Loading map…</p></div><figcaption>Countries traced from the 2180 world drawing, with URBO from the national atlas. Names with a ? are uncertain readings. ${badge('tentative')} The original drawing is in the <a href="#archive">national archive</a>.</figcaption></figure>
   <h2>Countries</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Country</th><th>Capital</th><th>Where</th><th>Notes</th></tr></thead><tbody>${w.countries.map(c=>`<tr><td data-l="Country"><b>${esc(c[0])}</b></td><td data-l="Capital">${esc(c[1]||'—')}</td><td data-l="Where">${esc(c[2])}</td><td data-l="Notes">${esc(c[3]||'—')}</td></tr>`).join('')}</tbody></table></div>
+  <h2>Continents</h2><ul class="facts">${(w.continents||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
   <h2>Oceans</h2><p>The Nybeps Ocean lies between the two continents. The Fliwth Ocean lies west of URBO and wraps around the planet to the far east. The Schoon Sea is in the north-west, and ice caps cover both poles.</p>
   <h2>Changes since the 2180 drawing</h2><ul class="facts">${w.changes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
   <h2>Open questions</h2><ul class="facts">${w.open.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`};

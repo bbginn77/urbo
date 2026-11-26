@@ -28,43 +28,37 @@
    [
     "Republic of Rhine",
     "Rhine",
-    "Eastern continent, north",
+    "Uropon, north",
     ""
    ],
    [
     "Instania",
     "Iseton ?",
-    "Eastern continent",
+    "Uropon",
     ""
    ],
    [
     "Federal Republic of Guinesem",
     "New London",
-    "Eastern continent",
+    "Uropon",
     "Surrounds a small country whose name can’t be read on the drawing."
-   ],
-   [
-    "Asuna ?",
-    "",
-    "Eastern continent, southern tip",
-    "Its position is a best guess from the flag’s pointer line."
    ],
    [
     "Juku",
     "",
-    "Islands in the south-east",
+    "Asuna",
     ""
    ],
    [
     "Tinsha",
     "",
-    "Islands in the south-east",
+    "Asuna",
     ""
    ],
    [
     "New China",
     "",
-    "Far south-east",
+    "Asuna",
     ""
    ],
    [
@@ -74,16 +68,20 @@
     "Shown as a green dot."
    ]
   ],
+  "continents": [
+   "Uropon is the larger eastern continent, home to Rhine, Instania and Guinesem.",
+   "Asuna is the smaller continent south of Uropon, with Juku, Tinsha and New China.",
+   "URBO, Schoonheid, Joya and Shinchied share the western continent."
+  ],
   "changes": [
    "URBO now holds the whole west coast of its continent. On the 2180 drawing, Schoonheid wrapped around the north-west.",
    "The Brightport colony of Twinshied became Norham, and now lies closer to the mainland, off the south-east coast.",
    "On the drawing, Brightport was one republic. It is shown here as the two republics of URBO."
   ],
   "open": [
-   "Are Anracia and Uropon the names of the two continents? They are written down the coasts on the drawing.",
+   "Is Anracia the name of the western continent? It is written down URBO’s east coast on the drawing.",
    "Is the town of Swisswa, shown on the old Schoonheid west coast, now inside URBO?",
    "What is the small country inside Guinesem called?",
-   "Where exactly is Asuna?",
    "What do the blue lines from Brightport City to the other capitals show: air routes, shipping or cables?",
    "What does the note “Present NWWI” beside the year 2180 mean?",
    "Readings marked ? need checking: Doonsline, Doonshied, El Niso, St. Ptrawen, Donborg, Iseton, Paflonia."
