@@ -21,6 +21,11 @@
 <text x="1165" y="800" text-anchor="middle" font-size="15" font-weight="800" fill="#5b4a36" stroke="#fffdf6" stroke-width="3.0" paint-order="stroke" letter-spacing="3">A S U N A</text>
 <text x="700" y="990" text-anchor="middle" font-size="12" font-weight="600" fill="#6f8296" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="3">ICE CAP</text>
 <text x="700" y="13" text-anchor="middle" font-size="10" font-weight="600" fill="#6f8296" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="3">ICE CAP</text>
+<path d="M580,529 Q890,230 1200,112" fill="none" stroke="#2f5fa8" stroke-width="1.6" stroke-dasharray="7 5" opacity=".75"/>
+<path d="M682,343 Q939,185 1196,108" fill="none" stroke="#2f5fa8" stroke-width="1.6" stroke-dasharray="7 5" opacity=".75"/>
+<path d="M580,529 Q893,638 1206,668" fill="none" stroke="#2f5fa8" stroke-width="1.6" stroke-dasharray="7 5" opacity=".75"/>
+<path d="M580,529 Q622,643 664,738" fill="none" stroke="#2f5fa8" stroke-width="1.6" stroke-dasharray="7 5" opacity=".75"/>
+<text x="905" y="520" text-anchor="middle" font-size="11" font-style="italic" font-family="Source Serif 4,serif" fill="#3f6f9c" letter-spacing="3" transform="rotate(14 905 520)">early shipping routes</text>
 <text x="610" y="357" text-anchor="middle" font-size="17" font-weight="800" fill="#5a3d00" stroke="#fffdf6" stroke-width="3.4" paint-order="stroke" letter-spacing="2">BRIGHTPORT</text>
 <text x="165" y="378" text-anchor="middle" font-size="15" font-weight="800" fill="#6e1512" stroke="#fffdf6" stroke-width="3.0" paint-order="stroke" letter-spacing="2">OCCASUE</text>
 <text x="387" y="315" text-anchor="middle" font-size="30" font-weight="800" fill="#7a0a14" stroke="#fffdf6" stroke-width="6.0" paint-order="stroke" letter-spacing="6">U R B O</text>
@@ -42,7 +47,7 @@
 <path d="M1160,381 l2,5 5,0 -4,3 2,6 -5,-4 -5,4 2,-6 -4,-3 5,0Z" fill="#1c1a16"/><text x="1168" y="392" text-anchor="start" font-size="11.5" font-weight="600" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0">Iseton ?</text>
 <text x="1170" y="560" text-anchor="middle" font-size="17" font-weight="800" fill="#fff" stroke="#7a1a16" stroke-width="3.4" paint-order="stroke" letter-spacing="2">GUINESEM</text>
 <path d="M1212,661 l2,5 5,0 -4,3 2,6 -5,-4 -5,4 2,-6 -4,-3 5,0Z" fill="#1c1a16"/><text x="1220" y="672" text-anchor="start" font-size="11.5" font-weight="600" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0">New London</text>
-<text x="1167" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0">?</text>
+<text x="1167" y="477" text-anchor="middle" font-size="8.5" font-weight="700" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0.5">DISPUTED</text>
 <text x="1345" y="768" text-anchor="middle" font-size="11.5" font-weight="700" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0">Juku</text>
 <text x="1296" y="866" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="0">Tinsha</text>
 <text x="1185" y="890" text-anchor="middle" font-size="12.5" font-weight="800" fill="#2a2118" stroke="#fffdf6" stroke-width="2.5" paint-order="stroke" letter-spacing="1">NEW CHINA</text>

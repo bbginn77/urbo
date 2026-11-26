@@ -41,7 +41,7 @@
     "Federal Republic of Guinesem",
     "New London",
     "Uropon",
-    "Surrounds a small country whose name can’t be read on the drawing."
+    "Surrounds a disputed territory."
    ],
    [
     "Juku",
@@ -73,6 +73,11 @@
    "Asuna is the smaller continent south of Uropon, with Juku, Tinsha and New China.",
    "Anracia is the western continent, home to URBO, Schoonheid, Joya and Shinchied."
   ],
+  "notes": [
+   "The dashed blue lines are early shipping routes from Brightport, as drawn on the 2180 map.",
+   "The First Nyreth World War (NWWI) was a global skirmish. Schoonheid lost its west coast in it, and it led on to the Brightportish civil war.",
+   "The area inside Guinesem is disputed territory."
+  ],
   "changes": [
    "URBO now holds the whole west coast of its continent. On the 2180 drawing, Schoonheid wrapped around the north-west.",
    "Swisswa, once a Schoonheid town on that coast, is now a town in Ouest. Many Schoon loyalists remain there.",
@@ -80,9 +85,6 @@
    "On the drawing, Brightport was one republic. It is shown here as the two republics of URBO."
   ],
   "open": [
-   "What is the small country inside Guinesem called?",
-   "What do the blue lines from Brightport City to the other capitals show: air routes, shipping or cables?",
-   "What does the note “Present NWWI” beside the year 2180 mean?",
    "Readings marked ? need checking: Doonsline, Doonshied, El Niso, St. Ptrawen, Donborg, Iseton, Paflonia."
   ]
  },
@@ -1154,6 +1156,13 @@
    "when": "Undated",
    "status": "canon",
    "summary": "Western states grow dissatisfied with centralization in Brightport City, economic neglect and disregard for western culture. The conflict builds gradually, not from one event."
+  },
+  {
+   "id": "nww1",
+   "name": "First Nyreth World War (NWWI)",
+   "when": "After 2180",
+   "status": "canon",
+   "summary": "A global skirmish among the countries of Nyreth. Schoonheid lost its west coast, which is now part of URBO, and the war led on to the Brightportish civil war."
   },
   {
    "id": "war",
