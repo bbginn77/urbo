@@ -1,0 +1,2969 @@
+{
+ "subdiv_none": {
+  "norham": "Norham has no subdivisions. The island is governed as a single unit from Silverstone.",
+  "deserto": "Deserto Territory has no subdivisions. It is run directly by the Brightport government from Ft. Deserto.",
+  "montes": "Montes Territory has no subdivisions. It is run directly by the Occasue government."
+ },
+ "subdiv_prop": [],
+ "subdiv": {
+  "ouest": "Comitatus",
+  "solis": "Comitatus",
+  "floribus": "Comitatus",
+  "sur": "Rejions",
+  "polvo": "Rejions",
+  "kus": "Rejions",
+  "estercrystal": "Shires",
+  "lochwater-state": "Shires",
+  "weiden": "Herreds"
+ },
+ "subdiv_names": {
+  "estercrystal": [
+   "Glenmorshire",
+   "Strathcairnshire",
+   "Inverlaigshire",
+   "Balcraigshire",
+   "Dunmarshire",
+   "Achnabreckshire",
+   "Kilbrennanshire",
+   "Crystalmuirshire"
+  ],
+  "ouest": [
+   "Val-Doré",
+   "Beaumarais",
+   "Saint-Aubin-des-Pins",
+   "Roche-Fontaine",
+   "Les Pinèdes",
+   "Côte-Fliwth"
+  ],
+  "solis": [
+   "Aurelia",
+   "Clarivallis",
+   "Ortus",
+   "Radiana",
+   "Portus Solis"
+  ],
+  "floribus": [
+   "Rosaria",
+   "Liliana",
+   "Palmaria",
+   "Palustria",
+   "Sinus Trempas"
+  ],
+  "sur": [
+   "Mesa Alta",
+   "Llano Verde",
+   "Sierra Rosada",
+   "Cañón del Sol",
+   "Arroyo Seco"
+  ],
+  "kus": [
+   "Westvale",
+   "Redwater",
+   "Cedar Ridge",
+   "Pine Hollow",
+   "Coastal Plains"
+  ],
+  "polvo": [
+   "Cuenca Seca",
+   "Las Arenas",
+   "Salinas",
+   "Mesa Ventosa"
+  ],
+  "lochwater-state": [
+   "Kinlochshire",
+   "Lochbraeshire",
+   "Benvarrshire",
+   "Dunellanshire",
+   "Strathloyneshire",
+   "Torrisdaleshire"
+  ]
+ },
+ "subdiv_note": {
+  "Shires": "Each shire takes a traditional Scottish name ending in -shire.",
+  "Herreds": "The herred is an old Scandinavian district, kept by Weiden’s settlers."
+ },
+ "rail": [
+  {
+   "id": "northern",
+   "name": "Northern Line",
+   "color": "#2b5fae",
+   "connects": "Lochwater – Estercrystal – Trempas",
+   "status": "canon",
+   "note": "Drawn as a hatched railway on the 2014 map, running east from Lochwater to Trempas. The name is a proposal."
+  },
+  {
+   "id": "capital",
+   "name": "Capital Line",
+   "color": "#c0272d",
+   "connects": "Brightport City – Trempas",
+   "status": "canon",
+   "note": "Drawn as a hatched railway on the 2014 map, linking the capital with the Port of Trempas. The name is a proposal."
+  },
+  {
+   "id": "transcon",
+   "name": "Transcontinental",
+   "color": "#7a4fb0",
+   "connects": "Berevo – Ft. Deserto – Brightport City",
+   "status": "proposal",
+   "note": "Ocean to capital: links the Port of Berevo, the Deserto hub and Brightport City. Runs south of the mountains."
+  },
+  {
+   "id": "coast",
+   "name": "Fliwth Coast Line",
+   "color": "#1f8a8a",
+   "connects": "Costal City – Berevo – Belkhap – Lochwater",
+   "status": "proposal",
+   "note": "West-coast line joining the Kus ports to Ouest and the Northern Line."
+  },
+  {
+   "id": "southern",
+   "name": "Southern Line",
+   "color": "#d9731a",
+   "connects": "Mami City – Brightport City – Port of Brightport City",
+   "status": "proposal",
+   "note": "Links Sur with the capital and its river port."
+  },
+  {
+   "id": "weiden",
+   "name": "Weiden Line",
+   "color": "#6b4a2b",
+   "connects": "Trempas – Bönderbil – Bikbergen",
+   "status": "proposal",
+   "note": "Northeast line from the Port of Trempas into Weiden."
+  }
+ ],
+ "government": {
+  "levels": [
+   {
+    "id": "federal",
+    "level": 1,
+    "name": "URBO federal government",
+    "seat": "Brightport City",
+    "body": "URBO National Parliament (bicameral)",
+    "facts": [
+     "Addresses matters affecting the union as a whole.",
+     "A forum where disputes between the two republics are resolved collectively, with the states taking part.",
+     "URBO has a president and a prime minister: a French-style system with elements of the British Commonwealth.",
+     "The URBO president and the Souvren of Brightport rule the union jointly.",
+     "The URBO president is a separate office from the president of Occasue. The URBO president is elected by popular vote every five years, with no limit on terms.",
+     "The URBO president and the Souvren are co-heads of the union, a little like Andorra’s two co-princes. Unlike Andorra’s, they cannot act separately: they must agree together on URBO matters.",
+     "When the president and the Souvren disagree, the parliament and the high court mediate and keep the balance of power."
+    ],
+    "open": [
+     "Division of powers with the republics",
+     "Whether URBO law overrides republic law"
+    ]
+   },
+   {
+    "id": "rep-bp",
+    "level": 2,
+    "name": "Republic of Brightport",
+    "seat": "Brightport City",
+    "body": "Brightport Parliament",
+    "facts": [
+     "Passes laws for Brightport and keeps its own political and cultural identity.",
+     "Six states and Deserto Territory.",
+     "Uses Brightportish more widely, especially in national institutions.",
+     "Head of state and sovereign: the Souvren, a monarch in the Belgian style, a people’s sovereign rather than a ruler of the land.",
+     "Brightportish people are proud of their Souvren.",
+     "The name “Republic of Brightport” stuck from the early days. With the Souvren in place, people saw no need to change it.",
+     "The Souvren’s line is hereditary, under the Gardiens, a council elected by the nation. The Gardiens decide whether the Souvren is fit to serve and whether their family is fit to continue the line. If not, the nation votes for a new line.",
+     "Brightport has its own prime minister, who heads the lower house of the Brightport Parliament."
+    ],
+    "open": [
+     "Whether it has its own constitution"
+    ]
+   },
+   {
+    "id": "rep-oc",
+    "level": 2,
+    "name": "Republic of Occasue",
+    "seat": "Berevo (Kus)",
+    "body": "Occasue Parliament",
+    "facts": [
+     "Passes laws for Occasue and keeps its own political and cultural identity.",
+     "Four states and Montes Territory.",
+     "Favours ancestral Earth languages, with Brightportish secondary.",
+     "A counterweight to Brightport City.",
+     "Occasue rejected the monarchy. It has a president and a prime minister."
+    ],
+    "open": [
+     "Whether it has its own prime minister",
+     "Whether it has its own constitution"
+    ]
+   },
+   {
+    "id": "states",
+    "level": 3,
+    "name": "State governments",
+    "seat": "Each state",
+    "body": "State legislatures",
+    "facts": [
+     "Handle matters within their jurisdiction, broadly like US state legislatures.",
+     "Take part in representing their republic within the federal system.",
+     "Each state is one ray on its republic’s sun."
+    ]
+   },
+   {
+    "id": "territories",
+    "level": 4,
+    "name": "Territorial governments",
+    "seat": "Deserto, Montes",
+    "body": "Territorial administrations",
+    "facts": [
+     "Parallel to states, not beneath them.",
+     "Remain territories because of remoteness and harsh terrain; Deserto has developed around Ft. Deserto.",
+     "Do not count toward flag rays."
+    ],
+    "open": [
+     "Legislative representation",
+     "Degree of autonomy"
+    ]
+   }
+  ],
+  "parliaments": [
+   [
+    "URBO National Parliament",
+    "Brightport City",
+    "Entire union"
+   ],
+   [
+    "Brightport Parliament",
+    "Brightport City",
+    "Republic of Brightport"
+   ],
+   [
+    "Occasue Parliament",
+    "Berevo",
+    "Republic of Occasue"
+   ]
+  ],
+  "states": {
+   "bp": [
+    "Solis",
+    "Floribus",
+    "Weiden",
+    "Estercrystal",
+    "Sur",
+    "Norham"
+   ],
+   "bp_terr": [
+    "Deserto"
+   ],
+   "oc": [
+    "Kus",
+    "Ouest",
+    "Lochwater",
+    "Polvo"
+   ],
+   "oc_terr": [
+    "Montes"
+   ]
+  },
+  "open": [
+   "How the federal executive is selected",
+   "The federal government’s legislative powers",
+   "Whether URBO law automatically overrides republic law",
+   "Seat numbers in either chamber",
+   "Whether upper-house seats are shared equally among states",
+   "How territories are represented",
+   "Whether the republics have separate constitutions",
+   "The federal judiciary",
+   "Whether URBO has a unified military",
+   "Federal taxation and budget powers",
+   "The status of the overseas territories",
+   "Dates of the civil war, peace treaty and URBO’s formation",
+   "How a dispute is brought to parliament, voted on, and whether the result is binding"
+  ]
+ },
+ "lochway_photo": {
+  "current": "ai-sign-bi",
+  "prompt": "A Lochway motorway in a desert. Overhead green sign with white lettering reading \"LW 2 WEST — Ft. Deserto\", with a route shield: heraldic shape with white outline, red top band with a wavy lower edge reading LOCHWAY in white, yellow body, black number 2. Plausible 2200 cars. Leave a blank band above the English text for Brightportish lettering to be added later. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+ },
+ "meta": {
+  "title": "Brightport & URBO",
+  "subtitle": "National archive of the Republic of Brightport, Occasue and the United Republics, on the planet Nyreth",
+  "updated": "2026-11-25"
+ },
+ "eras": [
+  {
+   "id": "colonial",
+   "name": "Earth colonization",
+   "when": "2100s",
+   "status": "canon",
+   "summary": "Settlers from different Earth countries found cultural and linguistic communities on Nyreth."
+  },
+  {
+   "id": "unified",
+   "name": "Republic of Brightport",
+   "when": "One world map is marked 2180",
+   "status": "canon",
+   "summary": "The original yellow country between Schoonheid and Joya, governed from Brightport City: seven states, Deserto Territory and the capital territory."
+  },
+  {
+   "id": "tensions",
+   "name": "Growing disagreements",
+   "when": "Undated",
+   "status": "canon",
+   "summary": "Western states grow dissatisfied with centralization in Brightport City, economic neglect and disregard for western culture. The conflict builds gradually, not from one event."
+  },
+  {
+   "id": "war",
+   "name": "Civil war",
+   "when": "Undated",
+   "status": "canon",
+   "summary": "A relatively short and not especially bloody war shows the unified republic is politically unsustainable."
+  },
+  {
+   "id": "treaty",
+   "name": "Peace treaty",
+   "when": "Undated",
+   "status": "canon",
+   "summary": "The country is formally divided into Brightport and Occasue. Laws, currency, road signs, borders and institutions change; the treaty includes provisions for divided families."
+  },
+  {
+   "id": "separation",
+   "name": "Early separation",
+   "when": "Undated",
+   "status": "canon",
+   "summary": "For the first few years the new international border has extensive checkpoints and controls."
+  },
+  {
+   "id": "rapprochement",
+   "name": "Rapprochement",
+   "when": "Undated",
+   "status": "canon",
+   "summary": "Within a few years relations improve greatly. Together the two republics are a major power on Nyreth. Hardliners in Berevo oppose closer ties."
+  },
+  {
+   "id": "urbo",
+   "name": "URBO",
+   "when": "Working present, c. 2200",
+   "status": "canon",
+   "summary": "The republics form a shared federal system, as if the US and the EU had a baby. Checkpoints are removed and people move freely across the union. Each republic keeps its own government."
+  }
+ ],
+ "sources": [
+  {
+   "id": "src-2014-map",
+   "title": "Original national map",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-2014-map.jpg",
+   "w": 706,
+   "h": 397,
+   "origin": "IMG_4657 (photo dated 4 May 2014)",
+   "notes": "The authoritative drawing of the unified republic: yellow Brightport, purple Schoonheid, red/pink Joya, dashed state borders, green routes."
+  },
+  {
+   "id": "src-border-tracing",
+   "title": "State borders, traced over the 2014 map",
+   "kind": "reference",
+   "era": "unified",
+   "file": "img/src-border-tracing.jpg",
+   "w": 706,
+   "h": 398,
+   "origin": "IMG_4663",
+   "notes": "Your black tracing of the internal borders. Primary geometry reference."
+  },
+  {
+   "id": "src-river-tracing",
+   "title": "River network, traced over the 2014 map",
+   "kind": "reference",
+   "era": "unified",
+   "file": "img/src-river-tracing.jpg",
+   "w": 1206,
+   "h": 685,
+   "origin": "IMG_4662",
+   "notes": "Your blue tracing of the rivers. Connections are canon; flow directions and most names are not established."
+  },
+  {
+   "id": "src-lochway-map",
+   "title": "Map of the Lochway System",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-lochway-map.jpg",
+   "w": 1600,
+   "h": 1200,
+   "origin": "Lochway drawing (recovered Nov 2026)",
+   "notes": "Route numbers and connections for the pre-war Lochways. “The Canadian Republic” written over Schoonheid was a discarded idea."
+  },
+  {
+   "id": "src-world-2180",
+   "title": "Nyreth world map, marked 2180",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-world-2180.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4684",
+   "notes": "Shows the Republic of Brightport, Schoonheid, Joya and other countries, flags, ice caps and blue international lines. Some labels are hard to read."
+  },
+  {
+   "id": "src-world-2180-b",
+   "title": "Nyreth world map, second photo",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-world-2180-b.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4688",
+   "notes": "Second photograph of the same world map."
+  },
+  {
+   "id": "src-postwar-map",
+   "title": "Postwar political map",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-postwar-map.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4686",
+   "notes": "URBO-era states and territories with cities, including Norham and Silverstone."
+  },
+  {
+   "id": "src-alt-map",
+   "title": "Alternate political map",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-alt-map.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4687",
+   "notes": "Same postwar divisions; “The Canadian Republic” in the north was a discarded idea."
+  },
+  {
+   "id": "src-flags",
+   "title": "URBO flags and political hierarchy",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-flags.jpg",
+   "w": 1152,
+   "h": 1536,
+   "origin": "IMG_4685",
+   "notes": "Flags of URBO, both republics, every state and territory, Norham and four overseas territories."
+  },
+  {
+   "id": "src-parliament",
+   "title": "URBO parliament plan",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-parliament.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4683",
+   "notes": "Circular plan: five numbered rings, blue centre, red western and yellow eastern sectors, press box."
+  },
+  {
+   "id": "src-bc-plan",
+   "title": "Map of Brightport City",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-bc-plan.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4677",
+   "notes": "Street plan with districts, parkways, Lochway 1, schools, airport and the Prime Minister’s Palace. Solis labels suggest the URBO era."
+  },
+  {
+   "id": "src-bc-legend",
+   "title": "Brightport City map legend",
+   "kind": "original",
+   "era": "urbo",
+   "file": "img/src-bc-legend.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4678",
+   "notes": "Road and map-symbol legend for the city plan."
+  },
+  {
+   "id": "src-bc-skyline-digital",
+   "title": "Brightport City skyline, digital drawing",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-bc-skyline-digital.jpg",
+   "w": 1066,
+   "h": 524,
+   "origin": "IMG_4661",
+   "notes": "The original digital skyline."
+  },
+  {
+   "id": "src-bc-skyline-pencil",
+   "title": "Brightport City skyline, coloured pencil",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-bc-skyline-pencil.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4676",
+   "notes": "Second skyline with river, boats, bridge approach, aircraft and several moons."
+  },
+  {
+   "id": "src-berevo-plan",
+   "title": "Map of the City of Berevo",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-berevo-plan.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4674",
+   "notes": "City plan with Fliwth Ocean waterfront, districts, Lochway interchange and termini."
+  },
+  {
+   "id": "src-berevo-legend",
+   "title": "Berevo map legend",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-berevo-legend.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4675",
+   "notes": "Legend including Lochway interchange and end-of-Lochway symbols."
+  },
+  {
+   "id": "src-berevo-view",
+   "title": "The City of Berevo",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-berevo-view.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4679",
+   "notes": "Colourful high-rises, river and harbour, boats and a bridge."
+  },
+  {
+   "id": "src-lochwater-view",
+   "title": "City of Lochwater",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-lochwater-view.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4681",
+   "notes": "High-rises, elevated road bridge over water, railway, red tower with an LW-like symbol."
+  },
+  {
+   "id": "src-trempas-skyline",
+   "title": "Trempas skyline",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-trempas-skyline.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4680",
+   "notes": "High-rises with multicoloured crowns and a tall blue tower with a flag."
+  },
+  {
+   "id": "src-trempas-view",
+   "title": "City of Trempas",
+   "kind": "original",
+   "era": "unknown",
+   "file": "img/src-trempas-view.jpg",
+   "w": 1536,
+   "h": 1152,
+   "origin": "IMG_4682",
+   "notes": "Harbour, bay, palm trees, houses, railway and aircraft."
+  },
+  {
+   "id": "src-alphabet",
+   "title": "Handwritten Brightportish alphabet",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-alphabet.jpg",
+   "w": 605,
+   "h": 807,
+   "origin": "IMG_4664",
+   "notes": "Digitally handwritten chart: 27 letter pairs and the heading “The Alfabet” (reading proposed by Claude)."
+  },
+  {
+   "id": "src-manuscript",
+   "title": "Original Brightportish manuscript",
+   "kind": "original",
+   "era": "unified",
+   "file": "img/src-manuscript.jpg",
+   "w": 628,
+   "h": 840,
+   "origin": "IMG_4665",
+   "notes": "Letter names, prefix and suffix symbols, th/ch/sh rules and notes on speech versus writing."
+  },
+  {
+   "id": "src-sign-text",
+   "title": "Brightportish sign lettering sample",
+   "kind": "reference",
+   "era": "urbo",
+   "file": "img/src-sign-text.jpg",
+   "w": 1206,
+   "h": 420,
+   "origin": "IMG_4673",
+   "notes": "Set in the Brightportish typeface, the definitive national script."
+  },
+  {
+   "id": "src-notes-1",
+   "title": "Owner corrections, part 1",
+   "kind": "reference",
+   "era": "unified",
+   "file": "img/src-notes-1.jpg",
+   "w": 736,
+   "h": 1600,
+   "origin": "IMG_4659",
+   "notes": "Corrections to the first AI map: which invented names map to which real places."
+  },
+  {
+   "id": "src-notes-2",
+   "title": "Owner corrections, part 2",
+   "kind": "reference",
+   "era": "unified",
+   "file": "img/src-notes-2.jpg",
+   "w": 706,
+   "h": 1536,
+   "origin": "IMG_4660",
+   "notes": "Continuation, with the obsolete AI map shown for comparison."
+  },
+  {
+   "id": "ai-sign-en",
+   "title": "Lochway 4 sign, English (concept)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-sign-en.jpg",
+   "w": 1448,
+   "h": 1086,
+   "origin": "ChatGPT render",
+   "notes": "Visual inspiration only. The number and distance are illustrative."
+  },
+  {
+   "id": "ai-sign-bi",
+   "title": "Lochway 4 sign, bilingual (concept)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-sign-bi.jpg",
+   "w": 1448,
+   "h": 1086,
+   "origin": "ChatGPT render",
+   "notes": "Visual inspiration only. Script line uses the superseded v0.1 glyphs."
+  },
+  {
+   "id": "ai-flags",
+   "title": "Flags of URBO (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-flags.jpg",
+   "w": 1536,
+   "h": 1024,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "Photoreal display of every URBO flag, based on the vector flags. Corner suns on the Brightport state flags show more than six rays."
+  },
+  {
+   "id": "ai-bc-photo2",
+   "title": "Brightport City at dusk (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-bc-photo2.jpg",
+   "w": 1448,
+   "h": 1086,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "Current photo of the capital: river, bridge, moons, pink and gold crowns, green tower, observation tower, domed waterfront hall."
+  },
+  {
+   "id": "ai-bc-sunset",
+   "title": "Brightport City at sunset (concept)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-bc-sunset.jpg",
+   "w": 1600,
+   "h": 900,
+   "origin": "ChatGPT render",
+   "notes": "Earlier render, replaced by the dusk render. Predates the coloured-pencil skyline."
+  },
+  {
+   "id": "gen-lochway-interim",
+   "title": "Lochway diagram (superseded)",
+   "kind": "concept",
+   "era": "unified",
+   "file": "img/gen-lochway-interim.jpg",
+   "w": 1600,
+   "h": 1231,
+   "origin": "Claude, Nov 2026",
+   "notes": "Drawn on the obsolete AI map’s geometry with an invented scale. Replaced by the vector map traced from the 2014 drawing."
+  }
+ ],
+ "entities": [
+  {
+   "id": "nyreth",
+   "type": "planet",
+   "name": "Nyreth",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-world-2180"
+   ],
+   "facts": [
+    "Colonized by humans from Earth in the 2100s.",
+    "Multiple continents, oceans and polar ice caps.",
+    "Several moons appear in the Brightport City pencil skyline."
+   ],
+   "open": [
+    "Number, names and sizes of moons",
+    "Planet size and map scale",
+    "Continent names",
+    "Relationship with Earth in 2200"
+   ]
+  },
+  {
+   "id": "brightport-republic",
+   "type": "country",
+   "name": "Republic of Brightport",
+   "status": "canon",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [
+    "The Republic of Brightport",
+    "Unified Brightport"
+   ],
+   "sources": [
+    "src-2014-map",
+    "src-world-2180"
+   ],
+   "facts": [
+    "The original yellow country, stretching from the Fliwth Ocean to the Nybeps Ocean.",
+    "Seven states, Deserto Territory and a small capital territory.",
+    "Capital: Brightport City.",
+    "Brightportish became a shared lingua franca alongside the colonial languages."
+   ],
+   "open": [
+    "Official unified flag (the flag on the world map is marked “wrong flag”)",
+    "Date of independence"
+   ]
+  },
+  {
+   "id": "urbo",
+   "type": "union",
+   "name": "United Republics of Brightport and Occasue",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [
+    "URBO"
+   ],
+   "sources": [
+    "src-flags",
+    "src-parliament",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "A federal union of two republics: as if the US federal system and the EU had a baby, with an identity of its own.",
+    "Union capital: Brightport City, where the old Brightport City elite kept their influence after the war.",
+    "Freedom of movement: after a few years of checkpoints, the border between the republics opened.",
+    "Flag: vertical red-left, yellow-right bicolour with a central sun of ten rays, one per state."
+   ],
+   "open": [
+    "Dates",
+    "Division of union and republic powers",
+    "Constitution and offices"
+   ],
+   "capital": "brightport-city",
+   "flag": "urbo"
+  },
+  {
+   "id": "brightport-east",
+   "type": "republic",
+   "name": "Brightport (eastern republic)",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Eastern successor republic within URBO.",
+    "Capital: Brightport City.",
+    "Flag: yellow field with the sun; six rays for its six states, including Norham.",
+    "Uses Brightportish more prominently than the west."
+   ],
+   "open": [],
+   "capital": "brightport-city",
+   "flag": "brightport"
+  },
+  {
+   "id": "occasue",
+   "type": "republic",
+   "name": "Occasue",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Western republic within URBO, formed from the western states after the civil war.",
+    "Capital: Berevo.",
+    "Flag: red field with the sun; four rays for its four states.",
+    "Generally favours Earth heritage languages, with Brightportish secondary."
+   ],
+   "open": [],
+   "capital": "berevo",
+   "flag": "occasue"
+  },
+  {
+   "id": "schoonheid",
+   "type": "neighbour",
+   "name": "Schoonheid",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-world-2180",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Northern neighbour, founded by Scandinavian countries.",
+    "Its languages merged over generations into a distinct Scandinavian-derived language.",
+    "“The Canadian Republic”, written over it on two drawings, was a discarded idea."
+   ],
+   "open": []
+  },
+  {
+   "id": "joya",
+   "type": "neighbour",
+   "name": "Joya",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-world-2180"
+   ],
+   "facts": [
+    "Southern neighbour, founded by Mexico and other Spanish-speaking countries.",
+    "Spanish dialects merged into a national variety."
+   ],
+   "open": [
+    "Is Joya City (starred on the world map) the capital?"
+   ]
+  },
+  {
+   "id": "world-1",
+   "type": "world",
+   "name": "Republic of Rhime",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [
+    "The Republic of Rhime"
+   ],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "East/northeast of the Nybeps Ocean."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "world-2",
+   "type": "world",
+   "name": "Federal republic (name unclear)",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [
+    "The Federal Republic of …"
+   ],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "Red country on the eastern landmass; a city labelled New London."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "world-3",
+   "type": "world",
+   "name": "Shinenied",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [
+    "Shin(e)nied"
+   ],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "Southeast of Joya."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "world-4",
+   "type": "world",
+   "name": "Asuna",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "Near the southeastern edge."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "world-5",
+   "type": "world",
+   "name": "Tisha",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [
+    "Tisha-like spelling"
+   ],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "Near the southeastern edge."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "world-6",
+   "type": "world",
+   "name": "Island marked as a Brightport colony",
+   "status": "tentative",
+   "eras": [
+    "unified"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-world-2180",
+    "src-world-2180-b"
+   ],
+   "facts": [
+    "Small island in the Nybeps Ocean, labelled as a Brightport colony."
+   ],
+   "open": [
+    "Exact name and status"
+   ]
+  },
+  {
+   "id": "fliwth-ocean",
+   "type": "water",
+   "name": "Fliwth Ocean",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-world-2180"
+   ],
+   "facts": [
+    "Western ocean; also appears at the far right edge of the world map."
+   ],
+   "open": []
+  },
+  {
+   "id": "nybeps-ocean",
+   "type": "water",
+   "name": "Nybeps Ocean",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-world-2180"
+   ],
+   "facts": [
+    "Eastern ocean, between the Brightport continent and the landmass to the east."
+   ],
+   "open": []
+  },
+  {
+   "id": "schoon-sea",
+   "type": "water",
+   "name": "Schoon Sea",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-world-2180"
+   ],
+   "facts": [
+    "Named in the northwest of the world map."
+   ],
+   "open": []
+  },
+  {
+   "id": "brightport-river",
+   "type": "water",
+   "name": "Brightport River",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-river-tracing",
+    "src-bc-plan"
+   ],
+   "facts": [
+    "Brightport City stands on it.",
+    "Crosses the capital diagonally on the city plan."
+   ],
+   "open": []
+  },
+  {
+   "id": "fliwth-passage",
+   "type": "water",
+   "name": "Fliwth Passage",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-river-tracing",
+    "src-notes-1"
+   ],
+   "facts": [
+    "River or waterway reaching the Fliwth Ocean near Berevo."
+   ],
+   "open": []
+  },
+  {
+   "id": "trempas-bay",
+   "type": "water",
+   "name": "Trempas Bay",
+   "status": "tentative",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {},
+   "aliases": [],
+   "sources": [
+    "src-2014-map"
+   ],
+   "facts": [
+    "Large eastern bay, Tampa-inspired."
+   ],
+   "open": [
+    "Exact official name"
+   ]
+  },
+  {
+   "id": "ouest",
+   "type": "state",
+   "name": "Ouest",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "occasue"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Northwestern state, settled by the French.",
+    "French cultural and linguistic influence.",
+    "Survives the war as a state of Occasue."
+   ],
+   "open": [
+    "Exact spelling of its capital"
+   ],
+   "capitals": {
+    "unified": "ouest-capital",
+    "urbo": "ouest-capital"
+   },
+   "flag": "ouest"
+  },
+  {
+   "id": "estercrystal",
+   "type": "state",
+   "name": "Estercrystal",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Large north-central state with Scottish influence.",
+    "Before the war its capital was Lochwater.",
+    "After the war it is a state of eastern Brightport; Lochwater becomes a separate western state."
+   ],
+   "open": [
+    "Postwar capital of Estercrystal"
+   ],
+   "capitals": {
+    "unified": "lochwater"
+   },
+   "flag": "estercrystal"
+  },
+  {
+   "id": "weiden",
+   "type": "state",
+   "name": "Weiden",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "brightport-east"
+   },
+   "aliases": [
+    "Wieden (later spelling)"
+   ],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Northeastern state, settled by Scandinavians.",
+    "Capital: Bikbergen. Secondary city: Bönderbil."
+   ],
+   "open": [],
+   "capitals": {
+    "unified": "bikbergen",
+    "urbo": "bikbergen"
+   },
+   "flag": "weiden"
+  },
+  {
+   "id": "kus",
+   "type": "state",
+   "name": "Kus",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "occasue"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Southwestern state, settled by Americans.",
+    "Cities: Berevo and Costal City.",
+    "After the war, Berevo is the capital of Occasue."
+   ],
+   "open": [
+    "State capital"
+   ],
+   "flag": "kus"
+  },
+  {
+   "id": "sur",
+   "type": "state",
+   "name": "Sur",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "South-central state, founded by American and Mexican settlers thrown off course during colonization.",
+    "A New Mexico-like blend of cultures.",
+    "Capital: Mami City."
+   ],
+   "open": [],
+   "capitals": {
+    "unified": "mami-city",
+    "urbo": "mami-city"
+   },
+   "flag": "sur"
+  },
+  {
+   "id": "floribus",
+   "type": "state",
+   "name": "Floribus",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Eastern state, settled by Americans, inspired by Florida.",
+    "Trempas and the Port of Trempas on a large bay."
+   ],
+   "open": [
+    "State capital"
+   ],
+   "flag": "floribus"
+  },
+  {
+   "id": "sconhed",
+   "type": "state",
+   "name": "Scønhed",
+   "status": "canon",
+   "eras": [
+    "unified"
+   ],
+   "parent": {
+    "unified": "brightport-republic"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-notes-2"
+   ],
+   "facts": [
+    "Southeastern state, settled by Danish colonists.",
+    "Small and sparsely populated; surrounds the capital territory.",
+    "Dissolved after the war and replaced by Solis."
+   ],
+   "open": [
+    "State capital"
+   ]
+  },
+  {
+   "id": "deserto",
+   "type": "territory",
+   "name": "Deserto Territory",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic",
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Harsh central desert, too difficult for the first settlers.",
+    "Settled by independent Brightport, not by an Earth nation.",
+    "A territory, not a state. Home to Ft. Deserto."
+   ],
+   "open": [],
+   "flag": "deserto"
+  },
+  {
+   "id": "capital-territory",
+   "type": "territory",
+   "name": "Capital territory",
+   "status": "tentative",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "brightport-republic"
+   },
+   "aliases": [
+    "Brightport Capital Territory (working name)"
+   ],
+   "sources": [
+    "src-notes-2"
+   ],
+   "facts": [
+    "Small territory containing Brightport City, enclosed by Scønhed, like the ACT within New South Wales.",
+    "Too small to show on a national map; marked by the capital symbol."
+   ],
+   "open": [
+    "Official name",
+    "Status after the war"
+   ]
+  },
+  {
+   "id": "solis",
+   "type": "state",
+   "name": "Solis",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map",
+    "src-flags",
+    "src-bc-plan"
+   ],
+   "facts": [
+    "Replaced the dissolved Scønhed.",
+    "The name plays on the sun motif and the Brightport government’s fondness for Latin.",
+    "Surrounds Brightport City."
+   ],
+   "open": [
+    "State capital"
+   ],
+   "flag": "solis"
+  },
+  {
+   "id": "lochwater-state",
+   "type": "state",
+   "name": "Lochwater (state)",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "occasue"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "New western state formed after the split, named for the city of Lochwater."
+   ],
+   "open": [
+    "Whether the city of Lochwater is its capital"
+   ],
+   "flag": "lochwater"
+  },
+  {
+   "id": "polvo",
+   "type": "state",
+   "name": "Polvo",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "occasue"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "New western state formed after the split."
+   ],
+   "open": [
+    "Capital"
+   ],
+   "flag": "polvo"
+  },
+  {
+   "id": "montes",
+   "type": "territory",
+   "name": "Montes Territory",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "occasue"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map",
+    "src-flags"
+   ],
+   "facts": [
+    "Remote, harsh western territory formed after the split.",
+    "Less developed than Deserto with Ft. Deserto."
+   ],
+   "open": [
+    "Capital"
+   ],
+   "flag": "montes"
+  },
+  {
+   "id": "norham",
+   "type": "oceanic",
+   "name": "Norham",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "brightport-east"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map",
+    "src-flags",
+    "src-parliament"
+   ],
+   "facts": [
+    "Oceanic state of the Brightport republic: an island east/southeast of the mainland, marked BP on one map.",
+    "A later addition to the union; it adds a ray to the Brightport and URBO suns.",
+    "Settlement: Silverstone.",
+    "Has a sector in the parliament plan."
+   ],
+   "open": [],
+   "flag": "norham"
+  },
+  {
+   "id": "overseas-1",
+   "type": "overseas",
+   "name": "Ban Toone",
+   "status": "tentative",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags"
+   ],
+   "facts": [
+    "Overseas territory shown on the flag hierarchy chart."
+   ],
+   "open": [
+    "Exact spelling",
+    "Status and sovereignty"
+   ],
+   "flag": "ban-toone"
+  },
+  {
+   "id": "overseas-2",
+   "type": "overseas",
+   "name": "Hestad Islands",
+   "status": "tentative",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags"
+   ],
+   "facts": [
+    "Overseas territory shown on the flag hierarchy chart."
+   ],
+   "open": [
+    "Exact spelling",
+    "Status and sovereignty"
+   ],
+   "flag": "hestad"
+  },
+  {
+   "id": "overseas-3",
+   "type": "overseas",
+   "name": "Alorica",
+   "status": "tentative",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags"
+   ],
+   "facts": [
+    "Overseas territory shown on the flag hierarchy chart."
+   ],
+   "open": [
+    "Exact spelling",
+    "Status and sovereignty"
+   ],
+   "flag": "alorica"
+  },
+  {
+   "id": "overseas-4",
+   "type": "overseas",
+   "name": "East Bank",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "urbo"
+   },
+   "aliases": [],
+   "sources": [
+    "src-flags"
+   ],
+   "facts": [
+    "Overseas territory shown on the flag hierarchy chart."
+   ],
+   "open": [
+    "Location",
+    "Status and sovereignty"
+   ],
+   "flag": "east-bank"
+  },
+  {
+   "id": "brightport-city",
+   "type": "city",
+   "name": "Brightport City",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "capital-territory",
+    "urbo": "solis"
+   },
+   "aliases": [],
+   "sources": [
+    "src-bc-skyline-digital",
+    "src-bc-skyline-pencil",
+    "src-bc-plan",
+    "src-bc-legend",
+    "src-2014-map"
+   ],
+   "facts": [
+    "Capital of the unified republic, of eastern Brightport and of URBO.",
+    "Huge inland metropolis on the Brightport River, not on the ocean.",
+    "Dense skyscrapers: a dominant tall rectangular tower with a pointed crown, towers with pink and gold crowns, a tower with green vegetation, an observation-like tower and a small arched or domed structure near the water."
+   ],
+   "open": [
+    "Names and functions of individual towers",
+    "Status of the capital district after the war"
+   ],
+   "districts": [
+    [
+     "Bridgeport",
+     "canon"
+    ],
+    [
+     "Stanton",
+     "canon"
+    ],
+    [
+     "Newtown",
+     "canon"
+    ],
+    [
+     "Downtown",
+     "canon"
+    ],
+    [
+     "Ruthin",
+     "tentative"
+    ]
+   ],
+   "landmarks": [
+    [
+     "St. Luke Academy",
+     "canon"
+    ],
+    [
+     "University of Brightport City",
+     "canon"
+    ],
+    [
+     "Brightport City International Airport",
+     "canon"
+    ],
+    [
+     "Prime Minister’s Palace",
+     "canon"
+    ],
+    [
+     "URBO Loop",
+     "tentative"
+    ]
+   ],
+   "roads": [
+    [
+     "Lochway 1",
+     "canon"
+    ],
+    [
+     "River Parkway",
+     "canon"
+    ],
+    [
+     "Solis Parkway",
+     "canon"
+    ],
+    [
+     "Brightportway",
+     "canon"
+    ],
+    [
+     "Ruthin Parkway",
+     "tentative"
+    ],
+    [
+     "Federal 19 / Solis 19",
+     "tentative"
+    ]
+   ],
+   "photo": {
+    "current": "ai-bc-photo2",
+    "prompt": "Wide skyline of Brightport City, a huge inland capital on a broad river (not the ocean), flat terrain. Must include: one dominant tall rectangular skyscraper with a pointed crown; several towers with pink and gold crowns; a tower covered in green vegetation; a slim observation tower with a disc; a small domed hall near the waterfront; a road bridge crossing the river; boats on the water; an airliner in the sky; several small moons visible in the sky. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   },
+   "art": "art/sky-brightport-city.svg",
+   "plan": "art/bc_plan.svg"
+  },
+  {
+   "id": "berevo",
+   "type": "city",
+   "name": "Berevo",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "kus",
+    "urbo": "kus"
+   },
+   "aliases": [],
+   "sources": [
+    "src-berevo-plan",
+    "src-berevo-legend",
+    "src-berevo-view",
+    "src-2014-map"
+   ],
+   "facts": [
+    "Los Angeles-inspired port city on the Fliwth Ocean, home to the Port of Berevo.",
+    "Capital of Occasue after the war.",
+    "The city plan shows a multi-Lochway interchange and Lochway termini, beaches, parks, a river and district borders."
+   ],
+   "open": [
+    "Remaining neighbourhood names on the plan"
+   ],
+   "districts": [
+    [
+     "Orcutt",
+     "tentative"
+    ],
+    [
+     "Kodic",
+     "tentative"
+    ]
+   ],
+   "photo": {
+    "prompt": "Berevo, a Los Angeles-inspired port city on the western ocean. A cluster of colourful high-rises (green, yellow, blue, pink, red, white), a river mouth and harbour with boats, a long road bridge, green hills behind and a sandy beach in the foreground. Sunny day. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   },
+   "art": "art/sky-berevo.svg"
+  },
+  {
+   "id": "costal-city",
+   "type": "city",
+   "name": "Costal City",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "kus",
+    "urbo": "kus"
+   },
+   "aliases": [
+    "Not “Coastal City”"
+   ],
+   "sources": [
+    "src-2014-map",
+    "src-notes-1"
+   ],
+   "facts": [
+    "San Diego-inspired coastal city, famous for its aqua-blue waters.",
+    "Spelled Costal City, including in Brightportish script on the 2014 map."
+   ],
+   "open": [],
+   "photo": {
+    "prompt": "Costal City, a San Diego-inspired coastal city famous for its aqua-blue waters: a bay of vivid turquoise water, beaches, a modest modern skyline. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   }
+  },
+  {
+   "id": "lochwater",
+   "type": "city",
+   "name": "Lochwater",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "estercrystal",
+    "urbo": "lochwater-state"
+   },
+   "aliases": [],
+   "sources": [
+    "src-lochwater-view",
+    "src-2014-map"
+   ],
+   "facts": [
+    "Scottish settlement; capital of Estercrystal before the war.",
+    "Illustration: high-rises, an elevated road bridge over water, a railway and a red tower with an LW-like symbol."
+   ],
+   "open": [
+    "Purpose of the red LW tower",
+    "Capital status after the war"
+   ],
+   "photo": {
+    "prompt": "Lochwater, a city founded by Scottish settlers in green rolling hills. Contemporary high-rises, a large elevated motorway bridge over a loch, a railway corridor, and a tall red pylon displaying a round sign with the letters LW. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   },
+   "art": "art/sky-lochwater.svg"
+  },
+  {
+   "id": "trempas",
+   "type": "city",
+   "name": "Trempas",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "floribus",
+    "urbo": "floribus"
+   },
+   "aliases": [],
+   "sources": [
+    "src-trempas-skyline",
+    "src-trempas-view",
+    "src-2014-map"
+   ],
+   "facts": [
+    "Tampa-inspired coastal city on a large bay.",
+    "Home to the Port of Trempas, a major national port.",
+    "High-rises with multicoloured crowns and a tall blue tower with a flag; palm trees, harbour and railway."
+   ],
+   "open": [
+    "Building functions",
+    "Which flag flies on the blue tower"
+   ],
+   "photo": {
+    "prompt": "Trempas, a Tampa-inspired coastal city on a large bay. High-rises with multicoloured crowns (green, pink, yellow, red), one tall blue tower flying a flag, palm trees, low colourful houses, a railway line, a harbour with boats, an aircraft overhead. Bright subtropical day. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   },
+   "art": "art/sky-trempas.svg"
+  },
+  {
+   "id": "bikbergen",
+   "type": "city",
+   "name": "Bikbergen",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "weiden",
+    "urbo": "weiden"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Capital of Weiden."
+   ],
+   "open": [],
+   "photo": {
+    "prompt": "Bikbergen, capital of a Scandinavian-settled northeastern state: Nordic-inspired modern architecture, timber and glass, cool northern light. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   }
+  },
+  {
+   "id": "bonderbil",
+   "type": "city",
+   "name": "Bönderbil",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "weiden",
+    "urbo": "weiden"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-notes-2"
+   ],
+   "facts": [
+    "Secondary city of Weiden."
+   ],
+   "open": [
+    "Spelling varies on later maps"
+   ]
+  },
+  {
+   "id": "mami-city",
+   "type": "city",
+   "name": "Mami City",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "sur",
+    "urbo": "sur"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Capital of Sur, named after an anime character."
+   ],
+   "open": [],
+   "photo": {
+    "prompt": "Mami City, capital of a state settled by American and Mexican colonists, with a New Mexico-like blend of architecture: adobe-toned low buildings beside modern towers, dry hills. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   }
+  },
+  {
+   "id": "ft-deserto",
+   "type": "city",
+   "name": "Ft. Deserto",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "deserto",
+    "urbo": "deserto"
+   },
+   "aliases": [],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Large military installation and military-associated city, Fort Worth-style rather than an isolated outpost."
+   ],
+   "open": [],
+   "photo": {
+    "prompt": "Ft. Deserto, a large city that grew around a military base in a harsh central desert, Fort Worth-style rather than an isolated outpost: a mid-size downtown, wide roads, base facilities at the edge, desert light. Photorealistic photograph, set around the year 2200 on a human-colonized planet: advanced but plausible, not cyberpunk, not fantasy, no flying cars. Natural light, real architectural photography."
+   }
+  },
+  {
+   "id": "ouest-capital",
+   "type": "city",
+   "name": "Belkhap",
+   "status": "canon",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "ouest",
+    "urbo": "ouest"
+   },
+   "aliases": [
+    "Beckhap (earlier reading)",
+    "Bellshop (postwar map)"
+   ],
+   "sources": [
+    "src-2014-map",
+    "src-postwar-map",
+    "src-world-2180"
+   ],
+   "facts": [
+    "Capital of Ouest."
+   ],
+   "open": []
+  },
+  {
+   "id": "silverstone",
+   "type": "city",
+   "name": "Silverstone",
+   "status": "canon",
+   "eras": [
+    "urbo"
+   ],
+   "parent": {
+    "urbo": "norham"
+   },
+   "aliases": [],
+   "sources": [
+    "src-postwar-map"
+   ],
+   "facts": [
+    "Settlement on Norham."
+   ],
+   "open": []
+  },
+  {
+   "id": "joya-city",
+   "type": "city",
+   "name": "Joya City",
+   "status": "tentative",
+   "eras": [
+    "unified",
+    "urbo"
+   ],
+   "parent": {
+    "unified": "joya",
+    "urbo": "joya"
+   },
+   "aliases": [],
+   "sources": [
+    "src-world-2180"
+   ],
+   "facts": [
+    "Starred on the world map, probably the capital of Joya."
+   ],
+   "open": []
+  }
+ ],
+ "lochways": [
+  {
+   "n": "1",
+   "connects": "Joya border – Brightport City – Ft. Deserto – Lochwater",
+   "status": "canon",
+   "note": "Starts at Brightport City; runs through the capital on the city plan."
+  },
+  {
+   "n": "2",
+   "connects": "Berevo – Ft. Deserto – Trempas",
+   "status": "canon",
+   "note": "Coast to coast through the Deserto hub."
+  },
+  {
+   "n": "3",
+   "connects": "Trempas – Brightport City",
+   "status": "canon",
+   "note": "Coastal link between the Port of Trempas and the capital. The northern line also marked 3 on the original was dropped as redundant."
+  },
+  {
+   "n": "4",
+   "connects": "Lochwater – Bikbergen",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "5",
+   "connects": "Belkhap – LW 2 near Berevo",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "6",
+   "connects": "Belkhap – Lochwater",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "7",
+   "connects": "Mami City – Ft. Deserto",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "9",
+   "connects": "Ft. Deserto – Bikbergen",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "10",
+   "connects": "Berevo – Mami City – Brightport City",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "11",
+   "connects": "Berevo – Costal City",
+   "status": "canon",
+   "note": ""
+  },
+  {
+   "n": "12",
+   "connects": "Bikbergen – Bönderbil – Trempas",
+   "status": "tentative",
+   "note": "On the original it branched off the northern LW 3 just south of Bikbergen; with that line dropped, it now starts in Bikbergen."
+  },
+  {
+   "n": "15",
+   "connects": "Costal City – LW 10",
+   "status": "canon",
+   "note": ""
+  }
+ ],
+ "legend": [
+  [
+   "Yellow line",
+   "Lochway (motorway network)",
+   "#e9c21a"
+  ],
+  [
+   "Red line",
+   "Parkway",
+   "#c8202f"
+  ],
+  [
+   "Green line",
+   "Federal / state highway",
+   "#2f8a3c"
+  ],
+  [
+   "Grey pencil line",
+   "Road / local street",
+   "#8a8a8a"
+  ],
+  [
+   "Purple line",
+   "Road of importance",
+   "#6b3fa0"
+  ],
+  [
+   "Orange thin line",
+   "District border",
+   "#e07a2f"
+  ],
+  [
+   "Light blue line",
+   "River",
+   "#57a5e0"
+  ],
+  [
+   "Dark blue mark",
+   "Bridge",
+   "#1f3f9a"
+  ],
+  [
+   "Black outline",
+   "City limits",
+   "#1d1b16"
+  ],
+  [
+   "Green fill",
+   "Park",
+   "#7cc47a"
+  ],
+  [
+   "Yellow fill",
+   "Beach (Berevo)",
+   "#f3dc7a"
+  ]
+ ],
+ "language": {
+  "history": [
+   "Earth colonial languages",
+   "Old Brightportish: the original coded script and letter syllables",
+   "Middle Brightportish: contractions and sound changes (to be worked out)",
+   "Modern Brightportish, c. 2200: the shared lingua franca"
+  ],
+  "phonology": [
+   [
+    "R",
+    "French uvular /ʁ/",
+    "canon"
+   ],
+   [
+    "J",
+    "French /ʒ/, as in jour",
+    "canon"
+   ],
+   [
+    "U",
+    "French /y/, as in lune",
+    "canon"
+   ],
+   [
+    "TH",
+    "Both /θ/ and /ð/",
+    "canon"
+   ],
+   [
+    "Nasal vowels",
+    "Only in some regional accents",
+    "canon"
+   ],
+   [
+    "Old letter O",
+    "/oʊ/, as in go",
+    "canon"
+   ],
+   [
+    "Stress",
+    "Variable, like English",
+    "canon"
+   ],
+   [
+    "Vowels",
+    "/i y e ɛ a ə u o ɔ/ plus /aʊ oʊ/",
+    "proposal"
+   ]
+  ],
+  "pronouns": [
+   [
+    "É",
+    "I",
+    "/e/"
+   ],
+   [
+    "Tu",
+    "you (informal)",
+    "/ty/"
+   ],
+   [
+    "Le",
+    "singular they / neutral",
+    "/lə/"
+   ],
+   [
+    "Il",
+    "he (optional)",
+    "/il/"
+   ],
+   [
+    "El",
+    "she (optional)",
+    "/ɛl/"
+   ],
+   [
+    "Wi",
+    "we",
+    "/wi/"
+   ],
+   [
+    "Vous",
+    "you (formal or plural)",
+    "/vu/"
+   ],
+   [
+    "Dei",
+    "they (plural)",
+    "/deɪ/"
+   ]
+  ],
+  "irregular": {
+   "ber": {
+    "gloss": "to be",
+    "pres": [
+     "am",
+     "es",
+     "is",
+     "ar",
+     "êtes",
+     "ar"
+    ],
+    "past": [
+     "was",
+     "wer",
+     "was",
+     "wer",
+     "wer",
+     "wer"
+    ],
+    "fut": [
+     "serai",
+     "seras",
+     "sera",
+     "serons",
+     "serez",
+     "seront"
+    ],
+    "sub": "soi"
+   },
+   "haver": {
+    "gloss": "to have",
+    "pres": [
+     "hav",
+     "has",
+     "ha",
+     "avons",
+     "avez",
+     "hav"
+    ],
+    "past": [
+     "had",
+     "had",
+     "had",
+     "had",
+     "had",
+     "had"
+    ],
+    "fut": [
+     "aurai",
+     "auras",
+     "aura",
+     "aurons",
+     "aurez",
+     "auront"
+    ],
+    "sub": "hai"
+   }
+  },
+  "examples": [
+   [
+    "É wante ke tu talki.",
+    "I want you to speak."
+   ],
+   [
+    "É wante ke tu soi happy.",
+    "I want you to be happy."
+   ],
+   [
+    "É ne talke. / É ne talked. / É ne talkerai.",
+    "I do not / did not / will not speak."
+   ],
+   [
+    "Tu lives in Berevo?",
+    "Do you live in Berevo?"
+   ],
+   [
+    "É eate.",
+    "I eat / I am eating."
+   ],
+   [
+    "My haus / The haus of me",
+    "My house"
+   ],
+   [
+    "A big haus / A haus blue",
+    "A big house / A blue house"
+   ]
+  ],
+  "lexicon": [
+   [
+    "Hello",
+    "Bonjour / Gooday",
+    "canon"
+   ],
+   [
+    "Thank you",
+    "Mersi",
+    "proposal"
+   ],
+   [
+    "Yes",
+    "Yé",
+    "proposal"
+   ],
+   [
+    "No",
+    "No",
+    "proposal"
+   ],
+   [
+    "Good night",
+    "Goodnite",
+    "proposal"
+   ],
+   [
+    "Goodbye",
+    "Au revoir",
+    "proposal"
+   ],
+   [
+    "Friend",
+    "Frend",
+    "proposal"
+   ],
+   [
+    "Country",
+    "Countri",
+    "proposal"
+   ],
+   [
+    "Language",
+    "Langue",
+    "proposal"
+   ],
+   [
+    "House",
+    "Haus",
+    "proposal"
+   ],
+   [
+    "What",
+    "Wat",
+    "proposal"
+   ],
+   [
+    "Where",
+    "Wer",
+    "proposal"
+   ],
+   [
+    "When",
+    "Wen",
+    "proposal"
+   ],
+   [
+    "Why",
+    "Wy",
+    "proposal"
+   ],
+   [
+    "Who",
+    "Hu",
+    "proposal"
+   ],
+   [
+    "How",
+    "How",
+    "proposal"
+   ],
+   [
+    "And",
+    "Et",
+    "proposal"
+   ],
+   [
+    "But",
+    "Bot",
+    "proposal"
+   ],
+   [
+    "Because",
+    "Becaus",
+    "proposal"
+   ],
+   [
+    "Today",
+    "Today",
+    "proposal"
+   ],
+   [
+    "Tomorrow",
+    "Tomoro",
+    "proposal"
+   ],
+   [
+    "Yesterday",
+    "Yesterday",
+    "proposal"
+   ],
+   [
+    "Here",
+    "Hir",
+    "proposal"
+   ],
+   [
+    "There",
+    "Ther",
+    "proposal"
+   ],
+   [
+    "With",
+    "With",
+    "proposal"
+   ],
+   [
+    "From",
+    "From",
+    "proposal"
+   ],
+   [
+    "In",
+    "In",
+    "proposal"
+   ],
+   [
+    "One",
+    "Wun",
+    "proposal"
+   ],
+   [
+    "Two",
+    "Tu",
+    "proposal"
+   ],
+   [
+    "Three",
+    "Thri",
+    "proposal"
+   ],
+   [
+    "Four",
+    "For",
+    "proposal"
+   ],
+   [
+    "Five",
+    "Faiv",
+    "proposal"
+   ],
+   [
+    "Six",
+    "Six",
+    "proposal"
+   ],
+   [
+    "Seven",
+    "Seven",
+    "proposal"
+   ],
+   [
+    "Eight",
+    "Eit",
+    "proposal"
+   ],
+   [
+    "Nine",
+    "Nain",
+    "proposal"
+   ],
+   [
+    "Ten",
+    "Ten",
+    "proposal"
+   ],
+   [
+    "Territory",
+    "Teritor",
+    "canon"
+   ],
+   [
+    "Capital",
+    "Kapital",
+    "canon"
+   ],
+   [
+    "Population",
+    "Popilation",
+    "canon"
+   ],
+   [
+    "Region",
+    "Rejion",
+    "canon"
+   ],
+   [
+    "Province",
+    "Provins",
+    "canon"
+   ],
+   [
+    "City",
+    "Siti",
+    "canon"
+   ],
+   [
+    "Municipality",
+    "Munisipaliti",
+    "canon"
+   ],
+   [
+    "Government",
+    "Gouvern",
+    "canon"
+   ],
+   [
+    "Administrative division",
+    "Administr divisi",
+    "canon"
+   ],
+   [
+    "Area",
+    "Aria",
+    "canon"
+   ],
+   [
+    "Population density",
+    "Popilation densiti",
+    "canon"
+   ],
+   [
+    "Official language",
+    "Ofisial langue",
+    "canon"
+   ],
+   [
+    "National capital",
+    "Nasional kapital",
+    "canon"
+   ],
+   [
+    "Territorial capital",
+    "Teritor kapital",
+    "canon"
+   ],
+   [
+    "Mainland",
+    "Mainlan",
+    "canon"
+   ],
+   [
+    "Island",
+    "Ailend",
+    "canon"
+   ],
+   [
+    "Border",
+    "Bord",
+    "canon"
+   ],
+   [
+    "Home",
+    "Hom",
+    "canon"
+   ],
+   [
+    "History",
+    "Historie",
+    "canon"
+   ],
+   [
+    "Map",
+    "Kart",
+    "canon"
+   ],
+   [
+    "Atlas",
+    "Atlas",
+    "canon"
+   ],
+   [
+    "Transport",
+    "Transpor",
+    "canon"
+   ],
+   [
+    "Search",
+    "Serch",
+    "canon"
+   ],
+   [
+    "Site",
+    "Sait",
+    "canon"
+   ],
+   [
+    "Quick",
+    "Kwik",
+    "canon"
+   ],
+   [
+    "Access",
+    "Akses",
+    "canon"
+   ],
+   [
+    "Welcome",
+    "Welkom",
+    "canon"
+   ],
+   [
+    "Portal",
+    "Portal",
+    "canon"
+   ],
+   [
+    "Republic",
+    "Republik",
+    "canon"
+   ],
+   [
+    "United",
+    "Uni",
+    "canon"
+   ],
+   [
+    "Union",
+    "Union",
+    "canon"
+   ],
+   [
+    "Nation",
+    "Nation",
+    "canon"
+   ],
+   [
+    "Network",
+    "Netwerk",
+    "canon"
+   ],
+   [
+    "Railway",
+    "Relway",
+    "canon"
+   ],
+   [
+    "Line",
+    "Lin",
+    "canon"
+   ],
+   [
+    "Route",
+    "Rout",
+    "canon"
+   ],
+   [
+    "Crossing",
+    "Krosin",
+    "canon"
+   ],
+   [
+    "Flag",
+    "Flag",
+    "canon"
+   ],
+   [
+    "Every",
+    "Evri",
+    "canon"
+   ],
+   [
+    "Planet",
+    "Planet",
+    "canon"
+   ],
+   [
+    "Founding",
+    "Fondin",
+    "canon"
+   ],
+   [
+    "Parliament",
+    "Parlement",
+    "canon"
+   ],
+   [
+    "Sovereign",
+    "Souvren",
+    "canon"
+   ],
+   [
+    "Guardians",
+    "Gardiens",
+    "canon"
+   ],
+   [
+    "Guardian",
+    "Gardien",
+    "canon"
+   ],
+   [
+    "Official",
+    "Ofisial",
+    "canon"
+   ],
+   [
+    "National",
+    "Nasional",
+    "canon"
+   ],
+   [
+    "United Republics",
+    "Republiks Uni",
+    "canon"
+   ],
+   [
+    "Founding republic",
+    "Republik fondin",
+    "canon"
+   ]
+  ],
+  "sample": {
+   "bp": "Brightport is our countri. Wi livons in different states, et wi talkons different langues, bot wi ar wun people.\nWi avons our own historie, our own culture et our own langue. Brightportish is the langue of our nation.",
+   "en": "Brightport is our country. We live in different states, and we speak different languages, but we are one people. We have our own history, our own culture and our own language. Brightportish is the language of our nation."
+  },
+  "letters": [
+   [
+    "A",
+    "ah"
+   ],
+   [
+    "B",
+    "bah"
+   ],
+   [
+    "C",
+    "kee"
+   ],
+   [
+    "D",
+    "dah"
+   ],
+   [
+    "E",
+    "eh"
+   ],
+   [
+    "F",
+    "fah?"
+   ],
+   [
+    "G",
+    "gah"
+   ],
+   [
+    "H",
+    "hee"
+   ],
+   [
+    "I",
+    "ee"
+   ],
+   [
+    "J",
+    "jah"
+   ],
+   [
+    "K",
+    "kah"
+   ],
+   [
+    "L",
+    "lah"
+   ],
+   [
+    "M",
+    "mow"
+   ],
+   [
+    "N",
+    "now"
+   ],
+   [
+    "O",
+    "oh"
+   ],
+   [
+    "P",
+    "pah"
+   ],
+   [
+    "Q",
+    "que"
+   ],
+   [
+    "R",
+    "rah"
+   ],
+   [
+    "S",
+    "sah"
+   ],
+   [
+    "T",
+    "tah"
+   ],
+   [
+    "U",
+    "oot"
+   ],
+   [
+    "V",
+    "vah"
+   ],
+   [
+    "W",
+    "wah"
+   ],
+   [
+    "X",
+    "xi?"
+   ],
+   [
+    "Y",
+    "yoo"
+   ],
+   [
+    "Z",
+    "?"
+   ]
+  ],
+  "old_example": [
+   "Damn it!",
+   "Da-mow-now ee-tah!"
+  ],
+  "collisions": [
+   "Tu means both “you” and “two”.",
+   "Wer means both “where” and “were”."
+  ],
+  "accents": [
+   "French nasal vowels in Ouest",
+   "Scottish influence in Lochwater",
+   "Scandinavian influence in Weiden",
+   "Spanish influence in Sur",
+   "American influence in Kus and Floribus",
+   "Danish influence in historical Scønhed",
+   "Mixed accents in Deserto"
+  ]
+ },
+ "questions": [
+  {
+   "topic": "History",
+   "q": "Exact dates of the civil war, peace treaty and URBO’s formation."
+  },
+  {
+   "topic": "History",
+   "q": "Relationship with Earth in 2200."
+  },
+  {
+   "topic": "Government",
+   "q": "What the five rings and the blue centre of the lower-house chamber mean."
+  },
+  {
+   "topic": "Government",
+   "q": "Which prime minister lives in the Prime Minister’s Palace on the city plan: URBO’s, Brightport’s, or both?"
+  },
+  {
+   "topic": "Government",
+   "q": "The rest of the constitution: see the Government page."
+  },
+  {
+   "topic": "Geography",
+   "q": "Names and status of the four overseas territories."
+  },
+  {
+   "topic": "Geography",
+   "q": "State capitals after the war (Estercrystal, Lochwater, Polvo, Montes, Solis, Kus, Floribus)."
+  },
+  {
+   "topic": "Geography",
+   "q": "Official status of the capital district after the war."
+  },
+  {
+   "topic": "Geography",
+   "q": "Names of the remaining rivers and their flow directions."
+  },
+  {
+   "topic": "Geography",
+   "q": "Planet size, moons and a real map scale."
+  },
+  {
+   "topic": "Lochways",
+   "q": "The LW 4 sign concept points to Ft. Deserto, but on the original map LW 4 runs Lochwater–Bikbergen."
+  },
+  {
+   "topic": "Language",
+   "q": "Official language law and speaker shares in each republic."
+  },
+  {
+   "topic": "Language",
+   "q": "Sound changes from Old to Middle to Modern Brightportish."
+  },
+  {
+   "topic": "Language",
+   "q": "Tu (“you”) and Tu (“two”): keep the homophone or change one?"
+  },
+  {
+   "topic": "Flags",
+   "q": "Official unified flag, proportions and ray geometry."
+  }
+ ],
+ "status": {
+  "canon": "From your original drawings or explicit decisions",
+  "tentative": "Uncertain reading of a drawing",
+  "proposal": "Suggested, not yet approved",
+  "unresolved": "Conflicting sources or undecided",
+  "superseded": "Replaced by later material"
+ }
+}
