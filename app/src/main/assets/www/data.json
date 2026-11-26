@@ -155,7 +155,8 @@
     "The Harbour Festival: boat parades and seafood stalls along the Silverstone waterfront."
    ],
    "kshort": "Old money and seafood",
-   "more": "Norham is known, not always kindly, for its snobbery. Islanders speak with a posh accent that mainlanders love to imitate."
+   "more": "Norham is known, not always kindly, for its snobbery. Islanders speak with a posh accent that mainlanders love to imitate.",
+   "transport": "Robust public transport: the Island Railway loop, island buses to every village, and a ferry to Brightport City. Lochway N1 links Silverstone and Harbourmouth."
   },
   "deserto": {
    "nick": "Brightport’s Armory",
@@ -917,8 +918,14 @@
    }
   },
   "norham": {
-   "lw": [],
-   "rail": [],
+   "lw": [
+    "N1"
+   ],
+   "rail": [
+    "Island Railway (Silverstone – Harbourmouth – Gullreach loop)",
+    "Ferry: Silverstone – Brightport City",
+    "Island buses to every village"
+   ],
    "subs": [],
    "towns": [
     {
@@ -928,7 +935,7 @@
     },
     {
      "n": "Harbourmouth",
-     "seat": false,
+     "seat": true,
      "cap": false
     },
     {
