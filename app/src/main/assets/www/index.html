@@ -121,6 +121,13 @@ body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-fami
 .stmain h2:first-child{margin-top:0}
 .infobox{border:1px solid var(--line);background:var(--card);border-radius:10px;overflow:hidden;font-size:15px}.ibflag{text-align:center;padding:14px;border-bottom:1px solid var(--line)}.ibflag svg{width:180px;height:120px;border:1px solid var(--line)}.ibflag p{margin:6px 0 0;font-size:13px;color:var(--mute)}
 .infobox table{width:100%;border-collapse:collapse}.infobox th,.infobox td{text-align:left;vertical-align:top;padding:8px 12px;border-top:1px solid var(--line)}.infobox th{width:38%;font:700 14px 'Fira Sans',sans-serif}
+.sheet{position:fixed;inset:0;z-index:70;background:rgba(10,14,22,.55);display:flex;align-items:flex-start;justify-content:center;padding:clamp(8px,3vw,32px);overflow:auto}
+.sheet-in{background:var(--bg);border-radius:14px;max-width:980px;width:100%;padding:16px 18px 10px;box-shadow:0 20px 50px #0008}
+.sheet-hd{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.sheet-hd>svg{width:72px;height:48px;border:1px solid var(--line);flex:none}.sheet-hd h2{margin:0}.sheet-hd .sthkick{color:var(--red)}
+.sheet-btns{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}.btn-pri,.btn-sec{font:700 15px 'Fira Sans',sans-serif;padding:10px 14px;border-radius:9px;text-decoration:none;cursor:pointer;border:1px solid var(--line)}.btn-pri{background:#14223f;color:#fff;border-color:#14223f}.btn-sec{background:var(--card);color:var(--ink)}
+.sheet-map svg{display:block;width:100%;height:auto;max-height:70vh;border:1px solid var(--line);border-radius:10px;background:#dfeaf2}
+body.sheet-open{overflow:hidden}
+.mapview,.mapview *{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.mapview svg .st:focus{outline:none}
 .lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
 header.top .brand{position:relative}
 .brandlink{display:flex;align-items:center;gap:12px}.brandname{text-decoration:none;color:inherit;display:flex;flex-direction:column}
@@ -219,7 +226,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const $=s=>document.querySelector(s);
 const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['history','History',null]];
 const SUB={government:[['government','Government','Gouvern'],['urbo','URBO & flags',null]],places:[['browse','Browse by level',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
+const SEC={'map':'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -251,7 +258,7 @@ V.home=()=>{
   ${tile('weather','Weather radar','Live radar for every state and city, from URBO Weather.',null)}
   ${tile('traffic','Traffic & rail','Lochway traffic, city traffic and train arrivals.',null)}
   ${tile('news','BNN news','Brightport News Network: everyday news from across URBO.',null)}
-  ${tile('map','Map of the nation','Tap any state to open its page. Pan and zoom across URBO.',null)}
+  ${tile('map','Map of the nation','Tap any state to see its shires, comitatus and rejions.',null)}
   ${tile('lochways','Lochway network','The numbered national motorways.',null)}
   ${tile('rail','National railways','Lines, routes and border crossings.',null)}
   ${tile('government','How the government works','Federal, republic, state and territory levels and the three parliaments.','Gouvern')}
@@ -314,6 +321,23 @@ const chFS='<p><button class="uwfs" onclick="const w=document.querySelector(\'.u
 V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">URBO Traffic &amp; Rail: Lochway traffic across the nation, then each major city, the live rail map with every train, station arrival boards and airport delays caused by URBO Weather. It loops about every three minutes. The same channel runs on NyxVision, channel 10. Traffic and trains are simulated.</p><div id="uwslot"></div>${chFS}`;
 V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">Everyday news from across URBO: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. The same channel runs on NyxVision, channel 11. All stories are simulated.</p><div id="uwslot"></div>${chFS}`;
 V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
+
+/* Tapping a state on the national map opens its subdivision map in a sheet */
+function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub=(D.subdiv_names||{})[id]||[],I=(D.info||{})[id]||{};
+  const kind=e.type==='territory'?'Territory':e.type==='oceanic'?'Oceanic state':'State';
+  const close=()=>{if(SHEET_FROM_MAP){SHEET_FROM_MAP=false;history.back()}else location.hash='#map'};
+  const el=document.createElement('div');el.className='sheet';el.setAttribute('role','dialog');el.setAttribute('aria-label',e.name+' map');
+  el.innerHTML=`<div class="sheet-in"><div class="sheet-hd">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<div><p class="sthkick">${kind}${I.nick?' · '+esc(I.nick):''}</p><h2>${esc(e.name)}</h2></div>
+    <div class="sheet-btns"><a class="btn-pri" href="#browse-${id}">Open the ${esc(e.name)} page →</a><button class="btn-sec" type="button">✕ URBO map</button></div></div>
+    <div class="sheet-map art"><p class="meta">Loading map…</p></div>
+    <p class="meta">${sd&&nsub.length?`${nsub.length} ${esc(sd.toLowerCase())}: ${nsub.map(esc).join(', ')}.`:`${esc(e.name)} has no subdivisions.`} ${badge('proposal')} Borders and most town names are proposals.</p></div>`;
+  document.body.appendChild(el);document.body.classList.add('sheet-open');
+  el.querySelector('.btn-sec').onclick=close;let downOnBack=false;el.addEventListener('pointerdown',ev=>{downOnBack=ev.target===el});el.addEventListener('click',ev=>{if(ev.target===el&&downOnBack)close()});
+  const u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{const m=el.querySelector('.sheet-map');if(m)m.innerHTML=t}).catch(()=>{});
+  setTimeout(()=>{const b=el.querySelector('.btn-pri');b&&b.focus({preventScroll:true})},60);
+}
+let SHEET_FROM_MAP=false;
+document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&document.querySelector('.sheet')){location.hash='#map'}});
 V.history=()=>`<h1>History</h1><p class="lede">A working sequence of the nation's history. Dates are not yet fixed.</p>
   <ol class="hist">${D.eras.map((e,i)=>`<li><div class="when">${esc(e.when)}</div><h3>${esc(e.name)}</h3><p>${esc(e.summary)}</p></li>`).join('')}</ol>
   <p class="meta">The original drawings, photos and sources are kept in the <a href="#archive">national archive</a>.</p>`;
@@ -324,7 +348,7 @@ V.search=q=>{const t=q.toLowerCase();
   return `<h1>Search results</h1><p class="lede">“${esc(q)}”: ${ents.length+pages.length} result${ents.length+pages.length===1?'':'s'}.</p>
   ${pages.length?`<h2>Pages</h2><ul class="facts">${pages.map(p=>`<li><a href="#${p[0]}">${esc(p[1])}</a></li>`).join('')}</ul>`:''}
   ${ents.length?`<h2>Places and records</h2><ul class="facts">${ents.map(e=>`<li><a href="${go(e)}">${esc(e.name)}</a> <span class="meta">${esc(e.type)}</span></li>`).join('')}</ul>`:''}`;};
-V.map=()=>`<h1>Map</h1><p class="lede">Tap or click a state to open its page. Zoom with the buttons, the mouse wheel or two fingers, and move the map with two fingers or the mouse. One finger scrolls the page.</p>
+V.map=()=>`<h1>Map</h1><p class="lede">Tap or click a state to see its subdivisions. Zoom with the buttons, the mouse wheel or two fingers, and move the map with two fingers or the mouse. One finger scrolls the page.</p>
 <div class="mapbar"><button id="mz-in" aria-label="Zoom in">+</button><button id="mz-out" aria-label="Zoom out">−</button><button id="mz-reset">Reset</button><label><input type="checkbox" id="mt-lw" checked> Lochways</label><label><input type="checkbox" id="mt-lb" checked> Labels</label></div>
 <div class="art mapview" id="mapview">${ART['art/postwar_lw.svg']?ART['art/postwar_lw.svg'].replace('<svg ','<svg id="mapsvg" '):'<p class="meta">Loading…</p>'}</div>`;
 function initMap(){
@@ -346,7 +370,7 @@ function initMap(){
   // states open their own page
   const nh=[...svg.querySelectorAll('path')].find(p=>(p.getAttribute('d')||'').startsWith('M1129.3,812.1'));if(nh){nh.classList.add('st');nh.dataset.id='norham'}
   const tip=document.createElement('div');tip.className='maptip';tip.hidden=true;box.appendChild(tip);
-  const open=id=>{location.hash='#browse-'+id};
+  const open=id=>{SHEET_FROM_MAP=true;location.hash='#map-'+id};
   svg.querySelectorAll('.st').forEach(p=>{const e=byId(p.dataset.id);if(!e)return;p.setAttribute('tabindex','0');p.setAttribute('role','link');p.setAttribute('aria-label',e.name);
     p.addEventListener('keydown',ev=>{if(ev.key==='Enter'){ev.preventDefault();open(p.dataset.id)}});
     const show=()=>{tip.textContent=e.name+' →';tip.hidden=false;const r=p.getBoundingClientRect(),b=box.getBoundingClientRect();tip.style.left=Math.max(4,Math.min(b.width-160,r.left-b.left+r.width/2-60))+'px';tip.style.top=Math.max(4,r.top-b.top+r.height/2-14)+'px'};
@@ -593,7 +617,7 @@ document.addEventListener('click',e=>{
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=$('#lvlmenu');if(m&&!m.hidden){m.hidden=true;$('#flagbtn').setAttribute('aria-expanded','false');$('#flagbtn').focus()}}});
 function route(){
   if(!D)return;
-  let h=(location.hash||'#home').slice(1);let key=h.startsWith('city-')?'cities':h.startsWith('search-')?'search':h.startsWith('browse')?'browse':h;
+  let h=(location.hash||'#home').slice(1);let key=h.startsWith('map-')?'map':h.startsWith('city-')?'cities':h.startsWith('search-')?'search':h.startsWith('browse')?'browse':h;
   if(!V[key]&&key!=='cities'){h='home';key='home'}
   if(!route.done){route.done=1;setPlace(PLACE)}
   const sec=SEC[key]??'';const nb=$('#notes');if(nb)nb.checked=NOTES;
@@ -604,7 +628,8 @@ function route(){
   $('#view').innerHTML=`<div class="view">${sub}${h.startsWith('city-')?V.city(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?(setPlace(h.slice(7)||'urbo'),V.browse(h.slice(7))):V[key]()}</div>`;
   if(key==='language'){conj();lex();const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bp-desk')}catch(e){}i.value=v??D.language.sample.bp;bpRender()}}
   document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
-  if(key==='map'){initMap()}
+  document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
+  if(key==='map'){initMap();if(h.startsWith('map-'))stateSheet(h.slice(4))}
   document.querySelectorAll('[data-sm]').forEach(b=>{const id=b.dataset.sm,u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected)b.innerHTML=t}).catch(()=>{b.innerHTML='<p class="meta">Map not available.</p>'})});
   if(CHPAGE[key]){const w=uwStage();$('#uwslot').appendChild(w)}
   (UW.apis||[]).forEach(a=>{try{a&&a.sync()}catch(e){}})
