@@ -1,4 +1,94 @@
 {
+ "world": {
+  "countries": [
+   [
+    "URBO",
+    "Brightport City (federal), Berevo (Occasue)",
+    "Western continent",
+    "The United Republics of Brightport and Occasue. Holds the whole west coast of its continent."
+   ],
+   [
+    "Schoonheid",
+    "Doonsline ?",
+    "Western continent, north of URBO",
+    "Borders URBO to the north, on the Schoon Sea. Also shows a city read as Doonshied ?."
+   ],
+   [
+    "Joya",
+    "Joya City",
+    "Western continent, south of URBO",
+    "Cities read as El Niso ? and St. Ptrawen ?."
+   ],
+   [
+    "Shinchied",
+    "Donborg ?",
+    "Western continent, south-east",
+    "A small country on Joya’s eastern side."
+   ],
+   [
+    "Republic of Rhine",
+    "Rhine",
+    "Eastern continent, north",
+    ""
+   ],
+   [
+    "Instania",
+    "Iseton ?",
+    "Eastern continent",
+    ""
+   ],
+   [
+    "Federal Republic of Guinesem",
+    "New London",
+    "Eastern continent",
+    "Surrounds a small country whose name can’t be read on the drawing."
+   ],
+   [
+    "Asuna ?",
+    "",
+    "Eastern continent, southern tip",
+    "Its position is a best guess from the flag’s pointer line."
+   ],
+   [
+    "Juku",
+    "",
+    "Islands in the south-east",
+    ""
+   ],
+   [
+    "Tinsha",
+    "",
+    "Islands in the south-east",
+    ""
+   ],
+   [
+    "New China",
+    "",
+    "Far south-east",
+    ""
+   ],
+   [
+    "Paflonia ?",
+    "",
+    "Island in the Nybeps Ocean",
+    "Shown as a green dot."
+   ]
+  ],
+  "changes": [
+   "URBO now holds the whole west coast of its continent. On the 2180 drawing, Schoonheid wrapped around the north-west.",
+   "The Brightport colony of Twinshied became Norham, and now lies closer to the mainland, off the south-east coast.",
+   "On the drawing, Brightport was one republic. It is shown here as the two republics of URBO."
+  ],
+  "open": [
+   "Are Anracia and Uropon the names of the two continents? They are written down the coasts on the drawing.",
+   "Is the town of Swisswa, shown on the old Schoonheid west coast, now inside URBO?",
+   "What is the small country inside Guinesem called?",
+   "Where exactly is Asuna?",
+   "What do the blue lines from Brightport City to the other capitals show: air routes, shipping or cables?",
+   "What does the note “Present NWWI” beside the year 2180 mean?",
+   "Readings marked ? need checking: Doonsline, Doonshied, El Niso, St. Ptrawen, Donborg, Iseton, Paflonia."
+  ]
+ },
  "planet": [
   "On Nyreth the sun rises in the west and sets in the east, because the planet spins the opposite way to Earth.",
   "Because of that spin, the prevailing winds over URBO blow from east to west, so storms usually arrive from the east."

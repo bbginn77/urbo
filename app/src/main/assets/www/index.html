@@ -128,7 +128,7 @@ body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-fami
 .sheet-map svg{display:block;width:100%;height:auto;max-height:70vh;border:1px solid var(--line);border-radius:10px;background:#dfeaf2}
 body.sheet-open{overflow:hidden}
 .mapview,.mapview *{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.mapview svg .st:focus{outline:none}
-.lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
+.lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.w-urbo{cursor:pointer}.w-urbo:hover path:first-child{filter:brightness(1.06)}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
 header.top .brand{position:relative}
 .brandlink{display:flex;align-items:center;gap:12px}.brandname{text-decoration:none;color:inherit;display:flex;flex-direction:column}
 .flagbtn{display:flex;align-items:center;gap:4px;background:none;border:1px solid var(--line);border-radius:8px;padding:4px 6px;cursor:pointer;color:var(--ink)}.flagbtn:hover{border-color:var(--red)}.caret{font-size:13px}
@@ -225,8 +225,8 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=s=>document.querySelector(s);
 const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['history','History',null]];
-const SUB={government:[['government','Government','Gouvern'],['urbo','URBO & flags',null]],places:[['browse','Browse by level',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={'map':'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
+const SUB={government:[['government','Government','Gouvern'],['urbo','URBO & flags',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['archive','National archive',null],['questions','Open questions',null]]};
+const SEC={'map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -258,6 +258,7 @@ V.home=()=>{
   ${tile('weather','Weather radar','Live radar for every state and city, from URBO Weather.',null)}
   ${tile('traffic','Traffic & rail','Lochway traffic, city traffic and train arrivals.',null)}
   ${tile('news','BNN news','Brightport News Network: everyday news from across URBO.',null)}
+  ${tile('world','World map','URBO and the other countries of Nyreth.',null)}
   ${tile('map','Map of the nation','Tap any state to see its shires, comitatus and rejions.',null)}
   ${tile('lochways','Lochway network','The numbered national motorways.',null)}
   ${tile('rail','National railways','Lines, routes and border crossings.',null)}
@@ -338,6 +339,12 @@ function stateSheet(id){const e=byId(id);if(!e)return;const sd=D.subdiv[id],nsub
 }
 let SHEET_FROM_MAP=false;
 document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&document.querySelector('.sheet')){location.hash='#map'}});
+V.world=()=>{const w=D.world;return `<h1>World</h1><p class="lede">Nyreth in the URBO era. Tap URBO to open the national map.</p>
+  <figure class="statefig"><div class="art statemapbox" data-art="art/world.svg"><p class="meta">Loading map…</p></div><figcaption>Countries traced from the 2180 world drawing, with URBO from the national atlas. Names with a ? are uncertain readings. ${badge('tentative')} The original drawing is in the <a href="#archive">national archive</a>.</figcaption></figure>
+  <h2>Countries</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Country</th><th>Capital</th><th>Where</th><th>Notes</th></tr></thead><tbody>${w.countries.map(c=>`<tr><td data-l="Country"><b>${esc(c[0])}</b></td><td data-l="Capital">${esc(c[1]||'—')}</td><td data-l="Where">${esc(c[2])}</td><td data-l="Notes">${esc(c[3]||'—')}</td></tr>`).join('')}</tbody></table></div>
+  <h2>Oceans</h2><p>The Nybeps Ocean lies between the two continents. The Fliwth Ocean lies west of URBO and wraps around the planet to the far east. The Schoon Sea is in the north-west, and ice caps cover both poles.</p>
+  <h2>Changes since the 2180 drawing</h2><ul class="facts">${w.changes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+  <h2>Open questions</h2><ul class="facts">${w.open.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`};
 V.history=()=>`<h1>History</h1><p class="lede">A working sequence of the nation's history. Dates are not yet fixed.</p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.eras.map((e,i)=>`<li><div class="when">${esc(e.when)}</div><h3>${esc(e.name)}</h3><p>${esc(e.summary)}</p></li>`).join('')}</ol>
@@ -631,6 +638,7 @@ function route(){
   document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
   if(key==='map'){initMap();if(h.startsWith('map-'))stateSheet(h.slice(4))}
+  document.querySelectorAll('[data-art]').forEach(b=>{const u=b.dataset.art;(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected)b.innerHTML=t}).catch(()=>{})});
   document.querySelectorAll('[data-sm]').forEach(b=>{const id=b.dataset.sm,u='art/state_'+id+'.svg';(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected)b.innerHTML=t}).catch(()=>{b.innerHTML='<p class="meta">Map not available.</p>'})});
   if(CHPAGE[key]){const w=uwStage();$('#uwslot').appendChild(w)}
   (UW.apis||[]).forEach(a=>{try{a&&a.sync()}catch(e){}})
