@@ -75,11 +75,11 @@
   ],
   "changes": [
    "URBO now holds the whole west coast of its continent. On the 2180 drawing, Schoonheid wrapped around the north-west.",
+   "Swisswa, once a Schoonheid town on that coast, is now a town in Ouest. Many Schoon loyalists remain there.",
    "The Brightport colony of Twinshied became Norham, and now lies closer to the mainland, off the south-east coast.",
    "On the drawing, Brightport was one republic. It is shown here as the two republics of URBO."
   ],
   "open": [
-   "Is the town of Swisswa, shown on the old Schoonheid west coast, now inside URBO?",
    "What is the small country inside Guinesem called?",
    "What do the blue lines from Brightport City to the other capitals show: air routes, shipping or cables?",
    "What does the note “Present NWWI” beside the year 2180 mean?",
@@ -182,7 +182,8 @@
    "trad": [
     "The Fête du Vin, a week-long wine festival."
    ],
-   "kshort": "French food and wine"
+   "kshort": "French food and wine",
+   "more": "The coastal town of Swisswa once belonged to Schoonheid. It still resents being taken into URBO, and many Schoon loyalists live there."
   },
   "lochwater-state": {
    "nick": "The Wellspring",
@@ -265,6 +266,11 @@
     {
      "n": "Côte-Fliwth",
      "seat": true,
+     "cap": false
+    },
+    {
+     "n": "Swisswa",
+     "seat": false,
      "cap": false
     },
     {

@@ -287,7 +287,7 @@ V.browse=id=>{
     <section class="sthero">${e.flag?`<svg class="lvlbig sthflag" role="button" tabindex="0" aria-label="Open the level menu" viewBox="0 0 60 40"><use href="#flag-${e.flag}"/></svg>`:''}
       <div><p class="sthkick">${kind} of the ${rep?'Republic of '+esc(rep.name.replace(/ \(.*\)/,'')):'URBO'}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}
       <p class="sthlinks"><a href="#st-about">About</a>${sm?'<a href="#st-map">Map</a>':''}${nsub.length?'<a href="#st-subs">'+esc(sd)+'</a>':''}${cities.length?'<a href="#st-cities">Cities</a>':''}</p></div></section>
-    <div class="stgrid"><div class="stmain"><h2 id="st-about">About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known)}</p>
+    <div class="stgrid"><div class="stmain"><h2 id="st-about">About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known)}</p>${I.more?`<p>${esc(I.more)}</p>`:''}
       <h2>Culture and traditions</h2>${I.trad&&I.trad.length?`<ul class="facts">${I.trad.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:`<p>${esc(I.quiet||'')}</p>`}</div>
     <aside class="infobox"><div class="ibflag">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<p>Flag of ${esc(e.name)}</p></div><table>
       ${row('Republic',rep?`<a href="#browse-${rep.id}">${esc(rep.name.replace(/ \(.*\)/,''))}</a>`:'')}${row('Status',kind)}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}
