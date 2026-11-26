@@ -113,6 +113,14 @@ body.bpmode :is(#view,nav.sec,header .brand,footer) :is(h1,h2,h3,h4,p,li,a,span,
 body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-family:"Fira Sans",sans-serif!important}
 .crumbs{font:500 15px "Fira Sans",sans-serif;margin:8px 0 20px;line-height:1.5;color:var(--mute)}.crumbs span{color:var(--ink)}
 .lvl{display:flex;gap:12px;align-items:center}.lvlflag{flex:none;width:54px;height:36px;border:1px solid var(--line)}
+.sthero{display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding:22px;margin:6px 0 22px;border-radius:14px;color:#fff;background:linear-gradient(120deg,#14223f,#2a4a7a 60%,#7a0a14)}
+.sthero h1{color:#fff;margin:2px 0 4px;font-size:clamp(32px,6vw,52px)}.sthflag{width:150px;height:100px;border:3px solid #fff;box-shadow:0 8px 20px #0007;flex:none}
+.sthkick{margin:0;font:600 13px 'Fira Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#f4c21c}.sthnick{margin:0;font-style:italic;color:#dfe6f3}
+.sthlinks{margin:12px 0 0;display:flex;gap:16px;flex-wrap:wrap}.sthlinks a{color:#fff;font:700 14px 'Fira Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px}
+.stgrid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start;margin-bottom:10px}@media(max-width:820px){.stgrid{grid-template-columns:1fr}.infobox{order:-1}}
+.stmain h2:first-child{margin-top:0}
+.infobox{border:1px solid var(--line);background:var(--card);border-radius:10px;overflow:hidden;font-size:15px}.ibflag{text-align:center;padding:14px;border-bottom:1px solid var(--line)}.ibflag svg{width:180px;height:120px;border:1px solid var(--line)}.ibflag p{margin:6px 0 0;font-size:13px;color:var(--mute)}
+.infobox table{width:100%;border-collapse:collapse}.infobox th,.infobox td{text-align:left;vertical-align:top;padding:8px 12px;border-top:1px solid var(--line)}.infobox th{width:38%;font:700 14px 'Fira Sans',sans-serif}
 .lore{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 20px}.lore dt{font:700 14px 'Fira Sans',sans-serif;color:var(--red);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}.lore dd{margin:0}@media(max-width:560px){.lore{grid-template-columns:1fr}.lore dd{margin-bottom:6px}}.statefig{margin:8px 0 22px}.statemapbox svg{display:block;width:100%;height:auto;max-height:80vh;border:1px solid var(--line);border-radius:12px;background:#dfeaf2}.statefig figcaption{font-size:14px;color:var(--mute);margin-top:6px}.lvlhead{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.lvlbig{width:150px;height:100px;border:1px solid var(--line);flex:none}
 header.top .brand{position:relative}
 .brandlink{display:flex;align-items:center;gap:12px}.brandname{text-decoration:none;color:inherit;display:flex;flex-direction:column}
@@ -261,10 +269,28 @@ V.browse=id=>{
   const card=x=>{const n=D.entities.filter(y=>y.parent.urbo===x.id&&y.type!=='city').length;const sd=D.subdiv[x.id];
     return `<a class="tile lvl" href="#browse-${x.id}">${x.flag?`<svg class="lvlflag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${x.flag}"/></svg>`:''}<div><h3>${esc(x.name)} →</h3><p>${typ[x.type]||x.type}${n?` · ${n} below`:''}${sd?` · ${sd}`:''}</p></div></a>`};
   const sd=D.subdiv[id];
+  const I=(D.info||{})[id];
+  if(I){const rep=trail.find(t=>t.type==='republic');const sm=(D.statemaps||{})[id];const nsub=(D.subdiv_names||{})[id]||[];
+    const kind=e.type==='territory'?'Territory':e.type==='oceanic'?'Oceanic state':'State';
+    const row=(k,v)=>v?`<tr><th>${k}</th><td>${v}</td></tr>`:'';
+    const about=[...(e.facts||[]).map(esc),esc(I.origin)].join(' ');
+    return `<nav class="crumbs" aria-label="Level">${trail.map((t,i)=>i<trail.length-1?`<a href="#browse-${t.id}">${esc(t.name)}</a>`:`<span>${esc(t.name)}</span>`).join(' › ')}</nav>
+    <section class="sthero">${e.flag?`<svg class="lvlbig sthflag" role="button" tabindex="0" aria-label="Open the level menu" viewBox="0 0 60 40"><use href="#flag-${e.flag}"/></svg>`:''}
+      <div><p class="sthkick">${kind} of the ${rep?'Republic of '+esc(rep.name.replace(/ \(.*\)/,'')):'URBO'}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}
+      <p class="sthlinks"><a href="#st-about">About</a>${sm?'<a href="#st-map">Map</a>':''}${nsub.length?'<a href="#st-subs">'+esc(sd)+'</a>':''}${cities.length?'<a href="#st-cities">Cities</a>':''}</p></div></section>
+    <div class="stgrid"><div class="stmain"><h2 id="st-about">About ${esc(e.name)}</h2><p>${about}</p><p>${esc(I.known)}</p>
+      <h2>Culture and traditions</h2>${I.trad&&I.trad.length?`<ul class="facts">${I.trad.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:`<p>${esc(I.quiet||'')}</p>`}</div>
+    <aside class="infobox"><div class="ibflag">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<p>Flag of ${esc(e.name)}</p></div><table>
+      ${row('Republic',rep?`<a href="#browse-${rep.id}">${esc(rep.name.replace(/ \(.*\)/,''))}</a>`:'')}${row('Status',kind)}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}
+      ${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}
+      ${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}
+      ${row('Towns on the map',sm?String(sm.towns.length):'')}</table></aside></div>
+    ${sm?`<h2 id="st-map">Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
+    ${sd?`<h2 id="st-subs">${sd}</h2><p>${esc(e.name)} is divided into ${nsub.length} ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_prop||[]).includes(id)?badge('proposal'):''}</p>${nsub.length?`<div class="tiles">${nsub.map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`:''}`:''}
+    ${cities.length?`<h2 id="st-cities">Cities</h2><div class="tiles">${cities.map(x=>`<a class="tile" href="#city-${x.id}"><h3>${esc(x.name)} →</h3></a>`).join('')}</div>`:''}`;}
   return `<h1>${esc(e.name)}</h1>
   <nav class="crumbs" aria-label="Level">${trail.map((t,i)=>i<trail.length-1?`<a href="#browse-${t.id}">${esc(t.name)}</a>`:`<span>${esc(t.name)}</span>`).join(' › ')}</nav>
   <div class="lvlhead">${e.flag?`<svg class="lvlbig" role="button" tabindex="0" aria-label="Open the level menu" viewBox="0 0 60 40"><use href="#flag-${e.flag}"/></svg>`:''}<div><p class="meta">${typ[e.type]||e.type}${cap?` · Capital: ${esc(cap)}`:''}</p>${facts(e)}</div></div>
-  ${(D.lore||{})[id]?`<h2>Lore</h2><dl class="lore">${D.lore[id].map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`:''}
   ${(D.statemaps||{})[id]?`<h2>Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
   ${kids.length?`<h2>${e.type==='union'?'Republics and overseas territories':'States and territories'}</h2><div class="tiles">${kids.map(card).join('')}</div>`:''}
   ${sd?`<h2>${sd}</h2><div class="card"><p>${esc(e.name)} is divided into ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_names||{})[id]?((D.subdiv_prop||[]).includes(id)?badge('proposal'):''):'Their names have not been recorded yet.'}</p></div>${(D.subdiv_names||{})[id]?`<div class="tiles" style="margin-top:12px">${D.subdiv_names[id].map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`:''}`:(['state','territory','oceanic'].includes(e.type)?`<h2>Subdivisions</h2><p class="meta">${esc((D.subdiv_none||{})[id]||'Not yet defined.')}</p>`:'')}
