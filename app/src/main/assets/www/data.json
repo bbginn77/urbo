@@ -4922,6 +4922,17 @@
    "notes": "The Souvren’s sons at Souvren Palace with the URBO and Brightport flags. Their formal titles are not yet decided."
   },
   {
+   "id": "royal-family-portrait",
+   "title": "The royal family: official portrait (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/royal-family-portrait.jpg",
+   "w": 1206,
+   "h": 793,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Élise I, Julien, Théo and Lucas at Souvren Palace with the URBO and Brightport flags."
+  },
+  {
    "id": "ai-royal-family",
    "title": "The royal family: proposed portrait (render)",
    "kind": "concept",
