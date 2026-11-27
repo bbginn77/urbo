@@ -1,4 +1,46 @@
 {
+ "souv": {
+  "name": "Élise I, House of Brightwell",
+  "img": "elise-i-portrait",
+  "head": "elise-i-headshot",
+  "bio": [
+   "Élise I is the Souvren of Brightport and, alongside President Amélien van der Cruz of Occasue, joint head of state of the United Republics of Brightport and Occasue. She is the first Souvren of the House of Brightwell, a Franco-British family, and the first woman to reign in Brightport’s history.",
+   "Before taking the throne she worked in diplomacy. Her diplomatic achievements, personal humility and youth won her wide public support, and her accession on Secundus 11, 114 NSC, at the age of 28, marked a generational change after the fall of the House of Kennedy. The anniversary is celebrated every year as Crown Day.",
+   "Warm and approachable, she champions education, multilingualism, environmental conservation and reconciliation between nations, and favours a modern monarchy that balances royal pageantry with openness. She lives at Souvren Palace with her husband, Souvren Consort Julien, and their sons Théo and Lucas, who attend an ordinary public school. She began the Royal Open House, National School Visits and the Crown Day Garden Party. Her working relationship with President van der Cruz has grown from early tension into friendship."
+  ],
+  "facts": [
+   [
+    "Reign",
+    "Since 02/11/0114 NSC"
+   ],
+   [
+    "House",
+    "Brightwell (Franco-British)"
+   ],
+   [
+    "Age",
+    "About 33"
+   ],
+   [
+    "Before the throne",
+    "Diplomat"
+   ],
+   [
+    "Causes",
+    "Education, multilingualism, conservation, reconciliation"
+   ],
+   [
+    "Family",
+    "Julien (Souvren Consort); Théo (heir) and Lucas"
+   ]
+  ],
+  "open": [
+   "Birth date and birthplace",
+   "Education and diplomatic postings",
+   "Languages she speaks",
+   "Her family before the crown"
+  ]
+ },
  "pres": {
   "name": "Amélien van der Cruz",
   "img": "amelien-van-der-cruz-portrait",
@@ -4855,7 +4897,7 @@
    "w": 1400,
    "h": 933,
    "origin": "ChatGPT render, Nov 2026",
-   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Not approved: faces, clothing and setting are not canon."
+   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Élise’s likeness is approved (Nov 2026) and her official portrait is cropped from this render. The others’ faces, the clothing and the setting are not canon."
   },
   {
    "id": "ai-flags",
