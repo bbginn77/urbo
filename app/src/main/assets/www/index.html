@@ -139,6 +139,7 @@ body.tier-c #view{font-family:Verdana,Geneva,sans-serif;font-size:14px;line-heig
 body.tier-c #view a{color:#00e;text-decoration:underline}body.tier-c #view p{max-width:none}
 .retro,.retro :is(p,li,td,i,b,span,hr){color:#111}.retro{color-scheme:light;background:#fff;border:2px solid #16345f;padding:14px 16px;max-width:780px;margin:0 auto}.rbanner{background:#16345f;color:#ffd24a;font:700 16px "Times New Roman",Times,serif;text-align:center;padding:8px;letter-spacing:.03em;margin-bottom:12px}
 .rtop{display:flex;gap:16px;align-items:center}.rflag{width:120px;height:80px;border:3px ridge #999;flex:none}.rtop h1{margin:0;font-size:34px}
+.gtable{width:100%;border-collapse:collapse;font-size:15px}.gtable th,.gtable td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}.gtable th{font:700 14px 'Fira Sans',sans-serif}.gtable td:nth-child(n+2),.gtable th:nth-child(n+2){text-align:right}
 .rtable{border-collapse:collapse}.rtable th,.rtable td{border:1px solid #999;padding:4px 10px;text-align:left;font-size:13px}.rtable th{background:#e6e6e6}
 .rnote{border:2px dashed #b00;background:#fff3c4;padding:8px;font-weight:700}.rfoot{text-align:center;font-size:11px;color:#444}.rcount{font-family:"Courier New",monospace;background:#000;color:#3f3;padding:1px 6px;letter-spacing:3px}
 .hero-photo img{display:block;max-width:100%;height:auto;border-radius:10px}.hero-photo{margin:0 0 18px}.two .hero-photo{min-width:0}
@@ -264,6 +265,9 @@ function photoSlot(ph,name){
   <details class="prompt"><summary>ChatGPT prompt for ${esc(name)}</summary><p>${esc(ph.prompt)}</p><button class="copy" data-copy="${esc(ph.prompt)}">Copy prompt</button></details></div>`;
 }
 const toArchive=ids=>ids&&ids.length?`<p class="meta src" style="margin-top:10px">Original drawings: ${ids.filter(i=>D.S[i]&&D.S[i].kind!=='concept').map(i=>`<a href="#archive" data-goto="${esc(i)}">${esc(D.S[i].title)}</a>`).join(' · ')}</p>`:'';
+const POPF=id=>{const p=(D.pop||{})[id];return p?p.m+' million':''};
+const INCF=id=>{const p=(D.pop||{})[id];return p?'about '+(Math.round(p.w*600/1000)*1000).toLocaleString('en-US')+' urbos a year':''};
+const RANKF=id=>{const S=['solis','floribus','sur','estercrystal','weiden','deserto','norham','kus','ouest','lochwater-state','polvo','montes'];if(!S.includes(id))return '';const r=[...S].sort((a,b)=>D.pop[b].w-D.pop[a].w).indexOf(id)+1;return r===1?'Richest of the 12':r===12?'Poorest of the 12':r+(r===2?'nd':r===3?'rd':'th')+' richest of 12'};
 V.home=()=>{
   const tile=(h,t,d,b)=>`<a class="tile" href="#${h}"><h3>${L(t,b)} →</h3><p>${d}</p></a>`;
   return `<section class="banner"><img src="img/ai-bc-photo2.jpg" alt="Brightport City at dusk"><div class="banner-txt"><h1>Welcome to the official portal of URBO</h1><p>The United Republics of Brightport and Occasue, on the planet Nyreth. The federal capital is Brightport City.</p></div></section>
@@ -279,6 +283,8 @@ V.home=()=>{
   ${tile('government','How the government works','Federal, republic, state and territory levels and the three parliaments.','Gouvern')}
   ${tile('language','National language','Brightportish grammar, the lexicon and the national script.','Ofisial langue')}
   </div></section>
+  <section><h2>URBO at a glance</h2><p>${POPF('urbo')} people: ${POPF('brightport-east')} in Brightport and ${POPF('occasue')} in Occasue. Average income: ${INCF('urbo')}. 1 urbo is worth about 1 US dollar.</p>
+  <table class="gtable"><tr><th>State or territory</th><th>Population</th><th>Average income</th></tr>${Object.entries(D.pop||{}).filter(([k])=>!['urbo','brightport-east','occasue'].includes(k)).sort((a,b)=>b[1].m-a[1].m).map(([k])=>`<tr><td><a href="#s-${k}">${esc(byId(k).name)}</a></td><td>${POPF(k)}</td><td>${(Math.round(D.pop[k].w*600/1000)*1000).toLocaleString('en-US')} urbos</td></tr>`).join('')}</table></section>
   <section class="two"><div class="card feature"><h2>URBO</h2><p>Brightport and Occasue govern themselves, and share a federal union. People move freely across the union, and the Lochway network was kept exactly as it was.</p><a href="#urbo">The union and its flags →</a></div>
   <div class="card feature"><h2>Our history</h2><p>From the first colonists on Nyreth to the civil war, the peace treaty and the union.</p><a href="#history">Read the history →</a></div></section>`;
 };
@@ -305,7 +311,7 @@ V.browse=id=>{
       <h2>Culture and traditions</h2>${I.trad&&I.trad.length?`<ul class="facts">${I.trad.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:`<p>${esc(I.quiet||'')}</p>`}</div>
     <aside class="infobox"><div class="ibflag">${e.flag?`<svg viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${e.flag}"/></svg>`:''}<p>Flag of ${esc(e.name)}</p></div><table>
       ${row('Republic',rep?`<a href="#browse-${rep.id}">${esc(rep.name.replace(/ \(.*\)/,''))}</a>`:'')}${row('Status',kind)}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}
-      ${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}
+      ${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('Wealth',RANKF(id))}${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}
       ${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}
       ${row('Towns on the map',sm?String(sm.towns.length):'')}</table></aside></div>
     ${sm?`<h2 id="st-map">Map of ${esc(e.name)}</h2><figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}. Borders follow rivers where a river crosses the state; elsewhere they run along lines of latitude and longitude.`:`${esc(e.name)} has no subdivisions.`} Use + and − or pinch to zoom, then drag to move. Green lines are Lochways and striped lines are railways. Large dots are seats, small white dots are other towns. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:''}
@@ -362,12 +368,12 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
     if(site.page==='states')return `<h1>States and territories</h1><p class="lede">Each state and territory of the ${esc(title)} has its own website.</p>${tiles}`;
     return `<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website</p><h1>${esc(title)}</h1><p class="sthnick">${id==='occasue'?'The western republic of URBO':'The eastern republic of URBO'}</p></div></section>
       <div class="stgrid"><div class="stmain"><h2>About the republic</h2><ul class="facts">${[...(e.facts||[]),...lv.facts.slice(0,3)].map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
-      <aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of the ${esc(title)}</p></div><table>${row('Capital',cap?esc(cap):esc(lv.seat||''))}${row('Parliament',esc(lv.body||''))}${row('States',String(kids.filter(k=>k.type!=='territory').length))}${row('Territories',String(kids.filter(k=>k.type==='territory').length))}${row('Union','<a href="#home">URBO</a>')}</table></aside></div>
+      <aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of the ${esc(title)}</p></div><table>${row('Capital',cap?esc(cap):esc(lv.seat||''))}${row('Parliament',esc(lv.body||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('States',String(kids.filter(k=>k.type!=='territory').length))}${row('Territories',String(kids.filter(k=>k.type==='territory').length))}${row('Union','<a href="#home">URBO</a>')}</table></aside></div>
       <h2>States and territories</h2>${tiles}`}
   /* states and territories */
   const about=[...(e.facts||[]).map(esc),esc(I.origin||'')].join(' ');
   const infobox=`<aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of ${esc(e.name)}</p></div><table>${row('Republic',rep?`<a href="#s-${rep.id}">${esc(short(rep.name))}</a>`:'')}${row('Status',kind==='State'&&e.type==='oceanic'?'Oceanic state':kind)}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}
-    ${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}${row('Transport',I.transport?'Island Railway, buses, ferry':'')}</table></aside>`;
+    ${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('Wealth',RANKF(id))}${row('Subdivisions',nsub.length?`${nsub.length} ${esc((sd||'').toLowerCase())}`:'None')}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}${row('Known for',esc(I.kshort||''))}${row('Symbol',esc(I.symbol||''))}${row('Climate',esc(I.climate||''))}${row('Transport',I.transport?'Island Railway, buses, ferry':'')}</table></aside>`;
   const trad=I.trad&&I.trad.length?`<ul class="facts">${I.trad.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:`<p>${esc(I.quiet||'')}</p>`;
   const mapFig=sm?`<figure class="statefig"><div class="art statemapbox" data-sm="${id}"><p class="meta">Loading map…</p></div><figcaption>${sd?`${esc(e.name)} and its ${sd.toLowerCase()}.`:`${esc(e.name)} has no subdivisions.`} Use + and − or pinch to zoom, then drag to move. Green lines are Lochways and striped lines are railways. ${badge('proposal')} The borders and most town names are new proposals.</figcaption></figure>`:'';
   const hdr=t=>tier==='c'?`<div class="rbanner">${esc(full)} · ${esc(t)}</div>`:`<h1>${esc(t)}</h1>`;
@@ -385,7 +391,7 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
     <div class="rtop">${flag('rflag')}<div><h1>${esc(e.name)}</h1><p><i>“${esc(I.nick||'')}”</i></p></div></div><hr>
     ${id==='deserto'?'<p class="rnote">NOTICE: Information about installations in Deserto Territory is not available to the public.</p>':''}
     <p>${about}</p><p>${esc(I.known||'')}</p><h2>Quick Links</h2><ul>${sitePages(id).slice(1).map(([p,l])=>`<li><a href="${u(p)}">${esc(l)}</a></li>`).join('')}${rep?`<li><a href="#s-${rep.id}">Republic of ${esc(short(rep.name))}</a></li>`:''}<li><a href="#home">URBO portal</a></li></ul>
-    <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Known for',esc(I.kshort||''))}</table>
+    <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('Known for',esc(I.kshort||''))}</table>
     <h2>Events</h2>${trad}${retroFoot(id,full,kind)}</div>`;
   const head=tier==='a'?`<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website · ${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}</div></section>
       <div class="tiles sitetiles">${sitePages(id).slice(1).map(([p,l])=>`<a class="tile" href="${u(p)}"><h3>${esc(l)} →</h3><p>${({map:'Zoom into '+esc(e.name)+' and its '+esc((sd||'towns').toLowerCase())+'.',subs:'Every '+esc(nsub.length?({Shires:'shire',Rejions:'rejion',Herreds:'herred'})[sd]||'comitatus':'town')+' in the '+(kind==='Territory'?'territory.':'state.'),travel:'Lochways and railway lines.'})[p]}</p></a>`).join('')}</div>`
