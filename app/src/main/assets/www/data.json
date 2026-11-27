@@ -1,4 +1,1564 @@
 {
+ "media": {
+  "networks": [
+   {
+    "id": "ubn",
+    "name": "UBN",
+    "full": "United Broadcasting Network",
+    "kind": "Federal public broadcaster",
+    "rep": "Federal",
+    "hq": "Brightport City and Berevo (dual headquarters)",
+    "logo": "ubn",
+    "slogan": "Together, On Air.",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ],
+    "text": [
+     "URBO’s federal public broadcaster, free nationwide. Funded by government plus limited advertising, with editorial independence protected by law.",
+     "Its logo is a ten-ray orange sun with a red and yellow underline.",
+     "Founded during postwar reconstruction to promote national unity. The exact founding date is not settled."
+    ],
+    "stream": "UBN+"
+   },
+   {
+    "id": "bptv",
+    "name": "BPTV",
+    "full": "Brightport Television",
+    "kind": "Republican public broadcaster",
+    "rep": "Brightport",
+    "hq": "Brightport City",
+    "logo": "bptv",
+    "langs": [
+     "Brightportish",
+     "English"
+    ],
+    "text": [
+     "Brightport’s public broadcaster. Brightportish comes first, with selectable English audio and subtitles.",
+     "Circular yellow logo. BNN, the Brightport News Network, is its dedicated news channel, in yellow and black.",
+     "Royal correspondents cover major ceremonies live."
+    ],
+    "stream": "BPTV+"
+   },
+   {
+    "id": "opn",
+    "name": "OPN",
+    "full": "Occasue Public Network",
+    "kind": "Republican public broadcaster",
+    "rep": "Occasue",
+    "hq": "Berevo, with regional studios",
+    "logo": "opn",
+    "langs": [
+     "Dutch",
+     "French",
+     "Spanish",
+     "Scottish Gaelic",
+     "English"
+    ],
+    "text": [
+     "Occasue’s public broadcaster. The broadcast language varies by region and programme, with regional bulletins throughout the day.",
+     "Four-ray orange sun logo with a red underline.",
+     "Presidential correspondents cover major addresses live."
+    ],
+    "stream": "OPN+"
+   },
+   {
+    "id": "nova",
+    "name": "NOVA",
+    "full": "NOVA",
+    "kind": "Independent commercial network",
+    "rep": "Independent",
+    "hq": "Brightport City",
+    "logo": "nova",
+    "langs": [
+     "English"
+    ],
+    "text": [
+     "Advertising-funded mainstream entertainment: drama, reality and game shows.",
+     "Midnight-blue logo with a multicoloured starburst.",
+     "NOVA+ is free with advertising, or Ⓑ12.99 a month for premium."
+    ],
+    "stream": "NOVA+"
+   },
+   {
+    "id": "vista",
+    "name": "VISTA",
+    "full": "VISTA",
+    "kind": "Independent commercial network",
+    "rep": "Independent",
+    "hq": "Brightport City",
+    "logo": "vista",
+    "langs": [
+     "English"
+    ],
+    "text": [
+     "Family entertainment, sitcoms and game shows. Teal logo."
+    ]
+   },
+   {
+    "id": "prism",
+    "name": "PRISM",
+    "full": "PRISM",
+    "kind": "Independent commercial network",
+    "rep": "Independent",
+    "hq": "Brightport City",
+    "logo": "prism",
+    "langs": [
+     "English"
+    ],
+    "text": [
+     "Science, technology and factual entertainment. Prism and rainbow logo.",
+     "PRISM Science focuses on Nyrethian science; PRISM Earth on the history and science of ancestral Earth."
+    ]
+   }
+  ],
+  "channels": [
+   {
+    "n": "01",
+    "name": "UBN 1",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "02",
+    "name": "UBN 2",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "03",
+    "name": "UBN News",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "04",
+    "name": "UBN Sport",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "05",
+    "name": "UBN Kids",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "06",
+    "name": "UBN World",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "07",
+    "name": "UBN Culture",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "08",
+    "name": "UBN Documentary",
+    "net": "ubn",
+    "public": true
+   },
+   {
+    "n": "11",
+    "name": "BPTV 1",
+    "net": "bptv",
+    "public": true
+   },
+   {
+    "n": "12",
+    "name": "BPTV 2",
+    "net": "bptv",
+    "public": true
+   },
+   {
+    "n": "13",
+    "name": "BPTV Kids",
+    "net": "bptv",
+    "public": true
+   },
+   {
+    "n": "14",
+    "name": "BNN",
+    "net": "bptv",
+    "public": true
+   },
+   {
+    "n": "21",
+    "name": "OPN 1",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "22",
+    "name": "OPN 2",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "23",
+    "name": "OPN Kids",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "24",
+    "name": "OPN News",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "25",
+    "name": "OPN Culture",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "26",
+    "name": "OPN Sport",
+    "net": "opn",
+    "public": true
+   },
+   {
+    "n": "31",
+    "name": "NOVA",
+    "net": "nova",
+    "public": false
+   },
+   {
+    "n": "32",
+    "name": "NOVA Drama",
+    "net": "nova",
+    "public": false
+   },
+   {
+    "n": "33",
+    "name": "NOVA Reality",
+    "net": "nova",
+    "public": false
+   },
+   {
+    "n": "41",
+    "name": "VISTA",
+    "net": "vista",
+    "public": false
+   },
+   {
+    "n": "42",
+    "name": "VISTA Family",
+    "net": "vista",
+    "public": false
+   },
+   {
+    "n": "51",
+    "name": "PRISM",
+    "net": "prism",
+    "public": false
+   },
+   {
+    "n": "52",
+    "name": "PRISM Science",
+    "net": "prism",
+    "public": false
+   },
+   {
+    "n": "53",
+    "name": "PRISM Earth",
+    "net": "prism",
+    "public": false
+   }
+  ],
+  "prog": {
+   "ubn": [
+    [
+     "The National Report",
+     "UBN’s evening news, live in English from two matching studios with panoramic city views: one presenter in Brightport City, one in Berevo. Dubbed editions follow online about an hour later."
+    ],
+    [
+     "Good Morning, URBO!",
+     "Cheerful morning show from a warm café-style studio that alternates between the capitals: news, weather, cooking, interviews and travel."
+    ],
+    [
+     "UBN Election Centre",
+     "Live election results, interactive maps and expert analysis."
+    ],
+    [
+     "Across Our Union",
+     "An annual live celebration of all twelve states and territories, with performances, culture and reporting."
+    ]
+   ],
+   "bptv": [
+    [
+     "Brightport Tonight",
+     "BNN’s Brightportish broadcast of domestic politics and news, presented by Charlotte Beaumont. (English working title.)"
+    ]
+   ],
+   "opn": [
+    [
+     "Occasue Tonight",
+     "OPN News’s flagship programme, presented by Sebastian de Vries. Its broadcast language is not settled."
+    ]
+   ],
+   "nova": [
+    [
+     "Capital Hearts",
+     "Reality competition in a luxury villa in Costal City."
+    ],
+    [
+     "Next Icon",
+     "Nationwide talent competition with celebrity judges and a live public vote on NOVA+."
+    ]
+   ],
+   "vista": [
+    [
+     "The Great URBO Bake-Off",
+     ""
+    ],
+    [
+     "Six Languages One Million",
+     "Multilingual quiz. The exact prize is not confirmed."
+    ],
+    [
+     "Next Door",
+     "Sitcom set in a multicultural apartment building."
+    ],
+    [
+     "Across the Republics",
+     "Travel competition."
+    ],
+    [
+     "Family Fortune",
+     "Survey game show."
+    ]
+   ],
+   "prism": [
+    [
+     "Planet Nyreth",
+     ""
+    ],
+    [
+     "Beyond Earth",
+     "The history of the migration from Earth."
+    ],
+    [
+     "Engineering URBO",
+     ""
+    ],
+    [
+     "Living Languages",
+     ""
+    ],
+    [
+     "Tomorrow’s World",
+     ""
+    ]
+   ],
+   "prism-earth": [
+    [
+     "Our Ancestral Planet",
+     ""
+    ],
+    [
+     "Before Nyreth",
+     ""
+    ],
+    [
+     "Earth: A Natural History",
+     ""
+    ],
+    [
+     "The Languages of Earth",
+     ""
+    ],
+    [
+     "Earth’s Great Cities",
+     ""
+    ],
+    [
+     "Journey to Nyreth",
+     ""
+    ]
+   ]
+  },
+  "presenters": [
+   {
+    "name": "Charlotte Beaumont",
+    "age": "42 Earth years",
+    "home": "Brightport City",
+    "role": "Presenter, The National Report (UBN) and Brightport Tonight (BNN)",
+    "text": "Distinguished and authoritative, a former royal correspondent with deep constitutional knowledge. Blonde bob, blue eyes, sophisticated suits and understated jewellery. Most comfortable in Brightportish, with a strong Brightport City accent in English."
+   },
+   {
+    "name": "Sebastian de Vries",
+    "age": "36 Earth years",
+    "home": "Berevo",
+    "role": "Presenter, The National Report (UBN) and Occasue Tonight (OPN News)",
+    "text": "Charismatic and personable, a former international correspondent. Dark wavy hair, olive complexion, brown eyes, tailored suits. Fluent in all six official languages. Friendly with Charlotte, with contrasting personalities."
+   },
+   {
+    "name": "Camille Laurent and Mateo de Wit",
+    "age": "",
+    "home": "",
+    "role": "Co-hosts, Good Morning, URBO! (UBN)",
+    "text": "Cheerful co-hosts who present together from the café-style studio as it alternates between the capitals."
+   },
+   {
+    "name": "Adriana Reyes",
+    "age": "",
+    "home": "Mami City",
+    "role": "Host, Capital Hearts (NOVA)",
+    "text": "The show’s charismatic host."
+   }
+  ],
+  "tv": [
+   "Federal public broadcasting sits alongside separate republican broadcasters and independent, privately owned commercial networks. Public and private television compete freely.",
+   "Public broadcasters are funded by government plus limited advertising, and their editorial independence is protected by law. Every network follows the same advertising limits.",
+   "Programmes offer selectable audio languages and subtitles. Dubbed versions come later; there is no instant dubbing. Large in-house dubbing departments employ respected voice actors, who are not usually celebrities.",
+   "Digital terrestrial television, cable and streaming all exist side by side, with standard channel numbers. Both a classic grid guide and a modern streaming interface are in use.",
+   "There is no dominant commercial group and no major private TV news network.",
+   "During children’s programmes, only educational and public-service adverts are allowed, on every network."
+  ],
+  "access": [
+   [
+    "Federal public channels (UBN)",
+    "Free nationwide."
+   ],
+   [
+    "Republican public channels (BPTV, BNN, OPN)",
+    "Free within their home republic. In the other republic, available through paid TV packages and streaming subscriptions."
+   ],
+   [
+    "UBN+, BPTV+, OPN+",
+    "Free basic streaming, with optional premium features. Premium prices and features, and exactly what free streaming includes across the border, are not settled."
+   ],
+   [
+    "NOVA+",
+    "Free with advertising; premium Ⓑ12.99 a month."
+   ],
+   [
+    "Basic TV package",
+    "Ⓑ24.99 a month from BrightLink or OCC Connect."
+   ]
+  ],
+  "providers": [
+   {
+    "name": "BrightLink",
+    "rep": "Brightport",
+    "logo": "brightlink",
+    "text": "Brightport’s major TV and broadband provider. Yellow and dark link logo."
+   },
+   {
+    "name": "OCC Connect",
+    "rep": "Occasue",
+    "logo": "occ-connect",
+    "text": "Occasue’s major TV and broadband provider. Red and white network logo."
+   }
+  ],
+  "telecom": [
+   "Nationwide fibre-optic internet, with wireless service in remote areas.",
+   "BrightLink and OCC Connect lead their republics’ broadband markets.",
+   "Typical high-speed home internet costs Ⓑ29.99 a month. Access is a legally guaranteed universal service, which does not mean it is free.",
+   "Mobile plans, speeds and premium plans are not settled."
+  ],
+  "radio_facts": [
+   "After the Civil War, radio became an exclusive federal power under the constitution, to promote national unity and prevent separatist propaganda. It was controversial at the time and is now normal.",
+   "Republican and state governments cannot own radio stations. Their television networks remain separate.",
+   "The federal communications ministry handles licensing, infrastructure and enforcement. Commercial stations hold city or regional licences.",
+   "FM, digital and internet radio all exist side by side. UBN Radio also streams on UBN+.",
+   "Pirate radio is illegal, with heavy fines and prison for repeat offences. The exact penalties are not defined."
+  ],
+  "radio": [
+   {
+    "name": "UBN Radio 1",
+    "type": "National",
+    "fmt": "Contemporary music/general entertainment",
+    "rep": "Federal",
+    "logo": "ubn",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "UBN Radio 2",
+    "type": "National",
+    "fmt": "Classic hits, interviews, lifestyle",
+    "rep": "Federal",
+    "logo": "ubn",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "UBN Radio News",
+    "type": "National",
+    "fmt": "Continuous news/current affairs",
+    "rep": "Federal",
+    "logo": "ubn",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "UBN Radio Classical",
+    "type": "National",
+    "fmt": "Classical/orchestral",
+    "rep": "Federal",
+    "logo": "ubn",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "UBN Radio Sport",
+    "type": "National",
+    "fmt": "Live sport",
+    "rep": "Federal",
+    "logo": "ubn",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "Brightport Pop",
+    "type": "Licensed commercial",
+    "market": "Brightport City",
+    "fmt": "Brightportish contemporary",
+    "rep": "Brightport",
+    "logo": "brightport-pop",
+    "langs": [
+     "Brightportish"
+    ]
+   },
+   {
+    "name": "Radio Berevo",
+    "type": "Licensed commercial",
+    "market": "Berevo",
+    "fmt": "Dutch pop/entertainment",
+    "rep": "Occasue",
+    "logo": "radio-berevo",
+    "langs": [
+     "Dutch"
+    ]
+   },
+   {
+    "name": "Radio Lumière",
+    "type": "Licensed commercial",
+    "market": "Belkhap",
+    "fmt": "French music/culture",
+    "rep": "Occasue",
+    "logo": "radio-lumiere",
+    "langs": [
+     "French"
+    ]
+   },
+   {
+    "name": "Mami FM",
+    "type": "Licensed commercial",
+    "market": "Mami City",
+    "fmt": "Spanish Latin music",
+    "rep": "Brightport",
+    "logo": "mami-fm",
+    "langs": [
+     "Spanish"
+    ]
+   },
+   {
+    "name": "Trempas Wave",
+    "type": "Licensed commercial",
+    "market": "Trempas",
+    "fmt": "Coastal dance/pop",
+    "rep": "Brightport",
+    "logo": "trempas-wave",
+    "langs": []
+   },
+   {
+    "name": "Highland Sound",
+    "type": "Licensed commercial",
+    "market": "Lochwater",
+    "fmt": "Gaelic folk/contemporary",
+    "rep": "Occasue",
+    "logo": "highland-sound",
+    "langs": [
+     "Scottish Gaelic"
+    ]
+   },
+   {
+    "name": "Nord FM",
+    "type": "Licensed commercial",
+    "market": "Swisswa",
+    "fmt": "Schoon music",
+    "rep": "Occasue",
+    "logo": "nord-fm",
+    "langs": [
+     "Schoon"
+    ]
+   },
+   {
+    "name": "Silver FM",
+    "type": "Licensed commercial",
+    "market": "Silverstone",
+    "fmt": "Classic hits/commuters",
+    "rep": "Brightport",
+    "logo": "silver-fm",
+    "langs": []
+   },
+   {
+    "name": "STATIC",
+    "type": "Pirate (illegal)",
+    "market": "Brightport City",
+    "fmt": "Electronic music and youth",
+    "rep": "Brightport",
+    "logo": "static",
+    "langs": []
+   },
+   {
+    "name": "Free Occasue Radio",
+    "type": "Pirate (illegal)",
+    "market": "",
+    "fmt": "Separatist commentary",
+    "rep": "Occasue",
+    "logo": "free-occasue-radio",
+    "langs": []
+   },
+   {
+    "name": "After Dark",
+    "type": "Pirate (illegal)",
+    "market": "Berevo",
+    "fmt": "Uncensored talk and gossip",
+    "rep": "Occasue",
+    "logo": "after-dark",
+    "langs": []
+   }
+  ],
+  "studios": [
+   "Solis",
+   "Floribus",
+   "Weiden",
+   "Estercrystal",
+   "Sur",
+   "Norham",
+   "Deserto",
+   "Kus",
+   "Ouest",
+   "Lochwater",
+   "Polvo",
+   "Montes"
+  ],
+  "archive": [
+   [
+    "Voices Before the Union",
+    "Early independent broadcasts."
+   ],
+   [
+    "Voices of the Civil War",
+    "Wartime news, competing narratives and underground recordings."
+   ],
+   [
+    "The Birth of UBN",
+    "Early federal broadcasts."
+   ],
+   [
+    "Our Living Languages",
+    "Regional speech, accents and traditions."
+   ]
+  ],
+  "press_facts": [
+   "Newspapers are independent and privately owned, and press freedom is protected by the constitution.",
+   "They are printed daily alongside digital subscriptions. A typical print edition costs Ⓑ1.50; a digital subscription Ⓑ9.99 a month."
+  ],
+  "press": [
+   {
+    "name": "The Federal Gazette",
+    "scope": "National",
+    "rep": "Federal",
+    "logo": "federal-gazette",
+    "langs": [
+     "English",
+     "Brightportish",
+     "French",
+     "Spanish",
+     "Dutch",
+     "Scottish Gaelic"
+    ],
+    "tag": "POLITICS · ECONOMICS · NATIONAL AFFAIRS",
+    "text": "National newspaper of politics and economics. Centrist, factual coverage in all six official languages. Orange ten-ray sun, black serif masthead, red and yellow underline.",
+    "font": "Georgia,serif",
+    "col": "#111"
+   },
+   {
+    "name": "The Crown Standard",
+    "scope": "Brightport",
+    "rep": "Brightport",
+    "logo": "crown-standard",
+    "langs": [
+     "Brightportish",
+     "English"
+    ],
+    "tag": "CROWN · COUNTRY · TRADITION",
+    "text": "Brightport’s leading newspaper. Traditional and monarchist; prioritises local languages. Dark navy serif masthead with a gold crown and underline.",
+    "font": "Georgia,serif",
+    "col": "#14223f"
+   },
+   {
+    "name": "The Occasue Republic",
+    "scope": "Occasue",
+    "rep": "Occasue",
+    "logo": "occasue-republic",
+    "langs": [
+     "Dutch",
+     "French",
+     "Spanish",
+     "Scottish Gaelic"
+    ],
+    "tag": "PEOPLE · PROGRESS · DEMOCRACY",
+    "text": "Occasue’s leading newspaper. Progressive, with a strong political focus; prioritises local languages. Crimson serif masthead with a four-ray sun.",
+    "font": "Georgia,serif",
+    "col": "#a51e2d"
+   },
+   {
+    "name": "SUNSPOT",
+    "scope": "National",
+    "rep": "Independent",
+    "logo": "sunspot",
+    "langs": [
+     "English"
+    ],
+    "tag": "THE STORIES EVERYONE’S TALKING ABOUT",
+    "text": "Celebrity gossip: real exclusives alongside sensationalism. White bold text on red with a yellow slogan.",
+    "font": "Impact,\"Arial Black\",sans-serif",
+    "col": "#c8262c"
+   },
+   {
+    "name": "The Current",
+    "scope": "Digital",
+    "rep": "Independent",
+    "logo": "the-current",
+    "langs": [
+     "English"
+    ],
+    "tag": "",
+    "text": "Digital outlet for investigative longform journalism. Navy, white and aqua wave.",
+    "font": "\"Fira Sans\",sans-serif",
+    "col": "#123"
+   },
+   {
+    "name": "OPEN",
+    "scope": "Digital",
+    "rep": "Independent",
+    "logo": "open",
+    "langs": [
+     "English"
+    ],
+    "tag": "",
+    "text": "Independent digital news and fact-checking. Pale background with a green wordmark and underline.",
+    "font": "\"Fira Sans\",sans-serif",
+    "col": "#1f7a45"
+   }
+  ],
+  "regional": [
+   {
+    "name": "The Solis Herald",
+    "market": "Solis",
+    "rep": "Brightport",
+    "langs": [
+     "Brightportish"
+    ]
+   },
+   {
+    "name": "The Floribus Post",
+    "market": "Floribus",
+    "rep": "Brightport",
+    "langs": [
+     "Brightportish"
+    ]
+   },
+   {
+    "name": "The Weiden Gazette",
+    "market": "Weiden",
+    "rep": "Brightport",
+    "langs": [
+     "English"
+    ]
+   },
+   {
+    "name": "The Crystal Chronicle",
+    "market": "Estercrystal",
+    "rep": "Brightport",
+    "langs": [
+     "Brightportish"
+    ]
+   },
+   {
+    "name": "El Diario del Sur",
+    "market": "Sur",
+    "rep": "Brightport",
+    "langs": [
+     "Spanish"
+    ]
+   },
+   {
+    "name": "The Norham Times",
+    "market": "Norham",
+    "rep": "Brightport",
+    "langs": [
+     "English"
+    ]
+   },
+   {
+    "name": "The Deserto Frontier",
+    "market": "Deserto",
+    "rep": "Brightport",
+    "langs": [
+     "English"
+    ]
+   },
+   {
+    "name": "De Berevo Courant",
+    "market": "Kus",
+    "rep": "Occasue",
+    "langs": [
+     "Dutch"
+    ]
+   },
+   {
+    "name": "Le Journal de Belkhap",
+    "market": "Ouest",
+    "rep": "Occasue",
+    "langs": [
+     "French"
+    ]
+   },
+   {
+    "name": "The Highland Herald",
+    "market": "Lochwater",
+    "rep": "Occasue",
+    "langs": [
+     "Scottish Gaelic",
+     "English"
+    ]
+   },
+   {
+    "name": "El Diario de Polvo",
+    "market": "Polvo",
+    "rep": "Occasue",
+    "langs": [
+     "Spanish"
+    ]
+   },
+   {
+    "name": "The Mountain Post",
+    "market": "Montes",
+    "rep": "Occasue",
+    "langs": [
+     "English"
+    ]
+   }
+  ],
+  "social": [
+   {
+    "name": "CIRCLE",
+    "logo": "circle",
+    "text": "Personal profiles and communities. Blue connected circles."
+   },
+   {
+    "name": "GLIMPSE",
+    "logo": "glimpse",
+    "text": "Photography, lifestyle and celebrity. Gradient eye."
+   },
+   {
+    "name": "FLUX",
+    "logo": "flux",
+    "text": "Short viral video, music and entertainment. Dark lightning."
+   },
+   {
+    "name": "THREAD",
+    "logo": "thread",
+    "text": "Forums and discussion. Orange messages."
+   },
+   {
+    "name": "RELAY",
+    "logo": "relay",
+    "text": "Encrypted messaging with voice and video. Teal send icon."
+   },
+   {
+    "name": "STREAM",
+    "logo": "stream",
+    "text": "Long-form video, tutorials and livestreams. Red play icon."
+   }
+  ],
+  "social_facts": [
+   "Privately owned and publicly traded technology firms both operate.",
+   "Instant written translation into all six official languages. There is no instant TV dubbing.",
+   "Free identity verification for public figures, journalists and institutions. Government institutions have verified accounts on all major platforms.",
+   "A strong federal data-privacy law is overseen by an independent federal digital regulator.",
+   "The minimum age is 13 Earth years, with extra protections until 18.",
+   "Advertising and sponsorships fund professional creators. Paid promotions must be disclosed.",
+   "Each republic has its own internet culture, but national trends are shared."
+  ],
+  "profiles": [
+   {
+    "name": "Amélien van der Cruz",
+    "handle": "@Amelien",
+    "followers": "4.8M",
+    "content": "Presidential engagements/public life",
+    "pic": "img/amelien-van-der-cruz-headshot.jpg",
+    "link": "urbo"
+   },
+   {
+    "name": "Souvren Élise I",
+    "handle": "@HouseOfBrightwell",
+    "followers": "4.2M",
+    "content": "Official royal family account",
+    "pic": "img/elise-i-headshot.jpg",
+    "link": "crown"
+   },
+   {
+    "name": "Éloïse",
+    "handle": "@EloiseOfficial",
+    "followers": "3.6M",
+    "content": "Music, fashion, performances",
+    "pic": null,
+    "link": null
+   },
+   {
+    "name": "Theo Westwood",
+    "handle": "@TheoWestwood",
+    "followers": "2.1M",
+    "content": "Journalism, lifestyle, travel",
+    "pic": null,
+    "link": null
+   },
+   {
+    "name": "Matteo van Dalen",
+    "handle": "@MatteoVD",
+    "followers": "2.3M",
+    "content": "Photography, travel, lifestyle",
+    "pic": null,
+    "link": null
+   },
+   {
+    "name": "Milan de Jong",
+    "handle": "@MilanMusic",
+    "followers": "2.8M",
+    "content": "Music, behind the scenes",
+    "pic": null,
+    "link": null
+   },
+   {
+    "name": "LUNA SOL",
+    "handle": "@LunaSol",
+    "followers": "3.1M",
+    "content": "Music, dancing, fashion",
+    "pic": null,
+    "link": null
+   }
+  ],
+  "streamch": [
+   {
+    "name": "Nyreth Explained",
+    "text": "Science and education"
+   },
+   {
+    "name": "Across URBO",
+    "text": "Travel, food, culture"
+   },
+   {
+    "name": "CourtSide UBA",
+    "text": "Basketball analysis"
+   },
+   {
+    "name": "The Language Lab",
+    "text": "Learning and multilingual comedy"
+   },
+   {
+    "name": "Villa Unfiltered",
+    "text": "Reality commentary"
+   },
+   {
+    "name": "Earth Archive",
+    "text": "Historical footage and documentaries"
+   },
+   {
+    "name": "Mami Kitchen",
+    "text": "Spanish cooking"
+   }
+  ],
+  "artists": [
+   {
+    "name": "Éloïse",
+    "home": "Brightport City",
+    "style": "Brightportish synthpop; fashionable, elaborate"
+   },
+   {
+    "name": "Milan de Jong",
+    "home": "Berevo",
+    "style": "Dutch/English romantic ballads; charismatic young singer"
+   },
+   {
+    "name": "LUNA SOL",
+    "home": "Mami City",
+    "style": "Latin pop/dance"
+   },
+   {
+    "name": "Maison Minuit",
+    "home": "Belkhap",
+    "style": "French electronic indie group"
+   },
+   {
+    "name": "Northbound",
+    "home": "Swisswa",
+    "style": "Schoon indie folk/Nordic rock"
+   },
+   {
+    "name": "Isla MacRae",
+    "home": "Lochwater",
+    "style": "Gaelic/English folk pop"
+   },
+   {
+    "name": "COASTLINE",
+    "home": "Trempas",
+    "style": "EDM DJ duo"
+   },
+   {
+    "name": "The Silver Lines",
+    "home": "Silverstone",
+    "style": "English alternative rock band"
+   }
+  ],
+  "chart": [
+   {
+    "rank": 1,
+    "song": "Between Two Suns",
+    "artist": "Milan de Jong",
+    "lang": "English",
+    "move": "+2"
+   },
+   {
+    "rank": 2,
+    "song": "Midnight in Mami",
+    "artist": "LUNA SOL",
+    "lang": "Spanish/English",
+    "move": "-1"
+   },
+   {
+    "rank": 3,
+    "song": "Golden Hour",
+    "artist": "Éloïse",
+    "lang": "Brightportish",
+    "move": "+1"
+   },
+   {
+    "rank": 4,
+    "song": "Ocean Eyes",
+    "artist": "COASTLINE",
+    "lang": "English",
+    "move": "+3"
+   },
+   {
+    "rank": 5,
+    "song": "Après minuit",
+    "artist": "Maison Minuit",
+    "lang": "French",
+    "move": "0"
+   },
+   {
+    "rank": 6,
+    "song": "Home Again",
+    "artist": "Isla MacRae",
+    "lang": "Gaelic/English",
+    "move": "+2"
+   },
+   {
+    "rank": 7,
+    "song": "Northern Lights",
+    "artist": "Northbound",
+    "lang": "Schoon",
+    "move": "-3"
+   },
+   {
+    "rank": 8,
+    "song": "Streets of Silver",
+    "artist": "The Silver Lines",
+    "lang": "English",
+    "move": "-2"
+   },
+   {
+    "rank": 9,
+    "song": "De laatste dans",
+    "artist": "Milan de Jong",
+    "lang": "Dutch",
+    "move": "+1"
+   },
+   {
+    "rank": 10,
+    "song": "Sin fronteras",
+    "artist": "LUNA SOL",
+    "lang": "Spanish",
+    "move": "0"
+   }
+  ],
+  "music_events": [
+   {
+    "name": "Golden Sun Awards",
+    "logo": "golden-sun-trophy",
+    "slogan": "Many voices. One stage.",
+    "text": "URBO’s prestigious annual music awards, open to music in any language. The ceremony alternates between Brightport City and Berevo and airs free on UBN 1. Trophy: a gold ten-ray sun on a curved stem, black base and gold plaque.",
+    "list": [
+     "Album of the Year",
+     "Song of the Year",
+     "Artist of the Year",
+     "Best New Artist",
+     "Best Pop Recording",
+     "Best Rock Recording",
+     "Best Electronic Recording",
+     "Best Folk Recording",
+     "Best Music Video",
+     "Lifetime Achievement"
+    ]
+   },
+   {
+    "name": "One URBO",
+    "logo": "one-urbo",
+    "slogan": "United in Song",
+    "text": "Annual multilingual song competition: 12 acts, one for each state and territory. Scoring is 50% jury and 50% public vote. The host alternates between the republics. Broadcast on UBN 1. Past winners and detailed scoring are not settled."
+   },
+   {
+    "name": "Next Icon",
+    "logo": "next-icon",
+    "slogan": "",
+    "text": "NOVA’s talent competition: nationwide auditions, celebrity judges and a live public vote on NOVA+. The winner gets a recording contract and Ⓑ100,000."
+   }
+  ],
+  "services": [
+   {
+    "name": "TEMPO",
+    "logo": "tempo",
+    "text": "Dark and mint waveform."
+   },
+   {
+    "name": "Echo",
+    "logo": "echo",
+    "text": "Purple and white audio lines."
+   },
+   {
+    "name": "WAV",
+    "logo": "wav",
+    "text": "Teal and white waves."
+   }
+  ],
+  "hearts": {
+   "text": [
+    "The approved version is a reality competition (not the earlier scripted idea). It began as a Brightport City programme and went nationwide, keeping its title.",
+    "Twenty singles arrive gradually at a luxury villa in Costal City. Pairings form regardless of gender, and the show is naturally multilingual.",
+    "Coupling ceremonies, challenges built around food, languages, music and culture, confessionals, surprise arrivals, eliminations and public voting.",
+    "Three episodes a week, including a live weekly elimination, over ten Nyrethian weeks. A new cast every year, and the villa location rotates.",
+    "Hosted by Adriana Reyes of Mami City. Viewers vote free on NOVA+ after verification, and choose the winning couple in the finale. Prize: Ⓑ500,000, shared."
+   ],
+   "story": [
+    "Theo Westwood, an original contestant, and Matteo van Dalen, a surprise arrival, meet for the first time in the villa. Friendship turns into romance.",
+    "Sofia and Maxime become a popular couple. Jasper’s interest in Matteo causes tension, and his motives are questioned.",
+    "Theo learns Dutch during a multilingual cooking challenge. Surprise arrivals shake up other couples, but Theo and Matteo stay together.",
+    "Letters from home lead to an emotional talk about their future. Theo and Matteo win the finale and become national fan favourites.",
+    "Afterwards they become lifestyle influencers while continuing their careers in journalism and photography."
+   ],
+   "open": [
+    "Whether the featured “Season One” is the first nationwide season",
+    "A show logo or tagline",
+    "Which language Theo and Matteo share"
+   ]
+  },
+  "cast": [
+   {
+    "name": "Theo Westwood",
+    "age": 25,
+    "home": "Brightport City",
+    "job": "Junior political journalist"
+   },
+   {
+    "name": "Matteo van Dalen",
+    "age": 28,
+    "home": "Berevo",
+    "job": "Professional photographer"
+   },
+   {
+    "name": "Sofia Reyes",
+    "age": 26,
+    "home": "Mami City",
+    "job": "Dance instructor"
+   },
+   {
+    "name": "Maxime Dubois",
+    "age": 27,
+    "home": "Belkhap",
+    "job": "Pastry chef"
+   },
+   {
+    "name": "Freya Lindström",
+    "age": 24,
+    "home": "Swisswa",
+    "job": "Interior designer"
+   },
+   {
+    "name": "Callum MacLeod",
+    "age": 29,
+    "home": "Dunellan",
+    "job": "Personal trainer"
+   },
+   {
+    "name": "Isabella Cruz",
+    "age": 25,
+    "home": "Polvo Springs",
+    "job": "Veterinary nurse"
+   },
+   {
+    "name": "Jasper de Jong",
+    "age": 28,
+    "home": "Berevo",
+    "job": "Software engineer"
+   },
+   {
+    "name": "Amélie Laurent",
+    "age": 26,
+    "home": "Belkhap",
+    "job": "Fashion stylist"
+   },
+   {
+    "name": "Oliver Bennett",
+    "age": 27,
+    "home": "Silverstone",
+    "job": "Marine engineer"
+   },
+   {
+    "name": "Léa Fontaine",
+    "age": 24,
+    "home": "Aurelia",
+    "job": "Art student"
+   },
+   {
+    "name": "Erik Hansen",
+    "age": 30,
+    "home": "Bikbergen",
+    "job": "Ski instructor"
+   },
+   {
+    "name": "Valentina Morales",
+    "age": 27,
+    "home": "Mami City",
+    "job": "Radio presenter"
+   },
+   {
+    "name": "Hugo Sinclair",
+    "age": 26,
+    "home": "Portcrystal",
+    "job": "Architect"
+   },
+   {
+    "name": "Eilidh Fraser",
+    "age": 25,
+    "home": "Lochwater",
+    "job": "Primary school teacher"
+   },
+   {
+    "name": "Noah van der Meer",
+    "age": 29,
+    "home": "Costal City",
+    "job": "Restaurant manager"
+   },
+   {
+    "name": "Clara Westbrook",
+    "age": 28,
+    "home": "Brightport City",
+    "job": "Lawyer"
+   },
+   {
+    "name": "Lucas Pereira",
+    "age": 26,
+    "home": "Trempas",
+    "job": "Surf instructor"
+   },
+   {
+    "name": "Astrid Berg",
+    "age": 25,
+    "home": "Swisswa",
+    "job": "Graphic designer"
+   },
+   {
+    "name": "Adam Mitchell",
+    "age": 30,
+    "home": "Ft. Deserto",
+    "job": "Paramedic"
+   }
+  ],
+  "theo_matteo": {
+   "Theo Westwood": "Blond swept-back hair, blue eyes, clean-shaven, slim. Speaks English and Brightportish.",
+   "Matteo van Dalen": "Light brown curly hair, blue eyes, moustache, athletic. Speaks Dutch and French."
+  },
+  "film_orgs": [
+   {
+    "name": "Sundial Pictures",
+    "logo": "sundial-pictures",
+    "text": "Large mainstream film studio. Navy and gold sundial logo."
+   },
+   {
+    "name": "Red Horizon Studios",
+    "logo": "red-horizon",
+    "text": "Independent and artistic cinema. Dark red sunset logo."
+   },
+   {
+    "name": "SunScreen Cinemas",
+    "logo": "sunscreen",
+    "text": "Modern multiplexes nationwide. Navy and yellow sun logo. A standard ticket is Ⓑ12.50."
+   },
+   {
+    "name": "Golden Lens Awards",
+    "logo": "golden-lens-trophy",
+    "text": "The prestigious annual film awards. Gold aperture-lens trophy on a black base with a plaque. “Every story deserves a screen.”"
+   },
+   {
+    "name": "Berevo Film Festival",
+    "logo": null,
+    "text": "Festival of artistic and independent cinema."
+   }
+  ],
+  "film_facts": [
+   "Brightport and Occasue have distinct film industries that often work together.",
+   "Historical films about Earth sit alongside documentaries.",
+   "Studio headquarters, ownership, release dates, award categories and winners, venues and festival dates are not settled."
+  ],
+  "films": [
+   {
+    "name": "The Last Days of Earth",
+    "genre": "Historical science fiction",
+    "text": "Humanity’s departure from ancestral Earth."
+   },
+   {
+    "name": "Before the Union",
+    "genre": "Historical drama",
+    "text": "Ordinary families in the Civil War era"
+   },
+   {
+    "name": "The Train to Berevo",
+    "genre": "Romantic drama",
+    "text": "Two strangers connect on an inter-republic railway journey"
+   },
+   {
+    "name": "Summer in Trempas",
+    "genre": "Romantic comedy",
+    "text": "Friends reunite for a chaotic coastal holiday"
+   },
+   {
+    "name": "The Miracle of Deserto",
+    "genre": "Sports drama",
+    "text": "Guardians' extraordinary UBA championship victory"
+   },
+   {
+    "name": "Under the Northern Sky",
+    "genre": "Coming-of-age drama",
+    "text": "Swisswa musician balances Schoon traditions with modern ambitions"
+   }
+  ],
+  "game_orgs": [
+   {
+    "name": "Sunstorm Interactive",
+    "logo": "sunstorm",
+    "text": "Mainstream blockbuster game developer. Dark purple and orange lightning logo."
+   },
+   {
+    "name": "SOLAR",
+    "logo": "solar-console",
+    "text": "URBO’s dominant home console, alongside PC and mobile gaming. White vertical housing with a dark central panel, an orange power light and a white controller. Manufacturer, price and specifications are not settled."
+   }
+  ],
+  "games": [
+   {
+    "name": "Republic Underground",
+    "genre": "Open-world action/satire",
+    "text": "Fictionalized Brightport City/Berevo, crime, politics, celebrity and social commentary"
+   },
+   {
+    "name": "UBA 25",
+    "genre": "Basketball simulation",
+    "text": "All 16 UBA franchises, career and Nyreth Cup"
+   },
+   {
+    "name": "Earth: 2025",
+    "genre": "Historical open-world simulation",
+    "text": "Reconstructed 21st-century Earth cities, culture and technology"
+   },
+   {
+    "name": "Nyreth Rail Simulator",
+    "genre": "Transport simulation",
+    "text": "URBO passenger and freight trains"
+   },
+   {
+    "name": "Foundations",
+    "genre": "City-building strategy",
+    "text": "Nyreth settlements, economics, infrastructure, environment"
+   },
+   {
+    "name": "Critter Quest",
+    "genre": "Creature-collecting adventure",
+    "text": "Fantastical creatures and friendly competitions"
+   }
+  ],
+  "game_facts": [
+   "Each republic has its own esports league, with a national championship between them.",
+   "Which developer made each game, and game prices, are not settled. UBA 25 is an approved title, not proof of a release year."
+  ],
+  "ads": [
+   "All television networks share the same advertising limits.",
+   "Adverts mostly use the local market’s languages.",
+   "Digital billboards are common in commercial districts and restricted in historic areas."
+  ],
+  "kids_facts": [
+   "Public children’s programming emphasises multilingual education and cultural diversity.",
+   "All major children’s programmes are dubbed into all six official languages.",
+   "Only educational and public-service adverts run during children’s programmes, on every network."
+  ],
+  "kids": [
+   {
+    "name": "The Little Suns",
+    "logo": "little-suns",
+    "flag": true,
+    "text": "The flagship: animated adventures of children from both republics, with friendly six-ray Brightport and four-ray Occasue sun mascots, exploring traditions, languages, friendship and cooperation."
+   },
+   {
+    "name": "Hello, Nyreth!",
+    "logo": "hello-nyreth",
+    "flag": true,
+    "text": "Puppet presenters teach science, mathematics, languages and ancestral Earth."
+   },
+   {
+    "name": "Sunshine Street",
+    "logo": "sunshine-street",
+    "flag": true,
+    "text": "Live action in a multicultural neighbourhood: songs, stories and everyday problems."
+   },
+   {
+    "name": "Little Explorers",
+    "text": "Geography and regional cultures."
+   },
+   {
+    "name": "Earth Explorers",
+    "text": "The animals and environments of ancestral Earth."
+   },
+   {
+    "name": "Mini UBA",
+    "text": "Basketball, teamwork and sportsmanship."
+   },
+   {
+    "name": "The Language Tree",
+    "text": "The official languages."
+   },
+   {
+    "name": "Number Adventures",
+    "text": "Mathematics."
+   },
+   {
+    "name": "Critter Quest",
+    "text": "An animated adaptation of the game."
+   },
+   {
+    "name": "All Aboard!",
+    "text": "Rail adventures."
+   }
+  ],
+  "alert": [
+   "URBO Alert is the single federal emergency notification system.",
+   "Federal and republican authorities each issue their own alerts through the shared system.",
+   "Alerts go out on every broadcast and digital platform, plus outdoor warning sirens where needed.",
+   "Every alert is issued in all six official languages.",
+   "The approved TV screen: a coloured warning header, white title and instructions on black, the ten-ray orange federal sun, yellow text for the affected area and a red and yellow strip along the bottom.",
+   "Warning tones, alert types and procedures beyond this are not settled."
+  ],
+  "traditions": [
+   {
+    "name": "New Year",
+    "logo": "new-year-broadcast",
+    "text": "Each republic celebrates separately, followed by a unified federal countdown. The countdown’s reference time zone is not settled."
+   },
+   {
+    "name": "The joint New Year address",
+    "text": "Every year Souvren Élise I and President Amélien van der Cruz give a joint address looking back on the year."
+   },
+   {
+    "name": "Anthems",
+    "text": "Federal and republican broadcasters play their own anthems at the start of each broadcast day."
+   },
+   {
+    "name": "Across Our Union",
+    "text": "An annual live national celebration on television, featuring all twelve states and territories with performances, cultural celebrations and reporting. Its air date is not settled."
+   }
+  ],
+  "history": [
+   [
+    "Before the Civil War",
+    "Independent regional broadcasters dominated."
+   ],
+   [
+    "The Civil War (about years 92–94)",
+    "Wartime radio carried competing narratives and underground broadcasts."
+   ],
+   [
+    "Postwar reconstruction",
+    "UBN was founded to promote unity, and radio became a federal power in the postwar constitutional reforms. Neither the founding date nor the constitutional article is settled."
+   ],
+   [
+    "Today",
+    "Federal, republican and commercial broadcasters compete freely across TV, radio, streaming, press and social media."
+   ]
+  ],
+  "open": [
+   "Exact cross-republic TV entitlements, premium streaming prices and features",
+   "Individual UBN channel colours and receiver hardware",
+   "Radio frequencies and exact schedules; episode dates; rankings beyond the sample chart",
+   "Historic award winners, film casts and release years",
+   "Console maker, specifications and game prices",
+   "UBN’s founding year and the legal basis for radio federalisation",
+   "Mascot names for The Little Suns",
+   "The New Year countdown’s reference time and the date of Across Our Union",
+   "Advertising minute limits, internet speeds and mobile plans"
+  ],
+  "langs": [
+   "English",
+   "Brightportish",
+   "French",
+   "Spanish",
+   "Dutch",
+   "Scottish Gaelic"
+  ]
+ },
  "uba": {
   "name": "URBO Basketball Association",
   "abbreviation": "UBA",

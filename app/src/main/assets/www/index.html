@@ -240,6 +240,93 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
 @media(max-width:820px){.two,.hero{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){body{font-size:16px}table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:6.5em;margin-inline-start:-7em;color:var(--mute);font:600 12px "Fira Sans",sans-serif;white-space:normal}.stack td:empty{display:none}}
 @media(prefers-reduced-motion:no-preference){.view{animation:fade .25s ease}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}}
+/* MEDIA-CSS */
+.mhero{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px 20px;margin:4px 0 22px;background-image:linear-gradient(90deg,#c8262c 50%,#f4c21c 50%);background-size:100% 5px;background-repeat:no-repeat;background-position:bottom}
+.mherologo{height:70px}.mhero-logos{display:flex;gap:10px}
+.msample{background:#fff4d1;color:#4a3800;border:1.5px dashed #c99a00;border-radius:8px;padding:8px 12px;font:500 14px "Fira Sans",sans-serif}
+@media (prefers-color-scheme:dark){.msample{background:#3a3112;color:#ffe9a8}}
+.mrep{display:inline-block;font:700 11px "Fira Sans",sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1.5px solid var(--c);color:var(--ink);vertical-align:middle}
+.mpill{display:inline-block;font:600 12px "Fira Sans",sans-serif;padding:3px 10px;border-radius:99px;background:#0006;color:#fff;margin-top:8px}
+.mnets{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.mnet{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-decoration:none;color:inherit}
+.mnet small{color:var(--mute);font-size:13px;line-height:1.3}.mnetlogo{height:64px;max-width:120px;object-fit:contain}.mnetlogo.sq{height:56px}
+a.mnet:hover{border-color:#ee6a1a}
+.mcard .mcardlogo{height:64px;max-width:170px;object-fit:contain;display:block;margin-bottom:8px}.mcardlogo.tall{height:120px}.mcardlogo.sm{height:40px}
+.mwide{width:100%;border-radius:8px;margin-bottom:6px}
+.mchips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:10px 0}.mchips .meta{min-width:76px}
+.chip[aria-pressed=true]{background:#14223f;color:#fff;border-color:#14223f}.mstatic{cursor:default}
+.mdirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:8px}
+.mdiritem{display:flex;gap:10px;align-items:flex-start;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
+.mdiritem:hover{border-color:#ee6a1a}.mdiritem b{display:block}.mdiritem small{display:block;color:var(--mute);font-size:12px}.mdesc{display:block;font-size:14px;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mdirlogo{flex:none;width:52px;height:40px;object-fit:contain}.mdirtxt{display:grid;place-items:center;background:var(--soft);border-radius:8px;font:800 15px "Fira Sans",sans-serif;color:var(--mute)}
+.mtiles .tile{border-left-color:#ee6a1a}
+/* TV */
+.tvrx{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;align-items:start}
+@media(max-width:820px){.tvrx{grid-template-columns:1fr}.tvlist{max-height:320px}}
+.tvctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px;font:500 14px "Fira Sans",sans-serif}
+.tvctl select{font:inherit;min-height:40px;padding:0 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}.tvchk{display:flex;gap:6px;align-items:center}
+.tvbox{background:#111;border-radius:14px;padding:10px;box-shadow:inset 0 0 0 2px #333,0 6px 20px #0004}
+.tvscr{position:relative;aspect-ratio:16/9;background:radial-gradient(ellipse at 50% 40%,#1c2a48,#05070d);border-radius:6px;overflow:hidden;color:#fff;display:flex;align-items:center;justify-content:center}
+.tvscr.live{display:block;background:#000}.tvscr.live #uwslot{position:absolute;inset:0}.tvscr.live .uwframe{height:100%!important}
+.tvosd{position:absolute;z-index:5;left:10px;top:8px;font:700 15px "Fira Sans",sans-serif;background:#000a;padding:3px 10px;border-radius:6px;pointer-events:none;animation:tvosd 4s forwards}.tvosd b{color:#f4c21c}.tvosd span{font-weight:400;opacity:.8}
+@keyframes tvosd{0%,70%{opacity:1}100%{opacity:0}}
+.tvsub{position:absolute;z-index:6;right:8px;top:6px;display:flex;gap:6px}.tvsub .chip{min-height:28px;background:#000b;color:#fff;border-color:#fff6}.tvsub .chip[aria-pressed=true]{background:#f4c21c;color:#111}
+.tvcard{text-align:center;padding:18px;animation:tvin .4s}.tvcard h3{font-size:26px;margin:6px 0}.tvcard p{color:#d7deea;margin:4px 0}.tvlogo{height:100px;max-width:220px;object-fit:contain;background:#fff;border-radius:14px;padding:8px 12px;box-shadow:0 6px 18px #0009}.tvblock{font-size:44px}
+.tvcard .chip{margin-top:6px}
+@keyframes tvin{from{opacity:0;filter:blur(6px) brightness(2)}}
+.tvbtns{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}.tvbtns .uwfs{margin:0}
+.tvlist{max-height:640px;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.tvgrp{border-bottom:1px solid var(--line)}.tvgrph{display:flex;gap:8px;align-items:center;padding:8px 10px;font:700 13px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);position:sticky;top:0;background:var(--card)}.tvgrplogo{height:22px;max-width:44px;object-fit:contain}
+.tvch{display:block;width:100%;text-align:left;border:0;border-radius:0;min-height:40px;padding:0 12px;font-weight:500;background:none}.tvch b{display:inline-block;min-width:26px;color:#ee6a1a}.tvch small{color:var(--mute);font-weight:400}
+.tvch[aria-pressed=true]{background:#14223f;color:#fff}.tvch[aria-pressed=true] small{color:#ccd}
+.tvlive{font:800 10px "Fira Sans",sans-serif;background:#c8262c;color:#fff;padding:1px 5px;border-radius:3px;vertical-align:2px}
+.tvgrid{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}.tvgrid th,.tvgrid td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.tvgrid thead th{background:#14223f;color:#fff}
+.tvgch{border:0;background:none;min-height:30px;padding:0;text-align:left;font:600 14px "Fira Sans",sans-serif;color:var(--ink)}.tvgch b{color:#ee6a1a}.tvgrid tr:has([aria-pressed=true]) th{background:#f4c21c33}
+/* Radio */
+.rdrx{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}@media(max-width:820px){.rdrx{grid-template-columns:1fr}.rdlist{max-height:300px}}
+.rddial{background:linear-gradient(#2a2f38,#14171c);color:#fff;border-radius:16px;padding:20px;box-shadow:inset 0 0 0 3px #444;min-height:280px}
+.rdtop{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.rdtop h3{font-size:28px;margin:4px 0}.rdtop p{margin:0;color:#cfd6e2}.rdlogo{height:90px;width:130px;object-fit:contain;background:#fff;border-radius:10px;padding:4px}
+.rdeq{display:flex;gap:4px;align-items:flex-end;height:80px;margin:18px 0 10px}.rdeq i{flex:1;background:linear-gradient(#f4c21c,#ee6a1a);border-radius:2px;animation:rdeq .9s ease-in-out infinite alternate;height:20%}
+@keyframes rdeq{to{height:95%}}@media(prefers-reduced-motion:reduce){.rdeq i{animation:none;height:50%}}
+.rddial .meta{color:#aab3c2}.rddial.pirate{background:repeating-linear-gradient(0deg,#1b1b1b 0 2px,#222 2px 4px);box-shadow:inset 0 0 0 3px #c8262c}.rddial.pirate .rdeq i{background:#8a8f99;animation-duration:.25s}
+.rdlist{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}.rdbtns{display:flex;gap:8px;margin:10px 0 20px}
+/* Press */
+.newsstand{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:14px}
+.pstand-btn{height:auto;min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:#fffdf8;color:#222;padding:8px}.pstand-btn[aria-pressed=true]{outline:3px solid #ee6a1a}.pslogo{height:44px;max-width:100%;object-fit:contain}.pstand-btn small{color:#666;font-weight:500}
+.paper{background:#f7f3ea;color:#1d1d1d;border-radius:4px;padding:20px 24px;box-shadow:0 6px 24px #0002;font-family:Georgia,"Times New Roman",serif;margin-bottom:20px}
+.pmast{text-align:center;border-bottom:3px double #222;padding-bottom:6px}.pmlogo{height:90px;max-width:100%}
+.pline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 12px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid #222;padding:5px 0;color:#444}
+.pbanner{background:#c8262c;color:#fff;text-align:center;font:800 13px "Fira Sans",sans-serif;letter-spacing:.12em;padding:5px;margin:10px 0}
+.pcols{display:grid;grid-template-columns:2fr 1fr;gap:20px}@media(max-width:640px){.pcols{grid-template-columns:1fr}}
+.plead{font-family:var(--pf);font-size:clamp(26px,4vw,42px);line-height:1.08;margin:6px 0;color:var(--pc)}.pstand{font-size:19px;font-style:italic}
+.paper aside{border-left:1px solid #bbb;padding-left:16px}.paper aside h4{font:800 13px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:6px 0;border-bottom:2px solid #222}.paper aside ul{padding-left:18px;margin:4px 0}.paper .meta{color:#666}
+.regpapers{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.regpaper{background:#fffdf8;color:#222;border:1px solid #d8d0bf;border-radius:6px;padding:10px 12px}.regpaper p{margin:6px 0 0;font-size:14px}.regmast{font:700 21px Georgia,serif;border-bottom:3px double #222;padding-bottom:4px;text-align:center}
+.regpaper .mrep{color:#222}
+/* Social */
+.glwrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:18px;align-items:start}@media(max-width:760px){.glwrap{grid-template-columns:1fr}}
+.gllist{display:flex;flex-direction:column;gap:6px;margin-top:8px}.glrow{display:flex;gap:10px;align-items:center;text-align:left;height:auto;padding:8px;font-weight:500}.glrow img,.glrow .glav{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}.glrow small{display:block;color:var(--mute)}.glrow[aria-pressed=true]{border-color:#c13584;box-shadow:0 0 0 2px #c1358455}
+.glav{display:grid;place-items:center;background:linear-gradient(135deg,#f9a03f,#c13584,#5b51d8);color:#fff;font:800 18px "Fira Sans",sans-serif}
+.glphone{background:var(--card);border:10px solid #1b1b1b;border-radius:34px;overflow:hidden;box-shadow:0 10px 30px #0003}.glbar{display:flex;gap:8px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font:800 16px "Fira Sans",sans-serif}.glbarlogo{width:26px;height:26px}
+.glprof{text-align:center;padding:16px}.glbig{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #c13584;display:inline-grid;font-size:38px}.glprof h3{margin:8px 0 0}.glver{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#3b82f6;color:#fff;font-size:12px;vertical-align:2px}
+.glstats b{display:block;font:800 22px "Fira Sans",sans-serif}.glstats small{color:var(--mute)}
+.glposts{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:0 2px 8px}.glposts i{aspect-ratio:1;background:repeating-linear-gradient(45deg,var(--soft) 0 8px,var(--line) 8px 9px)}
+/* Music */
+.chart{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}.chart li{display:grid;grid-template-columns:52px 54px 1fr;align-items:center;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.crank{font:900 26px "Fira Sans",sans-serif;color:#14223f;text-align:center}.chart li:first-child .crank{color:#ee6a1a}.chart small{display:block;color:var(--mute)}.cmove{font:700 13px "Fira Sans",sans-serif}.up{color:#2e9d55}.dn{color:#c8262c}.eq{color:var(--mute)}
+@media (prefers-color-scheme:dark){.crank{color:#f4c21c}}
+/* Screen */
+.chhero{border-left:8px solid #c13584}.chwin{display:grid;gap:12px}.chwinrow td{background:#f4c21c22}
+.filmcard{border-top:5px solid #1c2b4a}.gamecard{border-top:5px solid #5b2a86}
+.kidflag .kidart{width:100%;height:150px;object-fit:contain;background:var(--soft);border-radius:8px}
+/* Alert */
+.alctl{display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:10px 0;font:500 14px "Fira Sans",sans-serif}.alctl select{display:block;font:inherit;min-height:44px;padding:0 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.alscr{aspect-ratio:16/9;max-width:860px;background:#000;color:#fff;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;font-family:"Fira Sans",sans-serif;box-shadow:0 0 0 8px #111}
+.alscr.off{align-items:center;justify-content:center;color:#888;padding:20px;text-align:center}
+.alsim{background:repeating-linear-gradient(-45deg,#f4c21c 0 14px,#111 14px 28px);color:#fff;text-align:center;font:900 clamp(11px,2vw,18px) "Fira Sans",sans-serif;letter-spacing:.12em;padding:6px;text-shadow:0 0 4px #000,0 0 2px #000}
+.alhd{background:#c8262c;font:900 clamp(18px,4vw,36px) "Fira Sans",sans-serif;letter-spacing:.14em;text-align:center;padding:8px}.alscr.test .alhd{background:#2a6fb0}
+.albody{flex:1;display:flex;gap:4%;align-items:center;padding:3% 5%}.alsun{flex:none;width:22%}.alsunimg{width:100%}.albody h3{font:900 clamp(18px,3.6vw,34px) "Fira Sans",sans-serif;margin:0 0 6px}.albody p{font-size:clamp(13px,2vw,19px);margin:4px 0}.alarea{color:#f4c21c;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.alstrip{height:5%;background:linear-gradient(90deg,#c8262c 50%,#f4c21c 50%)}
+
 </style>
 <script src="urbowx.js"></script>
 <script src="tvnav.js" defer></script>
@@ -274,9 +361,9 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
 {
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=s=>document.querySelector(s);
-const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['history','History',null]];
-const SUB={uba:[['uba','UBA home',null],['ubalive','URBO Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
+const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['media','Media',null],['history','History',null]];
+const SUB={media:[['media','Media home',null],['mediatv','TV guide',null],['mediaradio','Radio',null],['mediapress','Newspapers',null],['mediasocial','Social media',null],['mediamusic','Music',null],['mediascreen','Capital Hearts & film',null],['mediagames','Games',null],['mediakids','Children',null],['mediaalert','URBO Alert',null],['mediahistory','History & traditions',null]],uba:[['uba','UBA home',null],['ubalive','UBN Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
+const SEC={media:'media',mediatv:'media',mediaradio:'media',mediapress:'media',mediasocial:'media',mediamusic:'media',mediascreen:'media',mediagames:'media',mediakids:'media',mediaalert:'media',mediahistory:'media',ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -310,7 +397,7 @@ V.home=()=>{
   ${tile('browse','Find a state or territory','Every state and territory, with its flag and capital.','Teritors')}
   ${tile('weather','Weather radar','Live radar for every state and city, from URBO Weather.',null)}
   ${tile('traffic','Traffic & rail','Lochway traffic, city traffic and train arrivals.',null)}
-  ${tile('news','BNN news','Brightport News Network: everyday news from across URBO.',null)}
+  ${tile('news','BNN news','Brightport News Network: BPTV’s news channel.',null)}${tile('media','Media','TV, radio, newspapers, music, film and more.',null)}
   ${tile('world','World map','URBO and the other countries of Nyreth.',null)}
   ${tile('map','Map of the nation','Tap any state to see its shires, comitatus and rejions.',null)}
   ${tile('lochways','Lochway network','The numbered national motorways.',null)}
@@ -368,16 +455,16 @@ function uwStage(page){if(UW.wrap)return UW.wrap;
   const w=document.createElement('div');w.className='uwframe';w.innerHTML='<div class="uwstage"><div class="uwui"></div></div>';UW.wrap=w;
   const st=w.querySelector('.uwstage'),ui=w.querySelector('.uwui');
   const SET={get uwxLang(){return TERR_LANG},set uwxLang(v){TERR_LANG=v;try{localStorage.setItem('bp-lang',v)}catch(e){}}};
-  const cur=()=>CHPAGE[location.hash.slice(1)];
+  const cur=()=>{const h=location.hash.slice(1);return h==='mediatv'?(window.__tvlive||null):CHPAGE[h]};
   const API={S:{get screen(){return cur()?'watch':'off'},ch:0},CH:[{get urbo(){return cur()==='urbo'},get urbotr(){return cur()==='urbotr'},get bnn(){return cur()==='bnn'},get usport(){return cur()==='usport'}}],SET,has:()=>true,locked:()=>false,esc,fmtT:t=>new Date(t).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}),stage:st,ui,touch:false,save:()=>{},snd:{ok(){}},render:()=>route(),paused:()=>document.hidden};
   UW.apis=[window.URBOWX&&URBOWX(API)];window.URBOWX_API=UW.apis[0];
   UW.apis.push(window.URBOTR&&URBOTR(API));window.URBOTR_API=UW.apis[1];UW.apis.push(window.BNN&&BNN(API));UW.apis.push(window.USPORT&&USPORT(API));
   new ResizeObserver(()=>{st.style.transform=`scale(${w.clientWidth/960})`;w.style.height=(w.clientWidth*540/960)+'px'}).observe(w);
   return w}
 const chFS='<p><button class="uwfs" onclick="const w=document.querySelector(\'.uwframe\');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>';
-V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">URBO Traffic &amp; Rail: Lochway traffic across the nation, then each major city, the live rail map with every train, station arrival boards and airport delays caused by URBO Weather. It loops about every three minutes. The same channel runs on NyxVision, channel 10. Traffic and trains are simulated.</p><div id="uwslot"></div>${chFS}`;
-V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">Everyday news from across URBO: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. The same channel runs on NyxVision, channel 11. All stories are simulated.</p><div id="uwslot"></div>${chFS}`;
-V.weather=()=>`<h1>Weather</h1><p class="lede">URBO Weather: a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
+V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">UBN News traffic and rail, on UBN News (channel 03): Lochway traffic across the nation, then each major city, the live rail map with every train, station arrival boards and airport delays caused by the weather. It loops about every three minutes. The same channel runs on NyxVision, channel 10. Traffic and trains are simulated.</p><div id="uwslot"></div>${chFS}`;
+V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">BPTV’s dedicated news channel, channel 14 in the national lineup (channel 11 on NyxVision). Everyday news with Brightport first: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. All stories are simulated. <a href="#mediatv">TV guide →</a></p><div id="uwslot"></div>${chFS}`;
+V.weather=()=>`<h1>Weather</h1><p class="lede">UBN News weather, on UBN News (channel 03): a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
 
 
 
@@ -654,7 +741,7 @@ V.uba=()=>{const U=D.uba,ch=UT(U.championship.reigning_champion),ru=UT(U.champio
  <section class="champ" style="--c1:${ch.colors[0]};--c2:${ch.colors[1]}"><div class="champtxt"><p class="kick">Reigning champions</p><h2>${esc(ch.name)}</h2><p>Swept the ${esc(ru.name)} <b>4–0</b> in the latest UBA Finals for their <b>11th title</b>, level with the Royals for the most in league history.</p><p><a href="#team-${ch.id}">Team profile →</a> · <a href="#ubahistory">All champions →</a></p></div><img src="img/uba/league/nyreth-cup.svg" alt="The Nyreth Cup" class="cupimg"></section>
  <section class="ustats">${[['16','franchises'],['60','games per team'],['480','regular-season games'],['8','playoff teams'],['Best of 7','every playoff series'],['Ⓑ20m','hard salary cap']].map(([a,b])=>`<div><b>${a}</b><span>${b}</span></div>`).join('')}</section>
  <section><h2>This season</h2><div class="two">${['Brightport','Occasue'].map(c=>{const t=UT(fav[c]);return `<a class="card ufav" href="#team-${t.id}" style="border-left:6px solid ${t.colors[0]}">${CREST(t,56)}<div><p class="meta" style="margin:0">${c} Conference favourite</p><h3 style="margin:2px 0">${esc(t.name)}</h3><p style="margin:0">${t.id==='tides'?'A talented young roster developed through the draft.':'The reigning champions.'}</p></div></a>`}).join('')}</div>
-  <p>The All-Star Game is at <a href="#team-tides">Trempas Ocean Arena</a> (21,000 seats) this season, on Nonus 13. <a href="#ubascores">Scores and standings →</a> · <a href="#ubalive">Watch URBO Sport →</a></p></section>
+  <p>The All-Star Game is at <a href="#team-tides">Trempas Ocean Arena</a> (21,000 seats) this season, on Nonus 13. <a href="#ubascores">Scores and standings →</a> · <a href="#ubalive">Watch on UBN Sport →</a></p></section>
  ${['Brightport','Occasue'].map(c=>`<section><h2>${c} Conference</h2><div class="ugrid">${U.teams.filter(t=>t.conference===c).map(teamTile).join('')}</div></section>`).join('')}
  <section><h2>Rivalries</h2><div class="rivals">${U.rivalries.map(r=>{const[a,b]=r.teams.map(UT);return `<div class="card rival"><h3>${esc(r.name)}</h3><div class="vs"><a href="#team-${a.id}">${CREST(a,52)}<span>${esc(a.name)}</span></a><b>vs</b><a href="#team-${b.id}">${CREST(b,52)}<span>${esc(b.name)}</span></a></div></div>`}).join('')}</div></section>
  <section class="two"><div><h2>Famous fans</h2><ul class="facts"><li><b>Souvren Élise I</b> is honorary patron of the Brightport City Royals, and the whole royal family supports them. The royal family does not own the team.</li><li><b>President Amélien van der Cruz</b> and <b>Vice President Mathieu van Dijk</b> are lifelong Berevo Lions supporters.</li><li>Whoever wins, the Souvren and the President of Occasue present the Nyreth Cup together.</li></ul></div>
@@ -695,7 +782,7 @@ V.ubaleague=()=>{const U=D.uba,P=U.players,B=U.business,li=a=>`<ul class="facts"
  <section><h2>Running the league</h2>${li(['A joint governing council of eight Brightport and eight Occasue representatives, with a rotating chair.','The UBA Hall of Fame is in Brightport City.','Annual awards: '+U.governance.annual_awards.join(', ')+'.'])}</section>
  <div class="open">Not yet decided: ${U.open.map(esc).join(' · ')}</div>`};
 
-V.ubalive=()=>`${ubaHead('URBO Sport','Live UBA coverage: scores as they happen, standings, team spotlights and the Nyreth Cup. The same channel runs on NyxVision, channel 12.')}<div id="uwslot"></div>${chFS}<p><a href="#ubascores">Full scores and standings →</a></p>`;
+V.ubalive=()=>`${ubaHead('UBN Sport','Live UBA coverage on UBN Sport, channel 04: scores as they happen, standings, team spotlights and the Nyreth Cup. On NyxVision it is channel 12.')}<div id="uwslot"></div>${chFS}<p><a href="#ubascores">Full scores and standings →</a></p>`;
 function usGameRow(g,t){const U=UBA_SIM,L=U.live(g,t),nm=id=>id==='bp-all'?'Brightport All-Stars':id==='oc-all'?'Occasue All-Stars':U.BY[id].name,cr=id=>/-all$/.test(id)?'':`<img src="img/uba/crests/${id}.svg" alt="" width="22" height="22" style="vertical-align:-5px">`;
  const st=L.st==='live'?`<b style="color:#c0272d">● Live ${typeof L.q==='number'?'Q'+L.q:L.q} ${L.clock}</b>`:L.st==='final'?'Final'+(L.ot?' ('+(L.ot>1?L.ot:'')+'OT)':''):U.tipLabel(g);
  const lab=g.type==='playoff'?['','Conference semifinal','Conference final','UBA Finals'][g.round]+', game '+g.game:g.type==='allstar'?'All-Star Game, Trempas Ocean Arena':'Round '+g.round;
@@ -713,6 +800,213 @@ V.ubascores=()=>{const U=UBA_SIM,t=Date.now(),Y=U.seasonAt(t),ph=U.phase(t);let 
  <section><h2>Brightport Conference</h2>${tab('Brightport')}</section><section><h2>Occasue Conference</h2>${tab('Occasue')}</section>
  <section><h2>The season calendar</h2><ul class="facts"><li>Regular season: Septimus 1 to Decimus 29, one round every two days.</li><li>All-Star Game: Nonus 13, at Trempas Ocean Arena.</li><li>Playoffs: from Primus 1; the UBA Finals run in Secundus.</li><li>Off-season: Tertius to Sextus. The next season tips off on Septimus 1.</li></ul><p class="meta">Standings break ties on points difference. The four teams above the dashed line in each conference would make the playoffs.</p></section>`};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-usday]');if(!b)return;window.__usday=+b.dataset.usday;route()});
+/* MEDIA-START · URBO media section (Media Master Archive rounds 01–50) */
+const MD=()=>D.media;
+const MLOGO=(id,cls,alt)=>id?`<img src="img/media/${id}.svg" alt="${esc(alt||'')}" class="${cls||'mlogo'}" loading="lazy">`:'';
+const MEX=t=>`<p class="msample" role="note"><b>Example only.</b> ${t}</p>`;
+const MREC='<p class="meta">Logos are SVG recreations of the approved designs.</p>';
+const MREPCOL={Federal:'#ee6a1a',Brightport:'#e2a900',Occasue:'#c8262c',Independent:'#5a6b8c'};
+const mrep=r=>`<span class="mrep" style="--c:${MREPCOL[r]||'#888'}">${esc(r)}</span>`;
+const mfacts=a=>`<ul class="facts">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+function mhead(title,lede,logos){return `<div class="mhero"><div><p class="meta" style="margin:0">URBO media</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div>${logos?`<div class="mhero-logos">${logos}</div>`:''}</div>`}
+const MNET=id=>MD().networks.find(n=>n.id===id);
+const MPUB=c=>c.public;
+/* ---- directory (search + filters) ---- */
+function mediaIndex(){const M=MD(),out=[];const L6=M.langs;
+  M.networks.forEach(n=>out.push({name:n.full===n.name?n.name:n.name+' · '+n.full,med:'TV',rep:n.rep,langs:n.langs,desc:n.kind,logo:n.logo,page:'mediatv'}));
+  M.channels.forEach(c=>{const n=MNET(c.net);out.push({name:c.n+' · '+c.name,med:'TV',rep:n.rep,langs:n.langs,desc:'Channel '+c.n+' · '+(c.public?'public':'commercial'),logo:n.logo,page:'mediatv',ch:c.n})});
+  Object.entries(M.prog).forEach(([k,a])=>a.forEach(([t,d])=>{const n=MNET(k.split('-')[0]);out.push({name:t,med:'Programmes',rep:n.rep,langs:n.langs,desc:(d||n.name+' programme'),logo:n.logo,page:t==='Capital Hearts'?'mediascreen':'mediatv'})}));
+  out.push({name:'Capital Hearts',med:'Programmes',rep:'Independent',langs:['English','Dutch','French','Spanish'],desc:'NOVA reality competition, Costal City villa',logo:'nova',page:'mediascreen'});
+  M.radio.forEach(r=>out.push({name:r.name,med:'Radio',rep:r.rep,langs:r.langs,desc:r.type+(r.market?' · '+r.market:'')+' · '+r.fmt,logo:r.logo,page:'mediaradio'}));
+  M.press.forEach(p=>out.push({name:p.name,med:'Press',rep:p.rep,langs:p.langs,desc:p.text,logo:p.logo,page:'mediapress'}));
+  M.regional.forEach(p=>out.push({name:p.name,med:'Press',rep:p.rep,langs:p.langs,desc:'Regional newspaper · '+p.market,page:'mediapress'}));
+  M.social.forEach(s=>out.push({name:s.name,med:'Social',rep:'Independent',langs:L6,desc:s.text,logo:s.logo,page:'mediasocial'}));
+  M.profiles.forEach(p=>out.push({name:p.name+' '+p.handle,med:'Social',rep:'',langs:[],desc:'GLIMPSE · '+p.followers+' followers · '+p.content,logo:'glimpse',page:'mediasocial'}));
+  M.streamch.forEach(s=>out.push({name:s.name,med:'Social',rep:'',langs:[],desc:'STREAM channel · '+s.text,logo:'stream',page:'mediasocial'}));
+  M.artists.forEach(a=>out.push({name:a.name,med:'Music',rep:'',langs:[],desc:a.home+' · '+a.style,page:'mediamusic'}));
+  M.music_events.concat(M.services).forEach(a=>out.push({name:a.name,med:'Music',rep:'',langs:[],desc:a.text,logo:a.logo,page:'mediamusic'}));
+  M.films.forEach(f=>out.push({name:f.name,med:'Film',rep:'',langs:[],desc:f.genre+' · '+f.text,page:'mediascreen'}));M.film_orgs.forEach(f=>out.push({name:f.name,med:'Film',rep:'',langs:[],desc:f.text,logo:f.logo,page:'mediascreen'}));
+  M.games.forEach(g=>out.push({name:g.name,med:'Games',rep:'',langs:[],desc:g.genre+' · '+g.text,page:'mediagames'}));M.game_orgs.forEach(g=>out.push({name:g.name,med:'Games',rep:'',langs:[],desc:g.text,logo:g.logo,page:'mediagames'}));
+  M.kids.forEach(k=>out.push({name:k.name,med:'Children',rep:'',langs:L6,desc:k.text,logo:k.logo,page:'mediakids'}));
+  return out}
+// Radio republic tags: stations without a market are national. People/artists: market republic derived from home city.
+const MCITYREP={'Brightport City':'Brightport',Berevo:'Occasue','Mami City':'Brightport',Belkhap:'Occasue',Swisswa:'Occasue',Lochwater:'Occasue',Trempas:'Brightport',Silverstone:'Brightport'};
+window.__mf=window.__mf||{q:'',med:'',rep:'',lang:''};
+function mDirRender(){const F=window.__mf,box=document.getElementById('mdir');if(!box)return;const q=F.q.toLowerCase().trim();
+  const all=mediaIndex().map(o=>{if(o.med==='Music'&&!o.logo){const a=MD().artists.find(x=>x.name===o.name);if(a)o.rep=MCITYREP[a.home]||o.rep}return o});
+  const res=all.filter(o=>(!F.med||o.med===F.med)&&(!F.rep||o.rep===F.rep)&&(!F.lang||(o.langs||[]).includes(F.lang))&&(!q||(o.name+' '+o.desc).toLowerCase().includes(q)));
+  box.innerHTML=`<p class="meta" aria-live="polite">${res.length} result${res.length===1?'':'s'}</p><div class="mdirgrid">${res.slice(0,120).map(o=>`<a class="mdiritem" href="#${o.page}"${o.ch?` data-tvgo="${o.ch}"`:''}>${o.logo?MLOGO(o.logo,'mdirlogo'):`<span class="mdirlogo mdirtxt">${esc(o.name.slice(0,2))}</span>`}<span><b>${esc(o.name)}</b><small>${esc(o.med)}${o.rep?' · '+esc(o.rep):''}</small><span class="mdesc">${esc(o.desc)}</span></span></a>`).join('')}</div>`;
+  document.querySelectorAll('[data-mf]').forEach(b=>{const [k,v]=b.dataset.mf.split(':');b.setAttribute('aria-pressed',F[k]===v)})}
+function mchips(k,vals,label){return `<div class="mchips" role="group" aria-label="${label}"><span class="meta">${label}</span><button class="chip" data-mf="${k}:">All</button>${vals.map(v=>`<button class="chip" data-mf="${k}:${esc(v)}">${esc(v)}</button>`).join('')}</div>`}
+V.media=()=>{const M=MD();setTimeout(mDirRender,0);
+ return `${mhead('Media in URBO','Television, radio, newspapers, social media, music, film, games and children’s programmes across both republics. Federal, republican and independent media compete freely, in six official languages.')}
+ <section><h2>Television networks</h2><div class="mnets">${M.networks.map(n=>`<a class="mnet" href="#mediatv" data-tvnet="${n.id}">${MLOGO(n.logo,'mnetlogo',n.name)}<b>${esc(n.full)}</b><small>${esc(n.kind)}</small>${mrep(n.rep)}</a>`).join('')}</div></section>
+ <section><div class="tiles mtiles">${[['mediatv','TV guide','26 channels with a working receiver. Three channels show live programmes.'],['mediaradio','Radio','16 stations: 5 national, 8 commercial and 3 illegal pirates.'],['mediapress','Newspapers','18 publications and sample front pages.'],['mediasocial','Social media','Six platforms, GLIMPSE profiles and STREAM channels.'],['mediamusic','Music','The URBO Top 40, artists, awards and One URBO.'],['mediascreen','Capital Hearts & film','The reality hit, six films, cinemas and awards.'],['mediagames','Games','SOLAR, Sunstorm Interactive and six games.'],['mediakids','Children','Ten programmes, led by The Little Suns.'],['mediaalert','URBO Alert','The emergency system, with a safe demonstration.'],['mediahistory','History & traditions','From wartime radio to the joint New Year address.']].map(([k,t,d])=>`<a class="tile" href="#${k}"><h3>${t} →</h3><p>${d}</p></a>`).join('')}</div></section>
+ <section><h2>Find anything</h2><input type="search" id="mq" placeholder="Search channels, stations, papers, people…" value="${esc(window.__mf.q)}" aria-label="Search URBO media">
+  ${mchips('med',['TV','Programmes','Radio','Press','Social','Music','Film','Games','Children'],'Medium')}${mchips('rep',['Federal','Brightport','Occasue','Independent'],'Republic')}${mchips('lang',[...M.langs,'Schoon'],'Language')}
+  <div id="mdir"></div></section>
+ <section><h2>How to watch and what it costs</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Service</th><th>Access</th></tr></thead><tbody>${M.access.map(([a,b])=>`<tr><td data-l="Service"><b>${esc(a)}</b></td><td data-l="Access">${esc(b)}</td></tr>`).join('')}</tbody></table></div>
+  <div class="grid" style="margin-top:14px">${M.providers.map(p=>`<div class="card mcard">${MLOGO(p.logo,'mcardlogo',p.name)}<h3>${esc(p.name)}</h3>${mrep(p.rep)}<p>${esc(p.text)}</p></div>`).join('')}<div class="card"><h3>Internet and phones</h3>${mfacts(M.telecom)}</div></div></section>
+ <section><h2>Still to be decided</h2><p class="meta">These details are open and are not shown anywhere as fact.</p>${mfacts(M.open)}${MREC}</section>`};
+/* ---- TV receiver ---- */
+window.__tv=window.__tv||{ch:'01',viewer:'Brightport',paid:false,lang:'English',news:'urbo',net:''};
+const MLIVE={'03':()=>window.__tv.news,'04':()=>'usport','14':()=>'bnn'};
+function mPool(c){const P=MD().prog,K=MD().kids.map(k=>[k.name,k.text]);
+  if(/Kids/.test(c.name))return K;if(c.n==='01')return [P.ubn[1],P.ubn[0]];if(c.n==='03')return [P.ubn[0],P.ubn[2]];if(c.n==='14')return P.bptv;if(c.n==='24')return P.opn;
+  if(c.net==='nova'&&c.n!=='32')return P.nova.filter(x=>c.n==='31'||x[0]==='Capital Hearts');if(c.n==='41'||c.n==='42')return P.vista;if(c.n==='51')return P.prism;if(c.n==='53')return P['prism-earth'];return []}
+function mTvAccess(c){const n=MNET(c.net),T=window.__tv;if(n.rep==='Brightport'||n.rep==='Occasue'){if(n.rep!==T.viewer&&!T.paid)return `This is ${n.rep==='Occasue'?'an':'a'} ${n.rep} public channel. In ${T.viewer} it comes with a paid TV package or ${n.stream[0]==='O'?'an':'a'} ${n.stream} subscription.`}return ''}
+function mUbaToday(){try{const U=UBA_SIM,t=Date.now(),gs=U.gamesOn(t,0);if(!gs.length)return null;const g=gs[gs.length-1],nm=id=>/-all$/.test(id)?'All-Stars':U.BY[id].nick;return (g.type==='allstar'?'UBA All-Star Game':`UBA: ${nm(g.away)} at ${nm(g.home)}`)+` · tip-off ${U.tipLabel(g)}`}catch(e){return null}}
+function mTvScreen(){const T=window.__tv,c=MD().channels.find(x=>x.n===T.ch),n=MNET(c.net),scr=document.getElementById('tvscr');if(!scr)return;const blk=mTvAccess(c);
+  document.querySelectorAll('[data-tvch]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tvch===T.ch));
+  const live=!blk&&MLIVE[c.n];window.__tvlive=live?MLIVE[c.n]():null;
+  const pool=mPool(c);const now=pool[Math.floor(Date.now()/3600000)%Math.max(1,pool.length)];
+  const osd=`<div class="tvosd"><b>${c.n}</b> ${esc(c.name)} <span>${esc(n.name)}</span></div>`;
+  if(live){scr.className='tvscr live';scr.innerHTML=osd+(c.n==='03'?`<div class="tvsub"><button class="chip" data-tvnews="urbo" aria-pressed="${T.news==='urbo'}">Weather</button><button class="chip" data-tvnews="urbotr" aria-pressed="${T.news==='urbotr'}">Traffic &amp; rail</button></div>`:'')+'<div id="uwslot"></div>';
+    const w=uwStage();document.getElementById('uwslot').appendChild(w)}
+  else{scr.className='tvscr';scr.innerHTML=osd+`<div class="tvcard">${blk?`<div class="tvblock">🔒</div><h3>${esc(blk)}</h3><button class="chip" data-tvpaid="1">I have a paid package</button>`:`${MLOGO(n.logo,'tvlogo',n.name)}<h3>${esc(c.name)}</h3><p>${now?`<b>Example programme:</b> ${esc(now[0])}`:'Programmes for this channel are not yet established.'}</p>`}<span class="mpill">Simulated tuning · no live stream</span></div>`}
+  (UW.apis||[]).forEach(a=>{try{a&&a.sync()}catch(e){}});
+  const info=document.getElementById('tvinfo');if(info)info.innerHTML=`<h3>${c.n} · ${esc(c.name)}</h3><p>${mrep(n.rep)} <b>${esc(n.full)}</b> · ${c.public?'public':'commercial'} channel</p><p>${esc(n.text[0])}</p>${live?`<p class="meta">This channel shows a live simulated feed. ${c.n==='04'?'UBA games here are canon: every result is generated by the league’s season engine.':c.n==='14'?'BNN stories are simulated everyday news.':'UBN News carries the weather and traffic segments.'}</p>`:''}<p class="meta">Audio: ${esc(T.lang)}${n.langs.includes(T.lang)?'':' (not offered on this network; showing the default language)'}. Subtitles available.</p>`}
+function mTvGuide(){const g=document.getElementById('tvguide');if(!g)return;const T=window.__tv,sl=['Morning','Daytime','Evening','Late'];
+  const chs=MD().channels.filter(c=>!T.net||c.net===T.net);
+  g.innerHTML=`<div class="tablewrap"><table class="tvgrid"><thead><tr><th>Channel</th>${sl.map(s=>`<th>${s}</th>`).join('')}</tr></thead><tbody>${chs.map(c=>{const p=mPool(c);let cells=sl.map((s,i)=>p.length?esc(p[(i+parseInt(c.n))%p.length][0]):'');
+   const SL={'01':['Good Morning, URBO!','','The National Report',''],'03':['Weather · Traffic &amp; rail','Weather · Traffic &amp; rail','The National Report',''],'14':['','','Brightport Tonight',''],'24':['','','Occasue Tonight',''],'31':['','','Capital Hearts','Next Icon'],'33':['','Capital Hearts','','']};if(SL[c.n])cells=SL[c.n];
+   if(c.n==='04'){const u=mUbaToday();cells=['','',u?esc(u):'','']}
+   return `<tr><th scope="row"><button class="tvgch" data-tvch="${c.n}"><b>${c.n}</b> ${esc(c.name)}</button></th>${cells.map(x=>`<td>${x||'<span class="meta">—</span>'}</td>`).join('')}</tr>`}).join('')}</tbody></table></div>`}
+V.mediatv=()=>{const M=MD(),T=window.__tv;setTimeout(()=>{mTvScreen();mTvGuide()},0);
+ const grp=M.networks.map(n=>`<div class="tvgrp"><div class="tvgrph">${MLOGO(n.logo,'tvgrplogo',n.name)}<span>${esc(n.name)}</span></div>${M.channels.filter(c=>c.net===n.id).map(c=>`<button class="tvch" data-tvch="${c.n}"><b>${c.n}</b> ${esc(c.name)}${MLIVE[c.n]?' <span class="tvlive">LIVE</span>':''}</button>`).join('')}</div>`).join('');
+ return `${mhead('TV guide','26 channels: 18 public and 8 commercial. Pick a channel to tune in. UBN News (03), UBN Sport (04) and BNN (14) carry live simulated feeds; the rest show the channel ident.')}
+ <div class="tvrx"><div class="tvleft"><div class="tvctl"><label>Watching in <select id="tvviewer">${['Brightport','Occasue'].map(v=>`<option${v===T.viewer?' selected':''}>${v}</option>`).join('')}</select></label><label>Audio <select id="tvlang">${M.langs.map(v=>`<option${v===T.lang?' selected':''}>${v}</option>`).join('')}</select></label><label class="tvchk"><input type="checkbox" id="tvpaid"${T.paid?' checked':''}> Paid TV package</label></div>
+  <div class="tvbox"><div id="tvscr" class="tvscr" aria-live="polite"></div></div>
+  <div class="tvbtns"><button data-tvstep="-1" aria-label="Channel down">CH ▼</button><button data-tvstep="1" aria-label="Channel up">CH ▲</button>${chFS.replace('<p>','').replace('</p>','')}</div><div id="tvinfo" class="card"></div></div>
+  <div class="tvlist" role="group" aria-label="Channels">${grp}</div></div>
+ <section><h2>Programme guide</h2>${MEX('This guide places approved programmes in sample time slots. It is not an official schedule. UBN Sport’s evening game comes from the real UBA season.')}
+  <div class="mchips"><span class="meta">Network</span><button class="chip" data-tvnet="" aria-pressed="${!T.net}">All</button>${M.networks.map(n=>`<button class="chip" data-tvnet="${n.id}" aria-pressed="${T.net===n.id}">${n.name}</button>`).join('')}</div><div id="tvguide"></div></section>
+ <section><h2>Faces of television</h2><div class="grid">${M.presenters.map(p=>`<div class="card"><h3>${esc(p.name)}</h3><p class="meta">${esc(p.role)}${p.age?' · '+esc(p.age):''}${p.home?' · '+esc(p.home):''}</p><p>${esc(p.text)}</p></div>`).join('')}</div></section>
+ <section><h2>The networks</h2><div class="grid">${M.networks.map(n=>`<div class="card mcard">${MLOGO(n.logo,'mcardlogo',n.name)}<h3>${esc(n.full)}</h3><p>${mrep(n.rep)} ${esc(n.kind)} · ${esc(n.hq)}</p>${n.slogan?`<p><i>“${esc(n.slogan)}”</i></p>`:''}${n.text.map(t=>`<p>${esc(t)}</p>`).join('')}<p class="meta">Channels: ${M.channels.filter(c=>c.net===n.id).map(c=>c.n+' '+esc(c.name)).join(', ')}</p></div>`).join('')}</div></section>
+ <section><h2>Programmes</h2><div class="grid">${[['UBN','ubn'],['BPTV & BNN','bptv'],['OPN','opn'],['NOVA','nova'],['VISTA','vista'],['PRISM','prism'],['PRISM Earth','prism-earth']].map(([t,k])=>`<div class="card"><h3>${t}</h3><ul class="facts">${M.prog[k].map(([a,b])=>`<li><b>${esc(a)}</b>${b?' · '+esc(b):''}</li>`).join('')}</ul></div>`).join('')}</div></section>
+ <section><h2>How television works</h2>${mfacts(M.tv)}${MREC}</section>`};
+/* ---- Radio ---- */
+window.__rd=window.__rd||{i:0,f:''};
+function mRadio(){const R=MD().radio,S=window.__rd,x=R[S.i],d=document.getElementById('rddial');if(!d)return;const pir=/Pirate/.test(x.type);
+  document.querySelectorAll('[data-rd]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.rd===S.i));
+  d.className='rddial'+(pir?' pirate':'');d.innerHTML=`<div class="rdtop">${MLOGO(x.logo,'rdlogo',x.name)}<div><span class="mpill">${esc(x.type)}</span><h3>${esc(x.name)}</h3><p>${x.market?esc(x.market)+' · ':''}${esc(x.fmt)}</p></div></div><div class="rdeq" aria-hidden="true">${Array.from({length:24},(_,k)=>`<i style="animation-delay:${(k*137%900)/1000}s"></i>`).join('')}</div><p class="meta">${pir?'Illegal station. Heavy fines and prison for repeat offences. ':''}Simulated tuning, no audio. Frequencies are not established.</p>`}
+V.mediaradio=()=>{const M=MD(),S=window.__rd;setTimeout(mRadio,0);const types=['National','Licensed commercial','Pirate (illegal)'];
+ return `${mhead('Radio','Radio is a federal power: five UBN national services, eight licensed commercial stations, and three illegal pirate stations.')}
+ <div class="rdrx"><div id="rddial" class="rddial" aria-live="polite"></div><div class="rdlist">${types.map(t=>`<div class="tvgrp"><div class="tvgrph"><span>${t}</span></div>${M.radio.map((r,i)=>r.type===t?`<button class="tvch" data-rd="${i}">${esc(r.name)}${r.market?` <small>${esc(r.market)}</small>`:''}</button>`:'').join('')}</div>`).join('')}</div></div>
+ <div class="rdbtns"><button data-rdstep="-1" aria-label="Previous station">◀ Tune</button><button data-rdstep="1" aria-label="Next station">Tune ▶</button></div>
+ <section><h2>UBN regional studios</h2><p>UBN runs 12 federally owned regional studios, one in each state and territory. They are not separate stations: the national services carry regional morning and evening segments in regional languages.</p><div class="mchips">${M.studios.map(s=>`<span class="chip mstatic">${esc(s)}</span>`).join('')}</div></section>
+ <section><h2>UBN Historical Audio Archive</h2><p>Open to the public. Four collections; no recordings are reproduced here.</p><div class="grid">${M.archive.map(([a,b])=>`<div class="card"><h3>🎙 ${esc(a)}</h3><p>${esc(b)}</p></div>`).join('')}</div></section>
+ <section><h2>How radio works</h2>${mfacts(M.radio_facts)}${MREC}</section>`};
+/* ---- Press ---- */
+window.__pp=window.__pp||{i:0,rf:''};
+function mFront(){const M=MD(),P=M.press[window.__pp.i],box=document.getElementById('front');if(!box)return;document.querySelectorAll('[data-pp]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.pp===window.__pp.i));
+ const dt=(()=>{try{const U=UBA_SIM;return U.dateOf(U.absDay(Date.now())).label}catch(e){return ''}})();
+ let sport='';try{const U=UBA_SIM,t=Date.now(),Y=U.seasonAt(t),done=U.allGames(Y).filter(g=>g.t1<=t).slice(-4).reverse();sport=done.map(g=>{const w=g.hs>g.as?g.home:g.away,l=w===g.home?g.away:g.home,n=id=>/-all$/.test(id)?'All-Stars':U.BY[id].name;return `<li><b>${esc(n(w))}</b> ${Math.max(g.hs,g.as)}–${Math.min(g.hs,g.as)} ${esc(n(l))}</li>`}).join('')}catch(e){}
+ const S={'The Federal Gazette':['How URBO’s two republics share one federal government','A guide to the federal system set up by the Charter of Union, signed in Lochwater.'],
+  'The Crown Standard':['The House of Brightwell: Souvren Élise I’s reign so far','A look back at the first Souvren of the House of Brightwell and the first woman to reign in Brightport.'],
+  'The Occasue Republic':['Housing and the cost of living: the President’s stated cause','What President Amélien van der Cruz has said he cares about most.'],
+  'SUNSPOT':['THEO & MATTEO: LIFE AFTER THE VILLA','The Capital Hearts winners are lifestyle influencers now, but they kept their day jobs.'],
+  'The Current':['Inside the UBN Historical Audio Archive','Four collections, from voices before the Union to the Civil War.'],
+  'OPEN':['Fact check: is radio really a federal power?','Yes. After the Civil War the constitution made radio an exclusive federal power.']}[P.name];
+ box.innerHTML=`<article class="paper" style="--pc:${P.col};--pf:${P.font}"><div class="pmast">${MLOGO(P.logo,'pmlogo',P.name)}</div><div class="pline"><span>${esc(dt)}</span><span>${esc(P.tag||P.scope)}</span><span>${P.scope==='Digital'?'Digital subscription Ⓑ9.99 a month':'Ⓑ1.50'}</span></div>
+  <div class="pbanner">SAMPLE FRONT PAGE · NOT A REAL NEWS EVENT</div><div class="pcols"><div><h3 class="plead">${esc(S[0])}</h3><p class="pstand">${esc(S[1])}</p><p class="meta">Example headline written from existing canon to show the paper’s style. It does not report a new event.</p></div>
+  <aside><h4>Sport · UBA results</h4><ul>${sport||'<li>No results yet.</li>'}</ul><p class="meta">Real results from the UBA season.</p><h4>Inside</h4><p>${esc(P.text)}</p></aside></div></article>`}
+V.mediapress=()=>{const M=MD(),F=window.__pp;setTimeout(mFront,0);const reg=M.regional.filter(p=>!F.rf||p.rep===F.rf);
+ return `${mhead('Newspapers','Independent, privately owned newspapers with press freedom protected by the constitution: 15 general newspapers, SUNSPOT and two digital outlets.')}
+ <div class="newsstand" role="group" aria-label="Choose a publication">${M.press.map((p,i)=>`<button class="pstand-btn" data-pp="${i}">${MLOGO(p.logo,'pslogo',p.name)}<small>${esc(p.scope)}</small></button>`).join('')}</div>
+ <div id="front"></div>
+ <section><h2>The papers</h2><div class="grid">${M.press.map(p=>`<div class="card mcard">${MLOGO(p.logo,'mcardlogo',p.name)}<h3>${esc(p.name)}</h3><p>${mrep(p.rep)} ${esc(p.scope)}${p.tag?' · <small>'+esc(p.tag)+'</small>':''}</p><p>${esc(p.text)}</p><p class="meta">${esc(p.langs.join(', '))}</p></div>`).join('')}</div></section>
+ <section><h2>Regional newspapers</h2><div class="mchips"><span class="meta">Republic</span>${['','Brightport','Occasue'].map(r=>`<button class="chip" data-prf="${r}" aria-pressed="${F.rf===r}">${r||'All'}</button>`).join('')}</div>
+  <div class="regpapers">${reg.map(p=>`<div class="regpaper"><div class="regmast">${esc(p.name)}</div><p>${mrep(p.rep)} ${esc(p.market)} · ${esc(p.langs.join(' and '))}</p></div>`).join('')}</div>
+  <p class="meta">Mastheads here are typographic placeholders: only the names are approved. English names may be working translations.</p></section>
+ <section><h2>How the press works</h2>${mfacts(M.press_facts)}${MREC}</section>`};
+/* ---- Social ---- */
+window.__gl=window.__gl||{i:0,q:''};
+function mGlimpse(){const M=MD(),G=window.__gl,ph=document.getElementById('glphone');if(!ph)return;const list=M.profiles.filter(p=>!G.q||(p.name+p.handle+p.content).toLowerCase().includes(G.q.toLowerCase()));
+ const l=document.getElementById('gllist');l.innerHTML=list.map(p=>{const i=M.profiles.indexOf(p);return `<button class="glrow" data-gl="${i}" aria-pressed="${i===G.i}">${p.pic?`<img src="${p.pic}" alt="">`:`<span class="glav">${esc(p.name[0])}</span>`}<span><b>${esc(p.name)}</b><small>${esc(p.handle)} · ${esc(p.followers)}</small></span></button>`}).join('')||'<p class="meta">No profiles match.</p>';
+ const p=M.profiles[G.i];ph.innerHTML=`<div class="glbar">${MLOGO('glimpse','glbarlogo')}<b>GLIMPSE</b></div><div class="glprof">${p.pic?`<img class="glbig" src="${p.pic}" alt="">`:`<span class="glbig glav">${esc(p.name[0])}</span>`}<h3>${esc(p.name)} <span class="glver" title="Verified">✓</span></h3><p class="meta">${esc(p.handle)}</p><div class="glstats"><div><b>${esc(p.followers)}</b><small>followers</small></div></div><p>${esc(p.content)}</p>${p.link?`<p><a href="#${p.link}">Official biography →</a></p>`:''}</div><div class="glposts">${[0,1,2,3,4,5].map(()=>'<i></i>').join('')}</div><p class="meta" style="padding:0 12px 12px">Follower count is a snapshot. Posts are not shown: no posts are part of canon.</p>`}
+V.mediasocial=()=>{const M=MD();setTimeout(mGlimpse,0);
+ return `${mhead('Social media','Six major platforms, with instant written translation into all six official languages.')}
+ <div class="mnets">${M.social.map(s=>`<div class="mnet">${MLOGO(s.logo,'mnetlogo sq',s.name)}<b>${esc(s.name)}</b><small>${esc(s.text)}</small></div>`).join('')}</div>
+ <section><h2>On GLIMPSE</h2><div class="glwrap"><div><input type="search" id="glq" placeholder="Search profiles" value="${esc(window.__gl.q)}" aria-label="Search GLIMPSE profiles"><div id="gllist" class="gllist"></div></div><div id="glphone" class="glphone"></div></div></section>
+ <section><h2>STREAM channels</h2><div class="grid">${M.streamch.map(s=>`<div class="card mcard">${MLOGO('stream','mcardlogo sm')}<h3>${esc(s.name)}</h3><p>${esc(s.text)}</p></div>`).join('')}</div></section>
+ <section><h2>Rules and culture online</h2>${mfacts(M.social_facts)}${MREC}</section>`};
+/* ---- Music ---- */
+window.__ml=window.__ml||'';
+V.mediamusic=()=>{const M=MD(),f=window.__ml,ls=[...new Set(M.chart.flatMap(c=>c.lang.split('/')))];const rows=M.chart.filter(c=>!f||c.lang.split('/').includes(f));
+ const mv=m=>{const n=parseInt(m);return n>0?`<span class="up">▲${n}</span>`:n<0?`<span class="dn">▼${-n}</span>`:'<span class="eq">–</span>'};
+ return `${mhead('Music','The weekly URBO Top 40, eight established acts, three streaming services and the nation’s music events.',MLOGO('top40','mherologo','URBO Top 40'))}
+ <section><h2>URBO Top 40</h2>${MEX('This is the approved sample chart, not a live chart. Brightportish and Schoon titles appear in English working translations.')}
+  <div class="mchips"><span class="meta">Language</span><button class="chip" data-ml="" aria-pressed="${!f}">All</button>${ls.map(l=>`<button class="chip" data-ml="${esc(l)}" aria-pressed="${f===l}">${esc(l)}</button>`).join('')}</div>
+  <ol class="chart">${rows.map(c=>`<li><span class="crank">${c.rank}</span><span class="cmove">${mv(c.move)}</span><span><b>${esc(c.song)}</b><small>${esc(c.artist)} · ${esc(c.lang)}</small></span></li>`).join('')}</ol></section>
+ <section><h2>Artists</h2><div class="grid">${M.artists.map(a=>`<div class="card"><h3>${esc(a.name)}</h3><p class="meta">${esc(a.home)}</p><p>${esc(a.style)}</p></div>`).join('')}</div></section>
+ <section><h2>Awards and competitions</h2><div class="grid">${M.music_events.map(e=>`<div class="card mcard">${MLOGO(e.logo,'mcardlogo tall',e.name)}<h3>${esc(e.name)}</h3>${e.slogan?`<p><i>“${esc(e.slogan)}”</i></p>`:''}<p>${esc(e.text)}</p>${e.list?`<details><summary>Categories</summary>${mfacts(e.list)}</details>`:''}</div>`).join('')}</div></section>
+ <section><h2>Streaming services</h2><div class="grid">${M.services.map(s=>`<div class="card mcard">${MLOGO(s.logo,'mcardlogo',s.name)}<h3>${esc(s.name)}</h3><p>Ⓑ9.99 a month. ${esc(s.text)}</p></div>`).join('')}</div>${MREC}</section>`};
+/* ---- Capital Hearts & film ---- */
+window.__chf=window.__chf||'';
+V.mediascreen=()=>{const M=MD(),H=M.hearts,f=window.__chf;const rp=h=>/Berevo|Belkhap|Swisswa|Dunellan|Polvo|Lochwater|Costal/.test(h)?'Occasue':'Brightport';const cast=M.cast.filter(c=>!f||rp(c.home)===f);
+ return `${mhead('Capital Hearts and film','NOVA’s reality hit, URBO’s film studios, cinemas and awards.')}
+ <section class="card chhero"><div><p class="meta">NOVA · reality competition</p><h2 style="margin-top:0">Capital Hearts</h2>${H.text.map(t=>`<p>${esc(t)}</p>`).join('')}<p class="meta">Not settled: ${esc(H.open.join('; '))}. There is no approved logo.</p></div></section>
+ <section><h2>The featured season</h2><div class="chwin"><div class="card"><h3>Winners: Theo Westwood and Matteo van Dalen</h3>${H.story.map(t=>`<p>${esc(t)}</p>`).join('')}</div><div class="grid">${Object.entries(M.theo_matteo).map(([n,d])=>{const c=M.cast.find(x=>x.name===n);return `<div class="card"><h3>${esc(n)}</h3><p class="meta">${c.age} · ${esc(c.home)} · ${esc(c.job)}</p><p>${esc(d)}</p></div>`}).join('')}</div></div>
+  <h3>The cast</h3><div class="mchips"><span class="meta">From</span>${['','Brightport','Occasue'].map(r=>`<button class="chip" data-chf="${r}" aria-pressed="${f===r}">${r||'All'}</button>`).join('')}</div>
+  <div class="tablewrap"><table class="stack"><thead><tr><th>Name</th><th>Age</th><th>Home</th><th>Job</th></tr></thead><tbody>${cast.map(c=>`<tr${/Theo|Matteo/.test(c.name)?' class="chwinrow"':''}><td data-l="Name"><b>${esc(c.name)}</b></td><td data-l="Age">${c.age}</td><td data-l="Home">${esc(c.home)}</td><td data-l="Job">${esc(c.job)}</td></tr>`).join('')}</tbody></table></div><p class="meta">Ages are in Earth years.</p></section>
+ <section><h2>Films</h2><div class="grid">${M.films.map(x=>`<div class="card filmcard"><p class="meta">${esc(x.genre)}</p><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p>${x.name==='The Miracle of Deserto'?'<p><a href="#team-guardians">The Ft. Deserto Guardians →</a></p>':''}</div>`).join('')}</div><p class="meta">Casts, studios and release years are not settled.</p></section>
+ <section><h2>Studios, cinemas and awards</h2><div class="grid">${M.film_orgs.map(o=>`<div class="card mcard">${MLOGO(o.logo,'mcardlogo',o.name)}<h3>${esc(o.name)}</h3><p>${esc(o.text)}</p></div>`).join('')}</div>${mfacts(M.film_facts)}${MREC}</section>`};
+/* ---- Games ---- */
+V.mediagames=()=>{const M=MD();return `${mhead('Games and esports','One dominant home console, PC and mobile, and esports leagues in each republic.')}
+ <div class="grid">${M.game_orgs.map(o=>`<div class="card mcard">${MLOGO(o.logo,'mcardlogo tall',o.name)}<h3>${esc(o.name)}</h3><p>${esc(o.text)}</p></div>`).join('')}</div>
+ <section><h2>Games</h2><div class="grid">${M.games.map(g=>`<div class="card gamecard"><p class="meta">${esc(g.genre)}</p><h3>${esc(g.name)}</h3><p>${esc(g.text)}</p>${g.name==='UBA 25'?'<p><a href="#uba">The UBA →</a></p>':g.name==='Nyreth Rail Simulator'?'<p><a href="#rail">URBO’s railways →</a></p>':''}</div>`).join('')}</div>${mfacts(M.game_facts)}</section>
+ <section><h2>Advertising</h2>${mfacts(M.ads)}${MREC}</section>`};
+/* ---- Children ---- */
+V.mediakids=()=>{const M=MD();return `${mhead('Children’s programmes','Ten approved programmes on UBN Kids, BPTV Kids and OPN Kids, dubbed into all six official languages.')}
+ <div class="grid">${M.kids.filter(k=>k.flag).map(k=>`<div class="card kidflag">${MLOGO(k.logo,'kidart',k.name)}<p class="meta">Flagship</p><h3>${esc(k.name)}</h3><p>${esc(k.text)}</p></div>`).join('')}</div>
+ <section><h2>More programmes</h2><div class="tiles">${M.kids.filter(k=>!k.flag).map(k=>`<div class="tile"><h3>${esc(k.name)}</h3><p>${esc(k.text)}</p></div>`).join('')}</div></section>
+ <section><h2>Rules for children’s television</h2>${mfacts(M.kids_facts)}<p class="meta">The Little Suns artwork is approved as a concept. The mascots have no approved names. The Hello, Nyreth! planet is symbolic, not a map.</p>${MREC}</section>`};
+/* ---- URBO Alert demo ---- */
+window.__al=window.__al||{on:false,area:'All of URBO',kind:'test',lang:'English'};
+const ALTXT={test:{English:['SYSTEM TEST','This is a routine test of URBO Alert. No action is required.'],French:['ESSAI DU SYSTÈME','Ceci est un essai de routine d’URBO Alert. Aucune action n’est requise.'],Spanish:['PRUEBA DEL SISTEMA','Esta es una prueba de rutina de URBO Alert. No es necesario hacer nada.'],Dutch:['SYSTEEMTEST','Dit is een routinetest van URBO Alert. U hoeft niets te doen.'],'Scottish Gaelic':['DEUCHAINN AN T-SIOSTAIM','Seo deuchainn àbhaisteach de URBO Alert. Chan fheum thu dad a dhèanamh.']},
+ weather:{English:['SEVERE WEATHER WARNING','Example message. Stay indoors, keep away from windows and follow official instructions.'],French:['ALERTE MÉTÉO SÉVÈRE','Message d’exemple. Restez à l’intérieur, éloignez-vous des fenêtres et suivez les consignes officielles.'],Spanish:['AVISO DE TIEMPO SEVERO','Mensaje de ejemplo. Quédese en el interior, aléjese de las ventanas y siga las instrucciones oficiales.'],Dutch:['WAARSCHUWING ZWAAR WEER','Voorbeeldbericht. Blijf binnen, blijf uit de buurt van ramen en volg de officiële instructies.'],'Scottish Gaelic':['RABHADH SÌDE CHRUAIDH','Teachdaireachd eisimpleir. Fuirich a-staigh, cùm air falbh bho uinneagan agus lean stiùireadh oifigeil.']}};
+function mAlert(){const A=window.__al,b=document.getElementById('alscr');if(!b)return;document.querySelectorAll('[data-allang]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.allang===A.lang));
+ if(!A.on){b.className='alscr off';b.innerHTML='<p>Screen idle. Press <b>Run simulation</b> to see how an alert looks on television.</p>';return}
+ const t=(ALTXT[A.kind]||{})[A.lang];b.className='alscr '+A.kind;b.innerHTML=`<div class="alsim">SIMULATION · NOT A REAL EMERGENCY</div><div class="alhd">URBO ALERT</div><div class="albody"><div class="alsun"><svg class="alsunimg" viewBox="0 0 100 100" aria-hidden="true">${Array.from({length:10},(_,i)=>`<rect x="46" y="4" width="8" height="18" rx="4" fill="#ee6a1a" transform="rotate(${i*36} 50 50)"/>`).join('')}<circle cx="50" cy="50" r="22" fill="#ee6a1a"/></svg></div><div><h3>${t?esc(t[0]):'URBO ALERT'}</h3><p class="alarea">${esc(A.area)}</p><p>${t?esc(t[1]):'Approved Brightportish wording is not yet available, so this demonstration cannot show it.'}</p></div></div><div class="alstrip"></div>`}
+V.mediaalert=()=>{const M=MD(),A=window.__al;setTimeout(mAlert,0);const areas=['All of URBO','Brightport','Occasue',...M.studios];
+ return `${mhead('URBO Alert','The single federal emergency notification system, used by federal and republican authorities alike.')}
+ ${MEX('This is a safe demonstration. It makes no sound, sends no notifications and shows no real warning.')}
+ <div class="alctl"><label>Area <select id="alarea">${areas.map(a=>`<option${a===A.area?' selected':''}>${esc(a)}</option>`).join('')}</select></label><label>Message <select id="alkind"><option value="test"${A.kind==='test'?' selected':''}>System test</option><option value="weather"${A.kind==='weather'?' selected':''}>Example weather warning</option></select></label><button id="alrun">${A.on?'Stop simulation':'Run simulation'}</button></div>
+ <div class="mchips" role="group" aria-label="Alert language"><span class="meta">Language</span>${M.langs.map(l=>`<button class="chip" data-allang="${l}">${l}</button>`).join('')}</div>
+ <div id="alscr" class="alscr off" aria-live="polite"></div>
+ <section><h2>How URBO Alert works</h2>${mfacts(M.alert)}<p class="meta">The Brightportish version is left out until approved wording exists. The two example messages are not approved alert types.</p></section>`};
+/* ---- History & traditions ---- */
+V.mediahistory=()=>{const M=MD();return `${mhead('History and traditions','How broadcasting grew from rival regional stations into a shared national culture.')}
+ <section><h2>A short history</h2><div class="timeline">${M.history.map(([a,b])=>`<div class="card"><h3>${esc(a)}</h3><p>${esc(b)}</p></div>`).join('')}</div><p><a href="#history">URBO’s full history →</a></p></section>
+ <section><h2>National traditions</h2><div class="grid">${M.traditions.map(t=>`<div class="card mcard">${t.logo?`<img src="img/media/${t.logo}.svg" alt="" class="mwide">`:''}<h3>${esc(t.name)}</h3><p>${esc(t.text)}</p></div>`).join('')}</div>
+ <p class="meta">The New Year graphic is a concept: its skylines and clock are symbolic, not new geography or time rules. New Year and Landing Day fall on Primus 1–3. <a href="#calendar">Calendar →</a></p></section>
+ <section><h2>UBN Historical Audio Archive</h2><div class="grid">${M.archive.map(([a,b])=>`<div class="card"><h3>🎙 ${esc(a)}</h3><p>${esc(b)}</p></div>`).join('')}</div></section>`};
+/* events */
+document.addEventListener('click',e=>{const t=e.target.closest('[data-mf],[data-tvch],[data-tvstep],[data-tvnews],[data-tvpaid],[data-tvnet],[data-tvgo],[data-rd],[data-rdstep],[data-pp],[data-prf],[data-gl],[data-ml],[data-chf],[data-allang],#alrun');if(!t)return;const d=t.dataset;
+ if(d.mf!=null){const [k,v]=d.mf.split(':');window.__mf[k]=window.__mf[k]===v?'':v;mDirRender();return}
+ if(d.tvgo){window.__tv.ch=d.tvgo;return}
+ if(d.tvnet!=null&&location.hash==='#mediatv'){e.preventDefault();window.__tv.net=d.tvnet;mTvGuide();document.querySelectorAll('[data-tvnet]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tvnet===d.tvnet));return}
+ if(d.tvnet!=null){window.__tv.net=d.tvnet;const c=MD().channels.find(c=>c.net===d.tvnet);if(c)window.__tv.ch=c.n;return}
+ if(d.tvch){window.__tv.ch=d.tvch;mTvScreen();if(t.classList.contains('tvgch'))document.querySelector('.tvbox').scrollIntoView({behavior:'smooth',block:'center'});return}
+ if(d.tvstep){const C=MD().channels,i=C.findIndex(c=>c.n===window.__tv.ch);window.__tv.ch=C[(i+ +d.tvstep+C.length)%C.length].n;mTvScreen();return}
+ if(d.tvnews){window.__tv.news=d.tvnews;mTvScreen();return}
+ if(d.tvpaid){window.__tv.paid=true;const c=document.getElementById('tvpaid');if(c)c.checked=true;mTvScreen();return}
+ if(d.rd){window.__rd.i=+d.rd;mRadio();return}
+ if(d.rdstep){const n=MD().radio.length;window.__rd.i=(window.__rd.i+ +d.rdstep+n)%n;mRadio();return}
+ if(d.pp){window.__pp.i=+d.pp;mFront();return}
+ if(d.prf!=null){window.__pp.rf=d.prf;route();return}
+ if(d.gl){window.__gl.i=+d.gl;mGlimpse();return}
+ if(d.ml!=null){window.__ml=d.ml;route();return}
+ if(d.chf!=null){window.__chf=d.chf;route();return}
+ if(d.allang){window.__al.lang=d.allang;mAlert();return}
+ if(t.id==='alrun'){window.__al.on=!window.__al.on;t.textContent=window.__al.on?'Stop simulation':'Run simulation';mAlert();return}});
+document.addEventListener('input',e=>{const t=e.target;if(t.id==='mq'){window.__mf.q=t.value;mDirRender()}else if(t.id==='glq'){window.__gl.q=t.value;mGlimpse()}});
+document.addEventListener('change',e=>{const t=e.target;if(t.id==='tvviewer'){window.__tv.viewer=t.value;mTvScreen()}else if(t.id==='tvlang'){window.__tv.lang=t.value;mTvScreen()}else if(t.id==='tvpaid'){window.__tv.paid=t.checked;mTvScreen()}
+ else if(t.id==='alarea'){window.__al.area=t.value;mAlert()}else if(t.id==='alkind'){window.__al.kind=t.value;mAlert()}});
+document.addEventListener('keydown',e=>{if(location.hash!=='#mediatv'||/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.key==='PageUp'||e.key==='PageDown'){e.preventDefault();const C=MD().channels,i=C.findIndex(c=>c.n===window.__tv.ch);window.__tv.ch=C[(i+(e.key==='PageUp'?1:-1)+C.length)%C.length].n;mTvScreen()}});
+/* MEDIA-END */
+
 V.history=()=>`<h1>History</h1><p class="lede">Dates use the Nyrethian Standard Calendar (NSC), which counts from the first landing. Years marked “about” are not yet fixed to an exact day. <a href="#calendar">How the calendar works →</a></p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.timeline.map((e,i)=>`<li><div class="when">${e.live?'<span data-nsc="date"></span>':esc(e.when)+(/^\d\d\//.test(e.when)?' NSC':' NSC')}</div><h3>${esc(e.name)}</h3><p>${esc(e.text)}</p></li>`).join('')}</ol>
