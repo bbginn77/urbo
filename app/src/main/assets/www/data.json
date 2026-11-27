@@ -1,4 +1,61 @@
 {
+ "cityinfo": {
+  "brightport-city": {
+   "nick": "The Sun Capital",
+   "landmarks": [
+    [
+     "URBO Unity Tower",
+     "The tall tower with the pointed crown, the tallest in the city. Finished soon after the peace treaty as a symbol of the new union."
+    ]
+   ],
+   "areas": [
+    [
+     "Riverside Heights",
+     "Well-off neighbourhood on the bluffs above the Brightport River."
+    ],
+    [
+     "Old Lantern",
+     "Narrow streets and the homes of the first settlers."
+    ],
+    [
+     "Sunmarket",
+     "Busy and full of markets and food halls."
+    ],
+    [
+     "Northgate",
+     "Commuter suburb on the Capital Line."
+    ]
+   ],
+   "food": [
+    [
+     "Sun pie",
+     "The city’s signature dish: a round, golden savoury pie with a pastry sun on top."
+    ]
+   ],
+   "sports": [
+    [
+     "Brightport City FC",
+     "Football club, nicknamed the Suns. Football is the city’s main sport."
+    ],
+    [
+     "The Treaty Match",
+     "Brightport City FC against Berevo United, the biggest match in URBO: the two capitals, east against west. First played the year the peace treaty was signed."
+    ]
+   ]
+  },
+  "berevo": {
+   "sports": [
+    [
+     "Berevo United",
+     "Football club, nicknamed the Harbourmen."
+    ],
+    [
+     "The Treaty Match",
+     "Berevo United against Brightport City FC, the biggest match in URBO. First played the year the peace treaty was signed."
+    ]
+   ]
+  }
+ },
  "i18n": {
   "fr": {
    "About this site": "À propos de ce site",
