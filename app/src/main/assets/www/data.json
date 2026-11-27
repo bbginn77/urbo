@@ -1,4 +1,160 @@
 {
+ "people": [
+  {
+   "id": "oliver-ashcombe",
+   "name": "Oliver Ashcombe",
+   "img": "img/politics/oliver-ashcombe.jpg",
+   "office": "Prime Minister of URBO",
+   "party": "cup",
+   "facts": [
+    [
+     "Age",
+     "57"
+    ],
+    [
+     "From",
+     "Solis"
+    ],
+    [
+     "Ancestry",
+     "English and Afro-Caribbean"
+    ],
+    [
+     "Before politics",
+     "International diplomat, from an established political family"
+    ],
+    [
+     "Family",
+     "Married, with three adult children"
+    ]
+   ],
+   "bio": "Measured, diplomatic and exceptionally patient."
+  },
+  {
+   "id": "nathaniel-fairbourne",
+   "name": "Nathaniel Fairbourne",
+   "img": "img/politics/nathaniel-fairbourne.jpg",
+   "office": "Prime Minister of Brightport",
+   "party": "cup",
+   "facts": [
+    [
+     "Age",
+     "37"
+    ],
+    [
+     "From",
+     "Solis"
+    ],
+    [
+     "Ancestry",
+     "English and French"
+    ],
+    [
+     "Before politics",
+     "Constitutional lawyer, from a wealthy aristocratic family with historic ties to the Crown"
+    ],
+    [
+     "Family",
+     "Married, no children"
+    ]
+   ],
+   "bio": "Sophisticated, diplomatic and quietly confident."
+  },
+  {
+   "id": "ewan-dunmore",
+   "name": "Ewan Dunmore",
+   "img": "img/politics/ewan-dunmore.jpg",
+   "office": "Prime Minister of Occasue",
+   "party": "rl",
+   "facts": [
+    [
+     "Age",
+     "33"
+    ],
+    [
+     "From",
+     "Lochwater"
+    ],
+    [
+     "Ancestry",
+     "Scottish and Latin American"
+    ],
+    [
+     "Before politics",
+     "Trade union leader"
+    ],
+    [
+     "Family",
+     "Married, with two young children"
+    ]
+   ],
+   "bio": "Down-to-earth, passionate and outspoken."
+  },
+  {
+   "id": "mathieu-van-dijk",
+   "name": "Mathieu van Dijk",
+   "img": "img/politics/mathieu-van-dijk.jpg",
+   "office": "Vice President of Occasue",
+   "party": "green",
+   "facts": [
+    [
+     "Age",
+     "28"
+    ],
+    [
+     "Ancestry",
+     "Japanese and Dutch"
+    ],
+    [
+     "Before politics",
+     "Environmental lawyer"
+    ],
+    [
+     "Family",
+     "Single by choice"
+    ]
+   ],
+   "bio": "Elected on a joint ticket with President van der Cruz. Witty, sarcastic and fiercely protective of the president, almost parental despite being only four years older."
+  },
+  {
+   "id": "laurent-delacroix",
+   "name": "Laurent Delacroix",
+   "img": "img/politics/laurent-delacroix.jpg",
+   "office": "Leader of the Opposition, Occasue Parliament",
+   "party": "wl",
+   "facts": [
+    [
+     "Age",
+     "45"
+    ],
+    [
+     "From",
+     "Kus"
+    ],
+    [
+     "Ancestry",
+     "Mostly French"
+    ],
+    [
+     "Before",
+     "Diplomat, then Prime Minister of Occasue"
+    ],
+    [
+     "Family",
+     "Married to Camille Delacroix for 20 years; two teenage children"
+    ]
+   ],
+   "bio": "A veteran politician, commanding in public and gentle in private. He lost the presidential election to Amélien van der Cruz."
+  }
+ ],
+ "people_open": [
+  "The federal deputy prime minister and cabinet",
+  "Leaders of the other parties",
+  "Names of the Free Occasue and independent presidential candidates",
+  "Election dates, vote totals and results by region",
+  "Governors and other state officeholders",
+  "Names of family members not given here"
+ ],
  "souv": {
   "name": "Élise I, House of Brightwell",
   "img": "elise-i-portrait",
@@ -20,6 +176,10 @@
    [
     "Age",
     "About 33"
+   ],
+   [
+    "Approval",
+    "88% in Brightport (UPOI)"
    ],
    [
     "Before the throne",
@@ -60,6 +220,10 @@
     "24"
    ],
    [
+    "Approval",
+    "92% (UPOI)"
+   ],
+   [
     "Causes",
     "Housing affordability and the cost of living"
    ],
@@ -76,11 +240,10 @@
    "Hometown, parents’ names and siblings",
    "University and degree",
    "Birth date",
-   "Election date and results",
    "Earlier offices",
    "Name of the youth movement",
-   "Minimum age to be president",
-   "Whether Ouest is his home state"
+   "Whether Ouest is his home state",
+   "Election date"
   ]
  },
  "mil": {
@@ -1773,6 +1936,21 @@
    "Football, gaming and music": "Le football, les jeux vidéo et la musique",
    "24": "24 ans",
    "Read his biography →": "Lire sa biographie →",
+   "Approval": "Approbation",
+   "Favourability": "Opinion favorable",
+   "Green Party. Elected on a joint ticket with the President.": "Parti vert. Élu sur un ticket commun avec le président.",
+   "Leader of the Opposition, Occasue Parliament": "Chef de l'opposition, Parlement d'Occasue",
+   "Western Liberal Party. From Kus. Former Prime Minister of Occasue.": "Parti libéral de l'Ouest. Originaire de Kus. Ancien Premier ministre d'Occasue.",
+   "Open: Hometown, parents’ names and siblings · University and degree · Birth date · Earlier offices · Name of the youth movement · Whether Ouest is his home state · Election date": "À préciser : ville natale, noms des parents et fratrie · université et diplôme · date de naissance · fonctions antérieures · nom du mouvement de jeunesse · si l'Ouest est son État d'origine · date de l'élection",
+   "Presidential election": "Élection présidentielle",
+   "Turnout": "Participation",
+   "Decided in the first round.": "Décidée dès le premier tour.",
+   "Free Occasue candidate": "Candidat d'Occasue libre",
+   "Independent candidate": "Candidat indépendant",
+   "Amélien van der Cruz and his running mate, Mathieu van Dijk of the Green Party, won in the first round, so no runoff was needed. The Green Party endorsed van der Cruz.": "Amélien van der Cruz et son colistier, Mathieu van Dijk, du Parti vert, l'ont emporté dès le premier tour : aucun second tour n'a été nécessaire. Le Parti vert avait soutenu van der Cruz.",
+   "Candidates for president must be at least 18 Earth years old.": "Les candidats à la présidence doivent avoir au moins 18 ans terrestres.",
+   "Current president: Amélien van der Cruz. Vice president: Mathieu van Dijk. Prime minister: Ewan Dunmore.": "Président actuel : Amélien van der Cruz. Vice-président : Mathieu van Dijk. Premier ministre : Ewan Dunmore.",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61. Latest election result.": "Coalition de la Gauche républicaine et des Verts : 66 sièges sur 120. Premier ministre : Ewan Dunmore (Gauche républicaine). Majorité : 61. Résultat des dernières élections.",
    "Official website of the State of Ouest · Republic of Occasue · URBO": "Site officiel de l'État d'Ouest · République d'Occasue · URBO",
    "Comitatus": "Comitatus",
    "State of the Republic of Occasue": "État de la République d'Occasue",
@@ -1964,6 +2142,21 @@
    "Football, gaming and music": "Voetbal, gamen en muziek",
    "24": "24",
    "Read his biography →": "Lees zijn biografie →",
+   "Approval": "Goedkeuring",
+   "Favourability": "Populariteit",
+   "Green Party. Elected on a joint ticket with the President.": "Groene Partij. Gekozen op een gezamenlijk ticket met de president.",
+   "Leader of the Opposition, Occasue Parliament": "Oppositieleider, Parlement van Occasue",
+   "Western Liberal Party. From Kus. Former Prime Minister of Occasue.": "Westelijke Liberale Partij. Uit Kus. Voormalig minister-president van Occasue.",
+   "Open: Hometown, parents’ names and siblings · University and degree · Birth date · Earlier offices · Name of the youth movement · Whether Ouest is his home state · Election date": "Nog open: geboorteplaats, namen van ouders en broers en zussen · universiteit en studie · geboortedatum · eerdere functies · naam van de jongerenbeweging · of Ouest zijn thuisstaat is · verkiezingsdatum",
+   "Presidential election": "Presidentsverkiezing",
+   "Turnout": "Opkomst",
+   "Decided in the first round.": "Beslist in de eerste ronde.",
+   "Free Occasue candidate": "Kandidaat van Vrij Occasue",
+   "Independent candidate": "Onafhankelijke kandidaat",
+   "Amélien van der Cruz and his running mate, Mathieu van Dijk of the Green Party, won in the first round, so no runoff was needed. The Green Party endorsed van der Cruz.": "Amélien van der Cruz en zijn running mate Mathieu van Dijk van de Groene Partij wonnen in de eerste ronde, dus een tweede ronde was niet nodig. De Groene Partij steunde van der Cruz.",
+   "Candidates for president must be at least 18 Earth years old.": "Kandidaten voor het presidentschap moeten minstens 18 aardse jaren oud zijn.",
+   "Current president: Amélien van der Cruz. Vice president: Mathieu van Dijk. Prime minister: Ewan Dunmore.": "Huidige president: Amélien van der Cruz. Vicepresident: Mathieu van Dijk. Minister-president: Ewan Dunmore.",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61. Latest election result.": "Coalitie van Republikeins Links en de Groenen: 66 van de 120 zetels. Minister-president Ewan Dunmore (Republikeins Links). Meerderheid: 61. Uitslag van de laatste verkiezingen.",
    "Official website of the State of Kus · Republic of Occasue · URBO": "Officiële website van de Staat Kus · Republiek Occasue · URBO",
    "Rejions": "Regio's",
    "Official website · State of the Republic of Occasue": "Officiële website · Staat van de Republiek Occasue",
@@ -2161,6 +2354,21 @@
    "Football, gaming and music": "Ball-coise, geamannan agus ceòl",
    "24": "24",
    "Read his biography →": "Leugh a bheatha-eachdraidh →",
+   "Approval": "Aonta",
+   "Favourability": "Fàbhar",
+   "Green Party. Elected on a joint ticket with the President.": "Am Pàrtaidh Uaine. Air a thaghadh air tiocaid còmhla ris a' Cheann-suidhe.",
+   "Leader of the Opposition, Occasue Parliament": "Ceannard an Aghaidh, Pàrlamaid Occasue",
+   "Western Liberal Party. From Kus. Former Prime Minister of Occasue.": "Pàrtaidh Libearalach an Iar. À Kus. Prìomhaire Occasue roimhe.",
+   "Open: Hometown, parents’ names and siblings · University and degree · Birth date · Earlier offices · Name of the youth movement · Whether Ouest is his home state · Election date": "Fosgailte: baile-dachaigh, ainmean phàrantan is bhràithrean is pheathraichean · oilthigh is ceum · ceann-latha breith · dreuchdan roimhe · ainm gluasad na h-òigridh · a bheil Ouest na stàit dhachaigh aige · ceann-latha an taghaidh",
+   "Presidential election": "Taghadh a' Chinn-suidhe",
+   "Turnout": "Àireamh a bhòt",
+   "Decided in the first round.": "Air a cho-dhùnadh sa chiad chuairt.",
+   "Free Occasue candidate": "Tagraiche Occasue Saor",
+   "Independent candidate": "Tagraiche neo-eisimeileach",
+   "Amélien van der Cruz and his running mate, Mathieu van Dijk of the Green Party, won in the first round, so no runoff was needed. The Green Party endorsed van der Cruz.": "Bhuannaich Amélien van der Cruz agus a chompanach-ruith, Mathieu van Dijk bhon Phàrtaidh Uaine, sa chiad chuairt, agus cha robh feum air dàrna cuairt. Chuir am Pàrtaidh Uaine taic ri van der Cruz.",
+   "Candidates for president must be at least 18 Earth years old.": "Feumaidh tagraichean airson a' Chinn-suidhe a bhith co-dhiù 18 bliadhna Talmhainn a dh'aois.",
+   "Current president: Amélien van der Cruz. Vice president: Mathieu van Dijk. Prime minister: Ewan Dunmore.": "Ceann-suidhe an-dràsta: Amélien van der Cruz. Leas-cheann-suidhe: Mathieu van Dijk. Prìomhaire: Ewan Dunmore.",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61. Latest election result.": "Co-bhanntachd a' Chlì Phoblachdaich is nan Uaineach: 66 à 120. Prìomhaire: Ewan Dunmore (An Clì Poblachdach). Mòr-chuid: 61. Toradh an taghaidh mu dheireadh.",
    "Official website of the State of Lochwater · Republic of Occasue · URBO": "Làrach-lìn oifigeil Stàit Lochwater · Poblachd Occasue · URBO",
    "Lochwater (state)": "Lochwater (stàit)",
    "Shires": "Siorrachdan",
@@ -2352,6 +2560,21 @@
    "Football, gaming and music": "Fútbol, videojuegos y música",
    "24": "24 años",
    "Read his biography →": "Leer su biografía →",
+   "Approval": "Aprobación",
+   "Favourability": "Opinión favorable",
+   "Green Party. Elected on a joint ticket with the President.": "Partido Verde. Elegido en fórmula conjunta con el presidente.",
+   "Leader of the Opposition, Occasue Parliament": "Líder de la oposición, Parlamento de Occasue",
+   "Western Liberal Party. From Kus. Former Prime Minister of Occasue.": "Partido Liberal del Oeste. De Kus. Ex primer ministro de Occasue.",
+   "Open: Hometown, parents’ names and siblings · University and degree · Birth date · Earlier offices · Name of the youth movement · Whether Ouest is his home state · Election date": "Pendiente: ciudad natal, nombres de padres y hermanos · universidad y título · fecha de nacimiento · cargos anteriores · nombre del movimiento juvenil · si Ouest es su estado de origen · fecha de la elección",
+   "Presidential election": "Elección presidencial",
+   "Turnout": "Participación",
+   "Decided in the first round.": "Decidida en la primera vuelta.",
+   "Free Occasue candidate": "Candidato de Occasue Libre",
+   "Independent candidate": "Candidato independiente",
+   "Amélien van der Cruz and his running mate, Mathieu van Dijk of the Green Party, won in the first round, so no runoff was needed. The Green Party endorsed van der Cruz.": "Amélien van der Cruz y su compañero de fórmula, Mathieu van Dijk, del Partido Verde, ganaron en la primera vuelta, así que no hizo falta segunda vuelta. El Partido Verde apoyó a van der Cruz.",
+   "Candidates for president must be at least 18 Earth years old.": "Los candidatos a la presidencia deben tener al menos 18 años terrestres.",
+   "Current president: Amélien van der Cruz. Vice president: Mathieu van Dijk. Prime minister: Ewan Dunmore.": "Presidente actual: Amélien van der Cruz. Vicepresidente: Mathieu van Dijk. Primer ministro: Ewan Dunmore.",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61. Latest election result.": "Coalición de la Izquierda Republicana y los Verdes: 66 de 120 escaños. Primer ministro: Ewan Dunmore (Izquierda Republicana). Mayoría: 61. Resultado de las últimas elecciones.",
    "Official website of the State of Polvo · Republic of Occasue · URBO": "Sitio oficial del Estado de Polvo · República de Occasue · URBO",
    "Rejions": "Regiones",
    "★ Welcome to the Official Web Site of the State of Polvo ★": "★ Bienvenidos al Sitio Web Oficial del Estado de Polvo ★",
@@ -3726,11 +3949,12 @@
      "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.",
      "The President of Occasue is head of state of Occasue and a joint head of state of URBO.",
      "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.",
+     "Candidates for president must be at least 18 Earth years old.",
      "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.",
      "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.",
      "Occasue has its own constitution, which must comply with the federal constitution.",
      "Four states and Montes Territory.",
-     "Current president: Amélien van der Cruz. Prime minister: Ewan Dunmore."
+     "Current president: Amélien van der Cruz. Vice president: Mathieu van Dijk. Prime minister: Ewan Dunmore."
     ],
     "open": []
    },
@@ -3806,9 +4030,7 @@
    "Cabinet ministries and ministers, and the deputy prime minister",
    "Confidence votes, mediation, emergency powers and dissolution",
    "Exact supermajorities for amending the constitution",
-   "Assembly constituency and list-seat split, thresholds and formulas",
    "How the elected Council members are voted in",
-   "Exact election dates in NSC, and official results",
    "State and municipal elections",
    "Number of High Court judges and how they are appointed",
    "Republican cabinets, assent and succession rules",
@@ -3819,7 +4041,11 @@
    "Status of the four overseas territories and of the capital district",
    "How territorial administrators are appointed",
    "What the five rings and blue centre of the Assembly chamber mean",
-   "Which prime minister uses the Prime Minister’s Palace"
+   "Which prime minister uses the Prime Minister’s Palace",
+   "Assembly constituency and list-seat split, and exceptions to the 3% threshold",
+   "Exact election dates in NSC, and regional results",
+   "Postal, overseas and early voting, and other election details",
+   "Exact founding dates of the parties"
   ],
   "seats": {
    "assembly": {
@@ -3884,15 +4110,21 @@
    ],
    [
     "Vice President of Occasue",
-    "Not yet named",
-    null,
-    "Elected on a joint ticket with the President."
+    "Mathieu van Dijk",
+    "green",
+    "Green Party. Elected on a joint ticket with the President."
    ],
    [
     "Prime Minister of Occasue",
     "Ewan Dunmore",
     "rl",
     "From Lochwater. Elected by the Occasue Parliament."
+   ],
+   [
+    "Leader of the Opposition, Occasue Parliament",
+    "Laurent Delacroix",
+    "wl",
+    "Western Liberal Party. From Kus. Former Prime Minister of Occasue."
    ]
   ],
   "parties": [
@@ -3903,7 +4135,17 @@
     "rep": "Brightport",
     "alliance": "union",
     "col": "#1f4e9c",
-    "pos": "Centre-right. Royalist, pro-union, Brightportish first."
+    "pos": "Centre-right. Royalist, pro-union, Brightportish first.",
+    "origin": "Founded following reunification to protect the Crown and federal union",
+    "ideology": "One-nation conservatism",
+    "policy": "Capitalism with a strong social safety net; royalism, federal unity, Brightportish priority",
+    "slogan": "Crown, Country, Unity",
+    "regional_base": [
+     "Solis",
+     "Norham"
+    ],
+    "logo_description": "Minimalist golden crown on royal blue",
+    "logo": "img/party-logos/cup.svg"
    },
    {
     "id": "pp",
@@ -3912,7 +4154,18 @@
     "rep": "Brightport",
     "alliance": "front",
     "col": "#d8343a",
-    "pos": "Centre-left. Workers and public services; loyal to the Souvren without fuss."
+    "pos": "Centre-left. Workers and public services; loyal to the Souvren without fuss.",
+    "origin": "Founded following reunification to address economic inequality",
+    "ideology": "Democratic socialism",
+    "policy": "Greater public ownership of major industries, workers and public services; supports the monarchy",
+    "slogan": "A Nation for Everyone",
+    "regional_base": [
+     "Floribus",
+     "Estercrystal",
+     "Deserto"
+    ],
+    "logo_description": "Stylized red Brightbloom (white reversed version on red in approved preview)",
+    "logo": "img/party-logos/pp.svg"
    },
    {
     "id": "langue",
@@ -3921,7 +4174,16 @@
     "rep": "Brightport",
     "alliance": null,
     "col": "#1d6b4a",
-    "pos": "Brightportish everywhere and a weaker URBO. Named after the Brightportish word for language."
+    "pos": "Brightportish everywhere and a weaker URBO. Named after the Brightportish word for language.",
+    "origin": "Evolved from a Brightportish language preservation organization",
+    "ideology": "Cultural nationalism; economically flexible",
+    "policy": "Brightportish language and heritage take priority; greater republican autonomy/weaker federal government",
+    "slogan": "Our Language, Our Heritage",
+    "regional_base": [
+     "Weiden"
+    ],
+    "logo_description": "Authentic Brightportish LP initials, white/cream on dark green",
+    "logo": "img/party-logos/langue.svg"
    },
    {
     "id": "rm",
@@ -3930,7 +4192,16 @@
     "rep": "Brightport",
     "alliance": null,
     "col": "#7b4fb0",
-    "pos": "Wants to drop the Souvren and make Brightport a true republic."
+    "pos": "Wants to drop the Souvren and make Brightport a true republic.",
+    "origin": "Founded by surviving anti-monarchist factions after the Civil War",
+    "ideology": "Progressive republicanism",
+    "policy": "Social equality and elected leadership; abolish Brightport monarchy",
+    "slogan": "Citizens, Not Subjects",
+    "regional_base": [
+     "Sur"
+    ],
+    "logo_description": "Purple broken crown",
+    "logo": "img/party-logos/rm.svg"
    },
    {
     "id": "wl",
@@ -3939,7 +4210,16 @@
     "rep": "Occasue",
     "alliance": "union",
     "col": "#e8b923",
-    "pos": "Centre-right. Business, low taxes, autonomy from Brightport City."
+    "pos": "Centre-right. Business, low taxes, autonomy from Brightport City.",
+    "origin": "Founded following reunification to defend Occasuan interests",
+    "ideology": "Classical liberalism",
+    "policy": "Free markets, limited government, republican autonomy",
+    "slogan": "Freedom to Prosper",
+    "regional_base": [
+     "Lochwater"
+    ],
+    "logo_description": "Minimalist golden rising sun",
+    "logo": "img/party-logos/wl.svg"
    },
    {
     "id": "rl",
@@ -3948,7 +4228,16 @@
     "rep": "Occasue",
     "alliance": "front",
     "col": "#e4692e",
-    "pos": "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French."
+    "pos": "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French.",
+    "origin": "Founded following reunification to promote social equality",
+    "ideology": "Democratic socialism",
+    "policy": "Public ownership, economic equality, republicanism and ancestral language preservation; affordable housing",
+    "slogan": "A Future for All",
+    "regional_base": [
+     "Kus"
+    ],
+    "logo_description": "Orange rising sun with four rays",
+    "logo": "img/party-logos/rl.svg"
    },
    {
     "id": "fo",
@@ -3957,7 +4246,16 @@
     "rep": "Occasue",
     "alliance": null,
     "col": "#4a4a4a",
-    "pos": "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French."
+    "pos": "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French.",
+    "origin": "Descended from Occasuan independence factions of the Civil War",
+    "ideology": "Left-wing nationalism",
+    "policy": "Occasuan independence and economic equality",
+    "slogan": "Occasue Belongs to Occasue",
+    "regional_base": [
+     "Polvo"
+    ],
+    "logo_description": "Broken chain beneath four-ray Occasuan sun in charcoal",
+    "logo": "img/party-logos/fo.svg"
    },
    {
     "id": "sh",
@@ -3966,7 +4264,16 @@
     "rep": "Occasue (Ouest)",
     "alliance": null,
     "col": "#2a9bb0",
-    "pos": "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest."
+    "pos": "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.",
+    "origin": "Evolved from a Schoon cultural preservation association",
+    "ideology": "Cultural regionalism",
+    "policy": "Schoon language and heritage, local autonomy; local elections in Ouest only (existing archive)",
+    "slogan": "Return to Schoonheid",
+    "regional_base": [
+     "Ouest"
+    ],
+    "logo_description": "Teal mountain silhouette",
+    "logo": "img/party-logos/sh.svg"
    },
    {
     "id": "green",
@@ -3975,7 +4282,16 @@
     "rep": "Both republics",
     "alliance": null,
     "col": "#4fa845",
-    "pos": "The only party that runs in both republics."
+    "pos": "The only party that runs in both republics.",
+    "origin": "Founded following reunification by conservationists from both republics",
+    "ideology": "Eco-socialism",
+    "policy": "Environmental protection and economic equality; operates in both republics",
+    "slogan": "One Planet, One Future",
+    "regional_base": [
+     "Ouest"
+    ],
+    "logo_description": "Green leaf surrounding Nyreth",
+    "logo": "img/party-logos/green.svg"
    }
   ],
   "alliances": [
@@ -4250,7 +4566,179 @@
    "Children born in URBO take the republican citizenship of the republic they are born in. Children born abroad to URBO citizens take their parent’s republican citizenship; if the parents differ, the parents choose.",
    "Foreign nationals may apply after ten years’ legal residence, with good conduct, a language of their new republic, knowledge of its government and history, and an oath of allegiance to URBO. Dual nationality is allowed only with countries that have a reciprocal agreement with URBO."
   ],
-  "note_results": "The seat counts and governing coalitions shown are proposals awaiting a review of the election results."
+  "note_results": "These are the current, approved results of the latest elections. The seat-by-state split in the Assembly circle is an older draft that has not been approved.",
+  "tendencies": {
+   "solis": "CUP stronghold; royalist and economically conservative",
+   "floribus": "PP stronghold",
+   "weiden": "Competitive CUP / LP",
+   "estercrystal": "PP stronghold",
+   "sur": "RM stronghold; anti-monarchy",
+   "norham": "CUP; affluent economic conservatives",
+   "deserto": "PP; federal investment and development",
+   "kus": "RL stronghold; recent collapse of WLP base after broken affordable housing promises",
+   "ouest": "Progressive, substantial Green support",
+   "lochwater-state": "Conservative WLP stronghold",
+   "polvo": "Competitive RL / FO",
+   "montes": "Mixed, no dominant party"
+  },
+  "election_rules": [
+   [
+    "Who votes",
+    "Every citizen is registered automatically at 18 Earth years."
+   ],
+   [
+    "Compulsory voting",
+    "Voting is compulsory. Not voting without a good reason brings a Ⓑ100 fine."
+   ],
+   [
+    "Ballots",
+    "Paper ballots only, counted by optical scanners, with mandatory hand audits."
+   ],
+   [
+    "Oversight",
+    "An independent Federal Electoral Commission runs every election."
+   ],
+   [
+    "Election day",
+    "A national public holiday."
+   ],
+   [
+    "Threshold",
+    "A party needs 3% of the vote to win list seats in the Assembly."
+   ],
+   [
+    "Campaigns",
+    "The official campaign lasts 60 Nyreth days. Televised debates are compulsory for every qualifying candidate. Private donations are allowed with strict transparency."
+   ],
+   [
+    "Standing for president",
+    "Candidates for President of Occasue must be at least 18 Earth years old."
+   ]
+  ],
+  "presidential": {
+   "turnout": 86.4,
+   "rows": [
+    [
+     "Amélien van der Cruz",
+     "rl",
+     67.5
+    ],
+    [
+     "Laurent Delacroix",
+     "wl",
+     19.5
+    ],
+    [
+     "Free Occasue candidate",
+     "fo",
+     10.0
+    ],
+    [
+     "Independent candidate",
+     null,
+     3.0
+    ]
+   ],
+   "notes": [
+    "Amélien van der Cruz and his running mate, Mathieu van Dijk of the Green Party, won in the first round, so no runoff was needed. The Green Party endorsed van der Cruz.",
+    "Laurent Delacroix, a former Prime Minister of Occasue, led the Western Liberal ticket. His government had failed to deliver affordable housing while prices kept rising, and Western Liberal support in Kus collapsed. Van der Cruz campaigned on housing and the cost of living and promised mass construction of affordable homes.",
+    "The two are fierce rivals in public."
+   ]
+  },
+  "polling": {
+   "name": "URBO Public Opinion Institute (UPOI)",
+   "rows": [
+    [
+     "Élise I",
+     "Personal approval",
+     "Brightport",
+     88
+    ],
+    [
+     "Amélien van der Cruz",
+     "Approval as president",
+     "Occasue",
+     92
+    ],
+    [
+     "Ewan Dunmore",
+     "Approval as prime minister",
+     "Occasue",
+     83
+    ],
+    [
+     "Nathaniel Fairbourne",
+     "Approval as prime minister",
+     "Brightport",
+     76
+    ],
+    [
+     "Oliver Ashcombe",
+     "Approval as federal prime minister",
+     "URBO",
+     58
+    ],
+    [
+     "Laurent Delacroix",
+     "Personal favourability",
+     "Occasue",
+     27
+    ]
+   ],
+   "other": [
+    [
+     "Support for the monarchy",
+     "Brightport",
+     75
+    ],
+    [
+     "Support for keeping the union",
+     "Brightport",
+     91
+    ],
+    [
+     "Support for keeping the union",
+     "Occasue",
+     69
+    ]
+   ],
+   "note": "The UPOI is independent. These figures are its latest snapshot; the survey date and method are not published here. Whatever is left from each figure is not necessarily opposition."
+  },
+  "approval": {
+   "Élise I, House of Brightwell": [
+    "Approval",
+    88
+   ],
+   "Amélien van der Cruz": [
+    "Approval",
+    92
+   ],
+   "Oliver Ashcombe": [
+    "Approval",
+    58
+   ],
+   "Nathaniel Fairbourne": [
+    "Approval",
+    76
+   ],
+   "Ewan Dunmore": [
+    "Approval",
+    83
+   ],
+   "Laurent Delacroix": [
+    "Favourability",
+    27
+   ]
+  },
+  "photos": {
+   "Élise I, House of Brightwell": "img/elise-i-headshot.jpg",
+   "Amélien van der Cruz": "img/amelien-van-der-cruz-headshot.jpg",
+   "Oliver Ashcombe": "img/politics/oliver-ashcombe.jpg",
+   "Nathaniel Fairbourne": "img/politics/nathaniel-fairbourne.jpg",
+   "Ewan Dunmore": "img/politics/ewan-dunmore.jpg",
+   "Mathieu van Dijk": "img/politics/mathieu-van-dijk.jpg",
+   "Laurent Delacroix": "img/politics/laurent-delacroix.jpg"
+  }
  },
  "lochway_photo": {
   "current": "ai-sign-bi",
