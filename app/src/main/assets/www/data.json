@@ -4889,6 +4889,17 @@
    "notes": "The official portrait, kept as the likeness reference. The URBO flag behind him is drawn with eleven rays; the official flag has ten."
   },
   {
+   "id": "elise-i-portrait",
+   "title": "Souvren Élise I: official portrait (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/elise-i-portrait.jpg",
+   "w": 1000,
+   "h": 1333,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Official portrait at Souvren Palace with the URBO and Brightport flags. The URBO flag’s sun is drawn with eleven rays; the official flag has ten."
+  },
+  {
    "id": "ai-royal-family",
    "title": "The royal family: proposed portrait (render)",
    "kind": "concept",
@@ -4897,7 +4908,7 @@
    "w": 1400,
    "h": 933,
    "origin": "ChatGPT render, Nov 2026",
-   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Élise’s likeness is approved (Nov 2026) and her official portrait is cropped from this render. The others’ faces, the clothing and the setting are not canon."
+   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Élise’s likeness is approved (Nov 2026). The others’ faces, the clothing and the setting are not canon."
   },
   {
    "id": "ai-flags",
