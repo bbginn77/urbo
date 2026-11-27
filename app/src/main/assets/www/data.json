@@ -4,7 +4,7 @@
    "Brightport and Occasue keep their own armed forces, joined under a permanent Joint Military Command. They are not merged into one federal force.",
    "Three branches: land, sea (maritime) and aerospace. Cyber defence runs through all three; there is no separate cyber or space force.",
    "Doctrine: defensive neutrality. URBO defends its sovereignty and stays out of foreign wars.",
-   "Supreme military authority belongs to the head of the union. How the Souvren and the URBO president, who must agree together on URBO matters, share this is not yet settled.",
+   "Supreme command belongs jointly to URBO’s two co-heads, the Souvren and the URBO president. As with every URBO matter, both must agree.",
    "About 1.5 to 2 million people serve on active duty. A voluntary professional reserve of former personnel and trained volunteers backs them up.",
    "Defence spending is 2 to 3% of the economy.",
    "AI only advises: it helps with analysis and paperwork, but people make every decision.",
@@ -194,9 +194,9 @@
     "Bronze shield on a red-and-yellow ribbon"
    ]
   ],
-  "medals_note": "All decorations are federal; neither republic awards its own. The Order of the Federal Sun is presented by the head of the union.",
+  "medals_note": "All decorations are federal; neither republic awards its own. The Order of the Federal Sun is presented by the Souvren and the URBO president together.",
   "open": [
-   "How the Souvren and the URBO president share supreme command, and who presents the Order of the Federal Sun",
+   "How parliament oversees the forces",
    "When the Joint Military Command was founded",
    "The split of personnel between the republics, the reserve’s size and the exact budget",
    "Exemptions, appeals and penalties for national service, and service housing",
