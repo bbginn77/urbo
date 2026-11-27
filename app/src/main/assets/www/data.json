@@ -1,4 +1,703 @@
 {
+ "uba": {
+  "name": "URBO Basketball Association",
+  "abbreviation": "UBA",
+  "origin": "Evolved from an amateur inter-republic basketball tournament",
+  "founding_year": null,
+  "conferences": [
+   "Brightport",
+   "Occasue"
+  ],
+  "teams_per_conference": 8,
+  "regular_season": {
+   "games_per_team": 60,
+   "games_per_opponent": 4,
+   "home_per_opponent": 2,
+   "away_per_opponent": 2,
+   "home_games": 30,
+   "away_games": 30,
+   "league_games": 480
+  },
+  "playoffs": {
+   "qualifiers_per_conference": 4,
+   "series": "Best-of-seven throughout",
+   "rounds": [
+    "Conference semifinals",
+    "Conference finals",
+    "UBA Finals"
+   ]
+  },
+  "championship": {
+   "name": "The Nyreth Cup",
+   "design": "Golden basketball supported by red (Occasue) and yellow (Brightport) enamel-covered silver pillars",
+   "asset": "assets/league/nyreth-cup.svg",
+   "presentation": "Both federal heads of state jointly present trophy",
+   "rings": "Custom designed by winning franchise each season",
+   "total_titles": 52,
+   "reigning_champion": "lions",
+   "last_finals": {
+    "winner": "lions",
+    "runner_up": "royals",
+    "series_wins": [
+     4,
+     0
+    ],
+    "year": null,
+    "game_scores": null
+   },
+   "miracle_of_deserto": {
+    "winner": "guardians",
+    "seed": 4,
+    "semifinal_opponent": null,
+    "conference_final_opponent": "royals",
+    "finals_opponent": "lions",
+    "year": null,
+    "series_scores": null
+   }
+  },
+  "current_season": {
+   "date_label": null,
+   "favorites": {
+    "Brightport": "tides",
+    "Occasue": "lions"
+   },
+   "tides_resurgence": "Talented young roster developed through the draft",
+   "all_star_host": "Trempas Ocean Arena"
+  },
+  "all_star": {
+   "format": "Brightport All-Stars vs. Occasue All-Stars",
+   "host_rotation": "Annually among all 16 franchises",
+   "events": [
+    "Three-point contest",
+    "Dunk contest",
+    "Skills challenge"
+   ],
+   "uniforms": [
+    "Yellow Brightport, orange trim and six-ray sun",
+    "Red Occasue, orange trim and four-ray sun"
+   ]
+  },
+  "players": {
+   "roster_size": 15,
+   "minimum_urbo_citizens": 8,
+   "citizenship_rule": "At least half of each roster must be URBO citizens",
+   "draft": "Annual two-round draft, 32 selections",
+   "lottery": "Weighted among eight non-playoff teams",
+   "minimum_draft_age_earth_years": 18,
+   "university_leagues": "Separate Brightport and Occasue university leagues with national championship",
+   "hard_salary_cap_annual": 20000000,
+   "minimum_annual_salary": 150000,
+   "contracts": "Fully guaranteed, 1–5 seasons"
+  },
+  "business": {
+   "currency": "Ⓑ",
+   "national_broadcast_revenue": "Equal distribution among 16 franchises",
+   "local_revenue": "Retained by individual franchises",
+   "broadcasting": "All games free to viewers via public broadcaster",
+   "broadcast_languages": "Regional language first, English second; multilingual national Finals coverage",
+   "standard_regular_season_ticket_range": [
+    20,
+    75
+   ],
+   "merchandise": "Centralized UBA store with profits shared among franchises"
+  },
+  "governance": {
+   "council": {
+    "Brightport": 8,
+    "Occasue": 8,
+    "chair": "Rotating"
+   },
+   "hall_of_fame": "Brightport City",
+   "annual_awards": [
+    "MVP",
+    "Finals MVP",
+    "Rookie of the Year",
+    "Defensive Player of the Year",
+    "Coach of the Year"
+   ]
+  },
+  "popularity": {
+   "Brightport": 2,
+   "Occasue": 1
+  },
+  "supporters": {
+   "Élise I": "Honorary patron of Royals; royal family supports Royals",
+   "Amélien van der Cruz": "Lifelong Berevo Lions supporter",
+   "Mathieu van Dijk": "Lifelong Berevo Lions supporter"
+  },
+  "rivalries": [
+   {
+    "name": "The Capital Classic",
+    "teams": [
+     "royals",
+     "lions"
+    ]
+   },
+   {
+    "name": "The Desert Classic",
+    "teams": [
+     "cobras",
+     "mustangs"
+    ]
+   },
+   {
+    "name": "The Lochwater Derby",
+    "teams": [
+     "highlanders",
+     "wolves"
+    ]
+   },
+   {
+    "name": "Battle of the Coasts",
+    "teams": [
+     "tides",
+     "breakers"
+    ]
+   }
+  ],
+  "teams": [
+   {
+    "id": "royals",
+    "name": "Brightport City Royals",
+    "conference": "Brightport",
+    "city": "Brightport City",
+    "state_or_territory": "Solis",
+    "arena": "Souvren Arena",
+    "capacity": 32000,
+    "championships": 11,
+    "colors": [
+     "#213a74",
+     "#e6bf45"
+    ],
+    "uniforms": {
+     "home": "Royal blue",
+     "away": "White",
+     "alternate": "Yellow Heritage Edition"
+    },
+    "ownership": "Privately owned by an unnamed wealthy Brightport business family",
+    "chant": null,
+    "language_priority": "Brightportish first, English second",
+    "lore": "Historic powerhouse; Élise I honorary patron; entire royal family supports the team. No royal ownership.",
+    "crest": "img/uba/crests/royals.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/royals-home.svg",
+     "away": "img/uba/uniforms/royals-away.svg",
+     "alternate": "img/uba/uniforms/royals-alternate.svg"
+    },
+    "slogan": null,
+    "state_id": "solis"
+   },
+   {
+    "id": "titans",
+    "name": "Aurelia Titans",
+    "conference": "Brightport",
+    "city": "Aurelia",
+    "state_or_territory": "Solis",
+    "arena": "Aurelia Coliseum",
+    "capacity": 16000,
+    "championships": 0,
+    "colors": [
+     "#512a78",
+     "#c6aa68"
+    ],
+    "uniforms": {
+     "home": "Purple",
+     "away": "White",
+     "alternate": "Antique gold"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Rise, Titans, Rise!",
+    "language_priority": null,
+    "lore": "Relatively young expansion franchise.",
+    "crest": "img/uba/crests/titans.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/titans-home.svg",
+     "away": "img/uba/uniforms/titans-away.svg",
+     "alternate": "img/uba/uniforms/titans-alternate.svg"
+    },
+    "slogan": "Rise, Titans, Rise!",
+    "state_id": "solis"
+   },
+   {
+    "id": "tides",
+    "name": "Trempas Tides",
+    "conference": "Brightport",
+    "city": "Trempas",
+    "state_or_territory": "Floribus",
+    "arena": "Trempas Ocean Arena",
+    "capacity": 21000,
+    "championships": 5,
+    "colors": [
+     "#168b92",
+     "#f58b77"
+    ],
+    "uniforms": {
+     "home": "Teal",
+     "away": "White",
+     "alternate": "Coral Sunset Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Ride the Tide!",
+    "language_priority": null,
+    "lore": "Established successful franchise; coastal beach-party atmosphere with live music. Current Brightport favorite; talented young roster developed through draft.",
+    "crest": "img/uba/crests/tides.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/tides-home.svg",
+     "away": "img/uba/uniforms/tides-away.svg",
+     "alternate": "img/uba/uniforms/tides-alternate.svg"
+    },
+    "slogan": "Ride the Tide!",
+    "state_id": "floribus"
+   },
+   {
+    "id": "crystals",
+    "name": "Portcrystal Crystals",
+    "conference": "Brightport",
+    "city": "Portcrystal",
+    "state_or_territory": "Estercrystal",
+    "arena": "Sapphire Arena",
+    "capacity": 12000,
+    "championships": 2,
+    "colors": [
+     "#2459a6",
+     "#c2dfed"
+    ],
+    "uniforms": {
+     "home": "Sapphire blue",
+     "away": "White",
+     "alternate": "Silver Ice Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Unbreakable!",
+    "language_priority": null,
+    "lore": "Competitive established franchise; traditional compact arena with intimidating atmosphere.",
+    "crest": "img/uba/crests/crystals.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/crystals-home.svg",
+     "away": "img/uba/uniforms/crystals-away.svg",
+     "alternate": "img/uba/uniforms/crystals-alternate.svg"
+    },
+    "slogan": "Unbreakable!",
+    "state_id": "estercrystal"
+   },
+   {
+    "id": "vikings",
+    "name": "Bikbergen Vikings",
+    "conference": "Brightport",
+    "city": "Bikbergen",
+    "state_or_territory": "Weiden",
+    "arena": "Bikbergen Nordic Arena",
+    "capacity": 18500,
+    "championships": 4,
+    "colors": [
+     "#203e58",
+     "#d6e5ed"
+    ],
+    "uniforms": {
+     "home": "Navy",
+     "away": "Snow white",
+     "alternate": "Ice-blue Glacier Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Fear the North!",
+    "language_priority": null,
+    "lore": "Respected historic franchise; Viking Thunder Clap before tipoff. Arena: longship-inspired sweeping roof, glass façade, timber accents and Nordic blue lighting.",
+    "crest": "img/uba/crests/vikings.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/vikings-home.svg",
+     "away": "img/uba/uniforms/vikings-away.svg",
+     "alternate": "img/uba/uniforms/vikings-alternate.svg"
+    },
+    "slogan": "Fear the North!",
+    "state_id": "weiden"
+   },
+   {
+    "id": "cobras",
+    "name": "Mami City Cobras",
+    "conference": "Brightport",
+    "city": "Mami City",
+    "state_or_territory": "Sur",
+    "arena": "La Arena del Sol — Arena of the Sun",
+    "capacity": 22000,
+    "championships": 3,
+    "colors": [
+     "#a84c2b",
+     "#e6c29b"
+    ],
+    "uniforms": {
+     "home": "Copper",
+     "away": "White",
+     "alternate": "Sand Desert Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "¡Vamos, Cobras!",
+    "language_priority": "Spanish first, English second",
+    "lore": "Established contenders; Las Cobras de Mami; approved court concept.",
+    "crest": "img/uba/crests/cobras.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/cobras-home.svg",
+     "away": "img/uba/uniforms/cobras-away.svg",
+     "alternate": "img/uba/uniforms/cobras-alternate.svg"
+    },
+    "slogan": "¡Vamos, Cobras!",
+    "state_id": "sur"
+   },
+   {
+    "id": "admirals",
+    "name": "Silverstone Admirals",
+    "conference": "Brightport",
+    "city": "Silverstone",
+    "state_or_territory": "Norham",
+    "arena": "Silver Dome",
+    "capacity": 23500,
+    "championships": 7,
+    "colors": [
+     "#172c44",
+     "#c8cdd4"
+    ],
+    "uniforms": {
+     "home": "Navy",
+     "away": "White",
+     "alternate": "Silver Fleet Edition"
+    },
+    "ownership": "Privately owned by an unnamed wealthy Norham shipping family",
+    "chant": "Rule the Waves!",
+    "language_priority": null,
+    "lore": "Historic powerhouse; ceremonial ship bell before tipoff and after victories.",
+    "crest": "img/uba/crests/admirals.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/admirals-home.svg",
+     "away": "img/uba/uniforms/admirals-away.svg",
+     "alternate": "img/uba/uniforms/admirals-alternate.svg"
+    },
+    "slogan": "Rule the Waves!",
+    "state_id": "norham"
+   },
+   {
+    "id": "guardians",
+    "name": "Ft. Deserto Guardians",
+    "conference": "Brightport",
+    "city": "Ft. Deserto",
+    "state_or_territory": "Deserto",
+    "arena": "The Fortress",
+    "capacity": 8500,
+    "championships": 1,
+    "colors": [
+     "#4b5844",
+     "#c8ae80"
+    ],
+    "uniforms": {
+     "home": "Olive",
+     "away": "White",
+     "alternate": "Sandstone Frontier Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Defend the Fortress!",
+    "language_priority": null,
+    "lore": "Historic Cinderella champions; lowest playoff seed; Miracle of Deserto.",
+    "crest": "img/uba/crests/guardians.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/guardians-home.svg",
+     "away": "img/uba/uniforms/guardians-away.svg",
+     "alternate": "img/uba/uniforms/guardians-alternate.svg"
+    },
+    "slogan": "Defend the Fortress!",
+    "state_id": "deserto"
+   },
+   {
+    "id": "lions",
+    "name": "Berevo Lions",
+    "conference": "Occasue",
+    "city": "Berevo",
+    "state_or_territory": "Kus",
+    "arena": "De Zonarena — Berevo Sun Arena",
+    "capacity": 25000,
+    "championships": 11,
+    "colors": [
+     "#a51e2d",
+     "#f4bb36"
+    ],
+    "uniforms": {
+     "home": "Crimson with gold",
+     "away": "White with crimson and gold",
+     "alternate": "Orange/crimson Occasue Heritage Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Wij zijn de Leeuwen!",
+    "language_priority": "Dutch first, English second",
+    "lore": "Historic powerhouse; Dutch and American heritage; Berevo Leeuwen; reigning champion and Occasue favorite.",
+    "crest": "img/uba/crests/lions.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/lions-home.svg",
+     "away": "img/uba/uniforms/lions-away.svg",
+     "alternate": "img/uba/uniforms/lions-alternate.svg"
+    },
+    "slogan": "Wij zijn de Leeuwen!",
+    "state_id": "kus"
+   },
+   {
+    "id": "breakers",
+    "name": "Costal City Breakers",
+    "conference": "Occasue",
+    "city": "Costal City",
+    "state_or_territory": "Kus",
+    "arena": "Oceanfront Coliseum",
+    "capacity": 23000,
+    "championships": 2,
+    "colors": [
+     "#12678b",
+     "#e0f1ee"
+    ],
+    "uniforms": {
+     "home": "Ocean blue",
+     "away": "White",
+     "alternate": "Seafoam Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Unleash the Wave!",
+    "language_priority": null,
+    "lore": "Established contenders; crashing wave sounds and coordinated blue lights during player introductions.",
+    "crest": "img/uba/crests/breakers.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/breakers-home.svg",
+     "away": "img/uba/uniforms/breakers-away.svg",
+     "alternate": "img/uba/uniforms/breakers-alternate.svg"
+    },
+    "slogan": "Unleash the Wave!",
+    "state_id": "kus"
+   },
+   {
+    "id": "eclairs",
+    "name": "Belkhap Éclairs",
+    "conference": "Occasue",
+    "city": "Belkhap",
+    "state_or_territory": "Ouest",
+    "arena": "Arène de Belkhap — Belkhap Arena",
+    "capacity": 21000,
+    "championships": 3,
+    "colors": [
+     "#633363",
+     "#e6c36a"
+    ],
+    "uniforms": {
+     "home": "Purple",
+     "away": "White",
+     "alternate": "Golden Édition Or"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Allez, les Éclairs !",
+    "language_priority": "French first, English second",
+    "lore": "Established contenders; Les Éclairs de Belkhap; thunder sounds and golden lightning projections during player introductions.",
+    "crest": "img/uba/crests/eclairs.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/eclairs-home.svg",
+     "away": "img/uba/uniforms/eclairs-away.svg",
+     "alternate": "img/uba/uniforms/eclairs-alternate.svg"
+    },
+    "slogan": "Allez, les Éclairs !",
+    "state_id": "ouest"
+   },
+   {
+    "id": "highlanders",
+    "name": "Lochwater Highlanders",
+    "conference": "Occasue",
+    "city": "Lochwater",
+    "state_or_territory": "Lochwater",
+    "arena": "Highland Arena",
+    "capacity": 16500,
+    "championships": 2,
+    "colors": [
+     "#234b3b",
+     "#b6c7d8"
+    ],
+    "uniforms": {
+     "home": "Forest green",
+     "away": "White",
+     "alternate": "Silver-blue Tartan Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Highland Pride!",
+    "language_priority": "Scottish Gaelic first, English second",
+    "lore": "Established contenders; live bagpipe procession accompanying players onto court. Specific tartan and Gaelic name unresolved.",
+    "crest": "img/uba/crests/highlanders.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/highlanders-home.svg",
+     "away": "img/uba/uniforms/highlanders-away.svg",
+     "alternate": "img/uba/uniforms/highlanders-alternate.svg"
+    },
+    "slogan": "Highland Pride!",
+    "state_id": "lochwater-state"
+   },
+   {
+    "id": "mustangs",
+    "name": "Polvo Springs Mustangs",
+    "conference": "Occasue",
+    "city": "Polvo Springs",
+    "state_or_territory": "Polvo",
+    "arena": "Mustang Arena",
+    "capacity": 9500,
+    "championships": 0,
+    "colors": [
+     "#a95f31",
+     "#242424"
+    ],
+    "uniforms": {
+     "home": "Charcoal",
+     "away": "White",
+     "alternate": "Copper Canyon Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Run Wild!",
+    "language_priority": null,
+    "lore": "Ambitious underdogs; thundering hoofbeats and copper lighting during introductions.",
+    "crest": "img/uba/crests/mustangs.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/mustangs-home.svg",
+     "away": "img/uba/uniforms/mustangs-away.svg",
+     "alternate": "img/uba/uniforms/mustangs-alternate.svg"
+    },
+    "slogan": "Run Wild!",
+    "state_id": "polvo"
+   },
+   {
+    "id": "summits",
+    "name": "Highpass Summits",
+    "conference": "Occasue",
+    "city": "Highpass",
+    "state_or_territory": "Montes",
+    "arena": "Summit Arena",
+    "capacity": 8000,
+    "championships": 0,
+    "colors": [
+     "#496274",
+     "#e6ecf0"
+    ],
+    "uniforms": {
+     "home": "Alpine slate",
+     "away": "Snow white",
+     "alternate": "Midnight Summit Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Rise Above!",
+    "language_priority": null,
+    "lore": "Mountain underdogs; live alpine horn performance before tipoff.",
+    "crest": "img/uba/crests/summits.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/summits-home.svg",
+     "away": "img/uba/uniforms/summits-away.svg",
+     "alternate": "img/uba/uniforms/summits-alternate.svg"
+    },
+    "slogan": "Rise Above!",
+    "state_id": "montes"
+   },
+   {
+    "id": "lynx",
+    "name": "Swisswa Lynx",
+    "conference": "Occasue",
+    "city": "Swisswa",
+    "state_or_territory": "Ouest",
+    "arena": "Schoon Heritage Arena",
+    "capacity": 9000,
+    "championships": 1,
+    "colors": [
+     "#187e8b",
+     "#171717"
+    ],
+    "uniforms": {
+     "home": "Teal",
+     "away": "White",
+     "alternate": "Black Schoon Heritage Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Fierce and Free!",
+    "language_priority": "Schoon first, English second",
+    "lore": "Proud former champions; lynx growls and teal lighting during introductions; annual Schoon Heritage Night celebrates regional language, food and music. Schoon combines Scandinavian languages, reflecting Nordic settlement.",
+    "crest": "img/uba/crests/lynx.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/lynx-home.svg",
+     "away": "img/uba/uniforms/lynx-away.svg",
+     "alternate": "img/uba/uniforms/lynx-alternate.svg"
+    },
+    "slogan": "Fierce and Free!",
+    "state_id": "ouest"
+   },
+   {
+    "id": "wolves",
+    "name": "Dunellan Wolves",
+    "conference": "Occasue",
+    "city": "Dunellan",
+    "state_or_territory": "Lochwater",
+    "arena": "Wolf Den Arena",
+    "capacity": 10000,
+    "championships": 0,
+    "colors": [
+     "#85898f",
+     "#171717"
+    ],
+    "uniforms": {
+     "home": "Wolf grey",
+     "away": "White",
+     "alternate": "Black Midnight Pack Edition"
+    },
+    "ownership": "Community-owned by local supporters",
+    "chant": "Strength in the Pack!",
+    "language_priority": null,
+    "lore": "Hungry underdogs; wolf howls and silver lighting during player introductions.",
+    "crest": "img/uba/crests/wolves.svg",
+    "uniform_art_status": "illustrative reconstruction; collection colors/names canon",
+    "uniform_assets": {
+     "home": "img/uba/uniforms/wolves-home.svg",
+     "away": "img/uba/uniforms/wolves-away.svg",
+     "alternate": "img/uba/uniforms/wolves-alternate.svg"
+    },
+    "slogan": "Strength in the Pack!",
+    "state_id": "lochwater-state"
+   }
+  ],
+  "derived_totals": {
+   "arena_capacity": 275500,
+   "roster_positions": 240,
+   "maximum_player_payroll": 320000000,
+   "championships_by_conference": {
+    "Brightport": 33,
+    "Occasue": 19
+   }
+  },
+  "status": "Canon through round 50; see unresolved register and asset manifest",
+  "approved_court_concepts": {
+   "tides": "Natural hardwood, teal painted areas, coral lettering, center crest and wave motifs along sidelines.",
+   "cobras": "Approved Round 18 court design; copper/sand identity. Exact geometry not preserved in this package; use original approved preview if available.",
+   "eclairs": "Traditional hardwood, imperial purple paint, champagne gold lightning sideline motifs, center crest, BELKHAP and ÉCLAIRS endlines, ARÈNE DE BELKHAP sideline."
+  },
+  "geography_source": "Original Brightport & URBO Archive(2).zip, data.json: entities and statemaps; all host cities matched. The current website has not been modified.",
+  "open": [
+   "Founding year, season dates and expansion history",
+   "Players, coaches, rosters, statistics and award winners",
+   "Scores and dates of the latest Finals, and the Miracle of Deserto’s year, first-round opponent and series scores",
+   "Standings and schedules",
+   "Draft odds, tiebreakers, free agency and trade rules",
+   "How the council chair rotates and how representatives are chosen",
+   "The public broadcaster’s name and the merchandise profit share",
+   "Award trophy designs",
+   "Team chants, mascots, wordmarks and owners’ names",
+   "Gaelic, Schoon and Brightportish team names"
+  ]
+ },
  "people": [
   {
    "id": "oliver-ashcombe",
@@ -1725,6 +2424,10 @@
     [
      "The Treaty Match",
      "Brightport City FC against Berevo United, the biggest match in URBO: the two capitals, east against west. First played the year the peace treaty was signed."
+    ],
+    [
+     "Brightport City Royals",
+     "UBA basketball, Brightport Conference. Plays at Souvren Arena (32,000 seats); 11 titles. Souvren Élise I is honorary patron."
     ]
    ]
   },
@@ -1741,6 +2444,10 @@
     [
      "The Treaty Match",
      "Berevo United against Brightport City FC, the biggest match in URBO. First played the year the peace treaty was signed."
+    ],
+    [
+     "Berevo Lions (Berevo Leeuwen)",
+     "UBA basketball, Occasue Conference and reigning champions. Plays at De Zonarena, the Berevo Sun Arena (25,000 seats); 11 titles."
     ]
    ],
    "pop": "10 million in the city and 20 million in Greater Berevo.",
