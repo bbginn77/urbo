@@ -4422,68 +4422,63 @@
   ],
   "assembly_split": {
    "solis": {
-    "cup": 37,
-    "pp": 15,
-    "rm": 6,
-    "green": 4,
-    "langue": 3
+    "cup": 55,
+    "pp": 8,
+    "green": 2
    },
    "floribus": {
-    "cup": 20,
-    "pp": 13,
+    "pp": 19,
+    "cup": 15,
     "green": 2,
-    "rm": 2,
-    "langue": 1
+    "langue": 2
    },
    "sur": {
-    "pp": 14,
-    "cup": 9,
-    "langue": 1,
-    "green": 1,
-    "rm": 1
+    "rm": 10,
+    "pp": 7,
+    "cup": 6,
+    "green": 2,
+    "langue": 1
    },
    "estercrystal": {
-    "cup": 12,
-    "langue": 5,
-    "pp": 4,
-    "green": 2,
-    "rm": 1
+    "pp": 10,
+    "cup": 8,
+    "langue": 4,
+    "green": 2
    },
    "weiden": {
-    "cup": 13,
+    "cup": 9,
+    "langue": 7,
     "pp": 4,
-    "langue": 4,
-    "green": 1
+    "green": 2
    },
    "deserto": {
-    "cup": 3
+    "pp": 2,
+    "cup": 1
    },
    "norham": {
     "cup": 2
    },
    "kus": {
-    "wl": 28,
-    "rl": 16,
-    "green": 4,
-    "fo": 1
-   },
-   "ouest": {
-    "rl": 14,
-    "wl": 12,
+    "rl": 24,
+    "wl": 20,
     "green": 3,
     "fo": 2
    },
+   "ouest": {
+    "wl": 14,
+    "rl": 10,
+    "green": 6,
+    "fo": 1
+   },
    "lochwater-state": {
-    "rl": 9,
-    "wl": 6,
-    "fo": 3,
-    "green": 2
+    "wl": 17,
+    "rl": 2,
+    "green": 1
    },
    "polvo": {
-    "wl": 9,
-    "rl": 5,
-    "fo": 4,
-    "green": 1
+    "rl": 8,
+    "fo": 7,
+    "wl": 4
    },
    "montes": {
     "wl": 1
@@ -4566,7 +4561,7 @@
    "Children born in URBO take the republican citizenship of the republic they are born in. Children born abroad to URBO citizens take their parent’s republican citizenship; if the parents differ, the parents choose.",
    "Foreign nationals may apply after ten years’ legal residence, with good conduct, a language of their new republic, knowledge of its government and history, and an oath of allegiance to URBO. Dual nationality is allowed only with countries that have a reciprocal agreement with URBO."
   ],
-  "note_results": "These are the current, approved results of the latest elections. The seat-by-state split in the Assembly circle is an older draft that has not been approved.",
+  "note_results": "These are the current, approved results of the latest elections. The seat-by-state split in the Assembly circle follows each state’s political leaning; it is a proposal awaiting approval.",
   "tendencies": {
    "solis": "CUP stronghold; royalist and economically conservative",
    "floribus": "PP stronghold",
