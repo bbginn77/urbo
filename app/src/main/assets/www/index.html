@@ -188,6 +188,7 @@ tr.on{background:color-mix(in srgb,var(--sun) 22%,transparent)}
 .psplit{display:flex;flex-wrap:wrap;gap:2px 10px;margin-top:3px;font:12px "Fira Sans",sans-serif;color:var(--mute)}.psplit i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px}
 .acircle{width:100%;max-width:520px;display:block;margin:6px auto}.acircle .ast,.acircle .aseat{cursor:pointer}.acircle.hl .aseat{opacity:.15}.acircle.hl .aseat.on{opacity:1}.acircle.hl .ast{opacity:.4}.acircle.hl .ast.on{opacity:1}.aparty{cursor:pointer;border-radius:6px;padding:2px 4px}.aparty.on{background:rgba(127,127,127,.18)}.asminfo{min-height:2.6em}
 .nscbar{font:14px "Fira Sans",sans-serif;padding:6px 0;border-bottom:1px solid var(--line);background:rgba(127,127,127,.08)}.nscbar a{margin-left:8px}
+.tzmap svg{width:100%;height:auto;display:block;border-radius:8px}.tzmap a path:hover{filter:brightness(1.08)}
 .calbig{font:800 54px "Fira Sans",sans-serif;margin:2px 0;line-height:1}.calbig small{font-size:20px;font-weight:600;opacity:.7}.callong{font:700 20px "Fira Sans",sans-serif;margin:6px 0}
 .calhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.calhead button{font-size:22px;width:40px;height:40px;border-radius:8px;border:1px solid var(--line);background:none;color:inherit;cursor:pointer}
 .calg{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}.calwd{font:700 10px "Fira Sans",sans-serif;text-align:center;padding:2px 0;text-transform:uppercase}.calwd.cr{opacity:.55}
@@ -536,9 +537,22 @@ V.search=q=>{const t=q.toLowerCase();
   return `<h1>Search results</h1><p class="lede">“${esc(q)}”: ${ents.length+pages.length} result${ents.length+pages.length===1?'':'s'}.</p>
   ${pages.length?`<h2>Pages</h2><ul class="facts">${pages.map(p=>`<li><a href="#${p[0]}">${esc(p[1])}</a></li>`).join('')}</ul>`:''}
   ${ents.length?`<h2>Places and records</h2><ul class="facts">${ents.map(e=>`<li><a href="${go(e)}">${esc(e.name)}</a> <span class="meta">${esc(e.type)}</span></li>`).join('')}</ul>`:''}`;};
+function tzMap(){const M=window.URBO_MAP;if(!M||!D.tz)return '';const Z=D.tz,COL={bt:'#f2c44d',mt:'#c9a46b',ot:'#e4706a'};
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;Object.values(M.bbox).forEach(b=>{x0=Math.min(x0,b[0]);y0=Math.min(y0,b[1]);x1=Math.max(x1,b[2]);y1=Math.max(y1,b[3])});const pad=30;
+  const zs=id=>Z.zones.find(z=>z.id===Z.of[id]);
+  const states=Object.entries(M.states).map(([id,d])=>{const z=zs(id);return `<a href="#s-${id}"><path d="${d}" fill="${COL[z.id]}" stroke="#fff" stroke-width="2.5"><title>${esc(byId(id).name)}: ${esc(z.name)}</title></path></a>`}).join('');
+  const lbl=Object.entries(M.bbox).map(([id,b])=>{const cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2,sm=(b[2]-b[0])<120;return `<text x="${cx}" y="${cy}" text-anchor="middle" font-size="${sm?22:32}" font-weight="700" font-family="Fira Sans,sans-serif" fill="#3a2a10" paint-order="stroke" stroke="rgba(255,255,255,.7)" stroke-width="4">${esc(byId(id).name.replace(/ \(state\)| Territory/,''))}</text>`}).join('');
+  const caps=(M.places||[]).filter(p=>p.n==='Brightport City'||p.n==='Berevo').map(p=>`<circle cx="${p.x}" cy="${p.y}" r="9" fill="#1b1b1b" stroke="#fff" stroke-width="2"/><text x="${p.x+11}" y="${p.y+6}" font-size="24" font-weight="700" font-family="Fira Sans,sans-serif" fill="#1b1b1b" paint-order="stroke" stroke="#fff" stroke-width="4">${esc(p.n)}</text>`).join('');
+  // zone clocks across the top, placed over each zone's middle
+  const band={ot:[],mt:[],bt:[]};Object.entries(M.bbox).forEach(([id,b])=>{if(id!=='norham')band[Z.of[id]].push((b[0]+b[2])/2)});
+  const head=Z.zones.map(z=>{const xs=band[z.id],cx=xs.reduce((a,b)=>a+b,0)/xs.length;return `<g><rect x="${cx-130}" y="${y0-pad-80}" width="260" height="76" rx="10" fill="${COL[z.id]}" stroke="#fff" stroke-width="2"/><text x="${cx}" y="${y0-pad-52}" text-anchor="middle" font-size="22" font-weight="700" font-family="Fira Sans,sans-serif" fill="#3a2a10">${esc(z.name)}</text><text x="${cx}" y="${y0-pad-14}" text-anchor="middle" font-size="32" font-weight="800" font-family="Fira Sans,sans-serif" fill="#1b1b1b"><tspan data-nsc="clock" data-off="${z.off}"></tspan></text></g>`}).join('');
+  return `<div class="card tzmap"><svg viewBox="${x0-pad} ${y0-pad-84} ${x1-x0+2*pad} ${y1-y0+2*pad+84}" role="img" aria-label="Time zone map of URBO"><rect x="${x0-pad}" y="${y0-pad-84}" width="${x1-x0+2*pad}" height="${y1-y0+2*pad+84}" fill="#cfe3ef"/>${(M.neigh||[]).map(d=>`<path d="${d}" fill="#e7e2d6" stroke="#fff" stroke-width="2"/>`).join('')}${states}${lbl}${caps}${head}</svg>
+  <ul class="plegend">${Z.zones.map(z=>`<li><i style="background:${COL[z.id]}"></i><span><b>${esc(z.name)}</b> · ${z.off?z.off+' hour'+(z.off>1?'s':'')+' ahead of Brightport Time':'Brightport City’s time'}</span><b><span data-nsc="clock" data-off="${z.off}"></span></b></li>`).join('')}</ul></div>`}
 V.map=()=>`<h1>Map</h1><p class="lede">Tap or click a state to see its subdivisions. Zoom with the buttons, the mouse wheel or two fingers, and move the map with two fingers or the mouse. One finger scrolls the page.</p>
 <div class="mapbar"><button id="mz-in" aria-label="Zoom in">+</button><button id="mz-out" aria-label="Zoom out">−</button><button id="mz-reset">Reset</button><label><input type="checkbox" id="mt-lw" checked> Lochways</label><label><input type="checkbox" id="mt-lb" checked> Labels</label></div>
-<div class="art mapview" id="mapview">${ART['art/postwar_lw.svg']?ART['art/postwar_lw.svg'].replace('<svg ','<svg id="mapsvg" '):'<p class="meta">Loading…</p>'}</div>`;
+<div class="art mapview" id="mapview">${ART['art/postwar_lw.svg']?ART['art/postwar_lw.svg'].replace('<svg ','<svg id="mapsvg" '):'<p class="meta">Loading…</p>'}</div>
+<section><h2>Time zones</h2><p>URBO spans three time zones. The sun rises in the west on Nyreth, so the west is ahead: Occasue Time is two hours ahead of Brightport Time. Tap a state to open its site.</p>${tzMap()}<p class="meta"><a href="#calendar">More about the calendar and time →</a></p></section>`;
+
 function initMap(){
   const svg=document.getElementById('mapsvg'); if(!svg) return;
   const full=svg.viewBox.baseVal; const vb={x:full.x,y:full.y,w:full.width,h:full.height};
