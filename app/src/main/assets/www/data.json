@@ -1605,6 +1605,39 @@
    "notes": "Visual inspiration only. Script line uses the superseded v0.1 glyphs."
   },
   {
+   "id": "ai-currency",
+   "title": "URBO currency: notes and coins (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-currency.jpg",
+   "w": 1206,
+   "h": 917,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "The urbo: notes of 1, 5, 10, 20, 50 and 100 urbos and coins from 10 cents to 10 urbos. The Brightportish text on the notes is not the real national script."
+  },
+  {
+   "id": "ai-passport-bp",
+   "title": "Passport of the Republic of Brightport (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-passport-bp.jpg",
+   "w": 1206,
+   "h": 804,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "Yellow cover, code BRP. Sample holder; the Brightportish text is not the real national script."
+  },
+  {
+   "id": "ai-passport-oc",
+   "title": "Passport of the Republic of Occasue (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-passport-oc.jpg",
+   "w": 1206,
+   "h": 804,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "Red cover, code OCC. Sample holder; the Brightportish text is not the real national script."
+  },
+  {
    "id": "ai-flags",
    "title": "Flags of URBO (render)",
    "kind": "concept",
