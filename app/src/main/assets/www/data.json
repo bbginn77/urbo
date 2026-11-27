@@ -1,4 +1,210 @@
 {
+ "mil": {
+  "overview": [
+   "Brightport and Occasue keep their own armed forces, joined under a permanent Joint Military Command. They are not merged into one federal force.",
+   "Three branches: land, sea (maritime) and aerospace. Cyber defence runs through all three; there is no separate cyber or space force.",
+   "Doctrine: defensive neutrality. URBO defends its sovereignty and stays out of foreign wars.",
+   "Supreme military authority belongs to the head of the union. How the Souvren and the URBO president, who must agree together on URBO matters, share this is not yet settled.",
+   "About 1.5 to 2 million people serve on active duty. A voluntary professional reserve of former personnel and trained volunteers backs them up.",
+   "Defence spending is 2 to 3% of the economy.",
+   "AI only advises: it helps with analysis and paperwork, but people make every decision.",
+   "Research and development is a partnership of government laboratories, private firms and universities."
+  ],
+  "motto": "Peace Through Unity",
+  "branches": [
+   [
+    "Land",
+    "Royal Brightport Army",
+    "Occasue Republican Army",
+    "40%",
+    "600,000–800,000",
+    "Professional soldiers with advanced equipment and advisory AI. In peacetime: training, disaster relief, humanitarian help, building infrastructure and helping remote communities."
+   ],
+   [
+    "Sea",
+    "Royal Brightport Navy",
+    "Occasue Republican Navy",
+    "25%",
+    "375,000–500,000",
+    "Separate republican fleets plus permanent joint formations. In peacetime: guarding the coast and territorial waters, search and rescue, protecting the environment and shipping, and helping navigation."
+   ],
+   [
+    "Aerospace",
+    "Royal Brightport Aerospace Corps",
+    "Occasue Republican Aerospace Corps",
+    "35%",
+    "525,000–700,000",
+    "Republican aviation divisions plus the shared Joint Space Division. Protects the airspace and orbit, rescues aircraft and spacecraft, monitors disasters and supports science and the URBO Space Agency."
+   ]
+  ],
+  "space": [
+   "The Joint Space Division belongs to the aerospace branch and is shared by both republics.",
+   "It works in permanent partnership with the civilian URBO Space Agency: shared research, emergency help and some infrastructure, with separate jobs.",
+   "URBO takes part in a shared international presence on the moons, with cooperative installations alongside other Nyrethian nations, for research, communications, rescue and peacekeeping. No country claims the moons."
+  ],
+  "service": [
+   "Every citizen, of every gender, does one Nyreth year of national service (300 days), starting at a time of their choice between 18 and 25 Earth years old.",
+   "Service can be military or civilian: education, healthcare, elderly care, conservation, farming, restoring the environment, public works, transport, or disaster relief and emergency services.",
+   "People recruit into their own republic’s forces, with chances to serve in the other republic.",
+   "While serving, people get a service allowance of Ⓑ1,800 a month on top of the Ⓑ1,200 basic income: Ⓑ3,000 a month, or Ⓑ30,000 over the year, before any tax.",
+   "Refusing without an approved exemption brings warnings, help, alternative assignments and finally penalties."
+  ],
+  "history": [
+   "After the Treaty of Berevo, each republic kept its own forces, and both pulled troops back from the border. Brightport kept most of the old military bases; Occasue rebuilt its forces.",
+   "The Joint Military Command came after reunification, through gradual integration.",
+   "The forces have a mixed identity: separate republican uniforms, flags and traditions, but the same working uniforms. Friendly rivalry and banter go along with real cooperation."
+  ],
+  "deserto": [
+   "Ft. Deserto is a major garrison city: a headquarters and administrative centre, a research and training complex, and home to permanent military communities.",
+   "Deserto has more military installations than anywhere else. They are run by the Brightport Armed Forces within the joint framework.",
+   "Ordinary towns sit alongside restricted sites. Every state has some permanent military presence, each with its own speciality.",
+   "Details of installations in Deserto are not available to the public."
+  ],
+  "heraldry": [
+   [
+    "Joint Military Command",
+    "A union shield with the ten-ray federal sun; red, yellow and gold",
+    "Motto: Peace Through Unity"
+   ],
+   [
+    "Royal Brightport Army",
+    "A crown and the six-ray Brightport sun; yellow and gold",
+    ""
+   ],
+   [
+    "Occasue Republican Army",
+    "A liberty torch; red and gold",
+    ""
+   ],
+   [
+    "Royal Brightport Navy",
+    "A crowned anchor; yellow and gold",
+    ""
+   ],
+   [
+    "Occasue Republican Navy",
+    "A lion and anchor; red and gold",
+    ""
+   ],
+   [
+    "Royal Brightport Aerospace Corps",
+    "A winged crown and six-ray sun; yellow and gold",
+    ""
+   ],
+   [
+    "Occasue Republican Aerospace Corps",
+    "A winged lion; red and gold",
+    ""
+   ],
+   [
+    "Joint Space Division",
+    "Nyreth and the four moons on a midnight-blue shield, yellow accent on the left and red on the right, gold frame and laurels",
+    ""
+   ]
+  ],
+  "heraldry_note": "All share matching shields with gold borders and golden laurel wreaths: yellow fields for Brightport, red for Occasue. Only the joint command shield carries words.",
+  "uniforms": [
+   [
+    "Royal Brightport Army",
+    "Midnight blue and gold",
+    "Beret"
+   ],
+   [
+    "Occasue Republican Army",
+    "Crimson and gold",
+    "Beret"
+   ],
+   [
+    "Royal Brightport Navy",
+    "Ivory and gold",
+    "Sailor cap"
+   ],
+   [
+    "Occasue Republican Navy",
+    "Midnight blue and crimson",
+    "Sailor cap"
+   ],
+   [
+    "Royal Brightport Aerospace Corps",
+    "Sky blue and gold",
+    "Flight cap"
+   ],
+   [
+    "Occasue Republican Aerospace Corps",
+    "Charcoal and crimson",
+    "Flight cap"
+   ],
+   [
+    "Joint Space Division",
+    "Midnight blue and silver, the same for both republics",
+    "Midnight-blue beret"
+   ]
+  ],
+  "operational": [
+   "Working uniforms are the same for both republics, in branch colours: olive for land, navy blue for sea, slate grey for aerospace.",
+   "Each carries the joint command emblem on the sleeve and the republican branch emblem on the chest.",
+   "Two flag patches are stacked on each uniform: the URBO flag on top, and the wearer’s Brightport or Occasue flag beneath it.",
+   "The fabric regulates temperature, monitors health and protects while staying light."
+  ],
+  "standards": [
+   "Joint Military Command: URBO red and yellow with the joint emblem.",
+   "Brightport’s three branches: yellow with the branch emblem and a yellow fringe.",
+   "Occasue’s three branches: red with the branch emblem and a red fringe.",
+   "Joint Space Division: midnight blue with the space emblem and a red-and-yellow fringe."
+  ],
+  "ranks": [
+   "Ranks are the same in both republics: familiar military ranks, with distinctive Nyrethian titles at the top.",
+   "Officers wear suns, more of them the more senior they are; enlisted ranks wear chevrons.",
+   "The highest rank is Supreme Marshal, marked by a ten-ray sun inside golden laurels."
+  ],
+  "marshal": [
+   "The Supreme Marshal is the highest military officer, under civilian authority.",
+   "The post alternates between qualified Brightport and Occasue officers.",
+   "Ceremonial dress: midnight blue with red and yellow accents, a red-and-yellow sash, golden cords, a ceremonial baton and a peaked cap with golden laurels."
+  ],
+  "medals": [
+   [
+    "Order of the Federal Sun",
+    "The highest military honour",
+    "A golden ten-ray sun on a red-and-yellow ribbon"
+   ],
+   [
+    "Star of Courage",
+    "Exceptional bravery",
+    "Silver star on a dark navy and gold ribbon"
+   ],
+   [
+    "Medal of Humanitarian Service",
+    "Helping civilians and rescue work",
+    "Gold heart and handshake on an ivory and gold ribbon"
+   ],
+   [
+    "Distinguished Service Medal",
+    "Outstanding professional service",
+    "Silver shield on a green and gold ribbon"
+   ],
+   [
+    "Medal of Scientific Achievement",
+    "Contributions to science and technology",
+    "Silver celestial design on a midnight-blue and gold ribbon"
+   ],
+   [
+    "National Service Medal",
+    "Completing national service",
+    "Bronze shield on a red-and-yellow ribbon"
+   ]
+  ],
+  "medals_note": "All decorations are federal; neither republic awards its own. The Order of the Federal Sun is presented by the head of the union.",
+  "open": [
+   "How the Souvren and the URBO president share supreme command, and who presents the Order of the Federal Sun",
+   "When the Joint Military Command was founded",
+   "The split of personnel between the republics, the reserve’s size and the exact budget",
+   "Exemptions, appeals and penalties for national service, and service housing",
+   "The full rank chart, and the order of the other five medals",
+   "How long a Supreme Marshal serves, how they are chosen, and who holds the post now",
+   "Military sites outside Deserto, international agreements, veterans’ benefits, remembrance ceremonies and a Constitution Day parade"
+  ]
+ },
  "region": {
   "solis": {
    "scope": "Brightport City",
@@ -315,6 +521,7 @@
    "econ": [
     "A frontier economy of solar energy, research, exploration and mining, in the spirit of the Australian Outback, the American Southwest and the Atacama.",
     "The military is present throughout the territory.",
+    "Ft. Deserto is a major garrison city, with military headquarters, research and training, and permanent military communities.",
     "Local transit is free and utilities are very cheap."
    ]
   },
@@ -4253,6 +4460,127 @@
    "h": 933,
    "origin": "ChatGPT render, Nov 2026",
    "notes": "An earlier render of the same two coins. Not a separate issue."
+  },
+  {
+   "id": "mil-emblems-joint-army",
+   "title": "Joint Military Command and army emblems (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-emblems-joint-army.jpg",
+   "w": 1312,
+   "h": 1199,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Joint command on top; Brightport Army lower left, Occasue Army lower right."
+  },
+  {
+   "id": "mil-emblems-navy-aero",
+   "title": "Navy and aerospace emblems (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-emblems-navy-aero.jpg",
+   "w": 1312,
+   "h": 1199,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Navy on top, aerospace below; Brightport left, Occasue right."
+  },
+  {
+   "id": "mil-emblem-space",
+   "title": "Joint Space Division emblem (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-emblem-space.jpg",
+   "w": 1254,
+   "h": 1254,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "The approved space shield."
+  },
+  {
+   "id": "mil-uni-army",
+   "title": "Army ceremonial uniforms (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-uni-army.jpg",
+   "w": 933,
+   "h": 1400,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Brightport left, Occasue right."
+  },
+  {
+   "id": "mil-uni-navy",
+   "title": "Navy ceremonial uniforms (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-uni-navy.jpg",
+   "w": 933,
+   "h": 1400,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Brightport left, Occasue right."
+  },
+  {
+   "id": "mil-uni-aero",
+   "title": "Aerospace ceremonial uniforms (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-uni-aero.jpg",
+   "w": 933,
+   "h": 1400,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Brightport left, Occasue right."
+  },
+  {
+   "id": "mil-uni-space",
+   "title": "Joint Space Division ceremonial uniforms (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-uni-space.jpg",
+   "w": 933,
+   "h": 1400,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Shared by both republics."
+  },
+  {
+   "id": "mil-uni-operational",
+   "title": "Operational uniforms (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-uni-operational.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Army, navy and aerospace pairs, Brightport then Occasue in each pair."
+  },
+  {
+   "id": "mil-standards",
+   "title": "Military standards (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-standards.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Top: joint command, then Brightport army, navy, aerospace. Bottom: space division, then Occasue army, navy, aerospace."
+  },
+  {
+   "id": "mil-decorations",
+   "title": "Federal decorations (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-decorations.jpg",
+   "w": 1199,
+   "h": 1312,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "The six approved federal decorations."
+  },
+  {
+   "id": "mil-supreme-marshal",
+   "title": "Supreme Marshal ceremonial uniform (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/mil-supreme-marshal.jpg",
+   "w": 933,
+   "h": 1400,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Shows the uniform only, not the current officeholder."
   },
   {
    "id": "ai-royal-family",
