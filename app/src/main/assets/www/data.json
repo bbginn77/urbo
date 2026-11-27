@@ -2305,7 +2305,76 @@
     ],
     "note": "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left)."
    }
-  ]
+  ],
+  "assembly_split": {
+   "solis": {
+    "cup": 37,
+    "pp": 15,
+    "rm": 6,
+    "green": 4,
+    "langue": 3
+   },
+   "floribus": {
+    "cup": 20,
+    "pp": 13,
+    "green": 2,
+    "rm": 2,
+    "langue": 1
+   },
+   "sur": {
+    "pp": 14,
+    "cup": 9,
+    "langue": 1,
+    "green": 1,
+    "rm": 1
+   },
+   "estercrystal": {
+    "cup": 12,
+    "langue": 5,
+    "pp": 4,
+    "green": 2,
+    "rm": 1
+   },
+   "weiden": {
+    "cup": 13,
+    "pp": 4,
+    "langue": 4,
+    "green": 1
+   },
+   "deserto": {
+    "cup": 3
+   },
+   "norham": {
+    "cup": 2
+   },
+   "kus": {
+    "wl": 28,
+    "rl": 16,
+    "green": 4,
+    "fo": 1
+   },
+   "ouest": {
+    "rl": 14,
+    "wl": 12,
+    "green": 3,
+    "fo": 2
+   },
+   "lochwater-state": {
+    "rl": 9,
+    "wl": 6,
+    "fo": 3,
+    "green": 2
+   },
+   "polvo": {
+    "wl": 9,
+    "rl": 5,
+    "fo": 4,
+    "green": 1
+   },
+   "montes": {
+    "wl": 1
+   }
+  }
  },
  "lochway_photo": {
   "current": "ai-sign-bi",
