@@ -4900,6 +4900,28 @@
    "notes": "Official portrait at Souvren Palace with the URBO flag (ten rays) and the Brightport flag (six rays)."
   },
   {
+   "id": "julien-portrait",
+   "title": "Souvren Consort Julien: official portrait (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/julien-portrait.jpg",
+   "w": 1000,
+   "h": 1313,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "At Souvren Palace with the URBO and Brightport flags."
+  },
+  {
+   "id": "theo-lucas-portrait",
+   "title": "Théo and Lucas: official portrait (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/theo-lucas-portrait.jpg",
+   "w": 1000,
+   "h": 1320,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "The Souvren’s sons at Souvren Palace with the URBO and Brightport flags. Their formal titles are not yet decided."
+  },
+  {
    "id": "ai-royal-family",
    "title": "The royal family: proposed portrait (render)",
    "kind": "concept",
@@ -4908,7 +4930,7 @@
    "w": 1400,
    "h": 933,
    "origin": "ChatGPT render, Nov 2026",
-   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Élise’s likeness is approved (Nov 2026). The others’ faces, the clothing and the setting are not canon."
+   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. An earlier group render. The family’s official portraits (Nov 2026) now set their likenesses. The others’ faces, the clothing and the setting are not canon."
   },
   {
    "id": "ai-flags",
