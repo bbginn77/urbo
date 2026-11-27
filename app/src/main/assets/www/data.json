@@ -98,7 +98,7 @@
    "Comitatus of Ouest": "Les comitatus d'Ouest",
    "Ouest is divided into 6 comitatus.": "Ouest est divisé en 6 comitatus.",
    "Comitatus of Ouest ": "Comitatus d'Ouest",
-   "Belkhap (capital city)": "Belkhap (capitale)",
+   "Belkhap (state capital)": "Belkhap (capitale de l'État)",
    "Beaumarais (seat)": "Beaumarais (chef-lieu)",
    "Saint-Aubin-des-Pins (seat)": "Saint-Aubin-des-Pins (chef-lieu)",
    "Roche-Fontaine (seat)": "Roche-Fontaine (chef-lieu)",
@@ -213,8 +213,8 @@
    "Rejions of Kus": "Regio's van Kus",
    "Kus is divided into 5 rejions.": "Kus is verdeeld in 5 regio's.",
    "Rejion of Kus": "Regio van Kus",
-   "Berevo (capital city)": "Berevo (hoofdstad)",
-   "Costal City (seat)": "Costal City (bestuurszetel)",
+   "Berevo (capital of Occasue)": "Berevo (hoofdstad van Occasue)",
+   "Costal City (state capital)": "Costal City (staatshoofdstad)",
    "Redwater (seat)": "Redwater (bestuurszetel)",
    "Cedar Ridge (seat)": "Cedar Ridge (bestuurszetel)",
    "Pine Hollow (seat)": "Pine Hollow (bestuurszetel)",
@@ -321,7 +321,7 @@
    "Shires of Lochwater (state)": "Siorrachdan Lochwater (stàit)",
    "Lochwater (state) is divided into 6 shires. Each shire takes a traditional Scottish name ending in -shire.": "Tha Lochwater (stàit) air a roinn ann an 6 siorrachdan. Tha ainm traidiseanta Albannach air gach siorrachd, a' crìochnachadh le -shire.",
    "Shire of Lochwater (state)": "Siorrachd de Lochwater (stàit)",
-   "Lochwater (capital city)": "Lochwater (prìomh-bhaile)",
+   "Lochwater (state capital)": "Lochwater (prìomh-bhaile na stàite)",
    "Lochbrae (seat)": "Lochbrae (baile na siorrachd)",
    "Benvarr (seat)": "Benvarr (baile na siorrachd)",
    "Dunellan (seat)": "Dunellan (baile na siorrachd)",
@@ -435,6 +435,7 @@
    "Mesa Ventosa (seat)": "Mesa Ventosa (cabecera)",
    "State of Polvo · Travel in Polvo": "Estado de Polvo · Transporte en Polvo",
    "Rejion of Polvo": "Región de Polvo",
+   "Polvo Springs (state capital)": "Polvo Springs (capital del estado)",
    "Spanish settlers": "Colonos españoles"
   }
  },
@@ -754,42 +755,58 @@
     {
      "n": "Belkhap",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Beaumarais",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Saint-Aubin-des-Pins",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Roche-Fontaine",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Les Pinèdes",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Côte-Fliwth",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Swisswa",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Bois-Clair",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -835,37 +852,51 @@
     {
      "n": "Lochwater",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Lochbrae",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Benvarr",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Dunellan",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Strathloyne",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Torrisdale",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Glenarra",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -889,17 +920,23 @@
     {
      "n": "Pinecrest",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Highpass",
      "seat": false,
-     "cap": false
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Alta Vista",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {}
@@ -937,32 +974,44 @@
     {
      "n": "Berevo",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": false,
+     "natcap": "republic"
     },
     {
      "n": "Costal City",
      "seat": true,
-     "cap": false
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Redwater",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Cedar Ridge",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Pine Hollow",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Seacliff",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1000,27 +1049,37 @@
     {
      "n": "Cuenca Seca",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Las Arenas",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Salinas",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Mesa Ventosa",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Polvo Springs",
      "seat": false,
-     "cap": false
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1067,47 +1126,65 @@
     {
      "n": "Glenmor",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Strathcairn",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Inverlaig",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Balcraig",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Dunmar",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Achnabreck",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Kilbrennan",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Crystalmuir",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Portcrystal",
      "seat": false,
-     "cap": false
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1149,27 +1226,37 @@
     {
      "n": "Bikbergen",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Bönderbil",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Fjellmark",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Østerdal",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Lysvik",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1194,22 +1281,30 @@
     {
      "n": "Ft. Deserto",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Saltwell",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Mesa Roja",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Dunewatch",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {}
@@ -1249,32 +1344,44 @@
     {
      "n": "Trempas",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Rosaria",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Liliana",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Palmaria",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Palustria",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Palmshore",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1314,32 +1421,44 @@
     {
      "n": "Mami City",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Llano Verde",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Sierra Rosada",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Cañón del Sol",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Arroyo Seco",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Cobre",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1382,32 +1501,44 @@
     {
      "n": "Brightport City",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": false,
+     "natcap": "national"
     },
     {
      "n": "Aurelia",
      "seat": true,
-     "cap": false
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Clarivallis",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Ortus",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Radiana",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Sunhaven",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {
@@ -1432,17 +1563,23 @@
     {
      "n": "Silverstone",
      "seat": true,
-     "cap": true
+     "cap": true,
+     "statecap": true,
+     "natcap": null
     },
     {
      "n": "Harbourmouth",
      "seat": true,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     },
     {
      "n": "Gullreach",
      "seat": false,
-     "cap": false
+     "cap": false,
+     "statecap": false,
+     "natcap": null
     }
    ],
    "borders": {}

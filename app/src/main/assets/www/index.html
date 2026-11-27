@@ -252,7 +252,7 @@ const fig=(id,cap)=>{const s=D.S[id];if(!s)return'';return `<figure class="fig" 
 const facts=e=>`<ul class="facts">${e.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${e.open&&e.open.length?`<div class="open">Open: ${e.open.map(esc).join(' · ')}</div>`:''}`;
 const eraName=id=>({unified:'Republic of Brightport (pre-war)',urbo:'URBO (post-war)',unknown:'Era not fixed'})[id]||id;
 function eraToggle(){return `<div class="seg" role="group" aria-label="Era">${[['unified','Before the war'],['urbo','After the war (URBO)']].map(([k,l])=>`<button data-era="${k}" aria-pressed="${ERA===k}">${l}</button>`).join('')}</div>`}
-function capitalOf(e,era){const c=(e.capitals||{})[era]||e.capital;return c&&byId(c)?byId(c).name:null}
+function capitalOf(e,era){if(era==='urbo'){const sm=(D.statemaps||{})[e.id];const t=sm&&sm.towns.find(x=>x.statecap);if(t)return t.n}const c=(e.capitals||{})[era]||e.capital;return c&&byId(c)?byId(c).name:null}
 function children(pid,era){return D.entities.filter(e=>e.parent[era]===pid&&e.eras.includes(era))}
 const V={};
 const ART={};
@@ -381,7 +381,7 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
   if(site.page==='map')return wrap(`${hdr('Map of '+e.name)}${mapFig}`);
   if(site.page==='subs'){const towns=sm?sm.towns:[];
     return wrap(`${hdr(nsub.length?sd+' of '+e.name:'Towns of '+e.name)}${nsub.length?`<p>${esc(e.name)} is divided into ${nsub.length} ${sd.toLowerCase()}. ${(D.subdiv_note||{})[sd]||''} ${(D.subdiv_prop||[]).includes(id)?badge('proposal'):''}</p>${tier==='c'?`<ul>${nsub.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:`<div class="tiles">${nsub.map(n=>`<div class="tile"><h3>${esc(n)}</h3><p>${({Shires:'Shire',Rejions:'Rejion',Herreds:'Herred'})[sd]||sd} of ${esc(e.name)}</p></div>`).join('')}</div>`}`:`<p>${esc((D.subdiv_none||{})[id]||e.name+' has no subdivisions.')}</p>`}
-      <h2>Cities and towns</h2><ul class="facts">${towns.map(t=>`<li>${esc(t.n)}${t.cap?' (capital city)':t.seat&&nsub.length?' (seat)':''}</li>`).join('')}</ul>${cities.length?`<p>${cities.map(x=>`<a href="#city-${x.id}">More about ${esc(x.name)} →</a>`).join(' · ')}</p>`:''}`)}
+      <h2>Cities and towns</h2><ul class="facts">${towns.map(t=>`<li>${esc(t.n)}${[t.statecap?(e.type==='territory'?' (territorial capital)':' (state capital)'):'',t.natcap==='national'?' (national capital)':t.natcap==='republic'?' (capital of Occasue)':''].filter(Boolean).join('').replace(') (',', ')||(t.seat&&nsub.length?' (seat)':'')}</li>`).join('')}</ul>${cities.length?`<p>${cities.map(x=>`<a href="#city-${x.id}">More about ${esc(x.name)} →</a>`).join(' · ')}</p>`:''}`)}
   if(site.page==='travel'){const lw=sm?sm.lw:[],rl=sm?sm.rail:[];
     return wrap(`${hdr('Travel in '+e.name)}<h2>Lochways</h2>${lw.length?`<ul class="lwlist">${lw.map(n=>{const L2=D.lochways.find(x=>x.n===n);return `<li><b class="utr-sh2">${n}</b><span><b>${/^\d/.test(n)?'LW '+n:n}</b>${L2?': '+esc(L2.connects):n==='N1'?': Silverstone – Harbourmouth (Norham’s own state Lochway)':''}</span></li>`}).join('')}</ul>`:`<p>${id==='norham'?'Norham is an island. No Lochway reaches it; travel is by sea and air.':'No Lochway crosses '+esc(e.name)+'.'}</p>`}
       ${I.transport?`<h2>Public transport</h2><p>${esc(I.transport)}</p>`:''}<h2>Railways</h2>${rl.length?`<ul class="facts">${rl.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:`<p>No national railway line serves ${esc(e.name)}.</p>`}

@@ -86,7 +86,7 @@
 <circle cx="738.4" cy="282.4" r="2.2" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.64"/><text x="742.9" y="285.0" font-size="6.7" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.9" paint-order="stroke">Achnabreck</text>
 <circle cx="824.7" cy="256.7" r="2.2" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.64"/><text x="829.2" y="259.3" font-size="6.7" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.9" paint-order="stroke">Kilbrennan</text>
 <circle cx="826.3" cy="337.7" r="2.2" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.64"/><text x="830.8" y="340.3" font-size="6.7" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.9" paint-order="stroke">Crystalmuir</text>
-<circle cx="592.0" cy="214.0" r="1.7" fill="#fff" stroke="#1c1a16" stroke-width="0.64"/><text x="596.5" y="216.6" font-size="6.7" font-weight="500" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.9" paint-order="stroke">Portcrystal</text>
+<circle cx="592.0" cy="214.0" r="4.8" fill="#fff" stroke="#1c1a16" stroke-width="0.77"/><circle cx="592.0" cy="214.0" r="2.2" fill="#1c1a16"/><text x="596.5" y="216.6" font-size="7.7" font-weight="500" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.9" paint-order="stroke">Portcrystal</text>
 <g><rect x="705.9" y="318.1" width="54.3" height="9.6" rx="2.6" fill="#3d7be0" stroke="#fff" stroke-width="0.64"/><text x="733.1" y="325.4" text-anchor="middle" font-size="6.1" font-weight="700" fill="#fff">Northern Line</text></g>
 
 </svg>

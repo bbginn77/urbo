@@ -72,7 +72,7 @@
 <circle cx="525.5" cy="551.2" r="1.5" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.44"/><text x="528.6" y="553.0" font-size="4.6" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.3" paint-order="stroke">Las Arenas</text>
 <circle cx="454.2" cy="720.4" r="1.5" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.44"/><text x="457.3" y="722.2" font-size="4.6" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.3" paint-order="stroke">Salinas</text>
 <circle cx="510.5" cy="713.4" r="1.5" fill="#1c1a16" stroke="#1c1a16" stroke-width="0.44"/><text x="513.6" y="715.2" font-size="4.6" font-weight="700" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.3" paint-order="stroke">Mesa Ventosa</text>
-<circle cx="576.0" cy="792.0" r="1.1" fill="#fff" stroke="#1c1a16" stroke-width="0.44"/><text x="579.1" y="793.8" font-size="4.6" font-weight="500" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.3" paint-order="stroke">Polvo Springs</text>
+<circle cx="576.0" cy="792.0" r="3.3" fill="#fff" stroke="#1c1a16" stroke-width="0.53"/><circle cx="576.0" cy="792.0" r="1.5" fill="#1c1a16"/><text x="579.1" y="793.8" font-size="5.3" font-weight="500" fill="#1c1a16" stroke="#fffdf6" stroke-width="1.3" paint-order="stroke">Polvo Springs</text>
 <g><rect x="438.6" y="572.7" width="44.6" height="6.6" rx="1.8" fill="#7d4fd0" stroke="#fff" stroke-width="0.44"/><text x="460.9" y="577.7" text-anchor="middle" font-size="4.2" font-weight="700" fill="#fff">Transcontinental</text></g>
 
 </svg>
