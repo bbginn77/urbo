@@ -283,7 +283,7 @@ function photoSlot(ph,name){
 }
 const toArchive=ids=>ids&&ids.length?`<p class="meta src" style="margin-top:10px">Original drawings: ${ids.filter(i=>D.S[i]&&D.S[i].kind!=='concept').map(i=>`<a href="#archive" data-goto="${esc(i)}">${esc(D.S[i].title)}</a>`).join(' · ')}</p>`:'';
 const POPF=id=>{const p=(D.pop||{})[id];return p?p.m+' million':''};
-const INCF=id=>{const p=(D.pop||{})[id];return p?'about '+(Math.round(p.w*600/1000)*1000).toLocaleString('en-US')+' urbos a year':''};
+const INCF=id=>{const p=(D.pop||{})[id];return p?'about '+(Math.round(p.w*600/1000)*1000).toLocaleString('en-US')+' urbos a Nyreth year':''};
 const RANKF=id=>{const S=['solis','floribus','sur','estercrystal','weiden','deserto','norham','kus','ouest','lochwater-state','polvo','montes'];if(!S.includes(id))return '';const r=[...S].sort((a,b)=>D.pop[b].w-D.pop[a].w).indexOf(id)+1;return r===1?'Richest of the 12':r===12?'Poorest of the 12':r+(r===2?'nd':r===3?'rd':'th')+' richest of 12'};
 V.home=()=>{
   const tile=(h,t,d,b)=>`<a class="tile" href="#${h}"><h3>${L(t,b)} →</h3><p>${d}</p></a>`;

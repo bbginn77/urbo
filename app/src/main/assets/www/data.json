@@ -59,7 +59,7 @@
    ]
   },
   "floribus": {
-   "scope": "Trempas Bay",
+   "scope": "Trempas Bay (Trempas)",
    "rent": [
     900,
     1400
@@ -615,7 +615,8 @@
   "facts": [
    "Most banking is done by public, government-owned banks, though private banks are not banned.",
    "Every adult citizen gets the same monthly universal basic income. It is a safety net, not a replacement for a wage: people can work to earn more, and are expected to take part when they can.",
-   "The universal basic income is Ⓑ1,200 a month, the same everywhere.",
+   "The universal basic income is Ⓑ1,200 a month, the same everywhere: Ⓑ12,000 a year.",
+   "Yearly figures, such as average incomes, are counted in Nyreth years of ten months.",
    "Income tax is progressive: the more you earn, the higher the rate. Rates and brackets are not decided yet.",
    "Paid work and recognised study both count as taking part.",
    "Refusing work without good reason carries social stigma and, step by step, government action: warnings, help finding work, and finally financial penalties. Not being able to find work is not the same as refusing it.",
@@ -705,7 +706,6 @@
   ],
   "open": [
    "Tax rates and brackets, whether the basic income is taxed, sales taxes and a minimum wage",
-   "Whether yearly incomes are counted in Nyreth years (10 months) or Earth years",
    "Exceptions and appeals for the work rules, and support for disabled people, carers, retirees and the unemployed",
    "Social housing, mortgages and city-by-city incomes",
    "Company logos, headquarters, owners and histories"
@@ -1390,7 +1390,7 @@
    "The president is head of state; the prime minister runs the government, as in France.": "Le président est le chef de l'État ; le Premier ministre dirige le gouvernement, comme en France.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Présidente actuelle : Amélie Rousseau-Kerr. Premier ministre : Ewan Dunmore.",
    "120 million": "120 millions",
-   "about 62,000 urbos a year": "environ 62 000 urbos par an",
+   "about 62,000 urbos a Nyreth year": "environ 62 000 urbos par année nyrethienne",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Site officiel de la République d'Occasue · Membre des Républiques unies (URBO)",
    "Republic · URBO": "République · URBO",
    "Government": "Gouvernement",
@@ -1459,7 +1459,7 @@
    "The Fête du Vin, a week-long wine festival.": "La Fête du Vin, une semaine de festival du vin.",
    "Flag of Ouest": "Drapeau d'Ouest",
    "31 million": "31 millions",
-   "about 60,000 urbos a year": "environ 60 000 urbos par an",
+   "about 60,000 urbos a Nyreth year": "environ 60 000 urbos par année nyrethienne",
    "7th richest of 12": "7e plus riche sur 12",
    "6 comitatus": "6 comitatus",
    "French settlers": "Colons français",
@@ -1548,7 +1548,7 @@
    "The president is head of state; the prime minister runs the government, as in France.": "De president is staatshoofd; de minister-president leidt de regering, zoals in Frankrijk.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Huidige president: Amélie Rousseau-Kerr. Minister-president: Ewan Dunmore.",
    "120 million": "120 miljoen",
-   "about 62,000 urbos a year": "ongeveer 62.000 urbo per jaar",
+   "about 62,000 urbos a Nyreth year": "ongeveer 62.000 urbo per Nyreth-jaar",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Officiële website van de Republiek Occasue · Lid van de Verenigde Republieken (URBO)",
    "Republic · URBO": "Republiek · URBO",
    "Government": "Regering",
@@ -1623,7 +1623,7 @@
    "Republic Day: celebrates Occasue choosing a president over a monarch.": "Dag van de Republiek: viert dat Occasue voor een president koos in plaats van een vorst.",
    "Flag of Kus": "Vlag van Kus",
    "49 million": "49 miljoen",
-   "about 75,000 urbos a year": "ongeveer 75.000 urbo per jaar",
+   "about 75,000 urbos a Nyreth year": "ongeveer 75.000 urbo per Nyreth-jaar",
    "3rd richest of 12": "3e rijkste van 12",
    "5 rejions": "5 regio's",
    "Dutch settlers": "Nederlandse kolonisten",
@@ -1712,7 +1712,7 @@
    "The president is head of state; the prime minister runs the government, as in France.": "'S e an ceann-suidhe ceann na stàite; bidh am prìomhaire a' ruith an riaghaltais, mar san Fhraing.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Ceann-suidhe an-dràsta: Amélie Rousseau-Kerr. Prìomhaire: Ewan Dunmore.",
    "120 million": "120 millean",
-   "about 62,000 urbos a year": "mu 62,000 urbo sa bhliadhna",
+   "about 62,000 urbos a Nyreth year": "mu 62,000 urbo sa bhliadhna Nyreth",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Làrach-lìn oifigeil Poblachd Occasue · Ball de na Poblachdan Aonaichte (URBO)",
    "Republic · URBO": "Poblachd · URBO",
    "Government": "Riaghaltas",
@@ -1782,7 +1782,7 @@
    "The Music Weekend: pipers and fiddlers from every shire fill the city of Lochwater.": "Deireadh-seachdain a' Chiùil: lìonaidh pìobairean is fìdhlearan às gach siorrachd baile-mòr Lochwater.",
    "Flag of Lochwater (state)": "Bratach Lochwater (stàit)",
    "20.5 million": "20.5 millean",
-   "about 54,000 urbos a year": "mu 54,000 urbo sa bhliadhna",
+   "about 54,000 urbos a Nyreth year": "mu 54,000 urbo sa bhliadhna Nyreth",
    "9th richest of 12": "an 9mh as beartaiche de 12",
    "6 shires": "6 siorrachdan",
    "Scottish settlers": "Luchd-tuineachaidh Albannach",
@@ -1870,7 +1870,7 @@
    "The president is head of state; the prime minister runs the government, as in France.": "El presidente es el jefe de Estado; el primer ministro dirige el gobierno, como en Francia.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Presidenta actual: Amélie Rousseau-Kerr. Primer ministro: Ewan Dunmore.",
    "120 million": "120 millones",
-   "about 62,000 urbos a year": "unos 62.000 urbos al año",
+   "about 62,000 urbos a Nyreth year": "unos 62.000 urbos al año nyrethiano",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Sitio oficial de la República de Occasue · Miembro de las Repúblicas Unidas (URBO)",
    "Republic · URBO": "República · URBO",
    "Government": "Gobierno",
@@ -1939,7 +1939,7 @@
    "Facts": "Datos",
    "The Dust State": "El Estado del Polvo",
    "18.7 million": "18,7 millones",
-   "about 39,000 urbos a year": "unos 39.000 urbos al año",
+   "about 39,000 urbos a Nyreth year": "unos 39.000 urbos al año nyrethiano",
    "Salt and lithium": "Sal y litio",
    "Events": "Eventos",
    "The Big Rodeo: a week of rodeo and fairs in Polvo Springs.": "El Gran Rodeo: una semana de rodeo y ferias en Polvo Springs.",
@@ -5457,13 +5457,16 @@
     "unified": "floribus",
     "urbo": "floribus"
    },
-   "aliases": [],
+   "aliases": [
+    "Trempas Bay"
+   ],
    "sources": [
     "src-trempas-skyline",
     "src-trempas-view",
     "src-2014-map"
    ],
    "facts": [
+    "Officially Trempas Bay, the name used on official documents; usually just called Trempas. People use both names freely.",
     "Tampa-inspired coastal city on a large bay.",
     "Home to the Port of Trempas, a major national port.",
     "High-rises with multicoloured crowns and a tall blue tower with a flag; palm trees, harbour and railway."
