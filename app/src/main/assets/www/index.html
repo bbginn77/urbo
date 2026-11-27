@@ -223,7 +223,7 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
     <a href="#home" class="brandname" id="brandname"><b id="brandtitle">Republic of Brightport</b><span id="brandsub">Government portal · URBO</span></a></div>
     <div class="lvlmenu" id="lvlmenu" hidden></div>
     <div class="tools"><form id="srch" role="search"><input type="search" id="q" placeholder="Search the site" aria-label="Search the site"></form>
-    <div class="seg lang" role="group" aria-label="Language"><button data-tl="en">EN</button><button data-tl="bp">BP</button></div></div>
+    <div class="seg lang" id="langseg" role="group" aria-label="Language"><button data-tl="en">EN</button><button data-tl="bp">BP</button></div></div>
   </div>
 </header>
 <nav class="sec" aria-label="Main menu"><div class="wrap" id="nav"></div></nav>
@@ -391,7 +391,7 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
     <div class="rtop">${flag('rflag')}<div><h1>${esc(e.name)}</h1><p><i>“${esc(I.nick||'')}”</i></p></div></div><hr>
     ${id==='deserto'?'<p class="rnote">NOTICE: Information about installations in Deserto Territory is not available to the public.</p>':''}
     <p>${about}</p><p>${esc(I.known||'')}</p><h2>Quick Links</h2><ul>${sitePages(id).slice(1).map(([p,l])=>`<li><a href="${u(p)}">${esc(l)}</a></li>`).join('')}${rep?`<li><a href="#s-${rep.id}">Republic of ${esc(short(rep.name))}</a></li>`:''}<li><a href="#home">URBO portal</a></li></ul>
-    <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('Known for',esc(I.kshort||''))}</table>
+    <h2>Facts</h2><table class="rtable">${row('Status',kind)}${row('Republic',rep?esc(short(rep.name)):'')}${row('Capital',cap?esc(cap):'')}${row('Nickname',esc(I.nick||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('Heritage',I.heritage?esc(I.heritage)+' settlers':'')}${row('Known for',esc(I.kshort||''))}</table>
     <h2>Events</h2>${trad}${retroFoot(id,full,kind)}</div>`;
   const head=tier==='a'?`<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website · ${kind} of the Republic of ${rep?esc(short(rep.name)):''}</p><h1>${esc(e.name)}</h1>${I.nick?`<p class="sthnick">${esc(I.nick)}</p>`:''}</div></section>
       <div class="tiles sitetiles">${sitePages(id).slice(1).map(([p,l])=>`<a class="tile" href="${u(p)}"><h3>${esc(l)} →</h3><p>${({map:'Zoom into '+esc(e.name)+' and its '+esc((sd||'towns').toLowerCase())+'.',subs:'Every '+esc(nsub.length?({Shires:'shire',Rejions:'rejion',Herreds:'herred'})[sd]||'comitatus':'town')+' in the '+(kind==='Territory'?'territory.':'state.'),travel:'Lochways and railway lines.'})[p]}</p></a>`).join('')}</div>`
@@ -452,11 +452,13 @@ V.money=()=>`<h1>Currency and passports</h1><p class="lede">The urbo is the shar
   <tr><td data-l="Name"><b>Currency</b></td><td data-l="Detail">The urbo, divided into 100 cents. Issued as the URBO Federal Note.</td></tr>
   <tr><td data-l="Name"><b>Notes</b></td><td data-l="Detail">1 urbo (a hilltop town), 5 (lake and mountains), 10 (a steam train and industry), 20 (farmland), 50 (mountains and a viaduct), 100 (the capitol in Brightport City)</td></tr>
   <tr><td data-l="Name"><b>Coins</b></td><td data-l="Detail">10 cents, 50 cents, 1 urbo, 5 urbos, 10 urbos</td></tr>
+  <tr><td data-l="Name"><b>Signatures</b></td><td data-l="Detail">R. Veldan, Treasurer of URBO, and M. Carin, Secretary of the Treasury</td></tr>
+  <tr><td data-l="Name"><b>Brightbloom</b></td><td data-l="Detail">The blue flower on the notes and the Brightport passport is the Brightbloom, the national flower of Brightport.</td></tr>
   <tr><td data-l="Name"><b>Writing</b></td><td data-l="Detail">English, with “URBO Federal Note” also written in Brightportish</td></tr></tbody></table></div>
   <h2>Passports</h2><p>Citizens hold a passport of their republic, issued under URBO. Both are printed in English and French, with Brightportish, and carry an ultraviolet security image.</p>
-  <div class="two"><figure class="hero-photo"><img src="img/ai-passport-bp.jpg" alt="Passport of the Republic of Brightport" loading="lazy"><figcaption><b>Republic of Brightport</b>: yellow cover, code BRP, the national flower on the cover. ${badge('proposal')}</figcaption></figure>
+  <div class="two"><figure class="hero-photo"><img src="img/ai-passport-bp.jpg" alt="Passport of the Republic of Brightport" loading="lazy"><figcaption><b>Republic of Brightport</b>: yellow cover, code BRP, the Brightbloom on the cover. ${badge('proposal')}</figcaption></figure>
   <figure class="hero-photo"><img src="img/ai-passport-oc.jpg" alt="Passport of the Republic of Occasue" loading="lazy"><figcaption><b>Republic of Occasue</b>: red cover, code OCC, a sun rising over mountains. ${badge('proposal')}</figcaption></figure></div>
-  <h2>To confirm</h2><ul class="facts"><li>The notes are signed by “R. Veldan, Treasurer of URBO” and “M. Carin, Secretary of the Treasury.” These names come from the render and are not canon.</li><li>The render calls the blue flower on the notes and the Brightport passport the “Brightbloom,” URBO’s national flower and seal.</li><li>The Brightportish text in the renders is not the real national script.</li><li>Both passports show a sample holder.</li></ul>`;
+  <h2>To confirm</h2><ul class="facts"><li>The Brightportish text in the renders is not the real national script.</li><li>Both passports show a sample holder.</li></ul>`;
 V.history=()=>`<h1>History</h1><p class="lede">A working sequence of the nation's history. Dates are not yet fixed.</p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.eras.map((e,i)=>`<li><div class="when">${esc(e.when)}</div><h3>${esc(e.name)}</h3><p>${esc(e.summary)}</p></li>`).join('')}</ol>
@@ -704,11 +706,27 @@ function bpApply(){
   document.querySelectorAll('#view,#nav,header .brand,footer').forEach(root=>{
     const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,input,.nobp,#bpOut,#lex,.lexicon')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
     const ns=[];while(w.nextNode())ns.push(w.currentNode);
-    ns.forEach(n=>{const v=bpWords(n.nodeValue);if(v!==n.nodeValue)n.nodeValue=v});
+    ns.forEach(n=>{const v=bpWords(n.nodeValue);if(v!==n.nodeValue){if(!ORIGN.has(n))ORIGN.set(n,n.nodeValue);n.nodeValue=v}});
   });
 }
 
 
+
+const I18NRX={};
+const SITELANGS={kus:['en','nl','bp'],ouest:['en','fr','bp'],'lochwater-state':['en','gd','bp'],polvo:['en','es','bp'],occasue:['en','fr','nl','gd','es','bp']};
+const LANGNAME={en:'English',fr:'Français',nl:'Nederlands',gd:'Gàidhlig',es:'Español',bp:'Brightportish'};
+function langsFor(site){return site&&SITELANGS[site.id]||['en','bp']}
+const ORIGN=new Map();
+function i18nRestore(){ORIGN.forEach((v,n)=>{if(n.isConnected)n.nodeValue=v});ORIGN.clear();const q=document.getElementById('q');if(q)q.placeholder='Search the site'}
+function i18nApply(lang){const M=(D.i18n||{})[lang];document.documentElement.lang=lang==='bp'?'en':lang;if(!M)return;
+  document.querySelectorAll('#view,#nav,.govstrip,header .brand,footer').forEach(root=>{
+    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,.notr')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    const ns=[];while(w.nextNode())ns.push(w.currentNode);
+    ns.forEach(n=>{const v=n.nodeValue,k=v.trim();if(!k)return;let t=M[k];
+      if(t==null){for(const [rx,f] of I18NRX[lang]||[]){const m=k.match(rx);if(m){t=f(m);break}}}
+      if(t!=null){if(!ORIGN.has(n))ORIGN.set(n,v);n.nodeValue=v.replace(k,t)}})});
+  const q=document.getElementById('q');if(q&&M['Search the site'])q.placeholder=M['Search the site'];
+}
 let PLACE='brightport-east';try{PLACE=localStorage.getItem('bp-place')||PLACE}catch(e){}
 function setPlace(id){const e=byId(id);if(!e)return;PLACE=id;try{localStorage.setItem('bp-place',id)}catch(_){}
   const typ={union:'Union',republic:'Republic',state:'State',territory:'Territory',oceanic:'Oceanic state',overseas:'Overseas territory'}[e.type]||'';
@@ -747,11 +765,13 @@ function route(){
    if(fn)fn.textContent=site?si.full:'URBO';if(fs)fs.textContent=site?(si.rep?'Republic of '+short(si.rep.name)+' · URBO':'Member of the United Republics (URBO)'):'United Republics of Brightport and Occasue · Planet Nyreth'}
   $('#nav').innerHTML=site?siteNav(site):NAV.map(([k,l,b])=>`<a href="#${k}" ${k===sec?'aria-current="page"':''}>${L(l,b)}</a>`).join('');
   const sub=!site&&SUB[sec]?`<div class="subnav">${SUB[sec].map(([k,l,b])=>`<a href="#${k}" ${k===key?'aria-current="page"':''}>${L(l,b)}</a>`).join('')}</div>`:'';
-  document.querySelectorAll('[data-tl]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.tl===TERR_LANG));
+  {const ls=langsFor(site),sg=$('#langseg');if(sg)sg.innerHTML=ls.map(l=>`<button data-tl="${l}" title="${LANGNAME[l]}">${l.toUpperCase()}</button>`).join('');}
+  document.querySelectorAll('[data-tl]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.tl===(langsFor(site).includes(TERR_LANG)?TERR_LANG:'en')));
   document.body.classList.toggle('official',!['archive','questions','history'].includes(key)&&!NOTES);
   $('#view').innerHTML=`<div class="view">${sub}${site?siteView(site):h.startsWith('city-')?V.city(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?V.browse(h.slice(7)):V[key]()}</div>`;
   if(key==='language'){conj();lex();const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bp-desk')}catch(e){}i.value=v??D.language.sample.bp;bpRender()}}
-  document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
+  i18nRestore();document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
+  {const lg=langsFor(site).includes(TERR_LANG)?TERR_LANG:'en';if(!['en','bp'].includes(lg))i18nApply(lg);else document.documentElement.lang='en'}
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
   if(key==='map'){initMap();if(h.startsWith('map-'))stateSheet(h.slice(4))}
   document.querySelectorAll('[data-art]').forEach(b=>{const u=b.dataset.art;(ART[u]?Promise.resolve(ART[u]):fetch(u).then(r=>r.text()).then(t=>ART[u]=t)).then(t=>{if(b.isConnected){b.innerHTML=t;zoomable(b,false)}}).catch(()=>{})});
