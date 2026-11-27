@@ -1,4 +1,353 @@
 {
+ "region": {
+  "solis": {
+   "scope": "Brightport City",
+   "rent": [
+    2300,
+    3000
+   ],
+   "groc": [
+    300,
+    450
+   ],
+   "util": [
+    150,
+    200
+   ],
+   "transit": 2.0,
+   "buy": [
+    700000,
+    900000
+   ],
+   "meal": [
+    13,
+    16
+   ],
+   "econ": [
+    "Brightport City is an expensive capital with high housing costs.",
+    "Local public transport and household utilities in Brightport City are heavily subsidised.",
+    "Solis’s average income is for the whole state, not just the city."
+   ]
+  },
+  "kus": {
+   "scope": "Berevo",
+   "rent": [
+    2600,
+    3300
+   ],
+   "groc": [
+    400,
+    550
+   ],
+   "util": [
+    200,
+    250
+   ],
+   "transit": 2.5,
+   "buy": [
+    1000000,
+    1300000
+   ],
+   "meal": [
+    16,
+    20
+   ],
+   "econ": [
+    "Kus is the most expensive part of Occasue, and Berevo costs more than Brightport City.",
+    "People of all ages move here from Brightport for the climate, beaches, culture, entertainment and creative jobs.",
+    "Locals have mixed feelings: newcomers bring benefits, but some are annoyed at easterners moving into the coastal cities and pushing up housing costs."
+   ]
+  },
+  "floribus": {
+   "scope": "Trempas Bay",
+   "rent": [
+    900,
+    1400
+   ],
+   "groc": [
+    150,
+    250
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.5,
+   "buy": [
+    120000,
+    200000
+   ],
+   "meal": [
+    4,
+    6
+   ],
+   "econ": [
+    "Famous for low living costs, pleasant weather and pretty beaches.",
+    "Known as quiet and comfortable, though less exciting and less spectacular than Kus.",
+    "Plentiful farms and housing, and strong state support, keep it affordable."
+   ]
+  },
+  "estercrystal": {
+   "scope": "Statewide typical",
+   "rent": [
+    700,
+    1100
+   ],
+   "groc": [
+    200,
+    300
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.5,
+   "buy": [
+    80000,
+    120000
+   ],
+   "meal": [
+    4,
+    6
+   ],
+   "econ": [
+    "An affordable industrial heartland with working-class pride.",
+    "Known for artistic crystal and glass craftsmanship, and for underrated scenery and crystal caves.",
+    "Industry, plenty of worker housing and few newcomers keep prices low."
+   ]
+  },
+  "weiden": {
+   "scope": "Bikbergen",
+   "rent": [
+    1900,
+    2500
+   ],
+   "groc": [
+    450,
+    600
+   ],
+   "util": [
+    150,
+    250
+   ],
+   "transit": 1.5,
+   "buy": [
+    800000,
+    1000000
+   ],
+   "meal": [
+    16,
+    20
+   ],
+   "econ": [
+    "Tourism and winter sports are the leading industries, in the spirit of Denver and Aspen.",
+    "A prestigious alpine lifestyle: luxury resorts, the outdoors, and Scandinavian heritage, food and architecture."
+   ]
+  },
+  "sur": {
+   "scope": "Statewide typical",
+   "rent": [
+    500,
+    900
+   ],
+   "groc": [
+    150,
+    250
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.5,
+   "buy": [
+    50000,
+    80000
+   ],
+   "meal": [
+    3,
+    5
+   ],
+   "econ": [
+    "Very cheap, in the spirit of Phoenix and Santa Fe.",
+    "Copper mining and processing lead the economy.",
+    "An affordable desert haven and the heartland of Spanish culture, with working-class pride."
+   ]
+  },
+  "norham": {
+   "scope": "Silverstone",
+   "rent": [
+    3300,
+    4200
+   ],
+   "groc": [
+    600,
+    750
+   ],
+   "util": [
+    200,
+    300
+   ],
+   "transit": 2.0,
+   "buy": [
+    3000000,
+    null
+   ],
+   "meal": [
+    26,
+    30
+   ],
+   "econ": [
+    "Like Martha’s Vineyard, Nantucket and the Hamptons rolled into one state. Limited island land and old money make it extremely expensive, even more than Berevo.",
+    "Its wealth comes from shipping and trade, banking, inherited estates and investments.",
+    "Elegant, aristocratic and quiet, but seen by others as exclusive, pretentious and elitist."
+   ]
+  },
+  "ouest": {
+   "scope": "Statewide typical",
+   "rent": [
+    2400,
+    3000
+   ],
+   "groc": [
+    250,
+    350
+   ],
+   "util": [
+    100,
+    150
+   ],
+   "transit": 1.0,
+   "buy": [
+    500000,
+    700000
+   ],
+   "meal": [
+    9,
+    12
+   ],
+   "econ": [
+    "Ouest is highly desirable and growing fast, with people moving in from both republics.",
+    "Housing is expensive, but everyday costs are fairly low.",
+    "Its character draws on Burgundy, Bordeaux, Provence and the Loire Valley. French language and heritage are widely used and actively encouraged."
+   ]
+  },
+  "lochwater-state": {
+   "scope": "Statewide typical",
+   "rent": [
+    1300,
+    1900
+   ],
+   "groc": [
+    200,
+    300
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.5,
+   "buy": [
+    250000,
+    400000
+   ],
+   "meal": [
+    7,
+    9
+   ],
+   "econ": [
+    "A mixed economy: fresh water, hydroelectric power, farming, distilling, tourism and transport.",
+    "Relatively affordable for Occasue.",
+    "Its character blends the Scottish Highlands, Edinburgh and the Lowlands."
+   ]
+  },
+  "polvo": {
+   "scope": "Statewide typical",
+   "rent": [
+    400,
+    700
+   ],
+   "groc": [
+    150,
+    250
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.0,
+   "buy": [
+    25000,
+    45000
+   ],
+   "meal": [
+    2,
+    4
+   ],
+   "econ": [
+    "Polvo has the lowest average income of any state, because of its reliance on mining, years of underinvestment and a rural population.",
+    "Housing is extremely cheap, and local transit is free.",
+    "Salt flats, lithium mining, rodeos and frontier culture, in the spirit of rural Nevada and Utah, West Texas and northern Mexico."
+   ]
+  },
+  "deserto": {
+   "scope": "Territory typical",
+   "rent": [
+    600,
+    1000
+   ],
+   "groc": [
+    250,
+    350
+   ],
+   "util": [
+    25,
+    50
+   ],
+   "transit": 0.0,
+   "buy": [
+    30000,
+    50000
+   ],
+   "meal": [
+    3,
+    5
+   ],
+   "econ": [
+    "A frontier economy of solar energy, research, exploration and mining, in the spirit of the Australian Outback, the American Southwest and the Atacama.",
+    "The military is present throughout the territory.",
+    "Local transit is free and utilities are very cheap."
+   ]
+  },
+  "montes": {
+   "scope": "Territory typical",
+   "rent": [
+    800,
+    1300
+   ],
+   "groc": [
+    500,
+    650
+   ],
+   "util": [
+    50,
+    100
+   ],
+   "transit": 0.0,
+   "buy": [
+    50000,
+    90000
+   ],
+   "meal": [
+    5,
+    7
+   ],
+   "econ": [
+    "A wilderness economy of conservation, research, adventure tourism and renewable energy.",
+    "Remote frontier settlements, in the spirit of Alaska and the Yukon, and quite unlike Weiden’s resorts.",
+    "Local transit is free and housing is affordable, but groceries are expensive."
+   ]
+  }
+ },
  "currency": {
   "facts": [
    "The URBO (urbo) is the federal currency, shared by Brightport and Occasue. 1 URBO = 100 cents.",
@@ -266,6 +615,8 @@
   "facts": [
    "Most banking is done by public, government-owned banks, though private banks are not banned.",
    "Every adult citizen gets the same monthly universal basic income. It is a safety net, not a replacement for a wage: people can work to earn more, and are expected to take part when they can.",
+   "The universal basic income is Ⓑ1,200 a month, the same everywhere.",
+   "Income tax is progressive: the more you earn, the higher the rate. Rates and brackets are not decided yet.",
    "Paid work and recognised study both count as taking part.",
    "Refusing work without good reason carries social stigma and, step by step, government action: warnings, help finding work, and finally financial penalties. Not being able to find work is not the same as refusing it.",
    "URBO is prosperous but not perfect: unemployment and homelessness still exist."
@@ -353,8 +704,10 @@
    "There is one federal public broadcaster and one for each republic."
   ],
   "open": [
-   "How much the basic income is, typical wages, housing costs and taxes (the next question round)",
-   "Exceptions and appeals for the work rules, and support for disabled people, carers and retirees",
+   "Tax rates and brackets, whether the basic income is taxed, sales taxes and a minimum wage",
+   "Whether yearly incomes are counted in Nyreth years (10 months) or Earth years",
+   "Exceptions and appeals for the work rules, and support for disabled people, carers, retirees and the unemployed",
+   "Social housing, mortgages and city-by-city incomes",
    "Company logos, headquarters, owners and histories"
   ]
  },
@@ -1014,6 +1367,26 @@
    "Fliwth Coast Line": "Ligne de la Côte Fliwth",
    "Northern Line": "Ligne du Nord",
    "Transcontinental": "Transcontinental",
+   "Living here": "Vivre ici",
+   "Living here →": "Vivre ici →",
+   "Prices, work and what life is like.": "Les prix, le travail et la vie ici.",
+   "Time zone": "Fuseau horaire",
+   "Occasue Time": "Heure d'Occasue",
+   "Mountain Time": "Heure des Montagnes",
+   "Brightport Time": "Heure de Brightport",
+   "Economy and character": "Économie et caractère",
+   "Cost of living": "Coût de la vie",
+   "Rent, one-bedroom flat (month)": "Loyer, appartement une chambre (mois)",
+   "Groceries for one (month)": "Courses pour une personne (mois)",
+   "Utilities (month)": "Charges (mois)",
+   "Local transit (one trip)": "Transports locaux (un trajet)",
+   "Buying a two-bedroom flat": "Achat d'un appartement deux chambres",
+   "Oranje Grill meal": "Repas chez Oranje Grill",
+   "Essentials per month*": "Dépenses essentielles par mois*",
+   "Basic income minus essentials*": "Revenu de base moins dépenses essentielles*",
+   "*Worked out from the middle of each range of rent, groceries and utilities. Not a full cost of living. The universal basic income is Ⓑ1,200 a month.": "*Calculé à partir du milieu de chaque fourchette de loyer, de courses et de charges. Ce n'est pas le coût de la vie complet. Le revenu de base universel est de Ⓑ1 200 par mois.",
+   "Compare every state →": "Comparer tous les États →",
+   "Free": "Gratuit",
    "The president is head of state; the prime minister runs the government, as in France.": "Le président est le chef de l'État ; le Premier ministre dirige le gouvernement, comme en France.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Présidente actuelle : Amélie Rousseau-Kerr. Premier ministre : Ewan Dunmore.",
    "120 million": "120 millions",
@@ -1105,7 +1478,12 @@
    "Côte-Fliwth (seat)": "Côte-Fliwth (chef-lieu)",
    "More about Belkhap →": "En savoir plus sur Belkhap →",
    "Travel in Ouest": "Se déplacer en Ouest",
-   "Le Bel Ouest": "Le Bel Ouest"
+   "Le Bel Ouest": "Le Bel Ouest",
+   "Living in Ouest": "Vivre en Ouest",
+   "Ouest is highly desirable and growing fast, with people moving in from both republics.": "Ouest est très prisé et grandit vite, avec de nouveaux habitants venus des deux républiques.",
+   "Housing is expensive, but everyday costs are fairly low.": "Le logement est cher, mais la vie quotidienne reste assez bon marché.",
+   "Its character draws on Burgundy, Bordeaux, Provence and the Loire Valley. French language and heritage are widely used and actively encouraged.": "Son caractère s'inspire de la Bourgogne, du Bordelais, de la Provence et du Val de Loire. La langue et le patrimoine français y sont très présents et activement encouragés.",
+   "Typical prices across Ouest.": "Prix habituels dans tout l'Ouest."
   },
   "nl": {
    "About this site": "Over deze site",
@@ -1147,6 +1525,26 @@
    "Fliwth Coast Line": "Fliwthkustlijn",
    "Northern Line": "Noordelijke Lijn",
    "Transcontinental": "Transcontinentaal",
+   "Living here": "Wonen",
+   "Living here →": "Wonen →",
+   "Prices, work and what life is like.": "Prijzen, werk en hoe het leven hier is.",
+   "Time zone": "Tijdzone",
+   "Occasue Time": "Occasue-tijd",
+   "Mountain Time": "Bergtijd",
+   "Brightport Time": "Brightport-tijd",
+   "Economy and character": "Economie en karakter",
+   "Cost of living": "Kosten van levensonderhoud",
+   "Rent, one-bedroom flat (month)": "Huur, appartement met één slaapkamer (maand)",
+   "Groceries for one (month)": "Boodschappen voor één persoon (maand)",
+   "Utilities (month)": "Gas, water en licht (maand)",
+   "Local transit (one trip)": "Openbaar vervoer (één rit)",
+   "Buying a two-bedroom flat": "Koop, appartement met twee slaapkamers",
+   "Oranje Grill meal": "Maaltijd bij Oranje Grill",
+   "Essentials per month*": "Basiskosten per maand*",
+   "Basic income minus essentials*": "Basisinkomen min basiskosten*",
+   "*Worked out from the middle of each range of rent, groceries and utilities. Not a full cost of living. The universal basic income is Ⓑ1,200 a month.": "*Berekend uit het midden van elke prijsklasse voor huur, boodschappen en energie. Geen volledig beeld van de kosten van levensonderhoud. Het basisinkomen is Ⓑ1.200 per maand.",
+   "Compare every state →": "Vergelijk alle staten →",
+   "Free": "Gratis",
    "The president is head of state; the prime minister runs the government, as in France.": "De president is staatshoofd; de minister-president leidt de regering, zoals in Frankrijk.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Huidige president: Amélie Rousseau-Kerr. Minister-president: Ewan Dunmore.",
    "120 million": "120 miljoen",
@@ -1244,7 +1642,12 @@
    "Pine Hollow (seat)": "Pine Hollow (bestuurszetel)",
    "More about Berevo →": "Meer over Berevo →",
    "More about Costal City →": "Meer over Costal City →",
-   "Travel in Kus": "Reizen in Kus"
+   "Travel in Kus": "Reizen in Kus",
+   "Living in Kus": "Wonen in Kus",
+   "Kus is the most expensive part of Occasue, and Berevo costs more than Brightport City.": "Kus is het duurste deel van Occasue, en Berevo is duurder dan Brightport City.",
+   "People of all ages move here from Brightport for the climate, beaches, culture, entertainment and creative jobs.": "Mensen van alle leeftijden verhuizen hierheen uit Brightport vanwege het klimaat, de stranden, de cultuur, het uitgaansleven en creatief werk.",
+   "Locals have mixed feelings: newcomers bring benefits, but some are annoyed at easterners moving into the coastal cities and pushing up housing costs.": "De inwoners hebben gemengde gevoelens: nieuwkomers brengen voordelen, maar sommigen ergeren zich aan oosterlingen die naar de kuststeden trekken en de woonlasten opdrijven.",
+   "Prices for Berevo, not the whole state.": "Prijzen voor Berevo, niet voor de hele staat."
   },
   "gd": {
    "About this site": "Mun làrach-lìn seo",
@@ -1286,6 +1689,26 @@
    "Fliwth Coast Line": "Loidhne Oirthir Fliwth",
    "Northern Line": "An Loidhne a Tuath",
    "Transcontinental": "An Tar-dhùthchail",
+   "Living here": "A' fuireach an seo",
+   "Living here →": "A' fuireach an seo →",
+   "Prices, work and what life is like.": "Prìsean, obair agus mar a tha beatha an seo.",
+   "Time zone": "Raon-ama",
+   "Occasue Time": "Àm Occasue",
+   "Mountain Time": "Àm nam Beann",
+   "Brightport Time": "Àm Brightport",
+   "Economy and character": "Eaconamaidh is caractar",
+   "Cost of living": "Cosgais-beatha",
+   "Rent, one-bedroom flat (month)": "Màl, flat le aon seòmar-cadail (mìos)",
+   "Groceries for one (month)": "Biadh do aon neach (mìos)",
+   "Utilities (month)": "Seirbheisean (mìos)",
+   "Local transit (one trip)": "Còmhdhail ionadail (aon turas)",
+   "Buying a two-bedroom flat": "Ceannach flat le dà sheòmar-cadail",
+   "Oranje Grill meal": "Biadh aig Oranje Grill",
+   "Essentials per month*": "Bun-chosgaisean gach mìos*",
+   "Basic income minus essentials*": "Bun-teachd-a-steach às aonais bun-chosgaisean*",
+   "*Worked out from the middle of each range of rent, groceries and utilities. Not a full cost of living. The universal basic income is Ⓑ1,200 a month.": "*Air obrachadh a-mach bho mheadhan gach raoin de mhàl, biadh is seirbheisean. Chan e cosgais-beatha iomlan a th' ann. Tha am bun-teachd-a-steach uile-choitcheann Ⓑ1,200 gach mìos.",
+   "Compare every state →": "Dèan coimeas eadar na stàitean →",
+   "Free": "An-asgaidh",
    "The president is head of state; the prime minister runs the government, as in France.": "'S e an ceann-suidhe ceann na stàite; bidh am prìomhaire a' ruith an riaghaltais, mar san Fhraing.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Ceann-suidhe an-dràsta: Amélie Rousseau-Kerr. Prìomhaire: Ewan Dunmore.",
    "120 million": "120 millean",
@@ -1377,7 +1800,12 @@
    "Strathloyne (seat)": "Strathloyne (baile na siorrachd)",
    "Torrisdale (seat)": "Torrisdale (baile na siorrachd)",
    "More about Lochwater →": "Tuilleadh mu Lochwater →",
-   "Travel in Lochwater (state)": "Siubhal ann an Lochwater (stàit)"
+   "Travel in Lochwater (state)": "Siubhal ann an Lochwater (stàit)",
+   "Living in Lochwater (state)": "A' fuireach ann an Lochwater (stàit)",
+   "A mixed economy: fresh water, hydroelectric power, farming, distilling, tourism and transport.": "Eaconamaidh measgaichte: uisge ùr, dealan-uisge, tuathanachas, grùdaireachd, turasachd is còmhdhail.",
+   "Relatively affordable for Occasue.": "Gu ìre mhath saor a rèir Occasue.",
+   "Its character blends the Scottish Highlands, Edinburgh and the Lowlands.": "Tha a caractar a' measgachadh na Gàidhealtachd, Dùn Èideann agus na Galldachd.",
+   "Typical prices across Lochwater (state).": "Prìsean àbhaisteach air feadh Lochwater (stàit)."
   },
   "es": {
    "About this site": "Acerca de este sitio",
@@ -1419,6 +1847,26 @@
    "Fliwth Coast Line": "Línea de la Costa Fliwth",
    "Northern Line": "Línea del Norte",
    "Transcontinental": "Transcontinental",
+   "Living here": "Vivir aquí",
+   "Living here →": "Vivir aquí →",
+   "Prices, work and what life is like.": "Precios, trabajo y cómo es la vida aquí.",
+   "Time zone": "Huso horario",
+   "Occasue Time": "Hora de Occasue",
+   "Mountain Time": "Hora de la Montaña",
+   "Brightport Time": "Hora de Brightport",
+   "Economy and character": "Economía y carácter",
+   "Cost of living": "Costo de vida",
+   "Rent, one-bedroom flat (month)": "Alquiler, departamento de una recámara (mes)",
+   "Groceries for one (month)": "Despensa para una persona (mes)",
+   "Utilities (month)": "Servicios (mes)",
+   "Local transit (one trip)": "Transporte local (un viaje)",
+   "Buying a two-bedroom flat": "Compra de un departamento de dos recámaras",
+   "Oranje Grill meal": "Comida en Oranje Grill",
+   "Essentials per month*": "Gastos básicos al mes*",
+   "Basic income minus essentials*": "Ingreso básico menos gastos básicos*",
+   "*Worked out from the middle of each range of rent, groceries and utilities. Not a full cost of living. The universal basic income is Ⓑ1,200 a month.": "*Calculado con el punto medio de cada rango de alquiler, despensa y servicios. No es el costo de vida completo. El ingreso básico universal es de Ⓑ1,200 al mes.",
+   "Compare every state →": "Comparar todos los estados →",
+   "Free": "Gratis",
    "The president is head of state; the prime minister runs the government, as in France.": "El presidente es el jefe de Estado; el primer ministro dirige el gobierno, como en Francia.",
    "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Presidenta actual: Amélie Rousseau-Kerr. Primer ministro: Ewan Dunmore.",
    "120 million": "120 millones",
@@ -1510,7 +1958,12 @@
    "State of Polvo · Travel in Polvo": "Estado de Polvo · Transporte en Polvo",
    "Rejion of Polvo": "Región de Polvo",
    "Polvo Springs (state capital)": "Polvo Springs (capital del estado)",
-   "Spanish settlers": "Colonos españoles"
+   "Spanish settlers": "Colonos españoles",
+   "State of Polvo · Living in Polvo": "Estado de Polvo · Vivir en Polvo",
+   "Polvo has the lowest average income of any state, because of its reliance on mining, years of underinvestment and a rural population.": "Polvo tiene el ingreso medio más bajo de todos los estados, por su dependencia de la minería, años de poca inversión y una población rural.",
+   "Housing is extremely cheap, and local transit is free.": "La vivienda es muy barata y el transporte local es gratuito.",
+   "Salt flats, lithium mining, rodeos and frontier culture, in the spirit of rural Nevada and Utah, West Texas and northern Mexico.": "Salinas, minas de litio, rodeos y cultura de frontera, al estilo del Nevada y Utah rurales, el oeste de Texas y el norte de México.",
+   "Typical prices across Polvo.": "Precios habituales en todo Polvo."
   }
  },
  "pop": {
