@@ -193,6 +193,7 @@ tr.on{background:color-mix(in srgb,var(--sun) 22%,transparent)}
 .cursym{display:flex;gap:16px;align-items:center}.bsym{font:800 64px "Fira Sans",sans-serif;line-height:1;flex:none}@media(max-width:600px){.cursym{flex-direction:column;align-items:flex-start;gap:4px}.bsym{font-size:48px}}.note img,img[data-zoom]{width:100%;height:auto;cursor:zoom-in;border-radius:6px}.note{margin-bottom:14px}
 .zoombox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;display:flex;align-items:center;justify-content:center;padding:10px}.zoombox img{max-width:100%;max-height:100%;object-fit:contain}.zoombox button{position:absolute;top:12px;right:14px;font-size:32px;color:#fff;background:none;border:0}
 .chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--line);border-radius:16px;padding:4px 10px;font:600 13px "Fira Sans",sans-serif;text-decoration:none}
+.clockwrap{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.anaclock{width:220px;max-width:100%;flex:none;color:var(--ink,#222)}.clockinfo{flex:1;min-width:200px}
 .calbig{font:800 54px "Fira Sans",sans-serif;margin:2px 0;line-height:1}.calbig small{font-size:20px;font-weight:600;opacity:.7}.callong{font:700 20px "Fira Sans",sans-serif;margin:6px 0}
 .calhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.calhead button{font-size:22px;width:40px;height:40px;border-radius:8px;border:1px solid var(--line);background:none;color:inherit;cursor:pointer}
 .calg{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}.calwd{font:700 10px "Fira Sans",sans-serif;text-align:center;padding:2px 0;text-transform:uppercase}.calwd.cr{opacity:.55}
@@ -506,7 +507,7 @@ const NSC={off:0,now(t=Date.now(),off=NSC.off){const c=D.calendar,el=(t-Date.par
  work:wd=>[0,1,5,6].includes(wd)};
 function nscTick(){if(typeof D==="undefined"||!D||!D.calendar)return;const els=document.querySelectorAll('[data-nsc]');if(!els.length)return;const n=NSC.now(),c=D.calendar,hs=NSC.hol(n.M,n.D);
   const v={date:NSC.date(n),long:NSC.long(n),clock:`${n.h}.${NSC.p(n.mi)}`,secs:NSC.p(n.s),status:c.days[n.wd][2]==='Work'?'Work day':c.days[n.wd][2],season:c.months[n.M-1][2],holiday:hs.length?hs.map(h=>h[3]).join(' · '):'No holiday today'};
-  els.forEach(e=>{let t;if(e.dataset.off!=null){const m=NSC.now(Date.now(),+e.dataset.off);t=e.dataset.nsc==='clock'?`${m.h}.${NSC.p(m.mi)}`:e.dataset.nsc==='long'?NSC.long(m):null}else t=v[e.dataset.nsc];if(t!=null&&e.textContent!==t)e.textContent=t});
+  els.forEach(e=>{let t;if(e.dataset.off!=null){const m=NSC.now(Date.now(),+e.dataset.off);t=e.dataset.nsc==='clock'?`${m.h}.${NSC.p(m.mi)}`:e.dataset.nsc==='long'?NSC.long(m):e.dataset.nsc==='secs'?NSC.p(m.s):e.dataset.nsc==='date'?NSC.date(m):e.dataset.nsc==='status'?(D.calendar.days[m.wd][2]==='Work'?'Work day':D.calendar.days[m.wd][2]):e.dataset.nsc==='season'?D.calendar.months[m.M-1][2]:e.dataset.nsc==='holiday'?(NSC.hol(m.M,m.D).map(h=>h[3]).join(' · ')||'No holiday today'):null}else t=v[e.dataset.nsc];if(t!=null&&e.textContent!==t)e.textContent=t});
   const g=document.getElementById('calgrid');if(g&&g.dataset.today!==n.Y+'-'+n.M+'-'+n.D&&g.dataset.follow==='1')calGrid(n.Y,n.M)}
 setInterval(nscTick,300);
 function calGrid(Y,M){const g=document.getElementById('calgrid');if(!g)return;const c=D.calendar,n=NSC.now();if(M<1){M=10;Y--}if(M>10){M=1;Y++}
@@ -517,9 +518,24 @@ function calGrid(Y,M){const g=document.getElementById('calgrid');if(!g)return;co
   const hm=c.holidays.filter(x=>x[0]===M);
   g.innerHTML=h+`</div><p class="meta"><span class="calkey cw"></span> Work day <span class="calkey cr"></span> Recess <span class="calkey hol"></span> Holiday</p>${hm.length?`<ul class="facts">${hm.map(x=>`<li><b>${c.months[M-1][0]} ${x[1]}${x[2]>x[1]?'–'+x[2]:''}: ${esc(x[3])}</b> <span class="meta">(${esc(x[4])})</span><br>${esc(x[5])}</li>`).join('')}</ul>`:'<p class="meta">No public holidays this month.</p>'}`}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-calm]');if(!b)return;const g=document.getElementById('calgrid');calGrid(+g.dataset.y,+g.dataset.m+ +b.dataset.calm)});
+
+function anaClock(){const P=(r,a)=>[r*Math.sin(a*Math.PI/180),-r*Math.cos(a*Math.PI/180)],f=n=>n.toFixed(2);let t='';
+ for(let i=0;i<100;i++){const a=i*3.6,big=i%10===0,mid=i%5===0,[x1,y1]=P(big?78:mid?84:88,a),[x2,y2]=P(93,a);t+=`<line x1="${f(x1)}" y1="${f(y1)}" x2="${f(x2)}" y2="${f(y2)}" stroke="currentColor" stroke-width="${big?2.6:mid?1.4:.7}" opacity="${big?1:.6}"/>`}
+ for(let h=0;h<10;h++){const [x,y]=P(66,h*36);t+=`<text x="${f(x)}" y="${f(y)}" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="700" font-family="Fira Sans,sans-serif" fill="currentColor">${h}</text>`}
+ const moons=[[-13,2.6],[-5,1.6],[4,3.4],[13,2.2]].map(([x,r])=>`<circle cx="${x}" cy="-28" r="${r}" fill="currentColor" opacity=".3"/>`).join('');
+ return `<svg class="anaclock" viewBox="-100 -100 200 200" role="img" aria-label="Analog Nyreth clock"><circle r="97" fill="var(--card,#fff)" stroke="currentColor" stroke-width="3"/>${t}${moons}
+  <text y="28" text-anchor="middle" font-size="7.5" letter-spacing="1.5" font-family="Fira Sans,sans-serif" fill="currentColor" opacity=".7">NYRETH · DECIMAL</text><text y="38" text-anchor="middle" font-size="7.5" letter-spacing="1" font-family="Fira Sans,sans-serif" fill="currentColor" opacity=".7" id="anazone">BRIGHTPORT TIME</text>
+  <line id="ah-h" y2="-42" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><line id="ah-m" y2="-74" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line id="ah-s" y1="14" y2="-82" stroke="#d8343a" stroke-width="1.5" stroke-linecap="round"/><circle r="4.5" fill="#d8343a"/></svg>`}
+let ANAOFF=0;
+(function anaLoop(){const svg=document.querySelector('.anaclock');if(svg&&typeof D!=='undefined'&&D&&D.calendar){const days=(Date.now()-Date.parse(D.calendar.anchor))/93600000+ANAOFF/10,fr=((days%1)+1)%1,h=fr*10,m=(h*100)%100,s=(m*100)%100;
+  svg.querySelector('#ah-h').setAttribute('transform',`rotate(${h*36})`);svg.querySelector('#ah-m').setAttribute('transform',`rotate(${m*3.6})`);svg.querySelector('#ah-s').setAttribute('transform',`rotate(${Math.floor(s)*3.6})`)}
+ requestAnimationFrame(anaLoop)})();
+document.addEventListener('click',e=>{const z=e.target.closest('[data-azone]');if(!z)return;e.preventDefault();ANAOFF=+z.dataset.azone;const Z=D.tz.zones.find(x=>x.off===ANAOFF);
+ document.querySelectorAll('[data-azone]').forEach(x=>x.classList.toggle('on',x===z));const zl=document.getElementById('anazone');if(zl)zl.textContent=Z.name.toUpperCase();
+ document.querySelectorAll('.calnow [data-nsc]').forEach(x=>x.dataset.off=ANAOFF)});
 V.calendar=()=>{const c=D.calendar;setTimeout(()=>{const n=NSC.now();calGrid(n.Y,n.M);nscTick()},0);
   return `<h1>Calendar</h1><p class="lede">The Nyrethian Standard Calendar (NSC), used across the planet. This clock runs live at Nyreth’s own pace: a day here lasts 26 Earth hours.</p>
-  <section class="card calnow"><p class="meta" style="margin:0">Right now in URBO</p><p class="calbig"><span data-nsc="clock"></span><small>.<span data-nsc="secs"></span> Brightport Time</small></p><p class="callong"><span data-nsc="long"></span></p><p class="meta"><span data-nsc="date"></span> · <span data-nsc="season"></span> · <span data-nsc="status"></span> · <span data-nsc="holiday"></span></p></section>
+  <section class="card calnow"><div class="clockwrap">${anaClock()}<div class="clockinfo"><p class="meta" style="margin:0">Right now in URBO</p><p class="calbig"><span data-nsc="clock"></span><small>.<span data-nsc="secs"></span></small></p><p class="callong"><span data-nsc="long"></span></p><p class="meta"><span data-nsc="date"></span> · <span data-nsc="season"></span> · <span data-nsc="status"></span> · <span data-nsc="holiday"></span></p><p class="chips" style="margin-top:8px">${D.tz.zones.map(z=>`<a class="chip${z.off===0?' on':''}" href="javascript:void(0)" data-azone="${z.off}">${esc(z.name)}</a>`).join('')}</p></div></div></section>
   <section><h2>This month</h2><div class="card" id="calgrid"></div></section>
   <section><h2>How it works</h2><ul class="facts">${c.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></section>
   <section class="two"><div><h2>Months</h2><div class="tablewrap"><table class="gtable"><tr><th>Month</th><th>Meaning</th><th>Season</th></tr>${c.months.map((m,i)=>`<tr><td>${i+1}. ${m[0]}</td><td>${m[1]}</td><td>${m[2]}</td></tr>`).join('')}</table></div></div>
