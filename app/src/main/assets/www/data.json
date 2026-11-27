@@ -136,6 +136,29 @@
    "Occasue rejected the monarchy. It has a president and a prime minister.": "Occasue a rejeté la monarchie. Elle a un président et un Premier ministre.",
    "How the whole union is governed →": "Comment l'union est gouvernée →",
    "Each state and territory of the Republic of Occasue has its own website.": "Chaque État et territoire de la République d'Occasue a son propre site web.",
+   "President": "Présidente",
+   "Prime minister": "Premier ministre",
+   "Occasue Parliament (120 seats)": "Parlement d'Occasue (120 sièges)",
+   "Occasue Parliament (120 seats) · Seat: Berevo (Kus)": "Parlement d'Occasue (120 sièges) · Siège : Berevo (Kus)",
+   "President of Occasue": "Présidente d'Occasue",
+   "Republican Left": "Gauche républicaine",
+   "From Ouest. Head of state of Occasue.": "Originaire d'Ouest. Cheffe de l'État d'Occasue.",
+   "Prime minister of Occasue": "Premier ministre d'Occasue",
+   "From Lochwater. Runs the government of Occasue.": "Originaire de Lochwater. Dirige le gouvernement d'Occasue.",
+   "How it works": "Fonctionnement",
+   "governing": "au pouvoir",
+   "Western Liberal Party": "Parti libéral de l'Ouest",
+   "Green Party": "Parti vert",
+   "Free Occasue": "Occasue libre",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61.": "Coalition de la Gauche républicaine et des Verts : 66 sièges sur 120. Premier ministre : Ewan Dunmore (Gauche républicaine). Majorité : 61.",
+   "Latest election result.": "Résultat des dernières élections.",
+   "Parties": "Partis",
+   "Centre-right. Business, low taxes, autonomy from Brightport City.": "Centre droit. Entreprises, impôts bas, autonomie vis-à-vis de Brightport City.",
+   "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French.": "Centre gauche. Républicaine et fière des langues héritées.",
+   "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French.": "Petit parti séparatiste. Veut qu'Occasue quitte l'URBO.",
+   "Swisswa Heritage": "Patrimoine de Swisswa",
+   "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Tout petit parti local des loyalistes schoon de Swisswa. Défend la culture et la langue schoon ; il ne se présente qu'aux élections locales en Ouest.",
+   "The only party that runs in both republics.": "Le seul parti présent dans les deux républiques.",
    "Official website of the State of Ouest · Republic of Occasue · URBO": "Site officiel de l'État d'Ouest · République d'Occasue · URBO",
    "Comitatus": "Comitatus",
    "State of the Republic of Occasue": "État de la République d'Occasue",
@@ -246,6 +269,29 @@
    "Occasue rejected the monarchy. It has a president and a prime minister.": "Occasue wees de monarchie af. Het heeft een president en een minister-president.",
    "How the whole union is governed →": "Hoe de hele unie wordt bestuurd →",
    "Each state and territory of the Republic of Occasue has its own website.": "Elke staat en elk territorium van de Republiek Occasue heeft een eigen website.",
+   "President": "President",
+   "Prime minister": "Minister-president",
+   "Occasue Parliament (120 seats)": "Parlement van Occasue (120 zetels)",
+   "Occasue Parliament (120 seats) · Seat: Berevo (Kus)": "Parlement van Occasue (120 zetels) · Zetel: Berevo (Kus)",
+   "President of Occasue": "President van Occasue",
+   "Republican Left": "Republikeins Links",
+   "From Ouest. Head of state of Occasue.": "Uit Ouest. Staatshoofd van Occasue.",
+   "Prime minister of Occasue": "Minister-president van Occasue",
+   "From Lochwater. Runs the government of Occasue.": "Uit Lochwater. Leidt de regering van Occasue.",
+   "How it works": "Hoe het werkt",
+   "governing": "regeert",
+   "Western Liberal Party": "Westelijke Liberale Partij",
+   "Green Party": "Groene Partij",
+   "Free Occasue": "Vrij Occasue",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61.": "Coalitie van Republikeins Links en de Groenen: 66 van de 120 zetels. Minister-president Ewan Dunmore (Republikeins Links). Meerderheid: 61.",
+   "Latest election result.": "Uitslag van de laatste verkiezingen.",
+   "Parties": "Partijen",
+   "Centre-right. Business, low taxes, autonomy from Brightport City.": "Centrumrechts. Bedrijfsleven, lage belastingen, autonomie ten opzichte van Brightport City.",
+   "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French.": "Centrumlinks. Republikeins en trots op de erfgoedtalen. In het Frans: Gauche républicaine.",
+   "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French.": "Kleine separatistische partij. Wil dat Occasue URBO verlaat. In het Frans: Occasue Libre.",
+   "Swisswa Heritage": "Erfgoed Swisswa",
+   "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Piepkleine lokale partij van de Schoon-loyalisten in Swisswa. Beschermt de Schoonse cultuur en taal; doet alleen mee aan lokale verkiezingen in Ouest.",
+   "The only party that runs in both republics.": "De enige partij die in beide republieken meedoet.",
    "Official website of the State of Kus · Republic of Occasue · URBO": "Officiële website van de Staat Kus · Republiek Occasue · URBO",
    "Rejions": "Regio's",
    "Official website · State of the Republic of Occasue": "Officiële website · Staat van de Republiek Occasue",
@@ -362,6 +408,29 @@
    "Occasue rejected the monarchy. It has a president and a prime minister.": "Dhiùlt Occasue a' mhonarcachd. Tha ceann-suidhe agus prìomhaire aice.",
    "How the whole union is governed →": "Mar a tha an t-aonadh gu lèir air a riaghladh →",
    "Each state and territory of the Republic of Occasue has its own website.": "Tha làrach-lìn fhèin aig gach stàit is tìr de Phoblachd Occasue.",
+   "President": "Ceann-suidhe",
+   "Prime minister": "Prìomhaire",
+   "Occasue Parliament (120 seats)": "Pàrlamaid Occasue (120 suidheachan)",
+   "Occasue Parliament (120 seats) · Seat: Berevo (Kus)": "Pàrlamaid Occasue (120 suidheachan) · Suidhe: Berevo (Kus)",
+   "President of Occasue": "Ceann-suidhe Occasue",
+   "Republican Left": "An Clì Poblachdach",
+   "From Ouest. Head of state of Occasue.": "À Ouest. Ceann-stàite Occasue.",
+   "Prime minister of Occasue": "Prìomhaire Occasue",
+   "From Lochwater. Runs the government of Occasue.": "À Lochwater. Bidh e a' ruith riaghaltas Occasue.",
+   "How it works": "Mar a tha e ag obair",
+   "governing": "aig an stiùir",
+   "Western Liberal Party": "Pàrtaidh Libearalach an Iar",
+   "Green Party": "Am Pàrtaidh Uaine",
+   "Free Occasue": "Occasue Saor",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61.": "Co-bhanntachd a' Chlì Phoblachdaich is nan Uaineach: 66 à 120. Prìomhaire: Ewan Dunmore (An Clì Poblachdach). Mòr-chuid: 61.",
+   "Latest election result.": "Toradh an taghaidh mu dheireadh.",
+   "Parties": "Pàrtaidhean",
+   "Centre-right. Business, low taxes, autonomy from Brightport City.": "Meadhan-deas. Gnìomhachas, cìsean ìosal, fèin-riaghladh bho Brightport City.",
+   "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French.": "Meadhan-clì. Poblachdach is moiteil às na cànanan dualchais. Gauche républicaine ann am Fraingis.",
+   "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French.": "Pàrtaidh beag sgaraidh. Tha e airson gum fàg Occasue URBO. Occasue Libre ann am Fraingis.",
+   "Swisswa Heritage": "Dualchas Swisswa",
+   "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Pàrtaidh ionadail beag bìodach aig dìlseachdan Schoon ann an Swisswa. Dìonaidh e cultar is cànan Schoon; cha bhi e a' seasamh ach ann an taghaidhean ionadail ann an Ouest.",
+   "The only party that runs in both republics.": "An aon phàrtaidh a sheasas anns an dà phoblachd.",
    "Official website of the State of Lochwater · Republic of Occasue · URBO": "Làrach-lìn oifigeil Stàit Lochwater · Poblachd Occasue · URBO",
    "Lochwater (state)": "Lochwater (stàit)",
    "Shires": "Siorrachdan",
@@ -472,6 +541,29 @@
    "Occasue rejected the monarchy. It has a president and a prime minister.": "Occasue rechazó la monarquía. Tiene un presidente y un primer ministro.",
    "How the whole union is governed →": "Cómo se gobierna toda la unión →",
    "Each state and territory of the Republic of Occasue has its own website.": "Cada estado y territorio de la República de Occasue tiene su propio sitio web.",
+   "President": "Presidenta",
+   "Prime minister": "Primer ministro",
+   "Occasue Parliament (120 seats)": "Parlamento de Occasue (120 escaños)",
+   "Occasue Parliament (120 seats) · Seat: Berevo (Kus)": "Parlamento de Occasue (120 escaños) · Sede: Berevo (Kus)",
+   "President of Occasue": "Presidenta de Occasue",
+   "Republican Left": "Izquierda Republicana",
+   "From Ouest. Head of state of Occasue.": "De Ouest. Jefa de Estado de Occasue.",
+   "Prime minister of Occasue": "Primer ministro de Occasue",
+   "From Lochwater. Runs the government of Occasue.": "De Lochwater. Dirige el gobierno de Occasue.",
+   "How it works": "Cómo funciona",
+   "governing": "gobierna",
+   "Western Liberal Party": "Partido Liberal del Oeste",
+   "Green Party": "Partido Verde",
+   "Free Occasue": "Occasue Libre",
+   "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left). Majority: 61.": "Coalición de la Izquierda Republicana y los Verdes: 66 de 120 escaños. Primer ministro: Ewan Dunmore (Izquierda Republicana). Mayoría: 61.",
+   "Latest election result.": "Resultado de las últimas elecciones.",
+   "Parties": "Partidos",
+   "Centre-right. Business, low taxes, autonomy from Brightport City.": "Centroderecha. Empresas, impuestos bajos, autonomía frente a Brightport City.",
+   "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French.": "Centroizquierda. Republicana y orgullosa de las lenguas de herencia. Gauche républicaine en francés.",
+   "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French.": "Pequeño partido separatista. Quiere que Occasue salga de URBO.",
+   "Swisswa Heritage": "Patrimonio de Swisswa",
+   "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Diminuto partido local de los leales a Schoon en Swisswa. Defiende la cultura y la lengua schoon; solo se presenta a elecciones locales en Ouest.",
+   "The only party that runs in both republics.": "El único partido presente en las dos repúblicas.",
    "Official website of the State of Polvo · Republic of Occasue · URBO": "Sitio oficial del Estado de Polvo · República de Occasue · URBO",
    "Rejions": "Regiones",
    "★ Welcome to the Official Web Site of the State of Polvo ★": "★ Bienvenidos al Sitio Web Oficial del Estado de Polvo ★",
@@ -1823,7 +1915,7 @@
     "level": 2,
     "name": "Republic of Brightport",
     "seat": "Brightport City",
-    "body": "Brightport Parliament",
+    "body": "Brightport Parliament (120 seats)",
     "facts": [
      "Passes laws for Brightport and keeps its own political and cultural identity.",
      "Six states and Deserto Territory.",
@@ -1844,7 +1936,7 @@
     "level": 2,
     "name": "Republic of Occasue",
     "seat": "Berevo (Kus)",
-    "body": "Occasue Parliament",
+    "body": "Occasue Parliament (120 seats)",
     "facts": [
      "Passes laws for Occasue and keeps its own political and cultural identity.",
      "Four states and Montes Territory.",
@@ -1889,17 +1981,17 @@
   ],
   "parliaments": [
    [
-    "URBO National Parliament (Assembly and Council of States)",
+    "URBO National Parliament (Assembly, 300 seats; Council of States, 32 seats)",
     "Brightport City",
     "Entire union"
    ],
    [
-    "Brightport Parliament",
+    "Brightport Parliament (120 seats)",
     "Brightport City",
     "Republic of Brightport"
    ],
    [
-    "Occasue Parliament",
+    "Occasue Parliament (120 seats)",
     "Berevo",
     "Republic of Occasue"
    ]
@@ -1971,33 +2063,248 @@
    [
     "Souvren of Brightport",
     "Élise I, House of Brightwell",
-    "Co-head of URBO with the URBO president. The first woman to reign."
+    null,
+    "Co-head of URBO with the URBO president. The first woman to reign. Above party politics."
    ],
    [
     "President of URBO",
     "Henrik Aalders",
+    "wl",
     "From Kus, a former mayor of Berevo. Elected by the whole nation."
    ],
    [
     "Prime minister of URBO",
     "Oliver Ashcombe",
+    "cup",
     "From Solis. Brightport holds the office this term."
    ],
    [
     "Prime minister of Brightport",
     "Nathaniel Fairbourne",
+    "cup",
     "From Solis. Heads the lower house of the Brightport Parliament."
    ],
    [
     "President of Occasue",
     "Amélie Rousseau-Kerr",
+    "rl",
     "From Ouest. Head of state of Occasue."
    ],
    [
     "Prime minister of Occasue",
     "Ewan Dunmore",
+    "rl",
     "From Lochwater. Runs the government of Occasue."
    ]
+  ],
+  "parties": [
+   {
+    "id": "cup",
+    "name": "Crown and Union Party",
+    "short": "CUP",
+    "rep": "Brightport",
+    "alliance": "union",
+    "col": "#1f4e9c",
+    "pos": "Centre-right. Royalist, pro-union, Brightportish first."
+   },
+   {
+    "id": "pp",
+    "name": "People’s Party",
+    "short": "PP",
+    "rep": "Brightport",
+    "alliance": "front",
+    "col": "#d8343a",
+    "pos": "Centre-left. Workers and public services; loyal to the Souvren without fuss."
+   },
+   {
+    "id": "langue",
+    "name": "Langue Party",
+    "short": "LP",
+    "rep": "Brightport",
+    "alliance": null,
+    "col": "#1d6b4a",
+    "pos": "Brightportish everywhere and a weaker URBO. Named after the Brightportish word for language."
+   },
+   {
+    "id": "rm",
+    "name": "Republican Movement",
+    "short": "RM",
+    "rep": "Brightport",
+    "alliance": null,
+    "col": "#7b4fb0",
+    "pos": "Wants to drop the Souvren and make Brightport a true republic."
+   },
+   {
+    "id": "wl",
+    "name": "Western Liberal Party",
+    "short": "WLP",
+    "rep": "Occasue",
+    "alliance": "union",
+    "col": "#e8b923",
+    "pos": "Centre-right. Business, low taxes, autonomy from Brightport City."
+   },
+   {
+    "id": "rl",
+    "name": "Republican Left",
+    "short": "RL",
+    "rep": "Occasue",
+    "alliance": "front",
+    "col": "#e4692e",
+    "pos": "Centre-left. Republican and proud of the heritage languages. Gauche républicaine in French."
+   },
+   {
+    "id": "fo",
+    "name": "Free Occasue",
+    "short": "FO",
+    "rep": "Occasue",
+    "alliance": null,
+    "col": "#4a4a4a",
+    "pos": "Small separatist party. Wants Occasue to leave URBO. Occasue Libre in French."
+   },
+   {
+    "id": "sh",
+    "name": "Swisswa Heritage",
+    "short": "SH",
+    "rep": "Occasue (Ouest)",
+    "alliance": null,
+    "col": "#2a9bb0",
+    "pos": "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest."
+   },
+   {
+    "id": "green",
+    "name": "Green Party",
+    "short": "GP",
+    "rep": "Both republics",
+    "alliance": null,
+    "col": "#4fa845",
+    "pos": "The only party that runs in both republics."
+   }
+  ],
+  "alliances": [
+   {
+    "id": "union",
+    "name": "Union Alliance",
+    "members": [
+     "cup",
+     "wl"
+    ],
+    "note": "The right: the Crown and Union Party with the Western Liberals. Governs URBO this term."
+   },
+   {
+    "id": "front",
+    "name": "Common Front",
+    "members": [
+     "pp",
+     "rl"
+    ],
+    "note": "The left: the People’s Party with the Republican Left. Main opposition in URBO."
+   }
+  ],
+  "chambers": [
+   {
+    "id": "assembly",
+    "name": "Assembly",
+    "of": "URBO National Parliament (lower house)",
+    "seats": 300,
+    "seat_order": [
+     "rl",
+     "pp",
+     "green",
+     "rm",
+     "fo",
+     "langue",
+     "wl",
+     "cup"
+    ],
+    "res": {
+     "cup": 96,
+     "pp": 50,
+     "langue": 14,
+     "rm": 10,
+     "green": 20,
+     "wl": 56,
+     "rl": 44,
+     "fo": 10
+    },
+    "gov": [
+     "cup",
+     "wl"
+    ],
+    "note": "The Union Alliance holds a narrow majority: 152 of 300. Prime Minister Oliver Ashcombe (CUP)."
+   },
+   {
+    "id": "council",
+    "name": "Council of States",
+    "of": "URBO National Parliament (upper house)",
+    "seats": 32,
+    "seat_order": [
+     "rl",
+     "pp",
+     "langue",
+     "wl",
+     "cup"
+    ],
+    "res": {
+     "cup": 12,
+     "pp": 6,
+     "langue": 1,
+     "wl": 7,
+     "rl": 6
+    },
+    "gov": [
+     "cup",
+     "wl"
+    ],
+    "note": "3 members for each state and 1 for each territory. The Union Alliance holds 19 of 32."
+   },
+   {
+    "id": "parl-bp",
+    "name": "Brightport Parliament",
+    "of": "Republic of Brightport",
+    "seats": 120,
+    "seat_order": [
+     "pp",
+     "green",
+     "rm",
+     "langue",
+     "cup"
+    ],
+    "res": {
+     "cup": 52,
+     "pp": 38,
+     "langue": 12,
+     "rm": 9,
+     "green": 9
+    },
+    "gov": [
+     "cup",
+     "langue"
+    ],
+    "note": "Coalition of the Crown and Union Party and the Langue Party: 64 of 120. Prime Minister Nathaniel Fairbourne (CUP)."
+   },
+   {
+    "id": "parl-oc",
+    "name": "Occasue Parliament",
+    "of": "Republic of Occasue",
+    "seats": 120,
+    "seat_order": [
+     "fo",
+     "green",
+     "rl",
+     "wl"
+    ],
+    "res": {
+     "rl": 50,
+     "wl": 42,
+     "green": 16,
+     "fo": 12
+    },
+    "gov": [
+     "rl",
+     "green"
+    ],
+    "note": "Coalition of the Republican Left and the Greens: 66 of 120. Prime Minister Ewan Dunmore (Republican Left)."
+   }
   ]
  },
  "lochway_photo": {

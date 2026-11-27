@@ -185,6 +185,9 @@ tr.on{background:color-mix(in srgb,var(--sun) 22%,transparent)}
 .prompt p{background:var(--soft);padding:10px 12px;border-radius:8px}
 .thumbph{aspect-ratio:1200/520;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--soft),color-mix(in srgb,var(--sun) 25%,var(--soft)));font:600 22px "Fira Sans",sans-serif;color:var(--mute)}
 @media(max-width:700px){.flaghero{grid-template-columns:minmax(0,1fr)}}
+.pchip{display:inline-flex;align-items:center;gap:6px;font:600 14px "Fira Sans",sans-serif;margin:2px 8px 2px 0}.pchip i,.plegend i{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+.hemi{width:100%;max-width:420px;display:block;margin:6px auto;color:var(--ink,#222)}.plegend{list-style:none;padding:0;margin:8px 0;display:grid;gap:4px}.plegend li{display:flex;align-items:center;gap:8px;font-size:15px}.plegend li span{flex:1}.govtag{font:600 11px "Fira Sans",sans-serif;background:#e8f1e8;color:#246b2b;border-radius:4px;padding:1px 5px;margin-left:4px}
+.offices{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:10px}.office h3{margin:2px 0 6px}.office p:last-child{margin:6px 0 0;font-size:15px}
 .gtree{display:grid;gap:10px;margin:10px 0 14px}
 .gbranch{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .gnode{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:12px 14px;min-height:64px;height:auto;border-radius:12px;border:1.5px solid var(--line);background:var(--card);font-weight:400}
@@ -364,11 +367,18 @@ function siteView(site){const id=site.id,{e,rep,kind,title,full}=siteInfo(id),ti
   /* republics */
   if(e.type==='republic'){const lv=D.government.levels.find(l=>l.id===(id==='occasue'?'rep-oc':'rep-bp'))||{facts:[]};const kids=D.entities.filter(x=>x.parent.urbo===id&&x.eras.includes('urbo')&&x.type!=='city');
     const tiles=`<div class="tiles">${kids.map(x=>`<a class="tile lvl" href="#s-${x.id}">${x.flag?`<svg class="lvlflag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-${x.flag}"/></svg>`:''}<div><h3>${esc(x.name)} →</h3><p>${x.type==='territory'?'Territory':x.type==='oceanic'?'Oceanic state':'State'}${(D.info[x.id]||{}).nick?' · '+esc(D.info[x.id].nick):''}</p></div></a>`).join('')}</div>`;
-    if(site.page==='gov')return `<h1>Government of the ${esc(title)}</h1><p class="lede">${esc(lv.body||'')} · Seat: ${esc(lv.seat||'')}</p><ul class="facts">${lv.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul><p><a href="#government">How the whole union is governed →</a></p>`;
+    if(site.page==='gov'){const G=D.government,oc=id==='occasue',ch=G.chambers.find(c=>c.id===(oc?'parl-oc':'parl-bp'));
+      const offs=G.officeholders.filter(o=>oc?/Occasue/.test(o[0]):/Brightport/.test(o[0]));
+      const pts=G.parties.filter(p=>oc?/Occasue|Both/.test(p.rep):/Brightport|Both/.test(p.rep));
+      return `<h1>Government of the ${esc(title)}</h1><p class="lede">${esc(lv.body||'')} · Seat: ${esc(lv.seat||'')}</p>
+      <div class="offices">${offs.map(([o,n,p,note])=>`<div class="card office"><p class="meta">${esc(o)}</p><h3>${esc(n)}</h3>${p?pchip(p):'<span class="pchip"><i style="background:#c9a227"></i>No party</span>'}<p>${esc(note)}</p></div>`).join('')}</div>
+      <h2 style="margin-top:24px">How it works</h2><ul class="facts">${lv.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>
+      <h2>Parliament</h2><div class="two">${chamberCard(ch)}<div class="card"><h3>Parties</h3>${pts.map(p=>`<p>${pchip(p.id)}<br><span class="meta">${esc(p.pos)}</span></p>`).join('')}</div></div>
+      <p><a href="#government">How the whole union is governed →</a></p>`}
     if(site.page==='states')return `<h1>States and territories</h1><p class="lede">Each state and territory of the ${esc(title)} has its own website.</p>${tiles}`;
     return `<section class="sthero" style="background:linear-gradient(120deg,#14223f,${ACC[id]})">${flag('sthflag')}<div><p class="sthkick">Official website</p><h1>${esc(title)}</h1><p class="sthnick">${id==='occasue'?'The western republic of URBO':'The eastern republic of URBO'}</p></div></section>
       <div class="stgrid"><div class="stmain"><h2>About the republic</h2><ul class="facts">${[...(e.facts||[]),...lv.facts.slice(0,3)].map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
-      <aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of the ${esc(title)}</p></div><table>${row('Capital',cap?esc(cap):esc(lv.seat||''))}${row('Parliament',esc(lv.body||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('States',String(kids.filter(k=>k.type!=='territory').length))}${row('Territories',String(kids.filter(k=>k.type==='territory').length))}${row('Union','<a href="#home">URBO</a>')}</table></aside></div>
+      <aside class="infobox"><div class="ibflag">${flag('')}<p>Flag of the ${esc(title)}</p></div><table>${row('Capital',cap?esc(cap):esc(lv.seat||''))}${row(id==='occasue'?'President':'Souvren',esc(id==='occasue'?'Amélie Rousseau-Kerr':'Élise I'))}${row('Prime minister',esc(id==='occasue'?'Ewan Dunmore':'Nathaniel Fairbourne'))}${row('Parliament',esc(lv.body||''))}${row('Population',POPF(id))}${row('Average income',INCF(id))}${row('States',String(kids.filter(k=>k.type!=='territory').length))}${row('Territories',String(kids.filter(k=>k.type==='territory').length))}${row('Union','<a href="#home">URBO</a>')}</table></aside></div>
       <h2>States and territories</h2>${tiles}`}
   /* states and territories */
   const about=[...(e.facts||[]).map(esc),esc(I.origin||'')].join(' ');
@@ -569,22 +579,43 @@ V.urbo=()=>{
   <p>This is the lower house of the bicameral URBO National Parliament. <a href="#government">See the Government page</a> for the upper house and the three parliaments.</p><div class="open">Open: seat numbers and what the rings and the blue centre mean. Sector widths follow the drawing only roughly.</div></div></section>
   ${toArchive(['src-flags','src-parliament'])}`;
 };
+
+const PTY=id=>(D.government.parties||[]).find(p=>p.id===id)||{name:id,col:'#999',short:id};
+const pchip=id=>{const p=PTY(id);return `<span class="pchip"><i style="background:${p.col}"></i>${esc(p.name)}</span>`};
+function hemicycle(ch){const N=ch.seats,rows=N>=200?12:N>=100?8:N>=40?5:3,R0=N<40?.5:.38,pts=[];
+  const radii=[...Array(rows)].map((_,i)=>R0+(1-R0)*i/(rows-1));const tot=radii.reduce((a,r)=>a+r,0);
+  let per=radii.map(r=>Math.round(N*r/tot));let d=N-per.reduce((a,b)=>a+b,0);for(let i=rows-1;d!==0;i=(i+rows-1)%rows){per[i]+=Math.sign(d);d-=Math.sign(d)}
+  radii.forEach((r,i)=>{const n=per[i];for(let k=0;k<n;k++){const t=n===1?Math.PI/2:Math.PI*(1-k/(n-1));pts.push({t,x:Math.cos(t)*r,y:Math.sin(t)*r})}});
+  pts.sort((p,q)=>q.t-p.t||p.y-q.y);
+  const cols=[];ch.seat_order.forEach(id=>{for(let k=0;k<(ch.res[id]||0);k++)cols.push(id)});
+  const gaps=[(1-R0)/(rows-1),...radii.map((r,i)=>per[i]>1?Math.PI*r/(per[i]-1):1)];const dot=Math.min(Math.min(...gaps)*.88,.15),W=92;
+  return `<svg class="hemi" viewBox="-104 -102 208 114" role="img" aria-label="${esc(ch.name)}: ${N} seats">${pts.map((p,k)=>`<circle cx="${(p.x*W).toFixed(2)}" cy="${(-p.y*W).toFixed(2)}" r="${(dot*W*.5).toFixed(2)}" fill="${PTY(cols[k]).col}"/>`).join('')}<text x="0" y="-6" text-anchor="middle" font-size="${N>99?22:18}" font-weight="700" font-family="Fira Sans,sans-serif" fill="currentColor">${N}</text><text x="0" y="5" text-anchor="middle" font-size="7.5" font-family="Fira Sans,sans-serif" fill="currentColor" opacity=".7">seats</text></svg>`}
+function chamberCard(ch){const gov=ch.gov.reduce((a,id)=>a+(ch.res[id]||0),0);
+  return `<div class="card chamber"><h3>${esc(ch.name)}</h3><p class="meta">${esc(ch.of)}</p>${hemicycle(ch)}
+  <ul class="plegend">${Object.entries(ch.res).sort((a,b)=>b[1]-a[1]).map(([id,n])=>`<li><i style="background:${PTY(id).col}"></i><span>${esc(PTY(id).name)}${ch.gov.includes(id)?' <b class="govtag">governing</b>':''}</span><b>${n}</b></li>`).join('')}</ul>
+  <p class="meta">${esc(ch.note)} Majority: ${Math.floor(ch.seats/2)+1}. ${badge('proposal')} Latest election result.</p></div>`}
 V.government=()=>{
   const G=D.government; const sel=window.__gov||'federal'; const L=G.levels.find(l=>l.id===sel)||G.levels[0];
   const node=(id,cls)=>{const l=G.levels.find(x=>x.id===id);return `<button class="gnode ${cls}" data-gov="${id}" aria-pressed="${sel===id}"><span class="gl">Level ${l.level}</span><b>${esc(l.name)}</b><span class="gs">${esc(l.body)}</span></button>`};
   const st=(arr,terr,f)=>`${arr.map(n=>`<li>${esc(n)}</li>`).join('')}${terr.map(n=>`<li>${esc(n)} <span class="meta">(territory)</span></li>`).join('')}`;
+  const CH=id=>G.chambers.find(c=>c.id===id);
+  const holder=([o,n,p,note])=>`<div class="card office"><p class="meta">${esc(o)}</p><h3>${esc(n)}</h3>${p?pchip(p):'<span class="pchip"><i style="background:#c9a227"></i>No party</span>'}<p>${esc(note)}</p></div>`;
   return `<h1>Government of URBO</h1><p class="lede">A federal union of two republics. Brightport and Occasue keep their own governments and identities, and share a higher level of government for common interests and for settling disputes, so that disagreements never again turn into war.</p>
-  <h2>Levels of government</h2><p class="meta">Tap a level. States and territories sit side by side: territories are not under states.</p>
+  <section><h2>Heads of the union</h2><p>URBO has two co-heads who must agree together on URBO matters: the <b>Souvren of Brightport</b> and the <b>URBO president</b>, elected by the whole nation every five years. The <b>URBO prime minister</b> runs the federal government; the office passes between Brightport and Occasue after each parliamentary election.</p>
+   <div class="offices">${G.officeholders.map(holder).join('')}</div></section>
+  <h2 style="margin-top:28px">Levels of government</h2><p class="meta">Tap a level. States and territories sit side by side: territories are not under states.</p>
   <div class="gtree">${node('federal','g1')}<div class="gbranch">${node('rep-bp','g2 ge')}${node('rep-oc','g2 gw')}</div><div class="gbranch">${node('states','g3')}${node('territories','g3')}</div></div>
-  <div class="card gdetail" aria-live="polite"><h3>${esc(L.name)}</h3><div class="meta">Seat: ${esc(L.seat)} · ${esc(L.body)}</div><ul class="facts">${L.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${L.open?`<div class="open">Open: ${L.open.map(esc).join(' · ')}</div>`:''}</div>
-  <section><h2>Three parliaments</h2><div class="scroll"><table class="stack"><thead><tr><th>Institution</th><th>Seat</th><th>Jurisdiction</th></tr></thead><tbody>${G.parliaments.map(([a,b,c])=>`<tr><td><b>${esc(a)}</b></td><td>${esc(b)}</td><td>${esc(c)}</td></tr>`).join('')}</tbody></table></div>
-  <p class="meta">The URBO and Brightport parliaments are separate institutions in the same city: Brightport City is both the federal capital and the capital of the Republic of Brightport.</p></section>
-  <section><h2>URBO National Parliament</h2><p>Bicameral, sitting in Brightport City.</p><div class="two">
-   <div class="card"><h3>The Assembly (lower house) ${badge('canon')}</h3>${art('art/parliament.svg','parl')}<ul class="facts"><li>Inspired by the US House of Representatives; representation based on population, from across the states.</li><li>Debates union-wide laws and is the main forum for settling disagreements between the republics.</li><li>The chamber in your original drawing: circular, concentric rows, sectors by state, a central focal area and a press box.</li></ul><p><b>300 seats</b>, about one per million people, shared out by population. Brightport holds 180 and Occasue 120.</p><div class="open">Open: districts, meaning of the rings.</div></div>
-   <div class="card"><h3>The Council of States (upper house)</h3>${art('art/upper_house.svg','parl')}<ul class="facts"><li>Inspired by the US Senate: reviews and checks the Assembly, adds scrutiny and helps balance competing interests.</li><li><b>32 seats</b>: 3 for every state, large or small, and 1 for each territory. Brightport holds 19 and Occasue 13.</li><li>Not in the original drawings. The chamber design is a concept: a semicircle facing a presiding dais, Occasue states on one side and Brightport states on the other.</li></ul><div class="open">Open: how members are chosen, powers.</div></div>
-  </div></section>
+  <div class="card gdetail" aria-live="polite"><h3>${esc(L.name)}</h3><div class="meta">Seat: ${esc(L.seat)} · ${esc(L.body)}</div><ul class="facts">${L.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${L.open&&L.open.length?`<div class="open">Open: ${L.open.map(esc).join(' · ')}</div>`:''}</div>
+  <section><h2>URBO National Parliament</h2><p>Two houses, sitting in Brightport City and elected for five years. The <b>Assembly</b> represents people: 300 seats shared out by population. The <b>Council of States</b> represents states: 3 members for every state, large or small, and 1 for each territory.</p>
+   <div class="two">${chamberCard(CH('assembly'))}${chamberCard(CH('council'))}</div>
+   <div class="two" style="margin-top:14px"><div class="card"><h3>The Assembly chamber ${badge('canon')}</h3>${art('art/parliament.svg','parl')}<p class="meta">The chamber in your original drawing: circular, concentric rows, sectors by state, a central focal area and a press box.</p></div>
+   <div class="card"><h3>The Council chamber ${badge('proposal')}</h3>${art('art/upper_house.svg','parl')}<p class="meta">Not in the original drawings: a semicircle facing a presiding dais, Occasue states on one side and Brightport states on the other.</p></div></div></section>
   <section><h2>Seats by state</h2><div class="tablewrap"><table class="gtable"><tr><th>State or territory</th><th>Assembly</th><th>Council</th></tr>${Object.keys(G.seats.assembly).map(k=>`<tr><td><a href="#s-${k}">${esc(byId(k).name)}</a></td><td>${G.seats.assembly[k]}</td><td>${G.seats.council[k]}</td></tr>`).join('')}<tr><th>Total</th><th>300</th><th>32</th></tr></table></div></section>
-  <section><h2>Who holds office</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Office</th><th>Holder</th><th>Notes</th></tr></thead><tbody>${G.officeholders.map(([a,b,c])=>`<tr><td data-l="Office"><b>${esc(a)}</b></td><td data-l="Holder">${esc(b)}</td><td data-l="Notes">${esc(c)}</td></tr>`).join('')}</tbody></table></div></section>
+  <section><h2>Political parties</h2><p>Each republic has its own party system, as in Belgium. In the URBO parliament, parties from both republics team up in two alliances. Only the Green Party runs in both republics.</p>
+   <div class="two">${G.alliances.map(a=>`<div class="card"><h3>${esc(a.name)}</h3><p>${a.members.map(pchip).join(' ')}</p><p>${esc(a.note)}</p></div>`).join('')}</div>
+   <div class="tablewrap" style="margin-top:14px"><table class="stack"><thead><tr><th>Party</th><th>Republic</th><th>Alliance</th><th>Stands for</th></tr></thead><tbody>${G.parties.map(p=>`<tr><td data-l="Party">${pchip(p.id)} <span class="meta">${esc(p.short)}</span></td><td data-l="Republic">${esc(p.rep)}</td><td data-l="Alliance">${p.alliance?esc(G.alliances.find(a=>a.id===p.alliance).name):'—'}</td><td data-l="Stands for">${esc(p.pos)}</td></tr>`).join('')}</tbody></table></div></section>
+  <section><h2>Republic parliaments</h2><p>Each republic has a 120-seat parliament of its own, the same size in both despite the population gap.</p><div class="two">${chamberCard(CH('parl-bp'))}${chamberCard(CH('parl-oc'))}</div>
+   <p class="meta">The URBO and Brightport parliaments are separate institutions in the same city: Brightport City is both the federal capital and the capital of the Republic of Brightport.</p></section>
   <section class="two"><div><h2>Settling disputes</h2><ol class="facts"><li>Brightport and Occasue disagree on a matter affecting both.</li><li>The issue can be brought before the URBO National Parliament.</li><li>Representatives from every state debate it under the URBO banner.</li><li>The aim is a shared resolution instead of another national confrontation.</li></ol><div class="notice">How a dispute is introduced, how it is voted on and whether the result is binding are not yet decided.</div></div>
   <div><h2>Political geography</h2><div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
    <div class="card">${flag('brightport',72)}<h3 style="margin-top:8px">Brightport</h3><div class="meta">Capital: Brightport City · 6 states, 6 rays</div><ul class="facts">${st(G.states.bp,G.states.bp_terr)}</ul></div>
