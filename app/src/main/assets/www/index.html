@@ -189,6 +189,9 @@ tr.on{background:color-mix(in srgb,var(--sun) 22%,transparent)}
 .acircle{width:100%;max-width:520px;display:block;margin:6px auto}.acircle .ast,.acircle .aseat{cursor:pointer}.acircle.hl .aseat{opacity:.15}.acircle.hl .aseat.on{opacity:1}.acircle.hl .ast{opacity:.4}.acircle.hl .ast.on{opacity:1}.aparty{cursor:pointer;border-radius:6px;padding:2px 4px}.aparty.on{background:rgba(127,127,127,.18)}.asminfo{min-height:2.6em}
 .nscbar{font:14px "Fira Sans",sans-serif;padding:6px 0;border-bottom:1px solid var(--line);background:rgba(127,127,127,.08)}.nscbar a{margin-left:8px}
 .tzmap svg{width:100%;height:auto;display:block;border-radius:8px}.tzmap a path:hover{filter:brightness(1.08)}
+.cursym{display:flex;gap:16px;align-items:center}.bsym{font:800 64px "Fira Sans",sans-serif;line-height:1;flex:none}@media(max-width:600px){.cursym{flex-direction:column;align-items:flex-start;gap:4px}.bsym{font-size:48px}}.note img,img[data-zoom]{width:100%;height:auto;cursor:zoom-in;border-radius:6px}.note{margin-bottom:14px}
+.zoombox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;display:flex;align-items:center;justify-content:center;padding:10px}.zoombox img{max-width:100%;max-height:100%;object-fit:contain}.zoombox button{position:absolute;top:12px;right:14px;font-size:32px;color:#fff;background:none;border:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--line);border-radius:16px;padding:4px 10px;font:600 13px "Fira Sans",sans-serif;text-decoration:none}
 .calbig{font:800 54px "Fira Sans",sans-serif;margin:2px 0;line-height:1}.calbig small{font-size:20px;font-weight:600;opacity:.7}.callong{font:700 20px "Fira Sans",sans-serif;margin:6px 0}
 .calhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.calhead button{font-size:22px;width:40px;height:40px;border-radius:8px;border:1px solid var(--line);background:none;color:inherit;cursor:pointer}
 .calg{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}.calwd{font:700 10px "Fira Sans",sans-serif;text-align:center;padding:2px 0;text-transform:uppercase}.calwd.cr{opacity:.55}
@@ -252,9 +255,9 @@ textarea{width:100%;font:16px/1.5 "Fira Sans",sans-serif;padding:10px 12px;borde
 {
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=s=>document.querySelector(s);
-const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['history','History',null]];
-const SUB={government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
+const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['history','History',null]];
+const SUB={life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
+const SEC={life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -467,19 +470,23 @@ V.world=()=>{const w=D.world;return `<h1>World</h1><p class="lede">Nyreth in the
   <h2>Notes</h2><ul class="facts">${(w.notes||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
   <h2>Changes since the 2180 drawing</h2><ul class="facts">${w.changes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
   <h2>Open questions</h2><ul class="facts">${w.open.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`};
-V.money=()=>`<h1>Currency and passports</h1><p class="lede">The urbo is the shared currency of the whole union. Each republic issues its own passport under URBO.</p>
-  <figure class="hero-photo"><img src="img/ai-currency.jpg" alt="URBO federal notes and coins" loading="lazy"><figcaption>URBO federal notes and coins, concept render ${badge('proposal')}</figcaption></figure>
-  <h2>The urbo</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Name</th><th>Detail</th></tr></thead><tbody>
-  <tr><td data-l="Name"><b>Currency</b></td><td data-l="Detail">The urbo, divided into 100 cents. Issued as the URBO Federal Note.</td></tr>
-  <tr><td data-l="Name"><b>Notes</b></td><td data-l="Detail">1 urbo (a hilltop town), 5 (lake and mountains), 10 (a steam train and industry), 20 (farmland), 50 (mountains and a viaduct), 100 (the capitol in Brightport City)</td></tr>
-  <tr><td data-l="Name"><b>Coins</b></td><td data-l="Detail">10 cents, 50 cents, 1 urbo, 5 urbos, 10 urbos</td></tr>
-  <tr><td data-l="Name"><b>Signatures</b></td><td data-l="Detail">R. Veldan, Treasurer of URBO, and M. Carin, Secretary of the Treasury</td></tr>
-  <tr><td data-l="Name"><b>Brightbloom</b></td><td data-l="Detail">The blue flower on the notes and the Brightport passport is the Brightbloom, the national flower of Brightport.</td></tr>
-  <tr><td data-l="Name"><b>Writing</b></td><td data-l="Detail">English, with “URBO Federal Note” also written in Brightportish</td></tr></tbody></table></div>
-  <h2>Passports</h2><p>Citizens hold a passport of their republic, issued under URBO. Both are printed in English and French, with Brightportish, and carry an ultraviolet security image.</p>
-  <div class="two"><figure class="hero-photo"><img src="img/ai-passport-bp.jpg" alt="Passport of the Republic of Brightport" loading="lazy"><figcaption><b>Republic of Brightport</b>: yellow cover, code BRP, the Brightbloom on the cover. ${badge('proposal')}</figcaption></figure>
-  <figure class="hero-photo"><img src="img/ai-passport-oc.jpg" alt="Passport of the Republic of Occasue" loading="lazy"><figcaption><b>Republic of Occasue</b>: red cover, code OCC, a sun rising over mountains. ${badge('proposal')}</figcaption></figure></div>
-  <h2>To confirm</h2><ul class="facts"><li>The Brightportish text in the renders is not the real national script.</li><li>Both passports show a sample holder.</li></ul>`;
+V.money=()=>{const C=D.currency,img=(id,alt)=>`<img src="img/${id}.jpg" alt="${esc(alt)}" loading="lazy" data-zoom>`,li=a=>`<ul class="facts">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+ return `<h1>Currency and passports</h1><p class="lede">The URBO is the shared currency of the whole union, issued by the Bank of URBO. Each republic issues its own passport under URBO.</p>
+ <section class="card cursym"><div class="bsym">Ⓑ</div><div>${li(C.facts)}</div></section>
+ <section><h2>Banknotes</h2>${li(C.notes_style)}<p class="meta">Tap a note to enlarge it. Each picture shows the front above the back. ${badge('proposal')} These are approved design renders, not printing artwork.</p>
+  ${C.notes.map(([v,col,hex,front,back,win,im])=>`<div class="card note" style="border-left:6px solid ${hex}"><h3>${v} <span class="meta">· ${esc(col)}</span></h3>${img(im,v+' note, front and back')}
+   <div class="tablewrap"><table class="stack"><tbody><tr><td data-l="Side"><b>Front</b></td><td data-l="Shows">${esc(front)}</td></tr><tr><td data-l="Side"><b>Back</b></td><td data-l="Shows">${esc(back)}</td></tr><tr><td data-l="Side"><b>Clear window</b></td><td data-l="Shows">${esc(win)}</td></tr></tbody></table></div></div>`).join('')}</section>
+ <section><h2>Coins</h2>${li(C.coins_style)}
+  <div class="two">${[['cur-coins-copper','5¢ and 10¢'],['cur-coins-gold','20¢ and 50¢'],['cur-coins-bi','Ⓑ1 and Ⓑ2']].map(([id,t])=>`<figure class="hero-photo">${img(id,t+' coins, both faces')}<figcaption><b>${t}</b>: the shared sun face on the left, each coin’s own face on the right.</figcaption></figure>`).join('')}</div>
+  <div class="tablewrap"><table class="stack"><thead><tr><th>Coin</th><th>Metal</th><th>Own face</th><th>Edge</th></tr></thead><tbody>${C.coins.map(c=>`<tr><td data-l="Coin"><b>${esc(c[0])}</b></td><td data-l="Metal">${esc(c[1])}</td><td data-l="Own face">${esc(c[2])}</td><td data-l="Edge">${esc(c[3])}</td></tr>`).join('')}</tbody></table></div>
+  <details><summary>Alternate render of the Ⓑ1 and Ⓑ2 coins</summary>${img('cur-coins-bi-alt','Alternate render of the 1 and 2 URBO coins')}<p class="meta">An earlier render of the same two coins, kept for reference. Not a separate issue.</p></details></section>
+ <section><h2>Symbols on the money</h2><ul class="facts"><li><b>The ten-ray sun</b>: the federal sun, on every note and coin.</li><li><b>The Brightbloom</b>: the blue flower on the notes and the Brightport passport, the national flower of Brightport.</li><li><b>The four moons</b>: Caelora, Nix, Aureth and Silvara.</li></ul></section>
+ <h2>Passports</h2><p>Citizens hold a passport of their republic, issued under URBO. Both are printed in English and French, with Brightportish, and carry an ultraviolet security image. Physical passports and ID cards are still common and valued, alongside digital IDs.</p>
+ <div class="two"><figure class="hero-photo"><img src="img/ai-passport-bp.jpg" alt="Passport of the Republic of Brightport" loading="lazy" data-zoom><figcaption><b>Republic of Brightport</b>: yellow cover, code BRP, the Brightbloom on the cover. ${badge('proposal')}</figcaption></figure>
+ <figure class="hero-photo"><img src="img/ai-passport-oc.jpg" alt="Passport of the Republic of Occasue" loading="lazy" data-zoom><figcaption><b>Republic of Occasue</b>: red cover, code OCC, a sun rising over mountains. ${badge('proposal')}</figcaption></figure></div>
+ <section><h2>Earlier concept</h2><figure class="hero-photo">${img('ai-currency','Early concept of URBO notes and coins')}<figcaption>The first concept for the urbo, with notes of 1 to 100 and coins up to 10 urbos. Kept for the archive; replaced by the approved series above. ${badge('proposal')}</figcaption></figure>
+ <p>The earlier concept named two signers: R. Veldan, Treasurer of URBO, and M. Carin, Secretary of the Treasury. Whether they sign the new notes is not decided.</p></section>
+ <h2>Still open</h2>${li(C.open)}<ul class="facts"><li>The Brightportish text in the renders is not the real national script.</li><li>Both passports show a sample holder.</li></ul>`};
 
 const ZONE=id=>{const z=D.tz;return z.zones.find(x=>x.id===(z.of[id]||'bt'))};
 const NSC={off:0,now(t=Date.now(),off=NSC.off){const c=D.calendar,el=(t-Date.parse(c.anchor))/93600000+off/10,[y,m,d]=c.anchor_date;const days=(y-1)*300+(m-1)*30+(d-1)+el,di=Math.floor(days),sec=Math.floor((days-di)*100000);
@@ -525,7 +532,27 @@ V.crown=()=>{const C=D.crown,g=C.gardiens,li=a=>`<ul class="facts">${a.map(x=>`<
   <section><h2>The Gardiens</h2><p>The Council of Gardiens watches over the Crown. It decides whether the Souvren is fit to serve, and whether the royal family is fit to continue the line.</p>
    <div class="two"><div class="card"><h3>Who they are</h3>${li(g.who)}</div><div class="card"><h3>What they do</h3>${li(g.duties)}<p>${esc(g.succession)}</p></div></div>
    <div class="tablewrap" style="margin-top:12px"><table class="stack"><thead><tr><th>Decision</th><th>Rule</th></tr></thead><tbody>${g.powers.map(([a,b])=>`<tr><td data-l="Decision"><b>${esc(a)}</b></td><td data-l="Rule">${esc(b)}</td></tr>`).join('')}</tbody></table></div>
-   <div class="open">Open: who the nine Gardiens are · who steps in if the Consort cannot · the High Court.</div></section>`};
+   <div class="open">Open: who the nine Gardiens are · who steps in if the Consort cannot · the High Court.</div></section>
+  <section><h2>Proposed portrait</h2><figure class="hero-photo"><img src="img/ai-royal-family.jpg" alt="Proposed portrait of the royal family" loading="lazy" data-zoom><figcaption>A proposed look for Élise I, Julien, Théo and Lucas. ${badge('proposal')} Not approved: faces, clothing and setting are not canon.</figcaption></figure></section>`};
+
+V.life=()=>{const sec=([t,id,a])=>`<section id="life-${id}"><h2>${esc(t)}</h2><ul class="facts">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`;
+ return `<h1>Everyday life in URBO</h1><p class="lede">How people live, work and get around. Advanced, but grounded: a recognisable world with clever technology woven through it.</p>
+ <p class="chips">${D.life.map(([t,id])=>`<a class="chip" href="javascript:void(0)" data-jump="life-${id}">${esc(t)}</a>`).join('')}</p>
+ ${D.life.map(sec).join('')}
+ <section><h2>See also</h2><p><a href="#calendar">Calendar and the working week</a> · <a href="#economy">Economy and companies</a> · <a href="#space">Space and Earth</a> · <a href="#city-berevo">Berevo</a> · <a href="#lochways">Lochways</a> · <a href="#rail">Railways</a> · <a href="#language">Languages</a></p></section>
+ <div class="open">Open: ${D.life_open.map(esc).join(' · ')}</div>`};
+V.space=()=>{const S=D.space;return `<h1>Space and Earth</h1><p class="lede">Nyreth keeps in touch with Earth, the ancestral homeland, but the trip takes about a year, so few people ever make it.</p>
+ <div class="tablewrap"><table class="stack"><tbody>${S.facts.map(([a,b])=>`<tr><td data-l="Topic"><b>${esc(a)}</b></td><td data-l="Details">${esc(b)}</td></tr>`).join('')}</tbody></table></div>
+ <section><h2>How Nyreth sees Earth</h2><ul class="facts">${S.earth.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+ <div class="open">Open: ${S.open.map(esc).join(' · ')}</div>`};
+V.economy=()=>{const E=D.econ;return `<h1>Economy and companies</h1><p class="lede">A highly automated economy with high wages, a universal basic income and public services. The currency is the URBO (Ⓑ). <a href="#money">Notes and coins →</a></p>
+ <section><h2>Money, work and welfare</h2><ul class="facts">${E.facts.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+ <section><h2>Well-known companies</h2><div class="tablewrap"><table class="stack"><thead><tr><th>Name</th><th>From</th><th>What it is</th></tr></thead><tbody>${E.companies.map(c=>`<tr><td data-l="Name"><b>${esc(c[0])}</b></td><td data-l="From">${esc(c[1])}</td><td data-l="What it is">${esc(c[2])}</td></tr>`).join('')}</tbody></table></div>
+ <ul class="facts">${E.brand_notes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+ <div class="open">Open: ${E.open.map(esc).join(' · ')}</div>`};
+window.addEventListener('hashchange',()=>document.querySelectorAll('.zoombox').forEach(x=>x.remove()));
+document.addEventListener('click',e=>{const j=e.target.closest('[data-jump]');if(j){e.preventDefault();const t=document.getElementById(j.dataset.jump);if(t)t.scrollIntoView({behavior:'smooth'});return}
+ const z=e.target.closest('img[data-zoom]');if(z){const o=document.createElement('div');o.className='zoombox';o.innerHTML=`<img src="${z.src}" alt="${esc(z.alt)}"><button aria-label="Close">×</button>`;o.addEventListener('click',()=>o.remove());document.body.appendChild(o);return}});
 V.history=()=>`<h1>History</h1><p class="lede">Dates use the Nyrethian Standard Calendar (NSC), which counts from the first landing. Years marked “about” are not yet fixed to an exact day. <a href="#calendar">How the calendar works →</a></p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.timeline.map((e,i)=>`<li><div class="when">${e.live?'<span data-nsc="date"></span>':esc(e.when)+(/^\d\d\//.test(e.when)?' NSC':' NSC')}</div><h3>${esc(e.name)}</h3><p>${esc(e.text)}</p></li>`).join('')}</ol>

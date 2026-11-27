@@ -1,4 +1,363 @@
 {
+ "currency": {
+  "facts": [
+   "The URBO (urbo) is the federal currency, shared by Brightport and Occasue. 1 URBO = 100 cents.",
+   "Its symbol is a capital B inside a circle: B for Brightport, the circle for the O of Occasue. Written Ⓑ, as in Ⓑ25.00.",
+   "The currency is issued by the Bank of URBO, the central bank.",
+   "Cash, digital wallets and optional biometric payment all exist side by side."
+  ],
+  "notes_style": [
+   "One federal design for both republics, not separate editions.",
+   "A blend of classic and modern: fine engraved landscapes and ornament, geometric security patterns, serif lettering and modern security features.",
+   "No portraits. The notes show landscapes, nature, history, symbols and landmarks.",
+   "Paper-like texture with transparent polymer windows.",
+   "Every note carries the ten-ray federal sun, the Brightbloom and the four moons, with the heading “URBO FEDERAL NOTE” and the issuer, Bank of URBO.",
+   "Notes get longer and taller as the value rises. The pictures here are not to scale."
+  ],
+  "notes": [
+   [
+    "Ⓑ5",
+    "Turquoise",
+    "#36877E",
+    "A large blue Brightbloom; the four moons as a constellation",
+    "Montes wilderness: alpine peaks, forests and water",
+    "Outline of URBO, including Norham",
+    "cur-note-5"
+   ],
+   [
+    "Ⓑ10",
+    "Copper amber",
+    "#AD7139",
+    "A modern maglev train",
+    "The Lochwater railway viaduct",
+    "The federal ten-ray sun",
+    "cur-note-10"
+   ],
+   [
+    "Ⓑ20",
+    "Emerald",
+    "#658C45",
+    "Ouest vineyards",
+    "Floribus countryside: orchards, flowers and coast",
+    "Outline of URBO",
+    "cur-note-20"
+   ],
+   [
+    "Ⓑ50",
+    "Amethyst",
+    "#795498",
+    "The Treaty of Berevo, dated 04/11/0094 NSC",
+    "Brightport City and Berevo skylines, side by side in an imagined composition",
+    "Outline of URBO",
+    "cur-note-50"
+   ],
+   [
+    "Ⓑ100",
+    "Royal blue",
+    "#285C98",
+    "The circular chamber of the national parliament",
+    "A complete map of URBO",
+    "The federal ten-ray sun",
+    "cur-note-100"
+   ]
+  ],
+  "coins_style": [
+   "All six coins are round. One face is shared: the ten-ray federal sun with URBO, the value and the year (the specimens show 119 NSC).",
+   "Classical relief, with English inscriptions only."
+  ],
+  "coins": [
+   [
+    "5¢",
+    "Copper-coloured",
+    "A single blooming Brightbloom",
+    "Not decided"
+   ],
+   [
+    "10¢",
+    "Copper-coloured",
+    "The four moons in a row",
+    "Not decided"
+   ],
+   [
+    "20¢",
+    "Warm gold-coloured alloy",
+    "Snow-covered Montes peaks",
+    "Reeded"
+   ],
+   [
+    "50¢",
+    "Warm gold-coloured alloy",
+    "The Lochways network, engraved like waterways",
+    "Reeded"
+   ],
+   [
+    "Ⓑ1",
+    "Bimetallic: silver-coloured ring, gold-coloured centre",
+    "A grand ceremonial sun with botanical ornament",
+    "Reeded"
+   ],
+   [
+    "Ⓑ2",
+    "Bimetallic: gold-coloured ring, silver-coloured centre",
+    "The circular parliament chamber from above",
+    "Reeded"
+   ]
+  ],
+  "open": [
+   "Exact sizes, weights and materials of notes and coins",
+   "Security features and serial numbers",
+   "Signatures on the new notes",
+   "Whether “URBO Federal Note” also appears in Brightportish on the new notes, as on the earlier concept",
+   "Issue dates",
+   "What things cost: prices, wages and exchange rates"
+  ]
+ },
+ "life": [
+  [
+   "The feel of everyday technology",
+   "life",
+   [
+    "Advanced but grounded: daily life is recognisable, with clever materials, automation and smart infrastructure rather than a sci-fi look.",
+    "AI runs much of the transport, infrastructure and routine work.",
+    "Energy comes from commercial fusion, renewables and conventional nuclear power together.",
+    "Smartphones, wearables and holographic devices exist side by side, and physical objects still matter to people."
+   ]
+  ],
+  [
+   "Getting around",
+   "transport",
+   [
+    "Electric and hydrogen cars are both common. Most cars drive themselves by default, but driving by hand is still legal.",
+    "Railways mix ordinary trains, high-speed lines and maglev on different routes.",
+    "In big cities, public transport rules: metros, trams, buses and walking. Berevo’s Stadsspoor is one example.",
+    "Planes run mainly on synthetic, carbon-neutral fuel. Regional flights are subsonic, international ones supersonic, and premium hypersonic flights exist."
+   ]
+  ],
+  [
+   "Personal devices and AI helpers",
+   "devices",
+   [
+    "People use AI assistants on their devices, personal AI companions that follow them across devices, and holographic AI avatars.",
+    "Smart glasses are optional; AR glasses and contact lenses are common; public spaces have interactive displays.",
+    "Homes have specialised robots, general-purpose humanoid robots and built-in smart systems.",
+    "Real-time translation by app, earbuds, glasses or holographic interpreter is everywhere, yet URBO’s six official languages and language lessons still matter."
+   ]
+  ],
+  [
+   "Health",
+   "health",
+   [
+    "People in URBO live to about 110 to 120 Earth years on average.",
+    "Prevention, early detection and cures all play a part, though no single disease has been wiped out.",
+    "Lab-grown organs, tissue regrowth and both biological and mechanical replacements are available.",
+    "Healthcare is public and paid for by the government.",
+    "AI helps doctors, but a human doctor always makes the final call.",
+    "Genetic engineering of people is allowed only for serious medical conditions. Fertility treatment usually works; artificial wombs are not used.",
+    "Cybernetic enhancements exist but are unusual: most people prefer their bodies unmodified."
+   ]
+  ],
+  [
+   "Homes and cities",
+   "homes",
+   [
+    "Each region builds in its own style, so Brightport City and Berevo look clearly different.",
+    "Homes range from smart and automated to self-maintaining.",
+    "Buildings go up by hand craft, robots, 3D printing and factory-built modules.",
+    "Cities recycle, recover water, plant rooftop gardens, parks and green corridors, and use AI to save energy and water."
+   ]
+  ],
+  [
+   "School, work and retirement",
+   "work",
+   [
+    "Classrooms are still led by human teachers, who use modern tools but familiar methods. AI does not replace teachers.",
+    "Much routine work is automated, so most people work in creative, social, scientific or supervisory jobs.",
+    "High wages, a universal basic income and public services work together.",
+    "The usual retirement age is 65 Earth years.",
+    "The working week follows the calendar: four six-hour work days in each ten-day week."
+   ]
+  ],
+  [
+   "Food, farms and wildlife",
+   "nature",
+   [
+    "Farming mixes automated fields, vertical farms and automated greenhouses. Lab-grown meat and farmed animals both exist.",
+    "Some native ecosystems look Earth-like, others truly alien, and Earth and native species have mixed a great deal since the landing.",
+    "Pets are mostly Earth animals: dogs, cats, fish and the like.",
+    "Some native creatures look familiar, others are completely unfamiliar. Some native foods are safe to eat, some need processing, and some are unsafe.",
+    "URBO has large national parks, restores damaged land, and watches the environment with AI, satellites and drones."
+   ]
+  ],
+  [
+   "Internet, identity and privacy",
+   "internet",
+   [
+    "Nyreth has its own planetary internet, with gateways to Earth’s networks (slow ones, because of the distance).",
+    "Internet and phone service are mainly public utilities.",
+    "People use government digital IDs, biometrics and their own privacy controls, but physical ID cards and passports are still common and valued.",
+    "Privacy laws are strict: collecting personal data needs clear permission.",
+    "Entertainment comes on ordinary screens, in VR and as holograms."
+   ]
+  ]
+ ],
+ "life_open": [
+  "Specific devices and products",
+  "How much energy comes from each source",
+  "Rules for AI",
+  "Train speeds and routes",
+  "School starting and leaving ages",
+  "Individual native species and which are safe to eat",
+  "Names of protected areas and the conservation agency"
+ ],
+ "space": {
+  "facts": [
+   [
+    "Travel to Earth",
+    "Near-light-speed ships make the trip in about one Earth year each way. Space travel keeps Earth time, because people from Earth set it up."
+   ],
+   [
+    "Spaceports",
+    "Ships leave straight from spaceports on the ground. URBO has two: at Brightport City and at Berevo."
+   ],
+   [
+    "On board",
+    "Passengers can travel awake or in induced hibernation."
+   ],
+   [
+    "Operators",
+    "Both public and private companies fly between the stars. The leading passenger carrier is TerraLink."
+   ],
+   [
+    "URBO Space Agency",
+    "URBO’s national space agency."
+   ],
+   [
+    "The moons",
+    "Commercial trips to Nyreth’s moons exist but are expensive. There are no permanent settlements on the moons."
+   ],
+   [
+    "Who travels",
+    "Space travel is rare for ordinary people in every country on Nyreth. Even the rich seldom go, because of the time it takes. Some people save for a lifetime to visit Earth’s historic sites when they retire."
+   ],
+   [
+    "Earth Research Fellowship",
+    "A government scholarship for top students to do research on Earth. Like the Rhodes Scholarship, but even more prestigious. URBO also pays for diplomatic missions to Earth."
+   ],
+   [
+    "Messages",
+    "Urgent messages travel by advanced systems. Ordinary data is slower, and films and shows take about three months to arrive, in either direction."
+   ]
+  ],
+  "earth": [
+   "People on Nyreth see Earth in several ways at once: as the ancestral homeland, as a foreign civilisation of today, and with nostalgia.",
+   "A small but steady number of people still move from Earth to Nyreth.",
+   "Earth is still more technologically advanced than Nyreth.",
+   "Each world has its own film and TV industry. Viewers find the other planet’s shows strange and fascinating."
+  ],
+  "open": [
+   "Which star system Nyreth is in, and how far from Earth",
+   "Names of the spaceports and how they relate to the airports",
+   "The fleet, timetables and fares",
+   "How fast urgent messages travel",
+   "Rules for the Earth Research Fellowship"
+  ]
+ },
+ "econ": {
+  "facts": [
+   "Most banking is done by public, government-owned banks, though private banks are not banned.",
+   "Every adult citizen gets the same monthly universal basic income. It is a safety net, not a replacement for a wage: people can work to earn more, and are expected to take part when they can.",
+   "Paid work and recognised study both count as taking part.",
+   "Refusing work without good reason carries social stigma and, step by step, government action: warnings, help finding work, and finally financial penalties. Not being able to find work is not the same as refusing it.",
+   "URBO is prosperous but not perfect: unemployment and homelessness still exist."
+  ],
+  "companies": [
+   [
+    "Aureon",
+    "Brightport",
+    "Leading electronics and AI company, named after the moon Aureth"
+   ],
+   [
+    "Oranje",
+    "Occasue",
+    "Leading consumer technology company, Dutch-inspired"
+   ],
+   [
+    "Beaumont Motors",
+    "Brightport",
+    "Main carmaker: refined, comfortable cars"
+   ],
+   [
+    "Vrijheid Automotive",
+    "Occasue",
+    "Main carmaker. Vrijheid is Dutch for freedom"
+   ],
+   [
+    "Souvren Airways",
+    "Brightport",
+    "Flag carrier, owned by the Republic of Brightport"
+   ],
+   [
+    "Air Occasue",
+    "Occasue",
+    "Flag carrier, owned by the Republic of Occasue"
+   ],
+   [
+    "TerraLink",
+    "URBO",
+    "Leading interstellar passenger carrier"
+   ],
+   [
+    "URBO Public Media",
+    "URBO",
+    "The federal public broadcaster"
+   ],
+   [
+    "TéléBrightport",
+    "Brightport",
+    "Brightport’s public broadcaster, French-inspired"
+   ],
+   [
+    "Omroep Occasue",
+    "Occasue",
+    "Occasue’s public broadcaster, Dutch-inspired"
+   ],
+   [
+    "Recess",
+    "Nyreth",
+    "The leading streaming service, named after the rest days"
+   ],
+   [
+    "Mosaic",
+    "Nyreth",
+    "The main social network, multilingual"
+   ],
+   [
+    "Marché",
+    "URBO",
+    "The biggest supermarket chain"
+   ],
+   [
+    "Bon App",
+    "Brightport",
+    "Playful, modern fast-food chain"
+   ],
+   [
+    "Oranje Grill",
+    "Occasue",
+    "Dutch-American burger and grill chain. Not connected to Oranje the tech company"
+   ]
+  ],
+  "brand_notes": [
+   "Native brands dominate. Several big URBO tech companies compete at home and abroad, and each republic has its own carmaker.",
+   "A few historic Earth companies are still around as heritage brands: McDonald’s, Coca-Cola, Starbucks, Nestlé, Apple, Sony, Disney, Nintendo, Chanel and Louis Vuitton. They are loved for their link to Earth, not because they are imported.",
+   "There is one federal public broadcaster and one for each republic."
+  ],
+  "open": [
+   "How much the basic income is, typical wages, housing costs and taxes (the next question round)",
+   "Exceptions and appeals for the work rules, and support for disabled people, carers and retirees",
+   "Company logos, headquarters, owners and histories"
+  ]
+ },
  "tz": {
   "zones": [
    {
@@ -3319,7 +3678,7 @@
    "w": 1206,
    "h": 917,
    "origin": "ChatGPT render, Nov 2026",
-   "notes": "The urbo: notes of 1, 5, 10, 20, 50 and 100 urbos and coins from 10 cents to 10 urbos. The Brightportish text on the notes is not the real national script."
+   "notes": "An early concept for the urbo, kept for the archive: notes of 1 to 100 and coins from 10 cents to 10 urbos. Superseded by the approved Bank of URBO series; these were never issued as canon. The Brightportish text on the notes is not the real national script."
   },
   {
    "id": "ai-passport-bp",
@@ -3342,6 +3701,116 @@
    "h": 804,
    "origin": "ChatGPT render, Nov 2026",
    "notes": "Red cover, code OCC. Sample holder; the Brightportish text is not the real national script."
+  },
+  {
+   "id": "cur-note-5",
+   "title": "Bank of URBO: Ⓑ5 note, front and back (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-note-5.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Approved artistic direction. Turquoise. Front: Brightbloom; back: Montes wilderness. Map window."
+  },
+  {
+   "id": "cur-note-10",
+   "title": "Bank of URBO: Ⓑ10 note, front and back (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-note-10.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Approved artistic direction. Copper amber. Front: maglev train; back: Lochwater railway viaduct."
+  },
+  {
+   "id": "cur-note-20",
+   "title": "Bank of URBO: Ⓑ20 note, front and back (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-note-20.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Approved artistic direction. Emerald. Front: Ouest vineyards; back: Floribus countryside."
+  },
+  {
+   "id": "cur-note-50",
+   "title": "Bank of URBO: Ⓑ50 note, front and back (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-note-50.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Approved artistic direction. Amethyst. Front: the Treaty of Berevo; back: Brightport City and Berevo skylines."
+  },
+  {
+   "id": "cur-note-100",
+   "title": "Bank of URBO: Ⓑ100 note, front and back (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-note-100.jpg",
+   "w": 1400,
+   "h": 700,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Approved artistic direction. Royal blue. Front: the circular parliament chamber; back: the map of URBO."
+  },
+  {
+   "id": "cur-coins-copper",
+   "title": "Bank of URBO: 5¢ and 10¢ coins (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-coins-copper.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Copper-coloured. Sun face on the left, individual face on the right."
+  },
+  {
+   "id": "cur-coins-gold",
+   "title": "Bank of URBO: 20¢ and 50¢ coins (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-coins-gold.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Gold-coloured alloy, reeded edges."
+  },
+  {
+   "id": "cur-coins-bi",
+   "title": "Bank of URBO: Ⓑ1 and Ⓑ2 coins (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-coins-bi.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, approved by Bailey Nov 2026",
+   "notes": "Bimetallic. The default render."
+  },
+  {
+   "id": "cur-coins-bi-alt",
+   "title": "Bank of URBO: Ⓑ1 and Ⓑ2 coins, alternate render",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/cur-coins-bi-alt.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "An earlier render of the same two coins. Not a separate issue."
+  },
+  {
+   "id": "ai-royal-family",
+   "title": "The royal family: proposed portrait (render)",
+   "kind": "concept",
+   "era": "urbo",
+   "file": "img/ai-royal-family.jpg",
+   "w": 1400,
+   "h": 933,
+   "origin": "ChatGPT render, Nov 2026",
+   "notes": "A proposed look for Élise I, Julien, Théo and Lucas. Not approved: faces, clothing and setting are not canon."
   },
   {
    "id": "ai-flags",
