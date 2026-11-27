@@ -1,4 +1,480 @@
 {
+ "calendar": {
+  "anchor": "2026-11-26T05:00:00Z",
+  "anchor_date": [
+   119,
+   8,
+   15
+  ],
+  "months": [
+   [
+    "Primus",
+    "First",
+    "Spring"
+   ],
+   [
+    "Secundus",
+    "Second",
+    "Spring"
+   ],
+   [
+    "Tertius",
+    "Third",
+    "Summer"
+   ],
+   [
+    "Quartus",
+    "Fourth",
+    "Summer"
+   ],
+   [
+    "Quintus",
+    "Fifth",
+    "Harvest"
+   ],
+   [
+    "Sextus",
+    "Sixth",
+    "Harvest"
+   ],
+   [
+    "Septimus",
+    "Seventh",
+    "Autumn"
+   ],
+   [
+    "Octavus",
+    "Eighth",
+    "Autumn"
+   ],
+   [
+    "Nonus",
+    "Ninth",
+    "Winter"
+   ],
+   [
+    "Decimus",
+    "Tenth",
+    "Winter"
+   ]
+  ],
+  "days": [
+   [
+    "Caeloris",
+    "the moon Caelora",
+    "Work"
+   ],
+   [
+    "Nixis",
+    "the moon Nix",
+    "Work"
+   ],
+   [
+    "Mercuris",
+    "Mercury",
+    "Inner Recess"
+   ],
+   [
+    "Veneris",
+    "Venus",
+    "Inner Recess"
+   ],
+   [
+    "Martis",
+    "Mars",
+    "Inner Recess"
+   ],
+   [
+    "Aurethis",
+    "the moon Aureth",
+    "Work"
+   ],
+   [
+    "Silvaris",
+    "the moon Silvara",
+    "Work"
+   ],
+   [
+    "Jovis",
+    "Jupiter",
+    "Outer Recess"
+   ],
+   [
+    "Uranis",
+    "Uranus",
+    "Outer Recess"
+   ],
+   [
+    "Neptunis",
+    "Neptune",
+    "Outer Recess"
+   ]
+  ],
+  "holidays": [
+   [
+    1,
+    1,
+    3,
+    "New Year and Landing Day",
+    "Nyreth-wide",
+    "The start of spring and of the year, and the anniversary of the first landing on Primus 1, year 1. Flowers, lanterns, fireworks and feasts."
+   ],
+   [
+    1,
+    15,
+    15,
+    "Easter",
+    "Earth-derived",
+    "Kept from Earth, on a fixed date."
+   ],
+   [
+    1,
+    21,
+    21,
+    "Democracy Day",
+    "URBO",
+    "Celebrates citizenship, democratic institutions and taking part."
+   ],
+   [
+    2,
+    11,
+    11,
+    "Crown Day",
+    "Brightport",
+    "The anniversary of Souvren Élise I’s accession: royal ceremonies, street parties and the Crown Day Garden Party."
+   ],
+   [
+    3,
+    11,
+    11,
+    "Constitution Day",
+    "URBO",
+    "URBO’s main national holiday. Marks the signing of the Charter of Union in Lochwater."
+   ],
+   [
+    4,
+    6,
+    10,
+    "Lunar Recess",
+    "Nyreth-wide",
+    "Celebrates the four moons. Each household lights four lanterns, one for each moon."
+   ],
+   [
+    4,
+    11,
+    11,
+    "Occasue Independence Day",
+    "URBO",
+    "Marks Occasue’s independence under the Treaty of Berevo. Observed across the whole union."
+   ],
+   [
+    4,
+    11,
+    15,
+    "Liberty Festival",
+    "Occasue",
+    "Five days of fireworks, concerts, beach parties and markets in red and gold."
+   ],
+   [
+    4,
+    21,
+    21,
+    "Unity Day",
+    "URBO",
+    "Celebrates URBO’s many cultures and languages."
+   ],
+   [
+    6,
+    26,
+    30,
+    "Harvest Recess",
+    "Nyreth-wide",
+    "The end of the harvest season: family meals, markets and thanks."
+   ],
+   [
+    8,
+    30,
+    30,
+    "Halloween",
+    "Earth-derived",
+    "The last day of autumn. Kept from Earth."
+   ],
+   [
+    9,
+    6,
+    6,
+    "Remembrance Day",
+    "URBO",
+    "Honours those lost in the wars."
+   ],
+   [
+    9,
+    14,
+    14,
+    "Valentine’s Day",
+    "Earth-derived",
+    "A winter celebration of love. Kept from Earth."
+   ],
+   [
+    10,
+    21,
+    30,
+    "Christmas",
+    "Nyreth-wide",
+    "The main winter holiday: ten days of gifts, lights and family feasts, leading straight into New Year."
+   ]
+  ],
+  "facts": [
+   "The Nyrethian Standard Calendar (NSC) counts from the first human landing: Primus 1, year 1.",
+   "A year has exactly 300 days: ten months of 30 days. There are no leap years, so every year looks the same.",
+   "A week has ten days, and every month is exactly three weeks. Every month starts on Caeloris and ends on Neptunis.",
+   "The year starts at the beginning of spring. There are five seasons of 60 days each: Spring, Summer, Harvest, Autumn and Winter.",
+   "People work two days, rest three, work two and rest three. The rest breaks are called Inner Recess and Outer Recess. A working day lasts six Earth hours.",
+   "Work days are named after Nyreth’s four moons. Recess days are named after planets of Earth’s solar system.",
+   "A day lasts 26 Earth hours. Clocks are decimal: 10 hours in a day, 100 minutes in an hour, 100 seconds in a minute. A clock reading 5.42 is just past the middle of the day.",
+   "Dates are written month/day/year, for example 08/15/0119 NSC.",
+   "Nyreth has ten time zones, one hour apart, measured from an international observatory. Standard time is called NST.",
+   "Public holidays fall on fixed dates. A holiday that lands on a Recess day gets a replacement rest day. Each state may add three holidays of its own."
+  ],
+  "langs": [
+   "English",
+   "Brightportish",
+   "French",
+   "Spanish",
+   "Dutch",
+   "Scottish Gaelic"
+  ]
+ },
+ "moons": [
+  [
+   "Caelora",
+   "Upper left in the drawing"
+  ],
+  [
+   "Nix",
+   "Upper centre; looks the smallest"
+  ],
+  [
+   "Aureth",
+   "Centre; looks the largest"
+  ],
+  [
+   "Silvara",
+   "Far right"
+  ]
+ ],
+ "timeline": [
+  {
+   "when": "01/01/0001",
+   "earth": 2105,
+   "name": "The first landing",
+   "text": "Humans land on Nyreth, driven by science, overcrowding on Earth and international cooperation. Some settlements are national colonies and others are international. The calendar counts from this day."
+  },
+  {
+   "when": "About year 62",
+   "earth": 2160,
+   "name": "Republic of Brightport founded",
+   "text": "The settlements join together step by step, by choice, and become independent of Earth. Brightport City, the first major settlement, becomes the capital."
+  },
+  {
+   "when": "About year 79",
+   "earth": 2175,
+   "name": "East–west tensions begin",
+   "text": "Western states grow unhappy with centralization in Brightport City, economic neglect and disregard for western culture."
+  },
+  {
+   "when": "About year 85",
+   "earth": 2180,
+   "name": "The unified republic at its height",
+   "text": "The original world map shows the unified Republic of Brightport between Schoonheid and Joya. (The drawing itself is labelled 2180, in Earth years.)"
+  },
+  {
+   "when": "About years 86 to 89",
+   "earth": "2181–2184",
+   "name": "First Nyreth World War (NWWI)",
+   "text": "A three-year war over territory, trade and rival alliances. Schoonheid loses its west coast through a peace agreement and local referendums. The war deepens Brightport’s own divisions."
+  },
+  {
+   "when": "About year 89",
+   "earth": 2184,
+   "name": "The first Souvren",
+   "text": "Brightport creates the Souvren to give the nation unity, identity and stability. John I of the House of Kennedy is nominated by representatives and approved by public vote. The country keeps the name “Republic”."
+  },
+  {
+   "when": "About years 92 to 94",
+   "earth": "2186–2188",
+   "name": "Brightportish Civil War",
+   "text": "Unequal rebuilding money, refused demands for western autonomy and an attempt by the west to leave bring war. The new monarchy is a lesser cause. The war is short and not especially bloody, and neutral nations mediate its end."
+  },
+  {
+   "when": "04/11/0094",
+   "earth": 2188,
+   "name": "Treaty of Berevo: Occasue independent",
+   "text": "The country is formally divided into Brightport and Occasue. Divided families get travel permits, the right to dual citizenship and help to reunite. Relations are cold but peaceful, with checkpoints along the new border."
+  },
+  {
+   "when": "About year 96",
+   "earth": 2190,
+   "name": "Reconciliation begins",
+   "text": "Trade, family and cultural ties draw the republics back together through cooperation, negotiations and referendums. Hardliners in Berevo oppose closer ties."
+  },
+  {
+   "when": "About year 102",
+   "earth": 2195,
+   "name": "Joseph I becomes Souvren",
+   "text": "John I dies of natural causes while reigning. His son Joseph I succeeds him."
+  },
+  {
+   "when": "03/11/0106",
+   "earth": 2198,
+   "name": "URBO founded",
+   "text": "The Charter of Union is signed in Lochwater. Some border checkpoints are demolished, some are kept as monuments and others become visitor centres and service areas. The day is now Constitution Day."
+  },
+  {
+   "when": "About year 110",
+   "earth": 2202,
+   "name": "Joseph I removed",
+   "text": "The Gardiens remove Joseph I from the throne. His brother Patrick I becomes the third Souvren."
+  },
+  {
+   "when": "02/11/0114",
+   "earth": 2205,
+   "name": "The House of Brightwell takes the crown",
+   "text": "After money scandals, political meddling and public protests, the House of Kennedy is disqualified and returns to ordinary citizenship. Élise I becomes Souvren, the first woman to reign. The day is now Crown Day."
+  },
+  {
+   "when": "Today",
+   "earth": 2210,
+   "name": "The present day",
+   "text": "URBO is a young union, about twelve Earth years old. The site’s calendar started at 08/15/0119 and runs live.",
+   "live": true
+  }
+ ],
+ "crown": {
+  "origin": [
+   "The Souvren was created about year 89 NSC, after the First Nyreth World War, to give Brightport unity, cultural identity and political stability.",
+   "The first Souvren was nominated by representatives and approved by a public vote.",
+   "Brightport kept the name “Republic” even with a monarch."
+  ],
+  "houses": [
+   {
+    "name": "House of Kennedy",
+    "years": "About 89 to 114 NSC",
+    "note": "The founding dynasty: an American old-money family descended from the Kennedy political family of Earth. A branch of the family took part in the first settlement of Nyreth. It lost public trust through elitism, political meddling and money scandals, and was disqualified by the Gardiens.",
+    "rulers": [
+     [
+      "John I",
+      "About 89 to 102",
+      "The first Souvren. Died of natural causes while reigning. Father of Joseph I and Patrick I."
+     ],
+     [
+      "Joseph I",
+      "About 102 to 110",
+      "Son of John I. Removed from the throne by the Gardiens."
+     ],
+     [
+      "Patrick I",
+      "About 110 to 114",
+      "Son of John I and brother of Joseph I. His reign ended when the dynasty was disqualified."
+     ]
+    ]
+   },
+   {
+    "name": "House of Brightwell",
+    "years": "Since 02/11/0114 NSC",
+    "note": "The second dynasty: a Franco-British family.",
+    "rulers": [
+     [
+      "Élise I",
+      "Since 02/11/0114",
+      "The first woman to reign. A former diplomat, 28 at her accession and about 33 today."
+     ]
+    ]
+   }
+  ],
+  "elise": [
+   "Before becoming Souvren, Élise I worked in diplomacy. Her diplomatic record, her humility and her youth won public support after the Kennedy years.",
+   "She is warm and approachable. Her causes are education, multilingualism, conservation and reconciliation between nations.",
+   "She favours a modern monarchy: royal pageantry, but open and easy to reach."
+  ],
+  "family": [
+   [
+    "Élise I",
+    "Souvren"
+   ],
+   [
+    "Julien",
+    "Souvren Consort, her husband. A physician before joining the royal household."
+   ],
+   [
+    "Théo",
+    "Elder son, aged 8. First in line to the throne."
+   ],
+   [
+    "Lucas",
+    "Younger son, aged 5."
+   ]
+  ],
+  "family_note": "Both boys go to an ordinary public school with other Brightportish children.",
+  "palace": "The royal residence is Souvren Palace, built in the style of a French château.",
+  "arms": [
+   "The Sun of Brightport",
+   "The Brightbloom flower",
+   "Nyreth’s four moons",
+   "Brightportish script"
+  ],
+  "traditions": [
+   [
+    "Royal Open House",
+    "Citizens may visit parts of Souvren Palace."
+   ],
+   [
+    "National School Visits",
+    "The Souvren visits schools across Brightport."
+   ],
+   [
+    "Crown Day Garden Party",
+    "Members of the public celebrate Crown Day (Secundus 11) with the royal family."
+   ]
+  ],
+  "gardiens": {
+   "who": [
+    "The Council of Gardiens has nine members.",
+    "They are elected by the Brightport Parliament, not by the URBO parliament.",
+    "Each serves an eight-year term. Terms are staggered, and members may be re-elected without limit.",
+    "Gardiens must stay out of party politics while serving, and may not belong to a party.",
+    "They come from mixed backgrounds: lawyers alongside people from other professions and public service."
+   ],
+   "duties": [
+    "Royal oversight",
+    "Guarding the constitution",
+    "Settling crises"
+   ],
+   "powers": [
+    [
+     "Removing a Souvren",
+     "At least 6 votes of 9. Reserved for the most serious cases, like an impeachment and conviction."
+    ],
+    [
+     "Disqualifying a whole dynasty",
+     "At least 7 votes of 9. The family returns to ordinary citizenship and loses its titles."
+    ],
+    [
+     "Choosing a new dynasty",
+     "The public nominates families, the Gardiens screen them, and the nation votes."
+    ],
+    [
+     "During a change of dynasty",
+     "The Souvren Consort carries out the Souvren’s duties, if eligible and not involved in the removal."
+    ],
+    [
+     "Misconduct by a Gardien",
+     "Reviewed by the High Court first, then by Parliament."
+    ]
+   ],
+   "succession": "The crown passes to the eldest child, whatever their gender, under the Gardiens’ oversight."
+  }
+ },
  "cityinfo": {
   "brightport-city": {
    "nick": "The Sun Capital",
@@ -47,11 +523,50 @@
    "sports": [
     [
      "Berevo United",
-     "Football club, nicknamed the Harbourmen."
+     "Football club, nicknamed the Harbourmen. Colours: orange and black. The crest shows a lion and an anchor, for the city’s Dutch and seafaring roots."
+    ],
+    [
+     "Match-day traditions",
+     "Orange smoke before kick-off, a sea of orange scarves and singing, and harbour horns whenever Berevo United scores."
     ],
     [
      "The Treaty Match",
      "Berevo United against Brightport City FC, the biggest match in URBO. First played the year the peace treaty was signed."
+    ]
+   ],
+   "pop": "10 million in the city and 20 million in Greater Berevo.",
+   "landmarks": [
+    [
+     "Berevo Harbour Bridge",
+     "A pearl-white cable-stayed bridge, 8.2 km long. It carries road traffic, Stadsspoor trains, cycleways and footpaths. It was built to celebrate Occasue’s independence and republican identity."
+    ],
+    [
+     "Het Vrijheidsstadion",
+     "The 90,000-seat home of Berevo United, in Downtown."
+    ],
+    [
+     "Gouden Kust Film Palace",
+     "The main venue of the Berevo International Film Festival."
+    ]
+   ],
+   "transport": [
+    [
+     "Berevo Stadsspoor",
+     "The metro: 26 lines, branded in orange and white. “Stadsspoor” is Dutch for city railway."
+    ],
+    [
+     "Berevo Centraal",
+     "The main railway station."
+    ],
+    [
+     "Berevo–Gouden Kust International Airport",
+     "On the eastern edge of the city, linked directly by Stadsspoor."
+    ]
+   ],
+   "events": [
+    [
+     "Berevo International Film Festival",
+     "Held every year in Tertius, the first month of summer. It mixes big premieres, independent films, new filmmakers and blockbusters. Its top prize is the Golden Lion."
     ]
    ]
   }
@@ -749,7 +1264,10 @@
  },
  "planet": [
   "On Nyreth the sun rises in the west and sets in the east, because the planet spins the opposite way to Earth.",
-  "Because of that spin, the prevailing winds over URBO blow from east to west, so storms usually arrive from the east."
+  "Because of that spin, the prevailing winds over URBO blow from east to west, so storms usually arrive from the east.",
+  "Nyreth has four moons: Caelora, Nix, Aureth and Silvara. They appear in the original pencil drawing of the Brightport City skyline, and four weekdays are named after them.",
+  "A day on Nyreth lasts 26 Earth hours, and a year lasts 300 days.",
+  "Nyreth keeps in touch with Earth, but travel between the two planets is rare."
  ],
  "info": {
   "solis": {
@@ -1903,7 +2421,8 @@
      "The Council of States (upper house) has 32 seats: 3 for each of the 10 states and 1 for each territory.",
      "Parliament is elected for 5 years, in step with the URBO president.",
      "The URBO prime minister alternates between the republics: after each parliamentary election, the office passes to the other republic.",
-     "Current: Souvren Élise I and President Henrik Aalders; Prime Minister Oliver Ashcombe (Brightport’s term)."
+     "Current: Souvren Élise I and President Henrik Aalders; Prime Minister Oliver Ashcombe (Brightport’s term).",
+     "URBO has six official languages: English, Brightportish, French, Spanish, Dutch and Scottish Gaelic."
     ],
     "open": [
      "Division of powers with the republics",
@@ -1923,7 +2442,7 @@
      "Head of state and sovereign: the Souvren, a monarch in the Belgian style, a people’s sovereign rather than a ruler of the land.",
      "Brightportish people are proud of their Souvren.",
      "The name “Republic of Brightport” stuck from the early days. With the Souvren in place, people saw no need to change it.",
-     "The Souvren’s line is hereditary, under the Gardiens, a council elected by the nation. The Gardiens decide whether the Souvren is fit to serve and whether their family is fit to continue the line. If not, the nation votes for a new line.",
+     "The Souvren’s line is hereditary (eldest child first, whatever their gender), under the Gardiens: a council of nine, elected by the Brightport Parliament for staggered eight-year terms. The Gardiens decide whether the Souvren is fit to serve and whether their family is fit to continue the line. If not, the nation votes for a new line.",
      "Brightport has its own prime minister, who heads the lower house of the Brightport Parliament.",
      "Current Souvren: Élise I of the House of Brightwell, the first woman to reign. Prime minister: Nathaniel Fairbourne."
     ],
@@ -2389,14 +2908,14 @@
   {
    "id": "colonial",
    "name": "Earth colonization",
-   "when": "2100s",
+   "when": "From year 1 NSC",
    "status": "canon",
    "summary": "Settlers from different Earth countries found cultural and linguistic communities on Nyreth."
   },
   {
    "id": "unified",
    "name": "Republic of Brightport",
-   "when": "One world map is marked 2180",
+   "when": "About 62 to 94 NSC",
    "status": "canon",
    "summary": "The original yellow country between Schoonheid and Joya, governed from Brightport City: seven states, Deserto Territory and the capital territory."
   },
@@ -2410,7 +2929,7 @@
   {
    "id": "nww1",
    "name": "First Nyreth World War (NWWI)",
-   "when": "After 2180",
+   "when": "About 86 to 89 NSC",
    "status": "canon",
    "summary": "A global skirmish among the countries of Nyreth. Schoonheid lost its west coast, which is now part of URBO, and the war led on to the Brightportish civil war."
   },
@@ -2445,7 +2964,7 @@
   {
    "id": "urbo",
    "name": "URBO",
-   "when": "Working present, c. 2200",
+   "when": "Since 106 NSC",
    "status": "canon",
    "summary": "The republics form a shared federal system, as if the US and the EU had a baby. Checkpoints are removed and people move freely across the union. Each republic keeps its own government."
   }
@@ -2844,13 +3363,12 @@
    "facts": [
     "Colonized by humans from Earth in the 2100s.",
     "Multiple continents, oceans and polar ice caps.",
-    "Several moons appear in the Brightport City pencil skyline."
+    "Four moons: Caelora, Nix, Aureth and Silvara, as drawn in the Brightport City pencil skyline.",
+    "A day lasts 26 Earth hours and a year lasts 300 days."
    ],
    "open": [
-    "Number, names and sizes of moons",
-    "Planet size and map scale",
-    "Continent names",
-    "Relationship with Earth in 2200"
+    "Sizes and orbits of the moons",
+    "Planet size and map scale"
    ]
   },
   {
@@ -4303,7 +4821,7 @@
    "Earth colonial languages",
    "Old Brightportish: the original coded script and letter syllables",
    "Middle Brightportish: contractions and sound changes (to be worked out)",
-   "Modern Brightportish, c. 2200: the shared lingua franca"
+   "Modern Brightportish, today: the shared lingua franca"
   ],
   "phonology": [
    [
@@ -5040,11 +5558,27 @@
  "questions": [
   {
    "topic": "History",
-   "q": "Exact dates of the civil war, peace treaty and URBO’s formation."
+   "q": "Exact NSC dates for events known only by year (founding of the republic, NWWI, the civil war)."
   },
   {
    "topic": "History",
-   "q": "Relationship with Earth in 2200."
+   "q": "Which neutral nations mediated the end of the civil war."
+  },
+  {
+   "topic": "Calendar",
+   "q": "Names of the ten time zones and the international observatory."
+  },
+  {
+   "topic": "Calendar",
+   "q": "Calendar translations in the six official languages."
+  },
+  {
+   "topic": "Crown",
+   "q": "Layout of the Brightwell coat of arms."
+  },
+  {
+   "topic": "Crown",
+   "q": "Who acts as head of state if the Souvren Consort cannot."
   },
   {
    "topic": "Government",
