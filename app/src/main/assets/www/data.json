@@ -40,6 +40,8 @@
    "Fliwth Coast Line": "Ligne de la Côte Fliwth",
    "Northern Line": "Ligne du Nord",
    "Transcontinental": "Transcontinental",
+   "The president is head of state; the prime minister runs the government, as in France.": "Le président est le chef de l'État ; le Premier ministre dirige le gouvernement, comme en France.",
+   "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Présidente actuelle : Amélie Rousseau-Kerr. Premier ministre : Ewan Dunmore.",
    "120 million": "120 millions",
    "about 62,000 urbos a year": "environ 62 000 urbos par an",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Site officiel de la République d'Occasue · Membre des Républiques unies (URBO)",
@@ -148,6 +150,8 @@
    "Fliwth Coast Line": "Fliwthkustlijn",
    "Northern Line": "Noordelijke Lijn",
    "Transcontinental": "Transcontinentaal",
+   "The president is head of state; the prime minister runs the government, as in France.": "De president is staatshoofd; de minister-president leidt de regering, zoals in Frankrijk.",
+   "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Huidige president: Amélie Rousseau-Kerr. Minister-president: Ewan Dunmore.",
    "120 million": "120 miljoen",
    "about 62,000 urbos a year": "ongeveer 62.000 urbo per jaar",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Officiële website van de Republiek Occasue · Lid van de Verenigde Republieken (URBO)",
@@ -262,6 +266,8 @@
    "Fliwth Coast Line": "Loidhne Oirthir Fliwth",
    "Northern Line": "An Loidhne a Tuath",
    "Transcontinental": "An Tar-dhùthchail",
+   "The president is head of state; the prime minister runs the government, as in France.": "'S e an ceann-suidhe ceann na stàite; bidh am prìomhaire a' ruith an riaghaltais, mar san Fhraing.",
+   "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Ceann-suidhe an-dràsta: Amélie Rousseau-Kerr. Prìomhaire: Ewan Dunmore.",
    "120 million": "120 millean",
    "about 62,000 urbos a year": "mu 62,000 urbo sa bhliadhna",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Làrach-lìn oifigeil Poblachd Occasue · Ball de na Poblachdan Aonaichte (URBO)",
@@ -370,6 +376,8 @@
    "Fliwth Coast Line": "Línea de la Costa Fliwth",
    "Northern Line": "Línea del Norte",
    "Transcontinental": "Transcontinental",
+   "The president is head of state; the prime minister runs the government, as in France.": "El presidente es el jefe de Estado; el primer ministro dirige el gobierno, como en Francia.",
+   "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore.": "Presidenta actual: Amélie Rousseau-Kerr. Primer ministro: Ewan Dunmore.",
    "120 million": "120 millones",
    "about 62,000 urbos a year": "unos 62.000 urbos al año",
    "Official website of the Republic of Occasue · Member of the United Republics (URBO)": "Sitio oficial de la República de Occasue · Miembro de las Repúblicas Unidas (URBO)",
@@ -1733,7 +1741,7 @@
     "level": 1,
     "name": "URBO federal government",
     "seat": "Brightport City",
-    "body": "URBO National Parliament (bicameral)",
+    "body": "URBO National Parliament: the Assembly and the Council of States",
     "facts": [
      "Addresses matters affecting the union as a whole.",
      "A forum where disputes between the two republics are resolved collectively, with the states taking part.",
@@ -1741,7 +1749,12 @@
      "The URBO president and the Souvren of Brightport rule the union jointly.",
      "The URBO president is a separate office from the president of Occasue. The URBO president is elected by popular vote every five years, with no limit on terms.",
      "The URBO president and the Souvren are co-heads of the union, a little like Andorra’s two co-princes. Unlike Andorra’s, they cannot act separately: they must agree together on URBO matters.",
-     "When the president and the Souvren disagree, the parliament and the high court mediate and keep the balance of power."
+     "When the president and the Souvren disagree, the parliament and the high court mediate and keep the balance of power.",
+     "The Assembly (lower house) has 300 seats, one for about every million people, shared out by population. Every state and territory has at least one.",
+     "The Council of States (upper house) has 32 seats: 3 for each of the 10 states and 1 for each territory.",
+     "Parliament is elected for 5 years, in step with the URBO president.",
+     "The URBO prime minister alternates between the republics: after each parliamentary election, the office passes to the other republic.",
+     "Current: Souvren Élise I and President Henrik Aalders; Prime Minister Oliver Ashcombe (Brightport’s term)."
     ],
     "open": [
      "Division of powers with the republics",
@@ -1762,7 +1775,8 @@
      "Brightportish people are proud of their Souvren.",
      "The name “Republic of Brightport” stuck from the early days. With the Souvren in place, people saw no need to change it.",
      "The Souvren’s line is hereditary, under the Gardiens, a council elected by the nation. The Gardiens decide whether the Souvren is fit to serve and whether their family is fit to continue the line. If not, the nation votes for a new line.",
-     "Brightport has its own prime minister, who heads the lower house of the Brightport Parliament."
+     "Brightport has its own prime minister, who heads the lower house of the Brightport Parliament.",
+     "Current Souvren: Élise I of the House of Brightwell, the first woman to reign. Prime minister: Nathaniel Fairbourne."
     ],
     "open": [
      "Whether it has its own constitution"
@@ -1779,10 +1793,11 @@
      "Four states and Montes Territory.",
      "Favours ancestral Earth languages, with Brightportish secondary.",
      "A counterweight to Brightport City.",
-     "Occasue rejected the monarchy. It has a president and a prime minister."
+     "Occasue rejected the monarchy. It has a president and a prime minister.",
+     "The president is head of state; the prime minister runs the government, as in France.",
+     "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore."
     ],
     "open": [
-     "Whether it has its own prime minister",
      "Whether it has its own constitution"
     ]
    },
@@ -1817,7 +1832,7 @@
   ],
   "parliaments": [
    [
-    "URBO National Parliament",
+    "URBO National Parliament (Assembly and Council of States)",
     "Brightport City",
     "Entire union"
    ],
@@ -1855,12 +1870,8 @@
    ]
   },
   "open": [
-   "How the federal executive is selected",
    "The federal government’s legislative powers",
    "Whether URBO law automatically overrides republic law",
-   "Seat numbers in either chamber",
-   "Whether upper-house seats are shared equally among states",
-   "How territories are represented",
    "Whether the republics have separate constitutions",
    "The federal judiciary",
    "Whether URBO has a unified military",
@@ -1868,6 +1879,68 @@
    "The status of the overseas territories",
    "Dates of the civil war, peace treaty and URBO’s formation",
    "How a dispute is brought to parliament, voted on, and whether the result is binding"
+  ],
+  "seats": {
+   "assembly": {
+    "solis": 65,
+    "floribus": 38,
+    "sur": 26,
+    "estercrystal": 24,
+    "weiden": 22,
+    "deserto": 3,
+    "norham": 2,
+    "kus": 49,
+    "ouest": 31,
+    "lochwater-state": 20,
+    "polvo": 19,
+    "montes": 1
+   },
+   "council": {
+    "solis": 3,
+    "floribus": 3,
+    "sur": 3,
+    "estercrystal": 3,
+    "weiden": 3,
+    "deserto": 1,
+    "norham": 3,
+    "kus": 3,
+    "ouest": 3,
+    "lochwater-state": 3,
+    "polvo": 3,
+    "montes": 1
+   }
+  },
+  "officeholders": [
+   [
+    "Souvren of Brightport",
+    "Élise I, House of Brightwell",
+    "Co-head of URBO with the URBO president. The first woman to reign."
+   ],
+   [
+    "President of URBO",
+    "Henrik Aalders",
+    "From Kus, a former mayor of Berevo. Elected by the whole nation."
+   ],
+   [
+    "Prime minister of URBO",
+    "Oliver Ashcombe",
+    "From Solis. Brightport holds the office this term."
+   ],
+   [
+    "Prime minister of Brightport",
+    "Nathaniel Fairbourne",
+    "From Solis. Heads the lower house of the Brightport Parliament."
+   ],
+   [
+    "President of Occasue",
+    "Amélie Rousseau-Kerr",
+    "From Ouest. Head of state of Occasue."
+   ],
+   [
+    "Prime minister of Occasue",
+    "Ewan Dunmore",
+    "From Lochwater. Runs the government of Occasue."
+   ]
   ]
  },
  "lochway_photo": {
