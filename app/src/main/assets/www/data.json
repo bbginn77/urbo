@@ -1528,12 +1528,12 @@
     }
    ],
    "borders": {
-    "Val-Doré": "river",
-    "Beaumarais": "line",
-    "Saint-Aubin-des-Pins": "line",
-    "Roche-Fontaine": "line",
-    "Les Pinèdes": "river",
-    "Côte-Fliwth": "river"
+    "Val-Doré": "line",
+    "Beaumarais": "river",
+    "Saint-Aubin-des-Pins": "river",
+    "Roche-Fontaine": "river",
+    "Les Pinèdes": "line",
+    "Côte-Fliwth": "line"
    }
   },
   "lochwater-state": {
