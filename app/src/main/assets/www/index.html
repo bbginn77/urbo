@@ -155,7 +155,12 @@ header.top .brand{position:relative}
 .lvlmenu summary{cursor:pointer;list-style-position:outside}.mflag{width:30px;height:20px;border:1px solid var(--line);flex:none}.msd{font:italic 14px "Fira Sans",sans-serif;color:var(--mute);padding:4px}
 .lvlbig{cursor:pointer}
 .uwframe{position:relative;width:100%;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:#061633}
-.uwfs{font:600 15px "Fira Sans",sans-serif;padding:8px 16px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer;margin-top:10px}.uwframe:fullscreen{border-radius:0;display:flex;align-items:center}
+.uwfs{font:600 15px "Fira Sans",sans-serif;padding:8px 16px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer;margin-top:10px}.uwframe:fullscreen{border-radius:0;display:block;width:100vw;height:100vh;background:#000}
+.fakefs{position:fixed!important;left:0;top:0;width:100vw!important;height:100vh!important;height:100dvh!important;z-index:10000;margin:0!important;border-radius:0!important;border:0!important;aspect-ratio:auto!important;background:#000!important}
+.fakefs.fsrot{left:100vw;width:100vh!important;width:100dvh!important;height:100vw!important;transform:rotate(90deg);transform-origin:0 0}
+body.fsopen{overflow:hidden}body.fsopen nav.sec{z-index:1}
+.fsclose{position:absolute;z-index:20;right:12px;top:12px;width:44px;height:44px;min-height:0;padding:0;border-radius:50%;border:0;background:#000b;color:#fff;font:700 20px sans-serif;cursor:pointer}
+#tvscr:fullscreen{width:100vw;height:100vh;border-radius:0;aspect-ratio:auto}#tvscr.fakefs .uwframe,#tvscr:fullscreen .uwframe{border:0;border-radius:0}
 .uwstage{position:absolute;left:0;top:0;width:960px;height:540px;transform-origin:0 0}.uwui{position:absolute;inset:0}
 .art{line-height:0}.art svg{display:block;width:100%;height:auto}
 .art.round svg,.art.map svg{border-radius:12px;border:1px solid var(--line)}
@@ -271,7 +276,7 @@ a.mnet:hover{border-color:#ee6a1a}
 .tvosd{position:absolute;z-index:5;left:10px;top:8px;font:700 15px "Fira Sans",sans-serif;background:#000a;padding:3px 10px;border-radius:6px;pointer-events:none;animation:tvosd 4s forwards}.tvosd b{color:#f4c21c}.tvosd span{font-weight:400;opacity:.8}
 @keyframes tvosd{0%,70%{opacity:1}100%{opacity:0}}
 .tvsub{position:absolute;z-index:6;right:8px;top:6px;display:flex;gap:6px}.tvsub .chip{min-height:28px;background:#000b;color:#fff;border-color:#fff6}.tvsub .chip[aria-pressed=true]{background:#f4c21c;color:#111}
-.tvcard{text-align:center;padding:18px;animation:tvin .4s}.tvcard h3{font-size:26px;margin:6px 0}.tvcard p{color:#d7deea;margin:4px 0}.tvlogo{height:100px;max-width:220px;object-fit:contain;background:#fff;border-radius:14px;padding:8px 12px;box-shadow:0 6px 18px #0009}.tvblock{font-size:44px}
+.tvscr{container-type:size}.tvcard{text-align:center;padding:18px;animation:tvin .4s}.tvcard h3{font-size:clamp(14px,5cqw,26px);margin:6px 0;line-height:1.2}.tvcard p{color:#d7deea;margin:4px 0}.tvlogo{height:clamp(40px,22cqh,100px);max-width:220px;object-fit:contain;background:#fff;border-radius:14px;padding:8px 12px;box-shadow:0 6px 18px #0009}.tvblock{font-size:clamp(24px,10cqh,44px)}
 .tvcard .chip{margin-top:6px}
 @keyframes tvin{from{opacity:0;filter:blur(6px) brightness(2)}}
 .tvbtns{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}.tvbtns .uwfs{margin:0}
@@ -459,12 +464,22 @@ function uwStage(page){if(UW.wrap)return UW.wrap;
   const API={S:{get screen(){return cur()?'watch':'off'},ch:0},CH:[{get urbo(){return cur()==='urbo'},get urbotr(){return cur()==='urbotr'},get bnn(){return cur()==='bnn'},get usport(){return cur()==='usport'}}],SET,has:()=>true,locked:()=>false,esc,fmtT:t=>new Date(t).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}),stage:st,ui,touch:false,save:()=>{},snd:{ok(){}},render:()=>route(),paused:()=>document.hidden};
   UW.apis=[window.URBOWX&&URBOWX(API)];window.URBOWX_API=UW.apis[0];
   UW.apis.push(window.URBOTR&&URBOTR(API));window.URBOTR_API=UW.apis[1];UW.apis.push(window.BNN&&BNN(API));UW.apis.push(window.USPORT&&USPORT(API));
-  new ResizeObserver(()=>{st.style.transform=`scale(${w.clientWidth/960})`;w.style.height=(w.clientWidth*540/960)+'px'}).observe(w);
+  const fit=()=>{const box=w.closest('.fakefs')||(document.fullscreenElement||document.webkitFullscreenElement);const full=box&&box.contains(w);if(full){w.style.height='100%';const W=w.clientWidth,H=w.clientHeight,k=Math.min(W/960,H/540);st.style.transform=`translate(${(W-960*k)/2}px,${(H-540*k)/2}px) scale(${k})`}else{st.style.transform=`scale(${w.clientWidth/960})`;w.style.height=(w.clientWidth*540/960)+'px'}};UW.fit=fit;
+  new ResizeObserver(fit).observe(w);['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,()=>setTimeout(fit,50)));
   return w}
-const chFS='<p><button class="uwfs" onclick="const w=document.querySelector(\'.uwframe\');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>';
+const chFS='<p><button class="uwfs" onclick="goFull()">Full screen</button></p>';
+function fakeFull(el){el.classList.add('fakefs');document.body.classList.add('fsopen');const rot=()=>el.classList.toggle('fsrot',innerHeight>innerWidth);rot();
+  const x=document.createElement('button');x.className='fsclose';x.setAttribute('aria-label','Exit full screen');x.textContent='✕';el.appendChild(x);
+  const end=()=>{el.classList.remove('fakefs','fsrot');document.body.classList.remove('fsopen');x.remove();removeEventListener('resize',rr);removeEventListener('hashchange',end);document.removeEventListener('keydown',ke);setTimeout(()=>UW.fit&&UW.fit(),30)};
+  const rr=()=>{rot();setTimeout(()=>UW.fit&&UW.fit(),30)},ke=e=>{if(e.key==='Escape')end()};x.onclick=e=>{e.stopPropagation();end()};
+  addEventListener('resize',rr);addEventListener('hashchange',end);document.addEventListener('keydown',ke);setTimeout(()=>UW.fit&&UW.fit(),30)}
+function goFull(){const el=document.querySelector('#tvscr')||document.querySelector('.uwframe');if(!el)return;
+  const req=el.requestFullscreen||el.webkitRequestFullscreen,ok=document.fullscreenEnabled||document.webkitFullscreenEnabled;
+  const isFs=()=>document.fullscreenElement||document.webkitFullscreenElement;let done=false;const fb=()=>{if(!done&&!isFs()){done=true;fakeFull(el)}};
+  if(ok&&req){try{const p=req.call(el);if(p&&p.then)p.then(()=>{try{screen.orientation.lock('landscape').catch(()=>{})}catch(e){}}).catch(fb);setTimeout(fb,400);return}catch(e){}}fakeFull(el)}
 V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">UBN News traffic and rail, on UBN News (channel 03): Lochway traffic across the nation, then each major city, the live rail map with every train, station arrival boards and airport delays caused by the weather. It loops about every three minutes. The same channel runs on NyxVision, channel 10. Traffic and trains are simulated.</p><div id="uwslot"></div>${chFS}`;
 V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">BPTV’s dedicated news channel, channel 14 in the national lineup (channel 11 on NyxVision). Everyday news with Brightport first: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. All stories are simulated. <a href="#mediatv">TV guide →</a></p><div id="uwslot"></div>${chFS}`;
-V.weather=()=>`<h1>Weather</h1><p class="lede">UBN News weather, on UBN News (channel 03): a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="const w=document.querySelector('.uwframe');(w.requestFullscreen||w.webkitRequestFullscreen||function(){}).call(w)">Full screen</button></p>`;
+V.weather=()=>`<h1>Weather</h1><p class="lede">UBN News weather, on UBN News (channel 03): a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="goFull()">Full screen</button></p>`;
 
 
 
@@ -877,7 +892,7 @@ V.mediatv=()=>{const M=MD(),T=window.__tv;setTimeout(()=>{mTvScreen();mTvGuide()
  return `${mhead('TV guide','26 channels: 18 public and 8 commercial. Pick a channel to tune in. UBN News (03), UBN Sport (04) and BNN (14) carry live simulated feeds; the rest show the channel ident.')}
  <div class="tvrx"><div class="tvleft"><div class="tvctl"><label>Watching in <select id="tvviewer">${['Brightport','Occasue'].map(v=>`<option${v===T.viewer?' selected':''}>${v}</option>`).join('')}</select></label><label>Audio <select id="tvlang">${M.langs.map(v=>`<option${v===T.lang?' selected':''}>${v}</option>`).join('')}</select></label><label class="tvchk"><input type="checkbox" id="tvpaid"${T.paid?' checked':''}> Paid TV package</label></div>
   <div class="tvbox"><div id="tvscr" class="tvscr" aria-live="polite"></div></div>
-  <div class="tvbtns"><button data-tvstep="-1" aria-label="Channel down">CH ▼</button><button data-tvstep="1" aria-label="Channel up">CH ▲</button>${chFS.replace('<p>','').replace('</p>','')}</div><div id="tvinfo" class="card"></div></div>
+  <div class="tvbtns"><button data-tvstep="-1" aria-label="Channel down">CH ▼</button><button data-tvstep="1" aria-label="Channel up">CH ▲</button><button class="uwfs" onclick="goFull()">Full screen</button></div><div id="tvinfo" class="card"></div></div>
   <div class="tvlist" role="group" aria-label="Channels">${grp}</div></div>
  <section><h2>Programme guide</h2>${MEX('This guide places approved programmes in sample time slots. It is not an official schedule. UBN Sport’s evening game comes from the real UBA season.')}
   <div class="mchips"><span class="meta">Network</span><button class="chip" data-tvnet="" aria-pressed="${!T.net}">All</button>${M.networks.map(n=>`<button class="chip" data-tvnet="${n.id}" aria-pressed="${T.net===n.id}">${n.name}</button>`).join('')}</div><div id="tvguide"></div></section>
