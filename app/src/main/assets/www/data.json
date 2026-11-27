@@ -196,7 +196,7 @@
    "Travel →": "Reizen →",
    "Lochways and railway lines.": "Lochways en spoorlijnen.",
    "About Kus": "Over Kus",
-   "Southwestern state, settled by Americans. Cities: Berevo and Costal City. After the war, Berevo is the capital of Occasue. The name comes from the Dutch word “kust,” coast, brought by early Dutch settlers.": "Zuidwestelijke staat, gesticht door Amerikanen. Steden: Berevo en Costal City. Na de oorlog is Berevo de hoofdstad van Occasue. De naam komt van het Nederlandse woord ‘kust’, meegebracht door de eerste Nederlandse kolonisten.",
+   "Southwestern state, settled mostly by the Dutch, with Americans too. Cities: Berevo and Costal City. After the war, Berevo is the capital of Occasue. The name comes from the Dutch word “kust,” coast, brought by early Dutch settlers.": "Zuidwestelijke staat, vooral door Nederlanders gekoloniseerd, met ook Amerikanen. Steden: Berevo en Costal City. Na de oorlog is Berevo de hoofdstad van Occasue. De naam komt van het Nederlandse woord ‘kust’, meegebracht door de eerste Nederlandse kolonisten.",
    "Kus is home to Berevo, the capital of Occasue and the political heart of the republic.": "In Kus ligt Berevo, de hoofdstad van Occasue en het politieke hart van de republiek.",
    "Republic Day: celebrates Occasue choosing a president over a monarch.": "Dag van de Republiek: viert dat Occasue voor een president koos in plaats van een vorst.",
    "Flag of Kus": "Vlag van Kus",
@@ -205,6 +205,7 @@
    "3rd richest of 12": "3e rijkste van 12",
    "5 rejions": "5 regio's",
    "Dutch settlers": "Nederlandse kolonisten",
+   "Dutch and American settlers": "Nederlandse en Amerikaanse kolonisten",
    "Occasue’s capital, Berevo": "Berevo, de hoofdstad van Occasue",
    "State of Kus": "Staat Kus",
    "Map of Kus": "Kaart van Kus",
@@ -670,7 +671,7 @@
   },
   "kus": {
    "nick": "The Golden Coast",
-   "heritage": "Dutch",
+   "heritage": "Dutch and American",
    "origin": "The name comes from the Dutch word “kust,” coast, brought by early Dutch settlers.",
    "known": "Kus is home to Berevo, the capital of Occasue and the political heart of the republic.",
    "trad": [
@@ -2738,7 +2739,7 @@
     "src-flags"
    ],
    "facts": [
-    "Southwestern state, settled by Americans.",
+    "Southwestern state, settled mostly by the Dutch, with Americans too.",
     "Cities: Berevo and Costal City.",
     "After the war, Berevo is the capital of Occasue."
    ],
