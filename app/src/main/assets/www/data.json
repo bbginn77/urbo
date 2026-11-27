@@ -4,7 +4,7 @@
    "Brightport and Occasue keep their own armed forces, joined under a permanent Joint Military Command. They are not merged into one federal force.",
    "Three branches: land, sea (maritime) and aerospace. Cyber defence runs through all three; there is no separate cyber or space force.",
    "Doctrine: defensive neutrality. URBO defends its sovereignty and stays out of foreign wars.",
-   "Supreme command belongs jointly to URBO’s two co-heads, the Souvren and the URBO president. As with every URBO matter, both must agree.",
+   "Supreme military command belongs jointly to the Souvren of Brightport and the President of Occasue, acting as the joint heads of state of URBO. Neither can exercise it alone.",
    "About 1.5 to 2 million people serve on active duty. A voluntary professional reserve of former personnel and trained volunteers backs them up.",
    "Defence spending is 2 to 3% of the economy.",
    "AI only advises: it helps with analysis and paperwork, but people make every decision.",
@@ -194,15 +194,15 @@
     "Bronze shield on a red-and-yellow ribbon"
    ]
   ],
-  "medals_note": "All decorations are federal; neither republic awards its own. The Order of the Federal Sun is presented by the Souvren and the URBO president together.",
+  "medals_note": "All decorations are federal; neither republic awards its own. The Order of the Federal Sun is presented jointly by the Souvren of Brightport and the President of Occasue.",
   "open": [
-   "How parliament oversees the forces",
    "When the Joint Military Command was founded",
    "The split of personnel between the republics, the reserve’s size and the exact budget",
    "Exemptions, appeals and penalties for national service, and service housing",
    "The full rank chart, and the order of the other five medals",
    "How long a Supreme Marshal serves, how they are chosen, and who holds the post now",
-   "Military sites outside Deserto, international agreements, veterans’ benefits, remembrance ceremonies and a Constitution Day parade"
+   "Military sites outside Deserto, international agreements, veterans’ benefits, remembrance ceremonies and a Constitution Day parade",
+   "How parliament oversees the forces"
   ]
  },
  "region": {
@@ -824,10 +824,10 @@
    "Every adult citizen gets the same monthly universal basic income. It is a safety net, not a replacement for a wage: people can work to earn more, and are expected to take part when they can.",
    "The universal basic income is Ⓑ1,200 a month, the same everywhere: Ⓑ12,000 a year.",
    "Yearly figures, such as average incomes, are counted in Nyreth years of ten months.",
-   "Income tax is progressive: the more you earn, the higher the rate. Rates and brackets are not decided yet.",
    "Paid work and recognised study both count as taking part.",
    "Refusing work without good reason carries social stigma and, step by step, government action: warnings, help finding work, and finally financial penalties. Not being able to find work is not the same as refusing it.",
-   "URBO is prosperous but not perfect: unemployment and homelessness still exist."
+   "URBO is prosperous but not perfect: unemployment and homelessness still exist.",
+   "Income tax is progressive. Most tax is collected federally and shared out to the republics by need, with extra support for poorer regions."
   ],
   "companies": [
    [
@@ -1322,7 +1322,7 @@
    {
     "name": "House of Kennedy",
     "years": "About 89 to 114 NSC",
-    "note": "The founding dynasty: an American old-money family descended from the Kennedy political family of Earth. A branch of the family took part in the first settlement of Nyreth. It lost public trust through elitism, political meddling and money scandals, and was disqualified by the Gardiens.",
+    "note": "The founding dynasty: an American old-money family descended from the Kennedy political family of Earth. A branch of the family took part in the first settlement of Nyreth. It lost public trust through elitism, political meddling and money scandals, and was disqualified by the Gardiens (under the rules of the time).",
     "rulers": [
      [
       "John I",
@@ -1402,7 +1402,7 @@
   "gardiens": {
    "who": [
     "The Council of Gardiens has nine members.",
-    "They are elected by the Brightport Parliament, not by the URBO parliament.",
+    "They are elected by the Brightport Parliament.",
     "Each serves an eight-year term. Terms are staggered, and members may be re-elected without limit.",
     "Gardiens must stay out of party politics while serving, and may not belong to a party.",
     "They come from mixed backgrounds: lawyers alongside people from other professions and public service."
@@ -1415,19 +1415,19 @@
    "powers": [
     [
      "Removing a Souvren",
-     "At least 6 votes of 9. Reserved for the most serious cases, like an impeachment and conviction."
+     "At least 6 votes of 9 (two thirds). Removing one Souvren does not by itself disqualify the family."
     ],
     [
      "Disqualifying a whole dynasty",
-     "At least 7 votes of 9. The family returns to ordinary citizenship and loses its titles."
+     "All 9 Gardiens must agree. The family returns to ordinary citizenship and loses its titles."
     ],
     [
      "Choosing a new dynasty",
-     "The public nominates families, the Gardiens screen them, and the nation votes."
+     "The Brightport Parliament nominates candidates, and the citizens of Brightport elect the new Souvren, who founds a new hereditary line."
     ],
     [
-     "During a change of dynasty",
-     "The Souvren Consort carries out the Souvren’s duties, if eligible and not involved in the removal."
+     "Regency",
+     "If the Souvren is incapacitated, the heir is under age, or the country is waiting to elect a new dynasty, the Gardiens appoint a temporary Regent. The Regent also carries out Brightport’s share of the federal head-of-state duties. The Souvren Consort has no automatic right to the role."
     ],
     [
      "Misconduct by a Gardien",
@@ -1656,6 +1656,22 @@
    "Swisswa Heritage": "Patrimoine de Swisswa",
    "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Tout petit parti local des loyalistes schoon de Swisswa. Défend la culture et la langue schoon ; il ne se présente qu'aux élections locales en Ouest.",
    "The only party that runs in both republics.": "Le seul parti présent dans les deux républiques.",
+   "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.": "Occasue conserve son régime républicain ainsi que ses langues et cultures ancestrales venues de la Terre, le brightportais venant en second.",
+   "The President of Occasue is head of state of Occasue and a joint head of state of URBO.": "La présidente d'Occasue est cheffe de l'État d'Occasue et cocheffe de l'État de l'URBO.",
+   "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.": "Le président et le vice-président sont élus ensemble par les seuls citoyens d'Occasue, pour cinq ans et sans limite de mandats, au scrutin à deux tours : plus de 50 % des voix l'emportent au premier tour, sinon les deux premiers s'affrontent au second.",
+   "Joint head of state of URBO · President of Occasue": "Cocheffe de l'État de l'URBO · Présidente d'Occasue",
+   "From Ouest. Elected by Occasue citizens.": "Originaire d'Ouest. Élue par les citoyens d'Occasue.",
+   "Vice President of Occasue": "Vice-président d'Occasue",
+   "Not yet named": "Pas encore désigné",
+   "No party": "Sans parti",
+   "Elected on a joint ticket with the President.": "Élu sur un ticket commun avec la présidente.",
+   "Prime Minister of Occasue": "Premier ministre d'Occasue",
+   "From Lochwater. Elected by the Occasue Parliament.": "Originaire de Lochwater. Élu par le Parlement d'Occasue.",
+   "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.": "Le vice-président est chef de l'État adjoint en Occasue ; il devient président, et cochef de l'État de l'URBO, si le président meurt, démissionne ou est destitué.",
+   "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.": "Le Parlement d'Occasue compte 120 sièges élus à la proportionnelle. Il élit le Premier ministre d'Occasue, qui dirige le gouvernement au quotidien, et peut engager une procédure de destitution contre le président. La Haute Cour de l'URBO décide s'il existe des motifs constitutionnels de destitution.",
+   "Occasue has its own constitution, which must comply with the federal constitution.": "Occasue a sa propre constitution, qui doit respecter la constitution fédérale.",
+   "Elected governor and state legislature": "Gouverneur et assemblée d'État élus",
+   "Administrator appointed by the Occasue government": "Administrateur nommé par le gouvernement d'Occasue",
    "Official website of the State of Ouest · Republic of Occasue · URBO": "Site officiel de l'État d'Ouest · République d'Occasue · URBO",
    "Comitatus": "Comitatus",
    "State of the Republic of Occasue": "État de la République d'Occasue",
@@ -1814,6 +1830,22 @@
    "Swisswa Heritage": "Erfgoed Swisswa",
    "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Piepkleine lokale partij van de Schoon-loyalisten in Swisswa. Beschermt de Schoonse cultuur en taal; doet alleen mee aan lokale verkiezingen in Ouest.",
    "The only party that runs in both republics.": "De enige partij die in beide republieken meedoet.",
+   "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.": "Occasue behoudt zijn republikeinse stelsel en zijn voorouderlijke talen en culturen van de Aarde, met het Brightports op de tweede plaats.",
+   "The President of Occasue is head of state of Occasue and a joint head of state of URBO.": "De president van Occasue is staatshoofd van Occasue en een van de twee staatshoofden van URBO.",
+   "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.": "De president en de vicepresident worden samen gekozen, alleen door burgers van Occasue, voor vijf jaar en zonder termijnlimiet, in twee rondes: wie meer dan 50% haalt wint meteen, anders gaan de twee koplopers naar een tweede ronde.",
+   "Joint head of state of URBO · President of Occasue": "Gezamenlijk staatshoofd van URBO · President van Occasue",
+   "From Ouest. Elected by Occasue citizens.": "Uit Ouest. Gekozen door de burgers van Occasue.",
+   "Vice President of Occasue": "Vicepresident van Occasue",
+   "Not yet named": "Nog niet benoemd",
+   "No party": "Geen partij",
+   "Elected on a joint ticket with the President.": "Gekozen op een gezamenlijk ticket met de president.",
+   "Prime Minister of Occasue": "Minister-president van Occasue",
+   "From Lochwater. Elected by the Occasue Parliament.": "Uit Lochwater. Gekozen door het Parlement van Occasue.",
+   "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.": "De vicepresident is plaatsvervangend staatshoofd binnen Occasue en wordt president, en gezamenlijk staatshoofd van URBO, als de president overlijdt, aftreedt of wordt afgezet.",
+   "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.": "Het Parlement van Occasue heeft 120 zetels, gekozen via evenredige vertegenwoordiging. Het kiest de minister-president van Occasue, die de dagelijkse regering leidt, en kan een afzettingsprocedure tegen de president beginnen. Het Hooggerechtshof van URBO beslist of er grondwettelijke gronden voor afzetting zijn.",
+   "Occasue has its own constitution, which must comply with the federal constitution.": "Occasue heeft een eigen grondwet, die moet passen binnen de federale grondwet.",
+   "Elected governor and state legislature": "Gekozen gouverneur en staatswetgever",
+   "Administrator appointed by the Occasue government": "Bestuurder benoemd door de regering van Occasue",
    "Official website of the State of Kus · Republic of Occasue · URBO": "Officiële website van de Staat Kus · Republiek Occasue · URBO",
    "Rejions": "Regio's",
    "Official website · State of the Republic of Occasue": "Officiële website · Staat van de Republiek Occasue",
@@ -1978,6 +2010,22 @@
    "Swisswa Heritage": "Dualchas Swisswa",
    "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Pàrtaidh ionadail beag bìodach aig dìlseachdan Schoon ann an Swisswa. Dìonaidh e cultar is cànan Schoon; cha bhi e a' seasamh ach ann an taghaidhean ionadail ann an Ouest.",
    "The only party that runs in both republics.": "An aon phàrtaidh a sheasas anns an dà phoblachd.",
+   "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.": "Tha Occasue a' cumail a siostam poblachdach agus cànanan is cultaran sinnsireil na Talmhainn, le Brightportis san dàrna àite.",
+   "The President of Occasue is head of state of Occasue and a joint head of state of URBO.": "'S e Ceann-suidhe Occasue ceann-stàite Occasue agus aon de dhà cheann-stàite URBO.",
+   "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.": "Tha an Ceann-suidhe agus an Leas-cheann-suidhe air an taghadh còmhla le saoranaich Occasue a-mhàin, airson còig bliadhna gun chrìoch air teirmean, ann an taghadh dà-chuairt: buannaichidh còrr is 50% sa chiad chuairt, air neo thèid an dithis as àirde gu dàrna cuairt.",
+   "Joint head of state of URBO · President of Occasue": "Co-cheann-stàite URBO · Ceann-suidhe Occasue",
+   "From Ouest. Elected by Occasue citizens.": "À Ouest. Air a taghadh le saoranaich Occasue.",
+   "Vice President of Occasue": "Leas-cheann-suidhe Occasue",
+   "Not yet named": "Gun ainmeachadh fhathast",
+   "No party": "Gun phàrtaidh",
+   "Elected on a joint ticket with the President.": "Air a thaghadh air tiocaid còmhla ris a' Cheann-suidhe.",
+   "Prime Minister of Occasue": "Prìomhaire Occasue",
+   "From Lochwater. Elected by the Occasue Parliament.": "À Lochwater. Air a thaghadh le Pàrlamaid Occasue.",
+   "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.": "'S e an Leas-cheann-suidhe leas-cheann-stàite Occasue, agus bidh e na Cheann-suidhe, agus na cho-cheann-stàite URBO, ma gheibh an Ceann-suidhe bàs, ma leigeas e dheth a dhreuchd no ma thèid a chur às.",
+   "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.": "Tha 120 suidheachan aig Pàrlamaid Occasue, air an taghadh le riochdachadh co-roinneil. Taghaidh i Prìomhaire Occasue, a ruitheas an riaghaltas gach latha, agus faodaidh i cùis-dìteadh a thòiseachadh an aghaidh a' Chinn-suidhe. Co-dhùnaidh Àrd-chùirt URBO a bheil adhbharan bun-reachdail ann.",
+   "Occasue has its own constitution, which must comply with the federal constitution.": "Tha a bun-reachd fhèin aig Occasue, a dh'fheumas a bhith a rèir a' bhun-reachd fheadarail.",
+   "Elected governor and state legislature": "Riaghladair is reachdadaireachd stàite taghte",
+   "Administrator appointed by the Occasue government": "Rianadair air a chur an dreuchd le riaghaltas Occasue",
    "Official website of the State of Lochwater · Republic of Occasue · URBO": "Làrach-lìn oifigeil Stàit Lochwater · Poblachd Occasue · URBO",
    "Lochwater (state)": "Lochwater (stàit)",
    "Shires": "Siorrachdan",
@@ -2136,6 +2184,22 @@
    "Swisswa Heritage": "Patrimonio de Swisswa",
    "Tiny local party of the Schoon loyalists in Swisswa. Protects Schoon culture and language; it only stands in local elections in Ouest.": "Diminuto partido local de los leales a Schoon en Swisswa. Defiende la cultura y la lengua schoon; solo se presenta a elecciones locales en Ouest.",
    "The only party that runs in both republics.": "El único partido presente en las dos repúblicas.",
+   "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.": "Occasue conserva su sistema republicano y sus lenguas y culturas ancestrales de la Tierra, con el brightportés en segundo lugar.",
+   "The President of Occasue is head of state of Occasue and a joint head of state of URBO.": "La presidenta de Occasue es jefa de Estado de Occasue y una de las dos jefas de Estado conjuntas de URBO.",
+   "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.": "El presidente y el vicepresidente se eligen juntos, solo por los ciudadanos de Occasue, por cinco años y sin límite de mandatos, en dos vueltas: con más del 50% se gana en la primera; si no, los dos primeros van a una segunda vuelta.",
+   "Joint head of state of URBO · President of Occasue": "Jefa de Estado conjunta de URBO · Presidenta de Occasue",
+   "From Ouest. Elected by Occasue citizens.": "De Ouest. Elegida por los ciudadanos de Occasue.",
+   "Vice President of Occasue": "Vicepresidente de Occasue",
+   "Not yet named": "Aún sin nombrar",
+   "No party": "Sin partido",
+   "Elected on a joint ticket with the President.": "Elegido en fórmula conjunta con la presidenta.",
+   "Prime Minister of Occasue": "Primer ministro de Occasue",
+   "From Lochwater. Elected by the Occasue Parliament.": "De Lochwater. Elegido por el Parlamento de Occasue.",
+   "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.": "El vicepresidente es jefe de Estado adjunto en Occasue y pasa a ser presidente, y jefe de Estado conjunto de URBO, si el presidente muere, renuncia o es destituido.",
+   "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.": "El Parlamento de Occasue tiene 120 escaños elegidos por representación proporcional. Elige al primer ministro de Occasue, que dirige el gobierno día a día, y puede iniciar un juicio político contra el presidente. El Tribunal Supremo de URBO decide si hay motivos constitucionales para destituirlo.",
+   "Occasue has its own constitution, which must comply with the federal constitution.": "Occasue tiene su propia constitución, que debe cumplir la constitución federal.",
+   "Elected governor and state legislature": "Gobernador y legislatura estatal electos",
+   "Administrator appointed by the Occasue government": "Administrador nombrado por el gobierno de Occasue",
    "Official website of the State of Polvo · Republic of Occasue · URBO": "Sitio oficial del Estado de Polvo · República de Occasue · URBO",
    "Rejions": "Regiones",
    "★ Welcome to the Official Web Site of the State of Polvo ★": "★ Bienvenidos al Sitio Web Oficial del Estado de Polvo ★",
@@ -3470,26 +3534,18 @@
     "level": 1,
     "name": "URBO federal government",
     "seat": "Brightport City",
-    "body": "URBO National Parliament: the Assembly and the Council of States",
+    "body": "URBO National Parliament: Assembly (300) and Council of States (32)",
     "facts": [
-     "Addresses matters affecting the union as a whole.",
-     "A forum where disputes between the two republics are resolved collectively, with the states taking part.",
-     "URBO has a president and a prime minister: a French-style system with elements of the British Commonwealth.",
-     "The URBO president and the Souvren of Brightport rule the union jointly.",
-     "The URBO president is a separate office from the president of Occasue. The URBO president is elected by popular vote every five years, with no limit on terms.",
-     "The URBO president and the Souvren are co-heads of the union, a little like Andorra’s two co-princes. Unlike Andorra’s, they cannot act separately: they must agree together on URBO matters.",
-     "When the president and the Souvren disagree, the parliament and the high court mediate and keep the balance of power.",
-     "The Assembly (lower house) has 300 seats, one for about every million people, shared out by population. Every state and territory has at least one.",
-     "The Council of States (upper house) has 32 seats: 3 for each of the 10 states and 1 for each territory.",
-     "Parliament is elected for 5 years, in step with the URBO president.",
-     "The URBO prime minister alternates between the republics: after each parliamentary election, the office passes to the other republic.",
-     "Current: Souvren Élise I and President Henrik Aalders; Prime Minister Oliver Ashcombe (Brightport’s term).",
-     "URBO has six official languages: English, Brightportish, French, Spanish, Dutch and Scottish Gaelic."
+     "URBO is a balanced federation of two republics under a common federal constitution, a bicameral parliament, one court system and a shared citizenship.",
+     "The joint heads of state are the Souvren of Brightport and the President of Occasue. Each is also head of state of their own republic. They have equal federal authority: neither outranks the other, and any federal decision that needs head-of-state approval needs both.",
+     "If the two disagree, the URBO National Parliament mediates and proposes compromises, but cannot impose a decision. Legal and constitutional disputes go to the URBO High Court.",
+     "The Prime Minister of URBO runs the federal government. The joint heads of state appoint the prime minister, who must keep the confidence of Parliament.",
+     "The federal prime ministership passes to the other republic after every scheduled five-year federal election. The deputy prime minister always comes from the other republic, and cabinet posts (apart from the PM) are split equally between the republics.",
+     "Every federal bill must pass both chambers, which have equal power, and then receive assent from both heads of state. Parliament cannot override a refusal.",
+     "The federal constitution and federal law take precedence over republican constitutions and laws.",
+     "Most taxes are collected federally and shared out to the republics according to population, economic development, infrastructure and public-service needs, with extra support for poorer regions."
     ],
-    "open": [
-     "Division of powers with the republics",
-     "Whether URBO law overrides republic law"
-    ]
+    "open": []
    },
    {
     "id": "rep-bp",
@@ -3498,19 +3554,15 @@
     "seat": "Brightport City",
     "body": "Brightport Parliament (120 seats)",
     "facts": [
-     "Passes laws for Brightport and keeps its own political and cultural identity.",
-     "Six states and Deserto Territory.",
-     "Uses Brightportish more widely, especially in national institutions.",
-     "Head of state and sovereign: the Souvren, a monarch in the Belgian style, a people’s sovereign rather than a ruler of the land.",
-     "Brightportish people are proud of their Souvren.",
-     "The name “Republic of Brightport” stuck from the early days. With the Souvren in place, people saw no need to change it.",
-     "The Souvren’s line is hereditary (eldest child first, whatever their gender), under the Gardiens: a council of nine, elected by the Brightport Parliament for staggered eight-year terms. The Gardiens decide whether the Souvren is fit to serve and whether their family is fit to continue the line. If not, the nation votes for a new line.",
-     "Brightport has its own prime minister, who heads the lower house of the Brightport Parliament.",
-     "Current Souvren: Élise I of the House of Brightwell, the first woman to reign. Prime minister: Nathaniel Fairbourne."
+     "Brightport keeps its hereditary monarchy despite its historical name as a republic. The Souvren is the sovereign of the people, not the ruler of the land.",
+     "The Souvren is head of state of Brightport and a joint head of state of URBO.",
+     "The Brightport Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Brightport, elects the nine Gardiens, and nominates candidates when a new royal dynasty is needed.",
+     "The prime minister runs Brightport’s day-to-day government, separately from the federal prime minister.",
+     "Brightport has its own constitution, which must comply with the federal constitution.",
+     "Six states and Deserto Territory. Brightportish language and culture are emphasised.",
+     "Current Souvren: Élise I of the House of Brightwell. Prime minister: Nathaniel Fairbourne."
     ],
-    "open": [
-     "Whether it has its own constitution"
-    ]
+    "open": []
    },
    {
     "id": "rep-oc",
@@ -3519,28 +3571,27 @@
     "seat": "Berevo (Kus)",
     "body": "Occasue Parliament (120 seats)",
     "facts": [
-     "Passes laws for Occasue and keeps its own political and cultural identity.",
+     "Occasue keeps its republican system and its ancestral Earth languages and cultures, with Brightportish secondary.",
+     "The President of Occasue is head of state of Occasue and a joint head of state of URBO.",
+     "The President and Vice President are elected together by Occasue citizens only, for five years with no term limit, in a two-round election: over 50% wins outright, otherwise the top two go to a runoff.",
+     "The Vice President is deputy head of state within Occasue, and becomes President, and joint head of URBO, if the President dies, resigns or is removed.",
+     "The Occasue Parliament has 120 seats elected by proportional representation. It elects the Prime Minister of Occasue, who runs day-to-day government, and can start impeachment proceedings against the President. The URBO High Court decides whether there are constitutional grounds for removal.",
+     "Occasue has its own constitution, which must comply with the federal constitution.",
      "Four states and Montes Territory.",
-     "Favours ancestral Earth languages, with Brightportish secondary.",
-     "A counterweight to Brightport City.",
-     "Occasue rejected the monarchy. It has a president and a prime minister.",
-     "The president is head of state; the prime minister runs the government, as in France.",
      "Current president: Amélie Rousseau-Kerr. Prime minister: Ewan Dunmore."
     ],
-    "open": [
-     "Whether it has its own constitution"
-    ]
+    "open": []
    },
    {
     "id": "states",
     "level": 3,
     "name": "State governments",
     "seat": "Each state",
-    "body": "State legislatures",
+    "body": "Elected governors and legislatures",
     "facts": [
-     "Handle matters within their jurisdiction, broadly like US state legislatures.",
-     "Take part in representing their republic within the federal system.",
-     "Each state is one ray on its republic’s sun."
+     "URBO has ten semi-autonomous states, each with an elected governor and an elected legislature.",
+     "States make laws on limited matters and run some local affairs, infrastructure and public services, within republican and federal law.",
+     "The six Brightport states are the six rays of Brightport’s sun; the four Occasue states are the four rays of Occasue’s sun."
     ]
    },
    {
@@ -3548,15 +3599,14 @@
     "level": 4,
     "name": "Territorial governments",
     "seat": "Deserto, Montes",
-    "body": "Territorial administrations",
+    "body": "Administrators appointed by the republics",
     "facts": [
-     "Parallel to states, not beneath them.",
-     "Remain territories because of remoteness and harsh terrain; Deserto has developed around Ft. Deserto.",
-     "Do not count toward flag rays."
+     "Deserto (Brightport) and Montes (Occasue) are run directly by their republic’s government, through an appointed administrator. They have no elected state government.",
+     "Territories sit alongside states, not beneath them, and do not count as rays on the flags.",
+     "Each territory directly elects one member of the Council of States and keeps its Assembly seats."
     ],
     "open": [
-     "Legislative representation",
-     "Degree of autonomy"
+     "Status of the four overseas territories"
     ]
    }
   ],
@@ -3600,15 +3650,24 @@
    ]
   },
   "open": [
-   "The federal government’s legislative powers",
-   "Whether URBO law automatically overrides republic law",
-   "Whether the republics have separate constitutions",
-   "The federal judiciary",
-   "Whether URBO has a unified military",
-   "Federal taxation and budget powers",
-   "The status of the overseas territories",
-   "Dates of the civil war, peace treaty and URBO’s formation",
-   "How a dispute is brought to parliament, voted on, and whether the result is binding"
+   "How legislative powers are divided in detail",
+   "Cabinet ministries and ministers, and the deputy prime minister",
+   "Confidence votes, mediation, emergency powers and dissolution",
+   "Exact supermajorities for amending the constitution",
+   "Assembly constituency and list-seat split, thresholds and formulas",
+   "How the elected Council members are voted in",
+   "Exact election dates in NSC, and official results",
+   "State and municipal elections",
+   "Number of High Court judges and how they are appointed",
+   "Republican cabinets, assent and succession rules",
+   "Impeachment thresholds and vice-presidential vacancies in Occasue",
+   "Tax rates and the funding formula",
+   "Language and test requirements for naturalisation, and which countries have dual-nationality agreements",
+   "Whether the Treaty of Berevo’s dual-citizenship rights still apply",
+   "Status of the four overseas territories and of the capital district",
+   "How territorial administrators are appointed",
+   "What the five rings and blue centre of the Assembly chamber mean",
+   "Which prime minister uses the Prime Minister’s Palace"
   ],
   "seats": {
    "assembly": {
@@ -3642,40 +3701,46 @@
   },
   "officeholders": [
    [
-    "Souvren of Brightport",
+    "Joint head of state of URBO · Souvren of Brightport",
     "Élise I, House of Brightwell",
     null,
-    "Co-head of URBO with the URBO president. The first woman to reign. Above party politics."
+    "Hereditary, under the Gardiens. The first woman to reign. Above party politics."
    ],
    [
-    "President of URBO",
-    "Henrik Aalders",
-    "wl",
-    "From Kus, a former mayor of Berevo. Elected by the whole nation."
-   ],
-   [
-    "Prime minister of URBO",
-    "Oliver Ashcombe",
-    "cup",
-    "From Solis. Brightport holds the office this term."
-   ],
-   [
-    "Prime minister of Brightport",
-    "Nathaniel Fairbourne",
-    "cup",
-    "From Solis. Heads the lower house of the Brightport Parliament."
-   ],
-   [
-    "President of Occasue",
+    "Joint head of state of URBO · President of Occasue",
     "Amélie Rousseau-Kerr",
     "rl",
-    "From Ouest. Head of state of Occasue."
+    "From Ouest. Elected by Occasue citizens."
    ],
    [
-    "Prime minister of Occasue",
+    "Prime Minister of URBO",
+    "Oliver Ashcombe",
+    "cup",
+    "From Solis. Brightport holds the federal prime ministership this term."
+   ],
+   [
+    "Deputy Prime Minister of URBO",
+    "Not yet named",
+    null,
+    "Must come from Occasue while Brightport holds the prime ministership."
+   ],
+   [
+    "Prime Minister of Brightport",
+    "Nathaniel Fairbourne",
+    "cup",
+    "From Solis. Elected by the Brightport Parliament."
+   ],
+   [
+    "Vice President of Occasue",
+    "Not yet named",
+    null,
+    "Elected on a joint ticket with the President."
+   ],
+   [
+    "Prime Minister of Occasue",
     "Ewan Dunmore",
     "rl",
-    "From Lochwater. Runs the government of Occasue."
+    "From Lochwater. Elected by the Occasue Parliament."
    ]
   ],
   "parties": [
@@ -3955,7 +4020,85 @@
    "montes": {
     "wl": 1
    }
-  }
+  },
+  "exec": [
+   [
+    "Appointment",
+    "The Souvren and the President jointly appoint the federal prime minister, who must keep Parliament’s confidence."
+   ],
+   [
+    "Rotation",
+    "The prime ministership passes to the other republic after every scheduled five-year federal election. The rotation belongs to the republic, not the person."
+   ],
+   [
+    "Removal",
+    "By a parliamentary vote of no confidence, or by a joint decision of both heads of state. Neither can dismiss the prime minister alone."
+   ],
+   [
+    "Mid-term vacancy",
+    "If the prime minister dies, resigns or is removed, the heads of state appoint a replacement from the same republic for the rest of the term. This does not trigger the rotation."
+   ],
+   [
+    "Deputy",
+    "Always from the other republic."
+   ],
+   [
+    "Cabinet",
+    "The prime minister appoints the deputy and the ministers, half from each republic. The heads of state do not need to approve them."
+   ]
+  ],
+  "parl": {
+   "assembly": [
+    "300 seats, shared out by population; every state and territory has at least one.",
+    "Elected by mixed-member proportional representation: each voter casts a constituency vote for a local member and a party vote. Party-list seats top up the constituency seats so the result is proportional."
+   ],
+   "council": [
+    "32 seats: three for each of the ten states and one for each territory (19 for Brightport, 13 for Occasue).",
+    "Of each state’s three members, two are elected by its citizens and one is appointed by the state legislature. Each territory elects its one member directly: 22 elected and 10 appointed in all."
+   ],
+   "both": [
+    "The two chambers have equal power. Every federal bill must pass both, and neither can override the other.",
+    "Every bill then needs assent from both the Souvren and the President. Parliament cannot override a refusal, but may mediate and encourage a compromise.",
+    "Elections every five years. The scheduled election triggers the rotation of the federal prime ministership."
+   ]
+  },
+  "constitution": [
+   "URBO has three constitutions: the Constitution of URBO, the Constitution of the Republic of Brightport and the Constitution of the Republic of Occasue.",
+   "The federal constitution is supreme. Republican constitutions must comply with it, and federal law prevails over republican law. State laws must comply with both.",
+   "Amending the URBO Constitution needs a supermajority in both chambers of the URBO parliament, approval from both the Brightport and the Occasue parliaments, and consent from both heads of state. Neither republic can have an amendment imposed on it."
+  ],
+  "judiciary": [
+   "One integrated court system. Brightport and Occasue run their own courts.",
+   "The URBO High Court is the highest court of appeal for every case, the final word on the federal constitution, and the court for constitutional disputes between governments and between the heads of state.",
+   "It also decides whether there are constitutional grounds to remove the President of Occasue."
+  ],
+  "funding": [
+   "Most tax is collected by the federal government and shared out to Brightport and Occasue, which run their own budgets and public services.",
+   "The share depends on population, economic development, infrastructure and public-service needs. Poorer regions get extra support to narrow the gaps."
+  ],
+  "calendar": [
+   [
+    "Start of the five-year federal term",
+    "The URBO Assembly, the elected members of the Council of States, and the President and Vice President of Occasue. The federal prime ministership rotates."
+   ],
+   [
+    "Halfway (2½ years in)",
+    "The Brightport and Occasue parliaments, which then elect their prime ministers."
+   ],
+   [
+    "End of the term",
+    "The cycle repeats."
+   ]
+  ],
+  "citizenship": [
+   "Every citizen holds URBO citizenship plus citizenship of either Brightport or Occasue. Each republic issues its own passport: yellow for Brightport, red for Occasue.",
+   "Citizens may travel, live, work, study and use public services in either republic without any permit.",
+   "Federal voting rights are shared. Republican voting rights follow republican citizenship: a Brightport citizen living in Occasue cannot vote in Occasue’s republican or presidential elections.",
+   "A citizen may apply to change republican citizenship after living five years in the other republic.",
+   "Children born in URBO take the republican citizenship of the republic they are born in. Children born abroad to URBO citizens take their parent’s republican citizenship; if the parents differ, the parents choose.",
+   "Foreign nationals may apply after ten years’ legal residence, with good conduct, a language of their new republic, knowledge of its government and history, and an oath of allegiance to URBO. Dual nationality is allowed only with countries that have a reciprocal agreement with URBO."
+  ],
+  "note_results": "The seat counts and governing coalitions shown are proposals awaiting a review of the election results."
  },
  "lochway_photo": {
   "current": "ai-sign-bi",
