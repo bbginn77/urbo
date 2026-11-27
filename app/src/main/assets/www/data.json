@@ -1,4 +1,47 @@
 {
+ "tz": {
+  "zones": [
+   {
+    "id": "bt",
+    "name": "Brightport Time",
+    "short": "BT",
+    "off": 0,
+    "note": "The east, including Brightport City and Norham."
+   },
+   {
+    "id": "ut",
+    "name": "Union Time",
+    "short": "UT",
+    "off": 1,
+    "note": "The middle of the union, across both republics. One hour ahead of Brightport Time.",
+    "proposal": true
+   },
+   {
+    "id": "ot",
+    "name": "Occasue Time",
+    "short": "OT",
+    "off": 2,
+    "note": "The west coast, including Berevo. Two hours ahead of Brightport Time."
+   }
+  ],
+  "of": {
+   "solis": "bt",
+   "floribus": "bt",
+   "weiden": "bt",
+   "norham": "bt",
+   "brightport-east": "bt",
+   "urbo": "bt",
+   "sur": "ut",
+   "deserto": "ut",
+   "estercrystal": "ut",
+   "lochwater-state": "ut",
+   "polvo": "ut",
+   "montes": "ut",
+   "kus": "ot",
+   "ouest": "ot",
+   "occasue": "ot"
+  }
+ },
  "calendar": {
   "anchor": "2026-11-26T05:00:00Z",
   "anchor_date": [
@@ -234,7 +277,8 @@
    "A day lasts 26 Earth hours. Clocks are decimal: 10 hours in a day, 100 minutes in an hour, 100 seconds in a minute. A clock reading 5.42 is just past the middle of the day.",
    "Dates are written month/day/year, for example 08/15/0119 NSC.",
    "Nyreth has ten time zones, one hour apart, measured from an international observatory. Standard time is called NST.",
-   "Public holidays fall on fixed dates. A holiday that lands on a Recess day gets a replacement rest day. Each state may add three holidays of its own."
+   "Public holidays fall on fixed dates. A holiday that lands on a Recess day gets a replacement rest day. Each state may add three holidays of its own.",
+   "URBO covers three time zones. The sun rises in the west, so the west is ahead: Occasue Time is two hours ahead of Brightport Time, with Union Time in between."
   ],
   "langs": [
    "English",
