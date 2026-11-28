@@ -375,6 +375,16 @@ body.bpmode #view :is(.obent,.scpair,.stack td,.bctab td,.fcb,.fcf,.exprompt,.po
 body.bpmode #view .ipa.ipa.ipa,body.bpmode #view .ipa.ipa.ipa *,body.bpmode #view .ipast.ipast{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI","Lucida Sans Unicode",sans-serif!important}
 body.bpmode #view .ipast.ipast{font-family:"Fira Sans",sans-serif!important}
 
+/* URBO speech */
+.say{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;margin:0 6px 0 0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--ink);cursor:pointer;vertical-align:middle;flex:none}
+.say:hover{background:var(--soft)}.say.saying,.sayl.saying,.uwsay.saying{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+.sayl{display:inline-flex;align-items:center;gap:6px}
+.say svg,.sayl svg{pointer-events:none}
+.uwctl{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.uwctl .uwfs{margin-top:10px}.uwauto{margin-top:10px;font:500 14px "Fira Sans",sans-serif;display:inline-flex;gap:6px;align-items:center}
+.alsay{margin-top:10px}
+@keyframes saypulse{50%{opacity:.6}}.saying svg{animation:saypulse 1s infinite}
+.uwfs{vertical-align:middle}.uwfs+.uwsay{margin-left:8px}.uwauto{margin-left:4px}
+
 /* SCHOON-CSS */
 .tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
 .schero{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid #203e58;border-radius:12px;padding:14px 18px;margin:4px 0 22px}.scemb{width:120px;flex:none;border-radius:8px}
@@ -540,7 +550,7 @@ function uwStage(page){if(UW.wrap)return UW.wrap;
   const fit=()=>{const box=w.closest('.fakefs')||(document.fullscreenElement||document.webkitFullscreenElement);const full=box&&box.contains(w);if(full){w.style.height='100%';const W=w.clientWidth,H=w.clientHeight,k=Math.min(W/960,H/540);st.style.transform=`translate(${(W-960*k)/2}px,${(H-540*k)/2}px) scale(${k})`}else{st.style.transform=`scale(${w.clientWidth/960})`;w.style.height=(w.clientWidth*540/960)+'px'}};UW.fit=fit;
   new ResizeObserver(fit).observe(w);['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,()=>setTimeout(fit,50)));
   return w}
-const chFS='<p><button class="uwfs" onclick="goFull()">Full screen</button></p>';
+const chFS='<p><button class="uwfs" onclick="goFull()">Full screen</button><button type="button" class="uwfs uwsay sayl" data-uwsay><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Listen</button><label class="uwauto"><input type="checkbox" data-uwauto> Read new stories aloud</label></p>';
 function fakeFull(el){el.classList.add('fakefs');document.body.classList.add('fsopen');const rot=()=>el.classList.toggle('fsrot',innerHeight>innerWidth);rot();
   const x=document.createElement('button');x.className='fsclose';x.setAttribute('aria-label','Exit full screen');x.textContent='✕';el.appendChild(x);
   const end=()=>{el.classList.remove('fakefs','fsrot');document.body.classList.remove('fsopen');x.remove();removeEventListener('resize',rr);removeEventListener('hashchange',end);document.removeEventListener('keydown',ke);setTimeout(()=>UW.fit&&UW.fit(),30)};
@@ -552,7 +562,7 @@ function goFull(){const el=document.querySelector('#tvscr')||document.querySelec
   if(ok&&req){try{const p=req.call(el);if(p&&p.then)p.then(()=>{try{screen.orientation.lock('landscape').catch(()=>{})}catch(e){}}).catch(fb);setTimeout(fb,400);return}catch(e){}}fakeFull(el)}
 V.traffic=()=>`<h1>Traffic &amp; rail</h1><p class="lede">UBN News traffic and rail, on UBN News (channel 03): Lochway traffic across the nation, then each major city, the live rail map with every train, station arrival boards and airport delays caused by the weather. It loops about every three minutes. The same channel runs on NyxVision, channel 10. Traffic and trains are simulated.</p><div id="uwslot"></div>${chFS}`;
 V.news=()=>`<h1>BNN · Brightport News Network</h1><p class="lede">BPTV’s dedicated news channel, channel 14 in the national lineup (channel 11 on NyxVision). Everyday news with Brightport first: weather, the Lochways, the railway, ports, culture and sports. A new story every 12 seconds. All stories are simulated. <a href="#mediatv">TV guide →</a></p><div id="uwslot"></div>${chFS}`;
-V.weather=()=>`<h1>Weather</h1><p class="lede">UBN News weather, on UBN News (channel 03): a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="goFull()">Full screen</button></p>`;
+V.weather=()=>`<h1>Weather</h1><p class="lede">UBN News weather, on UBN News (channel 03): a radar loop of the last hour, then every state and its cities with their flags. Storms move, grow and fade all the time, so the map never repeats. The same channel runs on NyxVision, channel 2. The weather is simulated.</p><div id="uwslot"></div><p><button class="uwfs" onclick="goFull()">Full screen</button><button type="button" class="uwfs uwsay sayl" data-uwsay><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Listen</button><label class="uwauto"><input type="checkbox" data-uwauto> Read new stories aloud</label></p>`;
 
 
 
@@ -965,7 +975,7 @@ V.mediatv=()=>{const M=MD(),T=window.__tv;setTimeout(()=>{mTvScreen();mTvGuide()
  return `${mhead('TV guide','26 channels: 18 public and 8 commercial. Pick a channel to tune in. UBN News (03), UBN Sport (04) and BNN (14) carry live simulated feeds; the rest show the channel ident.')}
  <div class="tvrx"><div class="tvleft"><div class="tvctl"><label>Watching in <select id="tvviewer">${['Brightport','Occasue'].map(v=>`<option${v===T.viewer?' selected':''}>${v}</option>`).join('')}</select></label><label>Audio <select id="tvlang">${M.langs.map(v=>`<option${v===T.lang?' selected':''}>${v}</option>`).join('')}</select></label><label class="tvchk"><input type="checkbox" id="tvpaid"${T.paid?' checked':''}> Paid TV package</label></div>
   <div class="tvbox"><div id="tvscr" class="tvscr" aria-live="polite"></div></div>
-  <div class="tvbtns"><button data-tvstep="-1" aria-label="Channel down">CH ▼</button><button data-tvstep="1" aria-label="Channel up">CH ▲</button><button class="uwfs" onclick="goFull()">Full screen</button></div><div id="tvinfo" class="card"></div></div>
+  <div class="tvbtns"><button data-tvstep="-1" aria-label="Channel down">CH ▼</button><button data-tvstep="1" aria-label="Channel up">CH ▲</button><button class="uwfs" onclick="goFull()">Full screen</button><button type="button" class="uwfs uwsay sayl" data-uwsay><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Listen</button><label class="uwauto"><input type="checkbox" data-uwauto> Read new stories aloud</label></div><div id="tvinfo" class="card"></div></div>
   <div class="tvlist" role="group" aria-label="Channels">${grp}</div></div>
  <section><h2>Programme guide</h2>${MEX('This guide places approved programmes in sample time slots. It is not an official schedule. UBN Sport’s evening game comes from the real UBA season.')}
   <div class="mchips"><span class="meta">Network</span><button class="chip" data-tvnet="" aria-pressed="${!T.net}">All</button>${M.networks.map(n=>`<button class="chip" data-tvnet="${n.id}" aria-pressed="${T.net===n.id}">${n.name}</button>`).join('')}</div><div id="tvguide"></div></section>
@@ -977,7 +987,7 @@ V.mediatv=()=>{const M=MD(),T=window.__tv;setTimeout(()=>{mTvScreen();mTvGuide()
 window.__rd=window.__rd||{i:0,f:''};
 function mRadio(){const R=MD().radio,S=window.__rd,x=R[S.i],d=document.getElementById('rddial');if(!d)return;const pir=/Pirate/.test(x.type);
   document.querySelectorAll('[data-rd]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.rd===S.i));
-  d.className='rddial'+(pir?' pirate':'');d.innerHTML=`<div class="rdtop">${MLOGO(x.logo,'rdlogo',x.name)}<div><span class="mpill">${esc(x.type)}</span><h3>${esc(x.name)}</h3><p>${x.market?esc(x.market)+' · ':''}${esc(x.fmt)}</p></div></div><div class="rdeq" aria-hidden="true">${Array.from({length:24},(_,k)=>`<i style="animation-delay:${(k*137%900)/1000}s"></i>`).join('')}</div><p class="meta">${pir?'Illegal station. Heavy fines and prison for repeat offences. ':''}Simulated tuning, no audio. Frequencies are not established.</p>`}
+  d.className='rddial'+(pir?' pirate':'');d.innerHTML=`<div class="rdtop">${MLOGO(x.logo,'rdlogo',x.name)}<div><span class="mpill">${esc(x.type)}</span><h3>${esc(x.name)}</h3><p>${x.market?esc(x.market)+' · ':''}${esc(x.fmt)}</p></div></div><div class="rdeq" aria-hidden="true">${Array.from({length:24},(_,k)=>`<i style="animation-delay:${(k*137%900)/1000}s"></i>`).join('')}</div><p class="meta">${pir?'Illegal station. Heavy fines and prison for repeat offences. ':''}Simulated tuning, no audio. Frequencies are not established.</p><p><button type="button" class="sayl" data-rdsay>${SPK} Read the station card</button></p>`}
 V.mediaradio=()=>{const M=MD(),S=window.__rd;setTimeout(mRadio,0);const types=['National','Licensed commercial','Pirate (illegal)'];
  return `${mhead('Radio','Radio is a federal power: five UBN national services, eight licensed commercial stations, and three illegal pirate stations.')}
  <div class="rdrx"><div id="rddial" class="rddial" aria-live="polite"></div><div class="rdlist">${types.map(t=>`<div class="tvgrp"><div class="tvgrph"><span>${t}</span></div>${M.radio.map((r,i)=>r.type===t?`<button class="tvch" data-rd="${i}">${esc(r.name)}${r.market?` <small>${esc(r.market)}</small>`:''}</button>`:'').join('')}</div>`).join('')}</div></div>
@@ -1056,10 +1066,10 @@ const ALTXT={test:{English:['SYSTEM TEST','This is a routine test of URBO Alert.
  weather:{English:['SEVERE WEATHER WARNING','Example message. Stay indoors, keep away from windows and follow official instructions.'],French:['ALERTE MÉTÉO SÉVÈRE','Message d’exemple. Restez à l’intérieur, éloignez-vous des fenêtres et suivez les consignes officielles.'],Spanish:['AVISO DE TIEMPO SEVERO','Mensaje de ejemplo. Quédese en el interior, aléjese de las ventanas y siga las instrucciones oficiales.'],Dutch:['WAARSCHUWING ZWAAR WEER','Voorbeeldbericht. Blijf binnen, blijf uit de buurt van ramen en volg de officiële instructies.'],'Scottish Gaelic':['RABHADH SÌDE CHRUAIDH','Teachdaireachd eisimpleir. Fuirich a-staigh, cùm air falbh bho uinneagan agus lean stiùireadh oifigeil.']}};
 function mAlert(){const A=window.__al,b=document.getElementById('alscr');if(!b)return;document.querySelectorAll('[data-allang]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.allang===A.lang));
  if(!A.on){b.className='alscr off';b.innerHTML='<p>Screen idle. Press <b>Run simulation</b> to see how an alert looks on television.</p>';return}
- const t=(ALTXT[A.kind]||{})[A.lang];b.className='alscr '+A.kind;b.innerHTML=`<div class="alsim">SIMULATION · NOT A REAL EMERGENCY</div><div class="alhd">URBO ALERT</div><div class="albody"><div class="alsun"><svg class="alsunimg" viewBox="0 0 100 100" aria-hidden="true">${Array.from({length:10},(_,i)=>`<rect x="46" y="4" width="8" height="18" rx="4" fill="#ee6a1a" transform="rotate(${i*36} 50 50)"/>`).join('')}<circle cx="50" cy="50" r="22" fill="#ee6a1a"/></svg></div><div><h3>${t?esc(t[0]):'URBO ALERT'}</h3><p class="alarea">${esc(A.area)}</p><p>${t?esc(t[1]):'Approved Brightportish wording is not yet available, so this demonstration cannot show it.'}</p></div></div><div class="alstrip"></div>`}
+ const t=(ALTXT[A.kind]||{})[A.lang];b.className='alscr '+A.kind;b.innerHTML=`<div class="alsim">SIMULATION · NOT A REAL EMERGENCY</div><div class="alhd">URBO ALERT</div><div class="albody"><div class="alsun"><svg class="alsunimg" viewBox="0 0 100 100" aria-hidden="true">${Array.from({length:10},(_,i)=>`<rect x="46" y="4" width="8" height="18" rx="4" fill="#ee6a1a" transform="rotate(${i*36} 50 50)"/>`).join('')}<circle cx="50" cy="50" r="22" fill="#ee6a1a"/></svg></div><div><h3>${t?esc(t[0]):'URBO ALERT'}</h3><p class="alarea">${esc(A.area)}</p><p>${t?esc(t[1]):'Approved Brightportish wording is not yet available, so this demonstration cannot show it.'}</p></div></div><div class="alstrip"></div>`+(t?`<button type="button" class="sayl alsay" data-alsay>${SPK} Read aloud</button>`:'')}
 V.mediaalert=()=>{const M=MD(),A=window.__al;setTimeout(mAlert,0);const areas=['All of URBO','Brightport','Occasue',...M.studios];
  return `${mhead('URBO Alert','The single federal emergency notification system, used by federal and republican authorities alike.')}
- ${MEX('This is a safe demonstration. It makes no sound, sends no notifications and shows no real warning.')}
+ ${MEX('This is a safe demonstration. It sends no notifications, plays no warning tone and shows no real warning. Read aloud speaks the on-screen text only.')}
  <div class="alctl"><label>Area <select id="alarea">${areas.map(a=>`<option${a===A.area?' selected':''}>${esc(a)}</option>`).join('')}</select></label><label>Message <select id="alkind"><option value="test"${A.kind==='test'?' selected':''}>System test</option><option value="weather"${A.kind==='weather'?' selected':''}>Example weather warning</option></select></label><button id="alrun">${A.on?'Stop simulation':'Run simulation'}</button></div>
  <div class="mchips" role="group" aria-label="Alert language"><span class="meta">Language</span>${M.langs.map(l=>`<button class="chip" data-allang="${l}">${l}</button>`).join('')}</div>
  <div id="alscr" class="alscr off" aria-live="polite"></div>
@@ -1300,7 +1310,9 @@ const btNorm=t=>t.normalize('NFC').replace(/[’']/g,"'").toLowerCase().trim();
 const BN=(t,cls)=>`<span class="bn${cls?' '+cls:''}" aria-hidden="true">${esc(t)}</span>`;   // native-script display; Latin backing text is always shown alongside
 const IPA=t=>t?`<span class="ipa">${esc(t)}</span>`:'<span class="meta">IPA not established</span>';
 function bthead(title,lede){return `<div class="bthero"><div class="btemb" aria-hidden="true"><svg viewBox="0 0 120 80"><rect width="120" height="80" rx="8" fill="#14223f"/>${[0,1,2,3,4,5].map(i=>`<rect x="57" y="8" width="6" height="14" rx="3" fill="#f4c21c" transform="rotate(${-62.5+i*25} 60 44)"/>`).join('')}<path d="M30 46 Q45 40 60 48 Q75 40 90 46 V68 Q75 62 60 70 Q45 62 30 68Z" fill="#fff"/><path d="M60 48 V70" stroke="#14223f" stroke-width="2"/></svg></div><div><p class="meta" style="margin:0">Braitisk · Konseï of lê Langue Braitisk</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div></div>`}
-const btPair=(a,b)=>`<div class="scpair"><span><b class="lat">${esc(a)}</b>${BN(a,'bnsm')}</span><span>${esc(b)}</span></div>`;
+const SPK='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+const SAY=(t,lbl)=>`<button type="button" class="say" data-say="${esc(t)}" aria-label="Listen: ${esc(lbl||t)}" title="Listen">${SPK}</button>`;
+const btPair=(a,b)=>`<div class="scpair"><span>${SAY(a)}<b class="lat">${esc(a)}</b>${BN(a,'bnsm')}</span><span>${esc(b)}</span></div>`;
 const btTbl=(h,rows,nat)=>`<div class="tablewrap"><table class="stack"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td data-l="${h[i]}">${i===0?`<b class="lat">${esc(c)}</b>${nat?BN(c,'bnsm'):''}`:/^\/.*\/$/.test(c)?IPA(c):esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 const BTKEYS=['é','è','ê','ë','â','à','î','ï','ô','ò','ö','û','ü','å','ä','œ','ç'];
 const btKeys=t=>`<div class="sckeys" data-btkfor="${t}" aria-label="Accented letters">${BTKEYS.map(k=>`<button type="button" class="chip" data-btk="${k}">${k}</button>`).join('')}</div>`;
@@ -1323,9 +1335,9 @@ function bdRender(){const F=window.__bd,box=document.getElementById('bdres');if(
  if(q)L=L.filter(x=>(F.dir!=='en'&&ws(x.w))||(F.dir!=='bt'&&ws(x.e)));
  L.sort((a,b)=>{if(q){const as=f(a.w).startsWith(q)||f(a.e).startsWith(q),bs=f(b.w).startsWith(q)||f(b.e).startsWith(q);if(as!==bs)return as?-1:1}return a.w.localeCompare(b.w,'fr')});
  const hid=F.strong?0:BTLX().filter(x=>x.cat==='profanity').length;
- box.innerHTML=`<p class="meta" aria-live="polite">${L.length} ${L.length===1?'entry':'entries'}${hid?` · ${hid} strong-language entries hidden`:''}</p><div class="oblist">${L.slice(0,F.n).map(x=>`<article class="obent btent"><div class="obhw"><b class="lat">${esc(x.w)}</b> ${BN(x.w,'bnent')}</div><div class="obgl">${esc(x.e)}</div>
+ box.innerHTML=`<p class="meta" aria-live="polite">${L.length} ${L.length===1?'entry':'entries'}${hid?` · ${hid} strong-language entries hidden`:''}</p><div class="oblist">${L.slice(0,F.n).map(x=>`<article class="obent btent"><div class="obhw">${SAY(x.w)}<b class="lat">${esc(x.w)}</b> ${BN(x.w,'bnent')}</div><div class="obgl">${esc(x.e)}</div>
   <div class="btipa">${IPA(x.ipa)} ${ipBadge(x.ipst)}</div>${x.ipst==='provisional'?`<p class="obnote">Pronunciation rules awaiting approval: ${x.ipr.map(r=>esc(BTIPA.desc(r))).join('; ')}.</p>`:''}<div class="obmeta">${x.pos?`<span>${esc(x.pos)}</span>`:'<span>word class not confirmed</span>'}<span>${esc(x.cat)}</span><span>${x.st==='website-canon'?'website canon':'approved'} · ${/^\d/.test(x.r)?'round '+esc(x.r):esc(x.r)}</span><span>origin ${x.o?esc(x.o):'not established'}</span><span class="meta">${x.id}</span></div>
-  ${x.rv?`<p class="obnote">Regional: ${esc(x.rv)}</p>`:''}${x.ex?`<p class="obnote"><b class="lat">${esc(x.ex)}</b> ${esc(x.exe)}</p>`:''}${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>${L.length>F.n?'<p><button data-bdmore>Show more</button></p>':''}`}
+  ${x.rv?`<p class="obnote">Regional: ${esc(x.rv)}</p>`:''}${x.ex?`<p class="obnote">${SAY(x.ex)}<b class="lat">${esc(x.ex)}</b> ${esc(x.exe)}</p>`:''}${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>${L.length>F.n?'<p><button data-bdmore>Show more</button></p>':''}`}
 V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.cat.split('; ')).filter(c=>c!=='profanity'))].sort(),poss=[...new Set(X.map(x=>x.pos).filter(Boolean))].sort();setTimeout(bdRender,0);
  return `<div>${bthead('Lê Grand Diksionère Braitisk','The Great Braitisk Dictionary: 814 approved entries. Search Braitisk or English; accents are optional.')}<div class="nosub">
  <div class="obtools"><input type="search" id="bdq" placeholder="Search Braitisk or English…" value="${esc(F.q)}" aria-label="Search the dictionary" autocomplete="off">${btKeys('bdq')}
@@ -1396,6 +1408,11 @@ V.bsounds=()=>{const B=BT();return `<div>${bthead('Sounds and accents','The appr
  <section><h2>Pronunciation in the dictionary</h2>${(()=>{const c={established:0,'rule-derived':0,provisional:0};BTLX().forEach(x=>c[x.ipst]++);return `<div class="ipaudit">${Object.entries(c).map(([k,n])=>`<div>${ipBadge(k)}<b>${n}</b><small>${IPST[k][1]}</small></div>`).join('')}</div>`})()}
   <h3>Spellings awaiting a decision</h3><p class="meta">The approved chart does not settle these spellings. Each has a proposed reading; entries that use one are marked Provisional until it is approved.</p>
   <div class="tablewrap"><table class="stack"><thead><tr><th>Proposed rule</th><th>Entries</th><th>Examples</th></tr></thead><tbody>${(()=>{const m={};BTLX().forEach(x=>x.ipr.forEach(r=>{(m[r]=m[r]||[]).push(x)}));const rows=Object.entries(m);if(!rows.length)return '<tr><td colspan="3">None. Every spelling rule is approved, so every pronunciation is established or rule-derived.</td></tr>';return rows.sort((a,b)=>b[1].length-a[1].length).map(([r,xs])=>`<tr><td data-l="Rule">${esc(BTIPA.desc(r))}</td><td data-l="Entries">${xs.length}</td><td data-l="Examples">${xs.slice(0,3).map(x=>`<b class="lat">${esc(x.w)}</b> ${IPA(x.ipa)}`).join(' · ')}</td></tr>`).join('')})()}</tbody></table></div></section>
+ <section class="card" id="ttsset"><h2 style="margin-top:0">Listening</h2><p>Press ${SPK} beside any Braitisk word to hear it. Speech is generated from the same IPA, so new words can be heard as soon as they are added.</p>
+  <div class="mchips" role="radiogroup" aria-label="Braitisk voice"><span class="meta">Braitisk voice</span>${[['auto','Automatic'],['exact','Exact'],['natural','Natural']].map(([k,l])=>`<button class="chip" data-ttsmode="${k}" aria-pressed="${BPTTS.mode()===k}">${l}</button>`).join('')}</div>
+  <ul class="meta" style="margin:6px 0 0;padding-left:18px"><li><b>Automatic</b>: Exact on the language pages, Natural on television and radio.</li><li><b>Exact</b>: eSpeak NG reads the IPA itself. Every sound is right and every device sounds the same, but the voice is synthetic.</li><li><b>Natural</b>: your device’s French voice reads a respelling. Smoother, but /θ/, /ð/ and /h/ are approximated and it varies by device. Falls back to Exact if your device has no French voice.</li></ul>
+  <p>${SAY('Bonjour. Lê Grand Diksionère Braitisk.','sample sentence')} <span class="meta">Try it: <b class="lat">Bonjour. Lê Grand Diksionère Braitisk.</b></span></p>
+  <p class="meta">English and the other official languages use your device’s voice for that language. Exact speech uses <a href="tts/ESPEAK-NG-LICENSE.txt">eSpeak NG</a> (GPL 3.0). Stress follows the dictionary: only established words carry marked stress.</p></section>
  <section><h2>The spelling-to-sound rules</h2><p class="meta">One table converts every spelling to IPA, for the dictionary and for new words. Approved on Octavus 16, 119 NSC (27 November 2026): O before N or M is /ɔ/; French-style soft C and G; QU, Ç, X; doubled letters; glides; and the rare vowel spellings. Stress stays unmarked except in established words.</p>
   <details><summary>Show all ${BT().g2p.rules.length} rules</summary><div class="tablewrap"><table class="stack"><thead><tr><th>Spelling</th><th>IPA</th><th>When</th><th>Rule</th></tr></thead><tbody>${BT().g2p.rules.map(r=>`<tr><td data-l="Spelling"><b class="lat">${esc(r.grapheme)}</b></td><td data-l="IPA"><span class="ipa">/${esc(r.ipa)}/</span></td><td data-l="When">${({'':'always','V':'before a vowel','nV':'not before a vowel','F':'before e, i, y','nF':'not before e, i, y','$':'at the end of a word','CV':'between a consonant and a vowel'})[r.context]||r.context}</td><td data-l="Rule">${esc(r.description||r.rule)}</td></tr>`).join('')}</tbody></table></div></details></section>
  <section><h2>Regional accents</h2><p>Every region shares the same grammar and spelling. These are tendencies, not stereotypes. The column shows how <b class="lat">parler</b> (to converse) is said where it was recorded.</p>
@@ -1419,14 +1436,14 @@ const BFDECKS=()=>{const by={};BTLX().filter(x=>!['profanity','sound history','w
 function bfCard(){const F=window.__bf,Dk=BFDECKS()[F.deck]||[],box=document.getElementById('bfcard');if(!box||!Dk.length)return;F.i%=Dk.length;const x=Dk[F.i];
  const bt=`<b class="lat">${esc(x.w)}</b>${BN(x.w,'bnfc')}`,front=F.dir==='b'?bt:esc(x.e),back=F.dir==='b'?esc(x.e):bt;const known=Dk.filter(d=>F.known[d.id]).length;
  box.innerHTML=`<button class="fc${F.flip?' flip':''}" data-bfflip aria-label="Flip card"><span class="fcin"><span class="fcf btfc">${front}<small>${F.dir==='b'?'Braitisk':'English'} · tap to flip</small></span><span class="fcb">${back}<small>${esc(x.pos||'')}</small></span></span></button>
- <div class="fcbtns"><button data-bfmove="again">Again</button><button data-bfmove="know" class="btn-pri">I know it</button></div><p class="meta">Card ${F.i+1} of ${Dk.length} · ${known} marked known in this deck</p>`}
+ <div class="fcbtns"><button type="button" class="sayl" data-say="${esc(x.w)}">${SPK} Listen</button><button data-bfmove="again">Again</button><button data-bfmove="know" class="btn-pri">I know it</button></div><p class="meta">Card ${F.i+1} of ${Dk.length} · ${known} marked known in this deck</p>`}
 window.__bx=window.__bx||{i:0,ans:'',res:null,score:0,tries:0};
 const bxClean=s=>s.normalize('NFC').replace(/[’']/g,"'").toLowerCase().replace(/[.!?¡¿,;:]+/g,'').replace(/\s+/g,' ').trim();
 function bxRender(){const E=window.__bx,X=BT().exercises,q=X[E.i%X.length],box=document.getElementById('bxbox');if(!box)return;
  box.innerHTML=`<p class="meta">Sentence ${E.i%X.length+1} of ${X.length} · ${E.score} right of ${E.tries} checked</p><p class="exprompt">${esc(q[0])}</p>
  <input type="text" id="bxin" value="${esc(E.ans)}" placeholder="Type it in Braitisk" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your Braitisk translation">${btKeys('bxin')}
  <div class="fcbtns"><button data-bxdo="check" class="btn-pri">Check</button><button data-bxdo="show">Show answer</button><button data-bxdo="next">Next →</button></div>
- ${E.res==='ok'?`<p class="exok">✅ Correct!${q[1].length>1?' Accepted answers: '+q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(', '):''}</p>`:E.res==='no'?'<p class="exno">Not quite. Check the endings and word order, or show the answer.</p>':E.res==='show'?`<p>Answer: ${q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(' or ')}</p>`:''}`}
+ ${E.res==='ok'?`<p class="exok">✅ Correct! ${SAY(q[1][0])}${q[1].length>1?' Accepted answers: '+q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(', '):''}</p>`:E.res==='no'?'<p class="exno">Not quite. Check the endings and word order, or show the answer.</p>':E.res==='show'?`<p>Answer: ${q[1].map(a=>`${SAY(a)}<b class="lat">${esc(a)}</b>`).join(' or ')}</p>`:''}`}
 V.bpractice=()=>{const F=window.__bf,decks=BFDECKS(),B=BT();setTimeout(()=>{bfCard();bxRender()},0);
  return `<div>${bthead('Flashcards and exercises','Practise approved vocabulary, then translate sentences into Braitisk.')}<div class="nosub">
  <section class="two"><div><h2>Flashcards</h2><label>Deck <select id="bfdeck">${Object.keys(decks).sort().map(k=>`<option value="${esc(k)}"${F.deck===k?' selected':''}>${esc(k)} (${decks[k].length})</option>`).join('')}</select></label>
@@ -1444,7 +1461,7 @@ V.bliterature=()=>{const B=BT(),P=B.poem,idi=BTLX().filter(x=>x.cat==='idioms'),
  <section><h2>Sample texts</h2>${MEX('These are teaching texts. They are not real news, laws or announcements.')}
   ${B.texts.map(x=>`<article class="card scsample"><h3 style="margin-top:0">${esc(x.title)}</h3>${x.pairs?x.pairs.map(([a,b])=>btPair(a,b)).join(''):`${x.bt.map((t,i)=>`<p><span class="lat">${esc(t)}</span></p>`).join('')}<details><summary>English</summary><p>${esc(x.en)}</p></details>`}</article>`).join('')}</section>
  <section><h2>From the archive</h2><div class="card"><p class="sample lat">${esc(B.old_sample.bt).replace(/\n/g,'<br>')}</p><p class="meta">${esc(B.old_sample.note)}</p></div></section></div></div>`};
-function btPF(){const i=document.getElementById('btpf'),o=document.getElementById('btpfout');if(!i||!o)return;const r=BTIPA.phrase(i.value);o.innerHTML=i.value.trim()?`<div class="grbig"><span class="ipa">${esc(r.ipa)}</span></div><p>${ipBadge(r.status)}${r.flags.length?' Uses: '+r.flags.map(f=>esc(BTIPA.desc(f))).join('; '):''}</p>`:''}
+function btPF(){const i=document.getElementById('btpf'),o=document.getElementById('btpfout');if(!i||!o)return;const r=BTIPA.phrase(i.value);o.innerHTML=i.value.trim()?`<div class="grbig"><span class="ipa">${esc(r.ipa)}</span> ${SAY(i.value.trim())}</div><p>${ipBadge(r.status)}${r.flags.length?' Uses: '+r.flags.map(f=>esc(BTIPA.desc(f))).join('; '):''}</p>`:''}
 /* events */
 document.addEventListener('click',e=>{const t=e.target.closest('[data-btk],[data-bddir],[data-bdmore],[data-bcv],[data-btl],[data-bl],[data-bllvl],[data-blans],[data-blnext],[data-bfflip],[data-bfmove],[data-bfdir],[data-bxdo]');if(!t)return;const d=t.dataset;
  if(d.btk){const box=t.closest('[data-btkfor]'),inp=document.getElementById(box.dataset.btkfor);if(inp){const s=inp.selectionStart??inp.value.length,en=inp.selectionEnd??s;inp.value=inp.value.slice(0,s)+d.btk+inp.value.slice(en);inp.focus();inp.setSelectionRange(s+1,s+1);inp.dispatchEvent(new Event('input',{bubbles:true}))}return}
@@ -1469,6 +1486,137 @@ document.addEventListener('change',e=>{const t=e.target,F=window.__bd;if(t.id===
  else if(t.id==='bcneg'){window.__bc.neg=t.checked;bcRender()}else if(t.id==='bfdeck'){window.__bf.deck=t.value;window.__bf.i=0;window.__bf.flip=false;bfCard()}});
 /* BRAITISK-END */
 
+/* URBO speech: Braitisk text-to-speech built on the orthography→IPA engine (BTIPA).
+   Two engines:
+   - "natural": the device's own voices (Web Speech). Braitisk is read through a French respelling generated from the IPA.
+   - "exact": eSpeak NG (WebAssembly, GPL-3.0) fed the IPA itself as phonemes, so every device sounds the same.
+   English and the other official languages use the device voice for that language, with eSpeak NG as the fallback.
+   Station voices are unnamed presets; none is an in-world character. */
+const BPTTS=(()=>{
+ const BASE=(()=>{try{const s=document.currentScript&&document.currentScript.src;if(s)return s.replace(/[^/]*$/,'')}catch(e){}return ''})();
+ let TTSDIR=BASE+'tts/';
+ /* ---------- IPA → eSpeak NG phonemes (French phoneme table; every symbol checked against eSpeak's own phoneme events) ---------- */
+ const PH=[['tʃ','tS'],['dʒ','dZ'],['ai̯','aj'],['aʊ','aw'],['oʊ','ow'],['eɪ','ej'],['ɔɪ','Oj'],['øy̯','Yy-'],['ɥ','y-'],
+  ['i','i'],['y','y'],['u','u'],['e','e'],['ɛ','E'],['ø','Y'],['œ','W'],['ə','@'],['a','a'],['o','o'],['ɔ','O'],['ɪ','I'],['ʊ','u'],
+  ['p','p'],['b','b'],['t','t'],['d','d'],['k','k'],['ɡ','g'],['g','g'],['f','f'],['v','v'],['θ','T'],['ð','D'],['s','s'],['z','z'],
+  ['ʃ','S'],['ʒ','Z'],['h','h'],['ʁ','r'],['m','m'],['n','n'],['ŋ','N'],['ɲ','n^'],['l','l'],['j','j'],['w','w'],['ˈ','ˈ']].sort((a,b)=>b[0].length-a[0].length);
+ const VOWELS=new Set(['ai̯','aʊ','oʊ','eɪ','ɔɪ','øy̯','i','y','u','e','ɛ','ø','œ','ə','a','o','ɔ','ɪ','ʊ']);
+ function toks(ipa){const out=[];let i=0;ipa=ipa.normalize('NFC');while(i<ipa.length){let hit=false;for(const [k] of PH){if(ipa.startsWith(k,i)){out.push(k);i+=k.length;hit=true;break}}if(!hit)i++}return out}
+ const PHM=new Map(PH);
+ function wordEspeak(ipa){const t=toks(ipa);let out='',stress=false;for(let x=0;x<t.length;x++){const k=t[x];if(k==='ˈ'){stress=true;continue}if(stress&&VOWELS.has(k)){out+="'";stress=false}out+=PHM.get(k);if(k==='i'&&VOWELS.has(t[x+1]))out+='j'}return out}
+ function ipaWords(text){const r=BTIPA.phrase(text);return r.ipa.replace(/^\/|\/$/g,'').split(' ').filter(Boolean)}
+ /* Braitisk sentence → eSpeak input: phonemes in [[ ]], punctuation kept outside for pauses and intonation */
+ function espeakInput(text){return splitClauses(text).map(([c,p])=>{const w=ipaWords(c).map(wordEspeak).filter(Boolean);return w.length?'[['+w.join(' ')+']]'+(p||''):''}).filter(Boolean).join(' ')}
+ function splitClauses(text){const out=[];const rx=/([^.,;:!?…]+)([.,;:!?…]*)/g;let m;while((m=rx.exec(text)))if(m[1].trim())out.push([m[1].trim(),m[2]]);return out}
+ /* ---------- IPA → French respelling (for device voices; an approximation by design) ---------- */
+ const FR={i:'i',y:'u',u:'ou',e:'é',ɛ:'è',ø:'eu',œ:'eu',a:'a',o:'ô',ɔ:'o','oʊ':'ô','aʊ':'aou','ai̯':'aï','eɪ':'éï','ɔɪ':'oï','øy̯':'euï',ɪ:'i',ʊ:'ou',
+  p:'p',b:'b',t:'t',d:'d',k:'k',f:'f',v:'v',θ:'s',ð:'z',z:'z',ʃ:'ch',ʒ:'j',h:'h',ʁ:'r',m:'m',n:'n',ŋ:'ng',ɲ:'gn',l:'l',w:'ou',ɥ:'u','tʃ':'tch','dʒ':'dj'};
+ function wordFrench(ipa){const t=toks(ipa).filter(k=>k!=='ˈ');let s='';
+  t.forEach((k,i)=>{const p=t[i-1],n=t[i+1],pv=p&&VOWELS.has(p),nv=n&&VOWELS.has(n);let o;
+   if(k==='ə')o=i===t.length-1?(t.length<=2?'e':'eu'):'e';
+   else if(k==='i'||k==='y')o=(pv?(k==='i'?'ï':'ü'):FR[k]);
+   else if(k==='s')o=(pv&&nv)?'ss':'s';
+   else if(k==='ɡ'||k==='g')o=(n&&['i','e','ɛ','y','ə','ɪ','eɪ'].includes(n))?'gu':'g';
+   else if(k==='k')o=(n==='w')?'k':'k';
+   else if(k==='t')o=(n==='i'||n==='j')?'th':'t';
+   else if(k==='j')o=pv?'y':(i===0?'y':'i');
+   else if((k==='n'||k==='m')&&pv&&!nv)o=k+k;
+   else o=FR[k]||'';
+   s+=o});
+  const last=t[t.length-1];if(last&&!VOWELS.has(last))s+='e';return s}
+ function frenchInput(text){return splitClauses(text).map(([c,p])=>ipaWords(c).map(wordFrench).join(' ')+(p||'')).join(' ')}
+ /* ---------- mixed text: which parts are Braitisk ---------- */
+ let BPRX=null;
+ function bpPhrases(){if(BPRX)return BPRX;let DD=null;try{DD=D}catch(e){DD=window.D}const L=(DD&&DD.braitisk&&DD.braitisk.labels)||window.BPW||[];const vals=[...new Set(L.map(x=>x[1]))].filter(v=>v&&v.length>1).sort((a,b)=>b.length-a.length);
+  const ex=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');BPRX=vals.length?new RegExp('(?<![\\p{L}])('+vals.map(ex).join('|')+')(?![\\p{L}])','gu'):null;return BPRX}
+ /* split text shown in Braitisk mode into [{lang:'bp'|'en',text}] using the approved site labels that were substituted */
+ function segments(text,isBp){if(!isBp)return[{lang:'en',text}];const rx=bpPhrases();if(!rx)return[{lang:'en',text}];const out=[];let last=0;text.replace(rx,(m,_g,off)=>{if(off>last)out.push({lang:'en',text:text.slice(last,off)});out.push({lang:'bp',text:m});last=off+m.length;return m});
+  if(last<text.length)out.push({lang:'en',text:text.slice(last)});
+  const merged=[];out.forEach(s=>{if(!/[\p{L}\d]/u.test(s.text)){if(merged.length)merged[merged.length-1].text+=s.text;return}const p=merged[merged.length-1];if(p&&p.lang===s.lang)p.text+=s.text;else merged.push({...s})});return merged}
+ /* ---------- text clean-up for broadcast English ---------- */
+ function cleanEn(t){return t.replace(/[\u{1F000}-\u{1FFFF}☀-➿️]/gu,' ').replace(/(\d)\s*°/g,'$1 degrees').replace(/\bmph\b/g,'miles per hour').replace(/(\d)\s*%/g,'$1 percent').replace(/\s*[•·|]\s*/g,'. ').replace(/\s+/g,' ').trim()}
+ /* ---------- station voices (unnamed presets) ---------- */
+ const VOICES={dictionary:{label:'Dictionary voice',rate:0.85,pitch:1,es:{v:'fr',rate:140,pitch:50}},
+  news:{label:'UBN News voice',rate:1,pitch:1,es:{v:'fr+f2',rate:165,pitch:55}},
+  bnn:{label:'BNN voice',rate:1.02,pitch:0.95,es:{v:'fr+m3',rate:170,pitch:45}},
+  sport:{label:'UBN Sport voice',rate:1.1,pitch:1.05,es:{v:'fr+m7',rate:185,pitch:50}},
+  radio:{label:'Radio voice',rate:1,pitch:0.9,es:{v:'fr+m2',rate:160,pitch:40}},
+  alert:{label:'Alert voice',rate:0.9,pitch:1,es:{v:'fr+f3',rate:145,pitch:50}}};
+ const LANGTAG={en:'en-US',fr:'fr-FR',es:'es-ES',nl:'nl-NL',gd:'gd-GB',bp:'fr-FR'};
+ const ESLANG={en:'en-us',fr:'fr',es:'es',nl:'nl',gd:'gd'};
+ /* ---------- engines ---------- */
+ const SS=typeof speechSynthesis!=='undefined'?speechSynthesis:null;
+ function voicesFor(tag){if(!SS)return[];const v=SS.getVoices();const l=tag.toLowerCase(),b=l.split('-')[0];return v.filter(x=>x.lang.toLowerCase().replace('_','-')===l).concat(v.filter(x=>x.lang.toLowerCase().replace('_','-').split('-')[0]===b&&x.lang.toLowerCase().replace('_','-')!==l))}
+ if(SS&&SS.addEventListener)SS.addEventListener('voiceschanged',()=>{});
+ let ES=null,ESW=null,AC=null;
+ async function espeak(){if(ESW)return ESW;if(!ES)ES=(async()=>{const dir=new URL(TTSDIR,location.href).href;const mod=await import(dir+'espeak-ng.js');const m=await mod.default({urboDataURL:dir+'espeak-ng-urbo.bin'});ESW=new m.eSpeakNGWorker();return ESW})();return ES}
+ function ctx(){if(!AC){const C=window.AudioContext||window.webkitAudioContext;AC=new C()}if(AC.state==='suspended')AC.resume();return AC}
+ let token=0,curSrc=null;
+ async function playEspeak(input,esv,lang,my){const w=await espeak();if(my!==token)return;w.set_voice(lang==='bp'?esv.v:(ESLANG[lang]||'en-us')+(esv.v.includes('+')?esv.v.slice(esv.v.indexOf('+')):''),'',0,0,'');w.set_rate(esv.rate);w.set_pitch(esv.pitch);
+  const chunks=[];w.synthesize(input,(d)=>{if(d&&d.length)chunks.push(d);return 0});const n=chunks.reduce((a,c)=>a+c.length,0);if(!n||my!==token)return;
+  const A=ctx(),buf=A.createBuffer(1,n,w.samplerate),ch=buf.getChannelData(0);let o=0;for(const c of chunks){for(let i=0;i<c.length;i++)ch[o+i]=c[i]/32768;o+=c.length}
+  await new Promise(res=>{const s=A.createBufferSource();s.buffer=buf;s.connect(A.destination);s.onended=()=>{if(curSrc===s)curSrc=null;res()};curSrc=s;s.start()})}
+ function playDevice(text,tag,vo,my){return new Promise(res=>{const vs=voicesFor(tag);if(!vs.length)return res(false);const u=new SpeechSynthesisUtterance(text);u.lang=tag;try{u.voice=vs[0]}catch(e){}u.rate=vo.rate;u.pitch=vo.pitch;let done=false;const fin=ok=>{if(!done){done=true;res(ok)}};u.onend=()=>fin(true);u.onerror=()=>fin(true);SS.speak(u);
+   const t=setInterval(()=>{if(my!==token){clearInterval(t);fin(true)}else if(!SS.speaking&&!SS.pending){clearInterval(t);fin(true)}},400)})}
+ /* ---------- settings ---------- */
+ const LS='bptts-mode';
+ function mode(){try{return localStorage.getItem(LS)||'auto'}catch(e){return 'auto'}}
+ function setMode(m){try{localStorage.setItem(LS,m)}catch(e){}}
+ function useExact(context){const m=mode();if(m==='exact')return true;if(m==='natural')return !voicesFor('fr-FR').length;return context==='learn'||!voicesFor('fr-FR').length}
+ /* ---------- public API ---------- */
+ let onstate=()=>{},busy=false;
+ function stop(){token++;busy=false;if(SS)SS.cancel();try{curSrc&&curSrc.stop()}catch(e){}curSrc=null;onstate(false)}
+ /* items: [{lang,text}] ; opts: {voice, context:'learn'|'media'} */
+ async function say(items,opts={}){stop();const my=++token;busy=true;onstate(true);const vo=VOICES[opts.voice||'dictionary']||VOICES.dictionary;const exact=useExact(opts.context||'media');
+  if(SS)SS.getVoices();
+  try{for(const it of items){if(my!==token)break;const text=(it.text||'').trim();if(!text)continue;
+    if(it.lang==='bp'){if(exact){await playEspeak(espeakInput(text),vo.es,'bp',my)}else{const ok=await playDevice(frenchInput(text),'fr-FR',vo,my);if(!ok)await playEspeak(espeakInput(text),vo.es,'bp',my)}}
+    else{const t=it.lang==='en'?cleanEn(text):text.replace(/[\u{1F000}-\u{1FFFF}☀-➿️]/gu,' ');if(!/[\p{L}\d]/u.test(t))continue;const ok=await playDevice(t,LANGTAG[it.lang]||'en-US',vo,my);if(!ok)await playEspeak(t,vo.es,it.lang,my)}}}
+  catch(e){console.warn('BPTTS',e)}
+  if(my===token){busy=false;onstate(false)}}
+ function sayBp(text,opts){return say([{lang:'bp',text}],Object.assign({context:'learn'},opts))}
+ return{say,sayBp,stop,segments,espeakInput,frenchInput,wordEspeak,wordFrench,VOICES,mode,setMode,
+  setDir:d=>{TTSDIR=d},busy:()=>busy,hasDevice:t=>voicesFor(t||'fr-FR').length>0,onState:f=>{onstate=f},cleanEn,
+  ready:()=>espeak().then(()=>true,()=>false)}})();
+
+
+/* ---- URBO speech controls (shared by the site and NyxVision) ---- */
+const TTSUI=(()=>{
+ const LANGCODE={English:'en',French:'fr',Spanish:'es',Dutch:'nl','Scottish Gaelic':'gd'};
+ let CFG={};const isBp=()=>CFG.isBp?CFG.isBp():(typeof TERR_LANG!=='undefined'&&TERR_LANG==='bp');
+ let curBtn=null;
+ BPTTS.onState(on=>{document.querySelectorAll('.saying').forEach(b=>{b.classList.remove('saying');b.removeAttribute('aria-pressed')});if(on&&curBtn){curBtn.classList.add('saying');if(curBtn.matches('[data-uwsay]'))curBtn.setAttribute('aria-pressed','true')}if(!on)curBtn=null});
+ /* visible text with spaces between inline pieces and line breaks between blocks */
+ function domText(el){const out=[];(function walk(n){if(n.nodeType===3){out.push(n.nodeValue);return}if(n.nodeType!==1)return;const cs=getComputedStyle(n);if(cs.display==='none'||cs.visibility==='hidden'||n.matches('svg,img,canvas,script,style,thead,.bnn-sim,.say,.sayl'))return;
+   const d=cs.display,blk=!/^inline/.test(d)||d==='inline-block'||d==='inline-flex';const cell=d==='table-cell';if(blk&&!cell)out.push('\n');[...n.childNodes].forEach(c=>{walk(c);if(c.nodeType===1)out.push(cell?' ':' ')});if(cell)out.push(', ');if(blk&&!cell)out.push('\n')})(el);
+  return out.join('').split('\n').map(l=>l.replace(/\s+/g,' ').replace(/(,\s*)+$/,'').replace(/^\s*,\s*/,'').trim()).filter(l=>/[\p{L}\d]/u.test(l)).join('. ').replace(/\.\s*\./g,'.')}
+ function items(text){return BPTTS.segments(text,isBp())}
+ /* what is on the TV stage right now */
+ function stageRoot(){return document.querySelector('.uwstage>div')||[...document.querySelectorAll('#bnn,#usport,#utr,#uwx')].find(e=>e.offsetParent!==null&&e.offsetWidth>0)}
+ function stageRead(){const root=stageRoot();if(!root||!root.isConnected){const osd=document.querySelector('#tvscr');return osd?{voice:'news',text:domText(osd)}:null}
+  const id=root.id,q=s=>root.querySelector(s);
+  if(id==='bnn'){const st=q('.bnn-story');return{voice:'bnn',text:st?domText(st):''}}
+  if(id==='usport'){return{voice:'sport',text:[q('.us-seg'),q('.us-main')].filter(Boolean).map(domText).join('. ')}}
+  const ttl=q('.uwx-ttl')||q('.uwx-logo');return{voice:'news',text:[ttl,q('.uwx-panel'),q('.utr-board')].filter(Boolean).map(domText).join('. ')}}
+ let last='',auto=false,mo=null,tmo=null;
+ function readStage(){const r=stageRead();if(!r||!r.text)return;last=r.text;BPTTS.say(items(r.text),{voice:r.voice,context:'media'})}
+ function watch(){if(mo)mo.disconnect();mo=null;if(!auto)return;const r0=stageRoot(),w=document.querySelector('.uwstage')||document.querySelector('#tvscr')||(r0&&r0.parentElement);if(!w)return;
+  mo=new MutationObserver(()=>{clearTimeout(tmo);tmo=setTimeout(tick,700)});mo.observe(w,{subtree:true,childList:true,characterData:true})}
+ function tick(){if(!auto)return;const r=stageRead();if(!r||!r.text||r.text===last)return;if(BPTTS.busy()){clearTimeout(tmo);tmo=setTimeout(tick,800);return}curBtn=document.querySelector('[data-uwsay]');readStage()}
+ function setAuto(on){auto=on;document.querySelectorAll('[data-uwauto]').forEach(c=>c.checked=on);if(on){curBtn=document.querySelector('[data-uwsay]');readStage()}watch()}
+ function radioRead(){if(typeof MD!=='function')return;const x=MD().radio[window.__rd.i];return [x.name,x.fmt,x.market].filter(Boolean).join('. ')}
+ function alertRead(){if(typeof ALTXT==='undefined')return null;const A=window.__al,t=(ALTXT[A.kind]||{})[A.lang];if(!t||!A.on)return null;return{lang:LANGCODE[A.lang]||'en',text:t[0]+'. '+A.area+'. '+t[1]}}
+ document.addEventListener('click',e=>{const tg=e.target;if(!tg.closest)return;
+  const s=tg.closest('[data-say]');if(s){e.preventDefault();e.stopPropagation();if(curBtn===s){BPTTS.stop();return}curBtn=s;BPTTS.sayBp(s.dataset.say,{voice:'dictionary'});return}
+  const m=tg.closest('[data-ttsmode]');if(m){BPTTS.setMode(m.dataset.ttsmode);document.querySelectorAll('[data-ttsmode]').forEach(b=>b.setAttribute('aria-pressed',b===m));return}
+  const u=tg.closest('[data-uwsay]');if(u){e.preventDefault();if(curBtn===u){BPTTS.stop();if(auto)setAuto(false);return}curBtn=u;readStage();return}
+  const r=tg.closest('[data-rdsay]');if(r){e.preventDefault();if(curBtn===r){BPTTS.stop();return}curBtn=r;BPTTS.say(items(radioRead()),{voice:'radio',context:'media'});return}
+  const a=tg.closest('[data-alsay]');if(a){e.preventDefault();if(curBtn===a){BPTTS.stop();return}const t=alertRead();if(!t)return;curBtn=a;BPTTS.say([t],{voice:'alert',context:'media'});return}},true);
+ document.addEventListener('change',e=>{if(e.target.matches&&e.target.matches('[data-uwauto]'))setAuto(e.target.checked)});
+ addEventListener('hashchange',()=>{BPTTS.stop();last='';if(auto)setTimeout(watch,300)});
+ return{readStage,setAuto,domText,stageRead,watch,auto:()=>auto,toggleAuto:()=>{setAuto(!auto);return auto},config:c=>{CFG=Object.assign(CFG,c)}}})();
+
+window.BPTTS=BPTTS;window.TTSUI=TTSUI;
 V.history=()=>`<h1>History</h1><p class="lede">Dates use the Nyrethian Standard Calendar (NSC), which counts from the first landing. Years marked “about” are not yet fixed to an exact day. <a href="#calendar">How the calendar works →</a></p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.timeline.map((e,i)=>`<li><div class="when">${e.live?'<span data-nsc="date"></span>':esc(e.when)+(/^\d\d\//.test(e.when)?' NSC':' NSC')}</div><h3>${esc(e.name)}</h3><p>${esc(e.text)}</p></li>`).join('')}</ol>
