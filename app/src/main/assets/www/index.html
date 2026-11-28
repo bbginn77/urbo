@@ -92,7 +92,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 14px "Fira Sans"
 .w{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)}.e{background:color-mix(in srgb,var(--sun) 28%,transparent);color:var(--sunink)}
 .conj td:first-child{color:var(--mute);font-family:"Fira Sans",sans-serif}
 .mapbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}.mapbar button{font:inherit;padding:4px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}.mapbar label{font-size:14px}.mapview{position:relative;touch-action:pan-y;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#eef3f6;cursor:move}.mapview svg{display:block;width:100%;height:auto;max-height:78vh}.mapview.grab{cursor:grabbing}.mapview svg *{pointer-events:none}.mapview svg .st{pointer-events:auto;cursor:pointer}@media (hover:hover){.mapview .st:hover{fill:#f4c21c!important;fill-opacity:.55;stroke:#7a0a14;stroke-width:3}}.mapview .st:focus-visible{fill:#f4c21c!important;fill-opacity:.55;stroke:#7a0a14;stroke-width:3;outline:none}.maptip{position:absolute;z-index:3;pointer-events:none;background:#1c1a16;color:#fff;font:600 14px 'Fira Sans',sans-serif;padding:5px 10px;border-radius:6px;white-space:nowrap}
-.bp{font-family:Brightportish,serif;font-size:1.15em}.govstrip{background:#1c1a16;color:#f1ede3;font:500 13px "Fira Sans",sans-serif;padding:6px 0}
+.bp{font-family:"Brightport Sans",Brightportish,serif;font-size:1.15em}.govstrip{background:#1c1a16;color:#f1ede3;font:500 13px "Fira Sans",sans-serif;padding:6px 0}
 .brand{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px clamp(16px,3vw,24px) 12px}
 .brandlink{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.brandflag{width:54px;height:36px;border:1px solid var(--line)}
 .tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.tools input{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;width:220px;background:var(--card);color:var(--ink)}
@@ -110,7 +110,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 14px "Fira Sans"
 .hist .when{font:600 13px "Fira Sans",sans-serif;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}.hist h3{margin:2px 0 4px}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}.fgrid b{display:block;color:var(--ink);margin-bottom:6px}.fgrid a{display:block;padding:3px 0}.fgrid p{margin:0 0 6px}
 body.official .badge,body.official .src,body.official .open,body.official figcaption .badge{display:none}
-body.bpmode :is(#view,nav.sec,header .brand,footer) :is(h1,h2,h3,h4,p,li,a,span,b,strong,em,div,td,th,button,label,figcaption,small,dt,dd,summary){font-family:Brightportish,"Fira Sans",sans-serif!important}
+body.bpmode :is(#view,nav.sec,header .brand,footer) :is(h1,h2,h3,h4,p,li,a,span,b,strong,em,div,td,th,button,label,figcaption,small,dt,dd,summary){font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
 body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *):not(.bn):not(.bn *){font-family:"Fira Sans",sans-serif!important}
 .crumbs{font:500 15px "Fira Sans",sans-serif;margin:8px 0 20px;line-height:1.5;color:var(--mute)}.crumbs span{color:var(--ink)}
 .lvl{display:flex;gap:12px;align-items:center}.lvlflag{flex:none;width:54px;height:36px;border:1px solid var(--line)}
@@ -230,7 +230,7 @@ tr.on{background:color-mix(in srgb,var(--sun) 22%,transparent)}
 .gnode.g1{border-top:5px solid #2b5fae}.gnode.ge{border-top:5px solid var(--sun)}.gnode.gw{border-top:5px solid var(--red)}.gnode.g3{border-top:5px solid var(--mute)}
 .gnode[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.gnode[aria-pressed=true] .gl,.gnode[aria-pressed=true] .gs{color:var(--bg);opacity:.8}
 .art.rdim .rl:not(.on){opacity:.15}.art .rl{transition:opacity .2s}.art .rl .hit{cursor:pointer}
-.bp{font-family:"Brightportish",serif}
+.bp{font-family:"Brightport Sans",Brightportish,serif}
 .abc{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:10px 0}
 .ab{display:flex;flex-direction:column;align-items:center;border:1px solid var(--line);border-radius:10px;padding:8px 4px;background:var(--card)}
 .ab .bp{font-size:30px;line-height:1.3}.ab b{font:600 14px "Fira Sans",sans-serif}
@@ -333,8 +333,8 @@ a.mnet:hover{border-color:#ee6a1a}
 .alstrip{height:5%;background:linear-gradient(90deg,#c8262c 50%,#f4c21c 50%)}
 
 /* BRAITISK-CSS */
-/* Brightport Sans: draft faces are used only on the proof sheet until letters are approved */
-@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Light.woff2) format("woff2");font-weight:300;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Regular.woff2) format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Medium.woff2) format("woff2");font-weight:500;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Semibold.woff2) format("woff2");font-weight:600;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+/* Brightport Sans 1.0 (approved 2026-11-27): geometric redesign of the original Brightportish letters */
+@font-face{font-family:"Brightport Sans";src:url(fonts/BrightportSans-Light.woff2) format("woff2");font-weight:300;font-display:swap}@font-face{font-family:"Brightport Sans";src:url(fonts/BrightportSans-Regular.woff2) format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Brightport Sans";src:url(fonts/BrightportSans-Medium.woff2) format("woff2");font-weight:500;font-display:swap}@font-face{font-family:"Brightport Sans";src:url(fonts/BrightportSans-Semibold.woff2) format("woff2");font-weight:600;font-display:swap}@font-face{font-family:"Brightport Sans";src:url(fonts/BrightportSans-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
 .bn,.bp{font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif}
 .ipa{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI","Lucida Sans Unicode",sans-serif!important;font-style:normal}
 body.bpmode .nobp .bn,body.bpmode .bn{font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
@@ -358,7 +358,7 @@ body.bpmode .ipa,body.bpmode .ipa *{font-family:"Doulos SIL","Charis SIL","Genti
 .btls small{color:var(--mute);font-weight:400;margin-left:4px}.btls[aria-pressed=true] small{color:#c9d3e6}.btlscard{border-top-color:#f4c21c}
 .btfc .lat{display:block}.btpoem{border-left-color:#f4c21c}.btpoembn{font-size:24px;line-height:1.6}
 .subsep{font:700 12px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);align-self:center;margin:0 4px 0 10px}
-.bsd{font-family:"Brightport Sans Draft",sans-serif}.bsproof{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}.bsproof div{background:var(--card);border:1px solid var(--line);border-radius:8px;text-align:center;padding:4px}.bsproof span{display:block}.bsproof .o{font-family:Brightportish;font-size:34px;color:var(--mute);line-height:1.3}.bsproof .n{font-size:40px;line-height:1.3;background:linear-gradient(#0000 calc(100% - 18px),#f4c21c33 0)}.bsproof small{display:block;font-size:12px;color:var(--mute)}.bsw p{margin:4px 0;font-size:34px}
+.bsd{font-family:"Brightport Sans",sans-serif}.bsproof{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}.bsproof div{background:var(--card);border:1px solid var(--line);border-radius:8px;text-align:center;padding:4px}.bsproof span{display:block}.bsproof .o{font-family:Brightportish;font-size:34px;color:var(--mute);line-height:1.3}.bsproof .n{font-size:40px;line-height:1.3;background:linear-gradient(#0000 calc(100% - 18px),#f4c21c33 0)}.bsproof small{display:block;font-size:12px;color:var(--mute)}.bsw p{margin:4px 0;font-size:34px}
 
 /* SCHOON-CSS */
 .tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
@@ -466,7 +466,7 @@ V.home=()=>{
   ${tile('lochways','Lochway network','The numbered national motorways.',null)}
   ${tile('rail','National railways','Lines, routes and border crossings.',null)}
   ${tile('government','How the government works','Federal, republic, state and territory levels and the three parliaments.','Gouvernment')}
-  ${tile('language','National language','Brightportish grammar, the lexicon and the national script.','Ofisial langue')}
+  ${tile('language','National language','Brightportish grammar, the lexicon and the national script.','Langue offisiel')}
   </div></section>
   <section class="card nscnow"><p class="meta" style="margin:0">Today on Nyreth</p><p style="margin:4px 0;font:700 20px 'Fira Sans',sans-serif"><span data-nsc="long"></span></p><p style="margin:0">${D.tz.zones.map(z=>`${esc(z.name)} <b><span data-nsc="clock" data-off="${z.off}"></span></b>`).join(' · ')} · <a href="#calendar">Calendar →</a></p></section>
   <section><h2>URBO at a glance</h2><p>${POPF('urbo')} people: ${POPF('brightport-east')} in Brightport and ${POPF('occasue')} in Occasue. Average income: ${INCF('urbo')}. 1 urbo is worth about 1 US dollar.</p>
@@ -1297,7 +1297,7 @@ V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.c
  <div class="mchips"><span class="meta">Search in</span>${[['both','Both'],['bt','Braitisk → English'],['en','English → Braitisk']].map(([k,l])=>`<button class="chip" data-bddir="${k}" aria-pressed="${F.dir===k}">${l}</button>`).join('')}</div>
  <div class="obfilters"><label>Topic <select id="bdcat"><option value="">All topics</option>${cats.map(c=>`<option${F.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label><label>Word class <select id="bdpos"><option value="">All</option>${poss.map(c=>`<option${F.pos===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
   <label class="tvchk"><input type="checkbox" id="bdstrong"${F.strong?' checked':''}> Show strong language</label><label class="tvchk"><input type="checkbox" id="bdlegacy"${F.legacy?' checked':''}> Show superseded old forms</label></div>
- <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script. Native letters for accented characters are still being designed, so those show in Latin type. IPA appears only where it is established.</p></div>`};
+ <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script in Brightport Sans. IPA appears only where it is established.</p></div>`};
 /* ---- conjugator ---- */
 window.__bc=window.__bc||{v:'parler',neg:false};
 const BTS=['É','Tu','Le / Il / El','Wi','Vous','Dei'];
@@ -1332,26 +1332,26 @@ V.bgrammar=()=>{const B=BT();return `<div class="nobp">${bthead('Grammar','The m
 function btNumber(n){const B=BT();n=Math.floor(+n);if(!(n>=0&&n<=9999))return null;if(n===0)return B.num[0];const two=x=>x<20?B.num[x]:B.tens[Math.floor(x/10)*10]+(x%10?'-'+B.num[x%10]:'');const out=[];
  const th=Math.floor(n/1000),h=Math.floor(n%1000/100),r=n%100;if(th)out.push(two(th)+' mil');if(h)out.push(B.num[h]+' hundre');if(r)out.push(two(r));return out.join(' ')}
 /* ---- script ---- */
-const BTMAP=()=>{const orig='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê';return orig};
-V.bscript=()=>{const B=BT(),orig=BTMAP();const acc='ÀÂÄÅÈËÎÏÔÒÖŒÛÜÇàâäåèëîïôòöœûüç';
+const BTMAP=()=>{const orig='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÄÅÈÉÊÎÏÔÖÒÛÇŒàâäåèéêîïôöòûçœ';return orig};
+V.bscript=()=>{const B=BT(),orig=BTMAP();const acc='ËÜëü';
  return `<div class="nobp">${bthead('Alphabet and script','Braitisk is written first in its own alphabet, with Latin transcription second. The national typeface is Brightport Sans.')}
- <div class="notice sun"><b>Brightport Sans is being drafted.</b> It modernises your original letters: one even stroke, shared heights and spacing, five weights. Until each letter is approved, the site uses the original Brightportish font. Accented letters without an approved native glyph show in Latin type.</div>
+ <div class="notice sun"><b>Brightport Sans 1.0</b> is the national typeface: a geometric redesign of the original letters, with one even stroke, a shared grid and five weights from Light to Bold. Accented letters use one consistent mark system, built like the original É and Ê.</div>
  <section><h2>The alphabet</h2><p class="meta">Tap a letter. The old letter syllables are history, not modern sounds.</p>
- <div class="abc btabc">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c=>`<button class="ab" data-btl="${c}"><span class="bn">${c}${c.toLowerCase()}</span><b>${c}</b><span class="meta">${esc((B.letters.find(l=>l[0]===c)||['',''])[1])}</span></button>`).join('')}<div class="ab"><span class="bn">Sh sh</span><b>Sh</b><span class="meta">joined letter</span></div><div class="ab"><span class="bn">É é Ê ê</span><b>É Ê</b><span class="meta">original accents</span></div></div>
+ <div class="abc btabc">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c=>`<button class="ab" data-btl="${c}"><span class="bn">${c}${c.toLowerCase()}</span><b>${c}</b><span class="meta">${esc((B.letters.find(l=>l[0]===c)||['',''])[1])}</span></button>`).join('')}<div class="ab"><span class="bn">Sh sh</span><b>Sh</b><span class="meta">joined letter</span></div><div class="ab"><span class="bn">É È Ê Ö Å Œ</span><b>Accents</b><span class="meta">mark system</span></div></div>
  <div id="btlinfo" class="card" aria-live="polite"><p class="meta">Pick a letter to see it large, with its sounds.</p></div></section>
  <section id="desk"><h2>Script converter</h2><p class="meta">Type in Latin and it appears in the native script. Or tap the native keys to write in Latin. The Latin text is always kept, so nothing is lost either way.</p>
   <div class="card"><div id="bpOut" class="bn deskout"></div><p class="meta" id="btcov"></p>
   <label for="bpIn" class="meta" style="display:block;margin-top:10px">Latin text</label><textarea id="bpIn" spellcheck="false"></textarea>
   <div class="seg" style="margin:10px 0 0"><button data-bpcopy>Copy text</button><button data-bpclear>Clear</button>${[['Poem',B.poem.bt.slice(0,4).join('\n')],['Greetings','Bonjour! Mersi. Au revoir. À bientôt!'],['Question','Wer tu alles?'],['Numbers','un deu thri katr faiv six sèt eit neuf dis']].map(([n,t])=>`<button data-bpset="${esc(t)}">${esc(n)}</button>`).join('')}</div>
   <div class="kbd" id="kbd">${[...'abcdefghijklmnopqrstuvwxyz','sh','é','ê'].map(k=>`<button data-bpkey="${k}"><span class="bn">${k}</span><small>${k}</small></button>`).join('')}<button data-bpkey="⇧" class="wide"><small>Shift</small></button><button data-bpkey=" " class="wide"><small>Space</small></button><button data-bpkey="⌫" class="wide"><small>Delete</small></button></div></div></section>
- <section><h2>Brightport Sans · draft 1</h2><p>Your original letters (grey) above the modernised draft (black): one even stroke, a shared baseline, cap height and x-height, smoother curves and even spacing. <b>Not approved yet</b>; tell me which letters to change.</p>
-  <div class="bsproof">${'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê'.split('').map(c=>`<div><span class="o" aria-hidden="true">${c}</span><span class="n bsd" aria-hidden="true">${c}</span><small>${c}</small></div>`).join('')}<div><span class="o" aria-hidden="true">Sh sh</span><span class="n bsd" aria-hidden="true">Sh sh</span><small>Sh sh</small></div></div>
+ <section><h2>Brightport Sans</h2><p>The original letters (grey) above Brightport Sans (black).</p>
+  <div class="bsproof">${'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÄÅÈÉÊÎÏÔÖÒÛÇŒàâäåèéêîïôöòûçœ'.split('').map(c=>`<div><span class="o" aria-hidden="true">${c}</span><span class="n bsd" aria-hidden="true">${c}</span><small>${c}</small></div>`).join('')}<div><span class="o" aria-hidden="true">Sh sh</span><span class="n bsd" aria-hidden="true">Sh sh</span><small>Sh sh</small></div></div>
   <h3>Five weights</h3><div class="bsw bsd">${[['Light',300],['Regular',400],['Medium',500],['Semibold',600],['Bold',700]].map(([n,w])=>`<p style="font-weight:${w}"><span aria-hidden="true">Braitisk · Under lês katr lunes</span> <small class="meta" style="font-family:'Fira Sans',sans-serif;font-size:13px">${n}</small></p>`).join('')}</div></section>
- <section class="two"><div><h2>Native glyph status</h2><p>Letters with an original native glyph: ${orig.split('').map(c=>`<span class="btgl"><span class="bn">${c}</span><small>${c}</small></span>`).join('')} <span class="btgl"><span class="bn">sh</span><small>sh</small></span></p>
-  <p>Awaiting their own native glyph (shown in Latin for now): ${[...acc].map(c=>`<span class="btgl pend">${c}</span>`).join('')}</p></div>
+ <section class="two"><div><h2>Native glyph coverage</h2><p>Letters in Brightport Sans: ${orig.split('').map(c=>`<span class="btgl"><span class="bn">${c}</span><small>${c}</small></span>`).join('')} <span class="btgl"><span class="bn">sh</span><small>sh</small></span></p>
+  <p>Not in the approved spelling, so not drawn yet (shown in Latin): ${[...acc].map(c=>`<span class="btgl pend">${c}</span>`).join('')}</p></div>
  <div><h2>Old forms replaced</h2>${btTbl(['Old website form','Modern standard'],B.legacy_map)}</div></section></div>`};
-function btCoverage(t){const ok=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê0123456789 \n.,!?;:’\'-–—()«»"'.split(''));const miss=[...new Set([...t].filter(c=>!ok.has(c)))];
- const el=document.getElementById('btcov');if(el)el.textContent=miss.length?`Shown in Latin until a native glyph is approved: ${miss.join(' ')}`:''}
+function btCoverage(t){const ok=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÄÅÈÉÊÎÏÔÖÒÛÇŒàâäåèéêîïôöòûçœ0123456789 \n.,!?;:’\'-–—()«»"'.split(''));const miss=[...new Set([...t].filter(c=>!ok.has(c)))];
+ const el=document.getElementById('btcov');if(el)el.textContent=miss.length?`Not in Brightport Sans (shown in Latin): ${miss.join(' ')}`:''}
 /* ---- sounds ---- */
 V.bsounds=()=>{const B=BT();return `<div class="nobp">${bthead('Sounds and accents','The approved sound system with standard IPA symbols. No sounds are added or changed.')}
  <section class="two"><div><h2>Vowels (11)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.vowels)}</div><div><h2>Diphthongs (6)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.diph)}<h2>Endings</h2>${btTbl(['Ending','IPA'],B.endsound)}</div></section>
@@ -1731,7 +1731,7 @@ function bpApply(){
 
 const I18NRX={};
 const SITELANGS={kus:['en','nl','bp'],ouest:['en','fr','bp'],'lochwater-state':['en','gd','bp'],polvo:['en','es','bp'],occasue:['en','fr','nl','gd','es','bp']};
-const LANGNAME={en:'English',fr:'Français',nl:'Nederlands',gd:'Gàidhlig',es:'Español',bp:'Brightportish'};
+const LANGNAME={en:'English',fr:'Français',nl:'Nederlands',gd:'Gàidhlig',es:'Español',bp:'Braitisk'};
 function langsFor(site){return site&&SITELANGS[site.id]||['en','bp']}
 const ORIGN=new Map();
 function i18nRestore(){ORIGN.forEach((v,n)=>{if(n.isConnected)n.nodeValue=v});ORIGN.clear();const q=document.getElementById('q');if(q)q.placeholder='Search the site'}
