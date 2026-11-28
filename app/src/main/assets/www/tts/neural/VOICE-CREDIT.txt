@@ -1,0 +1,2 @@
+French voice: Piper "siwis" (low), trained on the SIWIS French Speech Synthesis Database (University of Edinburgh / Idiap Research Institute), licensed CC BY 4.0: https://datashare.is.ed.ac.uk/handle/10283/2353
+Inference: ONNX Runtime Web (MIT licence, see ORT-LICENSE.txt).

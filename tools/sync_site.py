@@ -8,8 +8,7 @@ for d in ['art', 'img']:
     shutil.copytree(src / d, dst / d, dirs_exist_ok=True)
 shutil.copy(src / 'fonts/Brightportish-Regular.ttf', dst / 'fonts/Brightportish-Regular.ttf')
 (dst / 'tts').mkdir(exist_ok=True)
-for f in (src / 'tts').glob('*'):
-    shutil.copy(f, dst / 'tts' / f.name)
+shutil.copytree(src / 'tts', dst / 'tts', dirs_exist_ok=True)
 for f in (src / 'fonts').glob('BrightportSans-*.woff2'):
     shutil.copy(f, dst / 'fonts' / f.name)
 s = (src / 'index.html').read_text(encoding='utf-8')
