@@ -359,6 +359,12 @@ body.bpmode .ipa,body.bpmode .ipa *{font-family:"Doulos SIL","Charis SIL","Genti
 .btfc .lat{display:block}.btpoem{border-left-color:#f4c21c}.btpoembn{font-size:24px;line-height:1.6}
 .subsep{font:700 12px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);align-self:center;margin:0 4px 0 10px}
 .bsd{font-family:"Brightport Sans",sans-serif}.bsproof{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}.bsproof div{background:var(--card);border:1px solid var(--line);border-radius:8px;text-align:center;padding:4px}.bsproof span{display:block}.bsproof .o{font-family:Brightportish;font-size:34px;color:var(--mute);line-height:1.3}.bsproof .n{font-size:40px;line-height:1.3;background:linear-gradient(#0000 calc(100% - 18px),#f4c21c33 0)}.bsproof small{display:block;font-size:12px;color:var(--mute)}.bsw p{margin:4px 0;font-size:34px}
+/* Braitisk mode: everything in Brightport Sans except IPA, Schoon text and the converter's Latin input */
+body.bpmode #view .ipa,body.bpmode #view .ipa *{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI",sans-serif!important}
+body.bpmode #view [lang="x-schoon"],body.bpmode #view [lang="x-schoon"] *{font-family:"Fira Sans",sans-serif!important}
+body.bpmode :is(#view,nav.sec,header,footer,#nscbar) :is(select,option,input,textarea,ol,ul,section,article,label,code,i,u,mark,sup,sub,time,abbr,q,cite,legend){font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
+body.bpmode #view #bpIn{font-family:"Fira Sans",sans-serif!important}
+body.bpmode .bnsm,body.bpmode .bnent,body.bpmode .bnfc,body.bpmode .bsproof .o{display:none}
 
 /* SCHOON-CSS */
 .tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
@@ -1263,20 +1269,20 @@ const btFold=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[œ]/g,'oe').
 const btNorm=t=>t.normalize('NFC').replace(/[’']/g,"'").toLowerCase().trim();
 const BN=(t,cls)=>`<span class="bn${cls?' '+cls:''}" aria-hidden="true">${esc(t)}</span>`;   // native-script display; Latin backing text is always shown alongside
 const IPA=t=>t?`<span class="ipa">${esc(t)}</span>`:'<span class="meta">IPA not established</span>';
-function bthead(title,lede){return `<div class="bthero nobp"><div class="btemb" aria-hidden="true"><svg viewBox="0 0 120 80"><rect width="120" height="80" rx="8" fill="#14223f"/>${[0,1,2,3,4,5].map(i=>`<rect x="57" y="8" width="6" height="14" rx="3" fill="#f4c21c" transform="rotate(${-62.5+i*25} 60 44)"/>`).join('')}<path d="M30 46 Q45 40 60 48 Q75 40 90 46 V68 Q75 62 60 70 Q45 62 30 68Z" fill="#fff"/><path d="M60 48 V70" stroke="#14223f" stroke-width="2"/></svg></div><div><p class="meta" style="margin:0">Braitisk · Konseï of lê Langue Braitisk</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div></div>`}
+function bthead(title,lede){return `<div class="bthero"><div class="btemb" aria-hidden="true"><svg viewBox="0 0 120 80"><rect width="120" height="80" rx="8" fill="#14223f"/>${[0,1,2,3,4,5].map(i=>`<rect x="57" y="8" width="6" height="14" rx="3" fill="#f4c21c" transform="rotate(${-62.5+i*25} 60 44)"/>`).join('')}<path d="M30 46 Q45 40 60 48 Q75 40 90 46 V68 Q75 62 60 70 Q45 62 30 68Z" fill="#fff"/><path d="M60 48 V70" stroke="#14223f" stroke-width="2"/></svg></div><div><p class="meta" style="margin:0">Braitisk · Konseï of lê Langue Braitisk</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div></div>`}
 const btPair=(a,b)=>`<div class="scpair"><span><b class="lat">${esc(a)}</b>${BN(a,'bnsm')}</span><span>${esc(b)}</span></div>`;
 const btTbl=(h,rows,nat)=>`<div class="tablewrap"><table class="stack"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td data-l="${h[i]}">${i===0?`<b class="lat">${esc(c)}</b>${nat?BN(c,'bnsm'):''}`:/^\/.*\/$/.test(c)?IPA(c):esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 const BTKEYS=['é','è','ê','ë','â','à','î','ï','ô','ò','ö','û','ü','å','ä','œ','ç'];
 const btKeys=t=>`<div class="sckeys" data-btkfor="${t}" aria-label="Accented letters">${BTKEYS.map(k=>`<button type="button" class="chip" data-btk="${k}">${k}</button>`).join('')}</div>`;
 const BTPAGES=[['language','Braitisk'],['diksionere','Lê Grand Diksionère'],['bconj','Verb conjugator'],['bgrammar','Grammar'],['bscript','Alphabet & script'],['bsounds','Sounds & accents'],['blearn','Lessons'],['bpractice','Flashcards & exercises'],['bliterature','Literature']];
 /* ---- home ---- */
-V.language=()=>{const B=BT();return `<div class="nobp">${bthead('Braitisk','Brightportish in English. The native language of Brightport and one of URBO’s six federal official languages.')}
+V.language=()=>{const B=BT();return `<div>${bthead('Braitisk','Brightportish in English. The native language of Brightport and one of URBO’s six federal official languages.')}<div class="nosub">
  <p class="bigbn">${BN('Braitisk')} <span class="ipa">/bʁai̯ˈtisk/</span></p>
  <section class="two"><div><h2>Three stages</h2>${B.history.map(([a,b],i)=>`<div class="card btstage"><div class="step">Stage ${i+1}</div><h3 style="margin:2px 0">${esc(a)}</h3><p style="margin:0">${esc(b)}</p></div>`).join('')}</div>
  <div><h2>Identity</h2>${mfacts(B.identity)}<h3>How sounds changed</h3>${btTbl(['Word','Change'],B.soundchange)}</div></section>
  <section><div class="tiles mtiles">${BTPAGES.slice(1).map(([k,t])=>`<a class="tile" href="#${k}"><h3>${t} →</h3><p>${({diksionere:'814 approved entries, searchable in both directions.',bconj:'All tenses for 100 approved verbs.',bgrammar:'Articles, pronouns, verbs, questions and numbers.',bscript:'The native alphabet, Brightport Sans and the script converter.',bsounds:'The IPA sound chart and 14 regional accents.',blearn:'Twelve lessons from beginner to advanced.',bpractice:'Flashcards and translation exercises.',bliterature:'Under lês katr lunes, proverbs, idioms and sample texts.'})[k]}</p></a>`).join('')}</div></section>
  <section><h2>The language council</h2>${mfacts(B.institutions)}</section>
- <section><h2>Still open</h2>${mfacts(B.open)}<p class="meta">Older website spellings (Teritor, Siti, Gouvern…) are replaced by the modern standard. <a href="#bscript">See the full list →</a></p></section></div>`};
+ <section><h2>Still open</h2>${mfacts(B.open)}<p class="meta">Older website spellings (Teritor, Siti, Gouvern…) are replaced by the modern standard. <a href="#bscript">See the full list →</a></p></section></div></div>`};
 /* ---- dictionary ---- */
 window.__bd=window.__bd||{q:'',dir:'both',cat:'',pos:'',fold:true,strong:false,legacy:false,n:60};
 function bdRender(){const F=window.__bd,box=document.getElementById('bdres');if(!box)return;
@@ -1291,13 +1297,13 @@ function bdRender(){const F=window.__bd,box=document.getElementById('bdres');if(
   <div class="btipa">${IPA(x.ipa)}</div><div class="obmeta">${x.pos?`<span>${esc(x.pos)}</span>`:'<span>word class not confirmed</span>'}<span>${esc(x.cat)}</span><span>${x.st==='website-canon'?'website canon':'approved'} · ${/^\d/.test(x.r)?'round '+esc(x.r):esc(x.r)}</span><span>origin ${x.o?esc(x.o):'not established'}</span><span class="meta">${x.id}</span></div>
   ${x.rv?`<p class="obnote">Regional: ${esc(x.rv)}</p>`:''}${x.ex?`<p class="obnote"><b class="lat">${esc(x.ex)}</b> ${esc(x.exe)}</p>`:''}${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>${L.length>F.n?'<p><button data-bdmore>Show more</button></p>':''}`}
 V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.cat.split('; ')).filter(c=>c!=='profanity'))].sort(),poss=[...new Set(X.map(x=>x.pos).filter(Boolean))].sort();setTimeout(bdRender,0);
- return `<div class="nobp">${bthead('Lê Grand Diksionère Braitisk','The Great Braitisk Dictionary: 814 approved entries. Search Braitisk or English; accents are optional.')}
+ return `<div>${bthead('Lê Grand Diksionère Braitisk','The Great Braitisk Dictionary: 814 approved entries. Search Braitisk or English; accents are optional.')}<div class="nosub">
  <div class="obtools"><input type="search" id="bdq" placeholder="Search Braitisk or English…" value="${esc(F.q)}" aria-label="Search the dictionary" autocomplete="off">${btKeys('bdq')}
   <label class="tvchk"><input type="checkbox" id="bdfold"${F.fold?' checked':''}> Ignore accents (lumiere finds lumière)</label></div>
  <div class="mchips"><span class="meta">Search in</span>${[['both','Both'],['bt','Braitisk → English'],['en','English → Braitisk']].map(([k,l])=>`<button class="chip" data-bddir="${k}" aria-pressed="${F.dir===k}">${l}</button>`).join('')}</div>
  <div class="obfilters"><label>Topic <select id="bdcat"><option value="">All topics</option>${cats.map(c=>`<option${F.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label><label>Word class <select id="bdpos"><option value="">All</option>${poss.map(c=>`<option${F.pos===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
   <label class="tvchk"><input type="checkbox" id="bdstrong"${F.strong?' checked':''}> Show strong language</label><label class="tvchk"><input type="checkbox" id="bdlegacy"${F.legacy?' checked':''}> Show superseded old forms</label></div>
- <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script in Brightport Sans. IPA appears only where it is established.</p></div>`};
+ <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script in Brightport Sans. IPA appears only where it is established.</p></div></div>`};
 /* ---- conjugator ---- */
 window.__bc=window.__bc||{v:'parler',neg:false};
 const BTS=['É','Tu','Le / Il / El','Wi','Vous','Dei'];
@@ -1314,27 +1320,27 @@ function bcRender(){const C=window.__bc,box=document.getElementById('bcout');if(
  <p><b>Commands</b> (Tu / Wi / Vous): ${c.imperative.map(f=>`<b class="lat">${esc((C.neg?'Ne ':'')+f.charAt(0).toUpperCase()+f.slice(1))}!</b>`).join(' · ')}</p>
  <p class="meta">${C.neg?'Negative: a single ne goes before the finite verb (with perfects, before the haver form). ':''}Generated from approved roots and endings. Not every form is idiomatic for every verb (e.g. the passive needs a verb that takes an object).</p>`;
  const ex=document.getElementById('bcex');if(ex){const i=0;ex.innerHTML=`<b class="lat">É ${C.neg?'ne ':''}${esc(c.present[0])}.</b> · <b class="lat">Wi ${C.neg?'ne ':''}${esc(c.future[3])}.</b> · <b class="lat">Dei ${C.neg?'ne ':''}${esc(hv.present[5])} ${esc(c.participle)}.</b>`}}
-V.bconj=()=>{const B=BT(),C=window.__bc;setTimeout(bcRender,0);return `<div class="nobp">${bthead('Verb conjugator','Every approved verb in every tense. Only ber and haver are irregular.')}
+V.bconj=()=>{const B=BT(),C=window.__bc;setTimeout(bcRender,0);return `<div>${bthead('Verb conjugator','Every approved verb in every tense. Only ber and haver are irregular.')}<div class="nosub">
  <div class="bcctl"><label>Verb <input list="bclist" id="bcv" value="${esc(C.v)}" autocomplete="off" spellcheck="false"></label><datalist id="bclist">${B.verbs.map(v=>`<option value="${esc(v)}">${esc(B.vgloss[v]||'')}</option>`).join('')}</datalist>
   <button class="chip" data-bcv="ber">ber</button><button class="chip" data-bcv="haver">haver</button><button class="chip" data-bcv="parler">parler</button><button class="chip" data-bcv="eater">eater</button><button class="chip" data-bcv="aïmer">aïmer</button>
   <label class="tvchk"><input type="checkbox" id="bcneg"${C.neg?' checked':''}> Negative (ne)</label></div>
  <div id="bcout"></div><p>Examples: <span id="bcex"></span></p>
  <details><summary>All ${B.verbs.length} approved verbs</summary><div class="bcall">${B.verbs.map(v=>`<button class="chip" data-bcv="${esc(v)}">${esc(v)}</button>`).join('')}</div></details>
- <section><h2>The regular endings</h2>${btTbl(['Tense','É','Tu','Le/Il/El','Wi','Vous','Dei'],[['Present (stem +)',...B.endings.present],['Past (stem +)',...B.endings.past],['Future (infinitive +)',...B.endings.future],['Conditional (infinitive +)',...B.endings.conditional],['Subjunctive (stem +)',...B.endings.subjunctive]])}</section></div>`};
+ <section><h2>The regular endings</h2>${btTbl(['Tense','É','Tu','Le/Il/El','Wi','Vous','Dei'],[['Present (stem +)',...B.endings.present],['Past (stem +)',...B.endings.past],['Future (infinitive +)',...B.endings.future],['Conditional (infinitive +)',...B.endings.conditional],['Subjunctive (stem +)',...B.endings.subjunctive]])}</section></div></div>`};
 /* ---- grammar ---- */
-V.bgrammar=()=>{const B=BT();return `<div class="nobp">${bthead('Grammar','The modern standard, rule by rule, with approved examples.')}
+V.bgrammar=()=>{const B=BT();return `<div>${bthead('Grammar','The modern standard, rule by rule, with approved examples.')}<div class="nosub">
  <section class="two"><div><h2>Articles</h2>${btTbl(['Braitisk','English'],B.articles,true)}<p class="meta">Articles change for number only. There is no grammatical gender.</p></div>
  <div><h2>Pronouns</h2>${btTbl(['Subject','Object','Possessive','Reflexive','English','IPA'],B.pron)}</div></section>
  ${B.grammar.map(([t,d,ex])=>`<section class="card scrule"><h2 style="margin-top:0">${esc(t)}</h2><p>${esc(d)}</p>${ex.map(([a,b])=>btPair(a,b)).join('')}</section>`).join('')}
  <section class="two"><div class="card grtool"><h2>Number builder</h2><label>Number (0–9999) <input type="number" id="btnum" min="0" max="9999" value="42" style="max-width:130px"></label><div id="btnumout" class="grout" aria-live="polite"></div>
   <p class="meta">Built with the approved rules: bigger groups first, hyphenated tens and units, no “and”.</p></div>
- <div><h2>Ordinals</h2>${btTbl(['Braitisk','English'],B.ord.map((o,i)=>[o,['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth'][i]]))}${mfacts(B.num_notes)}</div></section></div>`};
+ <div><h2>Ordinals</h2>${btTbl(['Braitisk','English'],B.ord.map((o,i)=>[o,['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth'][i]]))}${mfacts(B.num_notes)}</div></section></div></div>`};
 function btNumber(n){const B=BT();n=Math.floor(+n);if(!(n>=0&&n<=9999))return null;if(n===0)return B.num[0];const two=x=>x<20?B.num[x]:B.tens[Math.floor(x/10)*10]+(x%10?'-'+B.num[x%10]:'');const out=[];
  const th=Math.floor(n/1000),h=Math.floor(n%1000/100),r=n%100;if(th)out.push(two(th)+' mil');if(h)out.push(B.num[h]+' hundre');if(r)out.push(two(r));return out.join(' ')}
 /* ---- script ---- */
 const BTMAP=()=>{const orig='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÄÅÈÉÊÎÏÔÖÒÛÇŒàâäåèéêîïôöòûçœ';return orig};
 V.bscript=()=>{const B=BT(),orig=BTMAP();const acc='ËÜëü';
- return `<div class="nobp">${bthead('Alphabet and script','Braitisk is written first in its own alphabet, with Latin transcription second. The national typeface is Brightport Sans.')}
+ return `<div>${bthead('Alphabet and script','Braitisk is written first in its own alphabet, with Latin transcription second. The national typeface is Brightport Sans.')}<div class="nosub">
  <div class="notice sun"><b>Brightport Sans 1.0</b> is the national typeface: a geometric redesign of the original letters, with one even stroke, a shared grid and five weights from Light to Bold. Accented letters use one consistent mark system, built like the original É and Ê.</div>
  <section><h2>The alphabet</h2><p class="meta">Tap a letter. The old letter syllables are history, not modern sounds.</p>
  <div class="abc btabc">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c=>`<button class="ab" data-btl="${c}"><span class="bn">${c}${c.toLowerCase()}</span><b>${c}</b><span class="meta">${esc((B.letters.find(l=>l[0]===c)||['',''])[1])}</span></button>`).join('')}<div class="ab"><span class="bn">Sh sh</span><b>Sh</b><span class="meta">joined letter</span></div><div class="ab"><span class="bn">É È Ê Ö Å Œ</span><b>Accents</b><span class="meta">mark system</span></div></div>
@@ -1349,16 +1355,16 @@ V.bscript=()=>{const B=BT(),orig=BTMAP();const acc='ËÜëü';
   <h3>Five weights</h3><div class="bsw bsd">${[['Light',300],['Regular',400],['Medium',500],['Semibold',600],['Bold',700]].map(([n,w])=>`<p style="font-weight:${w}"><span aria-hidden="true">Braitisk · Under lês katr lunes</span> <small class="meta" style="font-family:'Fira Sans',sans-serif;font-size:13px">${n}</small></p>`).join('')}</div></section>
  <section class="two"><div><h2>Native glyph coverage</h2><p>Letters in Brightport Sans: ${orig.split('').map(c=>`<span class="btgl"><span class="bn">${c}</span><small>${c}</small></span>`).join('')} <span class="btgl"><span class="bn">sh</span><small>sh</small></span></p>
   <p>Not in the approved spelling, so not drawn yet (shown in Latin): ${[...acc].map(c=>`<span class="btgl pend">${c}</span>`).join('')}</p></div>
- <div><h2>Old forms replaced</h2>${btTbl(['Old website form','Modern standard'],B.legacy_map)}</div></section></div>`};
+ <div><h2>Old forms replaced</h2>${btTbl(['Old website form','Modern standard'],B.legacy_map)}</div></section></div></div>`};
 function btCoverage(t){const ok=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÄÅÈÉÊÎÏÔÖÒÛÇŒàâäåèéêîïôöòûçœ0123456789 \n.,!?;:’\'-–—()«»"'.split(''));const miss=[...new Set([...t].filter(c=>!ok.has(c)))];
  const el=document.getElementById('btcov');if(el)el.textContent=miss.length?`Not in Brightport Sans (shown in Latin): ${miss.join(' ')}`:''}
 /* ---- sounds ---- */
-V.bsounds=()=>{const B=BT();return `<div class="nobp">${bthead('Sounds and accents','The approved sound system with standard IPA symbols. No sounds are added or changed.')}
+V.bsounds=()=>{const B=BT();return `<div>${bthead('Sounds and accents','The approved sound system with standard IPA symbols. No sounds are added or changed.')}<div class="nosub">
  <section class="two"><div><h2>Vowels (11)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.vowels)}</div><div><h2>Diphthongs (6)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.diph)}<h2>Endings</h2>${btTbl(['Ending','IPA'],B.endsound)}</div></section>
  <section><h2>Consonants (26)</h2>${btTbl(['IPA','Spelling'],B.cons)}${mfacts(B.sound_notes)}</section>
  <section><h2>Regional accents</h2><p>Every region shares the same grammar and spelling. These are tendencies, not stereotypes. The column shows how <b class="lat">parler</b> (to converse) is said where it was recorded.</p>
   <div class="btacc">${B.accents.map(([r,t,p])=>`<div class="card"><h3 style="margin:0">${esc(r)}</h3><p style="margin:4px 0">${esc(t)}</p>${p?`<p style="margin:0"><b class="lat">parler</b> ${IPA(p)}</p>`:''}</div>`).join('')}</div>
-  <p class="meta">Regional /r/ and /ɾ/ are not standard sounds. There is no audio: no authentic Braitisk voice exists, and French or English speech would not be Braitisk.</p></section></div>`};
+  <p class="meta">Regional /r/ and /ɾ/ are not standard sounds. There is no audio: no authentic Braitisk voice exists, and French or English speech would not be Braitisk.</p></section></div></div>`};
 /* ---- lessons ---- */
 window.__bl=window.__bl||{i:0,lvl:'',quiz:null};
 function blQuiz(){const L=BT().lessons[window.__bl.i],box=document.getElementById('blquiz');if(!box)return;const ex=L.ex;if(ex.length<3){box.innerHTML='';return}
@@ -1366,11 +1372,11 @@ function blQuiz(){const L=BT().lessons[window.__bl.i],box=document.getElementByI
  const opts=[right,...ex.filter((_,j)=>j!==Q.k).sort(()=>Math.random()-.5).slice(0,3)].sort((a,b)=>a[1].localeCompare(b[1]));
  box.innerHTML=`<h3>Quick check</h3><p>What does <b class="lat">${esc(right[0])}</b> mean?</p><div class="lsopts">${opts.map(o=>`<button class="lsopt${Q.ans!=null?(o===right?' ok':o[1]===Q.ans?' no':''):''}" data-blans="${esc(o[1])}">${esc(o[1])}</button>`).join('')}</div>${Q.ans!=null?`<p>${Q.ans===right[1]?'✅ Correct!':'Not quite. It means “'+esc(right[1])+'”.'} <button class="chip" data-blnext>Another</button></p>`:''}`}
 V.blearn=()=>{const B=BT(),S=window.__bl,L=B.lessons[S.i];setTimeout(blQuiz,0);const lv=['Beginner','Intermediate','Advanced'];
- return `<div class="nobp">${bthead('Lessons','Twelve lessons in three levels, built only from approved Braitisk.')}
+ return `<div>${bthead('Lessons','Twelve lessons in three levels, built only from approved Braitisk.')}<div class="nosub">
  <div class="mchips"><span class="meta">Level</span><button class="chip" data-bllvl="" aria-pressed="${!S.lvl}">All</button>${lv.map(l=>`<button class="chip" data-bllvl="${l}" aria-pressed="${S.lvl===l}">${l}</button>`).join('')}</div>
  <div class="lsnav">${B.lessons.map((l,j)=>(!S.lvl||l.lvl===S.lvl)?`<button class="lsbtn btls" data-bl="${j}" aria-pressed="${j===S.i}"><b>${j+1}</b> ${esc(l.t)} <small>${l.lvl}</small></button>`:'').join('')}</div>
  <article class="card lscard btlscard"><p class="meta">Lesson ${S.i+1} of ${B.lessons.length} · ${L.lvl}</p><h2 style="margin-top:0">${esc(L.t)}</h2><p class="lede">${esc(L.intro)}</p><div class="lsex">${L.ex.map(([a,b])=>btPair(a,b)).join('')}</div><div id="blquiz"></div>
- <p class="lsfoot">${S.i>0?`<button data-bl="${S.i-1}">← ${esc(B.lessons[S.i-1].t)}</button>`:''}${S.i<B.lessons.length-1?`<button data-bl="${S.i+1}">${esc(B.lessons[S.i+1].t)} →</button>`:'<a class="btn-sec" href="#bpractice">Practise →</a>'}</p></article></div>`};
+ <p class="lsfoot">${S.i>0?`<button data-bl="${S.i-1}">← ${esc(B.lessons[S.i-1].t)}</button>`:''}${S.i<B.lessons.length-1?`<button data-bl="${S.i+1}">${esc(B.lessons[S.i+1].t)} →</button>`:'<a class="btn-sec" href="#bpractice">Practise →</a>'}</p></article></div></div>`};
 /* ---- practice ---- */
 window.__bf=window.__bf||{deck:'greetings',i:0,flip:false,dir:'b',known:{}};try{const k=JSON.parse(localStorage.getItem('braitisk-known')||'{}');if(k&&typeof k==='object')window.__bf.known=k}catch(e){}
 const BFDECKS=()=>{const by={};BTLX().filter(x=>!['profanity','sound history','website canon','productive prefixes','productive suffixes'].includes(x.cat)&&x.pos!=='affix').forEach(x=>{const c=x.cat.split('; ')[0];(by[c]=by[c]||[]).push(x)});return by};
@@ -1386,14 +1392,14 @@ function bxRender(){const E=window.__bx,X=BT().exercises,q=X[E.i%X.length],box=d
  <div class="fcbtns"><button data-bxdo="check" class="btn-pri">Check</button><button data-bxdo="show">Show answer</button><button data-bxdo="next">Next →</button></div>
  ${E.res==='ok'?`<p class="exok">✅ Correct!${q[1].length>1?' Accepted answers: '+q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(', '):''}</p>`:E.res==='no'?'<p class="exno">Not quite. Check the endings and word order, or show the answer.</p>':E.res==='show'?`<p>Answer: ${q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(' or ')}</p>`:''}`}
 V.bpractice=()=>{const F=window.__bf,decks=BFDECKS(),B=BT();setTimeout(()=>{bfCard();bxRender()},0);
- return `<div class="nobp">${bthead('Flashcards and exercises','Practise approved vocabulary, then translate sentences into Braitisk.')}
+ return `<div>${bthead('Flashcards and exercises','Practise approved vocabulary, then translate sentences into Braitisk.')}<div class="nosub">
  <section class="two"><div><h2>Flashcards</h2><label>Deck <select id="bfdeck">${Object.keys(decks).sort().map(k=>`<option value="${esc(k)}"${F.deck===k?' selected':''}>${esc(k)} (${decks[k].length})</option>`).join('')}</select></label>
   <div class="mchips"><span class="meta">Front</span><button class="chip" data-bfdir="b" aria-pressed="${F.dir==='b'}">Braitisk</button><button class="chip" data-bfdir="e" aria-pressed="${F.dir==='e'}">English</button></div><div id="bfcard"></div></div>
  <div><h2>Translate into Braitisk</h2><p class="meta">Capitals and punctuation don’t matter; accents do. Approved regional equivalents (vène or ami, haus or maison…) are accepted.</p><div id="bxbox" class="card"></div>
-  <h3>Approved equivalents</h3>${btTbl(['Standard','Also approved','English'],B.synonyms.filter(s=>s[1]))}</div></section></div>`};
+  <h3>Approved equivalents</h3>${btTbl(['Standard','Also approved','English'],B.synonyms.filter(s=>s[1]))}</div></section></div></div>`};
 /* ---- literature ---- */
 V.bliterature=()=>{const B=BT(),P=B.poem,idi=BTLX().filter(x=>x.cat==='idioms'),sl=BTLX().filter(x=>x.cat==='slang');
- return `<div class="nobp">${bthead('Literature','Founding texts, romantic literature, Nyrethian sagas and modern writing.')}
+ return `<div>${bthead('Literature','Founding texts, romantic literature, Nyrethian sagas and modern writing.')}<div class="nosub">
  <section class="card scpoem btpoem"><h2 style="margin-top:0"><span class="lat">${esc(P.title)}</span></h2><p class="meta">${esc(P.en_title)} · traditional, from before the division</p>
   <div class="poemcols"><div>${P.bt.map(l=>l?`<span class="lat">${esc(l)}</span><br>`:'<br>').join('')}</div><div class="poemen">${P.en.map(l=>l?esc(l)+'<br>':'<br>').join('')}</div></div>
   <details><summary>In the native script</summary><p class="bn btpoembn">${P.bt.map(l=>esc(l)).join('<br>')}</p></details><p class="meta">${esc(P.notes)}</p></section>
@@ -1401,7 +1407,7 @@ V.bliterature=()=>{const B=BT(),P=B.poem,idi=BTLX().filter(x=>x.cat==='idioms'),
  <section class="two"><div><h2>Idioms</h2>${btTbl(['Braitisk','Meaning'],idi.map(x=>[x.w,x.e]))}</div><div><h2>Slang</h2>${btTbl(['Braitisk','Meaning'],sl.map(x=>[x.w,x.e]))}<p class="meta">Historical: <b class="lat">Da-mow-now ee-tah!</b> (damn it), in the old letter syllables, survives as humorous archaic speech.</p></div></section>
  <section><h2>Sample texts</h2>${MEX('These are teaching texts. They are not real news, laws or announcements.')}
   ${B.texts.map(x=>`<article class="card scsample"><h3 style="margin-top:0">${esc(x.title)}</h3>${x.pairs?x.pairs.map(([a,b])=>btPair(a,b)).join(''):`${x.bt.map((t,i)=>`<p><span class="lat">${esc(t)}</span></p>`).join('')}<details><summary>English</summary><p>${esc(x.en)}</p></details>`}</article>`).join('')}</section>
- <section><h2>From the archive</h2><div class="card"><p class="sample lat">${esc(B.old_sample.bt).replace(/\n/g,'<br>')}</p><p class="meta">${esc(B.old_sample.note)}</p></div></section></div>`};
+ <section><h2>From the archive</h2><div class="card"><p class="sample lat">${esc(B.old_sample.bt).replace(/\n/g,'<br>')}</p><p class="meta">${esc(B.old_sample.note)}</p></div></section></div></div>`};
 /* events */
 document.addEventListener('click',e=>{const t=e.target.closest('[data-btk],[data-bddir],[data-bdmore],[data-bcv],[data-btl],[data-bl],[data-bllvl],[data-blans],[data-blnext],[data-bfflip],[data-bfmove],[data-bfdir],[data-bxdo]');if(!t)return;const d=t.dataset;
  if(d.btk){const box=t.closest('[data-btkfor]'),inp=document.getElementById(box.dataset.btkfor);if(inp){const s=inp.selectionStart??inp.value.length,en=inp.selectionEnd??s;inp.value=inp.value.slice(0,s)+d.btk+inp.value.slice(en);inp.focus();inp.setSelectionRange(s+1,s+1);inp.dispatchEvent(new Event('input',{bubbles:true}))}return}
@@ -1721,7 +1727,7 @@ function bpWords(t){
 function bpApply(){
   if(TERR_LANG!=='bp')return; if(!BPRX)bpPrep();
   document.querySelectorAll('#view,#nav,header .brand,footer').forEach(root=>{
-    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,input,.nobp,#bpOut,#lex,.lexicon,[lang="x-schoon"]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,input,.nobp,.nosub,#bpOut,#lex,.lexicon,[lang="x-schoon"]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
     const ns=[];while(w.nextNode())ns.push(w.currentNode);
     ns.forEach(n=>{const v=bpWords(n.nodeValue);if(v!==n.nodeValue){if(!ORIGN.has(n))ORIGN.set(n,n.nodeValue);n.nodeValue=v}});
   });
