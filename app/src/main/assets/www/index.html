@@ -111,7 +111,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 14px "Fira Sans"
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}.fgrid b{display:block;color:var(--ink);margin-bottom:6px}.fgrid a{display:block;padding:3px 0}.fgrid p{margin:0 0 6px}
 body.official .badge,body.official .src,body.official .open,body.official figcaption .badge{display:none}
 body.bpmode :is(#view,nav.sec,header .brand,footer) :is(h1,h2,h3,h4,p,li,a,span,b,strong,em,div,td,th,button,label,figcaption,small,dt,dd,summary){font-family:Brightportish,"Fira Sans",sans-serif!important}
-body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *){font-family:"Fira Sans",sans-serif!important}
+body.bpmode :is(#view,nav.sec,header .brand,footer) :is(.nobp,.nobp *):not(.bn):not(.bn *){font-family:"Fira Sans",sans-serif!important}
 .crumbs{font:500 15px "Fira Sans",sans-serif;margin:8px 0 20px;line-height:1.5;color:var(--mute)}.crumbs span{color:var(--ink)}
 .lvl{display:flex;gap:12px;align-items:center}.lvlflag{flex:none;width:54px;height:36px;border:1px solid var(--line)}
 .sthero{display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding:22px;margin:6px 0 22px;border-radius:14px;color:#fff;background:linear-gradient(120deg,#14223f,#2a4a7a 60%,#7a0a14)}
@@ -332,6 +332,34 @@ a.mnet:hover{border-color:#ee6a1a}
 .albody{flex:1;display:flex;gap:4%;align-items:center;padding:3% 5%}.alsun{flex:none;width:22%}.alsunimg{width:100%}.albody h3{font:900 clamp(18px,3.6vw,34px) "Fira Sans",sans-serif;margin:0 0 6px}.albody p{font-size:clamp(13px,2vw,19px);margin:4px 0}.alarea{color:#f4c21c;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 .alstrip{height:5%;background:linear-gradient(90deg,#c8262c 50%,#f4c21c 50%)}
 
+/* BRAITISK-CSS */
+/* Brightport Sans: draft faces are used only on the proof sheet until letters are approved */
+@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Light.woff2) format("woff2");font-weight:300;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Regular.woff2) format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Medium.woff2) format("woff2");font-weight:500;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Semibold.woff2) format("woff2");font-weight:600;font-display:swap}@font-face{font-family:"Brightport Sans Draft";src:url(fonts/brightport-sans-draft/BrightportSans-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+.bn,.bp{font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif}
+.ipa{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI","Lucida Sans Unicode",sans-serif!important;font-style:normal}
+body.bpmode .nobp .bn,body.bpmode .bn{font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
+body.bpmode .ipa,body.bpmode .ipa *{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI",sans-serif!important}
+.bthero{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid #f4c21c;border-radius:12px;padding:14px 18px;margin:4px 0 22px}.btemb svg{width:110px;display:block}
+@media(max-width:560px){.bthero{flex-direction:column;align-items:flex-start}}
+.bigbn{font-size:22px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}.bigbn .bn{font-size:48px;color:#14223f}
+@media (prefers-color-scheme:dark){.bigbn .bn{color:#f4c21c}}
+.bnsm{display:block;font-size:20px;color:var(--mute);margin-top:2px}.bnent{font-size:24px;color:#14223f;margin-left:8px}.bnfc{display:block;font-size:30px;color:#f4c21c}
+@media (prefers-color-scheme:dark){.bnent{color:#f4c21c}}
+.btent{border-left-color:#f4c21c}.btipa{margin:-2px 0 6px;font-size:16px}
+.btstage{margin-bottom:8px;border-left:5px solid #f4c21c}
+.bcctl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font:500 14px "Fira Sans",sans-serif}.bcctl input[list]{font:18px "Fira Sans",sans-serif;min-height:44px;padding:0 10px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);max-width:220px;margin-left:6px}
+.bcsum{background:#14223f;color:#fff;border-radius:10px;padding:12px 16px;margin-bottom:8px}.bcsum .bnsm{color:#f4c21c}.bcsum .meta{color:#c9d3e6}
+.bctab{width:100%;border-collapse:collapse;min-width:640px;font-size:15px}.bctab th,.bctab td{border:1px solid var(--line);padding:6px 8px;text-align:left}.bctab thead th{background:#f4c21c;color:#1c1a16}.bctab tbody th{font:600 13px "Fira Sans",sans-serif;background:var(--soft)}
+.bcall{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.btabc .ab{cursor:pointer;font:inherit;text-align:center}.btabc .ab .bn{font-size:30px;line-height:1.3}
+.btlbig{display:flex;gap:24px;font-size:96px;line-height:1.1;color:#14223f}@media (prefers-color-scheme:dark){.btlbig{color:#f4c21c}}
+.btgl{display:inline-flex;flex-direction:column;align-items:center;width:38px;margin:2px;padding:2px;border:1px solid var(--line);border-radius:6px;background:var(--card)}.btgl .bn{font-size:22px}.btgl small{font-size:11px;color:var(--mute)}.btgl.pend{height:38px;justify-content:center;font:600 18px "Fira Sans",sans-serif;border-style:dashed}
+.btacc{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.btls small{color:var(--mute);font-weight:400;margin-left:4px}.btls[aria-pressed=true] small{color:#c9d3e6}.btlscard{border-top-color:#f4c21c}
+.btfc .lat{display:block}.btpoem{border-left-color:#f4c21c}.btpoembn{font-size:24px;line-height:1.6}
+.subsep{font:700 12px "Fira Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);align-self:center;margin:0 4px 0 10px}
+.bsd{font-family:"Brightport Sans Draft",sans-serif}.bsproof{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}.bsproof div{background:var(--card);border:1px solid var(--line);border-radius:8px;text-align:center;padding:4px}.bsproof span{display:block}.bsproof .o{font-family:Brightportish;font-size:34px;color:var(--mute);line-height:1.3}.bsproof .n{font-size:40px;line-height:1.3;background:linear-gradient(#0000 calc(100% - 18px),#f4c21c33 0)}.bsproof small{display:block;font-size:12px;color:var(--mute)}.bsw p{margin:4px 0;font-size:34px}
+
 /* SCHOON-CSS */
 .tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
 .schero{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid #203e58;border-radius:12px;padding:14px 18px;margin:4px 0 22px}.scemb{width:120px;flex:none;border-radius:8px}
@@ -387,7 +415,7 @@ a.mnet:hover{border-color:#ee6a1a}
 <main><div class="wrap" id="view"><p class="meta">Loading…</p></div></main>
 <footer><div class="wrap fgrid">
   <div><b id="ftname">URBO</b><p id="ftsub">United Republics of Brightport and Occasue · Planet Nyreth</p></div>
-  <div><b>Reference</b><a href="#language">Brightportish</a><a href="#schoon">Schoon</a><a href="#archive">National archive</a><a href="#questions">Open questions</a></div>
+  <div><b>Reference</b><a href="#language">Braitisk (Brightportish)</a><a href="#diksionere">Lê Grand Diksionère</a><a href="#schoon">Schoon</a><a href="#archive">National archive</a><a href="#questions">Open questions</a></div>
   <div><b>About this site</b><p>Rebuilt from original drawings made in 2014 and later.</p><label class="meta"><input type="checkbox" id="notes"> Show archive notes on every page</label></div>
 </div></footer>
 <dialog id="dlg"><button class="dlg-close" id="dlgClose" aria-label="Close">Close</button><img id="dlgImg" alt=""><div class="dlg-body" id="dlgBody"></div></dialog>
@@ -396,9 +424,9 @@ a.mnet:hover{border-color:#ee6a1a}
 {
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=s=>document.querySelector(s);
-const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['media','Media',null],['language','Languages',null],['history','History',null]];
-const SUB={language:[['language','Brightportish',null],['schoon','Schoon',null],['ordbok','Ordbok',null],['schoongrammar','Grammar tools',null],['schoonlearn','Lessons',null],['schoonpractice','Flashcards & exercises',null],['schoontexts','Texts & culture',null],['schoonreview','Open questions',null]],media:[['media','Media home',null],['mediatv','TV guide',null],['mediaradio','Radio',null],['mediapress','Newspapers',null],['mediasocial','Social media',null],['mediamusic','Music',null],['mediascreen','Capital Hearts & film',null],['mediagames','Games',null],['mediakids','Children',null],['mediaalert','URBO Alert',null],['mediahistory','History & traditions',null]],uba:[['uba','UBA home',null],['ubalive','UBN Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={media:'media',mediatv:'media',mediaradio:'media',mediapress:'media',mediasocial:'media',mediamusic:'media',mediascreen:'media',mediagames:'media',mediakids:'media',mediaalert:'media',mediahistory:'media',ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'language',schoon:'language',ordbok:'language',schoongrammar:'language',schoonlearn:'language',schoonpractice:'language',schoontexts:'language',schoonreview:'language',search:''};
+const NAV=[['home','Home',null],['government','Government','Gouvernment'],['places','Territories','Territôres'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['media','Media',null],['language','Languages','Langues'],['history','History',null]];
+const SUB={language:[['language','Braitisk','Braitisk'],['diksionere','Diksionère',null],['bconj','Conjugator',null],['bgrammar','Grammar','Grammère'],['bscript','Script',null],['bsounds','Sounds & accents',null],['blearn','Lessons',null],['bpractice','Practice',null],['bliterature','Literature',null],['|','',null],['schoon','Schoon',null],['ordbok','Ordbok',null],['schoongrammar','Grammar tools',null],['schoonlearn','Lessons',null],['schoonpractice','Flashcards & exercises',null],['schoontexts','Texts & culture',null],['schoonreview','Open questions',null]],media:[['media','Media home',null],['mediatv','TV guide',null],['mediaradio','Radio',null],['mediapress','Newspapers',null],['mediasocial','Social media',null],['mediamusic','Music',null],['mediascreen','Capital Hearts & film',null],['mediagames','Games',null],['mediakids','Children',null],['mediaalert','URBO Alert',null],['mediahistory','History & traditions',null]],uba:[['uba','UBA home',null],['ubalive','UBN Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvernment'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Villes']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Villes']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
+const SEC={media:'media',mediatv:'media',mediaradio:'media',mediapress:'media',mediasocial:'media',mediamusic:'media',mediascreen:'media',mediagames:'media',mediakids:'media',mediaalert:'media',mediahistory:'media',ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'language',diksionere:'language',bconj:'language',bgrammar:'language',bscript:'language',bsounds:'language',blearn:'language',bpractice:'language',bliterature:'language',schoon:'language',ordbok:'language',schoongrammar:'language',schoonlearn:'language',schoonpractice:'language',schoontexts:'language',schoonreview:'language',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -429,7 +457,7 @@ V.home=()=>{
   const tile=(h,t,d,b)=>`<a class="tile" href="#${h}"><h3>${L(t,b)} →</h3><p>${d}</p></a>`;
   return `<section class="banner"><img src="img/ai-bc-photo2.jpg" alt="Brightport City at dusk"><div class="banner-txt"><h1>Welcome to the official portal of URBO</h1><p>The United Republics of Brightport and Occasue, on the planet Nyreth. The federal capital is Brightport City.</p></div></section>
   <section><h2>Quick access</h2><div class="tiles">
-  ${tile('browse','Find a state or territory','Every state and territory, with its flag and capital.','Teritors')}
+  ${tile('browse','Find a state or territory','Every state and territory, with its flag and capital.','Territôres')}
   ${tile('weather','Weather radar','Live radar for every state and city, from URBO Weather.',null)}
   ${tile('traffic','Traffic & rail','Lochway traffic, city traffic and train arrivals.',null)}
   ${tile('news','BNN news','Brightport News Network: BPTV’s news channel.',null)}${tile('media','Media','TV, radio, newspapers, music, film and more.',null)}
@@ -437,7 +465,7 @@ V.home=()=>{
   ${tile('map','Map of the nation','Tap any state to see its shires, comitatus and rejions.',null)}
   ${tile('lochways','Lochway network','The numbered national motorways.',null)}
   ${tile('rail','National railways','Lines, routes and border crossings.',null)}
-  ${tile('government','How the government works','Federal, republic, state and territory levels and the three parliaments.','Gouvern')}
+  ${tile('government','How the government works','Federal, republic, state and territory levels and the three parliaments.','Gouvernment')}
   ${tile('language','National language','Brightportish grammar, the lexicon and the national script.','Ofisial langue')}
   </div></section>
   <section class="card nscnow"><p class="meta" style="margin:0">Today on Nyreth</p><p style="margin:4px 0;font:700 20px 'Fira Sans',sans-serif"><span data-nsc="long"></span></p><p style="margin:0">${D.tz.zones.map(z=>`${esc(z.name)} <b><span data-nsc="clock" data-off="${z.off}"></span></b>`).join(' · ')} · <a href="#calendar">Calendar →</a></p></section>
@@ -1228,6 +1256,176 @@ document.addEventListener('change',e=>{const t=e.target,F=window.__ob;if(t.id===
  else if(t.id==='grnoun'){window.__gr.n=+t.value;grNoun()}else if(t.id==='grverb'){window.__gr.v=+t.value;grVerb()}else if(t.id==='fcdeck'){window.__fc.deck=t.value;window.__fc.i=0;window.__fc.flip=false;fcCard()}});
 /* SCHOON-END */
 
+/* BRAITISK-START · Braitisk (Brightportish) modern standard, archive rounds 1–25 */
+const BT=()=>D.braitisk;
+const BTLX=()=>BT().lex.map(x=>({id:x[0],w:x[1],e:x[2],pos:x[3],cat:x[4],r:x[5],st:x[6],ipa:x[7],n:x[8],rv:x[9],ex:x[10],exe:x[11],o:x[12]}));
+const btFold=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[œ]/g,'oe').replace(/[ø]/g,'o').replace(/[’']/g,"'").toLowerCase().trim();
+const btNorm=t=>t.normalize('NFC').replace(/[’']/g,"'").toLowerCase().trim();
+const BN=(t,cls)=>`<span class="bn${cls?' '+cls:''}" aria-hidden="true">${esc(t)}</span>`;   // native-script display; Latin backing text is always shown alongside
+const IPA=t=>t?`<span class="ipa">${esc(t)}</span>`:'<span class="meta">IPA not established</span>';
+function bthead(title,lede){return `<div class="bthero nobp"><div class="btemb" aria-hidden="true"><svg viewBox="0 0 120 80"><rect width="120" height="80" rx="8" fill="#14223f"/>${[0,1,2,3,4,5].map(i=>`<rect x="57" y="8" width="6" height="14" rx="3" fill="#f4c21c" transform="rotate(${-62.5+i*25} 60 44)"/>`).join('')}<path d="M30 46 Q45 40 60 48 Q75 40 90 46 V68 Q75 62 60 70 Q45 62 30 68Z" fill="#fff"/><path d="M60 48 V70" stroke="#14223f" stroke-width="2"/></svg></div><div><p class="meta" style="margin:0">Braitisk · Konseï of lê Langue Braitisk</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div></div>`}
+const btPair=(a,b)=>`<div class="scpair"><span><b class="lat">${esc(a)}</b>${BN(a,'bnsm')}</span><span>${esc(b)}</span></div>`;
+const btTbl=(h,rows,nat)=>`<div class="tablewrap"><table class="stack"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td data-l="${h[i]}">${i===0?`<b class="lat">${esc(c)}</b>${nat?BN(c,'bnsm'):''}`:/^\/.*\/$/.test(c)?IPA(c):esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+const BTKEYS=['é','è','ê','ë','â','à','î','ï','ô','ò','ö','û','ü','å','ä','œ','ç'];
+const btKeys=t=>`<div class="sckeys" data-btkfor="${t}" aria-label="Accented letters">${BTKEYS.map(k=>`<button type="button" class="chip" data-btk="${k}">${k}</button>`).join('')}</div>`;
+const BTPAGES=[['language','Braitisk'],['diksionere','Lê Grand Diksionère'],['bconj','Verb conjugator'],['bgrammar','Grammar'],['bscript','Alphabet & script'],['bsounds','Sounds & accents'],['blearn','Lessons'],['bpractice','Flashcards & exercises'],['bliterature','Literature']];
+/* ---- home ---- */
+V.language=()=>{const B=BT();return `<div class="nobp">${bthead('Braitisk','Brightportish in English. The native language of Brightport and one of URBO’s six federal official languages.')}
+ <p class="bigbn">${BN('Braitisk')} <span class="ipa">/bʁai̯ˈtisk/</span></p>
+ <section class="two"><div><h2>Three stages</h2>${B.history.map(([a,b],i)=>`<div class="card btstage"><div class="step">Stage ${i+1}</div><h3 style="margin:2px 0">${esc(a)}</h3><p style="margin:0">${esc(b)}</p></div>`).join('')}</div>
+ <div><h2>Identity</h2>${mfacts(B.identity)}<h3>How sounds changed</h3>${btTbl(['Word','Change'],B.soundchange)}</div></section>
+ <section><div class="tiles mtiles">${BTPAGES.slice(1).map(([k,t])=>`<a class="tile" href="#${k}"><h3>${t} →</h3><p>${({diksionere:'814 approved entries, searchable in both directions.',bconj:'All tenses for 100 approved verbs.',bgrammar:'Articles, pronouns, verbs, questions and numbers.',bscript:'The native alphabet, Brightport Sans and the script converter.',bsounds:'The IPA sound chart and 14 regional accents.',blearn:'Twelve lessons from beginner to advanced.',bpractice:'Flashcards and translation exercises.',bliterature:'Under lês katr lunes, proverbs, idioms and sample texts.'})[k]}</p></a>`).join('')}</div></section>
+ <section><h2>The language council</h2>${mfacts(B.institutions)}</section>
+ <section><h2>Still open</h2>${mfacts(B.open)}<p class="meta">Older website spellings (Teritor, Siti, Gouvern…) are replaced by the modern standard. <a href="#bscript">See the full list →</a></p></section></div>`};
+/* ---- dictionary ---- */
+window.__bd=window.__bd||{q:'',dir:'both',cat:'',pos:'',fold:true,strong:false,legacy:false,n:60};
+function bdRender(){const F=window.__bd,box=document.getElementById('bdres');if(!box)return;
+ if(F.legacy){box.innerHTML=`<p class="msample"><b>Superseded forms.</b> These older website spellings are no longer standard. Use the modern form.</p>${btTbl(['Old form','English','Modern standard'],BT().legacy)}`;return}
+ const fold=F.fold&&!/[^\x00-\x7f]/.test(F.q);const q=fold?btFold(F.q):btNorm(F.q);const f=s=>fold?btFold(s):btNorm(s);
+ let L=BTLX().filter(x=>(F.strong||x.cat!=='profanity')&&(!F.cat||x.cat.split('; ').includes(F.cat))&&(!F.pos||x.pos===F.pos));
+ const ws=t=>{const v=f(t);return v.startsWith(q)||v.split(/[\s;,/()-]+/).some(w=>w.startsWith(q))||(q.includes(' ')&&v.includes(q))};
+ if(q)L=L.filter(x=>(F.dir!=='en'&&ws(x.w))||(F.dir!=='bt'&&ws(x.e)));
+ L.sort((a,b)=>{if(q){const as=f(a.w).startsWith(q)||f(a.e).startsWith(q),bs=f(b.w).startsWith(q)||f(b.e).startsWith(q);if(as!==bs)return as?-1:1}return a.w.localeCompare(b.w,'fr')});
+ const hid=F.strong?0:BTLX().filter(x=>x.cat==='profanity').length;
+ box.innerHTML=`<p class="meta" aria-live="polite">${L.length} ${L.length===1?'entry':'entries'}${hid?` · ${hid} strong-language entries hidden`:''}</p><div class="oblist">${L.slice(0,F.n).map(x=>`<article class="obent btent"><div class="obhw"><b class="lat">${esc(x.w)}</b> ${BN(x.w,'bnent')}</div><div class="obgl">${esc(x.e)}</div>
+  <div class="btipa">${IPA(x.ipa)}</div><div class="obmeta">${x.pos?`<span>${esc(x.pos)}</span>`:'<span>word class not confirmed</span>'}<span>${esc(x.cat)}</span><span>${x.st==='website-canon'?'website canon':'approved'} · ${/^\d/.test(x.r)?'round '+esc(x.r):esc(x.r)}</span><span>origin ${x.o?esc(x.o):'not established'}</span><span class="meta">${x.id}</span></div>
+  ${x.rv?`<p class="obnote">Regional: ${esc(x.rv)}</p>`:''}${x.ex?`<p class="obnote"><b class="lat">${esc(x.ex)}</b> ${esc(x.exe)}</p>`:''}${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>${L.length>F.n?'<p><button data-bdmore>Show more</button></p>':''}`}
+V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.cat.split('; ')).filter(c=>c!=='profanity'))].sort(),poss=[...new Set(X.map(x=>x.pos).filter(Boolean))].sort();setTimeout(bdRender,0);
+ return `<div class="nobp">${bthead('Lê Grand Diksionère Braitisk','The Great Braitisk Dictionary: 814 approved entries. Search Braitisk or English; accents are optional.')}
+ <div class="obtools"><input type="search" id="bdq" placeholder="Search Braitisk or English…" value="${esc(F.q)}" aria-label="Search the dictionary" autocomplete="off">${btKeys('bdq')}
+  <label class="tvchk"><input type="checkbox" id="bdfold"${F.fold?' checked':''}> Ignore accents (lumiere finds lumière)</label></div>
+ <div class="mchips"><span class="meta">Search in</span>${[['both','Both'],['bt','Braitisk → English'],['en','English → Braitisk']].map(([k,l])=>`<button class="chip" data-bddir="${k}" aria-pressed="${F.dir===k}">${l}</button>`).join('')}</div>
+ <div class="obfilters"><label>Topic <select id="bdcat"><option value="">All topics</option>${cats.map(c=>`<option${F.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label><label>Word class <select id="bdpos"><option value="">All</option>${poss.map(c=>`<option${F.pos===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
+  <label class="tvchk"><input type="checkbox" id="bdstrong"${F.strong?' checked':''}> Show strong language</label><label class="tvchk"><input type="checkbox" id="bdlegacy"${F.legacy?' checked':''}> Show superseded old forms</label></div>
+ <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script. Native letters for accented characters are still being designed, so those show in Latin type. IPA appears only where it is established.</p></div>`};
+/* ---- conjugator ---- */
+window.__bc=window.__bc||{v:'parler',neg:false};
+const BTS=['É','Tu','Le / Il / El','Wi','Vous','Dei'];
+function btConj(inf){const B=BT();if(B.irreg[inf])return B.irreg[inf];const st=inf.slice(0,-2),E=B.endings;const p=st+'ed';
+ return{present:E.present.map(x=>st+x),past:Array(6).fill(p),future:E.future.map(x=>inf+x),conditional:E.conditional.map(x=>inf+x),subjunctive:Array(6).fill(st+'i'),participle:p,imperative:[st+'es',st+'ons',st+'ez']}}
+function bcRender(){const C=window.__bc,box=document.getElementById('bcout');if(!box)return;const B=BT();if(!B.verbs.includes(C.v)){box.innerHTML='<p class="meta">Only the 100 approved verbs are conjugated here. Pick one from the list.</p>';return}
+ const c=btConj(C.v),hv=B.irreg.haver,be=B.irreg.ber,irr=!!B.irreg[C.v];const ng=f=>C.neg?'ne '+f:f;
+ const row=(t,arr)=>`<tr><th scope="row">${t}</th>${arr.map((f,i)=>`<td><b class="lat">${esc(ng(f))}</b></td>`).join('')}</tr>`;
+ const per=[['Present perfect',hv.present],['Past perfect',hv.past],['Future perfect',hv.future],['Conditional perfect',hv.conditional]];
+ box.innerHTML=`<div class="bcsum"><h2 style="margin:0"><b class="lat">${esc(C.v)}</b> ${BN(C.v,'bnsm')}</h2><p class="meta">${esc(B.vgloss[C.v]||'')}${irr?' · irregular':' · regular: stem '+esc(C.v.slice(0,-2))+'-'} · participle <b class="lat">${esc(c.participle)}</b></p></div>
+ <div class="tablewrap"><table class="bctab"><thead><tr><th></th>${BTS.map(s=>`<th>${s}</th>`).join('')}</tr></thead><tbody>
+ ${row('Present',c.present)}${row('Past',c.past)}${row('Future',c.future)}${row('Conditional',c.conditional)}${row('Subjunctive (after ke)',c.subjunctive)}
+ ${per.map(([t,a])=>row(t,a.map(h=>h+' '+c.participle))).join('')}${row('Passive (present)',be.present.map(b=>b+' '+c.participle))}</tbody></table></div>
+ <p><b>Commands</b> (Tu / Wi / Vous): ${c.imperative.map(f=>`<b class="lat">${esc((C.neg?'Ne ':'')+f.charAt(0).toUpperCase()+f.slice(1))}!</b>`).join(' · ')}</p>
+ <p class="meta">${C.neg?'Negative: a single ne goes before the finite verb (with perfects, before the haver form). ':''}Generated from approved roots and endings. Not every form is idiomatic for every verb (e.g. the passive needs a verb that takes an object).</p>`;
+ const ex=document.getElementById('bcex');if(ex){const i=0;ex.innerHTML=`<b class="lat">É ${C.neg?'ne ':''}${esc(c.present[0])}.</b> · <b class="lat">Wi ${C.neg?'ne ':''}${esc(c.future[3])}.</b> · <b class="lat">Dei ${C.neg?'ne ':''}${esc(hv.present[5])} ${esc(c.participle)}.</b>`}}
+V.bconj=()=>{const B=BT(),C=window.__bc;setTimeout(bcRender,0);return `<div class="nobp">${bthead('Verb conjugator','Every approved verb in every tense. Only ber and haver are irregular.')}
+ <div class="bcctl"><label>Verb <input list="bclist" id="bcv" value="${esc(C.v)}" autocomplete="off" spellcheck="false"></label><datalist id="bclist">${B.verbs.map(v=>`<option value="${esc(v)}">${esc(B.vgloss[v]||'')}</option>`).join('')}</datalist>
+  <button class="chip" data-bcv="ber">ber</button><button class="chip" data-bcv="haver">haver</button><button class="chip" data-bcv="parler">parler</button><button class="chip" data-bcv="eater">eater</button><button class="chip" data-bcv="aïmer">aïmer</button>
+  <label class="tvchk"><input type="checkbox" id="bcneg"${C.neg?' checked':''}> Negative (ne)</label></div>
+ <div id="bcout"></div><p>Examples: <span id="bcex"></span></p>
+ <details><summary>All ${B.verbs.length} approved verbs</summary><div class="bcall">${B.verbs.map(v=>`<button class="chip" data-bcv="${esc(v)}">${esc(v)}</button>`).join('')}</div></details>
+ <section><h2>The regular endings</h2>${btTbl(['Tense','É','Tu','Le/Il/El','Wi','Vous','Dei'],[['Present (stem +)',...B.endings.present],['Past (stem +)',...B.endings.past],['Future (infinitive +)',...B.endings.future],['Conditional (infinitive +)',...B.endings.conditional],['Subjunctive (stem +)',...B.endings.subjunctive]])}</section></div>`};
+/* ---- grammar ---- */
+V.bgrammar=()=>{const B=BT();return `<div class="nobp">${bthead('Grammar','The modern standard, rule by rule, with approved examples.')}
+ <section class="two"><div><h2>Articles</h2>${btTbl(['Braitisk','English'],B.articles,true)}<p class="meta">Articles change for number only. There is no grammatical gender.</p></div>
+ <div><h2>Pronouns</h2>${btTbl(['Subject','Object','Possessive','Reflexive','English','IPA'],B.pron)}</div></section>
+ ${B.grammar.map(([t,d,ex])=>`<section class="card scrule"><h2 style="margin-top:0">${esc(t)}</h2><p>${esc(d)}</p>${ex.map(([a,b])=>btPair(a,b)).join('')}</section>`).join('')}
+ <section class="two"><div class="card grtool"><h2>Number builder</h2><label>Number (0–9999) <input type="number" id="btnum" min="0" max="9999" value="42" style="max-width:130px"></label><div id="btnumout" class="grout" aria-live="polite"></div>
+  <p class="meta">Built with the approved rules: bigger groups first, hyphenated tens and units, no “and”.</p></div>
+ <div><h2>Ordinals</h2>${btTbl(['Braitisk','English'],B.ord.map((o,i)=>[o,['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth'][i]]))}${mfacts(B.num_notes)}</div></section></div>`};
+function btNumber(n){const B=BT();n=Math.floor(+n);if(!(n>=0&&n<=9999))return null;if(n===0)return B.num[0];const two=x=>x<20?B.num[x]:B.tens[Math.floor(x/10)*10]+(x%10?'-'+B.num[x%10]:'');const out=[];
+ const th=Math.floor(n/1000),h=Math.floor(n%1000/100),r=n%100;if(th)out.push(two(th)+' mil');if(h)out.push(B.num[h]+' hundre');if(r)out.push(two(r));return out.join(' ')}
+/* ---- script ---- */
+const BTMAP=()=>{const orig='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê';return orig};
+V.bscript=()=>{const B=BT(),orig=BTMAP();const acc='ÀÂÄÅÈËÎÏÔÒÖŒÛÜÇàâäåèëîïôòöœûüç';
+ return `<div class="nobp">${bthead('Alphabet and script','Braitisk is written first in its own alphabet, with Latin transcription second. The national typeface is Brightport Sans.')}
+ <div class="notice sun"><b>Brightport Sans is being drafted.</b> It modernises your original letters: one even stroke, shared heights and spacing, five weights. Until each letter is approved, the site uses the original Brightportish font. Accented letters without an approved native glyph show in Latin type.</div>
+ <section><h2>The alphabet</h2><p class="meta">Tap a letter. The old letter syllables are history, not modern sounds.</p>
+ <div class="abc btabc">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c=>`<button class="ab" data-btl="${c}"><span class="bn">${c}${c.toLowerCase()}</span><b>${c}</b><span class="meta">${esc((B.letters.find(l=>l[0]===c)||['',''])[1])}</span></button>`).join('')}<div class="ab"><span class="bn">Sh sh</span><b>Sh</b><span class="meta">joined letter</span></div><div class="ab"><span class="bn">É é Ê ê</span><b>É Ê</b><span class="meta">original accents</span></div></div>
+ <div id="btlinfo" class="card" aria-live="polite"><p class="meta">Pick a letter to see it large, with its sounds.</p></div></section>
+ <section id="desk"><h2>Script converter</h2><p class="meta">Type in Latin and it appears in the native script. Or tap the native keys to write in Latin. The Latin text is always kept, so nothing is lost either way.</p>
+  <div class="card"><div id="bpOut" class="bn deskout"></div><p class="meta" id="btcov"></p>
+  <label for="bpIn" class="meta" style="display:block;margin-top:10px">Latin text</label><textarea id="bpIn" spellcheck="false"></textarea>
+  <div class="seg" style="margin:10px 0 0"><button data-bpcopy>Copy text</button><button data-bpclear>Clear</button>${[['Poem',B.poem.bt.slice(0,4).join('\n')],['Greetings','Bonjour! Mersi. Au revoir. À bientôt!'],['Question','Wer tu alles?'],['Numbers','un deu thri katr faiv six sèt eit neuf dis']].map(([n,t])=>`<button data-bpset="${esc(t)}">${esc(n)}</button>`).join('')}</div>
+  <div class="kbd" id="kbd">${[...'abcdefghijklmnopqrstuvwxyz','sh','é','ê'].map(k=>`<button data-bpkey="${k}"><span class="bn">${k}</span><small>${k}</small></button>`).join('')}<button data-bpkey="⇧" class="wide"><small>Shift</small></button><button data-bpkey=" " class="wide"><small>Space</small></button><button data-bpkey="⌫" class="wide"><small>Delete</small></button></div></div></section>
+ <section><h2>Brightport Sans · draft 1</h2><p>Your original letters (grey) above the modernised draft (black): one even stroke, a shared baseline, cap height and x-height, smoother curves and even spacing. <b>Not approved yet</b>; tell me which letters to change.</p>
+  <div class="bsproof">${'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê'.split('').map(c=>`<div><span class="o" aria-hidden="true">${c}</span><span class="n bsd" aria-hidden="true">${c}</span><small>${c}</small></div>`).join('')}<div><span class="o" aria-hidden="true">Sh sh</span><span class="n bsd" aria-hidden="true">Sh sh</span><small>Sh sh</small></div></div>
+  <h3>Five weights</h3><div class="bsw bsd">${[['Light',300],['Regular',400],['Medium',500],['Semibold',600],['Bold',700]].map(([n,w])=>`<p style="font-weight:${w}"><span aria-hidden="true">Braitisk · Under lês katr lunes</span> <small class="meta" style="font-family:'Fira Sans',sans-serif;font-size:13px">${n}</small></p>`).join('')}</div></section>
+ <section class="two"><div><h2>Native glyph status</h2><p>Letters with an original native glyph: ${orig.split('').map(c=>`<span class="btgl"><span class="bn">${c}</span><small>${c}</small></span>`).join('')} <span class="btgl"><span class="bn">sh</span><small>sh</small></span></p>
+  <p>Awaiting their own native glyph (shown in Latin for now): ${[...acc].map(c=>`<span class="btgl pend">${c}</span>`).join('')}</p></div>
+ <div><h2>Old forms replaced</h2>${btTbl(['Old website form','Modern standard'],B.legacy_map)}</div></section></div>`};
+function btCoverage(t){const ok=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÉÊéê0123456789 \n.,!?;:’\'-–—()«»"'.split(''));const miss=[...new Set([...t].filter(c=>!ok.has(c)))];
+ const el=document.getElementById('btcov');if(el)el.textContent=miss.length?`Shown in Latin until a native glyph is approved: ${miss.join(' ')}`:''}
+/* ---- sounds ---- */
+V.bsounds=()=>{const B=BT();return `<div class="nobp">${bthead('Sounds and accents','The approved sound system with standard IPA symbols. No sounds are added or changed.')}
+ <section class="two"><div><h2>Vowels (11)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.vowels)}</div><div><h2>Diphthongs (6)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.diph)}<h2>Endings</h2>${btTbl(['Ending','IPA'],B.endsound)}</div></section>
+ <section><h2>Consonants (26)</h2>${btTbl(['IPA','Spelling'],B.cons)}${mfacts(B.sound_notes)}</section>
+ <section><h2>Regional accents</h2><p>Every region shares the same grammar and spelling. These are tendencies, not stereotypes. The column shows how <b class="lat">parler</b> (to converse) is said where it was recorded.</p>
+  <div class="btacc">${B.accents.map(([r,t,p])=>`<div class="card"><h3 style="margin:0">${esc(r)}</h3><p style="margin:4px 0">${esc(t)}</p>${p?`<p style="margin:0"><b class="lat">parler</b> ${IPA(p)}</p>`:''}</div>`).join('')}</div>
+  <p class="meta">Regional /r/ and /ɾ/ are not standard sounds. There is no audio: no authentic Braitisk voice exists, and French or English speech would not be Braitisk.</p></section></div>`};
+/* ---- lessons ---- */
+window.__bl=window.__bl||{i:0,lvl:'',quiz:null};
+function blQuiz(){const L=BT().lessons[window.__bl.i],box=document.getElementById('blquiz');if(!box)return;const ex=L.ex;if(ex.length<3){box.innerHTML='';return}
+ const Q=window.__bl.quiz&&window.__bl.quiz.l===L.id?window.__bl.quiz:(window.__bl.quiz={l:L.id,k:Math.floor(Math.random()*ex.length),ans:null});const right=ex[Q.k];
+ const opts=[right,...ex.filter((_,j)=>j!==Q.k).sort(()=>Math.random()-.5).slice(0,3)].sort((a,b)=>a[1].localeCompare(b[1]));
+ box.innerHTML=`<h3>Quick check</h3><p>What does <b class="lat">${esc(right[0])}</b> mean?</p><div class="lsopts">${opts.map(o=>`<button class="lsopt${Q.ans!=null?(o===right?' ok':o[1]===Q.ans?' no':''):''}" data-blans="${esc(o[1])}">${esc(o[1])}</button>`).join('')}</div>${Q.ans!=null?`<p>${Q.ans===right[1]?'✅ Correct!':'Not quite. It means “'+esc(right[1])+'”.'} <button class="chip" data-blnext>Another</button></p>`:''}`}
+V.blearn=()=>{const B=BT(),S=window.__bl,L=B.lessons[S.i];setTimeout(blQuiz,0);const lv=['Beginner','Intermediate','Advanced'];
+ return `<div class="nobp">${bthead('Lessons','Twelve lessons in three levels, built only from approved Braitisk.')}
+ <div class="mchips"><span class="meta">Level</span><button class="chip" data-bllvl="" aria-pressed="${!S.lvl}">All</button>${lv.map(l=>`<button class="chip" data-bllvl="${l}" aria-pressed="${S.lvl===l}">${l}</button>`).join('')}</div>
+ <div class="lsnav">${B.lessons.map((l,j)=>(!S.lvl||l.lvl===S.lvl)?`<button class="lsbtn btls" data-bl="${j}" aria-pressed="${j===S.i}"><b>${j+1}</b> ${esc(l.t)} <small>${l.lvl}</small></button>`:'').join('')}</div>
+ <article class="card lscard btlscard"><p class="meta">Lesson ${S.i+1} of ${B.lessons.length} · ${L.lvl}</p><h2 style="margin-top:0">${esc(L.t)}</h2><p class="lede">${esc(L.intro)}</p><div class="lsex">${L.ex.map(([a,b])=>btPair(a,b)).join('')}</div><div id="blquiz"></div>
+ <p class="lsfoot">${S.i>0?`<button data-bl="${S.i-1}">← ${esc(B.lessons[S.i-1].t)}</button>`:''}${S.i<B.lessons.length-1?`<button data-bl="${S.i+1}">${esc(B.lessons[S.i+1].t)} →</button>`:'<a class="btn-sec" href="#bpractice">Practise →</a>'}</p></article></div>`};
+/* ---- practice ---- */
+window.__bf=window.__bf||{deck:'greetings',i:0,flip:false,dir:'b',known:{}};try{const k=JSON.parse(localStorage.getItem('braitisk-known')||'{}');if(k&&typeof k==='object')window.__bf.known=k}catch(e){}
+const BFDECKS=()=>{const by={};BTLX().filter(x=>!['profanity','sound history','website canon','productive prefixes','productive suffixes'].includes(x.cat)&&x.pos!=='affix').forEach(x=>{const c=x.cat.split('; ')[0];(by[c]=by[c]||[]).push(x)});return by};
+function bfCard(){const F=window.__bf,Dk=BFDECKS()[F.deck]||[],box=document.getElementById('bfcard');if(!box||!Dk.length)return;F.i%=Dk.length;const x=Dk[F.i];
+ const bt=`<b class="lat">${esc(x.w)}</b>${BN(x.w,'bnfc')}`,front=F.dir==='b'?bt:esc(x.e),back=F.dir==='b'?esc(x.e):bt;const known=Dk.filter(d=>F.known[d.id]).length;
+ box.innerHTML=`<button class="fc${F.flip?' flip':''}" data-bfflip aria-label="Flip card"><span class="fcin"><span class="fcf btfc">${front}<small>${F.dir==='b'?'Braitisk':'English'} · tap to flip</small></span><span class="fcb">${back}<small>${esc(x.pos||'')}</small></span></span></button>
+ <div class="fcbtns"><button data-bfmove="again">Again</button><button data-bfmove="know" class="btn-pri">I know it</button></div><p class="meta">Card ${F.i+1} of ${Dk.length} · ${known} marked known in this deck</p>`}
+window.__bx=window.__bx||{i:0,ans:'',res:null,score:0,tries:0};
+const bxClean=s=>s.normalize('NFC').replace(/[’']/g,"'").toLowerCase().replace(/[.!?¡¿,;:]+/g,'').replace(/\s+/g,' ').trim();
+function bxRender(){const E=window.__bx,X=BT().exercises,q=X[E.i%X.length],box=document.getElementById('bxbox');if(!box)return;
+ box.innerHTML=`<p class="meta">Sentence ${E.i%X.length+1} of ${X.length} · ${E.score} right of ${E.tries} checked</p><p class="exprompt">${esc(q[0])}</p>
+ <input type="text" id="bxin" value="${esc(E.ans)}" placeholder="Type it in Braitisk" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your Braitisk translation">${btKeys('bxin')}
+ <div class="fcbtns"><button data-bxdo="check" class="btn-pri">Check</button><button data-bxdo="show">Show answer</button><button data-bxdo="next">Next →</button></div>
+ ${E.res==='ok'?`<p class="exok">✅ Correct!${q[1].length>1?' Accepted answers: '+q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(', '):''}</p>`:E.res==='no'?'<p class="exno">Not quite. Check the endings and word order, or show the answer.</p>':E.res==='show'?`<p>Answer: ${q[1].map(a=>`<b class="lat">${esc(a)}</b>`).join(' or ')}</p>`:''}`}
+V.bpractice=()=>{const F=window.__bf,decks=BFDECKS(),B=BT();setTimeout(()=>{bfCard();bxRender()},0);
+ return `<div class="nobp">${bthead('Flashcards and exercises','Practise approved vocabulary, then translate sentences into Braitisk.')}
+ <section class="two"><div><h2>Flashcards</h2><label>Deck <select id="bfdeck">${Object.keys(decks).sort().map(k=>`<option value="${esc(k)}"${F.deck===k?' selected':''}>${esc(k)} (${decks[k].length})</option>`).join('')}</select></label>
+  <div class="mchips"><span class="meta">Front</span><button class="chip" data-bfdir="b" aria-pressed="${F.dir==='b'}">Braitisk</button><button class="chip" data-bfdir="e" aria-pressed="${F.dir==='e'}">English</button></div><div id="bfcard"></div></div>
+ <div><h2>Translate into Braitisk</h2><p class="meta">Capitals and punctuation don’t matter; accents do. Approved regional equivalents (vène or ami, haus or maison…) are accepted.</p><div id="bxbox" class="card"></div>
+  <h3>Approved equivalents</h3>${btTbl(['Standard','Also approved','English'],B.synonyms.filter(s=>s[1]))}</div></section></div>`};
+/* ---- literature ---- */
+V.bliterature=()=>{const B=BT(),P=B.poem,idi=BTLX().filter(x=>x.cat==='idioms'),sl=BTLX().filter(x=>x.cat==='slang');
+ return `<div class="nobp">${bthead('Literature','Founding texts, romantic literature, Nyrethian sagas and modern writing.')}
+ <section class="card scpoem btpoem"><h2 style="margin-top:0"><span class="lat">${esc(P.title)}</span></h2><p class="meta">${esc(P.en_title)} · traditional, from before the division</p>
+  <div class="poemcols"><div>${P.bt.map(l=>l?`<span class="lat">${esc(l)}</span><br>`:'<br>').join('')}</div><div class="poemen">${P.en.map(l=>l?esc(l)+'<br>':'<br>').join('')}</div></div>
+  <details><summary>In the native script</summary><p class="bn btpoembn">${P.bt.map(l=>esc(l)).join('<br>')}</p></details><p class="meta">${esc(P.notes)}</p></section>
+ <section><h2>Proverbs</h2>${B.proverbs.map(([a,b])=>btPair(a,b)).join('')}</section>
+ <section class="two"><div><h2>Idioms</h2>${btTbl(['Braitisk','Meaning'],idi.map(x=>[x.w,x.e]))}</div><div><h2>Slang</h2>${btTbl(['Braitisk','Meaning'],sl.map(x=>[x.w,x.e]))}<p class="meta">Historical: <b class="lat">Da-mow-now ee-tah!</b> (damn it), in the old letter syllables, survives as humorous archaic speech.</p></div></section>
+ <section><h2>Sample texts</h2>${MEX('These are teaching texts. They are not real news, laws or announcements.')}
+  ${B.texts.map(x=>`<article class="card scsample"><h3 style="margin-top:0">${esc(x.title)}</h3>${x.pairs?x.pairs.map(([a,b])=>btPair(a,b)).join(''):`${x.bt.map((t,i)=>`<p><span class="lat">${esc(t)}</span></p>`).join('')}<details><summary>English</summary><p>${esc(x.en)}</p></details>`}</article>`).join('')}</section>
+ <section><h2>From the archive</h2><div class="card"><p class="sample lat">${esc(B.old_sample.bt).replace(/\n/g,'<br>')}</p><p class="meta">${esc(B.old_sample.note)}</p></div></section></div>`};
+/* events */
+document.addEventListener('click',e=>{const t=e.target.closest('[data-btk],[data-bddir],[data-bdmore],[data-bcv],[data-btl],[data-bl],[data-bllvl],[data-blans],[data-blnext],[data-bfflip],[data-bfmove],[data-bfdir],[data-bxdo]');if(!t)return;const d=t.dataset;
+ if(d.btk){const box=t.closest('[data-btkfor]'),inp=document.getElementById(box.dataset.btkfor);if(inp){const s=inp.selectionStart??inp.value.length,en=inp.selectionEnd??s;inp.value=inp.value.slice(0,s)+d.btk+inp.value.slice(en);inp.focus();inp.setSelectionRange(s+1,s+1);inp.dispatchEvent(new Event('input',{bubbles:true}))}return}
+ if(d.bddir){window.__bd.dir=d.bddir;document.querySelectorAll('[data-bddir]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.bddir===d.bddir));bdRender();return}
+ if(d.bdmore!=null){window.__bd.n+=60;bdRender();return}
+ if(d.bcv){window.__bc.v=d.bcv;const i=document.getElementById('bcv');if(i)i.value=d.bcv;bcRender();return}
+ if(d.btl){const c=d.btl,B=BT(),s=(B.letters.find(l=>l[0]===c)||['',''])[1],snd=B.vowels.concat(B.cons.map(x=>[x[0],x[1],''])).filter(r=>r[1].split(/[ ,()]+/).includes(c));
+  document.getElementById('btlinfo').innerHTML=`<div class="btlbig"><span class="bn">${c}</span><span class="bn">${c.toLowerCase()}</span></div><p><b>${c}</b> · old letter syllable “${esc(s)}” (historical)</p>${snd.length?`<p>Modern sound${snd.length>1?'s':''}: ${snd.map(r=>IPA(r[0])).join(', ')}</p>`:'<p class="meta">Not a simple single-letter sound in the modern chart.</p>'}`;return}
+ if(d.bl){window.__bl.i=+d.bl;window.__bl.quiz=null;route();scrollTo(0,0);return}
+ if(d.bllvl!=null){window.__bl.lvl=d.bllvl;const L=BT().lessons;if(d.bllvl&&L[window.__bl.i].lvl!==d.bllvl)window.__bl.i=L.findIndex(l=>l.lvl===d.bllvl);window.__bl.quiz=null;route();return}
+ if(d.blans!=null){if(window.__bl.quiz.ans==null){window.__bl.quiz.ans=d.blans;blQuiz()}return}
+ if(d.blnext!=null){window.__bl.quiz=null;blQuiz();return}
+ if(d.bfflip!=null){window.__bf.flip=!window.__bf.flip;bfCard();return}
+ if(d.bfmove){const F=window.__bf,Dk=BFDECKS()[F.deck],x=Dk[F.i%Dk.length];if(d.bfmove==='know')F.known[x.id]=1;else delete F.known[x.id];try{localStorage.setItem('braitisk-known',JSON.stringify(F.known))}catch(err){}
+  let j=F.i;for(let k=1;k<=Dk.length;k++){const c=(F.i+k)%Dk.length;if(!F.known[Dk[c].id]||k===Dk.length){j=c;break}}F.i=j;F.flip=false;bfCard();return}
+ if(d.bfdir){window.__bf.dir=d.bfdir;window.__bf.flip=false;document.querySelectorAll('[data-bfdir]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.bfdir===d.bfdir));bfCard();return}
+ if(d.bxdo){const E=window.__bx,X=BT().exercises,q=X[E.i%X.length],inp=document.getElementById('bxin');if(inp)E.ans=inp.value;
+  if(d.bxdo==='check'){if(!E.ans.trim())return;const ok=q[1].some(a=>bxClean(a)===bxClean(E.ans));if(E.res!=='ok'&&E.res!=='show'){E.tries++;if(ok)E.score++}E.res=ok?'ok':'no'}else if(d.bxdo==='show')E.res='show';else{E.i++;E.ans='';E.res=null}bxRender();return}});
+document.addEventListener('input',e=>{const t=e.target;if(t.id==='bdq'){window.__bd.q=t.value;window.__bd.n=60;bdRender()}else if(t.id==='bcv'){window.__bc.v=t.value.trim().toLowerCase();bcRender()}else if(t.id==='btnum'){const o=document.getElementById('btnumout');const w=btNumber(t.value);if(o)o.innerHTML=w?`<div class="grbig lat">${esc(w)}</div>${BN(w,'bnsm')}`:'<p class="meta">Enter 0–9999.</p>'}else if(t.id==='bxin')window.__bx.ans=t.value;else if(t.id==='bpIn')btCoverage(t.value)});
+document.addEventListener('keydown',e=>{if(e.target.id==='bxin'&&e.key==='Enter'){e.preventDefault();document.querySelector('[data-bxdo="check"]').click()}});
+document.addEventListener('change',e=>{const t=e.target,F=window.__bd;if(t.id==='bdcat'){F.cat=t.value;bdRender()}else if(t.id==='bdpos'){F.pos=t.value;bdRender()}else if(t.id==='bdfold'){F.fold=t.checked;bdRender()}else if(t.id==='bdstrong'){F.strong=t.checked;bdRender()}else if(t.id==='bdlegacy'){F.legacy=t.checked;bdRender()}
+ else if(t.id==='bcneg'){window.__bc.neg=t.checked;bcRender()}else if(t.id==='bfdeck'){window.__bf.deck=t.value;window.__bf.i=0;window.__bf.flip=false;bfCard()}});
+/* BRAITISK-END */
+
 V.history=()=>`<h1>History</h1><p class="lede">Dates use the Nyrethian Standard Calendar (NSC), which counts from the first landing. Years marked “about” are not yet fixed to an exact day. <a href="#calendar">How the calendar works →</a></p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.timeline.map((e,i)=>`<li><div class="when">${e.live?'<span data-nsc="date"></span>':esc(e.when)+(/^\d\d\//.test(e.when)?' NSC':' NSC')}</div><h3>${esc(e.name)}</h3><p>${esc(e.text)}</p></li>`).join('')}</ol>
@@ -1488,33 +1686,6 @@ V.rail=()=>`<h1>Railways</h1><p class="lede">Brightport’s national rail networ
   <div><h2>How it fits together</h2><ul class="facts"><li>Trempas is the main rail hub: the Northern, Capital and Weiden lines meet at its port.</li><li>Brightport City joins the Capital, Transcontinental and Southern lines.</li><li>Rail avoids steep ground even more than the Lochways, so every line bends around the mountains on the future Montes.</li><li>Lochwater and Berevo connect the west coast to the rest of the network.</li></ul>
   <div class="notice sun">Still to decide: line names, whether any routes are high-speed or freight-only, who runs the railways, and what happened to lines that crossed the new border after the war.</div>
   <p class="meta">Original drawings: <a href="#archive" data-goto="src-2014-map">Original national map</a> · <a href="#archive" data-goto="src-lochwater-view">City of Lochwater</a> · <a href="#archive" data-goto="src-trempas-view">City of Trempas</a></p></div></div>`;
-V.language=()=>{
-  const L=D.language;
-  return `<h1>Brightportish</h1><p class="lede">Born as a secret English-based code among the first Nyreth-born generations, it became the shared language of the republic. Eastern Brightport promotes it; Occasue leans toward Earth heritage languages.</p>
-  <div class="grid">${L.history.map((h,i)=>`<div class="card"><div class="step">Stage ${i+1}</div><p style="margin:4px 0 0">${esc(h)}</p></div>`).join('')}</div>
-  <div class="notice sun">Old Brightportish example: “${esc(L.old_example[0])}” → <b>${esc(L.old_example[1])}</b>. The sound changes that lead to the modern language are still to be worked out.</div>
-  <section class="two"><div><h2>Sounds</h2><div class="scroll"><table class="stack"><thead><tr><th>Feature</th><th>Rule</th><th>Status</th></tr></thead><tbody>${L.phonology.map(([a,b,s])=>`<tr><td><b>${esc(a)}</b></td><td>${esc(b)}</td><td>${badge(s)}</td></tr>`).join('')}</tbody></table></div>
-  <h3 style="margin-top:16px">Regional accents ${badge('proposal')}</h3><ul class="facts">${L.accents.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
-  <div><h2>Pronouns</h2><div class="scroll"><table class="stack"><thead><tr><th>Brightportish</th><th>English</th><th>Sound</th></tr></thead><tbody>${L.pronouns.map(([a,b,c])=>`<tr><td><b class="big">${esc(a)}</b></td><td>${esc(b)}</td><td>${esc(c)}</td></tr>`).join('')}</tbody></table></div><p class="meta">Working forms ${badge('proposal')}</p></div></section>
-  <section><h2>Verb conjugator</h2><p>Regular verbs end in <b>-er</b>. Only <b>ber</b> (to be) and <b>haver</b> (to have) are irregular.</p>
-  <div class="seg"><input type="text" id="verb" value="talker" aria-label="Infinitive" style="max-width:240px">${['ber','haver','liver','eater'].map(v=>`<button data-verb="${v}">${v}</button>`).join('')}</div>
-  <div class="scroll"><table class="stack conj" id="conj"></table></div><p class="meta" id="conjNote"></p></section>
-  <section class="two"><div><h2>Grammar in examples</h2><div class="scroll"><table class="stack"><thead><tr><th>Brightportish</th><th>English</th></tr></thead><tbody>${L.examples.map(([a,b])=>`<tr><td><b>${esc(a)}</b></td><td>${esc(b)}</td></tr>`).join('')}</tbody></table></div>
-  <h3 style="margin-top:16px">Our Countri</h3><p class="sample">${esc(L.sample.bp).replace(/\n/g,'<br>')}</p><p class="meta">${esc(L.sample.en)}</p></div>
-  <div><h2>Lexicon</h2><input type="search" id="lexq" placeholder="Search English or Brightportish" aria-label="Search lexicon"><div class="scroll" style="margin-top:8px"><table class="stack"><thead><tr><th>English</th><th>Brightportish</th><th>Status</th></tr></thead><tbody id="lex"></tbody></table></div>
-  <div class="notice">Word clashes to resolve: ${L.collisions.map(esc).join(' ')}</div></div></section>
-  <section><h2>The script</h2><p>The original alphabet and manuscript are the only glyph authority. Letter names below are readings of the manuscript.</p>
-  <div class="scroll"><table><tbody>${[0,1,2,3,4,5,6].map(r=>`<tr>${L.letters.slice(r*4,r*4+4).map(([a,b])=>`<td><b class="ui">${esc(a)}</b> <span class="meta">${esc(b)}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div>
-  <div class="notice sun">The Brightportish typeface ${badge('canon')} is the definitive national script. It was drawn from the polished alphabet chart, with N and c redrawn so every letter is distinct.</div>
-  <h3 style="margin-top:18px">The alphabet</h3>
-  <div class="abc">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c=>`<div class="ab"><span class="bp">${c}${c.toLowerCase()}</span><b>${c}</b><span class="meta">${esc((L.letters.find(l=>l[0]===c)||['',''])[1])}</span></div>`).join('')}<div class="ab"><span class="bp">Sh sh</span><b>Sh</b><span class="meta">ligature</span></div></div>
-  <section id="desk"><h2>Typing desk</h2><p class="meta">Type in Brightportish spelling and it appears in the script. “sh” joins automatically.</p>
-  <div class="card"><div id="bpOut" class="bp deskout"></div>
-  <label for="bpIn" class="meta" style="display:block;margin-top:10px">Your text</label><textarea id="bpIn" spellcheck="false"></textarea>
-  <div class="seg" style="margin:10px 0 0"><button data-bpcopy>Copy text</button><button data-bpclear>Clear</button>${[['Our Countri',L.sample.bp],['Greetings','Bonjour! Gooday! Mersi. Au revoir.'],['Question','Tu lives in Berevo?'],['Numbers','wun tu thri for faiv six seven eit nain ten']].map(([n,t])=>`<button data-bpset="${esc(t)}">${esc(n)}</button>`).join('')}</div>
-  <div class="kbd" id="kbd">${[...'abcdefghijklmnopqrstuvwxyz','sh','é'].map(k=>`<button data-bpkey="${k}"><span class="bp">${k}</span><small>${k}</small></button>`).join('')}<button data-bpkey="⇧" class="wide"><small>Shift</small></button><button data-bpkey=" " class="wide"><small>Space</small></button><button data-bpkey="⌫" class="wide"><small>Delete</small></button></div></div>
-  <p class="meta">The font files (OTF and TTF) are in our chat; install them to type Brightportish in any app.</p></section>${toArchive(['src-alphabet','src-manuscript'])}</section>`;
-};
 V.archive=()=>{
   const kinds=[['all','All'],['original','Original drawings'],['reference','Tracings & notes'],['concept','Concepts']];
   const f=window.__ak||'all';
@@ -1527,17 +1698,6 @@ V.questions=()=>{
   return `<h1>Open questions</h1><p class="lede">Things the drawings don’t settle yet. They stay open until you decide.</p>
   <div class="grid">${groups.map(g=>`<div class="card"><h3>${esc(g)}</h3><ul class="facts">${D.questions.filter(q=>q.topic===g).map(q=>`<li>${esc(q.q)}</li>`).join('')}</ul></div>`).join('')}</div>`;
 };
-function conj(){
-  const v=($('#verb')?.value||'').trim().toLowerCase();const t=$('#conj');if(!t)return;
-  const S=['É','Tu','Le / Il / El','Wi','Vous','Dei'];let c=D.language.irregular[v],note;
-  if(c){note=`Irregular (${c.gloss}). Subjunctive: ${c.sub}.`}else{const r=v.endsWith('er')&&v.length>2?v.slice(0,-2):v;if(!r){t.innerHTML='';$('#conjNote').textContent='Type an infinitive ending in -er.';return}
-    const past=r.endsWith('e')?r+'d':r+'ed';c={pres:['e','es','e','ons','ez','ent'].map(x=>r+x),past:Array(6).fill(past),fut:['ai','as','a','ons','ez','ont'].map(x=>r+'er'+x)};note=`Regular. Subjunctive: ${r}i, the same for every subject. Negative: É ne ${c.pres[0]}.`}
-  t.innerHTML='<thead><tr><th>Subject</th><th>Present</th><th>Past</th><th>Future</th></tr></thead><tbody>'+S.map((s,i)=>`<tr><td>${esc(s)}</td><td><b>${esc(c.pres[i])}</b></td><td>${esc(c.past[i])}</td><td>${esc(c.fut[i])}</td></tr>`).join('')+'</tbody>';
-  $('#conjNote').textContent=note;
-}
-function lex(){const q=($('#lexq')?.value||'').trim().toLowerCase();const b=$('#lex');if(!b)return;
-  const r=D.language.lexicon.filter(([e,w])=>!q||e.toLowerCase().includes(q)||w.toLowerCase().includes(q));
-  b.innerHTML=r.map(([e,w,s])=>`<tr><td>${esc(e)}</td><td><b>${esc(w)}</b></td><td>${badge(s)}</td></tr>`).join('')||'<tr><td colspan="3" class="meta">No match. This word may still need to be coined.</td></tr>';}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-tl]');if(!b)return;TERR_LANG=b.dataset.tl;try{localStorage.setItem('bp-lang',TERR_LANG)}catch(e){}route()});
 let NOTES=false;try{NOTES=localStorage.getItem('bp-notes')==='1'}catch(e){}
 document.addEventListener('change',e=>{if(e.target.id==='notes'){NOTES=e.target.checked;try{localStorage.setItem('bp-notes',NOTES?'1':'0')}catch(_){}route()}});
@@ -1546,15 +1706,10 @@ document.addEventListener('submit',e=>{if(e.target.id!=='srch')return;e.preventD
 function bpPlural(w){return /y$/i.test(w)&&!/[aeiou]y$/i.test(w)?w.slice(0,-1)+'ies':w+'s'}
 let BPRX=null;
 function bpPrep(){
-  const pairs=[];
-  D.language.lexicon.filter(x=>x[2]==='canon').forEach(([en,bp])=>{
-    en.split('/').forEach(e=>{e=e.trim();if(!e||/^hello$/i.test(e))return;
-      pairs.push([e,bp.split('/')[0].trim()]);
-      const last=e.split(' ');const pl=bpPlural(last.pop());pairs.push([[...last,pl].join(' '),bp.split('/')[0].trim()+'s'])})});
-  pairs.sort((a,b)=>b[0].length-a[0].length);
-  const names=[...new Set(D.entities.flatMap(e=>[e.name,...e.aliases]).filter(n=>n&&/\s/.test(n)))].sort((a,b)=>b.length-a.length);
+  const pairs=D.braitisk.labels.map(([e,b])=>[e,b]);pairs.sort((a,b)=>b[0].length-a[0].length);
+  const names=[...new Set([...D.braitisk.keep,...D.entities.flatMap(e=>[e.name,...e.aliases]).filter(n=>n&&/\s/.test(n)&&!D.braitisk.labels.some(l=>l[0]===n))])].sort((a,b)=>b.length-a.length);
   const ex=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  BPRX={map:new Map(pairs.map(([e,b])=>[e.toLowerCase(),b])),rx:new RegExp('\\b('+pairs.map(p=>ex(p[0])).join('|')+')\\b','gi'),names:(names.push('Republic of Occasue','Republic of Brightport'),names.sort((a,b)=>b.length-a.length),names.length)?new RegExp(names.map(ex).join('|'),'g'):null};
+  BPRX={map:new Map(pairs.map(([e,b])=>[e.toLowerCase(),b])),rx:new RegExp('(?<![\\wÀ-ÿ])('+pairs.map(p=>ex(p[0])).join('|')+')(?![\\wÀ-ÿ])','gi'),names:names.length?new RegExp(names.map(ex).join('|'),'g'):null};
 }
 function bpWords(t){
   const keep=[];let x=BPRX.names?t.replace(BPRX.names,m=>{keep.push(m);return '\u0000'+(keep.length-1)+'\u0000'}):t;
@@ -1626,13 +1781,14 @@ function route(){
   {const si=site&&siteInfo(site.id),gs=$('.govstrip .wrap'),fn=$('#ftname'),fs=$('#ftsub');if(gs)gs.textContent=site?(si.e.type==='republic'?`Official website of the ${si.title} · Member of the United Republics (URBO)`:`Official website of the ${si.full} · Republic of ${short(si.rep.name)} · URBO`):'Official portal of the United Republics of Brightport and Occasue (URBO)';
    if(fn)fn.textContent=site?si.full:'URBO';if(fs)fs.textContent=site?(si.rep?'Republic of '+short(si.rep.name)+' · URBO':'Member of the United Republics (URBO)'):'United Republics of Brightport and Occasue · Planet Nyreth'}
   $('#nav').innerHTML=site?siteNav(site):NAV.map(([k,l,b])=>`<a href="#${k}" ${k===sec?'aria-current="page"':''}>${L(l,b)}</a>`).join('');
-  const sub=!site&&SUB[sec]?`<div class="subnav">${SUB[sec].map(([k,l,b])=>`<a href="#${k}" ${k===key?'aria-current="page"':''}>${L(l,b)}</a>`).join('')}</div>`:'';
+  const sub=!site&&SUB[sec]?`<div class="subnav">${SUB[sec].map(([k,l,b])=>k==='|'?'<span class="subsep" aria-hidden="true">·</span>':`<a href="#${k}" ${k===key?'aria-current="page"':''}>${L(l,b)}</a>`).join('')}</div>`:'';
   {const z=ZONE(site?site.id:'urbo');NSC.off=z.off;const zl=$('#nsczone');if(zl)zl.textContent=z.name+(site?'':' (Brightport City)');}
   {const ls=langsFor(site),sg=$('#langseg');if(sg)sg.innerHTML=ls.map(l=>`<button data-tl="${l}" title="${LANGNAME[l]}">${l.toUpperCase()}</button>`).join('');}
   document.querySelectorAll('[data-tl]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.tl===(langsFor(site).includes(TERR_LANG)?TERR_LANG:'en')));
   document.body.classList.toggle('official',!['archive','questions','history'].includes(key)&&!NOTES);
   $('#view').innerHTML=`<div class="view">${sub}${site?siteView(site):h.startsWith('city-')?V.city(h.slice(5)):key==='ubateam'?V.ubateam(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?V.browse(h.slice(7)):V[key]()}</div>`;
-  if(key==='language'){conj();lex();const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bp-desk')}catch(e){}i.value=v??D.language.sample.bp;bpRender()}}
+  if(key==='bscript'){const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bt-desk')}catch(e){}i.value=v??D.braitisk.poem.bt.slice(0,4).join('\n');bpRender();btCoverage(i.value)}}
+  if(key==='bgrammar'){const n=document.getElementById('btnum');if(n)n.dispatchEvent(new Event('input',{bubbles:true}))}
   i18nRestore();document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
   {const lg=langsFor(site).includes(TERR_LANG)?TERR_LANG:'en';if(!['en','bp'].includes(lg))i18nApply(lg);else document.documentElement.lang='en'}
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
@@ -1650,7 +1806,7 @@ function openSrc(id){const s=D.S[id];if(!s)return;const d=$('#dlg');$('#dlgImg')
   $('#dlgBody').innerHTML=`<h3>${esc(s.title)}</h3><p class="meta" style="margin:4px 0">${esc(s.origin)} · ${esc(eraName(s.era))} · ${esc(s.kind)}</p><p style="margin:0">${esc(s.notes)}</p>`;
   try{d.showModal()}catch(e){d.setAttribute('open','')}}
 let SHIFT=false;
-function bpRender(){const i=document.getElementById('bpIn'),o=document.getElementById('bpOut');if(!i||!o)return;o.textContent=i.value||' ';try{localStorage.setItem('bp-desk',i.value)}catch(e){}}
+function bpRender(){const i=document.getElementById('bpIn'),o=document.getElementById('bpOut');if(!i||!o)return;o.textContent=i.value||' ';try{localStorage.setItem('bt-desk',i.value)}catch(e){}if(typeof btCoverage==='function')btCoverage(i.value)}
 function bpInsert(t){const i=document.getElementById('bpIn');const a=i.selectionStart??i.value.length,b=i.selectionEnd??a;i.value=i.value.slice(0,a)+t+i.value.slice(b);const p=a+t.length;i.setSelectionRange(p,p);bpRender()}
 let RL='';
 function pickRL(n){RL=n;const m=document.querySelector('.art.rmap');if(!m)return;m.classList.toggle('rdim',!!n);
@@ -1683,10 +1839,9 @@ document.addEventListener('click',e=>{
   const eg=e.target.closest('[data-era-go]');if(eg){ERA=eg.dataset.eraGo}
   const gv=e.target.closest('[data-gov]');if(gv){window.__gov=gv.dataset.gov;route();return}
   const k=e.target.closest('[data-kind]');if(k){window.__ak=k.dataset.kind;route();return}
-  const v=e.target.closest('[data-verb]');if(v){$('#verb').value=v.dataset.verb;conj();return}
 });
 document.addEventListener('keydown',e=>{if(e.key==='Enter'){const s=e.target.closest&&e.target.closest('figure[data-src]');if(s)openSrc(s.dataset.src)}});
-document.addEventListener('input',e=>{if(e.target.id==='bpIn')bpRender();if(e.target.id==='verb')conj();if(e.target.id==='lexq')lex()});
+document.addEventListener('input',e=>{if(e.target.id==='bpIn')bpRender();});
 $('#dlgClose').addEventListener('click',()=>$('#dlg').close());
 $('#dlg').addEventListener('click',e=>{if(e.target.id==='dlg')$('#dlg').close()});
 window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0)});
