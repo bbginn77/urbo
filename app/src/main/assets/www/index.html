@@ -332,6 +332,36 @@ a.mnet:hover{border-color:#ee6a1a}
 .albody{flex:1;display:flex;gap:4%;align-items:center;padding:3% 5%}.alsun{flex:none;width:22%}.alsunimg{width:100%}.albody h3{font:900 clamp(18px,3.6vw,34px) "Fira Sans",sans-serif;margin:0 0 6px}.albody p{font-size:clamp(13px,2vw,19px);margin:4px 0}.alarea{color:#f4c21c;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 .alstrip{height:5%;background:linear-gradient(90deg,#c8262c 50%,#f4c21c 50%)}
 
+/* SCHOON-CSS */
+.tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.schero{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:8px solid #203e58;border-radius:12px;padding:14px 18px;margin:4px 0 22px}.scemb{width:120px;flex:none;border-radius:8px}
+@media(max-width:560px){.schero{flex-direction:column;align-items:flex-start}.scemb{width:96px}}
+.scembfig img{width:100%;max-width:340px;display:block;margin:auto}
+.scpair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}.scpair b{font-size:18px}.scpair span{color:var(--mute)}
+@media(max-width:560px){.scpair{grid-template-columns:1fr;gap:2px}}
+.sckeys{display:flex;gap:4px;flex-wrap:wrap;margin:6px 0}.sckeys .chip{min-width:40px;font-size:17px}
+.obtools{display:flex;flex-direction:column;gap:4px;margin-bottom:6px}.obtools input[type=search]{max-width:520px;font-size:18px}
+.obfilters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font:500 14px "Fira Sans",sans-serif;margin:8px 0}.obfilters select{font:inherit;min-height:40px;padding:0 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);max-width:220px}
+.oblist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px}
+.obent{background:var(--card);border:1px solid var(--line);border-left:5px solid #203e58;border-radius:10px;padding:10px 14px}.obent.obflag{border-left-color:#c99a00;background:repeating-linear-gradient(-45deg,var(--card) 0 14px,var(--soft) 14px 15px)}
+.obhw b{font:700 21px "Fira Sans",sans-serif}.obipa{font-family:"Doulos SIL","Charis SIL","Gentium Plus",serif;color:#203e58}.obgl{font-size:17px;margin:2px 0 6px}
+.obmeta{display:flex;flex-wrap:wrap;gap:4px}.obmeta span{font:500 12px "Fira Sans",sans-serif;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:1px 8px}.obmeta .meta{background:none;border:0}.obnote{font-size:14px;color:var(--mute);margin:6px 0 0}
+.grtool{margin-bottom:16px}.grtool select{font:inherit;min-height:44px;padding:0 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);margin-left:6px}.grtool input[type=number]{font:inherit;min-height:44px;padding:0 10px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.grout{background:#203e58;color:#fff;border-radius:10px;padding:14px 18px;margin:10px 0;min-height:60px}.grout .meta{color:#bed6e8}.grbig{font:800 clamp(22px,4vw,32px) "Fira Sans",sans-serif;color:#e7d6a2}
+.scrule{margin-bottom:8px}.scrule p{margin:0 0 4px}
+.scalpha{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}.scalpha span{display:grid;place-items:center;width:46px;height:52px;background:var(--card);border:1px solid var(--line);border-radius:8px;font:800 20px "Fira Sans",sans-serif}.scalpha small{font:500 13px "Fira Sans",sans-serif;color:var(--mute);margin-top:-6px}
+.lsnav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.lsbtn{min-height:38px;font-weight:500;font-size:14px}.lsbtn b{color:#203e58;margin-right:4px}.lsbtn[aria-pressed=true]{background:#203e58;color:#fff;border-color:#203e58}.lsbtn[aria-pressed=true] b{color:#e7d6a2}
+.lscard{border-top:6px solid #203e58}.lsex{margin:10px 0}.lsopts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}.lsopt{height:auto;min-height:48px;padding:8px 12px;text-align:left}.lsopt.ok{background:#2e9d55;color:#fff;border-color:#2e9d55}.lsopt.no{background:#c8262c;color:#fff;border-color:#c8262c}
+.lsfoot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:16px}
+.fc{display:block;width:100%;height:220px;padding:0;border:0;background:none;perspective:900px;cursor:pointer}.fcin{position:relative;display:block;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}.fc.flip .fcin{transform:rotateY(180deg)}
+.fcf,.fcb{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-radius:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;font:700 26px "Fira Sans",sans-serif;padding:16px;text-align:center}
+.fcf{background:#203e58;color:#fff}.fcb{background:#e7d6a2;color:#1c1a16;transform:rotateY(180deg)}.fcf small,.fcb small{font:500 13px "Fira Sans",sans-serif;opacity:.8}.fcf b{color:#e7d6a2}
+@media(prefers-reduced-motion:reduce){.fcin{transition:none}}
+.fcbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.exprompt{font:700 22px "Fira Sans",sans-serif;margin:6px 0 10px}#exin{font:18px "Fira Sans",sans-serif;min-height:48px;width:100%;padding:0 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}.exok{color:#2e9d55;font-weight:600}.exno{color:#c8262c;font-weight:600}
+.scpoem{border-left:8px solid #e7d6a2}.poemcols{display:grid;grid-template-columns:1fr 1fr;gap:24px;font:italic 19px/1.6 Georgia,serif}.poemen{color:var(--mute)}@media(max-width:560px){.poemcols{grid-template-columns:1fr}}
+.scsample{margin-bottom:12px}.scnewsh{font:900 26px Georgia,serif;margin:4px 0}.scnotes{background:var(--soft);border-radius:8px;padding:6px 12px;font-size:14px;margin-top:8px}
+
 </style>
 <script src="urbowx.js"></script>
 <script src="tvnav.js" defer></script>
@@ -357,7 +387,7 @@ a.mnet:hover{border-color:#ee6a1a}
 <main><div class="wrap" id="view"><p class="meta">Loading…</p></div></main>
 <footer><div class="wrap fgrid">
   <div><b id="ftname">URBO</b><p id="ftsub">United Republics of Brightport and Occasue · Planet Nyreth</p></div>
-  <div><b>Reference</b><a href="#language">National language</a><a href="#archive">National archive</a><a href="#questions">Open questions</a></div>
+  <div><b>Reference</b><a href="#language">Brightportish</a><a href="#schoon">Schoon</a><a href="#archive">National archive</a><a href="#questions">Open questions</a></div>
   <div><b>About this site</b><p>Rebuilt from original drawings made in 2014 and later.</p><label class="meta"><input type="checkbox" id="notes"> Show archive notes on every page</label></div>
 </div></footer>
 <dialog id="dlg"><button class="dlg-close" id="dlgClose" aria-label="Close">Close</button><img id="dlgImg" alt=""><div class="dlg-body" id="dlgBody"></div></dialog>
@@ -366,9 +396,9 @@ a.mnet:hover{border-color:#ee6a1a}
 {
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=s=>document.querySelector(s);
-const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['media','Media',null],['history','History',null]];
-const SUB={media:[['media','Media home',null],['mediatv','TV guide',null],['mediaradio','Radio',null],['mediapress','Newspapers',null],['mediasocial','Social media',null],['mediamusic','Music',null],['mediascreen','Capital Hearts & film',null],['mediagames','Games',null],['mediakids','Children',null],['mediaalert','URBO Alert',null],['mediahistory','History & traditions',null]],uba:[['uba','UBA home',null],['ubalive','UBN Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
-const SEC={media:'media',mediatv:'media',mediaradio:'media',mediapress:'media',mediasocial:'media',mediamusic:'media',mediascreen:'media',mediagames:'media',mediakids:'media',mediaalert:'media',mediahistory:'media',ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'',search:''};
+const NAV=[['home','Home',null],['government','Government','Gouvern'],['places','Territories','Teritors'],['lochways','Cities & transport',null],['life','Life in URBO',null],['uba','Basketball',null],['media','Media',null],['language','Languages',null],['history','History',null]];
+const SUB={language:[['language','Brightportish',null],['schoon','Schoon',null],['ordbok','Ordbok',null],['schoongrammar','Grammar tools',null],['schoonlearn','Lessons',null],['schoonpractice','Flashcards & exercises',null],['schoontexts','Texts & culture',null],['schoonreview','Open questions',null]],media:[['media','Media home',null],['mediatv','TV guide',null],['mediaradio','Radio',null],['mediapress','Newspapers',null],['mediasocial','Social media',null],['mediamusic','Music',null],['mediascreen','Capital Hearts & film',null],['mediagames','Games',null],['mediakids','Children',null],['mediaalert','URBO Alert',null],['mediahistory','History & traditions',null]],uba:[['uba','UBA home',null],['ubalive','UBN Sport',null],['ubascores','Scores & standings',null],['ubateams','Teams',null],['ubahistory','Champions & history',null],['ubaleague','How the league works',null]],life:[['life','Everyday life',null],['space','Space & Earth',null],['economy','Economy & companies',null]],government:[['government','Government','Gouvern'],['urbo','URBO & flags',null],['crown','The Crown',null],['defence','Defence',null],['politics','Politics & elections',null],['money','Currency & passports',null]],places:[['browse','Browse by level',null],['world','World',null],['weather','Weather',null],['places','States & territories','States &amp; teritors'],['map','Map',null],['atlas','Atlas',null],['cities','Cities','Sitis']],lochways:[['lochways','Lochways',null],['rail','Railways',null],['traffic','Traffic & rail',null],['cities','Cities','Sitis']],history:[['history','History',null],['calendar','Calendar',null],['archive','National archive',null],['questions','Open questions',null]]};
+const SEC={media:'media',mediatv:'media',mediaradio:'media',mediapress:'media',mediasocial:'media',mediamusic:'media',mediascreen:'media',mediagames:'media',mediakids:'media',mediaalert:'media',mediahistory:'media',ubalive:'uba',ubascores:'uba',uba:'uba',ubateams:'uba',ubahistory:'uba',ubaleague:'uba',ubateam:'uba',politics:'government',defence:'government',life:'life',space:'life',economy:'life',calendar:'history',crown:'government',money:'government','map':'places',world:'places',traffic:'lochways',news:'home',weather:'places',browse:'places',home:'home',government:'government',urbo:'government',places:'places',map:'places',atlas:'places',cities:'places',lochways:'lochways',rail:'lochways',history:'history',archive:'history',questions:'history',language:'language',schoon:'language',ordbok:'language',schoongrammar:'language',schoonlearn:'language',schoonpractice:'language',schoontexts:'language',schoonreview:'language',search:''};
 const L=(en,b)=>TERR_LANG==='bp'&&b?`<span class="bp">${b}</span>`:en;
 let D=null, ERA='unified', TERR_LANG='en';try{TERR_LANG=localStorage.getItem('bp-lang')||'en'}catch(e){}
 try{ERA=localStorage.getItem('bp-era')||'unified'}catch(e){}
@@ -1022,6 +1052,182 @@ document.addEventListener('change',e=>{const t=e.target;if(t.id==='tvviewer'){wi
 document.addEventListener('keydown',e=>{if(location.hash!=='#mediatv'||/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.key==='PageUp'||e.key==='PageDown'){e.preventDefault();const C=MD().channels,i=C.findIndex(c=>c.n===window.__tv.ch);window.__tv.ch=C[(i+(e.key==='PageUp'?1:-1)+C.length)%C.length].n;mTvScreen()}});
 /* MEDIA-END */
 
+/* SCHOON-START · Schoon language (Schoon Language Master Archive, rounds 1–25) */
+const SC=()=>D.schoon;
+const SCLX=()=>SC().lex.map(x=>({id:x[0],s:x[1],e:x[2],pos:x[3],g:x[4],cat:x[5],r:x[6],st:x[7],ipa:x[8],n:x[9]}));
+const scFold=t=>t.normalize('NFC').toLocaleLowerCase('sv').replace(/[æä]/g,'a').replace(/[øö]/g,'o').replace(/å/g,'a').replace(/þ/g,'th').replace(/ð/g,'d').normalize('NFD').replace(/[̀-ͯ]/g,'');
+const scNorm=t=>t.normalize('NFC').toLocaleLowerCase('sv').trim();
+function schead(title,lede){return `<div class="schero"><img src="img/schoon/schoonsprakradet.svg" alt="Schoonspråkrådet emblem" class="scemb"><div><p class="meta" style="margin:0">Schoon · Schoonspråkrådet</p><h1 style="margin:2px 0">${title}</h1>${lede?`<p class="lede" style="margin:4px 0 0">${lede}</p>`:''}</div></div>`}
+const scPair=(a,b)=>`<div class="scpair"><b lang="x-schoon">${esc(a)}</b><span>${esc(b)}</span></div>`;
+const scTbl=(h,rows)=>`<div class="tablewrap"><table class="stack"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td data-l="${h[i]}">${i===0?`<b lang="x-schoon">${esc(c)}</b>`:esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+const SCKEYS=['æ','ø','å','ä','ö','þ','ð'];
+const scKeys=t=>`<div class="sckeys" data-sckfor="${t}" aria-label="Schoon letters">${SCKEYS.map(k=>`<button type="button" class="chip" data-sck="${k}">${k}</button>`).join('')}</div>`;
+/* ---- overview ---- */
+V.schoon=()=>{const S=SC(),O=S.overview;return `${schead('Schoon','The national language of Schoonheid, and a regional language of Ouest in URBO, above all in Swisswa.')}
+ <div class="notice sun"><b>Status in URBO.</b> ${O.status.map(esc).join(' ')}</div>
+ <section class="two"><div><h2>Where Schoon comes from</h2>${O.origin.map(t=>`<p>${esc(t)}</p>`).join('')}</div>
+ <div><h2>Schoonspråkrådet</h2><figure class="fig scembfig"><img src="img/schoon/schoonsprakradet.svg" alt="Schoonspråkrådet emblem: a book within a ring of eight dots" data-zoom><figcaption>The Schoon Language Council emblem: eight dots for the eight founding communities. SVG recreation of the approved design.</figcaption></figure>${O.council.map(t=>`<p>${esc(t)}</p>`).join('')}
+ <h3>Words for Schoon itself</h3>${scTbl(['Schoon','Meaning'],O.terms)}</div></section>
+ <section><div class="tiles mtiles">${[['ordbok','Schoonspråkets Ordbok','The official dictionary: search Schoon or English.'],['schoongrammar','Grammar tools','Build nouns, conjugate verbs, count and make sentences.'],['schoonlearn','Lessons','Ten short lessons from greetings to proverbs.'],['schoonpractice','Flashcards & exercises','Practise vocabulary and translate sentences.'],['schoontexts','Texts & culture','The poem Åtta röstar, et folk, proverbs, idioms and sample texts.'],['schoonreview','Open questions & proposals','What is not settled yet, and what awaits approval.']].map(([k,t,d])=>`<a class="tile" href="#${k}"><h3>${t} →</h3><p>${d}</p></a>`).join('')}</div></section>
+ <section class="two"><div><h2>Names in Schoon</h2>${scTbl(['Schoon','English'],S.names)}<p class="meta">Official name spellings are fixed even where other grammar is not.</p></div>
+ <div><h2>Regional words</h2><p>Hej, takk, hus, vatn, jag, inte and farvæl are standard. These regional alternatives are approved too, without any formal dialect boundaries.</p>${scTbl(['Regional','Standard','Meaning','Influence'],S.regional)}
+ <p>Approved cultural loans: ${S.loans.map(([a,b])=>`<b lang="x-schoon">${esc(a)}</b>${b?` (${esc(b)})`:''}`).join(', ')}.</p></div></section>
+ <section><h2>See also</h2><p><a href="#s-ouest">Ouest (home of Swisswa)</a> · <a href="#team-lynx">The Swisswa Lynx and Schoon Heritage Night</a> · <a href="#mediaradio">Nord FM, Schoon music radio</a> · <a href="#language">Brightportish</a> · <a href="#world">Schoonheid on the world map</a></p></section>`};
+/* ---- Ordbok ---- */
+window.__ob=window.__ob||{q:'',view:'approved',cat:'',pos:'',g:'',strong:false,n:60,fold:true};
+function obRender(){const F=window.__ob,box=document.getElementById('obres');if(!box)return;const fold=F.fold&&!/[æøåäöþð]/i.test(F.q);const q=fold?scFold(F.q.trim()):scNorm(F.q);
+ let L=SCLX().filter(x=>(F.view==='approved'?x.st==='approved':F.view==='text'?x.st==='approved_text_only':x.st==='proposal'));
+ if(!F.strong)L=L.filter(x=>x.cat!=='profanity');
+ L=L.filter(x=>(!F.cat||x.cat===F.cat)&&(!F.pos||x.pos===F.pos)&&(!F.g||x.g===F.g)&&(!q||(fold?scFold(x.s+' '+x.e):scNorm(x.s+' '+x.e)).includes(q)));
+ L.sort((a,b)=>{if(q){const as=(fold?scFold(a.s):scNorm(a.s)).startsWith(q),bs=(fold?scFold(b.s):scNorm(b.s)).startsWith(q);if(as!==bs)return as?-1:1}return a.s.localeCompare(b.s,'sv')});
+ const hid=F.strong?0:SCLX().filter(x=>x.cat==='profanity'&&(F.view==='approved'?x.st==='approved':0)).length;
+ box.innerHTML=`<p class="meta" aria-live="polite">${L.length} ${L.length===1?'entry':'entries'}${hid&&!F.strong?` · ${hid} strong-language entries hidden`:''}</p>
+ ${F.view!=='approved'?`<p class="msample"><b>${F.view==='text'?'Text-only forms.':'Proposals — not canon.'}</b> ${F.view==='text'?'These forms appear in approved texts or fixed expressions, but are not dictionary words with full forms of their own.':'These were never approved. They are never used in lessons, exercises or translations.'}</p>`:''}
+ <div class="oblist">${L.slice(0,F.n).map(x=>`<article class="obent${x.st!=='approved'?' obflag':''}" id="ob-${x.id}"><div class="obhw"><b lang="x-schoon">${esc(x.s)}</b>${x.ipa?` <span class="obipa">${esc(x.ipa)}</span>`:''}</div><div class="obgl">${esc(x.e)}</div>
+  <div class="obmeta"><span>${esc(x.pos)}</span>${['noun'].includes(x.pos)||x.g?`<span>${x.g?esc(x.g)+(x.g==='common'?' · en':' · et'):'gender not assigned'}</span>`:''}<span>${x.ipa?'IPA settled':'pronunciation unresolved'}</span><span>${esc(x.cat)}</span><span>${x.st==='approved'?'approved':x.st==='approved_text_only'?'text-only':'proposal'} · round ${x.r}</span><span class="meta">${x.id}</span></div>${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>
+ ${L.length>F.n?`<p><button data-obmore>Show more</button></p>`:''}`}
+V.ordbok=()=>{const F=window.__ob,X=SCLX(),cats=[...new Set(X.filter(x=>x.cat!=='profanity').map(x=>x.cat))].sort(),poss=[...new Set(X.map(x=>x.pos))].sort();setTimeout(obRender,0);
+ const n=s=>X.filter(x=>x.st===s).length;
+ return `${schead('Schoonspråkets Ordbok','The official Schoon–English dictionary. Search in either language; accents are optional.')}
+ <div class="obtools"><input type="search" id="obq" placeholder="Search Schoon or English…" value="${esc(F.q)}" aria-label="Search the Ordbok" autocomplete="off">${scKeys('obq')}
+  <label class="tvchk"><input type="checkbox" id="obfold"${F.fold?' checked':''}> Ignore accents (bjorn finds björn)</label></div>
+ <div class="mchips" role="group" aria-label="Dictionary view"><span class="meta">Show</span>${[['approved','Approved ('+n('approved')+')'],['text','Text-only forms ('+n('approved_text_only')+')'],['proposal','Proposals ('+n('proposal')+')']].map(([k,l])=>`<button class="chip" data-obview="${k}" aria-pressed="${F.view===k}">${l}</button>`).join('')}</div>
+ <div class="obfilters"><label>Topic <select id="obcat"><option value="">All topics</option>${cats.map(c=>`<option${F.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
+  <label>Part of speech <select id="obpos"><option value="">All</option>${poss.map(c=>`<option${F.pos===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
+  <label>Gender <select id="obg"><option value="">Any</option><option value="common"${F.g==='common'?' selected':''}>common (en)</option><option value="neuter"${F.g==='neuter'?' selected':''}>neuter (et)</option></select></label>
+  <label class="tvchk"><input type="checkbox" id="obstrong"${F.strong?' checked':''}> Show strong language</label></div>
+ <div id="obres"></div>
+ <p class="meta">Approved entries only by default. Order follows Unicode; the official alphabetical order is still provisional. Gender is shown only where approved. IPA is shown only where settled.</p>`};
+/* ---- Grammar tools ---- */
+window.__gr=window.__gr||{n:0,num:'s',def:'i',adj:false,poss:'',v:9,tense:'present',subj:'jag',neg:false,q:false,nb:25};
+const SUBJ=[['jag','I'],['du','you'],['han','he'],['hon','she'],['hen','they (sg.)'],['vi','we'],['tit','you (pl.)'],['dei','they']];
+function grNoun(){const G=window.__gr,N=SC().nouns[G.n],[w,en,enp,g,src]=N,p=G.num==='p',d=G.def==='d';const st=w.endsWith('a')?w.slice(0,-1):w;
+ let f=p?st+(g==='c'?(d?'arna':'ar'):(d?'erna':'er')):d?st+(g==='c'?(w.endsWith('a')?'an':'en'):'et'):w;
+ let pre='',adj='',poss=G.poss;
+ if(poss){const m={min:['min','mitt','mina'],din:['din','ditt','dina'],vår:['vår','vårt','våra'],hans:['hans','hans','hans'],hennes:['hennes','hennes','hennes'],deres:['deres','deres','deres']}[poss];pre=(p?m[2]:g==='c'?m[0]:m[1])+' ';f=p?st+(g==='c'?'ar':'er'):w;adj=''}
+ else{if(d)pre=G.adj?(p?'dei ':g==='c'?'den ':'det '):'';else pre=p?'':g==='c'?'en ':'et ';adj=G.adj?(p||d?'stora ':g==='c'?'stor ':'stort '):''}
+ const enPhr=(poss?({min:'my',din:'your',vår:'our',hans:'his',hennes:'her',deres:'their'})[poss]+' ':d?'the ':p?'':/^[aeiou]/.test(G.adj?'big':en)?'an ':'a ')+(G.adj&&!poss?'big ':'')+(p?enp:en);
+ const tag=src==='attested'?'Forms shown in the canon grammar.':src==='attested-plural'?'Plural barner is attested in an approved text; other forms follow the regular neuter pattern.':'Regular pattern applied to an approved noun of approved gender.';
+ document.getElementById('grnout').innerHTML=`<div class="grbig" lang="x-schoon">${esc(pre+adj+f)}</div><div>${esc(enPhr)}</div><p class="meta">${esc(g==='c'?'Common (en)':'Neuter (et)')} noun. ${tag}${poss?' With a possessive, the noun stays indefinite.'+(G.adj?' Adjectives after possessives are not settled yet, so stor is left out.':''):''}</p>`;
+ document.querySelectorAll('[data-grn]').forEach(b=>{const [k,v]=b.dataset.grn.split(':');b.setAttribute('aria-pressed',String(G[k])===v)})}
+function grVerb(){const G=window.__gr,S=SC(),V9=S.verbs[G.v],[inf,pr,pa,pe,en,enpr,enpa,enpe]=V9;const s=G.subj,se=SUBJ.find(x=>x[0]===s)[1];
+ let fin,rest='',eng;const third=['han','hon'].includes(s);
+ const enP=enpr.split('/');const enpres=inf==='væra'?(s==='jag'?'am':third?'is':'are'):(third?enP[1]||enP[0]:enP[0]);
+ if(G.tense==='present'){fin=pr;eng=enpres}else if(G.tense==='past'){fin=pa;eng=inf==='væra'?(['jag','han','hon'].includes(s)?'was':'were'):enpa}else if(G.tense==='perfect'){fin='har';rest=pe;eng=(third?'has ':'have ')+enpe}else{fin='skal';rest=inf;eng='will '+en}
+ const obj=inf==='tala'?' Schoon':'';let sch,note='';
+ if(G.q&&G.neg){sch='';note='Negation inside questions is not settled yet, so this combination is not shown.'}
+ else if(G.q){sch=fin.charAt(0).toUpperCase()+fin.slice(1)+' '+s+(rest?' '+rest:'')+obj+'?'}
+ else sch=(s==='jag'?'Jag':s.charAt(0).toUpperCase()+s.slice(1))+' '+fin+(G.neg?' inte':'')+(rest?' '+rest:'')+obj+'.';
+ const subjEn=se.replace(/ \(.*\)/,'');let e;
+ if(G.q){const aux=G.tense==='present'?(inf==='væra'?null:(third?'Does':'Do')):G.tense==='past'?(inf==='væra'?null:'Did'):null;
+  if(inf==='væra'&&(G.tense==='present'||G.tense==='past'))e=eng.charAt(0).toUpperCase()+eng.slice(1)+' '+subjEn+'?';else if(aux)e=aux+' '+subjEn+' '+en+(obj?' Schoon':'')+'?';else{const [a1,...r]=eng.split(' ');e=a1.charAt(0).toUpperCase()+a1.slice(1)+' '+subjEn+' '+r.join(' ')+(obj?' Schoon':'')+'?'}}
+ else if(G.neg){const ng=G.tense==='present'?(inf==='væra'?eng+' not':(third?'does not ':'do not ')+en):G.tense==='past'?(inf==='væra'?eng+' not':'did not '+en):eng.replace(/^(has|have|will)/,'$1 not');e=subjEn+' '+ng+(obj?' Schoon':'')+'.'}
+ else e=subjEn+' '+eng+(obj?' Schoon':'')+'.';
+ e=e.charAt(0).toUpperCase()+e.slice(1);
+ document.getElementById('grvout').innerHTML=sch?`<div class="grbig" lang="x-schoon">${esc(sch)}</div><div>${esc(e)}</div>`:`<p class="meta">${esc(note)}</p>`;
+ document.getElementById('grvtab').innerHTML=scTbl(['Schoon','Form'],[['Infinitive','at '+inf],['Present',pr],['Past',pa],['Perfect','har '+pe],['Future','skal '+inf]].map(([a,b])=>[b,a]));
+ document.querySelectorAll('[data-grv]').forEach(b=>{const [k,v]=b.dataset.grv.split(':');b.setAttribute('aria-pressed',String(G[k])===v)})}
+function grNum(){const G=window.__gr,S=SC(),n=Math.max(0,Math.min(99,+G.nb||0));let w,src;
+ if(n<=20){w=S.num[n];src='Approved number.'}else{const t=Math.floor(n/10)*10,u=n%10;w=S.tens[t]+(u?S.num[u]:'');src=u?(n===25||n===69?'Approved example.':'Built with the approved tens-then-units rule.'):'Approved number.'}
+ document.getElementById('grnumout').innerHTML=`<div class="grbig" lang="x-schoon">${esc(w)}</div><p class="meta">${src}</p>`}
+V.schoongrammar=()=>{const S=SC(),G=window.__gr;setTimeout(()=>{grNoun();grVerb();grNum()},0);
+ return `${schead('Grammar tools','Try the rules. The tools only use approved forms, and say so where a form follows a regular pattern rather than being attested.')}
+ <section class="card grtool"><h2>Noun builder</h2><p>Common nouns take <b>en</b>, neuter nouns <b>et</b>. “The” is a suffix, and with an adjective Schoon marks it twice: <b lang="x-schoon">den stora boken</b>.</p>
+  <label>Noun <select id="grnoun">${S.nouns.map((x,i)=>`<option value="${i}"${G.n===i?' selected':''}>${esc(x[0])} — ${esc(x[1])}</option>`).join('')}</select></label>
+  <div class="mchips"><span class="meta">Number</span><button class="chip" data-grn="num:s">One</button><button class="chip" data-grn="num:p">Many</button></div>
+  <div class="mchips"><span class="meta">Article</span><button class="chip" data-grn="def:i">a / some</button><button class="chip" data-grn="def:d">the</button></div>
+  <div class="mchips"><span class="meta">Adjective</span><button class="chip" data-grn="adj:false">none</button><button class="chip" data-grn="adj:true">stor (big)</button></div>
+  <div class="mchips"><span class="meta">Owner</span>${['','min','din','vår','hans','hennes','deres'].map(p=>`<button class="chip" data-grn="poss:${p}">${p||'none'}</button>`).join('')}</div>
+  <div id="grnout" class="grout" aria-live="polite"></div>
+  <details><summary>The pattern</summary>${scTbl(['Form','Common','Neuter'],S.noun_table)}<p>A final unstressed -a drops before an ending: skola → skolan, skolar, skolarna. How neuter nouns ending in -a behave is not settled, so none are included.</p></details></section>
+ <section class="card grtool"><h2>Sentence builder</h2><p>Verbs never change for the person. Inte comes after the conjugated verb, and questions put the verb first.</p>
+  <label>Verb <select id="grverb">${S.verbs.map((v,i)=>`<option value="${i}"${G.v===i?' selected':''}>${esc(v[0])} — to ${esc(v[4])}</option>`).join('')}</select></label>
+  <div class="mchips"><span class="meta">Subject</span>${SUBJ.map(([s,e])=>`<button class="chip" data-grv="subj:${s}" title="${e}">${s}</button>`).join('')}</div>
+  <div class="mchips"><span class="meta">Time</span>${['present','past','perfect','future'].map(t=>`<button class="chip" data-grv="tense:${t}">${t}</button>`).join('')}</div>
+  <div class="mchips"><span class="meta">Type</span><button class="chip" data-grv="neg:true">add inte</button><button class="chip" data-grv="q:true">question</button></div>
+  <div id="grvout" class="grout" aria-live="polite"></div><div id="grvtab"></div></section>
+ <section class="two"><div class="card grtool"><h2>Modal verbs</h2>${scTbl(['Infinitive','Present','Past','Meaning'],S.modals)}<p>Modals take the bare infinitive:</p>${S.modal_ex.map(([a,b])=>scPair(a,b)).join('')}</div>
+  <div class="card grtool"><h2>Number builder</h2><p>Tens first, then units, as one word.</p><label>Number (0–99) <input type="number" id="grnum" min="0" max="99" value="${G.nb}" style="max-width:120px"></label><div id="grnumout" class="grout" aria-live="polite"></div>
+  <p class="meta">Also: ${S.big.map(([a,b])=>`<b lang="x-schoon">${a}</b> ${b}`).join(', ')}. How hundreds and thousands combine is not settled.</p>
+  <p>Ordinals: ${S.ord.map((o,i)=>`<b lang="x-schoon">${o}</b> (${i+1}${['st','nd','rd'][i]||'th'})`).join(', ')}.</p></div></section>
+ <section class="two"><div><h2>Pronouns</h2>${scTbl(['Subject','Object','Possessive','Reflexive','English'],S.pron)}${mfacts(S.pron_notes)}</div>
+  <div><h2>Adjectives</h2>${mfacts(S.adj_rules)}${scTbl(['Base','Comparative','Superlative','English'],S.compar)}</div></section>
+ <section><h2>Word order</h2>${S.syntax.map(([r,a,b])=>`<div class="card scrule"><p>${esc(r)}</p>${scPair(a,b)}</div>`).join('')}<p class="meta">${esc(S.syntax_open)}</p></section>
+ <section class="two"><div><h2>Verbs</h2>${mfacts(S.verb_notes)}</div><div><h2>Making new words</h2>${scTbl(['Suffix','Meaning','Example'],S.suffix)}${mfacts(S.wordform)}</div></section>
+ <section><h2>Letters and sounds</h2><div class="scalpha">${S.alpha.map(l=>`<span lang="x-schoon">${l}<small>${l.toLowerCase()}</small></span>`).join('')}</div>
+  <div class="two"><div>${scTbl(['Vowel','IPA'],S.vowels.map(([a,b])=>[a,'/'+b+'/']))}</div><div>${scTbl(['Spelling','IPA'],S.diph.concat(S.cons).map(([a,b])=>[a,/^r /.test(b)||b.includes(' ')?b:'/'+b+'/']))}</div></div>${mfacts(S.sound_notes)}</section>`};
+/* ---- Lessons ---- */
+window.__ls=window.__ls||{i:0,quiz:null};
+function lsQuiz(){const L=SC().lessons[window.__ls.i],box=document.getElementById('lsquiz');if(!box)return;const ex=L.ex.filter(x=>!/^\//.test(x[1])&&L.id!=='sounds');if(ex.length<3){box.innerHTML='';return}
+ const Q=window.__ls.quiz&&window.__ls.quiz.lesson===L.id?window.__ls.quiz:(window.__ls.quiz={lesson:L.id,k:Math.floor(Math.random()*ex.length),ans:null});const right=ex[Q.k];
+ const opts=[right,...ex.filter((_,j)=>j!==Q.k).sort(()=>Math.random()-.5).slice(0,3)].sort((a,b)=>a[1].localeCompare(b[1]));
+ box.innerHTML=`<h3>Quick check</h3><p>What does <b lang="x-schoon">${esc(right[0])}</b> mean?</p><div class="lsopts">${opts.map(o=>`<button class="lsopt${Q.ans!=null?(o===right?' ok':o[1]===Q.ans?' no':''):''}" data-lsans="${esc(o[1])}">${esc(o[1])}</button>`).join('')}</div>${Q.ans!=null?`<p>${Q.ans===right[1]?'✅ Correct!':'Not quite. It means “'+esc(right[1])+'”.'} <button class="chip" data-lsnext>Another</button></p>`:''}`}
+V.schoonlearn=()=>{const S=SC(),i=window.__ls.i,L=S.lessons[i];setTimeout(lsQuiz,0);
+ return `${schead('Lessons','Ten short lessons built only from approved Schoon. Pick one to start.')}
+ <div class="lsnav" role="tablist">${S.lessons.map((l,j)=>`<button class="lsbtn" data-ls="${j}" aria-pressed="${j===i}"><b>${j+1}</b> ${esc(l.t)}</button>`).join('')}</div>
+ <article class="card lscard"><p class="meta">Lesson ${i+1} of ${S.lessons.length}</p><h2 style="margin-top:0">${esc(L.t)}</h2><p class="lede">${esc(L.intro)}</p>
+  <div class="lsex">${L.ex.map(([a,b])=>scPair(a,b)).join('')}</div>${L.id==='sounds'?'<p class="meta">No audio: there is no authentic Schoon voice yet.</p>':''}
+  <div id="lsquiz"></div>
+  <p class="lsfoot">${i>0?`<button data-ls="${i-1}">← ${esc(S.lessons[i-1].t)}</button>`:''}${i<S.lessons.length-1?`<button data-ls="${i+1}">${esc(S.lessons[i+1].t)} →</button>`:`<a class="btn-sec" href="#schoonpractice">Practise →</a>`}</p></article>`};
+/* ---- Flashcards & exercises ---- */
+window.__fc=window.__fc||{deck:'greetings',i:0,flip:false,dir:'s',known:{}};
+try{const k=JSON.parse(localStorage.getItem('schoon-known')||'{}');if(k&&typeof k==='object')window.__fc.known=k}catch(e){}
+const FCDECKS=()=>{const X=SCLX().filter(x=>x.st==='approved'&&!['profanity','unresolved','sample text','approved text'].includes(x.cat)&&!['contextual vocabulary','contextual form','text-attested form'].includes(x.pos));const by={};X.forEach(x=>{(by[x.cat]=by[x.cat]||[]).push(x)});return by};
+function fcCard(){const F=window.__fc,D=FCDECKS()[F.deck]||[],box=document.getElementById('fccard');if(!box||!D.length)return;F.i=F.i%D.length;const x=D[F.i];const art=x.pos==='noun'&&x.g?(x.g==='common'?'en ':'et '):'';
+ const front=F.dir==='s'?`<b lang="x-schoon">${esc(art+x.s)}</b>`:esc(x.e),back=F.dir==='s'?esc(x.e):`<b lang="x-schoon">${esc(art+x.s)}</b>`;const known=Object.keys(F.known).filter(k=>D.some(d=>d.id===k)).length;
+ box.innerHTML=`<button class="fc${F.flip?' flip':''}" data-fcflip aria-label="Flip card"><span class="fcin"><span class="fcf">${front}<small>${F.dir==='s'?'Schoon':'English'} · tap to flip</small></span><span class="fcb">${back}<small>${esc(x.pos)}${x.g?' · '+x.g:''}</small></span></span></button>
+ <div class="fcbtns"><button data-fcmove="again">Again</button><button data-fcmove="know" class="btn-pri">I know it</button></div><p class="meta">Card ${F.i+1} of ${D.length} · ${known} marked known in this deck</p>`}
+window.__ex=window.__ex||{i:0,ans:'',res:null,score:0,tries:0};
+function exClean(s){return s.normalize('NFC').toLocaleLowerCase('sv').replace(/[.!?¡¿,]+/g,'').replace(/\s+/g,' ').trim()}
+function exRender(){const E=window.__ex,X=SC().exercises,q=X[E.i%X.length],box=document.getElementById('exbox');if(!box)return;
+ box.innerHTML=`<p class="meta">Sentence ${E.i%X.length+1} of ${X.length} · ${E.score} right of ${E.tries} checked</p><p class="exprompt">${esc(q[0])}</p>
+ <input type="text" id="exin" value="${esc(E.ans)}" placeholder="Type it in Schoon" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your Schoon translation">${scKeys('exin')}
+ <div class="fcbtns"><button data-exdo="check" class="btn-pri">Check</button><button data-exdo="show">Show answer</button><button data-exdo="next">Next →</button></div>
+ ${E.res==='ok'?`<p class="exok">✅ Correct! <b lang="x-schoon">${esc(q[1])}</b></p>`:E.res==='no'?`<p class="exno">Not quite. Check the word order and endings, or show the answer.</p>`:E.res==='show'?`<p>Answer: <b lang="x-schoon">${esc(q[1])}</b></p>`:''}`}
+V.schoonpractice=()=>{const F=window.__fc,decks=FCDECKS();setTimeout(()=>{fcCard();exRender()},0);
+ return `${schead('Flashcards and exercises','Practise approved vocabulary, then translate sentences into Schoon.')}
+ <section class="two"><div><h2>Flashcards</h2><label>Deck <select id="fcdeck">${Object.keys(decks).sort().map(k=>`<option value="${esc(k)}"${F.deck===k?' selected':''}>${esc(k)} (${decks[k].length})</option>`).join('')}</select></label>
+  <div class="mchips"><span class="meta">Front</span><button class="chip" data-fcdir="s" aria-pressed="${F.dir==='s'}">Schoon</button><button class="chip" data-fcdir="e" aria-pressed="${F.dir==='e'}">English</button></div><div id="fccard"></div></div>
+ <div><h2>Translate into Schoon</h2><p class="meta">Every answer is an approved sentence. Capitals and full stops don’t matter; accents do.</p><div id="exbox" class="card"></div></div></section>
+ <p class="meta">Progress is saved in this browser only. Text-only forms, proposals and strong language are never used here.</p>`};
+/* ---- Texts ---- */
+V.schoontexts=()=>{const S=SC(),P=S.poem;return `${schead('Texts and culture','The approved poem, proverbs, idioms and four sample texts, kept word for word.')}
+ <section class="card scpoem"><h2 style="margin-top:0" lang="x-schoon">${esc(P.title)}</h2><p class="meta">${esc(P.en_title)} · traditional</p><div class="poemcols"><div lang="x-schoon">${P.sch.map(l=>l?esc(l)+'<br>':'<br>').join('')}</div><div class="poemen">${P.en.map(l=>l?esc(l)+'<br>':'<br>').join('')}</div></div>${P.notes.map(n=>`<p class="meta">${esc(n)}</p>`).join('')}</section>
+ <section><h2>Proverbs</h2>${S.proverbs.map(([a,b,c])=>`<div class="card scrule">${scPair(a,b)}${c?`<p class="meta">${esc(c)}</p>`:''}</div>`).join('')}</section>
+ <section><h2>Idioms</h2>${scTbl(['Schoon','Literally','Meaning'],S.idioms)}</section>
+ <section><h2>Sample texts</h2>${MEX('These are learning texts. They do not describe real events or real publications.')}
+  ${S.samples.map(x=>`<article class="card scsample"><h3 style="margin-top:0">${esc(x.title)}</h3>${x.kicker?`<p class="meta">${esc(x.kicker)}</p>`:''}
+   ${x.pairs?x.pairs.map(([a,b])=>scPair(a,b)).join(''):`<div lang="x-schoon">${x.sch.map((t,i)=>i===0&&x.title==='Newspaper example'?`<h4 class="scnewsh">${esc(t)}</h4>`:`<p>${esc(t)}</p>`).join('')}</div><details><summary>English</summary><p>${esc(x.en)}</p></details>`}
+   ${x.notes.length?`<div class="scnotes">${x.notes.map(n=>`<p>📝 ${esc(n)}</p>`).join('')}</div>`:''}</article>`).join('')}</section>`};
+/* ---- Review ---- */
+V.schoonreview=()=>{const S=SC();return `${schead('Open questions and proposals','Nothing on this page is canon until approved.')}
+ <section><h2>Not settled yet</h2>${mfacts(S.unresolved)}</section>
+ <section><h2>Corrections awaiting review</h2>${scTbl(['Text','Status'],S.corrections)}</section>
+ <section><h2>Proposal register</h2><p class="meta">Proposals never appear in lessons, exercises or the default dictionary.</p>${scTbl(['Proposal','English','Type','Note'],S.proposals)}
+  <p>New words can be proposed following the established conventions. Each will be listed here with its roots, meaning, part of speech, gender and any proposed pronunciation, marked as a proposal until approved.</p></section>`};
+/* events */
+document.addEventListener('click',e=>{const t=e.target.closest('[data-sck],[data-obview],[data-obmore],[data-grn],[data-grv],[data-ls],[data-lsans],[data-lsnext],[data-fcflip],[data-fcmove],[data-fcdir],[data-exdo]');if(!t)return;const d=t.dataset;
+ if(d.sck){const box=t.closest('[data-sckfor]'),inp=document.getElementById(box.dataset.sckfor);if(inp){const s=inp.selectionStart??inp.value.length,en=inp.selectionEnd??s;inp.value=inp.value.slice(0,s)+d.sck+inp.value.slice(en);inp.focus();inp.setSelectionRange(s+1,s+1);inp.dispatchEvent(new Event('input',{bubbles:true}))}return}
+ if(d.obview){window.__ob.view=d.obview;window.__ob.n=60;document.querySelectorAll('[data-obview]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.obview===d.obview));obRender();return}
+ if(d.obmore!=null){window.__ob.n+=60;obRender();return}
+ if(d.grn){const [k,v]=d.grn.split(':');const G=window.__gr;G[k]=v==='true'?true:v==='false'?false:v;if(k==='poss'&&v)G.def='i';if(k==='def'&&v==='d')G.poss='';grNoun();return}
+ if(d.grv){const [k,v]=d.grv.split(':');const G=window.__gr;if(k==='neg'||k==='q'){G[k]=!G[k]}else G[k]=v;grVerb();document.querySelectorAll('[data-grv^="neg"],[data-grv^="q"]').forEach(b=>{const kk=b.dataset.grv.split(':')[0];b.setAttribute('aria-pressed',G[kk])});return}
+ if(d.ls){window.__ls.i=+d.ls;window.__ls.quiz=null;route();scrollTo(0,0);return}
+ if(d.lsans!=null){if(window.__ls.quiz.ans==null){window.__ls.quiz.ans=d.lsans;lsQuiz()}return}
+ if(d.lsnext!=null){window.__ls.quiz=null;lsQuiz();return}
+ if(d.fcflip!=null){window.__fc.flip=!window.__fc.flip;fcCard();return}
+ if(d.fcmove){const F=window.__fc,Dk=FCDECKS()[F.deck];const x=Dk[F.i%Dk.length];if(d.fcmove==='know')F.known[x.id]=1;else delete F.known[x.id];try{localStorage.setItem('schoon-known',JSON.stringify(F.known))}catch(err){}
+  let j=F.i;for(let k=1;k<=Dk.length;k++){const c=(F.i+k)%Dk.length;if(!F.known[Dk[c].id]||k===Dk.length){j=c;break}}F.i=j;F.flip=false;fcCard();return}
+ if(d.fcdir){window.__fc.dir=d.fcdir;window.__fc.flip=false;document.querySelectorAll('[data-fcdir]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.fcdir===d.fcdir));fcCard();return}
+ if(d.exdo){const E=window.__ex,X=SC().exercises,q=X[E.i%X.length],inp=document.getElementById('exin');if(inp)E.ans=inp.value;
+  if(d.exdo==='check'){if(!E.ans.trim())return;const ok=exClean(E.ans)===exClean(q[1]);if(E.res!=='ok'&&E.res!=='show'){E.tries++;if(ok)E.score++}E.res=ok?'ok':'no'}else if(d.exdo==='show')E.res='show';else{E.i++;E.ans='';E.res=null}
+  exRender();const n=document.getElementById('exin');if(n&&d.exdo!=='next'){}else if(n)n.focus();return}});
+document.addEventListener('input',e=>{const t=e.target;if(t.id==='obq'){window.__ob.q=t.value;window.__ob.n=60;obRender()}else if(t.id==='grnum'){window.__gr.nb=t.value;grNum()}else if(t.id==='exin'){window.__ex.ans=t.value}});
+document.addEventListener('keydown',e=>{if(e.target.id==='exin'&&e.key==='Enter'){e.preventDefault();document.querySelector('[data-exdo="check"]').click()}});
+document.addEventListener('change',e=>{const t=e.target,F=window.__ob;if(t.id==='obcat'){F.cat=t.value;obRender()}else if(t.id==='obpos'){F.pos=t.value;obRender()}else if(t.id==='obg'){F.g=t.value;obRender()}else if(t.id==='obstrong'){F.strong=t.checked;obRender()}else if(t.id==='obfold'){F.fold=t.checked;obRender()}
+ else if(t.id==='grnoun'){window.__gr.n=+t.value;grNoun()}else if(t.id==='grverb'){window.__gr.v=+t.value;grVerb()}else if(t.id==='fcdeck'){window.__fc.deck=t.value;window.__fc.i=0;window.__fc.flip=false;fcCard()}});
+/* SCHOON-END */
+
 V.history=()=>`<h1>History</h1><p class="lede">Dates use the Nyrethian Standard Calendar (NSC), which counts from the first landing. Years marked “about” are not yet fixed to an exact day. <a href="#calendar">How the calendar works →</a></p>
   ${(D.planet||[]).length?`<div class="card planet"><h2>Planet Nyreth</h2><ul class="facts">${D.planet.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
   <ol class="hist">${D.timeline.map((e,i)=>`<li><div class="when">${e.live?'<span data-nsc="date"></span>':esc(e.when)+(/^\d\d\//.test(e.when)?' NSC':' NSC')}</div><h3>${esc(e.name)}</h3><p>${esc(e.text)}</p></li>`).join('')}</ol>
@@ -1360,7 +1566,7 @@ function bpWords(t){
 function bpApply(){
   if(TERR_LANG!=='bp')return; if(!BPRX)bpPrep();
   document.querySelectorAll('#view,#nav,header .brand,footer').forEach(root=>{
-    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,input,.nobp,#bpOut,#lex,.lexicon')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('svg,script,style,textarea,input,.nobp,#bpOut,#lex,.lexicon,[lang="x-schoon"]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
     const ns=[];while(w.nextNode())ns.push(w.currentNode);
     ns.forEach(n=>{const v=bpWords(n.nodeValue);if(v!==n.nodeValue){if(!ORIGN.has(n))ORIGN.set(n,n.nodeValue);n.nodeValue=v}});
   });

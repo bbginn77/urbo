@@ -1,4 +1,8552 @@
 {
+ "schoon": {
+  "lex": [
+   [
+    "SCH-0001",
+    "Aldrig",
+    "never",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0002",
+    "Allt",
+    "everything",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0003",
+    "Allt blir bra.",
+    "Everything will be okay.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0004",
+    "Alltid",
+    "always",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0005",
+    "Andra",
+    "second",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0006",
+    "Arbeta",
+    "to work",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0007",
+    "Arbete",
+    "work/job",
+    "noun",
+    "neuter",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0008",
+    "Arg",
+    "angry",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0009",
+    "At",
+    "infinitive marker (to)",
+    "particle",
+    "",
+    "grammar",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0010",
+    "At",
+    "that",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0011",
+    "At finna sin hamn",
+    "to find where one belongs",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0012",
+    "At gå mot vinden",
+    "to persevere despite difficulties",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0013",
+    "At tala med to tungar",
+    "to be dishonest or hypocritical",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0014",
+    "Av",
+    "of/by",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0015",
+    "Badrom",
+    "bathroom",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0016",
+    "Bakom",
+    "behind",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0017",
+    "Barn",
+    "child",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0018",
+    "Berevo",
+    "Berevo",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0019",
+    "Berättelse",
+    "story",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0020",
+    "Besviken",
+    "disappointed",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0021",
+    "Betala",
+    "to pay",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0022",
+    "Bil",
+    "car",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0023",
+    "Biljett",
+    "ticket",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0024",
+    "Björn",
+    "bear",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0025",
+    "Bless",
+    "goodbye",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0026",
+    "Blir",
+    "becomes/will be",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0027",
+    "Blodet",
+    "the blood",
+    "contextual vocabulary",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    "Approved in idiom; unapproved paradigms not inferred."
+   ],
+   [
+    "SCH-0028",
+    "Blomma",
+    "flower",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0029",
+    "Blå",
+    "blue",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0030",
+    "Bo",
+    "to reside",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0031",
+    "Bok",
+    "book",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0032",
+    "Bord",
+    "table",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0033",
+    "Bra",
+    "well",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0034",
+    "Brightport Stad",
+    "Brightport City",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0035",
+    "Bro",
+    "bridge",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0036",
+    "Bror",
+    "brother",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0037",
+    "Brytar",
+    "breaks",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0038",
+    "Bröd",
+    "bread",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0039",
+    "Bröllop",
+    "wedding",
+    "noun",
+    "neuter",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0040",
+    "Buksa",
+    "trousers",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0041",
+    "Buss",
+    "bus",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0042",
+    "Butik",
+    "shop",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0043",
+    "By",
+    "village",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0044",
+    "Børa",
+    "should",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0045",
+    "Dag",
+    "day",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0046",
+    "Dal",
+    "valley",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0047",
+    "Dator",
+    "computer",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0048",
+    "Decimus",
+    "Nyrethian month 10",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0049",
+    "Dei",
+    "they",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0050",
+    "Dei",
+    "the (plural, with adjective)",
+    "article",
+    "",
+    "grammar",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0051",
+    "Dei förenade republikerna av Brightport og Occasue",
+    "United Republics of Brightport and Occasue",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0052",
+    "Dem",
+    "them",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0053",
+    "Demokrati",
+    "democracy",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0054",
+    "Den",
+    "it (common gender)",
+    "pronoun",
+    "",
+    "pronouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0055",
+    "Den",
+    "the (common, with adjective)",
+    "article",
+    "",
+    "grammar",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0056",
+    "Den",
+    "it (common object)",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0057",
+    "Dens",
+    "its (common)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0058",
+    "Deres",
+    "their",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0059",
+    "Dess",
+    "its (non-reflexive)",
+    "possessive",
+    "",
+    "pronouns",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0060",
+    "Det",
+    "it (neuter)",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0061",
+    "Det",
+    "the (neuter, with adjective)",
+    "article",
+    "",
+    "grammar",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0062",
+    "Det",
+    "it (neuter object)",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0063",
+    "Dets",
+    "its (neuter)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0064",
+    "Dig",
+    "you (singular object)",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0065",
+    "Dikt",
+    "poem",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0066",
+    "Diktare",
+    "poet",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0067",
+    "Din",
+    "your (common)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0068",
+    "Dina",
+    "your (plural)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0069",
+    "Ditt",
+    "your (neuter)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0070",
+    "Djupa",
+    "deep (plural)",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0071",
+    "Dotter",
+    "daughter",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0072",
+    "Dra til helvetet!",
+    "go to hell! (strong)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0073",
+    "Drikka",
+    "to drink",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0074",
+    "Dröm",
+    "dream",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0075",
+    "Drömma",
+    "to dream",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0076",
+    "Du",
+    "you (singular)",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0077",
+    "Du ær vakker.",
+    "You are beautiful.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0078",
+    "Dumskalle",
+    "idiot/dimwit (mild)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0079",
+    "Dåtid",
+    "past",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0080",
+    "Dør",
+    "door",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0081",
+    "Eder",
+    "you (plural object)",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0082",
+    "Eders",
+    "your (plural owner)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0083",
+    "Efter",
+    "after",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0084",
+    "Efter regnet komar solen.",
+    "after the rain comes the sun",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0085",
+    "Eg",
+    "I",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0086",
+    "Ein",
+    "1",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0087",
+    "Elev",
+    "pupil",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0088",
+    "Eller",
+    "or",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0089",
+    "Elska",
+    "to love",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0090",
+    "Elva",
+    "11",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0091",
+    "En",
+    "a/an (common)",
+    "article",
+    "",
+    "grammar",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0092",
+    "En god væn ær en trygg hamn.",
+    "a good friend is a safe harbour",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0093",
+    "Ensam",
+    "lonely",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0094",
+    "Et",
+    "a/an (neuter)",
+    "article",
+    "",
+    "grammar",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0095",
+    "Et litet ljus brytar mörkret.",
+    "a little light breaks the darkness",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0096",
+    "Evighet",
+    "eternity",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0097",
+    "Evigt",
+    "forever",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0098",
+    "Familj",
+    "family",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0099",
+    "Fan",
+    "damn/fuck (moderate)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0100",
+    "Far",
+    "father",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0101",
+    "Farfar",
+    "paternal grandfather",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0102",
+    "Farmor",
+    "paternal grandmother",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0103",
+    "Farvæl",
+    "goodbye",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0104",
+    "Fem",
+    "5",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0105",
+    "Femte",
+    "fifth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0106",
+    "Femti",
+    "50",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0107",
+    "Femton",
+    "15",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0108",
+    "Finna",
+    "to find",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0109",
+    "Fisk",
+    "fish",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0110",
+    "Fjorton",
+    "14",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0111",
+    "Fjäll",
+    "mountain",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0112",
+    "Fjärde",
+    "fourth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0113",
+    "Fjäril",
+    "butterfly",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0114",
+    "Flagga",
+    "flag",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0115",
+    "Flyg",
+    "aircraft",
+    "noun",
+    "neuter",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0116",
+    "Flygplats",
+    "airport",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0117",
+    "Folk",
+    "people/nation",
+    "noun",
+    "neuter",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0118",
+    "Fordi",
+    "because",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0119",
+    "Forskar",
+    "researcher",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0120",
+    "Fot",
+    "foot",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0121",
+    "Framför",
+    "in front of",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0122",
+    "Framtid",
+    "future",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0123",
+    "Fred",
+    "peace",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0124",
+    "Fri",
+    "free (root in approved derivation)",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0125",
+    "Frihet",
+    "liberty",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0126",
+    "Frukost",
+    "breakfast",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0127",
+    "Fruktan",
+    "fear",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0128",
+    "Frå",
+    "from",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0129",
+    "Fråga",
+    "to ask",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0130",
+    "Fugl",
+    "bird",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0131",
+    "Fyra",
+    "4",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0132",
+    "Fyrti",
+    "40",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0133",
+    "Få",
+    "may/be permitted to",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0134",
+    "Fönster",
+    "window",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0135",
+    "För",
+    "for",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0136",
+    "Förbannad",
+    "damned/fucking (context-dependent)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0137",
+    "Förlåt",
+    "sorry",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0138",
+    "Förlåta",
+    "to forgive",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0139",
+    "Försiktig",
+    "careful",
+    "adjective",
+    "",
+    "adjectives",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0140",
+    "Försiktigt",
+    "carefully",
+    "adverb",
+    "",
+    "adverbs",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0141",
+    "Första",
+    "first",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0142",
+    "Förstå",
+    "to understand",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0143",
+    "Förvirrad",
+    "confused",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0144",
+    "Förälder",
+    "parent",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0145",
+    "Förälskad",
+    "in love",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0146",
+    "Gamal",
+    "old",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0147",
+    "Gata",
+    "street",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0148",
+    "Ge",
+    "to give",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0149",
+    "Gemensam",
+    "shared/common",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0150",
+    "Genom",
+    "through",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0151",
+    "Glad",
+    "happy",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0152",
+    "God",
+    "good",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0153",
+    "God dag",
+    "good day",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0154",
+    "God kveld",
+    "good evening",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0155",
+    "God morgon",
+    "good morning",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0156",
+    "God natt",
+    "good night",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0157",
+    "Godt",
+    "well (in approved expression)",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0158",
+    "Grundlag",
+    "constitution",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0159",
+    "Grymt!",
+    "awesome!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0160",
+    "Gräns",
+    "border",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0161",
+    "Gråta",
+    "to cry",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0162",
+    "Grøn",
+    "green",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0163",
+    "Gul",
+    "yellow",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0164",
+    "Gärna",
+    "gladly",
+    "adverb",
+    "",
+    "adverbs",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0165",
+    "Gå",
+    "to go/walk",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0166",
+    "Halló",
+    "hello",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0167",
+    "Ham",
+    "him",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0168",
+    "Hamn",
+    "harbour",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0169",
+    "Han",
+    "he",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0170",
+    "Hand",
+    "hand",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0171",
+    "Hans",
+    "his",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0172",
+    "Hata",
+    "to hate",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0173",
+    "Hav",
+    "sea",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0174",
+    "Hava",
+    "to have",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0175",
+    "Hej",
+    "hello",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0176",
+    "Helt vilt!",
+    "that is crazy!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0177",
+    "Helvete",
+    "hell/fucking hell (strong)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0178",
+    "Hem",
+    "home",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0179",
+    "Hemland",
+    "homeland",
+    "noun",
+    "neuter",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0180",
+    "Hemlös",
+    "homeless",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0181",
+    "Hen",
+    "singular neutral they",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0182",
+    "Hen",
+    "neutral singular them",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0183",
+    "Henne",
+    "her",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0184",
+    "Hennes",
+    "her",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0185",
+    "Hens",
+    "neutral singular their",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0186",
+    "Heta",
+    "to be called",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0187",
+    "Himmel",
+    "sky",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0188",
+    "Historia",
+    "history",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0189",
+    "Hjälpa",
+    "to help",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0190",
+    "Hjärta",
+    "heart",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0191",
+    "Hon",
+    "she",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0192",
+    "Hund",
+    "dog",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0193",
+    "Hundre",
+    "100",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0194",
+    "Hur",
+    "how",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0195",
+    "Hur har du det?",
+    "how are you?",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0196",
+    "Hur mykket",
+    "how much",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0197",
+    "Hur många",
+    "how many",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0198",
+    "Hus",
+    "house",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0199",
+    "Huvud",
+    "head",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0200",
+    "Huvudstad",
+    "capital city",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0201",
+    "Hvad",
+    "what",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0202",
+    "Hvar",
+    "where",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0203",
+    "Hvarför",
+    "why",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0204",
+    "Hvem",
+    "who",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0205",
+    "Hvilken",
+    "which",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0206",
+    "Hvit",
+    "white",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0207",
+    "Här",
+    "here",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0208",
+    "Häst",
+    "horse",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0209",
+    "Håp",
+    "hope",
+    "noun",
+    "neuter",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0210",
+    "Håpa",
+    "to hope",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0211",
+    "Hår",
+    "hair",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0212",
+    "Höra",
+    "to hear",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0213",
+    "I",
+    "in",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0214",
+    "Idag",
+    "today",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0215",
+    "Igår",
+    "yesterday",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0216",
+    "Ikke",
+    "not",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0217",
+    "Ikväll",
+    "tonight",
+    "adverb",
+    "",
+    "unresolved",
+    21,
+    "proposal",
+    "",
+    "Only in unapproved illustrative dialogue."
+   ],
+   [
+    "SCH-0218",
+    "Illu",
+    "house",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0219",
+    "Imorgon",
+    "tomorrow",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0220",
+    "Information",
+    "information",
+    "noun",
+    "",
+    "public life",
+    24,
+    "approved",
+    "",
+    "Gender not independently specified."
+   ],
+   [
+    "SCH-0221",
+    "Ingen",
+    "no/none",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0222",
+    "Ingen fara.",
+    "no worries.",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0223",
+    "Ingen vind varar evigt.",
+    "no wind lasts forever",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0224",
+    "Ingenjör",
+    "engineer",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0225",
+    "Inte",
+    "not",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0226",
+    "Is",
+    "ice",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0227",
+    "Is i blodet",
+    "remaining calm under pressure",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0228",
+    "Ja",
+    "yes",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0229",
+    "Jag",
+    "I",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0230",
+    "Jag elskar dig.",
+    "I love you.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0231",
+    "Jag har det bra",
+    "I am doing well",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0232",
+    "Jag saknar dig.",
+    "I miss you.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0233",
+    "Jag ær här för dig.",
+    "I am here for you.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0234",
+    "Jag ær stolt av dig.",
+    "I am proud of you.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0235",
+    "Jakka",
+    "jacket",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0236",
+    "Jord",
+    "soil/ground",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0237",
+    "Jorden",
+    "Earth",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0238",
+    "Järnväg",
+    "railway",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0239",
+    "Jävlar",
+    "fucking hell (strong)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0240",
+    "Kaffe",
+    "coffee",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0241",
+    "Kajak",
+    "traditional narrow paddling boat",
+    "noun",
+    "common",
+    "heritage",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0242",
+    "Kald",
+    "cold",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0243",
+    "Kanin",
+    "rabbit",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0244",
+    "Katt",
+    "cat",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0245",
+    "Kiitos",
+    "thank you",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0246",
+    "Klæde",
+    "garment",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0247",
+    "Kom igen!",
+    "come on!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0248",
+    "Koma",
+    "to come",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0249",
+    "Konstintelligens",
+    "artificial intelligence",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0250",
+    "Kontor",
+    "office",
+    "noun",
+    "neuter",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0251",
+    "Kram",
+    "hug",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0252",
+    "Krama",
+    "to hug",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0253",
+    "Kuksa",
+    "traditional carved wooden drinking cup",
+    "noun",
+    "common",
+    "heritage",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0254",
+    "Kult!",
+    "cool!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0255",
+    "Kultur",
+    "culture",
+    "noun",
+    "",
+    "public life",
+    24,
+    "approved",
+    "",
+    "Gender not independently specified."
+   ],
+   [
+    "SCH-0256",
+    "Kunna",
+    "can/be able to",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0257",
+    "Kust",
+    "coast",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0258",
+    "Kvinna",
+    "woman",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0259",
+    "Kyss",
+    "kiss",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0260",
+    "Kyssa",
+    "to kiss",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0261",
+    "Känna",
+    "to feel",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0262",
+    "Kæreste",
+    "romantic partner",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0263",
+    "Kærlighet",
+    "love",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0264",
+    "Kök",
+    "kitchen",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0265",
+    "Köpa",
+    "to buy",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0266",
+    "Kött",
+    "meat",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0267",
+    "Lag",
+    "law",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0268",
+    "Laga",
+    "to cook/repair",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0269",
+    "Lampa",
+    "lamp",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0270",
+    "Land",
+    "country",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0271",
+    "Le",
+    "to smile",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0272",
+    "Ledsen",
+    "sad",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0273",
+    "Leva",
+    "to live",
+    "verb",
+    "",
+    "verbs",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0274",
+    "Lever",
+    "lives",
+    "text-attested form",
+    "",
+    "sample text",
+    24,
+    "approved_text_only",
+    "",
+    "Occurs in approved example subject to correction; do not generalize as independently approved lemma."
+   ],
+   [
+    "SCH-0275",
+    "Lita",
+    "to trust",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0276",
+    "Lite",
+    "a little",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0277",
+    "Liten",
+    "small",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0278",
+    "Litet",
+    "small (neuter)",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0279",
+    "Ljus",
+    "light",
+    "noun",
+    "neuter",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0280",
+    "Ljus",
+    "bright (adjective in text)",
+    "text-attested form",
+    "",
+    "sample text",
+    24,
+    "approved_text_only",
+    "",
+    "Occurs in approved example subject to correction; do not generalize as independently approved lemma."
+   ],
+   [
+    "SCH-0281",
+    "Ljusblomma",
+    "Brightbloom",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0282",
+    "Lugn",
+    "calm",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0283",
+    "Lugna dig!",
+    "chill out!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0284",
+    "Lycka",
+    "happiness",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0285",
+    "Lykkelig",
+    "happy/joyful",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0286",
+    "Lyssna",
+    "to listen",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0287",
+    "Läkare",
+    "doctor",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0288",
+    "Lära",
+    "to learn",
+    "verb",
+    "",
+    "verbs",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0289",
+    "Lärare",
+    "teacher",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0290",
+    "Lärning",
+    "learning",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0291",
+    "Läs",
+    "read (root)",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0292",
+    "Läsa",
+    "to read",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0293",
+    "Läsbar",
+    "readable",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0294",
+    "Långsam",
+    "slow",
+    "adjective",
+    "",
+    "adjectives",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0295",
+    "Långsamt",
+    "slowly",
+    "adverb",
+    "",
+    "adverbs",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0296",
+    "Maka",
+    "wife",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0297",
+    "Make",
+    "husband",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0298",
+    "Mange takk",
+    "thank you very much",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0299",
+    "Mann",
+    "man",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0300",
+    "Mat",
+    "food",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0301",
+    "Med",
+    "with",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0302",
+    "Medborgare",
+    "citizen",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0303",
+    "Mellan",
+    "between",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0304",
+    "Men",
+    "but",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0305",
+    "Mer",
+    "more",
+    "comparison",
+    "",
+    "grammar",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0306",
+    "Mest",
+    "most",
+    "comparison",
+    "",
+    "grammar",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0307",
+    "Middag",
+    "dinner",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0308",
+    "Mig",
+    "me",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0309",
+    "Miljard",
+    "1000000000",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0310",
+    "Miljon",
+    "1000000",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0311",
+    "Min",
+    "my (common)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0312",
+    "Min älskling.",
+    "My darling.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0313",
+    "Mina",
+    "my (plural)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0314",
+    "Minister",
+    "minister",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0315",
+    "Minne",
+    "memory",
+    "noun",
+    "neuter",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0316",
+    "Mitt",
+    "my (neuter)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0317",
+    "Mjölk",
+    "milk",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0318",
+    "Mor",
+    "mother",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0319",
+    "Morfar",
+    "maternal grandfather",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0320",
+    "Mormor",
+    "maternal grandmother",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0321",
+    "Mot",
+    "toward/against",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0322",
+    "Mund",
+    "mouth",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0323",
+    "Mus",
+    "mouse",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0324",
+    "Mykket",
+    "much/very",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0325",
+    "Måne",
+    "moon",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0326",
+    "Många",
+    "many",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0327",
+    "Många röstar, en sång.",
+    "many voices, one song",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0328",
+    "Måsta",
+    "must",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0329",
+    "Mörker",
+    "darkness",
+    "noun",
+    "neuter",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0330",
+    "Mössa",
+    "hat/cap",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0331",
+    "Natt",
+    "night",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0332",
+    "Nej",
+    "no",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0333",
+    "Nervös",
+    "nervous",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0334",
+    "Nio",
+    "9",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0335",
+    "Nionde",
+    "ninth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0336",
+    "Nioti",
+    "90",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0337",
+    "Nioton",
+    "19",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0338",
+    "Nonus",
+    "Nyrethian month 9",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0339",
+    "Nord",
+    "north",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0340",
+    "Nordisk",
+    "Nordic",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0341",
+    "Null",
+    "0",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0342",
+    "Ny",
+    "new",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0343",
+    "Nykkel",
+    "key",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0344",
+    "Nyreth",
+    "Nyreth",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0345",
+    "Nytt",
+    "new (neuter)",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0346",
+    "Nämen!",
+    "no way!/oh my!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0347",
+    "När",
+    "when",
+    "interrogative",
+    "",
+    "questions",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0348",
+    "Nät",
+    "internet/network",
+    "noun",
+    "neuter",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0349",
+    "Octavus",
+    "Nyrethian month 8",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0350",
+    "Offentlig",
+    "public",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0351",
+    "Og",
+    "and",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0352",
+    "Og",
+    "too",
+    "adverb",
+    "",
+    "unresolved",
+    9,
+    "proposal",
+    "",
+    "Never approved as too; approved Også instead."
+   ],
+   [
+    "SCH-0353",
+    "Også",
+    "also/too",
+    "adverb",
+    "",
+    "conversation",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0354",
+    "Olika",
+    "different",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0355",
+    "Om",
+    "if",
+    "function word",
+    "",
+    "connectors",
+    8,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0356",
+    "Ord",
+    "word",
+    "noun",
+    "neuter",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0357",
+    "Orka!",
+    "I cannot be bothered!",
+    "slang",
+    "",
+    "slang",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0358",
+    "Orolig",
+    "worried",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0359",
+    "Oss",
+    "us",
+    "object pronoun",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0360",
+    "Ost",
+    "cheese",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0361",
+    "Parlament",
+    "parliament",
+    "noun",
+    "neuter",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0362",
+    "Parti",
+    "political party",
+    "noun",
+    "neuter",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0363",
+    "Partner",
+    "partner",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0364",
+    "Planet",
+    "planet",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0365",
+    "Polis",
+    "police officer",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0366",
+    "Potet",
+    "potato",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0367",
+    "President",
+    "president",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0368",
+    "Primus",
+    "Nyrethian month 1",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0369",
+    "På",
+    "on/upon",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0370",
+    "Quartus",
+    "Nyrethian month 4",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0371",
+    "Quintus",
+    "Nyrethian month 5",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0372",
+    "Qujanaq",
+    "thank you",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0373",
+    "Regering",
+    "government",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0374",
+    "Region",
+    "region",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0375",
+    "Regionalt",
+    "regional (neuter)",
+    "text-attested form",
+    "",
+    "sample text",
+    24,
+    "approved_text_only",
+    "",
+    "Occurs in approved example subject to correction; do not generalize as independently approved lemma."
+   ],
+   [
+    "SCH-0376",
+    "Regn",
+    "rain",
+    "noun",
+    "neuter",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0377",
+    "Republik",
+    "republic",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0378",
+    "Republiken av Brightport",
+    "Republic of Brightport",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0379",
+    "Republiken av Occasue",
+    "Republic of Occasue",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0380",
+    "Resa",
+    "to travel",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0381",
+    "Rik",
+    "rich",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0382",
+    "Ruisbröd",
+    "rye bread",
+    "noun",
+    "neuter",
+    "heritage",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0383",
+    "Rum",
+    "room",
+    "noun",
+    "neuter",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0384",
+    "Rymd",
+    "outer space",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0385",
+    "Rymdhamn",
+    "spaceport",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0386",
+    "Rymdskepp",
+    "spacecraft",
+    "noun",
+    "neuter",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0387",
+    "Rätt",
+    "legal right",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0388",
+    "Rædd",
+    "afraid",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0389",
+    "Röst",
+    "voice",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0390",
+    "Rötter",
+    "roots",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0391",
+    "Rød",
+    "red",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0392",
+    "Saga",
+    "tale/saga",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0393",
+    "Sakna",
+    "to miss",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0394",
+    "Sama",
+    "same",
+    "contextual vocabulary",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    "Approved in idiom; unapproved paradigms not inferred."
+   ],
+   [
+    "SCH-0395",
+    "Samhälle",
+    "community/society",
+    "noun",
+    "",
+    "public life",
+    24,
+    "approved",
+    "",
+    "Gender not independently specified."
+   ],
+   [
+    "SCH-0396",
+    "Samhällen",
+    "communities (text form; plural requires review)",
+    "text-attested form",
+    "",
+    "sample text",
+    24,
+    "approved_text_only",
+    "",
+    "Occurs in approved example subject to correction; do not generalize as independently approved lemma."
+   ],
+   [
+    "SCH-0397",
+    "Sauna",
+    "traditional heated bathing room",
+    "noun",
+    "common",
+    "heritage",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0398",
+    "Schoon",
+    "Schoon language",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "/skoːn/",
+    ""
+   ],
+   [
+    "SCH-0399",
+    "Schoonare",
+    "person of Schoon heritage",
+    "noun",
+    "",
+    "identity",
+    14,
+    "approved",
+    "",
+    "Schoonarar was explicitly used as plural; common gender inferred from that ending."
+   ],
+   [
+    "SCH-0400",
+    "Schoonheid",
+    "Schoonheid",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0401",
+    "Schoonisk",
+    "Schoon cultural/linguistic adjective",
+    "adjective",
+    "",
+    "identity",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0402",
+    "Schoonspråkets Ordbok",
+    "Dictionary of the Schoon Language",
+    "proper noun",
+    "",
+    "institutions",
+    25,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0403",
+    "Schoonspråkrådet",
+    "Schoon Language Council",
+    "proper noun",
+    "",
+    "institutions",
+    23,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0404",
+    "Secundus",
+    "Nyrethian month 2",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0405",
+    "Seks",
+    "6",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0406",
+    "Sekste",
+    "sixth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0407",
+    "Seksti",
+    "60",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0408",
+    "Sekston",
+    "16",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0409",
+    "Septimus",
+    "Nyrethian month 7",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0410",
+    "Sextus",
+    "Nyrethian month 6",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0411",
+    "Sig",
+    "third-person reflexive (self)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0412",
+    "Simma",
+    "to swim",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0413",
+    "Sin",
+    "one’s own",
+    "contextual vocabulary",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    "Approved in idiom; unapproved paradigms not inferred."
+   ],
+   [
+    "SCH-0414",
+    "Sin",
+    "one’s own (common)",
+    "possessive",
+    "",
+    "pronouns",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0415",
+    "Sina",
+    "one’s own (plural)",
+    "possessive",
+    "",
+    "pronouns",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0416",
+    "Sitt",
+    "one’s own (neuter)",
+    "possessive",
+    "",
+    "pronouns",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0417",
+    "Sju",
+    "7",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0418",
+    "Sjukhus",
+    "hospital",
+    "noun",
+    "neuter",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0419",
+    "Sjukskötare",
+    "nurse",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0420",
+    "Sjunde",
+    "seventh",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0421",
+    "Sjuti",
+    "70",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0422",
+    "Sjutton",
+    "17",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0423",
+    "Sjä",
+    "to see",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0424",
+    "Sjæl",
+    "soul",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0425",
+    "Sjö",
+    "lake",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0426",
+    "Skapa",
+    "to create",
+    "verb",
+    "",
+    "verbs",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0427",
+    "Skit",
+    "shit (moderate)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0428",
+    "Skithål",
+    "shithole (strong)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0429",
+    "Skjorta",
+    "shirt",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0430",
+    "Sko",
+    "shoe",
+    "noun",
+    "common",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0431",
+    "Skog",
+    "forest",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0432",
+    "Skola",
+    "school",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0433",
+    "Skratta",
+    "to laugh",
+    "verb",
+    "",
+    "verbs",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0434",
+    "Skriva",
+    "to write",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0435",
+    "Skula",
+    "shall/will",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0436",
+    "Skärm",
+    "screen",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0437",
+    "Smör",
+    "butter",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0438",
+    "Snabb",
+    "fast",
+    "adjective",
+    "",
+    "adjectives",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0439",
+    "Snabbt",
+    "quickly",
+    "adverb",
+    "",
+    "adverbs",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0440",
+    "Snälla",
+    "please",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0441",
+    "Snö",
+    "snow",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0442",
+    "Snö på hjärtat",
+    "emotional coldness",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0443",
+    "Snöhuvud",
+    "airhead (mild)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0444",
+    "Sol",
+    "sun",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0445",
+    "Sol i hjärtat",
+    "being full of joy",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0446",
+    "Som",
+    "who/which/that",
+    "relative pronoun",
+    "",
+    "grammar",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0447",
+    "Son",
+    "son",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0448",
+    "Soppa",
+    "soup",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0449",
+    "Sorg",
+    "sorrow",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0450",
+    "Souvren",
+    "Souvren",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0451",
+    "Sov",
+    "sleep (imperative in approved expression)",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0452",
+    "Sov godt, min kærlighet.",
+    "Sleep well, my love.",
+    "expression",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0453",
+    "Sova",
+    "to sleep",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0454",
+    "Spegel",
+    "mirror",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0455",
+    "Spela",
+    "to play",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0456",
+    "Springa",
+    "to run",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0457",
+    "Språk",
+    "language",
+    "noun",
+    "neuter",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0458",
+    "Stad",
+    "city",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0459",
+    "Starka",
+    "strong (plural)",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0460",
+    "Starka træer har djupa rötter.",
+    "strong trees have deep roots",
+    "proverb",
+    "",
+    "proverbs",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0461",
+    "Stat",
+    "state",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0462",
+    "Station",
+    "station",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0463",
+    "Statsminister",
+    "prime minister",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0464",
+    "Stjärna",
+    "star",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0465",
+    "Stol",
+    "chair",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0466",
+    "Stolt",
+    "proud",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0467",
+    "Stor",
+    "big",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0468",
+    "Storhet",
+    "greatness",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0469",
+    "Student",
+    "student",
+    "noun",
+    "common",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0470",
+    "Stänga",
+    "to close",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0471",
+    "Svara",
+    "to answer",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0472",
+    "Svart",
+    "black",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0473",
+    "Svartsjuk",
+    "jealous",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0474",
+    "Swisswa",
+    "Swisswa",
+    "proper noun",
+    "",
+    "names",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0475",
+    "Syd",
+    "south",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0476",
+    "Syster",
+    "sister",
+    "noun",
+    "common",
+    "family",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0477",
+    "Sälja",
+    "to sell",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0478",
+    "Säng",
+    "bed",
+    "noun",
+    "common",
+    "household",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0479",
+    "Sång",
+    "song",
+    "noun",
+    "common",
+    "literature",
+    22,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0480",
+    "Ta",
+    "to take",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0481",
+    "Tacksam",
+    "grateful",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0482",
+    "Takk",
+    "thank you",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0483",
+    "Tala",
+    "to speak",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0484",
+    "Talare",
+    "speaker",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0485",
+    "Te",
+    "tea",
+    "noun",
+    "common",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0486",
+    "Telefon",
+    "telephone",
+    "noun",
+    "common",
+    "technology",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0487",
+    "Territorium",
+    "territory",
+    "noun",
+    "neuter",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0488",
+    "Tertius",
+    "Nyrethian month 3",
+    "proper noun",
+    "",
+    "calendar",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0489",
+    "Tidning",
+    "newspaper",
+    "noun",
+    "",
+    "public life",
+    24,
+    "approved",
+    "",
+    "Gender not independently specified."
+   ],
+   [
+    "SCH-0490",
+    "Til",
+    "to",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0491",
+    "Tillit",
+    "trust",
+    "noun",
+    "common",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0492",
+    "Tio",
+    "10",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0493",
+    "Tionde",
+    "tenth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0494",
+    "Tit",
+    "you (plural)",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0495",
+    "Tjugo",
+    "20",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0496",
+    "To",
+    "2",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0497",
+    "Tog",
+    "train",
+    "noun",
+    "neuter",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0498",
+    "Tolv",
+    "12",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0499",
+    "Torg",
+    "public square",
+    "noun",
+    "neuter",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0500",
+    "Tre",
+    "3",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0501",
+    "Tredje",
+    "third",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0502",
+    "Tretti",
+    "30",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0503",
+    "Tretton",
+    "13",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0504",
+    "Trygg",
+    "safe",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0505",
+    "Træ",
+    "tree",
+    "noun",
+    "neuter",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0506",
+    "Trött",
+    "tired",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0507",
+    "Tungar",
+    "tongues",
+    "contextual vocabulary",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    "Approved in idiom; unapproved paradigms not inferred."
+   ],
+   [
+    "SCH-0508",
+    "Tusen",
+    "1000",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0509",
+    "Tydlig",
+    "clear",
+    "adjective",
+    "",
+    "adjectives",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0510",
+    "Tydligt",
+    "clearly",
+    "adverb",
+    "",
+    "adverbs",
+    18,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0511",
+    "Tänka",
+    "to think",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0512",
+    "Ulv",
+    "wolf",
+    "noun",
+    "common",
+    "Earth animals",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0513",
+    "Umiak",
+    "traditional large open boat",
+    "noun",
+    "common",
+    "heritage",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0514",
+    "Under",
+    "under",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0515",
+    "Under sama måne",
+    "connected despite being apart",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0516",
+    "Union",
+    "union",
+    "noun",
+    "common",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0517",
+    "Universitet",
+    "university",
+    "noun",
+    "neuter",
+    "education and work",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0518",
+    "Ursäkta",
+    "excuse me",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0519",
+    "Usch",
+    "ew/ugh (mild)",
+    "profanity",
+    "",
+    "profanity",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0520",
+    "Utan",
+    "without",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0521",
+    "Utmattad",
+    "exhausted",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0522",
+    "Vakker",
+    "beautiful",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0523",
+    "Val",
+    "election",
+    "noun",
+    "neuter",
+    "government",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0524",
+    "Varar",
+    "lasts",
+    "contextual vocabulary",
+    "",
+    "literature",
+    22,
+    "approved",
+    "",
+    "Approved in poem/proverbs; full paradigms not established."
+   ],
+   [
+    "SCH-0525",
+    "Varm",
+    "warm",
+    "adjective",
+    "",
+    "adjectives",
+    7,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0526",
+    "Vatn",
+    "water",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0527",
+    "Vatten",
+    "water",
+    "regional expression",
+    "",
+    "regional",
+    15,
+    "approved",
+    "",
+    "Approved regional alternatives; no formal dialect grouping. Ancestral associations not geographical boundaries."
+   ],
+   [
+    "SCH-0528",
+    "Velkommen",
+    "welcome",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0529",
+    "Vest",
+    "west",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0530",
+    "Veta",
+    "to know a fact",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0531",
+    "Vi",
+    "we",
+    "pronoun",
+    "",
+    "pronouns",
+    4,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0532",
+    "Vi sjæs",
+    "see you",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0533",
+    "Vid",
+    "beside/at",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0534",
+    "Vidare",
+    "onward/continuing",
+    "adverb",
+    "",
+    "adverbs",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0535",
+    "Viktig",
+    "important",
+    "adjective",
+    "",
+    "adjectives",
+    24,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0536",
+    "Vilja",
+    "want to",
+    "modal verb",
+    "",
+    "verbs",
+    16,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0537",
+    "Vind",
+    "wind",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0538",
+    "Vind i huvudet",
+    "being scatterbrained",
+    "idiom",
+    "",
+    "idioms",
+    21,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0539",
+    "Väg",
+    "road",
+    "noun",
+    "common",
+    "transport",
+    13,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0540",
+    "Vänta",
+    "to wait",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0541",
+    "Värld",
+    "world",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0542",
+    "Vår",
+    "our (common)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0543",
+    "Våra",
+    "our (plural)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0544",
+    "Vårt",
+    "our (neuter)",
+    "possessive",
+    "",
+    "pronouns",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0545",
+    "Væn",
+    "friend",
+    "noun",
+    "common",
+    "basic nouns",
+    5,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0546",
+    "Vænlig",
+    "friendly",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0547",
+    "Vænskap",
+    "friendship",
+    "derived word",
+    "",
+    "derivation",
+    18,
+    "approved",
+    "",
+    "Gender of derived nouns not assigned. Fri was in approved derivation example."
+   ],
+   [
+    "SCH-0548",
+    "Vær så god",
+    "you are welcome / here you go",
+    "expression",
+    "",
+    "greetings",
+    11,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0549",
+    "Væra",
+    "to be",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0550",
+    "Ägg",
+    "egg",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0551",
+    "Äktenskap",
+    "marriage",
+    "noun",
+    "neuter",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0552",
+    "Älskling",
+    "darling",
+    "contextual vocabulary",
+    "",
+    "affection",
+    20,
+    "approved",
+    "",
+    "Approved in expression; further morphology or gender unresolved."
+   ],
+   [
+    "SCH-0553",
+    "Älv",
+    "river",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0554",
+    "Äple",
+    "apple",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0555",
+    "Äta",
+    "to eat",
+    "verb",
+    "",
+    "verbs",
+    6,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0556",
+    "Åtta",
+    "8",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0557",
+    "Åttende",
+    "eighth",
+    "ordinal",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0558",
+    "Åtti",
+    "80",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0559",
+    "Åtton",
+    "18",
+    "number",
+    "",
+    "numbers",
+    10,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0560",
+    "Ö",
+    "island",
+    "noun",
+    "common",
+    "nature",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0561",
+    "Öga",
+    "eye",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0562",
+    "Öken",
+    "desert",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0563",
+    "Öl",
+    "beer",
+    "noun",
+    "neuter",
+    "food",
+    12,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0564",
+    "Öppna",
+    "to open",
+    "verb",
+    "",
+    "verbs",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0565",
+    "Öra",
+    "ear",
+    "noun",
+    "neuter",
+    "clothing and body",
+    19,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0566",
+    "Öst",
+    "east",
+    "noun",
+    "common",
+    "geography",
+    14,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0567",
+    "Över",
+    "over",
+    "preposition",
+    "",
+    "prepositions",
+    9,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0568",
+    "Överraskad",
+    "surprised",
+    "adjective",
+    "",
+    "emotions",
+    20,
+    "approved",
+    "",
+    ""
+   ],
+   [
+    "SCH-0569",
+    "Morgon",
+    "morning",
+    "contextual form",
+    "",
+    "approved text",
+    11,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0570",
+    "Kveld",
+    "evening",
+    "contextual form",
+    "",
+    "approved text",
+    11,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0571",
+    "Mange",
+    "many (in mange takk)",
+    "contextual form",
+    "",
+    "approved text",
+    11,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0572",
+    "Förenade",
+    "united (in national name)",
+    "contextual form",
+    "",
+    "approved text",
+    14,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0573",
+    "Kom",
+    "came / come (past and fixed command)",
+    "contextual form",
+    "",
+    "approved text",
+    7,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0574",
+    "Lugna",
+    "calm/relax (imperative)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0575",
+    "Fara",
+    "danger (in ingen fara)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0576",
+    "Igen",
+    "again (in kom igen)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0577",
+    "Helt",
+    "completely (in helt vilt)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0578",
+    "Vilt",
+    "wild (in helt vilt)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0579",
+    "Dra",
+    "go/leave (in fixed insult)",
+    "contextual form",
+    "",
+    "approved text",
+    21,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0580",
+    "Nordiska",
+    "Nordic (plural/definite in example)",
+    "contextual form",
+    "",
+    "approved text",
+    24,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ],
+   [
+    "SCH-0581",
+    "Gemensamt",
+    "shared (neuter)",
+    "contextual form",
+    "",
+    "approved text",
+    24,
+    "approved_text_only",
+    "",
+    "Attested in an approved expression or text; independent lemma/paradigm not fixed."
+   ]
+  ],
+  "overview": {
+   "status": [
+    "Schoon is the national language of Schoonheid, URBO’s sovereign northern neighbour.",
+    "In URBO, Schoon is a regional official language in designated Schoon-speaking communities of Ouest, above all Swisswa, a city in the region that Schoonheid ceded to URBO. It is not a seventh federal official language.",
+    "Schoon is a compulsory regional language subject in those schools. Signs show Schoon first, then the locally dominant official language."
+   ],
+   "origin": [
+    "Schoon /skoːn/ is a North Germanic contact language. It grew up in Schoonheid after a joint Nordic colonial mission to Nyreth.",
+    "Eight founding communities: five sovereign states (Denmark, Finland, Iceland, Norway and Sweden), two autonomous territories (the Faroe Islands and Greenland) and one autonomous region (Åland).",
+    "Danish, Swedish, Norwegian, Icelandic and Faroese form an evenly blended Germanic core. Finnish and Greenlandic add stronger regional influence; Åland and Swedish-speaking Finland contribute Swedish.",
+    "Scandinavian speakers from Earth would recognise many words but struggle to follow a whole conversation. The ancestral languages are still widely spoken as second languages.",
+    "There are many mutually intelligible local dialects, without any formal classification."
+   ],
+   "council": [
+    "The language was standardised by a council representing the eight founding communities.",
+    "Today’s authority is Schoonspråkrådet, the Schoon Language Council. Its emblem is a book with eight dots.",
+    "No officials, statutes or dates have been assigned to it."
+   ],
+   "terms": [
+    [
+     "Schoon",
+     "the language"
+    ],
+    [
+     "Schoonisk",
+     "Schoon (adjective)"
+    ],
+    [
+     "Schoonare",
+     "a person of Schoon heritage"
+    ],
+    [
+     "Schoonarar",
+     "people of Schoon heritage (plural)"
+    ],
+    [
+     "Schoonspråkets Ordbok",
+     "the official dictionary"
+    ]
+   ]
+  },
+  "alpha": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "I",
+   "J",
+   "K",
+   "L",
+   "M",
+   "N",
+   "O",
+   "P",
+   "Q",
+   "R",
+   "S",
+   "T",
+   "U",
+   "V",
+   "W",
+   "X",
+   "Y",
+   "Z",
+   "Æ",
+   "Ø",
+   "Å",
+   "Ä",
+   "Ö",
+   "Þ",
+   "Ð"
+  ],
+  "vowels": [
+   [
+    "A",
+    "a"
+   ],
+   [
+    "E",
+    "e"
+   ],
+   [
+    "I",
+    "i"
+   ],
+   [
+    "O",
+    "o"
+   ],
+   [
+    "U",
+    "u"
+   ],
+   [
+    "Y",
+    "y"
+   ],
+   [
+    "Æ",
+    "æ"
+   ],
+   [
+    "Ø",
+    "ø"
+   ],
+   [
+    "Å",
+    "ɔ"
+   ],
+   [
+    "Ä",
+    "ɛ"
+   ],
+   [
+    "Ö",
+    "œ"
+   ]
+  ],
+  "diph": [
+   [
+    "ei",
+    "ei̯"
+   ],
+   [
+    "ai",
+    "ai̯"
+   ],
+   [
+    "au",
+    "au̯"
+   ],
+   [
+    "øy",
+    "øy̯"
+   ],
+   [
+    "eu",
+    "eu̯"
+   ]
+  ],
+  "cons": [
+   [
+    "þ",
+    "θ"
+   ],
+   [
+    "ð",
+    "ð"
+   ],
+   [
+    "sj",
+    "ʃ"
+   ],
+   [
+    "ng",
+    "ŋ"
+   ],
+   [
+    "j",
+    "j"
+   ],
+   [
+    "sk",
+    "sk"
+   ],
+   [
+    "h",
+    "h"
+   ],
+   [
+    "tj",
+    "tʃ"
+   ],
+   [
+    "r",
+    "r (rolled) or ɾ (tapped)"
+   ]
+  ],
+  "sound_notes": [
+   "33 letters. The exact alphabetical order is provisional.",
+   "C, Q, W, X and Z are gradually replaced by more phonetic spellings in new vocabulary, but they stay in the alphabet and established spellings are kept.",
+   "Long and short vowels distinguish meaning. Newer spelling doubles a vowel to mark it long; inherited spellings survive.",
+   "There are two pitch accents, not marked in writing. Their contours and which words take which are not settled.",
+   "Stress, vowel length and pitch accent are not fixed word by word, so the Ordbok shows IPA only where it is settled. So far that is just Schoon /skoːn/.",
+   "There is no audio: no authentic Schoon voice exists yet, and Swedish or Danish speech would not be Schoon."
+  ],
+  "noun_table": [
+   [
+    "Indefinite singular",
+    "en bok",
+    "et hus"
+   ],
+   [
+    "Definite singular",
+    "boken",
+    "huset"
+   ],
+   [
+    "Indefinite plural",
+    "bokar",
+    "huser"
+   ],
+   [
+    "Definite plural",
+    "bokarna",
+    "huserna"
+   ],
+   [
+    "Possessive",
+    "bokens",
+    "husets"
+   ]
+  ],
+  "nouns": [
+   [
+    "bok",
+    "book",
+    "books",
+    "c",
+    "attested"
+   ],
+   [
+    "hus",
+    "house",
+    "houses",
+    "n",
+    "attested"
+   ],
+   [
+    "skola",
+    "school",
+    "schools",
+    "c",
+    "attested"
+   ],
+   [
+    "blomma",
+    "flower",
+    "flowers",
+    "c",
+    "attested"
+   ],
+   [
+    "barn",
+    "child",
+    "children",
+    "n",
+    "attested-plural"
+   ],
+   [
+    "bil",
+    "car",
+    "cars",
+    "c",
+    "rule"
+   ],
+   [
+    "bord",
+    "table",
+    "tables",
+    "n",
+    "rule"
+   ],
+   [
+    "stad",
+    "city",
+    "cities",
+    "c",
+    "rule"
+   ],
+   [
+    "tog",
+    "train",
+    "trains",
+    "n",
+    "rule"
+   ],
+   [
+    "björn",
+    "bear",
+    "bears",
+    "c",
+    "rule"
+   ],
+   [
+    "hamn",
+    "harbour",
+    "harbours",
+    "c",
+    "rule"
+   ],
+   [
+    "bröd",
+    "bread",
+    "breads",
+    "n",
+    "rule"
+   ]
+  ],
+  "adj_rules": [
+   "Base form with common nouns: en stor bok.",
+   "Add -t with neuter nouns: et stort hus.",
+   "Add -a in the plural and after a definite article: stora bokar, den stora boken.",
+   "Double definiteness: den stora boken, det stora huset, dei stora bokarna, dei stora huserna.",
+   "Some adjectives have irregular stems (litet, nytt, godt appear in approved texts). Their full forms are not fixed, so -t is not added mechanically.",
+   "Comparative -are, superlative -ast, with the irregulars below.",
+   "-t also makes adverbs: snabbt, långsamt, tydligt, försiktigt."
+  ],
+  "compar": [
+   [
+    "varm",
+    "varmare",
+    "varmast",
+    "warm"
+   ],
+   [
+    "kald",
+    "kaldare",
+    "kaldast",
+    "cold"
+   ],
+   [
+    "vakker",
+    "vakkrare",
+    "vakkrast",
+    "beautiful"
+   ],
+   [
+    "stor",
+    "større",
+    "størst",
+    "big"
+   ],
+   [
+    "liten",
+    "mindre",
+    "minst",
+    "small"
+   ],
+   [
+    "god",
+    "bättre",
+    "bäst",
+    "good"
+   ],
+   [
+    "gamal",
+    "äldre",
+    "äldst",
+    "old"
+   ],
+   [
+    "mykket",
+    "mer",
+    "mest",
+    "much"
+   ]
+  ],
+  "pron": [
+   [
+    "jag",
+    "mig",
+    "min / mitt / mina",
+    "mig",
+    "I"
+   ],
+   [
+    "du",
+    "dig",
+    "din / ditt / dina",
+    "dig",
+    "you"
+   ],
+   [
+    "han",
+    "ham",
+    "hans",
+    "sig",
+    "he"
+   ],
+   [
+    "hon",
+    "henne",
+    "hennes",
+    "sig",
+    "she"
+   ],
+   [
+    "hen",
+    "hen",
+    "hens",
+    "sig",
+    "they (singular)"
+   ],
+   [
+    "den",
+    "den",
+    "dens",
+    "sig",
+    "it (common)"
+   ],
+   [
+    "det",
+    "det",
+    "dets",
+    "sig",
+    "it (neuter)"
+   ],
+   [
+    "vi",
+    "oss",
+    "vår / vårt / våra",
+    "oss",
+    "we"
+   ],
+   [
+    "tit",
+    "eder",
+    "eders",
+    "eder",
+    "you (plural)"
+   ],
+   [
+    "dei",
+    "dem",
+    "deres",
+    "sig",
+    "they"
+   ]
+  ],
+  "pron_notes": [
+   "Du is used with everyone, whatever their status.",
+   "The possessives of jag, du and vi agree with the thing owned: min bok, mitt hus, mina bokar. The others never change.",
+   "Possessives come before the noun.",
+   "Sin / sitt / sina mean one’s own; dess means its (not reflexive). Fuller binding rules are not settled."
+  ],
+  "verbs": [
+   [
+    "væra",
+    "ær",
+    "var",
+    "varit",
+    "be",
+    "am/is/are",
+    "was/were",
+    "been"
+   ],
+   [
+    "hava",
+    "har",
+    "hade",
+    "haft",
+    "have",
+    "have/has",
+    "had",
+    "had"
+   ],
+   [
+    "gå",
+    "går",
+    "gik",
+    "gått",
+    "go",
+    "go/goes",
+    "went",
+    "gone"
+   ],
+   [
+    "koma",
+    "komar",
+    "kom",
+    "komit",
+    "come",
+    "come/comes",
+    "came",
+    "come"
+   ],
+   [
+    "äta",
+    "ätar",
+    "åt",
+    "ätit",
+    "eat",
+    "eat/eats",
+    "ate",
+    "eaten"
+   ],
+   [
+    "drikka",
+    "drikkar",
+    "drakk",
+    "drukkit",
+    "drink",
+    "drink/drinks",
+    "drank",
+    "drunk"
+   ],
+   [
+    "sova",
+    "sovar",
+    "sov",
+    "sovit",
+    "sleep",
+    "sleep/sleeps",
+    "slept",
+    "slept"
+   ],
+   [
+    "sjä",
+    "sjær",
+    "såg",
+    "sjät",
+    "see",
+    "see/sees",
+    "saw",
+    "seen"
+   ],
+   [
+    "veta",
+    "vet",
+    "visste",
+    "vetat",
+    "know",
+    "know/knows",
+    "knew",
+    "known"
+   ],
+   [
+    "tala",
+    "talar",
+    "talade",
+    "talat",
+    "speak",
+    "speak/speaks",
+    "spoke",
+    "spoken"
+   ]
+  ],
+  "modals": [
+   [
+    "kunna",
+    "kan",
+    "kunde",
+    "can / be able to"
+   ],
+   [
+    "skula",
+    "skal",
+    "skulle",
+    "shall / will"
+   ],
+   [
+    "vilja",
+    "vill",
+    "ville",
+    "want to"
+   ],
+   [
+    "måsta",
+    "måste",
+    "måste",
+    "must"
+   ],
+   [
+    "børa",
+    "bør",
+    "borde",
+    "should"
+   ],
+   [
+    "få",
+    "får",
+    "fik",
+    "may / be allowed to"
+   ]
+  ],
+  "modal_ex": [
+   [
+    "Jag kan tala Schoon.",
+    "I can speak Schoon."
+   ],
+   [
+    "Du bør sova.",
+    "You should sleep."
+   ],
+   [
+    "Vi vill gå til havet.",
+    "We want to go to the sea."
+   ],
+   [
+    "Tit måste arbeta.",
+    "You (all) must work."
+   ]
+  ],
+  "verb_notes": [
+   "Verbs do not change for person: jag talar, du talar, dei talar.",
+   "The infinitive marker is at: at tala. Modal verbs take the bare infinitive without at.",
+   "Regular model: tala, talar (present), talade (past), har talat (perfect), skal tala (future), tala! (imperative). It applies to matching regular verbs only; not every verb is regular.",
+   "Only the verbs listed here have settled forms. Others (skriva, springa, finna, ge, ta…) are not conjugated on this site until approved.",
+   "The present tense also covers English “I am going”: Jag går til butiken."
+  ],
+  "syntax": [
+   [
+    "Word order is subject–verb–object, not Scandinavian “verb second”.",
+    "Jag talar Schoon.",
+    "I speak Schoon."
+   ],
+   [
+    "Inte (not) follows the conjugated verb, in main and subordinate clauses.",
+    "Jag talar inte.",
+    "I don’t speak."
+   ],
+   [
+    "…also in a subordinate clause.",
+    "Jag ær trött fordi jag sov inte.",
+    "I am tired because I didn’t sleep."
+   ],
+   [
+    "Yes/no questions swap subject and verb.",
+    "Talar du Schoon?",
+    "Do you speak Schoon?"
+   ],
+   [
+    "Question words come first, then verb, then subject.",
+    "Hvar bor du?",
+    "Where do you live?"
+   ],
+   [
+    "Som is the one relative pronoun (who/which/that). At also means “that”.",
+    "Jag vet at du talar Schoon.",
+    "I know that you speak Schoon."
+   ]
+  ],
+  "syntax_open": "Subject questions (“Who speaks?”), negation inside questions, passive, conditional and reflexive verbs are not settled yet.",
+  "num": [
+   "null",
+   "ein",
+   "to",
+   "tre",
+   "fyra",
+   "fem",
+   "seks",
+   "sju",
+   "åtta",
+   "nio",
+   "tio",
+   "elva",
+   "tolv",
+   "tretton",
+   "fjorton",
+   "femton",
+   "sekston",
+   "sjutton",
+   "åtton",
+   "nioton",
+   "tjugo"
+  ],
+  "tens": {
+   "20": "tjugo",
+   "30": "tretti",
+   "40": "fyrti",
+   "50": "femti",
+   "60": "seksti",
+   "70": "sjuti",
+   "80": "åtti",
+   "90": "nioti"
+  },
+  "big": [
+   [
+    "hundre",
+    "100"
+   ],
+   [
+    "tusen",
+    "1,000"
+   ],
+   [
+    "miljon",
+    "1,000,000"
+   ],
+   [
+    "miljard",
+    "1,000,000,000"
+   ]
+  ],
+  "ord": [
+   "första",
+   "andra",
+   "tredje",
+   "fjärde",
+   "femte",
+   "sekste",
+   "sjunde",
+   "åttende",
+   "nionde",
+   "tionde"
+  ],
+  "suffix": [
+   [
+    "-are",
+    "person who does",
+    "tala → talare (speaker)"
+   ],
+   [
+    "-het",
+    "abstract quality",
+    "storhet, frihet"
+   ],
+   [
+    "-ning",
+    "process",
+    "lära → lärning"
+   ],
+   [
+    "-isk",
+    "cultural / relational",
+    "Schoonisk"
+   ],
+   [
+    "-lig",
+    "descriptive",
+    "vænlig"
+   ],
+   [
+    "-lös",
+    "without",
+    "hemlös"
+   ],
+   [
+    "-bar",
+    "can be done",
+    "läsbar"
+   ],
+   [
+    "-skap",
+    "state / relationship",
+    "vænskap"
+   ]
+  ],
+  "wordform": [
+   "Compounds are written as one word, with no spaces or hyphens: rymdskepp (spaceship).",
+   "Words for native Nyrethian plants, animals and landscapes are built from existing Nordic roots. Approved: Ljusblomma, Brightbloom.",
+   "New compounds and roots still need approval.",
+   "Genders of new derived words are not set unless supplied."
+  ],
+  "regional": [
+   [
+    "halló",
+    "hej",
+    "hello",
+    "Icelandic/Faroese influence"
+   ],
+   [
+    "kiitos",
+    "takk",
+    "thanks",
+    "Finnish"
+   ],
+   [
+    "qujanaq",
+    "takk",
+    "thanks",
+    "Greenlandic"
+   ],
+   [
+    "illu",
+    "hus",
+    "house",
+    "Greenlandic"
+   ],
+   [
+    "vatten",
+    "vatn",
+    "water",
+    "mainland"
+   ],
+   [
+    "eg",
+    "jag",
+    "I",
+    "Icelandic/Norwegian/Faroese influence"
+   ],
+   [
+    "ikke",
+    "inte",
+    "not",
+    "mainland"
+   ],
+   [
+    "bless",
+    "farvæl",
+    "goodbye",
+    "Icelandic"
+   ]
+  ],
+  "loans": [
+   [
+    "sauna",
+    ""
+   ],
+   [
+    "ruisbröd",
+    "rye bread"
+   ],
+   [
+    "kajak",
+    ""
+   ],
+   [
+    "umiak",
+    ""
+   ],
+   [
+    "kuksa",
+    "Finnish-mediated Sámi craft heritage"
+   ]
+  ],
+  "names": [
+   [
+    "Dei förenade republikerna av Brightport og Occasue",
+    "The United Republics of Brightport and Occasue"
+   ],
+   [
+    "Republiken av Brightport",
+    "Republic of Brightport"
+   ],
+   [
+    "Republiken av Occasue",
+    "Republic of Occasue"
+   ],
+   [
+    "Nyreth",
+    "Nyreth"
+   ],
+   [
+    "Jorden",
+    "Earth"
+   ],
+   [
+    "Schoonheid",
+    "Schoonheid"
+   ],
+   [
+    "Swisswa",
+    "Swisswa"
+   ],
+   [
+    "Brightport Stad",
+    "Brightport City"
+   ],
+   [
+    "Berevo",
+    "Berevo"
+   ]
+  ],
+  "poem": {
+   "title": "Åtta röstar, et folk",
+   "en_title": "Eight Voices, One People",
+   "sch": [
+    "Vi kom frå åtta lander,",
+    "Över hav og under stjärnar.",
+    "Vi har et nytt hemland,",
+    "Med många språk og et hjärta.",
+    "",
+    "Vi elskar våra fjäller,",
+    "Vårt hav og våra skogar.",
+    "Under sama måne,",
+    "Vi ær et folk."
+   ],
+   "en": [
+    "We came from eight lands,",
+    "Across seas and beneath stars.",
+    "We have a new homeland,",
+    "With many languages and one heart.",
+    "",
+    "We love our mountains,",
+    "Our sea and our forests.",
+    "Under the same moon,",
+    "We are one people."
+   ],
+   "notes": [
+    "A traditional poem; author and date are not known. The eight lands are the eight founding communities, not eight sovereign states.",
+    "Kept word for word. Prose rules might suggest haver and språker, but poetic usage does not create new rules or exceptions. In the title, et folk means “one people”; ein is the number one."
+   ]
+  },
+  "proverbs": [
+   [
+    "Efter regnet komar solen.",
+    "After the rain comes the sun.",
+    "A fixed saying. Its word order does not show a general verb-second rule."
+   ],
+   [
+    "Ingen vind varar evigt.",
+    "No wind lasts forever.",
+    ""
+   ],
+   [
+    "Et litet ljus brytar mörkret.",
+    "A little light breaks the darkness.",
+    ""
+   ],
+   [
+    "Starka træer har djupa rötter.",
+    "Strong trees have deep roots.",
+    ""
+   ],
+   [
+    "En god væn ær en trygg hamn.",
+    "A good friend is a safe harbour.",
+    ""
+   ],
+   [
+    "Många röstar, en sång.",
+    "Many voices, one song.",
+    ""
+   ]
+  ],
+  "idioms": [
+   [
+    "Is i blodet",
+    "Ice in the blood",
+    "Staying calm under pressure"
+   ],
+   [
+    "Vind i huvudet",
+    "Wind in the head",
+    "Scatterbrained"
+   ],
+   [
+    "Sol i hjärtat",
+    "Sun in the heart",
+    "Full of joy"
+   ],
+   [
+    "At gå mot vinden",
+    "To walk against the wind",
+    "Persevering despite difficulty"
+   ],
+   [
+    "Snö på hjärtat",
+    "Snow on the heart",
+    "Emotional coldness"
+   ],
+   [
+    "At finna sin hamn",
+    "To find one’s harbour",
+    "Finding where one belongs"
+   ],
+   [
+    "Under sama måne",
+    "Under the same moon",
+    "Connected despite distance"
+   ],
+   [
+    "At tala med to tungar",
+    "To speak with two tongues",
+    "Dishonest or hypocritical"
+   ]
+  ],
+  "samples": [
+   {
+    "title": "Newspaper example",
+    "kicker": "Mock masthead: Swisswa Tidning · SPRÅK · KULTUR · SAMHÄLLE",
+    "sch": [
+     "Schoon lever i Swisswa",
+     "Et språk med en rik historia og en ljus framtid.",
+     "Schoon ær et viktigt språk i Swisswa. Barner lärar sig Schoon i skolan, og många familjar talar språket i sina hem.",
+     "Schoonspråkrådet arbetar för språket og dess framtid. Schoonarar ær stolta av sitt språk, sin kultur og sin historia."
+    ],
+    "en": "Schoon lives on in Swisswa. A language with a rich history and a bright future. Schoon is an important language in Swisswa. Children learn Schoon in school, and many families speak the language in their homes. The Schoon Language Council works for the language and its future. People of Schoon heritage are proud of their language, their culture and their history.",
+    "notes": [
+     "Swisswa Tidning is a learning example, not a real newspaper.",
+     "Under the regular neuter plural, hem becomes hemer, so “i sina hemer” would be the rule-based correction if a plural is meant. Awaiting review."
+    ]
+   },
+   {
+    "title": "Everyday dialogue",
+    "kicker": "",
+    "pairs": [
+     [
+      "Hej! Hvar går du?",
+      "Hey! Where are you going?"
+     ],
+     [
+      "Jag går til butiken. Jag skal köpa bröd og mjölk.",
+      "I’m going to the shop. I’m going to buy bread and milk."
+     ],
+     [
+      "Vill du drikka kaffe med mig?",
+      "Do you want to drink coffee with me?"
+     ],
+     [
+      "Ja, gärna! När?",
+      "Yes, I’d love to! When?"
+     ],
+     [
+      "Imorgon?",
+      "Tomorrow?"
+     ],
+     [
+      "Grymt! Vi sjæs.",
+      "Awesome! See you."
+     ]
+    ],
+    "notes": []
+   },
+   {
+    "title": "Schoonheids historia",
+    "kicker": "The history of Schoonheid",
+    "sch": [
+     "Schoonheid var et land på Nyreth. Folk kom frå åtta nordiska samhällen på Jorden. Dei talade olika språk, men dei skapade et nytt hemland og et gemensamt språk: Schoon.",
+     "Idag lever Schoon vidare i Swisswa, i våra familjar, i våra skolor og i våra sångar."
+    ],
+    "en": "Schoonheid was a country on Nyreth. People came from eight Nordic communities on Earth. They spoke different languages, but they created a new homeland and a shared language: Schoon. Today, Schoon lives on in Swisswa, in our families, in our schools and in our songs.",
+    "notes": [
+     "Flag for review: the text says Schoonheid “var” (was) a country, but Schoonheid is a sovereign nation today. The original wording is kept unchanged until you decide.",
+     "Approved correction: skolor → skolar. Rule-based: plural språk → språker. Samhällen is flagged, not changed, because the gender of samhälle is not set."
+    ]
+   },
+   {
+    "title": "Regional announcement",
+    "kicker": "Offentlig information · Public information",
+    "sch": [
+     "Velkommen til Swisswa!",
+     "Schoon ær et regionalt språk i Ouest. Du kan tala Schoon med oss.",
+     "Vi ær stolta av vårt språk og vår kultur."
+    ],
+    "en": "Welcome to Swisswa! Schoon is a regional language in Ouest. You can speak Schoon with us. We are proud of our language and our culture.",
+    "notes": [
+     "Example only, not a real government notice."
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "id": "hej",
+    "t": "Hej! Greetings",
+    "intro": "Hej works for everyone, casual or formal. Du is also used with everyone.",
+    "ex": [
+     [
+      "Hej",
+      "hello"
+     ],
+     [
+      "God morgon",
+      "good morning"
+     ],
+     [
+      "God dag",
+      "good day"
+     ],
+     [
+      "God kveld",
+      "good evening"
+     ],
+     [
+      "God natt",
+      "good night"
+     ],
+     [
+      "Hur har du det?",
+      "how are you?"
+     ],
+     [
+      "Jag har det bra",
+      "I am doing well"
+     ],
+     [
+      "Takk",
+      "thank you"
+     ],
+     [
+      "Mange takk",
+      "thank you very much"
+     ],
+     [
+      "Snälla",
+      "please"
+     ],
+     [
+      "Vær så god",
+      "you are welcome / here you go"
+     ],
+     [
+      "Ursäkta",
+      "excuse me"
+     ],
+     [
+      "Förlåt",
+      "sorry"
+     ],
+     [
+      "Velkommen",
+      "welcome"
+     ],
+     [
+      "Vi sjæs",
+      "see you"
+     ],
+     [
+      "Farvæl",
+      "goodbye"
+     ]
+    ]
+   },
+   {
+    "id": "sounds",
+    "t": "Letters and sounds",
+    "intro": "Schoon has 33 letters, including Æ Ø Å Ä Ö Þ Ð. Þ sounds like “th” in thin, Ð like “th” in this. Two pitch accents exist but are not written.",
+    "ex": [
+     [
+      "Schoon",
+      "/skoːn/ — the only word with settled IPA so far"
+     ],
+     [
+      "þ",
+      "/θ/"
+     ],
+     [
+      "ð",
+      "/ð/"
+     ],
+     [
+      "sj",
+      "/ʃ/"
+     ],
+     [
+      "tj",
+      "/tʃ/"
+     ],
+     [
+      "å",
+      "/ɔ/"
+     ],
+     [
+      "ä",
+      "/ɛ/"
+     ],
+     [
+      "ö",
+      "/œ/"
+     ]
+    ]
+   },
+   {
+    "id": "nouns",
+    "t": "En and et: nouns",
+    "intro": "Every noun is common (en) or neuter (et). “The” is a suffix: -en / -et. Plurals add -ar (common) or -er (neuter); “the” in the plural is -arna / -erna. A final unstressed -a drops: skola → skolan, skolar, skolarna.",
+    "ex": [
+     [
+      "en bok",
+      "a book"
+     ],
+     [
+      "boken",
+      "the book"
+     ],
+     [
+      "bokar",
+      "books"
+     ],
+     [
+      "bokarna",
+      "the books"
+     ],
+     [
+      "et hus",
+      "a house"
+     ],
+     [
+      "huset",
+      "the house"
+     ],
+     [
+      "huser",
+      "houses"
+     ],
+     [
+      "huserna",
+      "the houses"
+     ],
+     [
+      "skolan",
+      "the school"
+     ],
+     [
+      "skolarna",
+      "the schools"
+     ]
+    ]
+   },
+   {
+    "id": "adj",
+    "t": "Adjectives and double definiteness",
+    "intro": "Adjectives add -t with neuter nouns and -a in the plural or after den/det/dei. With “the”, Schoon marks definiteness twice.",
+    "ex": [
+     [
+      "en stor bok",
+      "a big book"
+     ],
+     [
+      "et stort hus",
+      "a big house"
+     ],
+     [
+      "stora bokar",
+      "big books"
+     ],
+     [
+      "den stora boken",
+      "the big book"
+     ],
+     [
+      "det stora huset",
+      "the big house"
+     ],
+     [
+      "dei stora bokarna",
+      "the big books"
+     ],
+     [
+      "Du ær vakker.",
+      "You are beautiful."
+     ]
+    ]
+   },
+   {
+    "id": "pron",
+    "t": "Pronouns and “my”",
+    "intro": "Min, din and vår agree with the thing owned: min/mitt/mina. Hans, hennes, deres never change.",
+    "ex": [
+     [
+      "min bok",
+      "my book"
+     ],
+     [
+      "mitt hus",
+      "my house"
+     ],
+     [
+      "mina bokar",
+      "my books"
+     ],
+     [
+      "Jag elskar dig.",
+      "I love you."
+     ],
+     [
+      "Jag saknar dig.",
+      "I miss you."
+     ],
+     [
+      "Jag ær här för dig.",
+      "I am here for you."
+     ],
+     [
+      "Jag ær stolt av dig.",
+      "I am proud of you."
+     ]
+    ]
+   },
+   {
+    "id": "verbs",
+    "t": "Verbs: one form for everyone",
+    "intro": "Verbs never change for person. Learn the model tala, then the irregulars. Modal verbs take a bare infinitive.",
+    "ex": [
+     [
+      "jag talar",
+      "I speak"
+     ],
+     [
+      "jag talade",
+      "I spoke"
+     ],
+     [
+      "jag har talat",
+      "I have spoken"
+     ],
+     [
+      "jag skal tala",
+      "I will speak"
+     ],
+     [
+      "Tala!",
+      "Speak!"
+     ],
+     [
+      "Jag kan tala Schoon.",
+      "I can speak Schoon."
+     ],
+     [
+      "Du bør sova.",
+      "You should sleep."
+     ],
+     [
+      "Vi vill gå til havet.",
+      "We want to go to the sea."
+     ]
+    ]
+   },
+   {
+    "id": "order",
+    "t": "Word order, “not” and questions",
+    "intro": "Subject–verb–object. Inte comes right after the conjugated verb. Questions put the verb first.",
+    "ex": [
+     [
+      "Jag talar inte.",
+      "I don’t speak."
+     ],
+     [
+      "Jag ær trött fordi jag sov inte.",
+      "I am tired because I didn’t sleep."
+     ],
+     [
+      "Talar du Schoon?",
+      "Do you speak Schoon?"
+     ],
+     [
+      "Hvar bor du?",
+      "Where do you live?"
+     ],
+     [
+      "Jag vet at du talar Schoon.",
+      "I know that you speak Schoon."
+     ],
+     [
+      "Jag går til butiken.",
+      "I’m going to the shop."
+     ]
+    ]
+   },
+   {
+    "id": "num",
+    "t": "Numbers",
+    "intro": "Tens come first, then units, written as one word: tjugofem = 25.",
+    "ex": [
+     [
+      "ein, to, tre",
+      "1, 2, 3"
+     ],
+     [
+      "tio",
+      "10"
+     ],
+     [
+      "tolv",
+      "12"
+     ],
+     [
+      "tjugo",
+      "20"
+     ],
+     [
+      "tjugofem",
+      "25"
+     ],
+     [
+      "sekstinio",
+      "69"
+     ],
+     [
+      "hundre",
+      "100"
+     ],
+     [
+      "tusen",
+      "1,000"
+     ],
+     [
+      "första, andra, tredje",
+      "first, second, third"
+     ]
+    ]
+   },
+   {
+    "id": "build",
+    "t": "Building words",
+    "intro": "Join words without spaces. Eight suffixes make new words from roots.",
+    "ex": [
+     [
+      "rymdskepp",
+      "spaceship"
+     ],
+     [
+      "Ljusblomma",
+      "Brightbloom"
+     ],
+     [
+      "talare",
+      "speaker"
+     ],
+     [
+      "frihet",
+      "freedom"
+     ],
+     [
+      "hemlös",
+      "homeless"
+     ],
+     [
+      "läsbar",
+      "readable"
+     ],
+     [
+      "vænskap",
+      "friendship"
+     ]
+    ]
+   },
+   {
+    "id": "culture",
+    "t": "Proverbs and idioms",
+    "intro": "Schoon literature blends all eight founding traditions.",
+    "ex": [
+     [
+      "Efter regnet komar solen.",
+      "After the rain comes the sun."
+     ],
+     [
+      "En god væn ær en trygg hamn.",
+      "A good friend is a safe harbour."
+     ],
+     [
+      "Många röstar, en sång.",
+      "Many voices, one song."
+     ],
+     [
+      "Sol i hjärtat",
+      "full of joy"
+     ],
+     [
+      "Is i blodet",
+      "calm under pressure"
+     ],
+     [
+      "At finna sin hamn",
+      "to find where one belongs"
+     ]
+    ]
+   }
+  ],
+  "exercises": [
+   [
+    "I love you.",
+    "Jag elskar dig."
+   ],
+   [
+    "Do you speak Schoon?",
+    "Talar du Schoon?"
+   ],
+   [
+    "A big house",
+    "Et stort hus"
+   ],
+   [
+    "The big book",
+    "Den stora boken"
+   ],
+   [
+    "I can speak Schoon.",
+    "Jag kan tala Schoon."
+   ],
+   [
+    "Hello! How are you?",
+    "Hej! Hur har du det?"
+   ],
+   [
+    "I miss you.",
+    "Jag saknar dig."
+   ],
+   [
+    "The schools",
+    "Skolarna"
+   ],
+   [
+    "I don’t speak.",
+    "Jag talar inte."
+   ],
+   [
+    "Where do you live?",
+    "Hvar bor du?"
+   ],
+   [
+    "You should sleep.",
+    "Du bør sova."
+   ],
+   [
+    "We want to go to the sea.",
+    "Vi vill gå til havet."
+   ],
+   [
+    "My books",
+    "Mina bokar"
+   ],
+   [
+    "Thank you very much",
+    "Mange takk"
+   ],
+   [
+    "Everything will be okay.",
+    "Allt blir bra."
+   ],
+   [
+    "I know that you speak Schoon.",
+    "Jag vet at du talar Schoon."
+   ],
+   [
+    "The big houses",
+    "Dei stora huserna"
+   ],
+   [
+    "Good night",
+    "God natt"
+   ]
+  ],
+  "unresolved": [
+   "Exact alphabetical order, stress, pitch contours and word-by-word IPA (only Schoon /skoːn/ is settled).",
+   "How C, Q, W, X and Z are replaced in new words.",
+   "Definite forms of neuter nouns ending in unstressed -a; genders of some words (including tidning, kultur, samhälle, information).",
+   "Full forms of irregular adjectives (litet, nytt, godt, vakker).",
+   "Most verbs beyond the ten listed and the six modals; passive, conditional, reflexive verbs; subject questions and negation in questions.",
+   "Hundreds and thousands in compound numbers; ordinals above tenth; numeral agreement; spoken time and local weekday names.",
+   "Exact regional distribution of dialects, and population figures.",
+   "Whether fronted time phrases cause inversion in proverbs.",
+   "The past tense “var” for Schoonheid in the history sample text."
+  ],
+  "proposals": [
+   [
+    "Ikväll",
+    "tonight",
+    "adverb",
+    "From the archive’s illustrative dialogue; never approved."
+   ],
+   [
+    "Og (too)",
+    "too",
+    "adverb",
+    "Never approved in this sense; Også is canon for also/too. Og itself is approved as “and”."
+   ],
+   [
+    "Et folk, många språk",
+    "One people, many languages",
+    "slogan",
+    "An earlier civic slogan idea; the poem title Åtta röstar, et folk is the approved one."
+   ]
+  ],
+  "corrections": [
+   [
+    "skolor → skolar",
+    "Approved (R24)."
+   ],
+   [
+    "språk (plural) → språker",
+    "Rule-based; awaiting your review."
+   ],
+   [
+    "i sina hem → i sina hemer",
+    "Rule-based, if a plural is meant; awaiting review."
+   ],
+   [
+    "samhällen",
+    "Flagged, not changed: samhälle has no approved gender."
+   ],
+   [
+    "Schoonheid var et land",
+    "Past tense conflicts with Schoonheid existing today; awaiting your decision."
+   ]
+  ]
+ },
  "media": {
   "networks": [
    {
