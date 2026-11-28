@@ -365,6 +365,15 @@ body.bpmode #view [lang="x-schoon"],body.bpmode #view [lang="x-schoon"] *{font-f
 body.bpmode :is(#view,nav.sec,header,footer,#nscbar) :is(select,option,input,textarea,ol,ul,section,article,label,code,i,u,mark,sup,sub,time,abbr,q,cite,legend){font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
 body.bpmode #view #bpIn{font-family:"Fira Sans",sans-serif!important}
 body.bpmode .bnsm,body.bpmode .bnent,body.bpmode .bnfc,body.bpmode .bsproof .o{display:none}
+.ipast{display:inline-block;font:700 11px "Fira Sans",sans-serif!important;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;vertical-align:2px;margin-left:4px}
+.ipst-established{background:#14223f;color:#f4c21c}.ipst-rule-derived{background:#e3efe6;color:#1f6b3a}.ipst-provisional{background:#fff1cc;color:#7a5600;border:1px dashed #c99a00}
+.ipaudit{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:8px 0 14px}.ipaudit div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}.ipaudit b{display:block;font:800 30px "Fira Sans",sans-serif}.ipaudit small{color:var(--mute)}
+.grout .ipa{color:#e7d6a2}
+/* BP mode: Braitisk text in Brightport Sans; English glosses, metadata and IPA keep normal typography */
+body.bpmode #view :is(.obent,.scpair,.stack td,.bctab td,.fcb,.exprompt,.poemen,.obnote,.obmeta,.lsopt,.btipa,.ipaudit,.grout p,.lscard .lede,#btlinfo p):not(.lat):not(.bn):not(.ipa),body.bpmode #view :is(.obent,.scpair,.stack td,.bctab td,.fcb,.exprompt,.poemen,.obnote,.obmeta,.lsopt,.btipa,.ipaudit,.grout p,.lscard .lede,#btlinfo p) :not(.lat):not(.lat *):not(.bn):not(.ipa):not(.ipa *){font-family:"Fira Sans",sans-serif!important}
+body.bpmode #view :is(.obent,.scpair,.stack td,.bctab td,.fcb,.fcf,.exprompt,.poemen,.lsopt,.grout,.bcsum) .lat,body.bpmode #view .bctab td b.lat{font-family:"Brightport Sans",Brightportish,"Fira Sans",sans-serif!important}
+body.bpmode #view .ipa.ipa.ipa,body.bpmode #view .ipa.ipa.ipa *,body.bpmode #view .ipast.ipast{font-family:"Doulos SIL","Charis SIL","Gentium Plus","Noto Sans","Segoe UI","Lucida Sans Unicode",sans-serif!important}
+body.bpmode #view .ipast.ipast{font-family:"Fira Sans",sans-serif!important}
 
 /* SCHOON-CSS */
 .tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
@@ -1262,9 +1271,30 @@ document.addEventListener('change',e=>{const t=e.target,F=window.__ob;if(t.id===
  else if(t.id==='grnoun'){window.__gr.n=+t.value;grNoun()}else if(t.id==='grverb'){window.__gr.v=+t.value;grVerb()}else if(t.id==='fcdeck'){window.__fc.deck=t.value;window.__fc.i=0;window.__fc.flip=false;fcCard()}});
 /* SCHOON-END */
 
+/* Braitisk orthography → IPA (JavaScript twin of braitisk_ipa.py; same rule table from ipa_rules.json) */
+const BTIPA=(()=>{let R=null,FORMS=null,EXC=null,VTH=null,STATUS=null;const FRONT=new Set('eiyéèêëîïæ'),VOW=new Set('aeiouyâêîôûàèéëïöüåäœòù');
+ function init(){if(R)return;const G=D.braitisk.g2p;R=G.rules.map(r=>[r.grapheme,r.ipa,r.status,r.rule,r.context]).map((r,i)=>[...r,i]).sort((a,b)=>b[0].length-a[0].length||a[5]-b[5]);
+  STATUS={};G.rules.forEach(r=>STATUS[r.rule]=r.status);if(STATUS['S-th']==='approved')STATUS['S-th-voiced']='approved';EXC=G.exceptions;VTH=new Set(G.voiced_th);const END=new Map(G.endings);
+  FORMS={};Object.entries(G.verbs).forEach(([inf,t])=>{const st=inf.slice(0,-2);if(!(inf in FORMS))FORMS[inf]=[st,'eʁ',''];
+   ['present','past','subjunctive','future','conditional'].forEach(tn=>t[tn].forEach(f=>{const base=['future','conditional'].includes(tn)?inf:st;const e=f.slice(base.length);if(END.has(e)&&f.startsWith(base)&&!(f in FORMS))FORMS[f]=[base,END.get(e),tn]}));
+   t.imperative.forEach(f=>{const e=f.slice(st.length);if(END.has(e)&&!(f in FORMS))FORMS[f]=[st,END.get(e),'present']})})}
+ function ok(ctx,w,i,g){const n=w[i+g.length]||'',p=i>0?w[i-1]:'';switch(ctx){case'':return true;case'V':return VOW.has(n);case'nV':return !VOW.has(n);case'F':return FRONT.has(n);case'nF':return !FRONT.has(n);case'$':return n==='';case'CV':return p!==''&&!VOW.has(p)&&VOW.has(n)}return true}
+ function letters(w,stop){stop=stop??w.length;let i=0;const out=[],used=[];while(i<stop){let hit=false;for(const [g,ipa,st,rid,ctx] of R){if(w.startsWith(g,i)&&ok(ctx,w,i,g)){out.push(ipa);used.push(rid);i+=g.length;hit=true;break}}
+  if(!hit){if("-’'".includes(w[i])){i++;continue}out.push(w[i]);used.push('UNKNOWN:'+w[i]);i++}}return[out.join(''),used]}
+ function word(w){w=w.normalize('NFC').toLowerCase();if(w in EXC)return[EXC[w],['EXC:'+w]];
+  if(w in FORMS){const [base,e,tn]=FORMS[w];const stem=['future','conditional'].includes(tn)?base.slice(0,-2):base;const [b,u]=letters(w,stem.length);return[b+(stem!==base?'eʁ':'')+e,[...u,'E-ending']]}
+  let [ipa,used]=letters(w);if(VTH.has(w)){ipa=ipa.replace(/θ/g,'ð');used=used.map(x=>x==='S-th'?'S-th-voiced':x)}return[ipa,used]}
+ function phrase(t){init();const toks=t.normalize('NFC').replace(/-/g,' ').match(/[\p{L}]+(?:[’'][\p{L}]+)?|\d+/gu)||[];const parts=[],used=[];
+  toks.forEach(k=>{k=k.replace(/[’']/g,'');if(/^\d+$/.test(k))return;const [p,u]=word(k);parts.push(p);used.push(...u)});
+  const flags=[...new Set(used.filter(u=>u.startsWith('UNKNOWN')||STATUS[u]==='proposed'||(u==='S-th-voiced'&&STATUS['S-th']!=='approved')))].sort();
+  const exc=toks.length===1&&used.length&&used[0].startsWith('EXC:');return{ipa:'/'+parts.join(' ')+'/',status:exc?'established':flags.length?'provisional':'rule-derived',flags}}
+ return{phrase,desc:r=>D.braitisk.g2p.desc[r]||r}})();
+
 /* BRAITISK-START · Braitisk (Brightportish) modern standard, archive rounds 1–25 */
 const BT=()=>D.braitisk;
-const BTLX=()=>BT().lex.map(x=>({id:x[0],w:x[1],e:x[2],pos:x[3],cat:x[4],r:x[5],st:x[6],ipa:x[7],n:x[8],rv:x[9],ex:x[10],exe:x[11],o:x[12]}));
+const BTLX=()=>BT().lex.map(x=>({id:x[0],w:x[1],e:x[2],pos:x[3],cat:x[4],r:x[5],st:x[6],ipa:x[7],n:x[8],rv:x[9],ex:x[10],exe:x[11],o:x[12],ipst:x[13],ipr:x[14]}));
+const IPST={established:['Established','Individually approved pronunciation'],'rule-derived':['By rule','Derived from the approved sound system; stress not marked'],provisional:['Provisional','Uses a spelling rule awaiting approval; stress not marked']};
+const ipBadge=s=>`<span class="ipast ipst-${s}" title="${IPST[s][1]}">${IPST[s][0]}</span>`;
 const btFold=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[œ]/g,'oe').replace(/[ø]/g,'o').replace(/[’']/g,"'").toLowerCase().trim();
 const btNorm=t=>t.normalize('NFC').replace(/[’']/g,"'").toLowerCase().trim();
 const BN=(t,cls)=>`<span class="bn${cls?' '+cls:''}" aria-hidden="true">${esc(t)}</span>`;   // native-script display; Latin backing text is always shown alongside
@@ -1284,17 +1314,17 @@ V.language=()=>{const B=BT();return `<div>${bthead('Braitisk','Brightportish in 
  <section><h2>The language council</h2>${mfacts(B.institutions)}</section>
  <section><h2>Still open</h2>${mfacts(B.open)}<p class="meta">Older website spellings (Teritor, Siti, Gouvern…) are replaced by the modern standard. <a href="#bscript">See the full list →</a></p></section></div></div>`};
 /* ---- dictionary ---- */
-window.__bd=window.__bd||{q:'',dir:'both',cat:'',pos:'',fold:true,strong:false,legacy:false,n:60};
+window.__bd=window.__bd||{q:'',dir:'both',cat:'',pos:'',ip:'',fold:true,strong:false,legacy:false,n:60};
 function bdRender(){const F=window.__bd,box=document.getElementById('bdres');if(!box)return;
  if(F.legacy){box.innerHTML=`<p class="msample"><b>Superseded forms.</b> These older website spellings are no longer standard. Use the modern form.</p>${btTbl(['Old form','English','Modern standard'],BT().legacy)}`;return}
  const fold=F.fold&&!/[^\x00-\x7f]/.test(F.q);const q=fold?btFold(F.q):btNorm(F.q);const f=s=>fold?btFold(s):btNorm(s);
- let L=BTLX().filter(x=>(F.strong||x.cat!=='profanity')&&(!F.cat||x.cat.split('; ').includes(F.cat))&&(!F.pos||x.pos===F.pos));
+ let L=BTLX().filter(x=>(F.strong||x.cat!=='profanity')&&(!F.cat||x.cat.split('; ').includes(F.cat))&&(!F.pos||x.pos===F.pos)&&(!F.ip||x.ipst===F.ip));
  const ws=t=>{const v=f(t);return v.startsWith(q)||v.split(/[\s;,/()-]+/).some(w=>w.startsWith(q))||(q.includes(' ')&&v.includes(q))};
  if(q)L=L.filter(x=>(F.dir!=='en'&&ws(x.w))||(F.dir!=='bt'&&ws(x.e)));
  L.sort((a,b)=>{if(q){const as=f(a.w).startsWith(q)||f(a.e).startsWith(q),bs=f(b.w).startsWith(q)||f(b.e).startsWith(q);if(as!==bs)return as?-1:1}return a.w.localeCompare(b.w,'fr')});
  const hid=F.strong?0:BTLX().filter(x=>x.cat==='profanity').length;
  box.innerHTML=`<p class="meta" aria-live="polite">${L.length} ${L.length===1?'entry':'entries'}${hid?` · ${hid} strong-language entries hidden`:''}</p><div class="oblist">${L.slice(0,F.n).map(x=>`<article class="obent btent"><div class="obhw"><b class="lat">${esc(x.w)}</b> ${BN(x.w,'bnent')}</div><div class="obgl">${esc(x.e)}</div>
-  <div class="btipa">${IPA(x.ipa)}</div><div class="obmeta">${x.pos?`<span>${esc(x.pos)}</span>`:'<span>word class not confirmed</span>'}<span>${esc(x.cat)}</span><span>${x.st==='website-canon'?'website canon':'approved'} · ${/^\d/.test(x.r)?'round '+esc(x.r):esc(x.r)}</span><span>origin ${x.o?esc(x.o):'not established'}</span><span class="meta">${x.id}</span></div>
+  <div class="btipa">${IPA(x.ipa)} ${ipBadge(x.ipst)}</div>${x.ipst==='provisional'?`<p class="obnote">Pronunciation rules awaiting approval: ${x.ipr.map(r=>esc(BTIPA.desc(r))).join('; ')}.</p>`:''}<div class="obmeta">${x.pos?`<span>${esc(x.pos)}</span>`:'<span>word class not confirmed</span>'}<span>${esc(x.cat)}</span><span>${x.st==='website-canon'?'website canon':'approved'} · ${/^\d/.test(x.r)?'round '+esc(x.r):esc(x.r)}</span><span>origin ${x.o?esc(x.o):'not established'}</span><span class="meta">${x.id}</span></div>
   ${x.rv?`<p class="obnote">Regional: ${esc(x.rv)}</p>`:''}${x.ex?`<p class="obnote"><b class="lat">${esc(x.ex)}</b> ${esc(x.exe)}</p>`:''}${x.n?`<p class="obnote">${esc(x.n)}</p>`:''}</article>`).join('')}</div>${L.length>F.n?'<p><button data-bdmore>Show more</button></p>':''}`}
 V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.cat.split('; ')).filter(c=>c!=='profanity'))].sort(),poss=[...new Set(X.map(x=>x.pos).filter(Boolean))].sort();setTimeout(bdRender,0);
  return `<div>${bthead('Lê Grand Diksionère Braitisk','The Great Braitisk Dictionary: 814 approved entries. Search Braitisk or English; accents are optional.')}<div class="nosub">
@@ -1302,8 +1332,8 @@ V.diksionere=()=>{const F=window.__bd,X=BTLX(),cats=[...new Set(X.flatMap(x=>x.c
   <label class="tvchk"><input type="checkbox" id="bdfold"${F.fold?' checked':''}> Ignore accents (lumiere finds lumière)</label></div>
  <div class="mchips"><span class="meta">Search in</span>${[['both','Both'],['bt','Braitisk → English'],['en','English → Braitisk']].map(([k,l])=>`<button class="chip" data-bddir="${k}" aria-pressed="${F.dir===k}">${l}</button>`).join('')}</div>
  <div class="obfilters"><label>Topic <select id="bdcat"><option value="">All topics</option>${cats.map(c=>`<option${F.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label><label>Word class <select id="bdpos"><option value="">All</option>${poss.map(c=>`<option${F.pos===c?' selected':''}>${esc(c)}</option>`).join('')}</select></label>
-  <label class="tvchk"><input type="checkbox" id="bdstrong"${F.strong?' checked':''}> Show strong language</label><label class="tvchk"><input type="checkbox" id="bdlegacy"${F.legacy?' checked':''}> Show superseded old forms</label></div>
- <div id="bdres"></div><p class="meta">Each entry shows the Latin spelling and the native script in Brightport Sans. IPA appears only where it is established.</p></div></div>`};
+  <label>Pronunciation <select id="bdip"><option value="">All</option>${['established','rule-derived','provisional'].map(s=>`<option value="${s}"${F.ip===s?' selected':''}>${IPST[s][0]}</option>`).join('')}</select></label><label class="tvchk"><input type="checkbox" id="bdstrong"${F.strong?' checked':''}> Show strong language</label><label class="tvchk"><input type="checkbox" id="bdlegacy"${F.legacy?' checked':''}> Show superseded old forms</label></div>
+ <div id="bdres"></div><p class="meta">Every entry has IPA: <b>Established</b> (individually approved), <b>By rule</b> (from the approved sound system) or <b>Provisional</b> (uses a spelling rule awaiting approval). Stress is marked only where established. <a href="#bsounds">How pronunciation works →</a></p></div></div>`};
 /* ---- conjugator ---- */
 window.__bc=window.__bc||{v:'parler',neg:false};
 const BTS=['É','Tu','Le / Il / El','Wi','Vous','Dei'];
@@ -1362,6 +1392,12 @@ function btCoverage(t){const ok=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklm
 V.bsounds=()=>{const B=BT();return `<div>${bthead('Sounds and accents','The approved sound system with standard IPA symbols. No sounds are added or changed.')}<div class="nosub">
  <section class="two"><div><h2>Vowels (11)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.vowels)}</div><div><h2>Diphthongs (6)</h2>${btTbl(['IPA','Spelling','Sounds like'],B.diph)}<h2>Endings</h2>${btTbl(['Ending','IPA'],B.endsound)}</div></section>
  <section><h2>Consonants (26)</h2>${btTbl(['IPA','Spelling'],B.cons)}${mfacts(B.sound_notes)}</section>
+ <section class="card grtool"><h2 style="margin-top:0">Pronunciation finder</h2><p>Type any Braitisk word or phrase. The same rules give every dictionary entry its IPA.</p><input type="text" id="btpf" value="Lê Grand Diksionère Braitisk" autocomplete="off" spellcheck="false" aria-label="Braitisk word or phrase" style="max-width:520px">${btKeys('btpf')}<div id="btpfout" class="grout" aria-live="polite"></div></section>
+ <section><h2>Pronunciation in the dictionary</h2>${(()=>{const c={established:0,'rule-derived':0,provisional:0};BTLX().forEach(x=>c[x.ipst]++);return `<div class="ipaudit">${Object.entries(c).map(([k,n])=>`<div>${ipBadge(k)}<b>${n}</b><small>${IPST[k][1]}</small></div>`).join('')}</div>`})()}
+  <h3>Spellings awaiting a decision</h3><p class="meta">The approved chart does not settle these spellings. Each has a proposed reading; entries that use one are marked Provisional until it is approved.</p>
+  <div class="tablewrap"><table class="stack"><thead><tr><th>Proposed rule</th><th>Entries</th><th>Examples</th></tr></thead><tbody>${(()=>{const m={};BTLX().forEach(x=>x.ipr.forEach(r=>{(m[r]=m[r]||[]).push(x)}));const rows=Object.entries(m);if(!rows.length)return '<tr><td colspan="3">None. Every spelling rule is approved, so every pronunciation is established or rule-derived.</td></tr>';return rows.sort((a,b)=>b[1].length-a[1].length).map(([r,xs])=>`<tr><td data-l="Rule">${esc(BTIPA.desc(r))}</td><td data-l="Entries">${xs.length}</td><td data-l="Examples">${xs.slice(0,3).map(x=>`<b class="lat">${esc(x.w)}</b> ${IPA(x.ipa)}`).join(' · ')}</td></tr>`).join('')})()}</tbody></table></div></section>
+ <section><h2>The spelling-to-sound rules</h2><p class="meta">One table converts every spelling to IPA, for the dictionary and for new words. Approved on Octavus 16, 119 NSC (27 November 2026): O before N or M is /ɔ/; French-style soft C and G; QU, Ç, X; doubled letters; glides; and the rare vowel spellings. Stress stays unmarked except in established words.</p>
+  <details><summary>Show all ${BT().g2p.rules.length} rules</summary><div class="tablewrap"><table class="stack"><thead><tr><th>Spelling</th><th>IPA</th><th>When</th><th>Rule</th></tr></thead><tbody>${BT().g2p.rules.map(r=>`<tr><td data-l="Spelling"><b class="lat">${esc(r.grapheme)}</b></td><td data-l="IPA"><span class="ipa">/${esc(r.ipa)}/</span></td><td data-l="When">${({'':'always','V':'before a vowel','nV':'not before a vowel','F':'before e, i, y','nF':'not before e, i, y','$':'at the end of a word','CV':'between a consonant and a vowel'})[r.context]||r.context}</td><td data-l="Rule">${esc(r.description||r.rule)}</td></tr>`).join('')}</tbody></table></div></details></section>
  <section><h2>Regional accents</h2><p>Every region shares the same grammar and spelling. These are tendencies, not stereotypes. The column shows how <b class="lat">parler</b> (to converse) is said where it was recorded.</p>
   <div class="btacc">${B.accents.map(([r,t,p])=>`<div class="card"><h3 style="margin:0">${esc(r)}</h3><p style="margin:4px 0">${esc(t)}</p>${p?`<p style="margin:0"><b class="lat">parler</b> ${IPA(p)}</p>`:''}</div>`).join('')}</div>
   <p class="meta">Regional /r/ and /ɾ/ are not standard sounds. There is no audio: no authentic Braitisk voice exists, and French or English speech would not be Braitisk.</p></section></div></div>`};
@@ -1408,6 +1444,7 @@ V.bliterature=()=>{const B=BT(),P=B.poem,idi=BTLX().filter(x=>x.cat==='idioms'),
  <section><h2>Sample texts</h2>${MEX('These are teaching texts. They are not real news, laws or announcements.')}
   ${B.texts.map(x=>`<article class="card scsample"><h3 style="margin-top:0">${esc(x.title)}</h3>${x.pairs?x.pairs.map(([a,b])=>btPair(a,b)).join(''):`${x.bt.map((t,i)=>`<p><span class="lat">${esc(t)}</span></p>`).join('')}<details><summary>English</summary><p>${esc(x.en)}</p></details>`}</article>`).join('')}</section>
  <section><h2>From the archive</h2><div class="card"><p class="sample lat">${esc(B.old_sample.bt).replace(/\n/g,'<br>')}</p><p class="meta">${esc(B.old_sample.note)}</p></div></section></div></div>`};
+function btPF(){const i=document.getElementById('btpf'),o=document.getElementById('btpfout');if(!i||!o)return;const r=BTIPA.phrase(i.value);o.innerHTML=i.value.trim()?`<div class="grbig"><span class="ipa">${esc(r.ipa)}</span></div><p>${ipBadge(r.status)}${r.flags.length?' Uses: '+r.flags.map(f=>esc(BTIPA.desc(f))).join('; '):''}</p>`:''}
 /* events */
 document.addEventListener('click',e=>{const t=e.target.closest('[data-btk],[data-bddir],[data-bdmore],[data-bcv],[data-btl],[data-bl],[data-bllvl],[data-blans],[data-blnext],[data-bfflip],[data-bfmove],[data-bfdir],[data-bxdo]');if(!t)return;const d=t.dataset;
  if(d.btk){const box=t.closest('[data-btkfor]'),inp=document.getElementById(box.dataset.btkfor);if(inp){const s=inp.selectionStart??inp.value.length,en=inp.selectionEnd??s;inp.value=inp.value.slice(0,s)+d.btk+inp.value.slice(en);inp.focus();inp.setSelectionRange(s+1,s+1);inp.dispatchEvent(new Event('input',{bubbles:true}))}return}
@@ -1426,9 +1463,9 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-btk],[data
  if(d.bfdir){window.__bf.dir=d.bfdir;window.__bf.flip=false;document.querySelectorAll('[data-bfdir]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.bfdir===d.bfdir));bfCard();return}
  if(d.bxdo){const E=window.__bx,X=BT().exercises,q=X[E.i%X.length],inp=document.getElementById('bxin');if(inp)E.ans=inp.value;
   if(d.bxdo==='check'){if(!E.ans.trim())return;const ok=q[1].some(a=>bxClean(a)===bxClean(E.ans));if(E.res!=='ok'&&E.res!=='show'){E.tries++;if(ok)E.score++}E.res=ok?'ok':'no'}else if(d.bxdo==='show')E.res='show';else{E.i++;E.ans='';E.res=null}bxRender();return}});
-document.addEventListener('input',e=>{const t=e.target;if(t.id==='bdq'){window.__bd.q=t.value;window.__bd.n=60;bdRender()}else if(t.id==='bcv'){window.__bc.v=t.value.trim().toLowerCase();bcRender()}else if(t.id==='btnum'){const o=document.getElementById('btnumout');const w=btNumber(t.value);if(o)o.innerHTML=w?`<div class="grbig lat">${esc(w)}</div>${BN(w,'bnsm')}`:'<p class="meta">Enter 0–9999.</p>'}else if(t.id==='bxin')window.__bx.ans=t.value;else if(t.id==='bpIn')btCoverage(t.value)});
+document.addEventListener('input',e=>{const t=e.target;if(t.id==='btpf'){btPF()}else if(t.id==='bdq'){window.__bd.q=t.value;window.__bd.n=60;bdRender()}else if(t.id==='bcv'){window.__bc.v=t.value.trim().toLowerCase();bcRender()}else if(t.id==='btnum'){const o=document.getElementById('btnumout');const w=btNumber(t.value);if(o)o.innerHTML=w?`<div class="grbig lat">${esc(w)}</div>${BN(w,'bnsm')}`:'<p class="meta">Enter 0–9999.</p>'}else if(t.id==='bxin')window.__bx.ans=t.value;else if(t.id==='bpIn')btCoverage(t.value)});
 document.addEventListener('keydown',e=>{if(e.target.id==='bxin'&&e.key==='Enter'){e.preventDefault();document.querySelector('[data-bxdo="check"]').click()}});
-document.addEventListener('change',e=>{const t=e.target,F=window.__bd;if(t.id==='bdcat'){F.cat=t.value;bdRender()}else if(t.id==='bdpos'){F.pos=t.value;bdRender()}else if(t.id==='bdfold'){F.fold=t.checked;bdRender()}else if(t.id==='bdstrong'){F.strong=t.checked;bdRender()}else if(t.id==='bdlegacy'){F.legacy=t.checked;bdRender()}
+document.addEventListener('change',e=>{const t=e.target,F=window.__bd;if(t.id==='bdcat'){F.cat=t.value;bdRender()}else if(t.id==='bdpos'){F.pos=t.value;bdRender()}else if(t.id==='bdfold'){F.fold=t.checked;bdRender()}else if(t.id==='bdstrong'){F.strong=t.checked;bdRender()}else if(t.id==='bdlegacy'){F.legacy=t.checked;bdRender()}else if(t.id==='bdip'){F.ip=t.value;bdRender()}
  else if(t.id==='bcneg'){window.__bc.neg=t.checked;bcRender()}else if(t.id==='bfdeck'){window.__bf.deck=t.value;window.__bf.i=0;window.__bf.flip=false;bfCard()}});
 /* BRAITISK-END */
 
@@ -1795,6 +1832,7 @@ function route(){
   $('#view').innerHTML=`<div class="view">${sub}${site?siteView(site):h.startsWith('city-')?V.city(h.slice(5)):key==='ubateam'?V.ubateam(h.slice(5)):key==='search'?V.search(decodeURIComponent(h.slice(7))):key==='browse'?V.browse(h.slice(7)):V[key]()}</div>`;
   if(key==='bscript'){const i=document.getElementById('bpIn');if(i){let v=null;try{v=localStorage.getItem('bt-desk')}catch(e){}i.value=v??D.braitisk.poem.bt.slice(0,4).join('\n');bpRender();btCoverage(i.value)}}
   if(key==='bgrammar'){const n=document.getElementById('btnum');if(n)n.dispatchEvent(new Event('input',{bubbles:true}))}
+  if(key==='bsounds'&&typeof btPF==='function')btPF()
   i18nRestore();document.body.classList.toggle('bpmode',TERR_LANG==='bp');bpApply();
   {const lg=langsFor(site).includes(TERR_LANG)?TERR_LANG:'en';if(!['en','bp'].includes(lg))i18nApply(lg);else document.documentElement.lang='en'}
   document.querySelectorAll('.sheet').forEach(x=>x.remove());document.body.classList.remove('sheet-open');
